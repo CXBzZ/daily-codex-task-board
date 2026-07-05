@@ -1,0 +1,21 @@
+{
+  "taskId": "example-codex-task",
+  "taskName": "Example Codex Task",
+  "status": "success",
+  "startedAt": "2026-07-05T23:30:00+08:00",
+  "finishedAt": "2026-07-05T23:32:00+08:00",
+  "summary": "The dashboard repository was initialized with the shared result contract and static rendering flow.",
+  "details": "This sample record demonstrates how future Codex automations should report their outcomes. Replace it with real automation results when tasks begin running.",
+  "labels": ["bootstrap", "sample"],
+  "nextSteps": [
+    "Create Codex automations that write their results into runs/YYYY-MM-DD/.",
+    "Enable GitHub Pages with GitHub Actions as the source after pushing the repository."
+  ],
+  "artifacts": [
+    {
+      "label": "Automation contract",
+      "path": "AUTOMATION_CONTRACT.md"
+    }
+  ]
+}
+

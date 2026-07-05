@@ -1,0 +1,16 @@
+{
+  "name": "daily-codex-task-board",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A GitHub Pages dashboard for Codex automation results.",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "check": "npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
