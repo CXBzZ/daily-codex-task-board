@@ -1,7 +1,60 @@
 {
-  "generatedAt": "2026-07-06T13:37:14.164Z",
+  "generatedAt": "2026-07-07T08:06:43.298Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-07",
+      "taskId": "niche-profit-industry",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是美国住宅氡气检测与缓解服务。它围绕房屋交易、室内空气安全和州级持证要求形成需求，收入来自检测、缓解系统安装、复测、维护和合规报告，但必须按当地法规、ANSI/AARST 标准和专业伦理执行。",
+      "details": "行业：美国住宅氡气检测与缓解服务\n\n它是什么，为什么小众：\n氡气是土壤和岩石中铀衰变产生的放射性气体，可能从地基裂缝、集水坑、管线穿孔、爬行空间和地下室进入室内。住宅氡气检测与缓解服务，就是用短期或长期检测设备测量室内氡浓度，并在超出行动水平或客户希望进一步降低风险时，设计和安装主动土壤减压、爬行空间膜封闭、管道排风、风机、密封和复测方案。\n\n它小众的原因有四个：第一，客户平时看不见也闻不到氡气，需求常被房屋交易、验房、州法规、保险或健康意识触发；第二，服务横跨室内空气、建筑结构、基础施工、管道、电气、屋顶/外墙穿孔和检测报告，不能只靠普通装修经验；第三，美国各州对检测和缓解人员的执照、注册或认证要求不同，新手必须逐州核验；第四，行业信任来自可追溯的检测流程、仪器校准、复测数据和合规文档，而不是单纯低价安装一根管。\n\n行业如何运作，典型参与方和工作流：\n1. 典型客户：买房人、卖房人、房产经纪、验房师、物业管理公司、学校和小型商业物业、对室内空气质量敏感的家庭，以及已经装有缓解系统但需要复测或维修的屋主。\n2. 触发场景：房屋交易期间买方要求检测；EPA 或州卫生部门建议检测；旧缓解风机失效；地下室改造后需要复测；学校、托儿所或多户住宅按标准做抽样检测。\n3. 检测流程：按照 ANSI/AARST 或州项目要求布点，确认封闭房屋条件、检测时长、设备编号、开始和结束时间，回收设备后生成报告。被动炭盒、电子连续氡监测仪和电离室等设备对应不同成本、校准和报告能力。\n4. 评估报价：如果结果达到或高于 EPA 4 pCi/L 行动水平，或客户希望把 2-4 pCi/L 区间继续降低，服务商会看地基类型、地下室/爬行空间、集水坑、地板裂缝、土壤透气性、管线路径、风机位置、排气口距离门窗要求、电源和外观影响。\n5. 安装施工：常见住宅方案是主动土壤减压系统，包含在地板或集水坑附近开孔、连接 PVC 管、安装专用氡风机、穿墙或穿屋面排气、密封明显入口、安装压差计、贴标签，并按当地要求处理电气、穿孔和排气口位置。\n6. 交付复测：安装后需要复测确认浓度下降；服务商交付前后检测记录、系统照片、风机型号、保修说明、维护建议和后续复测提醒。\n7. 长期维护：风机有寿命，管道、密封、爬行空间膜和压差计需要检查。老客户可转化为定期复测、风机更换、房屋改造后复检和买卖房交易中的快速响应服务。\n\n盈利模式，收入来自哪里：\n- 检测费：房屋交易中的短期专业检测、连续氡监测仪报告、复测、学校或多户住宅抽样检测。\n- 缓解安装费：按房屋基础类型、穿孔数量、管线路径、风机规格、屋顶/外墙排气、电气和外观要求报价。\n- 设备与材料差价：专用氡风机、PVC 管件、集水坑盖、爬行空间膜、密封材料、压差计、监测设备等。\n- 复测和维护：安装后复测、年度或两年一次复查、风机更换、系统噪声/冷凝水/排气问题排查。\n- 渠道合作：与验房师、房产经纪、搬家前后服务、室内空气质量顾问、地下室装修商和物业管理公司合作获客。\n- 合规报告价值：在房屋交易窗口期内出具规范报告、解释结果、按标准施工并留存记录，往往比单纯施工更值钱。\n\n入门门槛：\n- 技能：氡气基础、检测协议、房屋封闭条件、仪器部署与校准、报告解释、基础类型判断、主动土壤减压设计、PVC 管道施工、穿墙/穿屋顶、电气安全、客户沟通和售后排障。\n- 设备：连续氡监测仪或合规被动检测包、校准和质控记录、钻孔工具、PVC 切割与胶水、密封材料、集水坑盖、专用氡风机、压差计、梯子、防护用品、车辆、照片和报告模板。做专业检测时，设备注册、校准、质控和防篡改记录是核心资产。\n- 资质：没有一个全美统一执照。NRPP 和 NRSB 是常见专业认证体系；部分州要求持证、注册或使用特定认证才可合法提供检测/缓解。以弗吉尼亚为例，州卫生部门说明专业氡检测或缓解需持 NRPP 或 NRSB 当前认证；其他州可能要求不同，必须先查州 radon office、建筑许可、电气许可和保险要求。\n- 资金：轻量起步可先做检测服务或给持证缓解商做学徒/安装员；独立做缓解通常需要车辆、工具、风机和管材库存、保险、培训认证、网站/地图页、仪器校准和获客预算。\n- 渠道：房屋交易速度很快，验房师和经纪人推荐很关键；同时需要 Google Business Profile、本地 SEO、州认证目录、NRPP/NRSB 目录、评价和快速排期能力。\n- 时间成本：只会安装不懂检测标准会带来合规风险。更稳的路径是先完成初始培训和考试，跟随成熟服务商做若干真实项目，再独立接单。\n\n潜在收益，用区间和条件说明：\n不能承诺收益，只能按公开价格和项目结构估算收入空间。HomeAdvisor 2026 年成本页显示，住宅氡缓解系统常见区间约 786-1274 美元，平均约 1028 美元；较小房屋可能低至约 395 美元，复杂房屋或高级方案可能到约 2453 美元。该页也把专业氡检测列为约 150-800 美元，并提示许可、电气和房屋条件会影响费用。\n\n对小团队来说，收入不是等于利润。单个缓解项目的毛收入要扣除风机、管材、耗材、保险、燃油、获客、返工、保修、仪器校准、工时和可能的电气/建筑许可成本。检测业务客单价较低但可与验房渠道绑定；缓解安装客单价较高但承担施工、合规和售后责任。成熟服务商通常把检测、安装、复测、风机更换和经纪/验房渠道组合起来，而不是只靠一次性安装。\n\n主要风险、合规注意事项和不适合人群：\n- 健康与伦理风险：氡气与肺癌风险相关，不能夸大恐慌、伪造数据或承诺降到某个绝对安全水平。EPA 明确不存在已知安全暴露水平，但行动水平是 4 pCi/L；2-4 pCi/L 也可考虑降低。\n- 法规风险：州级执照、认证、注册、报告格式、仪器要求、建筑许可和电气许可差异很大。跨州接单前必须逐州核验。\n- 技术风险：基础类型、土壤透气性、爬行空间、排气口位置和风机选择不当，会导致系统无效、噪声、冷凝水、回流或复测失败。\n- 交易时效风险：房屋交易检测通常卡在 inspection contingency 时间内，迟交报告或报告不规范会影响客户交易。\n- 责任风险：穿孔、屋顶/外墙渗漏、电气连接、管道外观、冻融和风机保修都可能引发索赔，必须有保险和清晰合同。\n- 不适合人群：不愿考证和按协议做记录、只想卖恐惧、不愿做售后、不懂施工安全、不能接受本地口碑约束、没有耐心解释检测结果的人。\n\n新手可验证的 3 个入门步骤：\n1. 查本州规则和市场目录：打开州 radon office、NRPP/NRSB 专业人员目录、本地 Google 地图，记录 20 家服务商的认证、服务范围、评价、响应速度和是否同时做检测与缓解。\n2. 做一份真实成本表：用一套典型地下室主动土壤减压系统拆出风机、PVC、屋顶/外墙排气、集水坑盖、密封材料、仪器校准、保险、许可、电工和 2 人工时成本，再和本地报价区间比较。\n3. 先跟项目再独立报价：跟持证服务商或培训项目完成至少数个真实检测和缓解安装，练会布点、封闭条件记录、报告、风机选型、管线路径、复测和客户解释，再决定是否注册公司接单。\n\n核验来源：\n- US EPA：What is EPA's Action Level for Radon and What Does it Mean? EPA 建议住宅氡浓度达到或超过 4 pCi/L 时修复，也建议 2-4 pCi/L 可考虑降低：https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean\n- US EPA：Radon Standards of Practice。EPA 列出当前 ANSI/AARST 检测和缓解标准，并说明这些标准可免费查看、PDF 可购买：https://www.epa.gov/radon/radon-standards-practice\n- US EPA：Radon and Real Estate Resources。EPA 将氡气资料与买卖房场景、FHA 表格和房地产资源连接，说明需求常在交易环节触发：https://www.epa.gov/radon/radon-and-real-estate-resources\n- NRPP：Types of Certification。NRPP 说明测量专业人员、缓解专家、测量现场技术员和缓解安装员的培训、考试、继续教育与认证成本要求：https://nrpp.info/certification/types-of-certification/\n- Virginia Department of Health：Radon Professionals。弗吉尼亚州示例显示，合法从事专业氡检测或缓解需持 NRPP 或 NRSB 当前认证，且推荐遵循 ANSI/AARST 标准：https://www.vdh.virginia.gov/radiological-health/indoor-radon-program/radon-professionals/\n- HomeAdvisor：How Much Does a Radon Mitigation System Cost in 2026? 公开成本页给出住宅缓解、专业检测和许可费用区间，可作为收入观察而非利润承诺：https://www.homeadvisor.com/cost/environmental-safety/remove-radon-gas/",
+      "startedAt": "2026-07-07T16:03:07+08:00",
+      "finishedAt": "2026-07-07T16:06:25+08:00",
+      "duration": "3m 18s",
+      "sourceThread": "manual run of automation-3",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "us-market",
+        "radon",
+        "home-services",
+        "indoor-air-quality"
+      ],
+      "nextSteps": [
+        "查本州 radon office、NRPP/NRSB 目录和本地地图，记录 20 家服务商的认证、服务范围、评价与报价线索。",
+        "拆一套典型地下室主动土壤减压系统成本，包含风机、PVC、密封、仪器、保险、许可、电工和 2 人工时。",
+        "跟持证服务商完成数个检测和缓解项目，确认会布点、记录、报告、施工、复测和客户解释后再独立接单。"
+      ],
+      "artifacts": [
+        {
+          "label": "US EPA: Radon action level",
+          "path": "https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean"
+        },
+        {
+          "label": "US EPA: Radon standards of practice",
+          "path": "https://www.epa.gov/radon/radon-standards-practice"
+        },
+        {
+          "label": "US EPA: Radon and real estate resources",
+          "path": "https://www.epa.gov/radon/radon-and-real-estate-resources"
+        },
+        {
+          "label": "NRPP: Certification types",
+          "path": "https://nrpp.info/certification/types-of-certification/"
+        },
+        {
+          "label": "Virginia Department of Health: Radon professionals",
+          "path": "https://www.vdh.virginia.gov/radiological-health/indoor-radon-program/radon-professionals/"
+        },
+        {
+          "label": "HomeAdvisor: 2026 radon mitigation cost",
+          "path": "https://www.homeadvisor.com/cost/environmental-safety/remove-radon-gas/"
+        }
+      ],
+      "sourceFile": "runs/2026-07-07/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-06",
       "taskId": "niche-profit-industry",
