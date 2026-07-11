@@ -5,13 +5,14 @@ import path from "node:path";
 import test from "node:test";
 
 import {
-  AGENTS_BOARD,
   CODEX_BOARD,
   WORKBUDDY_BOARD,
   buildSite,
   collectRuns,
+  createDiscoveredAgentBoards,
   dateInTimeZone,
-  normalizeRun
+  normalizeRun,
+  RESERVED_AGENT_IDS
 } from "./build-site.mjs";
 
 test("dateInTimeZone returns the Asia/Shanghai calendar date", () => {
@@ -84,6 +85,35 @@ test("normalizeRun rejects shared agent records without agentId", () => {
       ),
     /agentId/
   );
+});
+
+test("normalizeRun rejects external agents that use a reserved id", () => {
+  const filePath = path.join(os.tmpdir(), "runs-agents", "2026-07-05", "codex--review.json");
+  assert.throws(
+    () => normalizeRun({
+      agentId: "codex",
+      agentName: "Not Codex",
+      taskId: "daily-review",
+      taskName: "Daily Review",
+      status: "success",
+      summary: "Review completed."
+    }, filePath, path.join(os.tmpdir()), { requireAgent: true }),
+    /reserved agentId "codex"/
+  );
+  assert.deepEqual([...RESERVED_AGENT_IDS], ["codex", "workbuddy"]);
+});
+
+test("createDiscoveredAgentBoards groups agents and sorts by display name", () => {
+  const contexts = createDiscoveredAgentBoards([
+    { agentId: "zeta", agentName: "Zeta Agent", agentRole: "Operations", taskId: "review", date: "2026-07-05" },
+    { agentId: "alice", agentName: "Alice Agent", agentRole: "Research", taskId: "review", date: "2026-07-05" }
+  ]);
+
+  assert.deepEqual(contexts.map(({ board }) => board.key), ["alice", "zeta"]);
+  assert.equal(contexts[0].board.indexFile, "agents/alice/index.html");
+  assert.equal(contexts[0].board.dayDir, "agents/alice/days");
+  assert.equal(contexts[0].board.taskDir, "agents/alice/tasks");
+  assert.equal(contexts[0].board.dataFile, "agents/alice.json");
 });
 
 test("collectRuns reads nested result JSON files in descending order", async () => {
@@ -315,22 +345,12 @@ test("buildSite handles empty personal agent directory gracefully", async () => 
   await assertFileContains(path.join(outDir, "agent-history.html"), "No personal agent history");
 });
 
-test("CODEX_BOARD, WORKBUDDY_BOARD, and AGENTS_BOARD have distinct directories and files", () => {
+test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () => {
   assert.notEqual(CODEX_BOARD.dayDir, WORKBUDDY_BOARD.dayDir);
-  assert.notEqual(CODEX_BOARD.dayDir, AGENTS_BOARD.dayDir);
-  assert.notEqual(WORKBUDDY_BOARD.dayDir, AGENTS_BOARD.dayDir);
   assert.notEqual(CODEX_BOARD.taskDir, WORKBUDDY_BOARD.taskDir);
-  assert.notEqual(CODEX_BOARD.taskDir, AGENTS_BOARD.taskDir);
-  assert.notEqual(WORKBUDDY_BOARD.taskDir, AGENTS_BOARD.taskDir);
   assert.notEqual(CODEX_BOARD.indexFile, WORKBUDDY_BOARD.indexFile);
-  assert.notEqual(CODEX_BOARD.indexFile, AGENTS_BOARD.indexFile);
-  assert.notEqual(WORKBUDDY_BOARD.indexFile, AGENTS_BOARD.indexFile);
   assert.notEqual(CODEX_BOARD.historyFile, WORKBUDDY_BOARD.historyFile);
-  assert.notEqual(CODEX_BOARD.historyFile, AGENTS_BOARD.historyFile);
-  assert.notEqual(WORKBUDDY_BOARD.historyFile, AGENTS_BOARD.historyFile);
   assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
-  assert.notEqual(CODEX_BOARD.dataFile, AGENTS_BOARD.dataFile);
-  assert.notEqual(WORKBUDDY_BOARD.dataFile, AGENTS_BOARD.dataFile);
 });
 
 async function writeJson(filePath, value) {

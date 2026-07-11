@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
 export const DEFAULT_TIME_ZONE = "Asia/Shanghai";
+export const RESERVED_AGENT_IDS = new Set(["codex", "workbuddy"]);
 
 export const STATUS_META = {
   success: { label: "Success", className: "success" },
@@ -23,9 +24,11 @@ export const STATUS_META = {
 // is fully parameterized.
 export const CODEX_BOARD = {
   key: "codex",
+  agentName: "Codex",
+  agentRole: "Codex automation agent",
   sourceLabel: "Codex",
   eyebrow: "Codex Automation Board",
-  title: "Daily task results",
+  title: "Codex",
   lede: "A generated dashboard for Codex automations, daily runs, and historical outcomes.",
   dayDir: "days",
   taskDir: "tasks",
@@ -45,9 +48,11 @@ export const CODEX_BOARD = {
 
 export const WORKBUDDY_BOARD = {
   key: "workbuddy",
+  agentName: "WorkBuddy",
+  agentRole: "WorkBuddy automation agent",
   sourceLabel: "WorkBuddy",
   eyebrow: "WorkBuddy Automation Board",
-  title: "WorkBuddy daily tasks",
+  title: "WorkBuddy",
   lede: "A generated dashboard for WorkBuddy automations, daily runs, and historical outcomes.",
   dayDir: "workbuddy-days",
   taskDir: "workbuddy-tasks",
@@ -199,7 +204,11 @@ function normalizeAgentId(value, filePath, options) {
     throw new Error(`${filePath}: agentId must be a string.`);
   }
 
-  return slugifyTaskId(value);
+  const agentId = slugifyTaskId(value);
+  if (options.requireAgent && RESERVED_AGENT_IDS.has(agentId)) {
+    throw new Error(filePath + ': reserved agentId "' + agentId + '" cannot be used in runs-agents.');
+  }
+  return agentId;
 }
 
 function normalizeOptionalString(value, fieldName, filePath) {
@@ -457,6 +466,41 @@ function groupBy(items, getKey) {
   }
 
   return groups;
+}
+
+export function createDiscoveredAgentBoards(runs) {
+  return [...groupBy(runs, (run) => run.agentId).entries()]
+    .map(([agentId, agentRuns]) => {
+      const latest = agentRuns[0];
+      const agentName = latest.agentName;
+      const agentRole = latest.agentRole || "Personal assistant agent";
+      const prefix = "agents/" + agentId;
+
+      return {
+        board: {
+          key: agentId,
+          agentName,
+          agentRole,
+          sourceLabel: agentName,
+          eyebrow: "Personal Agent",
+          title: agentName,
+          lede: latest.agentRole || "Daily automation results and historical outcomes.",
+          dayDir: prefix + "/days",
+          taskDir: prefix + "/tasks",
+          indexFile: prefix + "/index.html",
+          historyFile: null,
+          dataFile: "agents/" + agentId + ".json",
+          historyEyebrow: agentName + " History",
+          historyTitle: "All recorded " + agentName + " days",
+          dayEyebrow: agentName + " Day",
+          taskEyebrow: agentName + " Task",
+          emptyMessage: "No " + agentName + " automation results have been reported for today yet.",
+          historyEmptyMessage: "No " + agentName + " history has been generated yet."
+        },
+        runs: agentRuns
+      };
+    })
+    .sort((left, right) => left.board.agentName.localeCompare(right.board.agentName));
 }
 
 function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }) {
