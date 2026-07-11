@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-07-11T08:18:12.770Z",
+  "generatedAt": "2026-07-11T12:31:38.852Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
     {
       "date": "2026-07-11",
       "taskId": "daily-news-digest",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日科技资讯摘要",
       "status": "success",
       "summary": "WorkBuddy 每日任务示例：聚合今日科技领域值得关注的三条动态，涵盖 AI 模型开源、芯片供应链和开源协议变更。",

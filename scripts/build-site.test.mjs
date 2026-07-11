@@ -4,7 +4,15 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { buildSite, collectRuns, dateInTimeZone, normalizeRun, CODEX_BOARD, WORKBUDDY_BOARD } from "./build-site.mjs";
+import {
+  AGENTS_BOARD,
+  CODEX_BOARD,
+  WORKBUDDY_BOARD,
+  buildSite,
+  collectRuns,
+  dateInTimeZone,
+  normalizeRun
+} from "./build-site.mjs";
 
 test("dateInTimeZone returns the Asia/Shanghai calendar date", () => {
   const date = new Date("2026-07-04T18:00:00.000Z");
@@ -35,6 +43,47 @@ test("normalizeRun validates and normalizes a result file", () => {
   assert.equal(run.duration, "1m 30s");
   assert.deepEqual(run.labels, ["review"]);
   assert.equal(run.sourceFile, "runs/2026-07-05/daily-review.json");
+});
+
+test("normalizeRun supports required personal agent attribution", () => {
+  const filePath = path.join(os.tmpdir(), "runs-agents", "2026-07-05", "alice--daily-review.json");
+  const run = normalizeRun(
+    {
+      agentId: "alice-agent",
+      agentName: "Alice Agent",
+      agentRole: "Personal research assistant",
+      taskId: "daily-review",
+      taskName: "Daily Review",
+      status: "success",
+      summary: "Review completed."
+    },
+    filePath,
+    path.join(os.tmpdir()),
+    { requireAgent: true }
+  );
+
+  assert.equal(run.agentId, "alice-agent");
+  assert.equal(run.agentName, "Alice Agent");
+  assert.equal(run.agentRole, "Personal research assistant");
+});
+
+test("normalizeRun rejects shared agent records without agentId", () => {
+  const filePath = path.join(os.tmpdir(), "runs-agents", "2026-07-05", "daily-review.json");
+  assert.throws(
+    () =>
+      normalizeRun(
+        {
+          taskId: "daily-review",
+          taskName: "Daily Review",
+          status: "success",
+          summary: "Review completed."
+        },
+        filePath,
+        path.join(os.tmpdir()),
+        { requireAgent: true }
+      ),
+    /agentId/
+  );
 });
 
 test("collectRuns reads nested result JSON files in descending order", async () => {
@@ -112,9 +161,13 @@ test("buildSite includes the WorkBuddy nav tab on all pages", async () => {
 
   await assertFileContains(path.join(outDir, "index.html"), "WorkBuddy");
   await assertFileContains(path.join(outDir, "index.html"), 'href="workbuddy.html"');
+  await assertFileContains(path.join(outDir, "index.html"), 'href="agents.html"');
   await assertFileContains(path.join(outDir, "history.html"), 'href="workbuddy.html"');
+  await assertFileContains(path.join(outDir, "history.html"), 'href="agents.html"');
   await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), 'href="../workbuddy.html"');
+  await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), 'href="../agents.html"');
   await assertFileContains(path.join(outDir, "tasks", "example-task.html"), 'href="../workbuddy.html"');
+  await assertFileContains(path.join(outDir, "tasks", "example-task.html"), 'href="../agents.html"');
 });
 
 test("buildSite generates WorkBuddy board pages from runs-workbuddy", async () => {
@@ -195,12 +248,89 @@ test("buildSite handles empty WorkBuddy directory gracefully", async () => {
   await assertFileContains(path.join(outDir, "workbuddy-history.html"), "No WorkBuddy history");
 });
 
-test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () => {
+test("buildSite generates shared personal agent board pages from runs-agents", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agents-site-"));
+  const runsDir = path.join(tempDir, "runs");
+  const agentsRunsDir = path.join(tempDir, "runs-agents");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(runsDir, "2026-07-05", "codex-task.json"), {
+    taskId: "codex-task",
+    taskName: "Codex Task",
+    status: "success",
+    summary: "Codex result."
+  });
+
+  await writeJson(path.join(agentsRunsDir, "2026-07-05", "alice--market-scan.json"), {
+    agentId: "alice-agent",
+    agentName: "Alice Agent",
+    agentRole: "Market scanner",
+    taskId: "market-scan",
+    taskName: "Market Scan",
+    status: "success",
+    summary: "Agent result."
+  });
+
+  const result = await buildSite({
+    runsDir,
+    agentsRunsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  assert.equal(result.agentRunCount, 1);
+  await assertFileContains(path.join(outDir, "agents.html"), "Market Scan");
+  await assertFileContains(path.join(outDir, "agents.html"), "Alice Agent");
+  await assertFileContains(path.join(outDir, "agent-history.html"), "All recorded agent days");
+  await assertFileContains(path.join(outDir, "agent-days", "2026-07-05.html"), "Agent result.");
+  await assertFileContains(path.join(outDir, "agent-tasks", "market-scan.html"), "Market scanner");
+  await assertFileContains(path.join(outDir, "data", "agent-runs.json"), "alice-agent");
+
+  const codexIndex = await fs.readFile(path.join(outDir, "index.html"), "utf8");
+  assert.ok(!codexIndex.includes("Agent result."), "Codex index must not contain shared agent run data");
+});
+
+test("buildSite handles empty personal agent directory gracefully", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agents-empty-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(runsDir, "2026-07-05", "codex-task.json"), {
+    taskId: "codex-task",
+    taskName: "Codex Task",
+    status: "success",
+    summary: "Codex result."
+  });
+
+  const result = await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  assert.equal(result.agentRunCount, 0);
+  await assertFileContains(path.join(outDir, "agents.html"), "No personal agent results");
+  await assertFileContains(path.join(outDir, "agent-history.html"), "No personal agent history");
+});
+
+test("CODEX_BOARD, WORKBUDDY_BOARD, and AGENTS_BOARD have distinct directories and files", () => {
   assert.notEqual(CODEX_BOARD.dayDir, WORKBUDDY_BOARD.dayDir);
+  assert.notEqual(CODEX_BOARD.dayDir, AGENTS_BOARD.dayDir);
+  assert.notEqual(WORKBUDDY_BOARD.dayDir, AGENTS_BOARD.dayDir);
   assert.notEqual(CODEX_BOARD.taskDir, WORKBUDDY_BOARD.taskDir);
+  assert.notEqual(CODEX_BOARD.taskDir, AGENTS_BOARD.taskDir);
+  assert.notEqual(WORKBUDDY_BOARD.taskDir, AGENTS_BOARD.taskDir);
   assert.notEqual(CODEX_BOARD.indexFile, WORKBUDDY_BOARD.indexFile);
+  assert.notEqual(CODEX_BOARD.indexFile, AGENTS_BOARD.indexFile);
+  assert.notEqual(WORKBUDDY_BOARD.indexFile, AGENTS_BOARD.indexFile);
   assert.notEqual(CODEX_BOARD.historyFile, WORKBUDDY_BOARD.historyFile);
+  assert.notEqual(CODEX_BOARD.historyFile, AGENTS_BOARD.historyFile);
+  assert.notEqual(WORKBUDDY_BOARD.historyFile, AGENTS_BOARD.historyFile);
   assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
+  assert.notEqual(CODEX_BOARD.dataFile, AGENTS_BOARD.dataFile);
+  assert.notEqual(WORKBUDDY_BOARD.dataFile, AGENTS_BOARD.dataFile);
 });
 
 async function writeJson(filePath, value) {
@@ -212,4 +342,3 @@ async function assertFileContains(filePath, expected) {
   const content = await fs.readFile(filePath, "utf8");
   assert.match(content, new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
 }
-

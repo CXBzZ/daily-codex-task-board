@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-07-11T08:18:12.770Z",
+  "generatedAt": "2026-07-11T12:31:38.852Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
     {
       "date": "2026-07-11",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是回流防止装置检测与交叉连接控制服务。它围绕供水安全、地方水务年度检测、认证仪表和合规报告形成需求，适合有水管、灌溉、消防或水务经验的人，不适合把它当成无证低门槛副业。",
@@ -71,6 +74,9 @@
     {
       "date": "2026-07-10",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是实时字幕/CART 无障碍转写服务。它围绕会议、课堂、直播、医疗和公共服务中的听障无障碍沟通需求形成专业服务，收入来自高实时准确率、专业设备、合规交付和客户的 ADA/教育/广播字幕责任。",
@@ -140,6 +146,9 @@
     {
       "date": "2026-07-09",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是商业/公共游乐场安全检查与维护服务。它面向学校、幼儿园、社区公园、HOA、购物中心和市政公园，收入来自 CPSI 安全检查、风险报告、维修整改、铺面维护和周期性巡检，但核心门槛是标准理解、责任保险和合规记录能力。",
@@ -204,6 +213,9 @@
     {
       "date": "2026-07-08",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是非虚构图书索引编制服务。它是出版流程里靠专业阅读、术语判断和交叉引用设计赚钱的细分自由职业，适合有学科背景、编辑意识和耐心的人，不适合追求快速变现的人。",
@@ -264,6 +276,9 @@
     {
       "date": "2026-07-07",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是美国住宅氡气检测与缓解服务。它围绕房屋交易、室内空气安全和州级持证要求形成需求，收入来自检测、缓解系统安装、复测、维护和合规报告，但必须按当地法规、ANSI/AARST 标准和专业伦理执行。",
@@ -317,6 +332,9 @@
     {
       "date": "2026-07-06",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是中国市场的高效节水灌溉与水肥一体化安装运维服务。它面向家庭农场、合作社、设施农业基地、果园、蔬菜大棚和高标准农田项目，收入来自方案设计、设备集成、安装施工、调试培训和后续运维，核心机会来自农业节水、高标准农田和规模化种植需求。",
@@ -378,6 +396,9 @@
     {
       "date": "2026-07-05",
       "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "每日小众赚钱行业科普",
       "status": "success",
       "summary": "今天的小众行业是商用厨房油烟/排风系统清洗服务。它不是普通保洁，而是围绕餐厅、酒店、食堂油烟管道消防合规形成的周期性 B2B 服务，利润来自高脏累门槛、夜间作业和合规文档能力。",
@@ -429,6 +450,9 @@
     {
       "date": "2026-07-05",
       "taskId": "example-codex-task",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
       "taskName": "Example Codex Task",
       "status": "success",
       "summary": "The dashboard repository was initialized with the shared result contract and static rendering flow.",

@@ -65,6 +65,28 @@ export const WORKBUDDY_BOARD = {
   historyEmptyMessage: "No WorkBuddy history has been generated yet."
 };
 
+export const AGENTS_BOARD = {
+  key: "agents",
+  sourceLabel: "Personal Agent",
+  eyebrow: "Multi-Agent Task Board",
+  title: "Personal agent tasks",
+  lede: "A shared dashboard for any personal assistant agent that reports structured task results.",
+  dayDir: "agent-days",
+  taskDir: "agent-tasks",
+  indexFile: "agents.html",
+  historyFile: "agent-history.html",
+  dataFile: "agent-runs.json",
+  indexActive: "agents",
+  historyActive: "agents",
+  taskActive: "agents",
+  historyEyebrow: "Agent History",
+  historyTitle: "All recorded agent days",
+  dayEyebrow: "Agent Day",
+  taskEyebrow: "Agent Task",
+  emptyMessage: "No personal agent results have been reported for today yet.",
+  historyEmptyMessage: "No personal agent history has been generated yet."
+};
+
 const TASK_ID_PATTERN = /^[a-z0-9][a-z0-9._-]{1,80}$/;
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -112,7 +134,7 @@ export function assertIsoTimestamp(value, fieldName, filePath) {
   return value;
 }
 
-export function normalizeRun(raw, filePath, rootDir = ROOT) {
+export function normalizeRun(raw, filePath, rootDir = ROOT, options = {}) {
   const date = path.basename(path.dirname(filePath));
   if (!DATE_PATTERN.test(date)) {
     throw new Error(`${filePath}: parent folder must be a YYYY-MM-DD date.`);
@@ -137,10 +159,19 @@ export function normalizeRun(raw, filePath, rootDir = ROOT) {
   const artifacts = normalizeArtifacts(raw.artifacts, filePath);
   const startedAt = assertIsoTimestamp(raw.startedAt, "startedAt", filePath);
   const finishedAt = assertIsoTimestamp(raw.finishedAt, "finishedAt", filePath);
+  const agentId = normalizeAgentId(raw.agentId, filePath, options);
+  const agentName = normalizeOptionalString(raw.agentName, "agentName", filePath);
+  const agentRole = normalizeOptionalString(raw.agentRole, "agentRole", filePath);
+  if (options.requireAgent && !agentName) {
+    throw new Error(`${filePath}: missing required string field "agentName".`);
+  }
 
   return {
     date,
     taskId,
+    agentId,
+    agentName,
+    agentRole,
     taskName: raw.taskName.trim(),
     status,
     summary: raw.summary.trim(),
@@ -154,6 +185,33 @@ export function normalizeRun(raw, filePath, rootDir = ROOT) {
     artifacts,
     sourceFile: path.relative(rootDir, filePath).split(path.sep).join("/")
   };
+}
+
+function normalizeAgentId(value, filePath, options) {
+  if (value === undefined || value === null || value === "") {
+    if (options.requireAgent) {
+      throw new Error(`${filePath}: missing required string field "agentId".`);
+    }
+    return "";
+  }
+
+  if (typeof value !== "string") {
+    throw new Error(`${filePath}: agentId must be a string.`);
+  }
+
+  return slugifyTaskId(value);
+}
+
+function normalizeOptionalString(value, fieldName, filePath) {
+  if (value === undefined || value === null || value === "") {
+    return "";
+  }
+
+  if (typeof value !== "string") {
+    throw new Error(`${filePath}: ${fieldName} must be a string.`);
+  }
+
+  return value.trim();
 }
 
 function normalizeStringArray(value, fieldName, filePath) {
@@ -211,13 +269,13 @@ function formatDuration(startedAt, finishedAt) {
   return remainingSeconds ? `${minutes}m ${remainingSeconds}s` : `${minutes}m`;
 }
 
-export async function collectRuns(runsDir = path.join(ROOT, "runs"), rootDir = ROOT) {
+export async function collectRuns(runsDir = path.join(ROOT, "runs"), rootDir = ROOT, options = {}) {
   const files = await listJsonFiles(runsDir);
   const runs = [];
 
   for (const filePath of files) {
     const raw = JSON.parse(await fs.readFile(filePath, "utf8"));
-    runs.push(normalizeRun(raw, filePath, rootDir));
+    runs.push(normalizeRun(raw, filePath, rootDir, options));
   }
 
   return runs.sort(compareRunsDescending);
@@ -263,15 +321,18 @@ function compareTimestampDescending(a, b) {
 export async function buildSite({
   runsDir = path.join(ROOT, "runs"),
   workbuddyRunsDir,
+  agentsRunsDir,
   outDir = path.join(ROOT, "public"),
   now = new Date(),
   timeZone = DEFAULT_TIME_ZONE
 } = {}) {
   const rootDir = path.resolve(runsDir, "..");
   const workbuddyDir = workbuddyRunsDir || path.join(rootDir, "runs-workbuddy");
+  const agentsDir = agentsRunsDir || path.join(rootDir, "runs-agents");
 
   const codexRuns = await collectRuns(runsDir, rootDir);
   const workbuddyRuns = await collectRuns(workbuddyDir, rootDir);
+  const agentRuns = await collectRuns(agentsDir, rootDir, { requireAgent: true });
 
   const today = dateInTimeZone(now, timeZone);
   const generatedAt = now.toISOString();
@@ -280,6 +341,8 @@ export async function buildSite({
   const codexByTask = groupBy(codexRuns, (run) => run.taskId);
   const workbuddyByDay = groupBy(workbuddyRuns, (run) => run.date);
   const workbuddyByTask = groupBy(workbuddyRuns, (run) => run.taskId);
+  const agentsByDay = groupBy(agentRuns, (run) => run.date);
+  const agentsByTask = groupBy(agentRuns, (run) => run.taskId);
 
   await fs.rm(outDir, { recursive: true, force: true });
   await fs.mkdir(path.join(outDir, "assets"), { recursive: true });
@@ -295,6 +358,11 @@ export async function buildSite({
   await fs.writeFile(
     path.join(outDir, "data", WORKBUDDY_BOARD.dataFile),
     `${JSON.stringify({ generatedAt, timeZone, runs: workbuddyRuns }, null, 2)}${os.EOL}`,
+    "utf8"
+  );
+  await fs.writeFile(
+    path.join(outDir, "data", AGENTS_BOARD.dataFile),
+    `${JSON.stringify({ generatedAt, timeZone, runs: agentRuns }, null, 2)}${os.EOL}`,
     "utf8"
   );
 
@@ -320,6 +388,17 @@ export async function buildSite({
     timeZone
   });
 
+  await renderBoardPages({
+    runs: agentRuns,
+    groupedByDay: agentsByDay,
+    groupedByTask: agentsByTask,
+    board: AGENTS_BOARD,
+    outDir,
+    today,
+    generatedAt,
+    timeZone
+  });
+
   return {
     generatedAt,
     runCount: codexRuns.length,
@@ -327,7 +406,10 @@ export async function buildSite({
     taskCount: codexByTask.size,
     workbuddyRunCount: workbuddyRuns.length,
     workbuddyDayCount: workbuddyByDay.size,
-    workbuddyTaskCount: workbuddyByTask.size
+    workbuddyTaskCount: workbuddyByTask.size,
+    agentRunCount: agentRuns.length,
+    agentDayCount: agentsByDay.size,
+    agentTaskCount: agentsByTask.size
   };
 }
 
@@ -496,6 +578,7 @@ function layout({ title, active, body, generatedAt, timeZone, base }) {
         <a ${active === "today" ? 'aria-current="page"' : ""} href="${base}index.html">Today</a>
         <a ${active === "history" ? 'aria-current="page"' : ""} href="${base}history.html">History</a>
         <a ${active === "workbuddy" ? 'aria-current="page"' : ""} href="${base}workbuddy.html">WorkBuddy</a>
+        <a ${active === "agents" ? 'aria-current="page"' : ""} href="${base}agents.html">Agents</a>
       </nav>
     </header>
     <main>
@@ -503,7 +586,7 @@ function layout({ title, active, body, generatedAt, timeZone, base }) {
     </main>
     <footer class="site-footer">
       <span>Generated ${escapeHtml(formatTimestamp(generatedAt, timeZone))}</span>
-      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code></span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
 </html>
@@ -529,6 +612,9 @@ function renderRunCard(run, base, board) {
   const sourceThread = run.sourceThread
     ? `<p class="meta-line"><span>Source</span>${escapeHtml(run.sourceThread)}</p>`
     : "";
+  const agent = run.agentName || run.agentId
+    ? `<p class="meta-line"><span>Agent</span>${escapeHtml(run.agentName || run.agentId)}${run.agentRole ? ` · ${escapeHtml(run.agentRole)}` : ""}</p>`
+    : "";
 
   return `
     <article class="run-card">
@@ -542,6 +628,7 @@ function renderRunCard(run, base, board) {
       <p class="summary">${escapeHtml(run.summary)}</p>
       ${details}
       <div class="run-meta">
+        ${agent}
         ${run.startedAt ? `<p class="meta-line"><span>Started</span>${escapeHtml(formatTimestamp(run.startedAt))}</p>` : ""}
         ${run.finishedAt ? `<p class="meta-line"><span>Finished</span>${escapeHtml(formatTimestamp(run.finishedAt))}</p>` : ""}
         ${run.duration ? `<p class="meta-line"><span>Duration</span>${escapeHtml(run.duration)}</p>` : ""}
@@ -980,7 +1067,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   buildSite()
     .then((result) => {
       console.log(
-        `Generated ${result.runCount} Codex runs across ${result.dayCount} days and ${result.taskCount} tasks, ${result.workbuddyRunCount} WorkBuddy runs across ${result.workbuddyDayCount} days and ${result.workbuddyTaskCount} tasks.`
+        `Generated ${result.runCount} Codex runs across ${result.dayCount} days and ${result.taskCount} tasks, ${result.workbuddyRunCount} WorkBuddy runs across ${result.workbuddyDayCount} days and ${result.workbuddyTaskCount} tasks, ${result.agentRunCount} shared agent runs across ${result.agentDayCount} days and ${result.agentTaskCount} tasks.`
       );
     })
     .catch((error) => {
