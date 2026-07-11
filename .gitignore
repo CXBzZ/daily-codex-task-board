@@ -6,4 +6,5 @@ npm-debug.log*
 !.env.example
 .worktrees/
 worktrees/
+.workbuddy/
 

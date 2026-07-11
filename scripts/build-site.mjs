@@ -16,6 +16,55 @@ export const STATUS_META = {
   needs_attention: { label: "Needs attention", className: "needs-attention" }
 };
 
+// Board configuration objects.
+// Each board describes one source of automation results and controls
+// how its pages are rendered and linked. Adding a new board only
+// requires a new config + a results directory — the rendering pipeline
+// is fully parameterized.
+export const CODEX_BOARD = {
+  key: "codex",
+  sourceLabel: "Codex",
+  eyebrow: "Codex Automation Board",
+  title: "Daily task results",
+  lede: "A generated dashboard for Codex automations, daily runs, and historical outcomes.",
+  dayDir: "days",
+  taskDir: "tasks",
+  indexFile: "index.html",
+  historyFile: "history.html",
+  dataFile: "runs.json",
+  indexActive: "today",
+  historyActive: "history",
+  taskActive: "tasks",
+  historyEyebrow: "History",
+  historyTitle: "All recorded days",
+  dayEyebrow: "Day",
+  taskEyebrow: "Task",
+  emptyMessage: "No Codex automation results have been reported for today yet.",
+  historyEmptyMessage: "No history has been generated yet."
+};
+
+export const WORKBUDDY_BOARD = {
+  key: "workbuddy",
+  sourceLabel: "WorkBuddy",
+  eyebrow: "WorkBuddy Automation Board",
+  title: "WorkBuddy daily tasks",
+  lede: "A generated dashboard for WorkBuddy automations, daily runs, and historical outcomes.",
+  dayDir: "workbuddy-days",
+  taskDir: "workbuddy-tasks",
+  indexFile: "workbuddy.html",
+  historyFile: "workbuddy-history.html",
+  dataFile: "workbuddy-runs.json",
+  indexActive: "workbuddy",
+  historyActive: "workbuddy",
+  taskActive: "workbuddy",
+  historyEyebrow: "WorkBuddy History",
+  historyTitle: "All recorded WorkBuddy days",
+  dayEyebrow: "WorkBuddy Day",
+  taskEyebrow: "WorkBuddy Task",
+  emptyMessage: "No WorkBuddy automation results have been reported for today yet.",
+  historyEmptyMessage: "No WorkBuddy history has been generated yet."
+};
+
 const TASK_ID_PATTERN = /^[a-z0-9][a-z0-9._-]{1,80}$/;
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -213,57 +262,105 @@ function compareTimestampDescending(a, b) {
 
 export async function buildSite({
   runsDir = path.join(ROOT, "runs"),
+  workbuddyRunsDir,
   outDir = path.join(ROOT, "public"),
   now = new Date(),
   timeZone = DEFAULT_TIME_ZONE
 } = {}) {
-  const runs = await collectRuns(runsDir, path.resolve(runsDir, ".."));
+  const rootDir = path.resolve(runsDir, "..");
+  const workbuddyDir = workbuddyRunsDir || path.join(rootDir, "runs-workbuddy");
+
+  const codexRuns = await collectRuns(runsDir, rootDir);
+  const workbuddyRuns = await collectRuns(workbuddyDir, rootDir);
+
   const today = dateInTimeZone(now, timeZone);
   const generatedAt = now.toISOString();
-  const groupedByDay = groupBy(runs, (run) => run.date);
-  const groupedByTask = groupBy(runs, (run) => run.taskId);
+
+  const codexByDay = groupBy(codexRuns, (run) => run.date);
+  const codexByTask = groupBy(codexRuns, (run) => run.taskId);
+  const workbuddyByDay = groupBy(workbuddyRuns, (run) => run.date);
+  const workbuddyByTask = groupBy(workbuddyRuns, (run) => run.taskId);
 
   await fs.rm(outDir, { recursive: true, force: true });
   await fs.mkdir(path.join(outDir, "assets"), { recursive: true });
-  await fs.mkdir(path.join(outDir, "days"), { recursive: true });
-  await fs.mkdir(path.join(outDir, "tasks"), { recursive: true });
   await fs.mkdir(path.join(outDir, "data"), { recursive: true });
 
   await fs.writeFile(path.join(outDir, "assets", "styles.css"), stylesheet(), "utf8");
+
   await fs.writeFile(
-    path.join(outDir, "data", "runs.json"),
-    `${JSON.stringify({ generatedAt, timeZone, runs }, null, 2)}${os.EOL}`,
+    path.join(outDir, "data", CODEX_BOARD.dataFile),
+    `${JSON.stringify({ generatedAt, timeZone, runs: codexRuns }, null, 2)}${os.EOL}`,
+    "utf8"
+  );
+  await fs.writeFile(
+    path.join(outDir, "data", WORKBUDDY_BOARD.dataFile),
+    `${JSON.stringify({ generatedAt, timeZone, runs: workbuddyRuns }, null, 2)}${os.EOL}`,
     "utf8"
   );
 
+  await renderBoardPages({
+    runs: codexRuns,
+    groupedByDay: codexByDay,
+    groupedByTask: codexByTask,
+    board: CODEX_BOARD,
+    outDir,
+    today,
+    generatedAt,
+    timeZone
+  });
+
+  await renderBoardPages({
+    runs: workbuddyRuns,
+    groupedByDay: workbuddyByDay,
+    groupedByTask: workbuddyByTask,
+    board: WORKBUDDY_BOARD,
+    outDir,
+    today,
+    generatedAt,
+    timeZone
+  });
+
+  return {
+    generatedAt,
+    runCount: codexRuns.length,
+    dayCount: codexByDay.size,
+    taskCount: codexByTask.size,
+    workbuddyRunCount: workbuddyRuns.length,
+    workbuddyDayCount: workbuddyByDay.size,
+    workbuddyTaskCount: workbuddyByTask.size
+  };
+}
+
+async function renderBoardPages({ runs, groupedByDay, groupedByTask, board, outDir, today, generatedAt, timeZone }) {
+  await fs.mkdir(path.join(outDir, board.dayDir), { recursive: true });
+  await fs.mkdir(path.join(outDir, board.taskDir), { recursive: true });
+
   await fs.writeFile(
-    path.join(outDir, "index.html"),
-    renderIndex({ runs, groupedByDay, today, generatedAt, timeZone }),
+    path.join(outDir, board.indexFile),
+    renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }),
     "utf8"
   );
   await fs.writeFile(
-    path.join(outDir, "history.html"),
-    renderHistory({ groupedByDay, generatedAt, timeZone }),
+    path.join(outDir, board.historyFile),
+    renderHistory({ groupedByDay, generatedAt, timeZone, board }),
     "utf8"
   );
 
   for (const [date, dayRuns] of groupedByDay) {
     await fs.writeFile(
-      path.join(outDir, "days", `${date}.html`),
-      renderDay({ date, runs: dayRuns, generatedAt, timeZone }),
+      path.join(outDir, board.dayDir, `${date}.html`),
+      renderDay({ date, runs: dayRuns, generatedAt, timeZone, board }),
       "utf8"
     );
   }
 
   for (const [taskId, taskRuns] of groupedByTask) {
     await fs.writeFile(
-      path.join(outDir, "tasks", `${taskId}.html`),
-      renderTask({ taskId, runs: taskRuns, generatedAt, timeZone }),
+      path.join(outDir, board.taskDir, `${taskId}.html`),
+      renderTask({ taskId, runs: taskRuns, generatedAt, timeZone, board }),
       "utf8"
     );
   }
-
-  return { generatedAt, runCount: runs.length, dayCount: groupedByDay.size, taskCount: groupedByTask.size };
 }
 
 function groupBy(items, getKey) {
@@ -280,7 +377,7 @@ function groupBy(items, getKey) {
   return groups;
 }
 
-function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone }) {
+function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }) {
   const todayRuns = groupedByDay.get(today) || [];
   const latestDate = groupedByDay.keys().next().value;
   const latestRuns = latestDate ? groupedByDay.get(latestDate) : [];
@@ -288,9 +385,9 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone }) {
   const body = `
     <section class="hero">
       <div>
-        <p class="eyebrow">Codex Automation Board</p>
-        <h1>Daily task results</h1>
-        <p class="lede">A generated dashboard for Codex automations, daily runs, and historical outcomes.</p>
+        <p class="eyebrow">${escapeHtml(board.eyebrow)}</p>
+        <h1>${escapeHtml(board.title)}</h1>
+        <p class="lede">${escapeHtml(board.lede)}</p>
       </div>
       <dl class="stats">
         <div><dt>Total runs</dt><dd>${runs.length}</dd></div>
@@ -305,9 +402,9 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone }) {
           <p class="eyebrow">Today</p>
           <h2>${today}</h2>
         </div>
-        ${todayRuns.length ? `<a class="text-link" href="days/${today}.html">Open day</a>` : ""}
+        ${todayRuns.length ? `<a class="text-link" href="${board.dayDir}/${today}.html">Open day</a>` : ""}
       </div>
-      ${todayRuns.length ? renderRunGrid(todayRuns, "") : renderEmptyState("No Codex automation results have been reported for today yet.")}
+      ${todayRuns.length ? renderRunGrid(todayRuns, "", board) : renderEmptyState(board.emptyMessage)}
     </section>
 
     ${
@@ -318,23 +415,23 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone }) {
                 <p class="eyebrow">Latest recorded day</p>
                 <h2>${latestDate}</h2>
               </div>
-              <a class="text-link" href="days/${latestDate}.html">Open day</a>
+              <a class="text-link" href="${board.dayDir}/${latestDate}.html">Open day</a>
             </div>
-            ${renderRunGrid(latestRuns, "")}
+            ${renderRunGrid(latestRuns, "", board)}
           </section>`
         : ""
     }
   `;
 
-  return layout({ title: "Daily task results", active: "today", body, generatedAt, timeZone, base: "" });
+  return layout({ title: board.title, active: board.indexActive, body, generatedAt, timeZone, base: "" });
 }
 
-function renderHistory({ groupedByDay, generatedAt, timeZone }) {
+function renderHistory({ groupedByDay, generatedAt, timeZone, board }) {
   const rows = [...groupedByDay.entries()]
     .map(([date, runs]) => {
       const counts = countByStatus(runs);
       return `
-        <a class="history-row" href="days/${date}.html">
+        <a class="history-row" href="${board.dayDir}/${date}.html">
           <span class="history-date">${date}</span>
           <span class="history-summary">${runs.length} run${runs.length === 1 ? "" : "s"}</span>
           <span class="status-strip">${renderStatusPills(counts)}</span>
@@ -345,42 +442,42 @@ function renderHistory({ groupedByDay, generatedAt, timeZone }) {
 
   const body = `
     <section class="page-title">
-      <p class="eyebrow">History</p>
-      <h1>All recorded days</h1>
+      <p class="eyebrow">${escapeHtml(board.historyEyebrow)}</p>
+      <h1>${escapeHtml(board.historyTitle)}</h1>
     </section>
     <section class="history-list">
-      ${rows || renderEmptyState("No history has been generated yet.")}
+      ${rows || renderEmptyState(board.historyEmptyMessage)}
     </section>
   `;
 
-  return layout({ title: "History", active: "history", body, generatedAt, timeZone, base: "" });
+  return layout({ title: board.historyTitle, active: board.historyActive, body, generatedAt, timeZone, base: "" });
 }
 
-function renderDay({ date, runs, generatedAt, timeZone }) {
+function renderDay({ date, runs, generatedAt, timeZone, board }) {
   const body = `
     <section class="page-title">
-      <p class="eyebrow">Day</p>
+      <p class="eyebrow">${escapeHtml(board.dayEyebrow)}</p>
       <h1>${date}</h1>
-      <p class="lede">${runs.length} Codex automation result${runs.length === 1 ? "" : "s"} recorded.</p>
+      <p class="lede">${runs.length} ${escapeHtml(board.sourceLabel)} automation result${runs.length === 1 ? "" : "s"} recorded.</p>
     </section>
-    ${renderRunGrid(runs, "../")}
+    ${renderRunGrid(runs, "../", board)}
   `;
 
-  return layout({ title: date, active: "history", body, generatedAt, timeZone, base: "../" });
+  return layout({ title: date, active: board.historyActive, body, generatedAt, timeZone, base: "../" });
 }
 
-function renderTask({ taskId, runs, generatedAt, timeZone }) {
+function renderTask({ taskId, runs, generatedAt, timeZone, board }) {
   const taskName = runs[0]?.taskName || taskId;
   const body = `
     <section class="page-title">
-      <p class="eyebrow">Task</p>
+      <p class="eyebrow">${escapeHtml(board.taskEyebrow)}</p>
       <h1>${escapeHtml(taskName)}</h1>
       <p class="lede">${runs.length} historical result${runs.length === 1 ? "" : "s"} for <code>${escapeHtml(taskId)}</code>.</p>
     </section>
-    ${renderRunGrid(runs, "../")}
+    ${renderRunGrid(runs, "../", board)}
   `;
 
-  return layout({ title: taskName, active: "tasks", body, generatedAt, timeZone, base: "../" });
+  return layout({ title: taskName, active: board.taskActive, body, generatedAt, timeZone, base: "../" });
 }
 
 function layout({ title, active, body, generatedAt, timeZone, base }) {
@@ -398,6 +495,7 @@ function layout({ title, active, body, generatedAt, timeZone, base }) {
       <nav aria-label="Primary">
         <a ${active === "today" ? 'aria-current="page"' : ""} href="${base}index.html">Today</a>
         <a ${active === "history" ? 'aria-current="page"' : ""} href="${base}history.html">History</a>
+        <a ${active === "workbuddy" ? 'aria-current="page"' : ""} href="${base}workbuddy.html">WorkBuddy</a>
       </nav>
     </header>
     <main>
@@ -405,18 +503,18 @@ function layout({ title, active, body, generatedAt, timeZone, base }) {
     </main>
     <footer class="site-footer">
       <span>Generated ${escapeHtml(formatTimestamp(generatedAt, timeZone))}</span>
-      <span>Source of truth: <code>runs/</code></span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code></span>
     </footer>
   </body>
 </html>
 `;
 }
 
-function renderRunGrid(runs, base) {
-  return `<div class="run-grid">${runs.map((run) => renderRunCard(run, base)).join("")}</div>`;
+function renderRunGrid(runs, base, board) {
+  return `<div class="run-grid">${runs.map((run) => renderRunCard(run, base, board)).join("")}</div>`;
 }
 
-function renderRunCard(run, base) {
+function renderRunCard(run, base, board) {
   const status = STATUS_META[run.status];
   const details = run.details ? `<div class="details">${escapeHtml(run.details)}</div>` : "";
   const labels = run.labels.length
@@ -436,8 +534,8 @@ function renderRunCard(run, base) {
     <article class="run-card">
       <div class="run-card-header">
         <div>
-          <a class="task-link" href="${base}tasks/${run.taskId}.html">${escapeHtml(run.taskName)}</a>
-          <p class="meta-line"><span>Date</span><a href="${base}days/${run.date}.html">${run.date}</a></p>
+          <a class="task-link" href="${base}${board.taskDir}/${run.taskId}.html">${escapeHtml(run.taskName)}</a>
+          <p class="meta-line"><span>Date</span><a href="${base}${board.dayDir}/${run.date}.html">${run.date}</a></p>
         </div>
         <span class="status ${status.className}">${status.label}</span>
       </div>
@@ -882,7 +980,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   buildSite()
     .then((result) => {
       console.log(
-        `Generated ${result.runCount} runs across ${result.dayCount} days and ${result.taskCount} tasks.`
+        `Generated ${result.runCount} Codex runs across ${result.dayCount} days and ${result.taskCount} tasks, ${result.workbuddyRunCount} WorkBuddy runs across ${result.workbuddyDayCount} days and ${result.workbuddyTaskCount} tasks.`
       );
     })
     .catch((error) => {
@@ -890,4 +988,3 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       process.exitCode = 1;
     });
 }
-

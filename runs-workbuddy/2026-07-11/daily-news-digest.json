@@ -1,0 +1,16 @@
+{
+  "taskId": "daily-news-digest",
+  "taskName": "每日科技资讯摘要",
+  "status": "success",
+  "startedAt": "2026-07-11T09:00:00+08:00",
+  "finishedAt": "2026-07-11T09:03:00+08:00",
+  "summary": "WorkBuddy 每日任务示例：聚合今日科技领域值得关注的三条动态，涵盖 AI 模型开源、芯片供应链和开源协议变更。",
+  "details": "本条目由 WorkBuddy 自动化生成，用于演示 WorkBuddy tab 的展示效果。\n\n1. 某开源大模型发布 v3 版本，推理速度提升 40%，采用 Apache 2.0 协议。\n2. 某芯片厂商宣布 2nm 制程试产时间表，预计 Q4 量产。\n3. 某主流开源项目将协议从 MIT 切换为 BUSL 1.1，社区讨论热烈。",
+  "sourceThread": "workbuddy-daily-run-001",
+  "labels": ["daily", "news-digest", "workbuddy", "sample"],
+  "nextSteps": [
+    "确认是否需要把每日摘要同步到外部笔记或知识库。",
+    "为感兴趣的主题设置后续深度调研任务。"
+  ],
+  "artifacts": []
+}

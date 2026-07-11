@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { buildSite, collectRuns, dateInTimeZone, normalizeRun } from "./build-site.mjs";
+import { buildSite, collectRuns, dateInTimeZone, normalizeRun, CODEX_BOARD, WORKBUDDY_BOARD } from "./build-site.mjs";
 
 test("dateInTimeZone returns the Asia/Shanghai calendar date", () => {
   const date = new Date("2026-07-04T18:00:00.000Z");
@@ -89,6 +89,118 @@ test("buildSite writes root, history, day, task, and data files", async () => {
   await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), "Example completed.");
   await assertFileContains(path.join(outDir, "tasks", "example-task.html"), "historical result");
   await assertFileContains(path.join(outDir, "data", "runs.json"), "example-task");
+});
+
+test("buildSite includes the WorkBuddy nav tab on all pages", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "codex-nav-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(runsDir, "2026-07-05", "example-task.json"), {
+    taskId: "example-task",
+    taskName: "Example Task",
+    status: "success",
+    summary: "Example completed."
+  });
+
+  await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  await assertFileContains(path.join(outDir, "index.html"), "WorkBuddy");
+  await assertFileContains(path.join(outDir, "index.html"), 'href="workbuddy.html"');
+  await assertFileContains(path.join(outDir, "history.html"), 'href="workbuddy.html"');
+  await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), 'href="../workbuddy.html"');
+  await assertFileContains(path.join(outDir, "tasks", "example-task.html"), 'href="../workbuddy.html"');
+});
+
+test("buildSite generates WorkBuddy board pages from runs-workbuddy", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "workbuddy-site-"));
+  const runsDir = path.join(tempDir, "runs");
+  const workbuddyRunsDir = path.join(tempDir, "runs-workbuddy");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(runsDir, "2026-07-05", "codex-task.json"), {
+    taskId: "codex-task",
+    taskName: "Codex Task",
+    status: "success",
+    summary: "Codex result."
+  });
+
+  await writeJson(path.join(workbuddyRunsDir, "2026-07-05", "wb-task.json"), {
+    taskId: "wb-task",
+    taskName: "WorkBuddy Task",
+    status: "success",
+    summary: "WorkBuddy result."
+  });
+
+  const result = await buildSite({
+    runsDir,
+    workbuddyRunsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  assert.equal(result.runCount, 1);
+  assert.equal(result.workbuddyRunCount, 1);
+
+  // WorkBuddy index page
+  await assertFileContains(path.join(outDir, "workbuddy.html"), "WorkBuddy Task");
+  await assertFileContains(path.join(outDir, "workbuddy.html"), 'aria-current="page"');
+  // WorkBuddy history page
+  await assertFileContains(path.join(outDir, "workbuddy-history.html"), "All recorded WorkBuddy days");
+  // WorkBuddy day page
+  await assertFileContains(path.join(outDir, "workbuddy-days", "2026-07-05.html"), "WorkBuddy result.");
+  // WorkBuddy task page
+  await assertFileContains(path.join(outDir, "workbuddy-tasks", "wb-task.html"), "historical result");
+  // WorkBuddy data feed
+  await assertFileContains(path.join(outDir, "data", "workbuddy-runs.json"), "wb-task");
+
+  // Codex pages must NOT contain WorkBuddy run data
+  const codexIndex = await fs.readFile(path.join(outDir, "index.html"), "utf8");
+  assert.ok(!codexIndex.includes("WorkBuddy result."), "Codex index must not contain WorkBuddy run data");
+  assert.ok(!codexIndex.includes("wb-task"), "Codex index must not link to WorkBuddy task pages");
+
+  // WorkBuddy pages must NOT contain Codex run data
+  const wbIndex = await fs.readFile(path.join(outDir, "workbuddy.html"), "utf8");
+  assert.ok(!wbIndex.includes("Codex result."), "WorkBuddy index must not contain Codex run data");
+  assert.ok(!wbIndex.includes("codex-task"), "WorkBuddy index must not link to Codex task pages");
+});
+
+test("buildSite handles empty WorkBuddy directory gracefully", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "workbuddy-empty-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(runsDir, "2026-07-05", "codex-task.json"), {
+    taskId: "codex-task",
+    taskName: "Codex Task",
+    status: "success",
+    summary: "Codex result."
+  });
+
+  const result = await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  assert.equal(result.workbuddyRunCount, 0);
+  await assertFileContains(path.join(outDir, "workbuddy.html"), "No WorkBuddy automation results");
+  await assertFileContains(path.join(outDir, "workbuddy-history.html"), "No WorkBuddy history");
+});
+
+test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () => {
+  assert.notEqual(CODEX_BOARD.dayDir, WORKBUDDY_BOARD.dayDir);
+  assert.notEqual(CODEX_BOARD.taskDir, WORKBUDDY_BOARD.taskDir);
+  assert.notEqual(CODEX_BOARD.indexFile, WORKBUDDY_BOARD.indexFile);
+  assert.notEqual(CODEX_BOARD.historyFile, WORKBUDDY_BOARD.historyFile);
+  assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
 });
 
 async function writeJson(filePath, value) {
