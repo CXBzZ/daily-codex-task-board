@@ -345,13 +345,13 @@ export async function buildSite({
 
   const today = dateInTimeZone(now, timeZone);
   const generatedAt = now.toISOString();
-
-  const codexByDay = groupBy(codexRuns, (run) => run.date);
-  const codexByTask = groupBy(codexRuns, (run) => run.taskId);
-  const workbuddyByDay = groupBy(workbuddyRuns, (run) => run.date);
-  const workbuddyByTask = groupBy(workbuddyRuns, (run) => run.taskId);
-  const agentsByDay = groupBy(agentRuns, (run) => run.date);
-  const agentsByTask = groupBy(agentRuns, (run) => run.taskId);
+  const discoveredBoards = createDiscoveredAgentBoards(agentRuns);
+  const contexts = [
+    createBoardContext(CODEX_BOARD, codexRuns),
+    createBoardContext(WORKBUDDY_BOARD, workbuddyRuns),
+    ...discoveredBoards.map(({ board, runs }) => createBoardContext(board, runs))
+  ];
+  const boards = contexts.map(({ board }) => board);
 
   await fs.rm(outDir, { recursive: true, force: true });
   await fs.mkdir(path.join(outDir, "assets"), { recursive: true });
@@ -359,99 +359,70 @@ export async function buildSite({
 
   await fs.writeFile(path.join(outDir, "assets", "styles.css"), stylesheet(), "utf8");
 
-  await fs.writeFile(
-    path.join(outDir, "data", CODEX_BOARD.dataFile),
-    `${JSON.stringify({ generatedAt, timeZone, runs: codexRuns }, null, 2)}${os.EOL}`,
-    "utf8"
-  );
-  await fs.writeFile(
-    path.join(outDir, "data", WORKBUDDY_BOARD.dataFile),
-    `${JSON.stringify({ generatedAt, timeZone, runs: workbuddyRuns }, null, 2)}${os.EOL}`,
-    "utf8"
-  );
-  await fs.writeFile(
-    path.join(outDir, "data", AGENTS_BOARD.dataFile),
-    `${JSON.stringify({ generatedAt, timeZone, runs: agentRuns }, null, 2)}${os.EOL}`,
-    "utf8"
-  );
+  for (const { board, runs } of contexts) {
+    await writeJsonFeed(outDir, board.dataFile, { generatedAt, timeZone, runs });
+  }
+  await writeJsonFeed(outDir, AGENTS_BOARD.dataFile, { generatedAt, timeZone, runs: agentRuns });
 
-  await renderBoardPages({
-    runs: codexRuns,
-    groupedByDay: codexByDay,
-    groupedByTask: codexByTask,
-    board: CODEX_BOARD,
-    outDir,
-    today,
-    generatedAt,
-    timeZone
-  });
-
-  await renderBoardPages({
-    runs: workbuddyRuns,
-    groupedByDay: workbuddyByDay,
-    groupedByTask: workbuddyByTask,
-    board: WORKBUDDY_BOARD,
-    outDir,
-    today,
-    generatedAt,
-    timeZone
-  });
-
-  await renderBoardPages({
-    runs: agentRuns,
-    groupedByDay: agentsByDay,
-    groupedByTask: agentsByTask,
-    board: AGENTS_BOARD,
-    outDir,
-    today,
-    generatedAt,
-    timeZone
-  });
+  for (const context of contexts) {
+    await renderBoardPages({ ...context, boards, outDir, today, generatedAt, timeZone });
+  }
 
   return {
     generatedAt,
     runCount: codexRuns.length,
-    dayCount: codexByDay.size,
-    taskCount: codexByTask.size,
+    dayCount: contexts[0].groupedByDay.size,
+    taskCount: contexts[0].groupedByTask.size,
     workbuddyRunCount: workbuddyRuns.length,
-    workbuddyDayCount: workbuddyByDay.size,
-    workbuddyTaskCount: workbuddyByTask.size,
+    workbuddyDayCount: contexts[1].groupedByDay.size,
+    workbuddyTaskCount: contexts[1].groupedByTask.size,
     agentRunCount: agentRuns.length,
-    agentDayCount: agentsByDay.size,
-    agentTaskCount: agentsByTask.size
+    agentCount: discoveredBoards.length,
+    agentDayCount: contexts.slice(2).reduce((count, context) => count + context.groupedByDay.size, 0),
+    agentTaskCount: contexts.slice(2).reduce((count, context) => count + context.groupedByTask.size, 0)
   };
 }
 
-async function renderBoardPages({ runs, groupedByDay, groupedByTask, board, outDir, today, generatedAt, timeZone }) {
+async function renderBoardPages({ runs, groupedByDay, groupedByTask, board, boards, outDir, today, generatedAt, timeZone }) {
   await fs.mkdir(path.join(outDir, board.dayDir), { recursive: true });
   await fs.mkdir(path.join(outDir, board.taskDir), { recursive: true });
 
-  await fs.writeFile(
-    path.join(outDir, board.indexFile),
-    renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }),
-    "utf8"
+  await writeBoardPage(
+    outDir,
+    board.indexFile,
+    renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board, boards, base: rootBase(board.indexFile) })
   );
-  await fs.writeFile(
-    path.join(outDir, board.historyFile),
-    renderHistory({ groupedByDay, generatedAt, timeZone, board }),
-    "utf8"
-  );
+  if (board.historyFile) {
+    await writeBoardPage(
+      outDir,
+      board.historyFile,
+      renderHistory({ groupedByDay, generatedAt, timeZone, board, boards, base: rootBase(board.historyFile) })
+    );
+  }
 
   for (const [date, dayRuns] of groupedByDay) {
-    await fs.writeFile(
-      path.join(outDir, board.dayDir, `${date}.html`),
-      renderDay({ date, runs: dayRuns, generatedAt, timeZone, board }),
-      "utf8"
+    const fileName = path.join(board.dayDir, `${date}.html`);
+    await writeBoardPage(
+      outDir,
+      fileName,
+      renderDay({ date, runs: dayRuns, generatedAt, timeZone, board, boards, base: rootBase(fileName) })
     );
   }
 
   for (const [taskId, taskRuns] of groupedByTask) {
-    await fs.writeFile(
-      path.join(outDir, board.taskDir, `${taskId}.html`),
-      renderTask({ taskId, runs: taskRuns, generatedAt, timeZone, board }),
-      "utf8"
+    const fileName = path.join(board.taskDir, `${taskId}.html`);
+    await writeBoardPage(
+      outDir,
+      fileName,
+      renderTask({ taskId, runs: taskRuns, generatedAt, timeZone, board, boards, base: rootBase(fileName) })
     );
   }
+}
+
+async function writeBoardPage(outDir, fileName, content) {
+  const filePath = path.join(outDir, fileName);
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  await fs.writeFile(filePath, content, "utf8");
 }
 
 function groupBy(items, getKey) {
@@ -466,6 +437,25 @@ function groupBy(items, getKey) {
   }
 
   return groups;
+}
+
+function createBoardContext(board, runs) {
+  return {
+    board,
+    runs,
+    groupedByDay: groupBy(runs, (run) => run.date),
+    groupedByTask: groupBy(runs, (run) => run.taskId)
+  };
+}
+
+async function writeJsonFeed(outDir, dataFile, payload) {
+  const filePath = path.join(outDir, "data", dataFile);
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  await fs.writeFile(filePath, JSON.stringify(payload, null, 2) + os.EOL, "utf8");
+}
+
+function rootBase(fileName) {
+  return "../".repeat(fileName.split("/").length - 1);
 }
 
 export function createDiscoveredAgentBoards(runs) {
@@ -503,7 +493,7 @@ export function createDiscoveredAgentBoards(runs) {
     .sort((left, right) => left.board.agentName.localeCompare(right.board.agentName));
 }
 
-function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }) {
+function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board, boards, base }) {
   const todayRuns = groupedByDay.get(today) || [];
   const latestDate = groupedByDay.keys().next().value;
   const latestRuns = latestDate ? groupedByDay.get(latestDate) : [];
@@ -528,9 +518,9 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }
           <p class="eyebrow">Today</p>
           <h2>${today}</h2>
         </div>
-        ${todayRuns.length ? `<a class="text-link" href="${board.dayDir}/${today}.html">Open day</a>` : ""}
+        ${todayRuns.length ? `<a class="text-link" href="${base}${board.dayDir}/${today}.html">Open day</a>` : ""}
       </div>
-      ${todayRuns.length ? renderRunGrid(todayRuns, "", board) : renderEmptyState(board.emptyMessage)}
+      ${todayRuns.length ? renderRunGrid(todayRuns, base, board) : renderEmptyState(board.emptyMessage)}
     </section>
 
     ${
@@ -541,23 +531,23 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board }
                 <p class="eyebrow">Latest recorded day</p>
                 <h2>${latestDate}</h2>
               </div>
-              <a class="text-link" href="${board.dayDir}/${latestDate}.html">Open day</a>
+              <a class="text-link" href="${base}${board.dayDir}/${latestDate}.html">Open day</a>
             </div>
-            ${renderRunGrid(latestRuns, "", board)}
+            ${renderRunGrid(latestRuns, base, board)}
           </section>`
         : ""
     }
   `;
 
-  return layout({ title: board.title, active: board.indexActive, body, generatedAt, timeZone, base: "" });
+  return layout({ title: board.title, active: board.indexActive, body, generatedAt, timeZone, boards, base });
 }
 
-function renderHistory({ groupedByDay, generatedAt, timeZone, board }) {
+function renderHistory({ groupedByDay, generatedAt, timeZone, board, boards, base }) {
   const rows = [...groupedByDay.entries()]
     .map(([date, runs]) => {
       const counts = countByStatus(runs);
       return `
-        <a class="history-row" href="${board.dayDir}/${date}.html">
+        <a class="history-row" href="${base}${board.dayDir}/${date}.html">
           <span class="history-date">${date}</span>
           <span class="history-summary">${runs.length} run${runs.length === 1 ? "" : "s"}</span>
           <span class="status-strip">${renderStatusPills(counts)}</span>
@@ -576,23 +566,23 @@ function renderHistory({ groupedByDay, generatedAt, timeZone, board }) {
     </section>
   `;
 
-  return layout({ title: board.historyTitle, active: board.historyActive, body, generatedAt, timeZone, base: "" });
+  return layout({ title: board.historyTitle, active: board.historyActive, body, generatedAt, timeZone, boards, base });
 }
 
-function renderDay({ date, runs, generatedAt, timeZone, board }) {
+function renderDay({ date, runs, generatedAt, timeZone, board, boards, base }) {
   const body = `
     <section class="page-title">
       <p class="eyebrow">${escapeHtml(board.dayEyebrow)}</p>
       <h1>${date}</h1>
       <p class="lede">${runs.length} ${escapeHtml(board.sourceLabel)} automation result${runs.length === 1 ? "" : "s"} recorded.</p>
     </section>
-    ${renderRunGrid(runs, "../", board)}
+    ${renderRunGrid(runs, base, board)}
   `;
 
-  return layout({ title: date, active: board.historyActive, body, generatedAt, timeZone, base: "../" });
+  return layout({ title: date, active: board.historyActive, body, generatedAt, timeZone, boards, base });
 }
 
-function renderTask({ taskId, runs, generatedAt, timeZone, board }) {
+function renderTask({ taskId, runs, generatedAt, timeZone, board, boards, base }) {
   const taskName = runs[0]?.taskName || taskId;
   const body = `
     <section class="page-title">
@@ -600,13 +590,13 @@ function renderTask({ taskId, runs, generatedAt, timeZone, board }) {
       <h1>${escapeHtml(taskName)}</h1>
       <p class="lede">${runs.length} historical result${runs.length === 1 ? "" : "s"} for <code>${escapeHtml(taskId)}</code>.</p>
     </section>
-    ${renderRunGrid(runs, "../", board)}
+    ${renderRunGrid(runs, base, board)}
   `;
 
-  return layout({ title: taskName, active: board.taskActive, body, generatedAt, timeZone, base: "../" });
+  return layout({ title: taskName, active: board.taskActive, body, generatedAt, timeZone, boards, base });
 }
 
-function layout({ title, active, body, generatedAt, timeZone, base }) {
+function layout({ title, active, body, generatedAt, timeZone, boards, base }) {
   return `<!doctype html>
 <html lang="en">
   <head>

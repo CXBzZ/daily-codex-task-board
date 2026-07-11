@@ -278,7 +278,56 @@ test("buildSite handles empty WorkBuddy directory gracefully", async () => {
   await assertFileContains(path.join(outDir, "workbuddy-history.html"), "No WorkBuddy history");
 });
 
-test("buildSite generates shared personal agent board pages from runs-agents", async () => {
+test("buildSite isolates agents with matching task ids", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-isolation-"));
+  const runsDir = path.join(tempDir, "runs");
+  const agentsRunsDir = path.join(tempDir, "runs-agents");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(agentsRunsDir, "2026-07-05", "alice--review.json"), {
+    agentId: "alice",
+    agentName: "Alice Agent",
+    agentRole: "Research",
+    taskId: "daily-review",
+    taskName: "Daily Review",
+    status: "success",
+    summary: "Alice result."
+  });
+  await writeJson(path.join(agentsRunsDir, "2026-07-05", "bob--review.json"), {
+    agentId: "bob",
+    agentName: "Bob Agent",
+    agentRole: "Operations",
+    taskId: "daily-review",
+    taskName: "Daily Review",
+    status: "needs_attention",
+    summary: "Bob result."
+  });
+
+  const result = await buildSite({
+    runsDir,
+    agentsRunsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  assert.equal(result.agentCount, 2);
+  await assertFileContains(path.join(outDir, "agents", "alice", "index.html"), "Alice result.");
+  await assertFileContains(path.join(outDir, "agents", "alice", "tasks", "daily-review.html"), "Alice result.");
+  await assertFileContains(path.join(outDir, "agents", "bob", "tasks", "daily-review.html"), "Bob result.");
+  await assertFileContains(path.join(outDir, "data", "agents", "alice.json"), "Alice result.");
+
+  const aliceTask = await fs.readFile(
+    path.join(outDir, "agents", "alice", "tasks", "daily-review.html"),
+    "utf8"
+  );
+  const aliceFeed = await fs.readFile(path.join(outDir, "data", "agents", "alice.json"), "utf8");
+  assert.ok(!aliceTask.includes("Bob result."));
+  assert.ok(!aliceFeed.includes("Bob result."));
+  await assertFileContains(path.join(outDir, "data", "agent-runs.json"), "Bob result.");
+});
+
+test("buildSite preserves the combined personal agent feed alongside isolated pages", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agents-site-"));
   const runsDir = path.join(tempDir, "runs");
   const agentsRunsDir = path.join(tempDir, "runs-agents");
@@ -310,18 +359,20 @@ test("buildSite generates shared personal agent board pages from runs-agents", a
   });
 
   assert.equal(result.agentRunCount, 1);
-  await assertFileContains(path.join(outDir, "agents.html"), "Market Scan");
-  await assertFileContains(path.join(outDir, "agents.html"), "Alice Agent");
-  await assertFileContains(path.join(outDir, "agent-history.html"), "All recorded agent days");
-  await assertFileContains(path.join(outDir, "agent-days", "2026-07-05.html"), "Agent result.");
-  await assertFileContains(path.join(outDir, "agent-tasks", "market-scan.html"), "Market scanner");
+  assert.equal(result.agentCount, 1);
+  assert.equal(result.agentDayCount, 1);
+  assert.equal(result.agentTaskCount, 1);
+  await assertFileContains(path.join(outDir, "agents", "alice-agent", "index.html"), "Market Scan");
+  await assertFileContains(path.join(outDir, "agents", "alice-agent", "days", "2026-07-05.html"), "Agent result.");
+  await assertFileContains(path.join(outDir, "agents", "alice-agent", "tasks", "market-scan.html"), "Market scanner");
+  await assertFileContains(path.join(outDir, "data", "agents", "alice-agent.json"), "alice-agent");
   await assertFileContains(path.join(outDir, "data", "agent-runs.json"), "alice-agent");
 
   const codexIndex = await fs.readFile(path.join(outDir, "index.html"), "utf8");
   assert.ok(!codexIndex.includes("Agent result."), "Codex index must not contain shared agent run data");
 });
 
-test("buildSite handles empty personal agent directory gracefully", async () => {
+test("buildSite handles empty personal agent data gracefully", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agents-empty-"));
   const runsDir = path.join(tempDir, "runs");
   const outDir = path.join(tempDir, "public");
@@ -341,8 +392,10 @@ test("buildSite handles empty personal agent directory gracefully", async () => 
   });
 
   assert.equal(result.agentRunCount, 0);
-  await assertFileContains(path.join(outDir, "agents.html"), "No personal agent results");
-  await assertFileContains(path.join(outDir, "agent-history.html"), "No personal agent history");
+  assert.equal(result.agentCount, 0);
+  assert.equal(result.agentDayCount, 0);
+  assert.equal(result.agentTaskCount, 0);
+  await assertFileContains(path.join(outDir, "data", "agent-runs.json"), '"runs": []');
 });
 
 test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () => {
