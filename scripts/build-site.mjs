@@ -38,7 +38,7 @@ export const CODEX_BOARD = {
   indexActive: "today",
   historyActive: "history",
   taskActive: "tasks",
-  historyEyebrow: "History",
+  historyEyebrow: "Codex History",
   historyTitle: "All recorded days",
   dayEyebrow: "Day",
   taskEyebrow: "Task",
@@ -368,6 +368,11 @@ export async function buildSite({
     await renderBoardPages({ ...context, boards, outDir, today, generatedAt, timeZone });
   }
 
+  const firstAgent = discoveredBoards[0]?.board;
+  const agentTarget = firstAgent ? firstAgent.indexFile : CODEX_BOARD.indexFile;
+  await writeBoardPage(outDir, AGENTS_BOARD.indexFile, renderRedirect(agentTarget));
+  await writeBoardPage(outDir, AGENTS_BOARD.historyFile, renderRedirect(agentTarget));
+
   return {
     generatedAt,
     runCount: codexRuns.length,
@@ -495,8 +500,6 @@ export function createDiscoveredAgentBoards(runs) {
 
 function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board, boards, base }) {
   const todayRuns = groupedByDay.get(today) || [];
-  const latestDate = groupedByDay.keys().next().value;
-  const latestRuns = latestDate ? groupedByDay.get(latestDate) : [];
 
   const body = `
     <section class="hero">
@@ -523,50 +526,45 @@ function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board, 
       ${todayRuns.length ? renderRunGrid(todayRuns, base, board) : renderEmptyState(board.emptyMessage)}
     </section>
 
-    ${
-      latestDate && latestDate !== today
-        ? `<section class="section">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">Latest recorded day</p>
-                <h2>${latestDate}</h2>
-              </div>
-              <a class="text-link" href="${base}${board.dayDir}/${latestDate}.html">Open day</a>
-            </div>
-            ${renderRunGrid(latestRuns, base, board)}
-          </section>`
-        : ""
-    }
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">History</p>
+          <h2>All recorded days</h2>
+        </div>
+      </div>
+      <div class="history-list">${renderHistoryRows(groupedByDay, board, base) || renderEmptyState(board.historyEmptyMessage)}</div>
+    </section>
   `;
 
-  return layout({ title: board.title, active: board.indexActive, body, generatedAt, timeZone, boards, base });
+  return layout({ title: board.title, body, generatedAt, timeZone, board, boards, base });
 }
 
 function renderHistory({ groupedByDay, generatedAt, timeZone, board, boards, base }) {
-  const rows = [...groupedByDay.entries()]
-    .map(([date, runs]) => {
-      const counts = countByStatus(runs);
-      return `
-        <a class="history-row" href="${base}${board.dayDir}/${date}.html">
-          <span class="history-date">${date}</span>
-          <span class="history-summary">${runs.length} run${runs.length === 1 ? "" : "s"}</span>
-          <span class="status-strip">${renderStatusPills(counts)}</span>
-        </a>
-      `;
-    })
-    .join("");
+  const rows = renderHistoryRows(groupedByDay, board, base);
 
   const body = `
     <section class="page-title">
       <p class="eyebrow">${escapeHtml(board.historyEyebrow)}</p>
       <h1>${escapeHtml(board.historyTitle)}</h1>
     </section>
-    <section class="history-list">
-      ${rows || renderEmptyState(board.historyEmptyMessage)}
-    </section>
+    <section class="history-list">${rows || renderEmptyState(board.historyEmptyMessage)}</section>
   `;
 
-  return layout({ title: board.historyTitle, active: board.historyActive, body, generatedAt, timeZone, boards, base });
+  return layout({ title: board.historyTitle, body, generatedAt, timeZone, board, boards, base });
+}
+
+function renderHistoryRows(groupedByDay, board, base) {
+  return [...groupedByDay.entries()]
+    .map(([date, runs]) => {
+      const counts = countByStatus(runs);
+      return `<a class="history-row" href="${base}${board.dayDir}/${date}.html">
+          <span class="history-date">${date}</span>
+          <span class="history-summary">${runs.length} run${runs.length === 1 ? "" : "s"}</span>
+          <span class="status-strip">${renderStatusPills(counts)}</span>
+        </a>`;
+    })
+    .join("");
 }
 
 function renderDay({ date, runs, generatedAt, timeZone, board, boards, base }) {
@@ -579,7 +577,7 @@ function renderDay({ date, runs, generatedAt, timeZone, board, boards, base }) {
     ${renderRunGrid(runs, base, board)}
   `;
 
-  return layout({ title: date, active: board.historyActive, body, generatedAt, timeZone, boards, base });
+  return layout({ title: date, body, generatedAt, timeZone, board, boards, base });
 }
 
 function renderTask({ taskId, runs, generatedAt, timeZone, board, boards, base }) {
@@ -593,10 +591,31 @@ function renderTask({ taskId, runs, generatedAt, timeZone, board, boards, base }
     ${renderRunGrid(runs, base, board)}
   `;
 
-  return layout({ title: taskName, active: board.taskActive, body, generatedAt, timeZone, boards, base });
+  return layout({ title: taskName, body, generatedAt, timeZone, board, boards, base });
 }
 
-function layout({ title, active, body, generatedAt, timeZone, boards, base }) {
+function renderAgentNav(boards, activeBoard, base) {
+  return '<nav class="agent-tabs" aria-label="Agents">' +
+    boards.map((entry) =>
+      '<a ' + (entry.key === activeBoard.key ? 'aria-current="page"' : '') +
+      ' href="' + base + entry.indexFile + '">' +
+      '<strong>' + escapeHtml(entry.agentName) + '</strong>' +
+      '<span>' + escapeHtml(entry.agentRole) + '</span></a>'
+    ).join("") +
+    "</nav>";
+}
+
+function renderRedirect(target) {
+  const safeTarget = escapeHtml(target);
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<meta http-equiv="refresh" content="0; url=' + safeTarget + '">' +
+    '<link rel="canonical" href="' + safeTarget + '">' +
+    '<title>Open agent · Daily Task Board</title></head>' +
+    '<body><a href="' + safeTarget + '">Open agent</a></body></html>';
+}
+
+function layout({ title, body, generatedAt, timeZone, board, boards, base }) {
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -608,16 +627,13 @@ function layout({ title, active, body, generatedAt, timeZone, boards, base }) {
   <body>
     <header class="site-header">
       <a class="brand" href="${base}index.html">Daily Codex Task Board</a>
-      <nav aria-label="Primary">
-        <a ${active === "today" ? 'aria-current="page"' : ""} href="${base}index.html">Today</a>
-        <a ${active === "history" ? 'aria-current="page"' : ""} href="${base}history.html">History</a>
-        <a ${active === "workbuddy" ? 'aria-current="page"' : ""} href="${base}workbuddy.html">WorkBuddy</a>
-        <a ${active === "agents" ? 'aria-current="page"' : ""} href="${base}agents.html">Agents</a>
-      </nav>
     </header>
-    <main>
-      ${body}
-    </main>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        ${renderAgentNav(boards, board, base)}
+      </aside>
+      <main>${body.trim()}</main>
+    </div>
     <footer class="site-footer">
       <span>Generated ${escapeHtml(formatTimestamp(generatedAt, timeZone))}</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
@@ -762,13 +778,12 @@ code {
 }
 
 .site-header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 20px clamp(20px, 5vw, 56px);
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.82);
+  display: flex;
+  min-height: 64px;
+  padding: 0 clamp(20px, 4vw, 56px);
   position: sticky;
   top: 0;
   z-index: 5;
@@ -780,27 +795,59 @@ code {
   text-decoration: none;
 }
 
-nav {
-  display: flex;
-  gap: 8px;
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(190px, 230px) minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: calc(100vh - 129px);
+  width: 100%;
 }
 
-nav a {
+.agent-sidebar {
+  align-self: start;
+  border-right: 1px solid var(--line);
+  min-height: calc(100vh - 64px);
+  padding: 28px 16px;
+  position: sticky;
+  top: 64px;
+}
+
+.agent-tabs {
+  display: grid;
+  gap: 6px;
+}
+
+.agent-tabs a {
+  border: 1px solid transparent;
   border-radius: 6px;
   color: var(--muted);
-  padding: 8px 10px;
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 10px 12px;
   text-decoration: none;
 }
 
-nav a[aria-current="page"] {
+.agent-tabs a[aria-current="page"] {
   background: #e5eeee;
+  border-color: #c6d8d5;
   color: var(--accent-strong);
 }
 
+.agent-tabs strong,
+.agent-tabs span {
+  overflow-wrap: anywhere;
+}
+
+.agent-tabs span {
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 main {
-  width: min(1180px, calc(100vw - 40px));
-  margin: 0 auto;
-  padding: 36px 0 56px;
+  min-width: 0;
+  padding: 36px clamp(20px, 4vw, 56px) 56px;
 }
 
 .hero {
@@ -828,8 +875,8 @@ p {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 6vw, 5rem);
-  line-height: 0.95;
+  font-size: 2.5rem;
+  line-height: 1.08;
   margin: 0;
 }
 
@@ -1069,7 +1116,6 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .site-header,
   .hero,
   .section-heading,
   .run-card-header,
@@ -1080,6 +1126,30 @@ h3 {
 
   .hero {
     display: flex;
+  }
+
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .agent-sidebar {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    min-height: 0;
+    padding: 18px 20px;
+    position: static;
+  }
+
+  .agent-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 28px 20px 44px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .stats {

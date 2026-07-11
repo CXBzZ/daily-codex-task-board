@@ -170,7 +170,7 @@ test("buildSite writes root, history, day, task, and data files", async () => {
   await assertFileContains(path.join(outDir, "data", "runs.json"), "example-task");
 });
 
-test("buildSite includes the WorkBuddy nav tab on all pages", async () => {
+test("buildSite includes the WorkBuddy agent tab on all board pages", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "codex-nav-"));
   const runsDir = path.join(tempDir, "runs");
   const outDir = path.join(tempDir, "public");
@@ -191,13 +191,9 @@ test("buildSite includes the WorkBuddy nav tab on all pages", async () => {
 
   await assertFileContains(path.join(outDir, "index.html"), "WorkBuddy");
   await assertFileContains(path.join(outDir, "index.html"), 'href="workbuddy.html"');
-  await assertFileContains(path.join(outDir, "index.html"), 'href="agents.html"');
   await assertFileContains(path.join(outDir, "history.html"), 'href="workbuddy.html"');
-  await assertFileContains(path.join(outDir, "history.html"), 'href="agents.html"');
   await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), 'href="../workbuddy.html"');
-  await assertFileContains(path.join(outDir, "days", "2026-07-05.html"), 'href="../agents.html"');
   await assertFileContains(path.join(outDir, "tasks", "example-task.html"), 'href="../workbuddy.html"');
-  await assertFileContains(path.join(outDir, "tasks", "example-task.html"), 'href="../agents.html"');
 });
 
 test("buildSite generates WorkBuddy board pages from runs-workbuddy", async () => {
@@ -404,6 +400,55 @@ test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () =
   assert.notEqual(CODEX_BOARD.indexFile, WORKBUDDY_BOARD.indexFile);
   assert.notEqual(CODEX_BOARD.historyFile, WORKBUDDY_BOARD.historyFile);
   assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
+});
+
+test("agent pages render vertical tabs, today state, history, and nested links", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-shell-"));
+  const runsDir = path.join(tempDir, "runs");
+  const workbuddyRunsDir = path.join(tempDir, "runs-workbuddy");
+  const agentsRunsDir = path.join(tempDir, "runs-agents");
+  const outDir = path.join(tempDir, "public");
+
+  await writeJson(path.join(agentsRunsDir, "2026-07-04", "alice--review.json"), {
+    agentId: "alice",
+    agentName: "Alice Agent",
+    agentRole: "Research",
+    taskId: "daily-review",
+    taskName: "Daily Review",
+    status: "success",
+    summary: "Historical Alice result."
+  });
+
+  await buildSite({
+    runsDir,
+    workbuddyRunsDir,
+    agentsRunsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const aliceHome = await fs.readFile(path.join(outDir, "agents", "alice", "index.html"), "utf8");
+  assert.match(aliceHome, /class="agent-tabs"/);
+  assert.match(aliceHome, /href="\.\.\/\.\.\/index\.html"/);
+  assert.match(aliceHome, /href="\.\.\/\.\.\/workbuddy\.html"/);
+  assert.match(aliceHome, /aria-current="page"[^>]*>[\s\S]*?<strong>Alice Agent<\/strong>/);
+  assert.match(aliceHome, /Today/);
+  assert.match(aliceHome, /History/);
+  assert.match(aliceHome, /No Alice Agent automation results/);
+  assert.match(aliceHome, /2026-07-04/);
+
+  const aliceDay = await fs.readFile(
+    path.join(outDir, "agents", "alice", "days", "2026-07-04.html"),
+    "utf8"
+  );
+  assert.match(aliceDay, /href="\.\.\/\.\.\/\.\.\/index\.html"/);
+  assert.match(aliceDay, /href="\.\.\/\.\.\/\.\.\/workbuddy\.html"/);
+
+  await assertFileContains(path.join(outDir, "history.html"), "Codex History");
+  await assertFileContains(path.join(outDir, "workbuddy-history.html"), "WorkBuddy History");
+  await assertFileContains(path.join(outDir, "agents.html"), "agents/alice/index.html");
+  await assertFileContains(path.join(outDir, "agent-history.html"), "agents/alice/index.html");
 });
 
 async function writeJson(filePath, value) {

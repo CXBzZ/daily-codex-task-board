@@ -3,25 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WorkBuddy daily tasks · Daily Codex Task Board</title>
+    <title>WorkBuddy · Daily Codex Task Board</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="index.html">Daily Codex Task Board</a>
-      <nav aria-label="Primary">
-        <a  href="index.html">Today</a>
-        <a  href="history.html">History</a>
-        <a aria-current="page" href="workbuddy.html">WorkBuddy</a>
-        <a  href="agents.html">Agents</a>
-      </nav>
     </header>
-    <main>
-      
-    <section class="hero">
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="hero">
       <div>
         <p class="eyebrow">WorkBuddy Automation Board</p>
-        <h1>WorkBuddy daily tasks</h1>
+        <h1>WorkBuddy</h1>
         <p class="lede">A generated dashboard for WorkBuddy automations, daily runs, and historical outcomes.</p>
       </div>
       <dl class="stats">
@@ -69,11 +65,22 @@
   </div>
     </section>
 
-    
-  
-    </main>
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">History</p>
+          <h2>All recorded days</h2>
+        </div>
+      </div>
+      <div class="history-list"><a class="history-row" href="workbuddy-days/2026-07-11.html">
+          <span class="history-date">2026-07-11</span>
+          <span class="history-summary">1 run</span>
+          <span class="status-strip"><span class="status success">Success: 1</span></span>
+        </a></div>
+    </section></main>
+    </div>
     <footer class="site-footer">
-      <span>Generated 11/07/2026, 20:31</span>
+      <span>Generated 11/07/2026, 21:29</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
