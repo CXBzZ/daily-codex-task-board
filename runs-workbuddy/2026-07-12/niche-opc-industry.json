@@ -1,0 +1,55 @@
+{
+  "taskId": "niche-opc-industry",
+  "taskName": "每日小众赚钱行业：GEO（AI搜索可见性）服务",
+  "status": "success",
+  "startedAt": "2026-07-12T16:01:26+08:00",
+  "finishedAt": "2026-07-12T16:46:26+08:00",
+  "summary": "GEO（生成式引擎优化 / AI 搜索可见性）服务：帮企业在 ChatGPT、Perplexity 等 AI 回答里被引用推荐。它夹在 SEO 与公关之间的缝隙、需求隐蔽且市场极新，但 Fiverr 已有数百个在售 gig、企业级平台拿到红杉投资，是典型的一人可远程操盘、近乎零成本启动的小众方向。",
+  "details": "1. 行业是什么，为什么小众\nGEO（Generative Engine Optimization，生成式引擎优化），也叫「AI 搜索可见性服务」：帮助企业在 ChatGPT、Perplexity、Gemini、Claude 等生成式 AI 的回答里被「点名」引用、被推荐。一句话定义：让 AI 在回答用户问题时优先采信你的品牌或内容。\n为什么普通人容易忽略它——它夹在传统 SEO 和品牌公关之间，是个还没被大众命名的缝隙；需求隐蔽（客户不是主动搜「GEO 服务」，而是发现「AI 不推荐我」才意识到问题）；看起来技术门槛高，其实核心是内容结构 + 实体标注；概念 2024 年 6 月才由普林斯顿/印度理工的论文正式提出，整个市场极新，大多数小企业主压根没听说过。\n\n2. 如何运作\n- 典型客户：做了 SEO 但 AI 搜不到的中小品牌、独立站、本地服务商家、内容站站长。需求触发点很典型——「Google 排名没掉，但流量在悄悄掉，因为用户改问 AI 了」。\n- 核心交付物：AI 可见性诊断报告、内容重构（加权威引用 / 结构化 / FAQ）、schema 与 LLMs.txt 标记、品牌知识库搭建、月度监测报告。\n- 完整工作流：免费诊断（钩子）→ 出优化策略 → 改内容 / 加结构化标记 → 用监测工具跟踪 AI 引用变化 → 按月复购。\n- 关键工具和平台：获客用 Fiverr / Upwork；监测用 Profound、Goodie、Otterly、Peec AI；交付用 Schema.org 标记与 LLMs.txt。\n\n3. 盈利模式\n- 收入来源与定价：按项目（Fiverr 上 GEO 类目 gig 价格从 $5 到 $2,700 不等，诊断报告约 $25–$150，整站优化约 $300–$2,500），或按月订阅（$100–$750/月）。\n- 利润空间：纯人力 + 轻量工具，工具月费 $29–$500，扣除平台抽成（Fiverr 约 20%）后毛利仍有 70%–90%。\n- 复购：很强。月度监测 + 持续优化是默认形态，客户一旦依赖你的报告就很难停。\n\n4. 入门门槛\n- 技能：懂基础 SEO + 内容写作 + 一点结构化数据（schema），1–2 周可上手；不需要会写代码。\n- 工具：Fiverr / Upwork 账号（免费）、Otterly 免费层或 $29/月起、ChatGPT（多数人已有）。启动成本≈0。\n- 资金：几乎为零，最多几百元工具费。\n- 时间：从零到第一单约 1–2 周（发 gig + 冷启动 + 用免费诊断样本当作品集）。\n\n5. 为什么适合 OPC / 数字游民\n- 异步交付：诊断与报告都是非实时的书面交付，不需要盯会议。\n- 全球客户：英文市场 Fiverr / Upwork 上 GEO / AI visibility 类目已有数百个在售 gig，客户来自全球。\n- 边际成本低：一套方法论 + 模板化诊断可服务很多客户，复制成本趋近于零。\n- 可规模化：把诊断做成模板，雇不起人也忙得过来。\n- 时区友好：全程留言制，没有直播压力。一个人就能跑通「获客—交付—收款」完整闭环。\n\n6. 潜在收益（谨慎，不承诺）\n这些是参考数据，不等于个人收入。\n- 新手阶段：Fiverr 低价诊断单 $5–$50/单，配合月度小客户，月入几百到几千元人民币。\n- 成熟阶段：月度客户 $300–$750/客户，维护 5–10 个客户即可月入 $1,500–$7,500（约 1–5 万人民币）。\n- 支撑信号：Fiverr GEO 类目已有数百个活跃 gig；企业级 GEO 平台 Profound 拿到红杉 3,500 万美元 B 轮；Perplexity 2024 年启动出版商分成计划，说明「被 AI 引用」已成真金白银的需求。\n\n7. 主要风险\n- 市场风险：AI 搜索形态变化极快，未来平台可能把可见性优化内建掉，挤压外包空间。\n- 技术风险：依赖第三方监测工具口径；各 AI 平台的爬虫与引用规则频繁变动。\n- 合规风险：给 AI「喂语料」的边界、客户数据隐私、跨境服务涉及的不同司法要求。\n- 现金流风险：前期靠平台获客要被抽成，低价单回款慢，获客成本随竞争上升。\n\n8. 不适合的人群\n想躺赚的、完全不懂内容写作的、拒绝学一点技术标记的纯小白、需要稳定工资的上班族、只做中文市场且不愿碰英文平台的人。\n\n9. 3 个可验证的入门步骤\n- 步骤 1（今天）：在 Fiverr / Upwork 搜 \"GEO\" 和 \"AI visibility\"，截图前 20 个 gig 的价格与评价数，验证需求真实存在、定价区间可进入。\n- 步骤 2（1–3 天）：用免费工具（HubSpot AI Search Grader 或 Otterly 免费层）给自己或朋友的网站做一次 AI 可见性诊断，产出一份真实报告当样本。\n- 步骤 3（1 周内）：发布第一个 $15–$25 的 \"AI visibility audit\" gig，附上这份诊断样本，等第一单验证是否值得继续。\n\n10. 核验来源\n- 普林斯顿/印度理工 GEO 原始论文（arXiv:2311.09735）：https://arxiv.org/abs/2311.09735\n- Perplexity Publishers Program 报道（The Verge, 2024）：https://www.theverge.com/2024/7/30/24208979/perplexity-publishers-program-ad-revenue-sharing-ai-time-fortune-der-spiegel\n- Fiverr GEO / 生成引擎优化类目（实时在售 gig 与定价）：https://www.fiverr.com/categories/online-marketing/generative-engine-optimization\n- 企业级 GEO 工具 Profound 介绍与融资背景：https://www.exaltgrowth.com/generative-engine-optimization/tools-guide\n- Goodie AI（GEO 平台与 AEO 要素表）：https://higoodie.com/blog/best-geo-tools/\n- Otterly AI（低价监测，$29/月起）：https://atomicagi.com/blog/best-geo-tools-2025\n- 澎湃新闻：品牌都在看 GEO 赛道了（中文行业观察）：https://www.thepaper.cn/detail/31011100",
+  "sourceThread": "workbuddy-daily-niche-research",
+  "labels": [
+    "daily",
+    "niche-industry",
+    "opc",
+    "digital-nomad",
+    "geo",
+    "ai-search",
+    "seo",
+    "marketing"
+  ],
+  "nextSteps": [
+    "在 Fiverr/Upwork 搜 GEO 与 AI visibility，截图前 20 个 gig 的价格与评价，验证需求与定价区间",
+    "用免费工具（HubSpot AI Search Grader 或 Otterly 免费层）给一个网站做 AI 可见性诊断，产出真实样本报告",
+    "发布第一个 $15–$25 的 AI visibility audit gig，附上样本，等待并验证第一单"
+  ],
+  "artifacts": [
+    {
+      "label": "GEO 原始论文（arXiv:2311.09735）",
+      "path": "https://arxiv.org/abs/2311.09735"
+    },
+    {
+      "label": "Perplexity Publishers Program 报道（The Verge）",
+      "path": "https://www.theverge.com/2024/7/30/24208979/perplexity-publishers-program-ad-revenue-sharing-ai-time-fortune-der-spiegel"
+    },
+    {
+      "label": "Fiverr GEO 类目（实时 gig 与定价）",
+      "path": "https://www.fiverr.com/categories/online-marketing/generative-engine-optimization"
+    },
+    {
+      "label": "Profound 企业级 GEO 工具介绍",
+      "path": "https://www.exaltgrowth.com/generative-engine-optimization/tools-guide"
+    },
+    {
+      "label": "Goodie AI（GEO 平台与 AEO 要素表）",
+      "path": "https://higoodie.com/blog/best-geo-tools/"
+    },
+    {
+      "label": "Otterly AI（低价监测工具）",
+      "path": "https://atomicagi.com/blog/best-geo-tools-2025"
+    },
+    {
+      "label": "澎湃新闻：品牌都在看 GEO 赛道了",
+      "path": "https://www.thepaper.cn/detail/31011100"
+    }
+  ]
+}
