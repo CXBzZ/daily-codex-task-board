@@ -1110,6 +1110,10 @@ h3 {
   min-width: 0;
 }
 
+.artifact-list a {
+  overflow-wrap: anywhere;
+}
+
 .history-list {
   display: grid;
   gap: 10px;

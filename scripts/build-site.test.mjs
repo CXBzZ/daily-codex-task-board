@@ -242,7 +242,11 @@ test("buildSite uses a total run order for board metadata, feeds, tabs, and lega
   const metadataHome = await fs.readFile(path.join(outDir, "agents", "metadata", "index.html"), "utf8");
   assert.match(metadataHome, /Metadata Winner/);
   assert.match(metadataHome, /Winner role/);
-  assert.ok(metadataHome.indexOf('href="../../agents/alpha/index.html"') < metadataHome.indexOf('href="../../agents/zeta/index.html"'));
+  const alphaLinkIndex = metadataHome.indexOf('href="../../agents/alpha/index.html"');
+  const zetaLinkIndex = metadataHome.indexOf('href="../../agents/zeta/index.html"');
+  assert.ok(alphaLinkIndex >= 0);
+  assert.ok(zetaLinkIndex >= 0);
+  assert.ok(alphaLinkIndex < zetaLinkIndex);
   await assertFileContains(path.join(outDir, "agents.html"), "url=agents/metadata/index.html");
   await assertFileContains(path.join(outDir, "agent-history.html"), "url=agents/metadata/index.html");
 });
@@ -547,6 +551,33 @@ test("generated CSS bounds the desktop agent sidebar and resets it on mobile", a
   const styles = await fs.readFile(path.join(outDir, "assets", "styles.css"), "utf8");
   assert.match(styles, /\.agent-sidebar\s*\{[^}]*max-height:\s*calc\(100vh - 64px\);[^}]*overflow-y:\s*auto;/s);
   assert.match(styles, /@media \(max-width: 760px\)\s*\{[\s\S]*?\.agent-sidebar\s*\{[^}]*max-height:\s*none;[^}]*overflow-y:\s*visible;/);
+});
+
+test("generated CSS wraps linked artifact labels", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "linked-artifact-wrap-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+  const longLabel = "Linked-" + "x".repeat(180);
+
+  await writeJson(path.join(runsDir, "2026-07-05", "linked-artifact.json"), {
+    taskId: "linked-artifact",
+    taskName: "Linked artifact",
+    status: "success",
+    summary: "Contains a long linked artifact label.",
+    artifacts: [{ label: longLabel, path: "https://example.com/artifact" }]
+  });
+
+  await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const styles = await fs.readFile(path.join(outDir, "assets", "styles.css"), "utf8");
+  const index = await fs.readFile(path.join(outDir, "index.html"), "utf8");
+  assert.match(styles, /\.artifact-list a\s*\{[^}]*overflow-wrap:\s*anywhere;/s);
+  assert.match(index, new RegExp(`<a href="https://example\\.com/artifact">${longLabel}</a>`));
 });
 
 test("buildSite renders long values in every unrestricted card field", async () => {
