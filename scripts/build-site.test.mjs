@@ -402,6 +402,22 @@ test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () =
   assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
 });
 
+test("generated CSS wraps unbroken task detail tokens", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "details-wrap-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+
+  await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const styles = await fs.readFile(path.join(outDir, "assets", "styles.css"), "utf8");
+  assert.match(styles, /\.details\s*\{[^}]*overflow-wrap:\s*anywhere;/s);
+});
+
 test("agent pages render vertical tabs, today state, history, and nested links", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-shell-"));
   const runsDir = path.join(tempDir, "runs");
