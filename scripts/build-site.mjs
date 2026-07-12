@@ -204,7 +204,13 @@ function normalizeAgentId(value, filePath, options) {
     throw new Error(`${filePath}: agentId must be a string.`);
   }
 
-  const agentId = slugifyTaskId(value);
+  if (options.requireAgent && !TASK_ID_PATTERN.test(value)) {
+    throw new Error(
+      `${filePath}: agentId must be a 2-81 character slug using lowercase letters, numbers, dots, underscores, or hyphens.`
+    );
+  }
+
+  const agentId = options.requireAgent ? value : slugifyTaskId(value);
   if (options.requireAgent && RESERVED_AGENT_IDS.has(agentId)) {
     throw new Error(filePath + ': reserved agentId "' + agentId + '" cannot be used in runs-agents.');
   }
@@ -292,7 +298,8 @@ export async function collectRuns(runsDir = path.join(ROOT, "runs"), rootDir = R
 
 async function listJsonFiles(dir) {
   try {
-    const entries = await fs.readdir(dir, { withFileTypes: true });
+    const entries = (await fs.readdir(dir, { withFileTypes: true }))
+      .sort((left, right) => compareStrings(left.name, right.name));
     const files = [];
 
     for (const entry of entries) {
@@ -304,7 +311,7 @@ async function listJsonFiles(dir) {
       }
     }
 
-    return files;
+    return files.sort(compareStrings);
   } catch (error) {
     if (error.code === "ENOENT") {
       return [];
@@ -315,10 +322,15 @@ async function listJsonFiles(dir) {
 
 function compareRunsDescending(a, b) {
   return (
-    b.date.localeCompare(a.date) ||
+    compareStrings(b.date, a.date) ||
     compareTimestampDescending(a.finishedAt || a.startedAt, b.finishedAt || b.startedAt) ||
-    a.taskName.localeCompare(b.taskName)
+    compareStrings(a.taskName, b.taskName) ||
+    compareStrings(a.sourceFile, b.sourceFile)
   );
+}
+
+function compareStrings(left, right) {
+  return left === right ? 0 : left < right ? -1 : 1;
 }
 
 function compareTimestampDescending(a, b) {
@@ -464,7 +476,7 @@ function rootBase(fileName) {
 }
 
 export function createDiscoveredAgentBoards(runs) {
-  return [...groupBy(runs, (run) => run.agentId).entries()]
+  return [...groupBy([...runs].sort(compareRunsDescending), (run) => run.agentId).entries()]
     .map(([agentId, agentRuns]) => {
       const latest = agentRuns[0];
       const agentName = latest.agentName;
@@ -495,7 +507,10 @@ export function createDiscoveredAgentBoards(runs) {
         runs: agentRuns
       };
     })
-    .sort((left, right) => left.board.agentName.localeCompare(right.board.agentName));
+    .sort((left, right) =>
+      compareStrings(left.board.agentName, right.board.agentName) ||
+      compareStrings(left.board.key, right.board.key)
+    );
 }
 
 function renderIndex({ runs, groupedByDay, today, generatedAt, timeZone, board, boards, base }) {
@@ -654,10 +669,10 @@ function renderRunCard(run, base, board) {
     ? `<div class="labels">${run.labels.map((label) => `<span>${escapeHtml(label)}</span>`).join("")}</div>`
     : "";
   const nextSteps = run.nextSteps.length
-    ? `<div class="subsection"><h3>Next steps</h3><ul>${run.nextSteps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul></div>`
+    ? `<div class="subsection next-steps"><h3>Next steps</h3><ul>${run.nextSteps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul></div>`
     : "";
   const artifacts = run.artifacts.length
-    ? `<div class="subsection"><h3>Artifacts</h3><ul>${run.artifacts.map((artifact) => renderArtifact(artifact)).join("")}</ul></div>`
+    ? `<div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list">${run.artifacts.map((artifact) => renderArtifact(artifact)).join("")}</ul></div>`
     : "";
   const sourceThread = run.sourceThread
     ? `<p class="meta-line"><span>Source</span>${escapeHtml(run.sourceThread)}</p>`
@@ -698,7 +713,7 @@ function renderArtifact(artifact) {
   const target = escapeHtml(artifact.path);
   return isUrl
     ? `<li><a href="${target}">${label}</a></li>`
-    : `<li><code>${target}</code> ${label}</li>`;
+    : `<li><code class="artifact-path">${target}</code> <span class="artifact-label">${label}</span></li>`;
 }
 
 function renderStatusPills(counts) {
@@ -807,7 +822,9 @@ code {
 .agent-sidebar {
   align-self: start;
   border-right: 1px solid var(--line);
+  max-height: calc(100vh - 64px);
   min-height: calc(100vh - 64px);
+  overflow-y: auto;
   padding: 28px 16px;
   position: sticky;
   top: 64px;
@@ -953,6 +970,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  min-width: 0;
   padding: 18px;
 }
 
@@ -962,9 +980,14 @@ h3 {
   gap: 16px;
 }
 
+.run-card-header > div {
+  min-width: 0;
+}
+
 .task-link {
   font-size: 1.08rem;
   font-weight: 800;
+  overflow-wrap: anywhere;
   text-decoration: none;
 }
 
@@ -1021,6 +1044,7 @@ h3 {
   display: grid;
   gap: 6px;
   margin-top: 16px;
+  min-width: 0;
   padding-top: 14px;
 }
 
@@ -1028,6 +1052,8 @@ h3 {
   color: var(--muted);
   font-size: 0.88rem;
   margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .meta-line span {
@@ -1042,6 +1068,7 @@ h3 {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 14px;
+  min-width: 0;
 }
 
 .labels span {
@@ -1049,11 +1076,13 @@ h3 {
   border-radius: 999px;
   color: #4b565c;
   font-size: 0.78rem;
+  overflow-wrap: anywhere;
   padding: 5px 8px;
 }
 
 .subsection {
   margin-top: 16px;
+  min-width: 0;
 }
 
 .subsection ul {
@@ -1063,6 +1092,22 @@ h3 {
 
 .subsection li {
   line-height: 1.6;
+}
+
+.next-steps li {
+  overflow-wrap: anywhere;
+}
+
+.artifact-path {
+  overflow-wrap: anywhere;
+}
+
+.artifact-label {
+  overflow-wrap: anywhere;
+}
+
+.artifact-list {
+  min-width: 0;
 }
 
 .history-list {
@@ -1136,7 +1181,9 @@ h3 {
   .agent-sidebar {
     border-bottom: 1px solid var(--line);
     border-right: 0;
+    max-height: none;
     min-height: 0;
+    overflow-y: visible;
     padding: 18px 20px;
     position: static;
   }

@@ -103,6 +103,38 @@ test("normalizeRun rejects external agents that use a reserved id", () => {
   assert.deepEqual([...RESERVED_AGENT_IDS], ["codex", "workbuddy"]);
 });
 
+test("normalizeRun requires external agentId values to already be safe slugs", () => {
+  const filePath = path.join(os.tmpdir(), "runs-agents", "2026-07-05", "agent--review.json");
+  const baseRun = {
+    agentName: "External Agent",
+    taskId: "daily-review",
+    taskName: "Daily Review",
+    status: "success",
+    summary: "Review completed."
+  };
+
+  for (const agentId of ["Uppercase-Agent", " padded-agent ", "agent/with/slashes"]) {
+    assert.throws(
+      () => normalizeRun({ ...baseRun, agentId }, filePath, path.join(os.tmpdir()), { requireAgent: true }),
+      (error) => {
+        assert.match(error.message, new RegExp(filePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+        assert.match(error.message, /agentId/);
+        assert.match(error.message, /2-81 character slug/);
+        assert.match(error.message, /lowercase letters, numbers, dots, underscores, or hyphens/);
+        return true;
+      },
+      agentId
+    );
+  }
+
+  for (const agentId of RESERVED_AGENT_IDS) {
+    assert.throws(
+      () => normalizeRun({ ...baseRun, agentId }, filePath, path.join(os.tmpdir()), { requireAgent: true }),
+      new RegExp(`reserved agentId "${agentId}"`)
+    );
+  }
+});
+
 test("createDiscoveredAgentBoards groups agents and sorts by display name", () => {
   const contexts = createDiscoveredAgentBoards([
     { agentId: "zeta", agentName: "Zeta Agent", agentRole: "Operations", taskId: "review", date: "2026-07-05" },
@@ -138,6 +170,81 @@ test("collectRuns reads nested result JSON files in descending order", async () 
   assert.equal(runs.length, 2);
   assert.equal(runs[0].taskId, "newer-task");
   assert.equal(runs[1].taskId, "older-task");
+});
+
+test("buildSite uses a total run order for board metadata, feeds, tabs, and legacy redirects", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-order-"));
+  const runsDir = path.join(tempDir, "runs");
+  const agentsRunsDir = path.join(tempDir, "runs-agents");
+  const outDir = path.join(tempDir, "public");
+  const date = "2026-07-05";
+  const finishedAt = "2026-07-05T08:00:00+08:00";
+  const baseRun = {
+    taskId: "same-task",
+    taskName: "Same Task",
+    status: "success",
+    summary: "Tied result.",
+    finishedAt
+  };
+
+  await writeJson(path.join(agentsRunsDir, date, "zeta--same-task.json"), {
+    ...baseRun,
+    agentId: "zeta",
+    agentName: "Shared Name",
+    agentRole: "Zeta role"
+  });
+  await writeJson(path.join(agentsRunsDir, date, "alpha--same-task.json"), {
+    ...baseRun,
+    agentId: "alpha",
+    agentName: "Shared Name",
+    agentRole: "Alpha role"
+  });
+  await writeJson(path.join(agentsRunsDir, date, "metadata--z.json"), {
+    ...baseRun,
+    agentId: "metadata",
+    agentName: "Metadata Loser",
+    agentRole: "Loser role"
+  });
+  await writeJson(path.join(agentsRunsDir, date, "metadata--a.json"), {
+    ...baseRun,
+    agentId: "metadata",
+    agentName: "Metadata Winner",
+    agentRole: "Winner role"
+  });
+
+  const tiedRuns = [
+    { ...baseRun, agentId: "zeta", agentName: "Shared Name", agentRole: "Zeta role", date, sourceFile: `runs-agents/${date}/zeta--same-task.json` },
+    { ...baseRun, agentId: "alpha", agentName: "Shared Name", agentRole: "Alpha role", date, sourceFile: `runs-agents/${date}/alpha--same-task.json` },
+    { ...baseRun, agentId: "metadata", agentName: "Metadata Loser", agentRole: "Loser role", date, sourceFile: `runs-agents/${date}/metadata--z.json` },
+    { ...baseRun, agentId: "metadata", agentName: "Metadata Winner", agentRole: "Winner role", date, sourceFile: `runs-agents/${date}/metadata--a.json` }
+  ];
+  const boards = createDiscoveredAgentBoards(tiedRuns);
+  assert.deepEqual(boards.map(({ board }) => board.key), ["metadata", "alpha", "zeta"]);
+  assert.equal(boards[0].board.agentName, "Metadata Winner");
+  assert.equal(boards[0].board.agentRole, "Winner role");
+
+  await buildSite({
+    runsDir,
+    agentsRunsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const feed = JSON.parse(await fs.readFile(path.join(outDir, "data", "agent-runs.json"), "utf8"));
+  assert.deepEqual(feed.runs.map((run) => run.sourceFile), [
+    `runs-agents/${date}/alpha--same-task.json`,
+    `runs-agents/${date}/metadata--a.json`,
+    `runs-agents/${date}/metadata--z.json`,
+    `runs-agents/${date}/zeta--same-task.json`
+  ]);
+
+  const metadataHome = await fs.readFile(path.join(outDir, "agents", "metadata", "index.html"), "utf8");
+  assert.match(metadataHome, /Metadata Winner/);
+  assert.match(metadataHome, /Winner role/);
+  assert.ok(metadataHome.indexOf('href="../../agents/alpha/index.html"') < metadataHome.indexOf('href="../../agents/zeta/index.html"'));
+  await assertFileContains(path.join(outDir, "agents.html"), "url=agents/metadata/index.html");
+  await assertFileContains(path.join(outDir, "agent-history.html"), "url=agents/metadata/index.html");
 });
 
 test("buildSite writes root, history, day, task, and data files", async () => {
@@ -392,6 +499,8 @@ test("buildSite handles empty personal agent data gracefully", async () => {
   assert.equal(result.agentDayCount, 0);
   assert.equal(result.agentTaskCount, 0);
   await assertFileContains(path.join(outDir, "data", "agent-runs.json"), '"runs": []');
+  await assertFileContains(path.join(outDir, "agents.html"), "url=index.html");
+  await assertFileContains(path.join(outDir, "agent-history.html"), "url=index.html");
 });
 
 test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () => {
@@ -402,7 +511,7 @@ test("CODEX_BOARD and WORKBUDDY_BOARD have distinct directories and files", () =
   assert.notEqual(CODEX_BOARD.dataFile, WORKBUDDY_BOARD.dataFile);
 });
 
-test("generated CSS wraps unbroken task detail tokens", async () => {
+test("generated CSS wraps every unrestricted long card field", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "details-wrap-"));
   const runsDir = path.join(tempDir, "runs");
   const outDir = path.join(tempDir, "public");
@@ -415,7 +524,72 @@ test("generated CSS wraps unbroken task detail tokens", async () => {
   });
 
   const styles = await fs.readFile(path.join(outDir, "assets", "styles.css"), "utf8");
-  assert.match(styles, /\.details\s*\{[^}]*overflow-wrap:\s*anywhere;/s);
+  for (const selector of [".details", ".task-link", ".labels span", ".next-steps li", ".artifact-path", ".meta-line"]) {
+    assert.match(styles, new RegExp(selector.replace(".", "\\.").replace(" ", "\\s+") + "\\s*\\{[^}]*overflow-wrap:\\s*anywhere;", "s"));
+  }
+  for (const selector of [".run-card", ".run-card-header > div", ".run-meta", ".labels", ".subsection"]) {
+    assert.match(styles, new RegExp(selector.replace(".", "\\.").replace(" > ", "\\s*>\\s*").replace(" ", "\\s+") + "\\s*\\{[^}]*min-width:\\s*0;", "s"));
+  }
+});
+
+test("generated CSS bounds the desktop agent sidebar and resets it on mobile", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "sidebar-scroll-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+
+  await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const styles = await fs.readFile(path.join(outDir, "assets", "styles.css"), "utf8");
+  assert.match(styles, /\.agent-sidebar\s*\{[^}]*max-height:\s*calc\(100vh - 64px\);[^}]*overflow-y:\s*auto;/s);
+  assert.match(styles, /@media \(max-width: 760px\)\s*\{[\s\S]*?\.agent-sidebar\s*\{[^}]*max-height:\s*none;[^}]*overflow-y:\s*visible;/);
+});
+
+test("buildSite renders long values in every unrestricted card field", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "long-card-fields-"));
+  const runsDir = path.join(tempDir, "runs");
+  const outDir = path.join(tempDir, "public");
+  const longToken = "x".repeat(180);
+  const longValues = {
+    taskName: `Task-${longToken}`,
+    summary: `Summary-${longToken}`,
+    details: `Details-${longToken}`,
+    sourceThread: `Source-${longToken}`,
+    label: `Label-${longToken}`,
+    nextStep: `Next-${longToken}`,
+    artifactLabel: `Artifact-${longToken}`,
+    artifactPath: `artifacts/${longToken}.json`
+  };
+
+  await writeJson(path.join(runsDir, "2026-07-05", "long-card.json"), {
+    taskId: "long-card",
+    taskName: longValues.taskName,
+    status: "success",
+    summary: longValues.summary,
+    details: longValues.details,
+    sourceThread: longValues.sourceThread,
+    labels: [longValues.label],
+    nextSteps: [longValues.nextStep],
+    artifacts: [{ label: longValues.artifactLabel, path: longValues.artifactPath }]
+  });
+
+  await buildSite({
+    runsDir,
+    outDir,
+    now: new Date("2026-07-05T02:00:00.000Z"),
+    timeZone: "Asia/Shanghai"
+  });
+
+  const index = await fs.readFile(path.join(outDir, "index.html"), "utf8");
+  for (const value of Object.values(longValues)) {
+    assert.ok(index.includes(value));
+  }
+  assert.match(index, /class="subsection next-steps"/);
+  assert.match(index, /class="artifact-path"/);
 });
 
 test("agent pages render vertical tabs, today state, history, and nested links", async () => {
@@ -460,6 +634,13 @@ test("agent pages render vertical tabs, today state, history, and nested links",
   );
   assert.match(aliceDay, /href="\.\.\/\.\.\/\.\.\/index\.html"/);
   assert.match(aliceDay, /href="\.\.\/\.\.\/\.\.\/workbuddy\.html"/);
+
+  const aliceTask = await fs.readFile(
+    path.join(outDir, "agents", "alice", "tasks", "daily-review.html"),
+    "utf8"
+  );
+  assert.match(aliceTask, /href="\.\.\/\.\.\/\.\.\/index\.html"/);
+  assert.match(aliceTask, /href="\.\.\/\.\.\/\.\.\/workbuddy\.html"/);
 
   await assertFileContains(path.join(outDir, "history.html"), "Codex History");
   await assertFileContains(path.join(outDir, "workbuddy-history.html"), "WorkBuddy History");

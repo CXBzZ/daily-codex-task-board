@@ -164,7 +164,8 @@ If you need to abandon the rebase before resolving it, use `git rebase --abort`;
 | --- | --- |
 | `parent folder must be a YYYY-MM-DD date` | Move the JSON file into `runs-agents/` under an Asia/Shanghai `YYYY-MM-DD` directory. |
 | `missing required string field "agentId"` or `"agentName"` | Add non-empty `agentId` and `agentName` strings. Both are required for external agents. |
-| `Invalid taskId` | Use a 2-81 character lowercase ID containing only letters, numbers, dots, underscores, or hyphens. The same rule applies to `agentId`. |
+| `Invalid taskId` | Use a 2-81 character lowercase ID containing only letters, numbers, dots, underscores, or hyphens. |
+| `agentId must be a 2-81 character slug using lowercase letters, numbers, dots, underscores, or hyphens` | Use an already-compliant external `agentId` exactly as written. Uppercase letters, leading or trailing whitespace, and other characters are rejected rather than normalized. |
 | `reserved agentId "codex"` or `"workbuddy"` | Choose a distinct external `agentId`; those IDs belong to the built-in boards. |
 | `status must be one of ...` | Set `status` to `success`, `failure`, `running`, `skipped`, or `needs_attention`. |
 | `startedAt` or `finishedAt` must be a valid ISO-8601 timestamp | Use a timestamp such as `2026-07-12T08:00:00+08:00`, or omit the optional field. |
