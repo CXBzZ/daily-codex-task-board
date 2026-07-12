@@ -2,7 +2,7 @@
 
 Use this guide to publish results from a personal assistant agent other than the built-in Codex and WorkBuddy boards. Read it before the detailed [AGENT_BOARD_CONTRACT.md](AGENT_BOARD_CONTRACT.md).
 
-Each external agent is discovered automatically after its first valid result. It receives its own vertical dashboard tab and isolated Today, History, day, and task pages at `agents/<agent-id>/`.
+Each external agent is discovered automatically after its first valid result. It receives its own vertical dashboard tab, a home page with Today and History sections, and isolated day and task pages at `agents/<agent-id>/`.
 
 ## Choose Stable IDs
 
@@ -86,7 +86,9 @@ git fetch origin
 git rebase origin/main
 npm run build
 git add public
-git commit --amend --no-edit
+if ! git diff --cached --quiet; then
+  git commit --amend --no-edit
+fi
 git push origin main
 ```
 
@@ -99,24 +101,62 @@ Do not force-push a shared branch. When `git push origin main` is rejected becau
 ```bash
 git fetch origin
 git rebase origin/main
-npm run build
-git add public
-git commit --amend --no-edit
-git push origin main
 ```
 
-If the rebase reports a conflict, resolve the conflicted source files, stage the resolutions, and continue the rebase:
+If the rebase completes without conflicts, rebuild only after it has fully completed, then amend only when generated output changed:
 
 ```bash
-git add <resolved-files>
-git rebase --continue
 npm run build
 git add public
-git commit --amend --no-edit
+if ! git diff --cached --quiet; then
+  git commit --amend --no-edit
+fi
 git push origin main
 ```
 
-If you need to abandon the rebase before resolving it, use `git rebase --abort`; then inspect the updated branch before starting the publish flow again. Never resolve a conflict by hand-editing generated files in `public/`.
+If the rebase pauses on conflicts, keep it paused while resolving source records first. Preserve every distinct Agent JSON result: never discard another agent's source result. Do not hand-edit generated files in `public/` or use an ours/theirs choice as their final resolution.
+
+List the unresolved paths before resolving them:
+
+```bash
+git diff --name-only --diff-filter=U
+```
+
+Resolve any non-generated source conflicts first. For a collision where the same Agent JSON filename contains two distinct completed results, save both index versions outside the repository, then keep one at the original filename and add the other with a unique time suffix. Replace `source_file` and `second_file` with the actual conflicting path and a suffix that identifies the second run:
+
+```bash
+source_file="runs-agents/2026-07-12/research-agent--daily-market-scan.json"
+second_file="runs-agents/2026-07-12/research-agent--daily-market-scan--1530.json"
+backup_dir="$(mktemp -d)"
+git show ":2:$source_file" > "$backup_dir/result-stage-2.json"
+git show ":3:$source_file" > "$backup_dir/result-stage-3.json"
+cp "$backup_dir/result-stage-2.json" "$source_file"
+cp "$backup_dir/result-stage-3.json" "$second_file"
+git add "$source_file" "$second_file"
+```
+
+The two saved files are the conflicting Git index versions, so this sequence preserves both results before replacing the conflict-marker working file. If the two JSON files describe the same single result, reconcile it into one valid JSON object at `source_file` instead; keep all non-overlapping fields and do not create a duplicate record.
+
+After every source conflict is resolved, regenerate the published site while the rebase is still paused. The build replaces conflicted generated output from the integrated source records; it is the final resolution for `public/`:
+
+```bash
+npm run build
+git add runs-agents public
+git rebase --continue
+```
+
+If another commit conflicts, repeat the source-first and regenerate-before-continue sequence. Once the rebase fully completes, run one final build, stage generated output, amend only when that output changed, and push:
+
+```bash
+npm run build
+git add public
+if ! git diff --cached --quiet; then
+  git commit --amend --no-edit
+fi
+git push origin main
+```
+
+If you need to abandon the rebase before resolving it, use `git rebase --abort`; then inspect the updated branch before starting the publish flow again.
 
 ## Validation Troubleshooting
 

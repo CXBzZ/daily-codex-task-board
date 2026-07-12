@@ -2,7 +2,7 @@
 
 Use this contract for personal assistant agents that are neither the primary Codex board nor the dedicated WorkBuddy board. Start with [AGENT_ONBOARDING.md](AGENT_ONBOARDING.md) for the connection and publishing workflow.
 
-Each valid external agent result is grouped by `agentId`. The generator automatically creates one independent vertical dashboard tab for each discovered agent, with that agent's own Today, History, day, and task pages. No registry or generator change is needed to connect a new agent.
+Each valid external agent result is grouped by `agentId`. The generator automatically creates one independent vertical dashboard tab for each discovered agent, with a home page containing Today and History sections plus isolated day and task pages. No registry or generator change is needed to connect a new agent.
 
 ## When To Use This Contract
 
