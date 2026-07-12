@@ -1,49 +1,46 @@
-# Shared Personal Agent Board Contract
+# Personal Assistant Agent Result Contract
 
-This repository can host results from any personal assistant agent in one shared **Agents** board.
+Use this contract for personal assistant agents that are neither the primary Codex board nor the dedicated WorkBuddy board. Start with [AGENT_ONBOARDING.md](AGENT_ONBOARDING.md) for the connection and publishing workflow.
 
-Use this contract for agents that are not the primary Codex board and are not the dedicated WorkBuddy board.
+Each valid external agent result is grouped by `agentId`. The generator automatically creates one independent vertical dashboard tab for each discovered agent, with that agent's own Today, History, day, and task pages. No registry or generator change is needed to connect a new agent.
 
-## When To Use This Board
+## When To Use This Contract
 
-Use `runs-agents/` when:
+Write external personal assistant results to `runs-agents/` when the source is not Codex or WorkBuddy. Results from different external agents can share the directory because the generator separates them by their stable `agentId`.
 
-- multiple personal assistant agents need to report into one shared task board
-- the agent is not important enough to deserve its own dedicated tab
-- you want one place to compare results from research, scheduling, finance, content, ops, or other helper agents
-
-Use a dedicated directory and board only when an agent has a distinct workflow that should not mix with other assistants.
+Use [AUTOMATION_CONTRACT.md](AUTOMATION_CONTRACT.md) for primary Codex automations and [WORKBUDDY_CONTRACT.md](WORKBUDDY_CONTRACT.md) for WorkBuddy automations.
 
 ## Required Behavior
 
-When an agent finishes meaningful work:
+When an external agent finishes meaningful work:
 
 1. Create or update one JSON file under `runs-agents/YYYY-MM-DD/`.
 2. Use the Asia/Shanghai calendar date for `YYYY-MM-DD`.
-3. Run `npm run build`.
-4. Prefer running `npm test` before committing if the agent changed scripts or result shape.
-5. Commit the JSON result and generated `public/` files together.
-6. Push the commit if the agent has push permission.
+3. Keep `agentId` stable across every report from the same assistant.
+4. Run `npm run build`.
+5. Run `npm test` before committing if the agent changed scripts or this result contract.
+6. Commit the source JSON and generated `public/` files together.
+7. Rebase on `origin/main` before pushing; if the rebase changes repository content, rerun `npm run build` and update the generated `public/` files before pushing.
 
 Do not edit files in `public/` by hand. They are generated from `runs-agents/`.
 
 ## File Naming
 
-Use a stable lowercase agent id and task id:
+Use stable lowercase agent and task IDs:
 
 ```text
-runs-agents/2026-07-11/<agent-id>--<task-id>.json
+runs-agents/2026-07-12/<agent-id>--<task-id>.json
 ```
 
 If the same agent reports the same task more than once on the same date, add a short time suffix:
 
 ```text
-runs-agents/2026-07-11/<agent-id>--<task-id>--1530.json
+runs-agents/2026-07-12/<agent-id>--<task-id>--1530.json
 ```
 
 ## JSON Schema
 
-Shared agent records use the same base schema as [AUTOMATION_CONTRACT.md](AUTOMATION_CONTRACT.md), with required agent attribution.
+External agent records use the same base schema as [AUTOMATION_CONTRACT.md](AUTOMATION_CONTRACT.md), with required agent attribution.
 
 ```json
 {
@@ -53,8 +50,8 @@ Shared agent records use the same base schema as [AUTOMATION_CONTRACT.md](AUTOMA
   "taskId": "daily-market-scan",
   "taskName": "Daily Market Scan",
   "status": "success",
-  "startedAt": "2026-07-11T08:00:00+08:00",
-  "finishedAt": "2026-07-11T08:05:00+08:00",
+  "startedAt": "2026-07-12T08:00:00+08:00",
+  "finishedAt": "2026-07-12T08:05:00+08:00",
   "summary": "Short human-readable result.",
   "details": "Longer result details. Markdown-like plain text is fine.",
   "sourceThread": "Optional thread id, agent run id, or URL.",
@@ -71,16 +68,16 @@ Shared agent records use the same base schema as [AUTOMATION_CONTRACT.md](AUTOMA
 
 ## Required Fields
 
-- `agentId`: stable kebab-case id using lowercase letters, numbers, dots, underscores, or hyphens.
+- `agentId`: stable 2-81 character ID using lowercase letters, numbers, dots, underscores, or hyphens. It must not be `codex` or `workbuddy`.
 - `agentName`: display name for the agent.
-- `taskId`: stable kebab-case id using lowercase letters, numbers, dots, underscores, or hyphens.
+- `taskId`: stable 2-81 character ID using lowercase letters, numbers, dots, underscores, or hyphens.
 - `taskName`: display name for the task.
 - `status`: one of `success`, `failure`, `running`, `skipped`, or `needs_attention`.
 - `summary`: one or two sentences for the dashboard.
 
 ## Optional Fields
 
-- `agentRole`: short description of what this agent is responsible for.
+- `agentRole`: short description of what the agent is responsible for.
 - `startedAt` and `finishedAt`: ISO-8601 timestamps.
 - `details`: longer plain text. New lines are preserved in the dashboard.
 - `sourceThread`: thread id, run id, local note, or URL.
@@ -88,25 +85,23 @@ Shared agent records use the same base schema as [AUTOMATION_CONTRACT.md](AUTOMA
 - `nextSteps`: follow-up actions.
 - `artifacts`: related links or repository paths.
 
-## Agent Prompt Template
+## Generated Routes
 
-Use this in any personal assistant agent that should report to the shared board:
+After an external agent publishes its first valid result and the site is rebuilt, its dashboard is generated at:
 
 ```text
-After completing your task, write a result JSON file that follows AGENT_BOARD_CONTRACT.md.
-Use the Asia/Shanghai date and write to runs-agents/YYYY-MM-DD/<agent-id>--<task-id>.json.
-Include agentId, agentName, taskId, taskName, status, and summary.
-Then run npm run build.
-If scripts or result structure changed, run npm test too.
-Commit the result JSON and generated public/ files together.
-Do not edit public/ directly.
+agents/<agent-id>/index.html
+agents/<agent-id>/days/YYYY-MM-DD.html
+agents/<agent-id>/tasks/<task-id>.html
+data/agents/<agent-id>.json
 ```
+
+The legacy `agents.html` and `agent-history.html` entry points redirect to the first discovered external agent, or to Codex when no external agent result exists. The combined `data/agent-runs.json` feed remains available for compatibility.
 
 ## Existing Boards
 
-| Board | Source directory | Use for |
-| --- | --- | --- |
-| Codex | `runs/` | Primary Codex automations |
-| WorkBuddy | `runs-workbuddy/` | Dedicated WorkBuddy automations |
-| Agents | `runs-agents/` | Any other personal assistant agent |
-
+| Board | Source directory | Primary route | Use for |
+| --- | --- | --- | --- |
+| Codex | `runs/` | `index.html` | Primary Codex automations |
+| WorkBuddy | `runs-workbuddy/` | `workbuddy.html` | Dedicated WorkBuddy automations |
+| External agent | `runs-agents/` | `agents/<agent-id>/index.html` | Any other personal assistant agent |

@@ -1,6 +1,6 @@
 # Daily Codex Task Board
 
-This repository stores results produced by Codex, WorkBuddy, and other personal assistant agents. It publishes them as a static GitHub Pages dashboard with separate tabs for dedicated boards and one shared multi-agent board.
+This repository stores results produced by Codex, WorkBuddy, and other personal assistant agents. It publishes them as a static GitHub Pages dashboard with vertical tabs for the built-in boards and every auto-discovered external agent.
 
 ## How It Works
 
@@ -13,7 +13,7 @@ This repository stores results produced by Codex, WorkBuddy, and other personal 
 
 Read [AUTOMATION_CONTRACT.md](AUTOMATION_CONTRACT.md) before creating a new Codex automation.
 Read [WORKBUDDY_CONTRACT.md](WORKBUDDY_CONTRACT.md) before creating a new WorkBuddy automation.
-Read [AGENT_BOARD_CONTRACT.md](AGENT_BOARD_CONTRACT.md) before connecting any other personal assistant agent.
+Read [AGENT_ONBOARDING.md](AGENT_ONBOARDING.md) before connecting any other personal assistant agent, then use the detailed [AGENT_BOARD_CONTRACT.md](AGENT_BOARD_CONTRACT.md).
 
 ## Common Commands
 
@@ -34,7 +34,7 @@ runs-workbuddy/                # WorkBuddy results (source of truth)
   2026-07-11/
     daily-news-digest.json
 
-runs-agents/                   # shared personal assistant agent results
+runs-agents/                   # external personal assistant agent results
   2026-07-11/
     research-agent--market-scan.json
 
@@ -47,25 +47,38 @@ public/                        # generated static site
   workbuddy-history.html       # WorkBuddy history
   workbuddy-days/              # WorkBuddy day pages
   workbuddy-tasks/             # WorkBuddy task pages
-  agents.html                  # shared Agents tab
-  agent-history.html           # shared Agents history
-  agent-days/                  # shared Agents day pages
-  agent-tasks/                 # shared Agents task pages
+  agents/<agent-id>/           # external agent Today, History, day, and task pages
+  agents.html                  # legacy redirect to the first discovered agent
+  agent-history.html           # legacy redirect to the first discovered agent history
   data/
     runs.json                  # Codex data feed
     workbuddy-runs.json        # WorkBuddy data feed
-    agent-runs.json            # shared Agents data feed
+    agent-runs.json            # compatibility feed for all external agents
+    agents/<agent-id>.json     # isolated external agent feed
 ```
+
+## Dashboard Routes
+
+| Board | Today route | History and nested routes |
+| --- | --- | --- |
+| Codex | `index.html` | `history.html`, `days/YYYY-MM-DD.html`, `tasks/<task-id>.html` |
+| WorkBuddy | `workbuddy.html` | `workbuddy-history.html`, `workbuddy-days/YYYY-MM-DD.html`, `workbuddy-tasks/<task-id>.html` |
+| Other agent | `agents/<agent-id>/index.html` | `agents/<agent-id>/days/YYYY-MM-DD.html`, `agents/<agent-id>/tasks/<task-id>.html`; History is on the agent's index page |
 
 ## Connecting Another Personal Agent
 
-Give the agent this instruction:
+Start with [AGENT_ONBOARDING.md](AGENT_ONBOARDING.md). It contains the copy-ready automation prompt, stable ID rules, JSON example, build flow, and rejected-push recovery. The detailed schema is in [AGENT_BOARD_CONTRACT.md](AGENT_BOARD_CONTRACT.md).
+
+For a compact prompt, give the agent this instruction:
 
 ```text
-After completing your task, write a result JSON file that follows AGENT_BOARD_CONTRACT.md.
+After completing your task, read AGENT_ONBOARDING.md and AGENT_BOARD_CONTRACT.md.
 Use the Asia/Shanghai date and write to runs-agents/YYYY-MM-DD/<agent-id>--<task-id>.json.
+Keep agentId stable and include agentName, taskId, taskName, status, and summary.
+Pull main before writing.
 Then run npm run build.
 Commit the result JSON and generated public/ files together.
+Rebase on origin/main before pushing and rebuild after a rebase that changes repository content.
 Do not edit public/ directly.
 ```
 
