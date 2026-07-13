@@ -1,7 +1,76 @@
 {
-  "generatedAt": "2026-07-12T08:51:27.021Z",
+  "generatedAt": "2026-07-13T00:54:52.574Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-13",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：网站可访问性审计（WCAG 合规）",
+      "status": "success",
+      "summary": "网站可访问性审计（Web Accessibility Audit / WCAG 合规审计）：帮企业用人工+工具检查网站是否符合 WCAG 标准、并出具带整改建议的报告。它夹在「网站建设」和「法律合规」之间的缝隙、需求被动触发且被法律（美国 ADA、欧盟 EAA 2025.6 生效）刚性驱动，但 94.8% 的头部网站仍不达标——典型的一人可远程操盘、近乎零成本启动、全球客户的小众方向。",
+      "details": "1. 行业是什么，为什么小众\n网站可访问性审计（Web Accessibility Audit / WCAG 合规审计）：帮企业、机构检查其网站、Web 应用、移动端是否「残疾人也能用」——是否符合 WCAG（Web 内容可访问性指南）标准，并出具带整改建议的审计报告。一句话定义：用人工+工具，找出网站上视障、听障、运动障碍用户用不了的地方，给出可落地的修复清单。\n为什么普通人容易忽略它——它夹在「网站建设」和「法律合规」之间，是个没有大众认知的缝隙：①搜索量低，客户不会主动搜「可访问性审计」，而是收到律师函或被起诉后才慌；②需求隐蔽且被动触发（法律/采购门槛逼出来的）；③看起来像要懂代码的高门槛技术活，其实核心是「按清单逐项核对 WCAG 准则 + 用现成工具扫描」，非程序员也能上手；④多数小企业主压根没听说过 WCAG，但 WebAIM 2025 显示 94.8% 的头部百万网站其实都不达标。\n\n2. 如何运作\n- 典型客户：电商/独立站、SaaS、面向欧盟或美国市场的网站、学校/医院/政府承包商、以及「被律所盯上或要投标大客户」的中小企业。需求触发点极典型——「收到 ADA 律师函 / 欧盟 EAA 生效怕被罚 / 投标政府单要求 VPAT / 发现自己网站盲人用不了」。\n- 核心交付物：可访问性审计报告（逐条列出 WCAG 违规、对应准则编号、严重级别、修复建议，常附代码级指引）+ 可选的 VPAT（无障碍一致性声明，用于采购投标）+ 月度复检报告。\n- 完整工作流：免费/低价预扫描做钩子（截图证明对方网站有问题）→ 出报价与范围 → 自动化扫描（WAVE/axe/Lighthouse）跑出基础问题 → 人工走查（键盘导航、屏幕阅读器 NVDA/VoiceOver、对比度、表单标签、焦点顺序）→ 写报告（按严重级别排序 + 修复指引）→ 交付 → 客户开发团队修复或你代修 → 复检/按月监测复购。\n- 关键工具和平台：获客用 Upwork / Fiverr / Guru（搜 accessibility audit / WCAG / ADA）；扫描用 WAVE（免费）、axe DevTools（免费扩展）、Google Lighthouse（免费）、Equalize Digital（免费 5 页/天）；屏幕阅读器 NVDA（免费）、VoiceOver（Mac 自带）；报告模板用 Excel/Notion。\n\n3. 盈利模式\n- 收入来源与定价：按项目（小型网站审计约 $300–$2,500；按页计费 $100–$250/主页面；Accessible.org 真实案例里 5 个小型客户审计 $850–$950 一个），或按小时咨询（$100–$350/小时），或按月 retainer（$2,000–$10,000+/月）做持续监测+整改支持，还可加 VPAT 服务（$350–$950/份）。\n- 利润空间：纯人力+轻量工具，工具几乎免费或个位数月费，扣除平台抽成（Upwork 约 10%、Fiverr 约 20%）后毛利 80%–95%。一份小型审计实际人工约 4–12 小时。\n- 复购/长期合同：很强。合规是持续的（网站一更新就可能回退），月度监测+整改支持是默认形态；法律/采购门槛让客户一旦开始就很难停。\n\n4. 入门门槛\n- 技能：懂 WCAG 2.1/2.2 的准则清单（约 50 条，但 96% 的错误集中在 6 类）、会用扫描工具和至少一种屏幕阅读器、能写清晰的报告。HTML/CSS 基础有帮助但不强制。系统学 1–3 周可接简单单。\n- 工具：WAVE、axe、Lighthouse、NVDA 全部免费；VoiceOver 自带。启动成本≈0。可选 IAAP 的 CPACC/WAS 认证（$250–$500 考试费）提升可信度，但非必须。\n- 资金：几乎为零，最多几百元认证/工具费。\n- 时间：从零到第一单约 1–3 周（发 gig + 用免费扫描给自己或朋友网站出样本报告当作品集）。\n\n5. 为什么适合 OPC / 数字游民\n- 异步交付：审计与报告都是非实时书面交付，全程邮件/平台留言，不需要盯会议。\n- 全球客户：ADA（美国）+ EAA（欧盟 2025.6 生效）让英语市场客户遍布全球，Upwork/Guru 上 accessibility audit 类目有大量在售 freelancer 服务。\n- 边际成本低：一套方法论 + 报告模板可服务很多客户，复制成本趋近于零；一个复杂站审计完，模板直接复用。\n- 需求刚性且持续：法律驱动（不是锦上添花），客户因怕被罚/要投标而主动付费，回款意愿强。\n- 时区友好：纯异步，没有直播压力。一个人就能跑通「获客—审计—交付—收款」完整闭环，不需要团队。\n\n6. 潜在收益（谨慎，不承诺）\n这些是参考数据，不等于个人收入。\n- 新手阶段：Guru/Upwork 上单价从 $5–$50/小时起、审计起步单 $25–$500；配合月度小客户，月入几百到几千元人民币是现实区间。\n- 成熟阶段：小型网站审计 $850–$2,500/单、维护 5–10 个月度客户（$2,000–$10,000/客户/月）即可月入 $1 万–$5 万+（约 7 万–35 万人民币）。\n- 支撑信号：WebAIM 2025 显示 94.8% 的头部百万网站仍不达标（需求池巨大）；UsableNet 统计 2024 年美国数字可访问性诉讼超 4,000 起、2025 年约 4,605 起（+12%），且 67% 被告是年营收 <$25M 的中小企业——正是会找独立审计师而非大公司的群体；欧盟 EAA 2025.6.28 生效后新增一波合规需求。\n\n7. 主要风险\n- 市场风险：若未来浏览器/平台把无障碍内建化、或 AI 自动修复成熟，会压缩外包空间；但短期内法律刚性需求在中上升。\n- 技术风险：依赖第三方扫描工具口径；WCAG 标准会演进（2.2 已新增 9 条准则）；屏幕阅读器版本差异导致判断偏差。\n- 合规风险：给客户「保证 100% 合规/免责」是高危承诺——2025 年 FTC 因虚假合规宣传罚了 accessiBe $100 万；只能交付「审计+建议」，不要越界做法律担保；跨境服务注意税务与数据隐私。\n- 现金流风险：平台获客要被抽成；低价单回款慢；前期靠平台竞价获客成本随竞争上升。\n\n8. 不适合的人群\n想躺赚/完全零基础的纯小白（仍需学 WCAG 清单）、拒绝用屏幕阅读器实测的人、不能接受「出报告但不替客户背法律责任」边界的人、需要稳定月薪的上班族、只做中文市场且不愿碰英文平台/海外客户的人。\n\n9. 3 个可验证的入门步骤\n- 步骤 1（今天）：用 WAVE（wave.webaim.org）和浏览器 axe 扩展，给自己或任意 3 个网站跑扫描，截图记录「对比度/alt 文本/表单标签」三类问题的数量，验证「绝大多数网站都有可发现问题」这一前提。\n- 步骤 2（1–2 天）：挑一个真实小网站（朋友的店/自己的站），按 WCAG 2.2 清单做一份 1–2 页的简易审计报告样本（问题 + 准则编号 + 修复建议），作为作品集。\n- 步骤 3（1 周内）：在 Guru / Upwork 发布一个 $25–$100 的「Website Accessibility Audit」gig，附样本，观察浏览/咨询量，验证是否有人愿意为这份报告付费。\n\n10. 核验来源\n- WebAIM Million 2025（94.8% 头部网站仍不达标，含错误分布数据）：https://webaim.org/projects/million/2025\n- UsableNet 2024 数字可访问性诉讼年度报告（美国年诉讼超 4,000 起）：https://blog.usablenet.com/2024-digital-accessibility-lawsuit-report-relased-insights-for-2025\n- FTC 对 accessiBe 罚 $100 万的官方通报（合规宣传风险提示）：https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-approves-final-order-requiring-accessibe-pay-1-million\n- W3C WCAG 2.2 官方规范：https://www.w3.org/TR/WCAG22/\n- WAVE 免费扫描工具：https://wave.webaim.org/\n- axe DevTools（Deque）扫描工具：https://www.deque.com/axe/\n- Accessible.org 真实项目报价案例（小型审计 $850–$950）：https://accessible.org/our-5-most-recent-web-accessibility-projects-and-what-we-charged/\n- Guru 平台 accessibility audit 自由职业在售服务（验证需求与定价）：https://www.guru.com/d/freelancers/skill/accessibility-audit\n- 欧盟委员会：欧洲无障碍法案（EAA）2025.6 生效官方消息：https://commission.europa.eu/news-and-media/news/eu-becomes-more-accessible-all-2025-07-31_uk",
+      "startedAt": "2026-07-13T08:50:13+08:00",
+      "finishedAt": "2026-07-13T08:54:14+08:00",
+      "duration": "4m 1s",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "accessibility",
+        "wcag",
+        "web-audit",
+        "compliance"
+      ],
+      "nextSteps": [
+        "用 WAVE（wave.webaim.org）和浏览器 axe 扩展，给自己或任意 3 个网站跑扫描，截图记录「对比度/alt 文本/表单标签」三类问题数量，验证需求前提",
+        "挑一个真实小网站，按 WCAG 2.2 清单做一份 1–2 页的简易审计报告样本（问题+准则编号+修复建议）作为作品集",
+        "在 Guru / Upwork 发布一个 $25–$100 的 Website Accessibility Audit gig，附样本，观察浏览/咨询量，验证付费意愿"
+      ],
+      "artifacts": [
+        {
+          "label": "WebAIM Million 2025（94.8% 头部网站仍不达标）",
+          "path": "https://webaim.org/projects/million/2025"
+        },
+        {
+          "label": "UsableNet 2024 数字可访问性诉讼年度报告",
+          "path": "https://blog.usablenet.com/2024-digital-accessibility-lawsuit-report-relased-insights-for-2025"
+        },
+        {
+          "label": "FTC 对 accessiBe 罚 $100 万官方通报",
+          "path": "https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-approves-final-order-requiring-accessibe-pay-1-million"
+        },
+        {
+          "label": "W3C WCAG 2.2 官方规范",
+          "path": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "label": "WAVE 免费扫描工具",
+          "path": "https://wave.webaim.org/"
+        },
+        {
+          "label": "axe DevTools（Deque）扫描工具",
+          "path": "https://www.deque.com/axe/"
+        },
+        {
+          "label": "Accessible.org 真实项目报价案例",
+          "path": "https://accessible.org/our-5-most-recent-web-accessibility-projects-and-what-we-charged/"
+        },
+        {
+          "label": "Guru 平台 accessibility audit 在售服务",
+          "path": "https://www.guru.com/d/freelancers/skill/accessibility-audit"
+        },
+        {
+          "label": "欧盟委员会 EAA 2025.6 生效官方消息",
+          "path": "https://commission.europa.eu/news-and-media/news/eu-becomes-more-accessible-all-2025-07-31_uk"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-07-13/niche-opc-industry.json"
+    },
     {
       "date": "2026-07-12",
       "taskId": "niche-opc-industry",
