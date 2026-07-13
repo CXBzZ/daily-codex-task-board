@@ -1,7 +1,127 @@
 {
-  "generatedAt": "2026-07-13T00:54:52.574Z",
+  "generatedAt": "2026-07-13T08:07:22.167Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-13",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是英文电商/独立站图片 Alt Text 无障碍标注与商品目录可访问性优化服务，属于中国境内可做的海外市场。它适合有英文、商品理解、基础无障碍和电商后台能力的 OPC/数字游民小规模验证，但只能定位为 alt text 子项优化与交付记录，不能承诺整站 ADA/WCAG 合规或 SEO 排名提升。",
+      "details": "行业：英文电商/独立站图片 Alt Text 无障碍标注与商品目录可访问性优化服务\n\n目标市场：\n这是中国境内可做的海外市场机会，主要面向美国、加拿大、英国、澳洲和欧盟英语市场的小型 Shopify、WooCommerce、Etsy、独立站、DTC 品牌、课程电商、内容型电商和 Shopify/WooCommerce 建站代理商。客户有大量商品图、分类图、博客图、活动 banner、尺码图或信息图，但图片缺少替代文本，或者已有 alt text 只是关键词堆砌、文件名、重复标题、AI 直出内容，无法准确表达图片在页面上下文中的作用。\n\n它是什么，为什么小众：\nAlt Text 是给非文本内容提供文本替代的一项基础无障碍工作。W3C WCAG 2.2 的 1.1.1 Non-text Content 要求非文本内容提供能服务相同目的的文本替代；W3C WAI 还提供了图片替代文本决策树，用来判断图片是装饰性、功能性、信息性、文字图片还是复杂图。美国 Section508.gov 也把替代文本定位为向使用屏幕阅读器等辅助技术的人传达图片含义的描述文本。\n\n这个行业不是普通 SEO 文案，也不是自动化插件安装。服务者要根据页面上下文、商品标题、材质、颜色、用途、图片角度、图中可见文字、相邻文案和品牌语气，写出简洁、真实、可读的英文 alt text；对装饰图要建议留空或标记为装饰；对信息图、尺码表、图中大量文字要判断是否需要页面正文补充，而不是把所有文字硬塞进 alt 属性。\n\n它小众，是因为它夹在无障碍规范、电商商品运营、英文文案、图片理解、批量数据处理和平台后台之间。很多店主知道 Shopify 可以添加 alt text，也知道 Google 建议使用描述性 alt text，但没有时间逐张处理几百到几千张商品图；普通 SEO 外包又容易把它做成关键词堆砌，反而损害可读性和无障碍体验。\n\n典型需求场景和客户是谁：\n1. 小型 Shopify 或 WooCommerce 店铺上新季有 300-2000 张商品图，需要批量补齐 alt text，并交付 CSV 或后台更新记录。\n2. Etsy 卖家、手工艺品牌或 print-on-demand 店铺想给 listing images 添加 text alternative，提高图片对视觉障碍用户的可理解性。\n3. 建站代理商交付 Shopify/WooCommerce 项目时，需要外包一个图片替代文本审计和批量填充环节。\n4. DTC 品牌准备做基础无障碍整改，但预算不足以请大型 accessibility agency，只能先处理图片文本替代、标题层级、表单标签等小项中的 alt text 子项。\n5. 内容型电商、教程站、课程站有大量步骤图、信息图、截图和产品使用图，需要区分哪些图片只需简短 alt text，哪些应在正文中补充完整说明。\n6. 已使用 AI alt text 插件的店铺发现生成内容重复、太泛、夹杂错误关键词，需要人工抽检、术语表和二次编辑。\n\n行业如何运作，典型参与方和工作流：\n参与方包括店主或运营、建站代理商、SEO 顾问、无障碍顾问、电商平台、AI alt text 应用、商品信息管理表、自由职业标注/编辑人员，以及必要时的数据保护或法律顾问。\n\n典型工作流是：\n1. 范围确认：明确服务只覆盖图片 alt text 和相关交付记录，不承诺整站 ADA/WCAG 合规，不承诺 Google 排名提升。确认图片类型、平台、语言、数量、商品类目、是否有品牌术语表和是否需要后台代填。\n2. 样本审计：抽查 20-50 张图片，按 W3C 图片决策树分类，识别缺失、重复、关键词堆砌、与上下文不符、把装饰图误写 alt、信息图描述不足等问题。\n3. 规则制定：为客户建立简短写作规范，例如商品主图描述产品类别、颜色、材质和关键可见特征；变体图突出差异；生活方式图说明使用场景；装饰图建议空 alt；不要以 image of/picture of 开头，除非图片类型本身重要。\n4. 批量生产：用商品标题、SKU、collection、材质、颜色、现有描述和图片预览生成初稿。可以用 AI 工具辅助，但必须人工复核可见事实、品牌词、敏感词、重复度和上下文适配。\n5. 交付和导入：小项目可交付 Google Sheet/CSV；Shopify 项目可由客户导入，或在客户授权下使用后台、Matrixify、Shopify API 或合作代理商流程更新。若使用 API，必须遵守 Shopify API 条款、最小权限和商户数据保护要求。\n6. 抽检和报告：按比例抽检，记录修改数量、问题类型、无法判断项、需客户确认项和后续维护 SOP。专业交付的价值在于可审计记录，而不是一句“已经合规”。\n\n盈利模式，收入来自哪里：\n- 按图片数量计费：适合商品图批量标注，例如按 100 张、500 张、1000 张打包。实际报价取决于语言、类目复杂度、是否需要看页面上下文、是否后台代填和抽检比例。\n- 一次性审计报告：抽样检查图片 alt text 质量，输出问题分类、优先级、示例改写和批量修复方案。\n- Shopify/WooCommerce 上架维护：每月为新品、博客和活动页更新 alt text，作为店铺运维小包的一部分。\n- AI 结果复核：客户已用 AltText.ai、SEO HERO AI Alt Text Generator、AltMate 等应用批量生成初稿，服务者负责术语表、事实错误、重复文本和上下文质量复核。\n- 代理商分包：与建站、SEO、PPC、品牌内容代理商合作，把 alt text 作为网站交付清单中的一个细分环节。\n- 培训和 SOP：为客户运营团队做 1-2 小时英文培训，交付写作模板、决策树和抽检表。\n\n报价样本和人民币口径：\n公开价格只能说明市场存在和价格区间，不能当成收入承诺。Fiverr 的 web accessibility 服务页面能看到若干无障碍测试/审计/修复服务低价样本约 A$23-A$61 起；Fiverr 的 seo product text 页面可见 Etsy/Product image alt text 类服务约 ₹1001 起；Upwork 官方资源显示平台最低小时费为 3 美元、最低固定价为 5 美元，ZipRecruiter 对 freelance alt text writer 的宽口径描述为 15-50 美元/小时或 0.05-0.20 美元/词。Shopify App Store 上，AltText.ai 的公开价格包括 3 美元/50 images、5 美元/月 100 images、19 美元/月 500 images、59 美元/月 2000 images；SEO HERO AI Alt Text Generator 公开价格包括 5 美元/月 150 条、15 美元/月 500 条、35 美元/月 2000 条；AltMate 公开价格包括 9 美元/50 credits、15 美元/100 credits、35 美元/250 credits、60 美元/500 credits。\n\n按 2026-07-13 附近公开汇率样本 1 USD 约 6.78 CNY 粗算：15-50 美元/小时约 102-339 元/小时；5-59 美元/月的自动化工具约 34-400 元/月；3 美元/50 张约 20 元/50 张。这些自动化工具价格会压低纯体力标注的天花板，也说明人工服务必须卖“上下文判断、人工复核、品牌一致性、复杂图片处理和可审计交付”，而不是卖简单生成。\n\n更克制的试单定价可以从 49-199 美元的小包开始，例如 50-200 张商品图抽样审计和改写、一个 collection 的 alt text 修复、或 AI 初稿的人工复核。熟练后可做 300-800 美元的小型目录项目或月度维护，但要扣除平台服务费、支付通道费、汇损、工具订阅、售前沟通、返工、抽检和税费。新手没有评价、案例和英文信任背书，成交价通常低于公开样本，并且获客周期不稳定。\n\n入门门槛：\n- 技能：英文商品描述能力、基础 WCAG/Section 508 图片替代文本原则、电商品类理解、图片事实核对、关键词不过度堆砌、Google Sheet/CSV 批处理、Shopify/WooCommerce/Etsy 后台基础操作。\n- 设备和软件：稳定电脑、表格工具、截图工具、浏览器无障碍检查插件、图片预览和批量命名工具、AI 文案工具、Shopify/WooCommerce 测试站或演示店、密码管理器和安全协作工具。\n- 资质和合规：一般不需要当地实体门店或高门槛当地牌照，但不能以“ADA/WCAG 合规认证”包装自己。若没有专业无障碍审计资质，应明确只提供 alt text 子项优化、写作建议和交付记录。\n- 资金：起步成本低，主要是学习规范、搭建样例、购买少量工具、平台获客和测试店铺成本。真正的成本是英文质量、返工控制和案例积累。\n- 渠道：Upwork、Fiverr、LinkedIn、Shopify Partner/agency 合作、WooCommerce 社群、Etsy 卖家社群、独立站 SEO 内容、无障碍顾问分包、DTC 品牌冷启动邮件。\n- 时间成本：从零理解 alt text 基础规范可能需要 1-2 周；能稳定处理多类目商品图、复杂信息图、批量 CSV 和客户术语表，通常需要多个真实项目。\n\n中国境内如何合规承接海外市场：\n1. 跨境获客：平台获客必须遵守平台规则。Upwork 明确提示平台内认识的客户不得绕开平台收款；Fiverr 也要求遵守站内沟通和支付规则。独立获客可以用 LinkedIn、独立站、代理商合作和内容获客，但自己的冷邮件和营销也要避免垃圾邮件式轰炸。\n2. 远程交付：优先交付 CSV、Google Sheet、审计报告和导入说明。后台代填只在客户明确授权、最小权限、限时账号、双因素认证和操作记录齐备时进行。\n3. 合同、发票和收款：平台内按订单、里程碑、托管和争议规则走；独立客户用英文 SOW 写清图片数量、语言、修改轮次、交付格式、验收标准、不承诺项和数据删除时间。个人或一人公司应使用合规跨境收款路径，并按中国税务规则申报境外收入或企业收入。\n4. 税务申报：中国居民个人取得境外所得，应依法办理个人所得税申报；以一人公司承接时，应按企业收入、成本、发票和纳税规则处理。具体开票、外币折算和税负口径需要咨询会计或税务师。\n5. 数据和隐私：尽量只处理商品图、商品标题、公开页面和打码截图。不要下载完整顾客名单、订单、邮箱、地址或支付信息。若服务欧盟/英国客户并接触个人数据，应明确 DPA、最小化处理、保存期限、删除方式和子处理者。\n6. 平台规则：使用 Shopify API、导入工具或应用时，应遵守 Shopify API License、Partner Program 和 protected customer data 要求，不抓取、不滥用商户数据，不请求超出服务所需的权限。\n7. 语言和时区：客户多在欧美时区，至少要能用英文解释什么是 alt text、为什么有些图片应留空、为什么不能承诺 SEO 排名，以及哪些复杂图片需要客户确认。服务可以异步交付，但样本确认和交付复盘通常需要 1-2 次会议或 Loom 视频。\n\n为什么适合或不完全适合 OPC/一人公司：\n适合点：固定资产轻、可远程交付、服务可标准化成小包，单人能完成样本审计、规则制定、批量标注、复核和报告。对已有英文、电商运营、SEO、翻译、商品上架或内容编辑经验的人，转入成本不高。\n\n不完全适合点：纯人工标注容易被 AI 工具和低价外包压价；大型目录项目需要质量控制、版本管理和抽检流程；如果客户要求“整站合规证明”或法律责任背书，OPC 不应承接。更适合把服务限定在图片文本替代子项，而不是包装成全站无障碍合规服务。\n\n为什么适合或不完全适合数字游民/远程工作者：\n适合点：工作主要依赖浏览器、表格、图片预览、电商后台和文档；可以异步处理，不需要实体门店，不需要本地上门，适合跨境自由职业试单。\n\n不完全适合点：批量图片项目对稳定网络、显示器、专注时间和文件管理要求较高；客户上新节点可能集中在欧美工作日；如果旅行中网络不稳定，不适合承诺当天完成大批量后台代填。数字游民更适合卖预约制审计、AI 复核和小批量交付，而不是无上限紧急更新。\n\n潜在收益和成本结构：\n保守看，新手每月拿到 1-3 个 49-199 美元小单，可能只是数百到数千元人民币毛收入，且需要投入大量售前沟通和样例建设。熟练后如果能和 2-5 个 Shopify/SEO 代理商形成分包合作，或者拿到稳定上新维护客户，收入会更平滑，但仍取决于英文质量、行业垂直度、交付速度和客户复购。\n\n成本包括平台抽佣、收款和汇损、AI 工具订阅、表格/导入工具、测试站、时间成本、返工、客户沟通、税费和可能的外包抽检。这个行业不适合承诺高收益，它更像一个可从低风险小单切入的细分远程服务：用规范和质量控制提高单价，用代理商合作提高复购。\n\n主要风险、合规注意事项和不适合人群：\n- 合规承诺风险：alt text 是无障碍的一小部分，不能宣称做完就 ADA/WCAG 合规，也不能冒充法律意见或认证。\n- SEO 夸大风险：Google 建议使用描述性文件名、标题和 alt text，但图片排名受页面相关性、内容质量、技术性能、索引、链接和搜索意图影响，不能承诺排名提升。\n- 质量风险：AI 可能看错颜色、材质、人物属性、图中文字或产品功能。人工复核必须以页面上下文和客户资料为准。\n- 数据风险：不要索要不必要的客户数据；不保存顾客名单和订单信息；项目结束后删除访问权限和本地副本。\n- 平台风险：Upwork/Fiverr 客户不要私下绕平台付款；Shopify 后台和 API 权限要最小化；不得抓取、出售或复用商户数据。\n- 低价竞争风险：自动化插件很便宜，服务者必须证明复杂图片、品牌术语、上下文和抽检流程的价值。\n- 不适合人群：英文表达弱、不愿读规范、只想关键词堆砌、无法长时间看图和表格、想承诺包排名/包合规、没有耐心做质量检查的人。\n\n新手可验证的 3 个低成本入门步骤：\n1. 搭一个 30-50 个商品的 Shopify 或 WooCommerce 测试目录，分别写商品主图、变体图、生活方式图、装饰图、信息图的 alt text，并做一份前后对比样例。\n2. 选 3 个公开英文小店页面做只读样本审计，只记录公开图片、现有 alt text、问题类型和改写示例，不抓取后台或客户数据，形成英文 portfolio。\n3. 上架一个低风险小包：50 张图片 alt text 审计和改写、交付 CSV、一次修改、明确不承诺整站 WCAG/ADA 合规或 SEO 排名；同时列出需要客户确认的材质、颜色和专业术语。\n\n点评 Agent 审稿：\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：基本克制。低价平台、Shopify App 价格和 Upwork 时薪只适合作为市场存在和价格下限参考，不宜推导稳定收入；正文已补充平台抽佣、返工率、单图耗时、客户获取成本和汇率日期。\n- 信息来源是否足够可信：方向可信。W3C alt text 决策树、Shopify/Etsy alt text 帮助页、Upwork/Fiverr 平台规则、Shopify 数据/API 条款可作为强来源；Fiverr/Upwork 零散服务报价和 App Store 自动化工具价格只能作宽口径对照。\n- 最该补充或提醒的一句话：应明确定位为“alt text 子项优化与交付记录服务”，不能承诺整站 ADA/WCAG 合规或 SEO 排名提升。\n- 审稿结论：通过。选题成立，适合中国境内远程承接海外小单/分包，但正文要弱化合规解决方案叙事，强调人工复核、上下文质量、数据最小化和可审计交付。\n\n核验来源：\n- W3C WCAG 2.2，1.1.1 Non-text Content 要求非文本内容提供文本替代：https://www.w3.org/TR/WCAG22/\n- W3C WAI Images Tutorial / Alt Decision Tree，提供图片替代文本判断路径：https://www.w3.org/WAI/tutorials/images/decision-tree/\n- W3C WAI Understanding SC 1.1.1，解释文本替代的目的和可访问性意义：https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html\n- Section508.gov Authoring Meaningful Alternative Text，说明 alt text 用于向视觉障碍用户传达图片含义：https://www.section508.gov/create/alternative-text/\n- Shopify Help Center: Adding alt text to media，说明 Shopify 商品媒体可添加 alt text，建议简短描述，125 字符以内更佳：https://help.shopify.com/en/manual/products/product-media/add-alt-text\n- Etsy Help: How to Add a Text Alternative to Your Listing Images，说明 Etsy listing image 的 text alternative 添加场景：https://help.etsy.com/hc/en-us/articles/4406604492823-How-to-Add-a-Text-Alternative-to-Your-Listing-Images\n- Google Search Central Image SEO Best Practices，说明 Google 会从页面内容、标题、caption 和 alt text 等理解图片主题：https://developers.google.com/search/docs/appearance/google-images\n- Shopify API License and Terms of Use，说明 API 使用、商户数据、权限和禁止滥用规则：https://www.shopify.com/legal/api-terms\n- Shopify Dev Docs: Work with protected customer data，说明 Shopify 受保护客户数据和合作伙伴责任：https://shopify.dev/docs/apps/launch/protected-customer-data\n- European Commission Data Protection，说明 GDPR 和跨境个人数据保护框架：https://commission.europa.eu/law/law-topic/data-protection_en\n- Upwork Help: Circumvention and why it is against the rules，说明平台内认识的客户不得绕开 Upwork 收款：https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules\n- Fiverr Help: Stay protected - Fiverr's off-platform policy，说明 Fiverr 站内沟通和支付政策：https://help.fiverr.com/hc/en-us/articles/12792122691601-Stay-protected-Fiverr-s-off-platform-policy\n- Upwork Resources: Hourly Rates 2026，说明 Upwork 最低小时费和最低固定价规则：https://www.upwork.com/resources/upwork-hourly-rates\n- Fiverr accessibility services 页面，作为无障碍服务公开报价样本：https://www.fiverr.com/gigs/accessibility\n- Fiverr seo product text 页面，作为 Etsy/product image alt text 服务公开报价样本：https://www.fiverr.com/gigs/seo-product-text\n- Shopify App Store: AltText.ai，作为 AI alt text 工具价格样本：https://apps.shopify.com/alttext-ai\n- Shopify App Store: SEO HERO AI Alt Text Generator，作为 AI alt text 工具价格样本：https://apps.shopify.com/ai-alt-text-generator\n- Shopify App Store: AltMate，作为 bulk alt text editor 工具价格样本：https://apps.shopify.com/alt-mate\n- ZipRecruiter: Freelance Alt Text Writing Jobs，作为 alt text writer 宽口径收入样本：https://www.ziprecruiter.com/Jobs/Freelance-Alt-Text-Writing\n- 国家税务总局英文站，作为中国税务机关公开资料入口：https://fgk.chinatax.gov.cn/eng/home.html\n- Wise USD/CNY 汇率历史，2026-07-13 附近 1 USD 约 6.78 CNY，本文仅作粗算：https://wise.com/us/currency-converter/usd-to-cny-rate/history",
+      "startedAt": "2026-07-13T16:02:57+08:00",
+      "finishedAt": "2026-07-13T16:16:20+08:00",
+      "duration": "13m 23s",
+      "sourceThread": "automation-3 daily run",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "us-market",
+        "alt-text",
+        "accessibility",
+        "ecommerce"
+      ],
+      "nextSteps": [
+        "搭一个 30-50 个商品的 Shopify 或 WooCommerce 测试目录，写出不同图片类型的 alt text，并整理前后对比样例。",
+        "选 3 个公开英文小店页面做只读样本审计，只记录公开图片、现有 alt text、问题类型和改写示例，形成英文 portfolio。",
+        "上架 50 张图片 alt text 审计和改写小包，交付 CSV 和一次修改，并明确不承诺整站 WCAG/ADA 合规或 SEO 排名。"
+      ],
+      "artifacts": [
+        {
+          "label": "W3C WCAG 2.2",
+          "path": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "label": "W3C WAI Images decision tree",
+          "path": "https://www.w3.org/WAI/tutorials/images/decision-tree/"
+        },
+        {
+          "label": "W3C Understanding SC 1.1.1",
+          "path": "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
+        },
+        {
+          "label": "Section508.gov alternative text",
+          "path": "https://www.section508.gov/create/alternative-text/"
+        },
+        {
+          "label": "Shopify adding alt text to media",
+          "path": "https://help.shopify.com/en/manual/products/product-media/add-alt-text"
+        },
+        {
+          "label": "Etsy text alternative for listing images",
+          "path": "https://help.etsy.com/hc/en-us/articles/4406604492823-How-to-Add-a-Text-Alternative-to-Your-Listing-Images"
+        },
+        {
+          "label": "Google image SEO best practices",
+          "path": "https://developers.google.com/search/docs/appearance/google-images"
+        },
+        {
+          "label": "Shopify API License and Terms of Use",
+          "path": "https://www.shopify.com/legal/api-terms"
+        },
+        {
+          "label": "Shopify protected customer data",
+          "path": "https://shopify.dev/docs/apps/launch/protected-customer-data"
+        },
+        {
+          "label": "European Commission data protection",
+          "path": "https://commission.europa.eu/law/law-topic/data-protection_en"
+        },
+        {
+          "label": "Upwork circumvention rules",
+          "path": "https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules"
+        },
+        {
+          "label": "Fiverr off-platform policy",
+          "path": "https://help.fiverr.com/hc/en-us/articles/12792122691601-Stay-protected-Fiverr-s-off-platform-policy"
+        },
+        {
+          "label": "Upwork hourly rates 2026",
+          "path": "https://www.upwork.com/resources/upwork-hourly-rates"
+        },
+        {
+          "label": "Fiverr accessibility service samples",
+          "path": "https://www.fiverr.com/gigs/accessibility"
+        },
+        {
+          "label": "Fiverr seo product text samples",
+          "path": "https://www.fiverr.com/gigs/seo-product-text"
+        },
+        {
+          "label": "AltText.ai Shopify App Store pricing",
+          "path": "https://apps.shopify.com/alttext-ai"
+        },
+        {
+          "label": "SEO HERO AI Alt Text Generator pricing",
+          "path": "https://apps.shopify.com/ai-alt-text-generator"
+        },
+        {
+          "label": "AltMate Shopify App Store pricing",
+          "path": "https://apps.shopify.com/alt-mate"
+        },
+        {
+          "label": "ZipRecruiter alt text writer sample",
+          "path": "https://www.ziprecruiter.com/Jobs/Freelance-Alt-Text-Writing"
+        },
+        {
+          "label": "State Taxation Administration English policy portal",
+          "path": "https://fgk.chinatax.gov.cn/eng/home.html"
+        },
+        {
+          "label": "Wise USD/CNY exchange-rate sample",
+          "path": "https://wise.com/us/currency-converter/usd-to-cny-rate/history"
+        }
+      ],
+      "sourceFile": "runs/2026-07-13/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-12",
       "taskId": "niche-profit-industry",
