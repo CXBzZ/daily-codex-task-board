@@ -1,7 +1,98 @@
 {
-  "generatedAt": "2026-07-16T00:54:18.386Z",
+  "generatedAt": "2026-07-16T08:16:24.174Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-16",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外英语播客和视频播客的转录校对、Show Notes 与章节时间戳服务，属于中国境内可做的海外市场。它适合英文听力、内容编辑和平台格式 QA 能力较强的 OPC/数字游民小规模验证，但必须把版权授权、隐私、返工范围和不承诺增长效果写清楚。",
+      "details": "行业：海外英语播客/视频播客转录校对、Show Notes 与章节时间戳服务\n\n目标市场：\n这是中国境内可做的海外市场机会，主要面向美国、英国、加拿大、澳洲等英语市场的独立播客、B2B 公司播客、创作者工作室、YouTube 视频播客频道、小型播客代理商和内容营销团队。服务者人在中国境内，以 OPC/一人公司、个体工商户或自由职业方式远程承接，核心工作是把 AI 或平台自动生成的 transcript 粗稿校对成可发布的 SRT/VTT/文本稿，并补充 show notes、关键要点、嘉宾/资源链接、时间戳章节和可复用的 episode description。\n\n行业是什么，为什么小众：\n它不是传统听写打字，也不是完整播客制作。更准确地说，它是播客内容发布链条里的人工 QA 和内容整理服务：听音频或看视频，修正自动转录中的人名、品牌名、专业术语、标点、说话人、时间码和语义断句；再把一集 30-90 分钟的口语内容整理成平台可用的说明文、章节和链接。\n\n这个行业小众，是因为它夹在英文听力、转录格式、内容编辑、平台分发、无障碍访问、视频播客章节和客户品牌语气之间。AI 转录工具让初稿变便宜，但也制造了新需求：创作者不想自己逐字核对专业名词、嘉宾姓名、赞助商链接、章节标题和 YouTube 描述；普通 VA 未必懂 VTT/SRT、Podcasting 2.0 transcript tag、Apple/Spotify transcript 上传规则和 YouTube chapter 规则。\n\n需求证据：\nEdison Research 在 The Podcast Consumer 2026 中指出，美国周播客消费者的观看和收听已经接近，视频播客消费在 2025 年 Q3 曾超过纯音频消费。Apple Podcasts 官方说明支持自动生成 transcript，也允许创作者通过 RSS transcript tag 或 Apple Podcasts Connect 上传/替换 VTT/SRT，并强调自备 transcript 应无拼写和标点错误且覆盖完整片段。Spotify for Creators 官方说明，创作者可下载、编辑并重新上传 VTT 文件，也可上传 VTT/SRT，且文件需要时间戳才能同步播放。Podcasting 2.0 的 podcast:transcript tag 用于链接 transcript 或 closed captions 文件，支持 text/vtt、application/x-subrip 等格式。YouTube Help 说明，手动章节必须从 00:00 开始、至少 3 个时间戳、顺序递增，并且每章至少 10 秒。\n\n典型需求场景和客户是谁：\n1. B2B 播客每周发布新集，需要把 Riverside、Descript、Spotify、Apple 或其他工具生成的粗 transcript 校对成网站可发布文本。\n2. 视频播客同步发 YouTube，需要 00:00 开头的章节、吸引人的章节标题、嘉宾链接、赞助商链接和 episode description。\n3. 独立创作者想把长访谈拆成 newsletter、LinkedIn 帖、博客摘要或社媒短内容，但先需要一份干净 transcript 和结构化 show notes。\n4. 播客代理商或后期工作室负责剪辑音频，但把转录 QA、show notes、链接核对和章节时间戳分包给远程 freelancer。\n5. 公司播客涉及产品名、客户名、行业术语和合规表述，需要人工核对，不能直接发布自动转写文本。\n\n行业如何运作，典型参与方和工作流：\n参与方包括播客主理人、嘉宾、后期剪辑师、播客 hosting 平台、Apple Podcasts、Spotify、YouTube、网站 CMS、AI 转录工具、内容营销人员、代理商和转录/show notes freelancer。\n\n典型工作流：\n1. 预筛选：确认客户拥有音频/视频发布权，拒绝盗录、未授权课程搬运、侵权音乐歌词整理、偷拍录音、敏感医疗/法律/儿童访谈等高风险项目。医疗、法律、儿童、未公开投资或人事访谈应默认拒单，除非客户有明确授权、保密条款和更高合规预算。\n2. 范围确认：按单集长度、音质、说话人数、口音、是否需逐字稿、是否需 clean transcript、是否需 SRT/VTT、是否需章节、是否需 show notes、是否需链接核查报价。\n3. 文件交接：客户提供音频/视频、已有 transcript、嘉宾姓名、品牌词表、赞助商链接、发布平台和风格样例；服务者使用最小化权限，不下载不必要的个人数据。\n4. 转录 QA：用 AI 初稿或客户已有稿件为基础，逐段听校，修正专名、断句、时间码、说话人、口头禅保留策略和明显错听。必要时标记 inaudible 或需客户确认处。\n5. 内容整理：输出 150-300 字 episode summary、5-10 条 takeaways、资源链接、嘉宾 bio、CTA、SEO 关键词建议、YouTube/Spotify/Apple 可用章节时间戳。\n6. 格式交付：按客户要求交付 Google Doc、Markdown、Word、TXT、SRT、VTT、CSV 或 CMS 草稿；保留版本和问题清单。\n7. 复核与删除：限定 1-2 轮修改，交付后按合同删除本地音视频和临时 transcript。\n\n盈利模式，收入来自哪里：\n- 单集 transcript QA：客户已有 AI transcript，服务者按 30/60/90 分钟单集进行人工校对、说话人整理和基础格式化。\n- Show notes 包：摘要、要点、嘉宾链接、资源链接、CTA、标题备选和发布说明文。\n- 章节时间戳包：为 YouTube、Spotify 或 Apple 章节生成 00:00 开头的分段标题和时间码。\n- 组合包：transcript QA + show notes + timestamps + 2-3 条社媒摘要。\n- 月度批量包：每月 4-8 集，固定风格、固定词表、固定交付模板，适合成熟后做复购。\n- 代理商白标分包：给播客剪辑工作室、内容营销 agency 或虚拟助理团队提供稳定后端交付。\n\n报价样本和人民币口径：\n本次核验时间为 2026-07-16。Fiverr 的 podcast show notes/shownotes 目录和单个 gig 可见 From $5、$10、$15、$35 等低价入口，个别 gig 标注 75 分钟以内包含 summary、segment timestamps 和 relevant links。Redrum Creative 公开页显示 human-edited podcast transcription 为 $69/episode，适用于 45 分钟以内。Private Type 公开页显示一集 60 分钟以内 show notes + unedited transcript 为 $195，并列出 professionally edited AI-generated transcripts 标准 $45/hour、加急 $55/hour。Podsqueeze 文章把 agency show notes 成本描述为约 $75-$200/episode，同时提醒 AI 工具月费可能显著更低。\n\n按 Wise 2026-07-16 显示 1 USD = 6.768 CNY 粗算，$25-$99 约 169-670 元人民币，$69 约 467 元，$75-$200 约 508-1354 元，$195 约 1320 元，$300-$800 月度包约 2030-5414 元。上述只是公开报价样本，不代表成交率、稳定收入或净利润。新手缺少英语案例、平台评价和播客行业信任背书，通常只能从 $25-$99 的小包验证，且要扣除平台费、收款费、汇损、税费、AI 工具、售前沟通、试听、返工和空档时间。\n\n30/60/90 分钟单集耗时与净时薪测算：\n- 30 分钟清晰单人或双人音频：若报价 $49，粗算 332 元；实际耗时 1.5-2.5 小时，扣除 15% 平台费和少量工具/汇损后，净时薪可能约 100-170 元，前提是客户资料齐全且返工少。\n- 60 分钟访谈音频：若报价 $99，粗算 670 元；实际耗时 3-5 小时，扣除成本后净时薪可能约 95-160 元；若音质差、多人抢话、术语多，净时薪会明显下降。\n- 90 分钟视频播客：若报价 $150，粗算 1015 元；实际耗时 5-8 小时，扣除成本后净时薪可能约 90-155 元；如果还要求博客改写、社媒包和多轮修改，应拆分报价。\n这张表的意义是约束预期：公开美元价格看起来不错，但净收入取决于音质、客户准备程度、返工边界和你的模板化能力。\n\n入门门槛：\n- 技能：英语听力、英文写作和校对、播客口语转书面语、SRT/VTT 基础、时间戳规则、YouTube description 习惯、show notes 结构、基础 SEO、客户品牌语气识别。\n- 设备/软件：稳定电脑和耳机、Google Docs/Word、Descript/Otter/Whisper/Spotify/Apple transcript 导出、Subtitle Edit 或类似字幕工具、表格、云盘、密码管理器。起步不需要重资产。\n- 资质/合规：一般不需要海外本地牌照，但不能承诺 ADA/EAA/WCAG 法律合规结论，不能处理未授权录音或侵犯版权内容，不能整理受版权保护的歌词全文。涉及医疗、法律、儿童、内部会议、未公开财务或人事内容时，应拒单或要求更严格合同、保密和数据处理流程。\n- 资金：主要是工具订阅和学习时间。起步可以用免费/低价 AI 转录额度、开源 Whisper 或平台内 transcript，不建议先买昂贵课程。\n- 渠道：Upwork、Fiverr、LinkedIn、播客代理商冷邮件、Podcast Movement/Reddit/Slack 社群、独立站案例页、给剪辑师和 VA 团队做白标分包。\n- 时间成本：熟悉平台规则和交付模板 1-2 周；真正形成稳定风格和净时薪，需要完成 5-10 集不同类型样本。\n\n中国境内承接海外市场的执行边界：\n- 跨境获客：可以通过 Upwork/Fiverr/LinkedIn/独立站/代理商转介绍获客，不建议群发垃圾邮件、冒充平台官方或用虚假播放量营销。\n- 远程交付：全流程可用云盘、Google Docs、字幕文件和异步评论完成；需要跨时区时，尽量用书面需求表和 24-48 小时交付窗口减少实时会议。\n- 合同、发票与收款：平台单按平台合同、账单和争议机制走；直客单建议签英文 SOW，写明输入文件、输出格式、修改轮次、保密、版权、AI 工具使用告知、数据删除、付款节点和不承诺播放量/SEO/法律无障碍合规。收款可用合规跨境收款工具或银行结汇。\n- 税务申报：中国税务资料显示，居民个人取得境外所得需按规定在次年 3 月 1 日至 6 月 30 日申报；若以个体工商户或个人公司收款，经营所得通常以收入总额减除成本、费用、税金、损失等后的余额为应纳税所得额。平台到账不等于不用报税。\n- 外汇合规：国家外汇管理局个人外汇管理办法实施细则显示，个人结汇/购汇有年度便利化额度，超过额度的经常项目需按规定提交证明材料；若以个体工商户或公司经营，应按银行、外汇和税务要求留存合同、订单、付款记录和发票/账单。\n- 平台规则：遵守 Upwork/Fiverr 站内沟通、付款、账号真实性和禁止绕平台等规则；Upwork 官方说明 freelancer service fee 为每个合同 0%-15%，提交 proposal 或收到 offer 时可看到适用费率。\n- 数据/隐私合规：音视频中可能包含姓名、公司、联系方式、个人观点、医疗经历或未公开商业信息。服务者应只处理必要数据、限制本地保存、约定删除周期，并在涉及欧盟/英国/加州客户时考虑 DPA/NDA。中国个人信息保护法语境下，能识别自然人的信息也应按个人信息处理思路谨慎对待。\n- 语言和时区：英文书面沟通是硬门槛；美国客户常在中国早晚时段回复，服务者需能接受异步沟通和少量跨时区会议。\n\n为什么适合或不完全适合 OPC/一人公司：\n适合点：不需要门店、库存和重设备；一人可以完成听校、编辑、时间戳、交付和客户沟通；可以从单集小包试单；交付模板可复用，月度客户有复购。限制点：多人长访谈、低音质、专业垂直领域、快周转和大量返工会压缩净时薪；一人容易在旺季交付拥堵。建议只承接自己听得懂的行业和口音，把逐字稿、clean transcript、show notes、章节、社媒改写拆成不同价格层级。\n\n为什么适合或不完全适合数字游民/远程工作者：\n适合点：远程交付、轻设备、异步文档、跨城市可做；只要有稳定网络、耳机和安静环境即可工作。限制点：需要长时间专注听音频，对噪声环境敏感；跨时区 deadline 会影响旅行节奏；大文件上传下载需要稳定网络；客户内容可能保密，不适合在公共网络和公共屏幕上处理。\n\n潜在收益，用区间、前提条件和成本结构说明：\n现实路径是低价试单 + 模板化 + 复购。新手每月成交 4-8 个 $25-$99 小包，毛收入约 677-5360 元人民币，扣除平台费、收款费、税费、工具、售前和返工后，可能只是兼职验证。熟练后如果能稳定做 $100-$250/episode 的组合包，每月 8-16 集，毛收入约 5414-27072 元人民币，但前提是有英文案例、稳定获客、清晰拒单边界和高效模板。代理商白标或 4 集/月 $300-$800 的月度包更适合有交付记录后尝试，不应当作为新手默认收入承诺。\n\n主要风险、合规注意事项和不适合人群：\n- AI 自动化压价：纯转录会越来越便宜，必须靠人工 QA、专名核对、章节结构和客户品牌语气区分价值。\n- 版权风险：只能处理客户有权发布的音视频；不要整理盗版课程、付费节目、未授权会议或歌词全文。\n- 隐私和保密风险：访谈内容可能包含个人信息或未公开商业信息，必须最小化处理、限制保存、按约删除。\n- 客户预期风险：show notes 和章节不能保证播放量、SEO 排名、赞助转化或 Apple/Spotify 展示效果。\n- 质量风险：错写嘉宾姓名、品牌名、链接或时间码，会直接影响客户专业形象。\n- 不适合人群：英语听力弱、讨厌细节校对、无法长时间专注听音频、不愿看平台规则、想靠一键 AI 批量交付、不能接受返工沟通的人。\n\n新手可验证的 3 个低成本入门步骤：\n1. 选 3 集公开英语播客，各做 5 分钟样本：一份 clean transcript、一份 SRT/VTT 片段、一份 show notes + 章节时间戳，形成作品集。只用公开片段，不声称与节目合作。\n2. 做一张英文需求表和报价表，明确音频长度、音质、说话人数、输出格式、1-2 轮修改、数据删除和不承诺播放量/SEO/法律合规。\n3. 在 Upwork/Fiverr/LinkedIn 发布 $25-$49 的小型试单：30 分钟以内 AI transcript QA + 章节时间戳 + 150 字 show notes，用 2-3 单记录真实耗时、返工点和净时薪，再决定是否扩展到月度包。\n\n点评 Agent 审稿：\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：整体克制，无明显夸大。价格区间适合作为可验证报价带，但应强调这是毛收入，需按单集耗时、返工、平台费、收款汇损和税费折算净时薪。\n- 信息来源是否足够可信：基本足够可信。Edison 2026、Apple、Spotify、YouTube、Podcasting 2.0、Upwork 这些依据可核验且相关；Fiverr/agency 价格样本波动较大，已标注为公开样本而非行业均价。\n- 最该补充或提醒的一句话：这门生意的关键不是会转录，而是能用客户品牌语气和平台格式要求稳定做人工 QA，并用清晰 SOW 限定版权、隐私、返工和不承诺增长效果。\n- 是否建议通过：建议通过，不需要重选题。已按建议补充单集 30/60/90 分钟耗时与净时薪测算，并把医疗、法律、儿童、未公开敏感访谈列为默认拒单或高级合规项目。\n\n关键来源与链接：\n1. Edison Research - The Podcast Consumer 2026：https://www.edisonresearch.com/the-podcast-consumer-2026/\n2. Apple Podcasts for Creators - Transcripts on Apple Podcasts：https://podcasters.apple.com/support/5316-transcripts-on-apple-podcasts\n3. Spotify for Creators - Managing episode transcripts on Spotify：https://support.spotify.com/us/creators/article/managing-episode-transcripts-on-spotify/\n4. Podcasting 2.0 - podcast:transcript tag：https://podcasting2.org/docs/podcast-namespace/tags/transcript\n5. YouTube Help - Video Chapters：https://support.google.com/youtube/answer/9884579?hl=en\n6. Fiverr - Podcast shownotes service samples：https://www.fiverr.com/gigs/shownotes\n7. Redrum Creative - Podcast transcription service and show notes：https://redrumcreative.com/podcast-transcription-service-show-notes/\n8. Private Type - Podcast show notes and transcript pricing：https://privatetype.co.nz/podcast-show-notes\n9. Podsqueeze - How to choose a podcast show notes service：https://podsqueeze.com/blog/how-to-choose-a-podcast-show-notes-service-actionable-tips/\n10. Upwork Help - Freelancer Service Fee：https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee\n11. Wise - USD to CNY exchange rate history：https://wise.com/gb/currency-converter/usd-to-cny-rate/history\n12. 国家外汇管理局 - 个人外汇管理办法实施细则：https://www.safe.gov.cn/tianjin/2024/0430/2464.html\n13. 国家税务总局 - 关于境外所得有关个人所得税政策的公告：https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html\n14. 国家税务总局上海市税务局 - 个体工商户生产经营所得的应纳税所得额如何计算：https://shanghai.chinatax.gov.cn/zcfw/rdwd/201503/t413002.html",
+      "startedAt": "2026-07-16T16:04:26+08:00",
+      "finishedAt": "2026-07-16T16:16:00+08:00",
+      "duration": "11m 34s",
+      "sourceThread": "automation-3",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "podcast",
+        "content-operations"
+      ],
+      "nextSteps": [
+        "选 3 集公开英语播客，各做 5 分钟 clean transcript、SRT/VTT 片段、show notes 和章节时间戳样本。",
+        "做一张英文需求表和报价表，明确长度、音质、说话人数、输出格式、修改轮次、数据删除和不承诺项。",
+        "发布一个 $25-$49 的小型试单：30 分钟以内 AI transcript QA + 章节时间戳 + 150 字 show notes，并记录真实耗时和返工。"
+      ],
+      "artifacts": [
+        {
+          "label": "Edison Research The Podcast Consumer 2026",
+          "path": "https://www.edisonresearch.com/the-podcast-consumer-2026/"
+        },
+        {
+          "label": "Apple Podcasts transcripts guide",
+          "path": "https://podcasters.apple.com/support/5316-transcripts-on-apple-podcasts"
+        },
+        {
+          "label": "Spotify episode transcript management",
+          "path": "https://support.spotify.com/us/creators/article/managing-episode-transcripts-on-spotify/"
+        },
+        {
+          "label": "Podcasting 2.0 transcript tag",
+          "path": "https://podcasting2.org/docs/podcast-namespace/tags/transcript"
+        },
+        {
+          "label": "YouTube video chapters rules",
+          "path": "https://support.google.com/youtube/answer/9884579?hl=en"
+        },
+        {
+          "label": "Fiverr shownotes service samples",
+          "path": "https://www.fiverr.com/gigs/shownotes"
+        },
+        {
+          "label": "Redrum Creative transcription pricing",
+          "path": "https://redrumcreative.com/podcast-transcription-service-show-notes/"
+        },
+        {
+          "label": "Private Type podcast show notes pricing",
+          "path": "https://privatetype.co.nz/podcast-show-notes"
+        },
+        {
+          "label": "Podsqueeze show notes service pricing context",
+          "path": "https://podsqueeze.com/blog/how-to-choose-a-podcast-show-notes-service-actionable-tips/"
+        },
+        {
+          "label": "Upwork freelancer service fee",
+          "path": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+        },
+        {
+          "label": "Wise USD/CNY exchange rate history",
+          "path": "https://wise.com/gb/currency-converter/usd-to-cny-rate/history"
+        },
+        {
+          "label": "国家外汇管理局个人外汇管理办法实施细则",
+          "path": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+        },
+        {
+          "label": "国家税务总局境外所得个税政策",
+          "path": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html"
+        },
+        {
+          "label": "个体工商户经营所得计税说明",
+          "path": "https://shanghai.chinatax.gov.cn/zcfw/rdwd/201503/t413002.html"
+        }
+      ],
+      "sourceFile": "runs/2026-07-16/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-15",
       "taskId": "niche-profit-industry",
