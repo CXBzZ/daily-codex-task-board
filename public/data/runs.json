@@ -1,7 +1,75 @@
 {
-  "generatedAt": "2026-07-17T00:54:02.079Z",
+  "generatedAt": "2026-07-17T08:06:44.996Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-17",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型网站的 Schema/JSON-LD 结构化数据实施与修复服务，属于中国境内可做的海外市场。它适合有英文、基础前端/CMS、技术 SEO 和平台规则阅读能力的 OPC/数字游民远程试单，但必须限定在合规实施、验证和修复建议，不能承诺排名、富结果展示或流量增长。",
+      "details": "## 行业是什么，为什么小众\nSchema/JSON-LD 结构化数据实施与修复，是给海外小型网站补齐机器可读的页面信息：例如 LocalBusiness、Product、Organization、WebSite、Breadcrumb、FAQ、Article、Service 等 Schema.org 词表，把页面上的真实业务、商品、地址、价格、库存、作者、面包屑等信息用 JSON-LD 写进网页代码，并用 Google Rich Results Test 或 Search Console 相关工具检查错误和警告。\n\n它小众，是因为客户通常知道“SEO”或“独立站优化”，但不知道结构化数据本身；普通内容 SEO 人员不一定会写 JSON-LD，普通前端又不一定熟悉 Google Search Central 的结构化数据政策、Schema.org 类型选择、CMS 插入方式和验证报告。它不是玄学排名服务，而是技术 SEO 里的一个窄环节。\n\n## 目标市场\n本期选择：中国境内可做的海外市场。\n\n主要客户是英语市场的小型本地服务商、小型电商、内容站、独立站、SaaS 官网、房地产/医疗/家装/教育等本地业务网站，以及没有专门技术 SEO 人员的小代理公司。中国境内个人或一人公司可以通过 Upwork、Fiverr、独立站、LinkedIn、冷邮件、海外 SEO 社群等方式获客，远程交付审计报告、JSON-LD 代码、CMS/Shopify/WordPress 插入指导、验证截图和修复清单。\n\n为什么适合从中国境内验证：交付物主要是网页代码和报告，不需要当地门店、当地仓储或线下驻场；可先从 1-5 个页面的小包试单开始；客户是否满意主要看代码是否符合页面真实内容、是否能被测试工具识别、是否减少 Search Console 里的结构化数据错误。\n\n## 典型需求场景和客户\n1. 本地服务商：牙科、律师、家装、清洁、维修、医疗美容等网站，希望 LocalBusiness、Service、FAQ、Breadcrumb 标记更清楚。\n2. 小型电商或 DTC 独立站：希望 Product、Offer、AggregateRating、availability、shippingDetails 等字段更规范，避免商品页结构化数据错误。\n3. 内容站和博客：希望 Article、Author、Organization、Breadcrumb、VideoObject 等标记更完整。\n4. SEO 小代理：把 Schema 实施外包给能读规范、能写代码、能出验证报告的人。\n5. 网站迁移或改版客户：主题、插件、页面模板变更后，旧结构化数据丢失、重复或与页面可见内容不一致，需要排查。\n\n## 行业如何运作\n典型工作流是：\n1. 客户授权访问网站 URL、CMS 后台或代码仓库；若不给后台权限，也可以先做只读审计和代码片段交付。\n2. 服务方收集页面类型、业务名称、地址、电话、营业时间、商品价格、库存、评价来源、服务区域等页面可见信息。\n3. 对照 Google Search Central 结构化数据政策和 Schema.org 词表选择类型，避免标记隐藏内容、虚假评分、页面不存在的信息或与页面主内容不一致的信息。\n4. 编写 JSON-LD，放入 Shopify、WordPress、Wix、Squarespace、Webflow、静态站或自定义前端的合适位置。\n5. 用 Google Rich Results Test、Schema Markup Validator、Search Console 报告或客户提供的错误截图做验证。\n6. 交付代码、前后对比、错误修复说明、限制说明和后续维护建议。\n\n参与方通常包括网站业主、SEO 代理、网站开发者、CMS 插件/主题、自由职业服务商、搜索引擎工具和支付平台。\n\n## 盈利模式和报价口径\n收入主要来自固定项目包、按页收费、小时制咨询和月度维护：\n- 单页或少量页面修复：海外平台低价服务常见约 20-80 美元起，按 1 美元约 6.77 元人民币折算，约 135-540 元人民币。\n- 小型网站基础包：Upwork 项目样本出现 99/190/280 美元三个档位，约 670/1286/1896 元人民币；近期招聘样本也有本地服务网站 Schema 固定价约 150 美元，约 1016 元人民币。\n- 小时制：Upwork JSON-LD 开发者公开样本可见 25-30 美元/小时，约 169-203 元人民币/小时；新手通常不能直接按高价满负荷接单，应从小范围验证和案例积累开始。\n- 维护包：每月检查新页面、商品字段、Search Console 报错和主题更新影响，可做 100-500 美元/月的小包，约 677-3388 元人民币/月，但需要稳定客户和清晰服务边界。\n\n以上只是公开平台样本和可行报价区间，不代表实际收入。平台抽佣、汇损、收款手续费、返工、沟通时间、税费和获客成本都会压缩净收入。\n\n## 入门门槛\n技能：英文阅读和书面沟通、HTML 基础、JSON 语法、基础 JavaScript/CMS 常识、技术 SEO 基础、Google Search Central 结构化数据政策、Schema.org 类型和属性选择、Rich Results Test 和 Search Console 报告解读。\n\n设备/软件：普通电脑、稳定网络、代码编辑器、浏览器开发者工具、Google Rich Results Test、Schema.org Validator、客户 CMS 后台或主题编辑权限、表格和截图工具。多数工具免费，主要成本是学习和试错时间。\n\n资质/合规：通常不需要当地强牌照，但需要客户授权后才能访问后台或代码；涉及医疗、金融、法律等行业时，不应编造资质、评价、价格和声明，不应提供法律合规背书。合同里要写清“交付结构化数据实施和验证，不保证 Google 展示富结果、排名提升或流量增长”。\n\n资金：可低成本启动，域名/作品集/平台会员/工具订阅按需投入。初期更重要的是准备示例报告、模板、测试页面和可审计交付流程。\n\n渠道：Upwork、Fiverr、PeoplePerHour、LinkedIn、海外 SEO 社群、WordPress/Shopify 开发者社群、面向小型 SEO 代理的 B2B 外包。冷邮件必须克制、合规，不使用购买名单群发垃圾邮件。\n\n时间成本：入门学习 2-4 周可做简单页面；能处理复杂电商、动态模板、多语言、多地点、本地业务和 Search Console 批量问题，通常需要 2-6 个月项目经验。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：优先从平台试单、公开招聘和代理合作开始，减少冷启动信任成本；独立站/冷邮件必须遵守目标地区反垃圾邮件和平台规则，不做批量骚扰式获客。\n\n远程交付：尽量使用只读审计、临时代码片段、最小权限后台账号、Git 分支或 staging 环境。交付前要留测试截图、代码 diff、页面 URL 和客户确认记录。\n\n合同/发票或收款：小额平台单按平台合同和账单走；独立客户建议使用英文 SOW，写明页面数量、Schema 类型、修改轮次、权限、保密、付款节点和不保证结果。收款可用平台托管、Payoneer、Wise Business、银行跨境收款等合规渠道，按实际所在地和账户类型确认可用性、费率和外汇规则。\n\n税务申报：中国居民个人从中国境内和境外取得所得依法纳税；财政部、税务总局 2020 年第 3 号公告明确居民个人境外所得应在取得所得次年 3 月 1 日至 6 月 30 日申报。以个体工商户、一人有限公司或个人劳务方式承接时，收入确认、成本扣除、增值税/个税/企业所得税口径不同，应保留合同、平台流水、收款记录和费用凭证，必要时咨询税务专业人士。\n\n平台规则：Upwork/Fiverr 等平台通常禁止绕开平台私下交易、虚假评价、误导性承诺和侵权内容；应按平台服务费、交付期限、退款、争议和身份认证要求执行。\n\n数据/隐私合规：如果接触客户后台、订单、评价、客户名单或用户数据，可能涉及个人数据处理。EU/UK 客户尤其要注意 GDPR/UK GDPR 的 controller/processor 角色、最小化访问、保密和删除要求。最稳妥的交付方式是只处理页面公开信息和测试环境数据，避免下载客户个人数据。\n\n语言和时区：需要英文写作、能解释技术限制、能在欧美客户工作时间有一定响应窗口。复杂项目最好用异步文档、录屏和 issue list，减少实时会议依赖。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：单人可以完成审计、代码、测试和报告；固定资产轻；可标准化成页面审计模板、JSON-LD 模板、交付清单和报价包；项目粒度小，容易试单；后续可向技术 SEO 审计、Shopify/WordPress 维护和本地 SEO 技术支持扩展。\n\n不完全适合点：复杂站点可能需要开发权限、主题改造、后端模板调整或多语言数据建模；客户若期待全站 SEO 增长，单人服务容易被拉进范围蔓延；医疗、金融、法律等行业的声明和评价字段有更高风险。OPC 应避免接超出能力的全站 SEO 承诺，优先做窄范围技术交付。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：服务可远程交付，工具云端化，沟通可异步，项目周期短，适合以作品集和平台评价滚动获客。只要有稳定网络和安全设备，就能在中国境内或合规旅行状态下工作。\n\n不完全适合点：客户后台权限和数据安全要求较高，不能在不安全公共网络处理后台；欧美客户会议可能跨时区；跨境收款、平台 KYC、税务居民身份和长期旅居地规则需要持续管理。\n\n## 潜在收益和成本结构\n低成本验证期：每月 1-3 单小项目，每单 50-150 美元，扣除平台费、汇损和税前成本后，更多是积累案例，不应视为稳定收入。\n\n稳定接单期：若能形成 3-5 个标准包和案例，每月 4-8 个小中型项目，单价 100-300 美元，毛收入约 400-2400 美元，折合约 2700-16260 元人民币。实际净收入取决于获客转化、返工率、平台抽佣、税费和沟通时间。\n\n小型维护期：若有 3-10 个代理或站点维护客户，每月 100-500 美元/客户的巡检和小修包有可能形成更平稳收入，但需要持续响应和质量控制。\n\n主要成本是学习时间、沟通时间、测试环境、平台服务费、汇率/提现费、税费、可能的工具订阅和争议返工成本。不能把公开报价样本直接等同于到手利润。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 夸大承诺：结构化数据只提供被理解和被展示的资格，不保证富结果、排名或流量。\n2. 标记虚假内容：把隐藏内容、虚假评价、虚构价格、虚构地址或客户没有资质的服务写入 Schema，可能违反搜索引擎政策并损害客户网站。\n3. 权限和安全：后台账号、主题文件、API key、客户数据处理不当会引发安全和隐私问题。\n4. 跨境收款和税务：境外收入、平台账单、外汇到账和申报凭证需要留存。\n5. 范围蔓延：客户容易把 Schema 修复扩展成全站 SEO、页面速度、内容改写、开发维护，必须在 SOW 里限制范围。\n\n不适合人群：不愿读英文规则的人；不会基础 HTML/JSON 的人；喜欢承诺“包排名、包富结果”的人；无法严谨处理客户后台权限和保密的人；不能接受反复验证、截图和文档交付的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 用自己搭的测试站或公开示例页面，分别做 LocalBusiness、Product、Article、Breadcrumb 的 JSON-LD 样例，用 Google Rich Results Test 和 Schema.org Validator 出具前后截图，形成一个英文样例报告。\n2. 在 Upwork/Fiverr/PeoplePerHour 搜索 schema markup、JSON-LD、rich snippets、structured data repair，记录 20 个真实需求和报价，做一个只承接 1-5 页审计+修复的小包，不承诺排名或流量。\n3. 找 2-3 个朋友或小型海外站点做低价/试用审计，只交付“错误清单、建议代码、验证截图、风险说明”，确认一单从沟通到收款到交付的完整流程。\n\n## 点评 Agent 审稿\n审稿结论：建议通过。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：克制，没有明显夸大；正文已强调不承诺排名、不承诺富结果展示、不承诺流量增长。\n- 信息来源是否足够可信：足够，关键依据来自 Google Search Central、Google Rich Results Test、Schema.org、Upwork/Fiverr 公开服务和招聘样本、中国税务总局/财政部税务总局境外所得政策。\n- 最该补充或提醒的一句话：交付物应限定为“合规结构化数据实施、验证与修复建议”，不要把 Schema 服务包装成 SEO 排名保证或搜索规则规避服务。\n\n## 关键来源\n1. Google Search Central：General Structured Data Guidelines，说明结构化数据可让页面有资格展示富结果，但不保证展示；并列出格式、质量和内容政策要求。https://developers.google.com/search/docs/appearance/structured-data/sd-policies\n2. Google Search Central：Intro to structured data，说明 Google 用结构化数据理解页面内容，并介绍 JSON-LD 等实现方式。https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data\n3. Google Rich Results Test 官方工具。https://search.google.com/test/rich-results\n4. Schema.org LocalBusiness 和 Product 词表示例。https://schema.org/LocalBusiness 与 https://schema.org/Product\n5. Google Merchant Center 帮助：建议商品相关结构化数据以 JSON-LD 加入 HTML。https://support.google.com/merchants/answer/7331077\n6. Upwork JSON-LD 开发者页面与近期 schema/JSON-LD 招聘样本，作为海外需求和报价样本。https://www.upwork.com/hire/json-ld-developers/ 与 https://www.upwork.com/freelance-jobs/apply/Schema-Markup-Specialist-Technical-SEO-JSON-for-Local-Service-Business_~022075306682052964147/\n7. Fiverr schema/structured data 服务页，作为低价平台报价样本。https://www.fiverr.com/gigs/schema-markup\n8. Upwork 价格页，说明平台对客户和人才收取服务费。https://www.upwork.com/pricing/client\n9. 国家税务总局政策法规库：《中华人民共和国个人所得税法》，居民个人境内外所得依法缴纳个人所得税。https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html\n10. 财政部、税务总局关于境外所得有关个人所得税政策的公告，居民个人境外所得次年 3 月 1 日至 6 月 30 日申报。https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html\n11. European Commission：data controller/data processor 说明，用于提醒 EU 客户数据处理边界。https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/obligations/controllerprocessor/what-data-controller-or-data-processor_en\n12. Wise USD/CNY 汇率历史页，本报告按 2026-07-17 附近 1 美元约 6.77 元人民币做粗略折算。https://wise.com/us/currency-converter/usd-to-cny-rate/history",
+      "startedAt": "2026-07-17T16:00:59+08:00",
+      "finishedAt": "2026-07-17T16:05:30+08:00",
+      "duration": "4m 31s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "technical-seo",
+        "schema-markup",
+        "json-ld"
+      ],
+      "nextSteps": [
+        "搭建测试页面并完成 4 类 Schema/JSON-LD 样例，保存 Rich Results Test 验证截图。",
+        "调研 20 个海外平台 schema markup/JSON-LD 真实需求，设计 1-5 页小包报价和交付清单。",
+        "用低价试单验证审计、代码、验证截图、收款、税务凭证留存和客户确认流程。"
+      ],
+      "artifacts": [
+        {
+          "label": "Google structured data guidelines",
+          "path": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies"
+        },
+        {
+          "label": "Google Rich Results Test",
+          "path": "https://search.google.com/test/rich-results"
+        },
+        {
+          "label": "Schema.org LocalBusiness",
+          "path": "https://schema.org/LocalBusiness"
+        },
+        {
+          "label": "Schema.org Product",
+          "path": "https://schema.org/Product"
+        },
+        {
+          "label": "Upwork JSON-LD developers",
+          "path": "https://www.upwork.com/hire/json-ld-developers/"
+        },
+        {
+          "label": "Fiverr schema markup services",
+          "path": "https://www.fiverr.com/gigs/schema-markup"
+        },
+        {
+          "label": "个人所得税法",
+          "path": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html"
+        },
+        {
+          "label": "境外所得个人所得税政策公告",
+          "path": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html"
+        }
+      ],
+      "sourceFile": "runs/2026-07-17/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-16",
       "taskId": "niche-profit-industry",
