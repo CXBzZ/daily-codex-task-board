@@ -1,7 +1,110 @@
 {
-  "generatedAt": "2026-07-18T00:55:20.363Z",
+  "generatedAt": "2026-07-18T08:06:57.250Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-18",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外 Shopify/DTC 独立站的 Cookie Banner、CMP 与 Google Consent Mode v2 配置核验服务，属于中国境内可做的海外市场。它适合有英文、Shopify、GTM/GA4 和隐私同意信号排查能力的 OPC/数字游民远程试单，但必须限定为技术核验和排错，不提供法律合规背书，也不承诺广告效果恢复。",
+      "details": "## 行业是什么，为什么小众\n面向海外 Shopify/DTC 独立站的 Cookie Banner、CMP 与 Google Consent Mode v2 配置核验服务，是给使用 Shopify、Google Ads、GA4、Google Tag Manager、Meta/TikTok/Pinterest 等营销像素的小型海外电商，检查“用户同意选择是否被正确采集、传递和验证”的技术服务。\n\n它不是普通建站，也不是法律顾问。具体交付通常包括：检查 Shopify Customer Privacy 设置、第三方 CMP 或 cookie banner app、GTM/Google tag、GA4/Google Ads 转化标签、广告像素是否在用户授权前后按规则触发；核验 Google Consent Mode v2 的 ad_storage、analytics_storage、ad_user_data、ad_personalization 等信号；交付问题清单、配置修复、修复前后截图、Tag Assistant 会话证据和限制说明。\n\n它小众，是因为大多数小商家只知道“装一个 cookie banner”，但不知道 banner、CMP、Shopify Customer Privacy API、Google tag、GTM、广告像素和地区化规则之间可能断链。普通 Shopify 开发者不一定熟悉隐私同意信号，普通广告投手又不一定能排查前端标签和 CMP 配置，所以形成了一个很窄但真实存在的技术运营服务。\n\n重要边界：本服务只做 Cookie Banner/CMP/GTM/GA4/Google Consent Mode v2 的技术配置核验和排错，不出具 GDPR、CCPA、UK GDPR 或其他法域的法律合规意见；核验结果只代表测试时点，不承诺广告数据恢复、转化恢复、建模激活、ROAS 提升或免除法律风险。\n\n## 目标市场\n本期选择：中国境内可做的海外市场。\n\n主要目标客户是英语市场和 EU/UK/US 相关业务的 Shopify/DTC 小商家、小型独立站代理、Google Ads/GA4 使用者、海外电商运营工作室，以及收到 tracker/cookie/隐私相关警告或律师函后需要先做技术排查的商家。\n\n为什么适合中国境内小规模验证：交付物主要是远程配置、浏览器测试、报告和截图，不需要海外门店、仓库或当地实体；Shopify、Google Tag Assistant、GTM、GA4、CMP 后台都可远程操作；可以先从“单店只读审计”或“一个地区+四类 consent signal 核验”小单开始。\n\n## 典型需求场景和客户是谁\n1. Shopify 商家启用了 Google & YouTube app、GA4 或 Google Ads 转化追踪，但 EEA/UK 流量的 Consent Mode 提示异常，需要确认是否传递 consent signals。\n2. 商家安装 Consentmo、Pandectes、Cookiebot、CookieYes、OneTrust、Usercentrics、Consentik 等 CMP/cookie banner app 后，不确定 Shopify Customer Privacy、GTM 和广告像素是否同步。\n3. 独立站代理交付电商站时，需要给客户一份“cookie banner + Google Consent Mode v2 已核验”的技术证据包。\n4. 商家发现 GA4 session、转化、广告受众或 remarketing 数据下降，需要区分是正常 consent 影响、标签阻断、地区配置错误，还是 CMP/GTM 配置问题。\n5. 商家收到 CIPA/GDPR/CCPA 类律师函或投诉，先找技术人员保存现状、列出 tracker、确认哪些脚本在 consent 前触发，再交给律师判断法律风险。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括 Shopify 店主、营销代理、隐私律师或合规顾问、CMP/cookie banner app、Shopify Customer Privacy API、Google tag/GTM/GA4/Google Ads、Meta/TikTok/Pinterest/Klaviyo 等第三方脚本，以及自由职业技术服务商。\n\n典型工作流：\n1. 明确范围：只读审计、配置修复、Tag Assistant 验证、CMP app 迁移、GTM 排错，还是多像素 consent 前后行为对比。\n2. 获取授权：客户提供最小权限账号、临时协作者权限、GTM/GA4/Google Ads 只读或发布权限、CMP 后台权限；避免要求主账号密码。\n3. 保存现状：记录当前 Shopify Customer Privacy 地区设置、已安装 privacy app、GTM 容器版本、Customer Events、主题代码和第三方脚本来源。\n4. 测试 consent 前状态：用 Tag Assistant、浏览器开发者工具、无痕窗口和指定地区条件，检查默认 consent 是否为 denied，广告/分析标签是否被正确限制。\n5. 测试 consent 后状态：用户点击接受或拒绝后，核验 ad_storage、analytics_storage、ad_user_data、ad_personalization 是否更新，相关标签是否按 consent 状态触发或阻断。\n6. 修复配置：调整 Shopify banner/CMP、Google & YouTube app、GTM consent settings、标签触发器、Custom Pixel 或 Customer Events，必要时协调 CMP 支持。\n7. 交付报告：列出发现、修改、剩余风险、截图、测试时间、地区/VPN 条件、浏览器环境、Tag Assistant 会话证据和客户后续复测步骤。\n\n## 盈利模式和报价口径\n收入来自固定项目包、小时制排查、一次性修复和月度巡检：\n- 低价小包：Fiverr 上 google consent mode / cookie consent v2 相关服务可见约 NZ$18-NZ$90 起，粗略折合约 80-400 元人民币；这类价格竞争激烈，适合观察需求和包装服务，不适合作为稳定利润预期。\n- 单店基础核验：Upwork 上 Shopify + GTM 设置样本可见 50 美元固定价，约 339 元人民币；更完整的 Shopify privacy/tracking audit 样本为 10-70 美元/小时，按 3-8 小时估算约 30-560 美元，约 203-3791 元人民币。\n- 标准配置+证据包：有经验后可尝试 150-500 美元/店，约 1016-3388 元人民币，交付 Shopify/CMP/GTM/Tag Assistant 截图和修复记录。\n- 复杂排查：涉及多地区、多 CMP、多广告像素、Shopify Customer Events、server-side tracking 或律师函技术取证时，可能到 500-1000 美元以上，约 3388-6777 元人民币以上，但只适合有真实案例、英文沟通和责任边界能力的人。\n\n折算口径：按 2026-07-13 美国联储 H.10 USD/CNY 约 6.78 附近粗略折算，实际以收款日汇率、平台币种、提现渠道和银行结汇为准。以上只是公开平台样本和可行报价区间，不代表到手收益；平台抽佣、汇损、支付手续费、税费、返工、沟通时间和争议成本都会压缩净收入。\n\n## 入门门槛\n技能：英文阅读和书面沟通、Shopify 后台和主题/Customer Events 基础、Google Tag Manager、GA4、Google Ads conversion tracking、基础 JavaScript、浏览器开发者工具、cookie/localStorage/network 请求排查、CMP 配置、Google Consent Mode v2 参数理解。\n\n设备/软件：普通电脑、稳定网络、Chrome/Edge、Tag Assistant、浏览器开发者工具、GTM/GA4/Google Ads 测试权限、Shopify 合作伙伴或协作者账号、截图/录屏工具、表格和报告模板。多数工具免费，主要成本是学习、测试店铺和时间。\n\n资质/合规：通常不需要当地强牌照，但不能冒充律师或隐私合规认证机构。合同和页面文案要写清：只做技术配置、验证和修复建议；隐私政策、cookie 文案、适用法域、用户权利、合法依据和监管应对由客户及其律师确认。\n\n资金：可轻资产启动。初期成本可能包括测试 Shopify 店铺、域名、作品集、平台会员、少量 CMP app 订阅或测试环境。不要先买大量工具订阅，应先用公开文档和免费工具做样例报告。\n\n渠道：Upwork、Fiverr、PeoplePerHour、LinkedIn、Shopify/Google Ads/GA4 社群、海外电商代理合作、独立站案例页。冷邮件必须遵守目标地区反垃圾邮件规则，不购买名单群发，不制造恐吓式合规焦虑。\n\n时间成本：2-4 周可学会基础 Shopify banner + Tag Assistant 核验；要能独立处理 GTM consent settings、第三方像素、Customer Events、CMP 与地区规则冲突，通常需要 2-6 个月实战。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：优先用平台试单或代理合作建立信任，服务页面强调“technical consent signal verification”而不是“GDPR guaranteed compliance”。独立站获客可发布英文样例报告和测试清单，避免用“你一定违法”这类恐吓式营销。\n\n远程交付：采用最小权限和可审计流程。优先让客户创建 Shopify collaborator、GTM/GA4/Ads 限权账号；复杂修改先在 GTM workspace、theme duplicate 或 staging 环境测试；所有关键截图带时间、地区条件、浏览器、URL 和操作说明。\n\n合同/发票或收款：平台单按 Upwork/Fiverr 等平台合同、托管和发票流程；独立客户用英文 SOW，列明店铺数量、测试地区、标签范围、修改轮次、交付物、客户需提供的权限、付款节点、保密、数据删除和不提供法律意见。收款可用平台托管、Payoneer、Wise Business、银行跨境收款等合规渠道，具体以账户资质和所在地规则为准。\n\n税务申报：中国居民个人从境内外取得所得依法纳税；财政部、税务总局关于境外所得的公告明确，居民个人来源于境外的经营所得应与境内经营所得合并计算。以个体工商户、一人有限公司或个人劳务方式承接时，增值税、个税、企业所得税、成本扣除和发票口径不同，应保留合同、平台账单、收款流水、结汇记录和费用凭证，必要时咨询税务专业人士。\n\n外汇与结算：个人真实、合法的经常项目收结汇通常可按银行要求凭身份证件和真实性材料办理；超过便利化额度时，按银行和外汇管理要求提供真实用途证明。不要使用地下钱庄、虚假贸易或代收代付规避监管。\n\n平台规则：不得绕开平台私下收款、刷评价、虚假承诺、侵犯客户账户安全或滥用客户数据。Google、Shopify 和 CMP 的文档更新频繁，交付时要标注测试日期和适用版本。\n\n数据/隐私合规：尽量只处理公开页面、测试订单和匿名化截图；不要下载客户订单、客户名单或广告受众数据。若客户在 EU/UK，注意 controller/processor、DPA、最小化访问、保密、删除和跨境访问约定。若服务过程中接触中国境内收集产生的个人信息，再按中国个人信息保护法和数据出境规则评估。\n\n语言和时区门槛：需要英文解释技术限制和风险边界；欧美客户常要求其工作时段会议，可用异步报告、录屏和 issue list 降低时区压力。隐私相关项目容易带法律和情绪压力，沟通必须谨慎。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：单人即可完成审计、配置、测试、截图和报告；固定资产轻；服务可拆成清晰小包；客户群分散，不依赖单一平台；能通过模板化检查表提升效率。\n\n不完全适合点：隐私法律和平台规则变化快，责任边界必须写清；复杂项目会牵涉律师、广告代理、开发者和 CMP 支持，单人协调压力高；若客户要求法律背书、争议取证或高风险律师函响应，OPC 应只做技术事实记录，必要时建议客户找律师。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：全部工具在线，主要交付是远程配置和文档；可用普通电脑完成；适合在稳定网络环境下异步服务欧美电商客户；小项目周期短，可和其他 Shopify/GA4/GTM 服务组合。\n\n不完全适合点：需要安全网络和设备，不能在不可信公共 Wi-Fi 处理客户后台；时区沟通可能影响生活节奏；平台 KYC、税务居民身份、跨境收款和长期旅居地规则需要持续管理。\n\n## 潜在收益和成本结构\n低成本验证期：每月 1-3 单只读审计或小修复，每单 50-150 美元，毛收入约 339-3049 元人民币；主要价值是案例和流程，不应视为稳定收入。\n\n稳定接单期：如果有 3-5 个标准包、英文样例报告和 5-10 个评价，每月 4-8 个项目，每单 150-500 美元，毛收入约 600-4000 美元，约 4066-27106 元人民币。实际净收入取决于获客转化、返工率、平台抽佣、税费、汇损和沟通时间。\n\n代理合作期：与 Shopify/Google Ads 小代理合作做白标核验，每月 3-10 个店铺巡检或上线前 QA，每店 100-300 美元，可能更平稳，但需要响应 SLA 和质量控制。\n\n成本包括学习时间、测试店铺、平台服务费、CMP app 订阅、收款手续费、汇损、税费、争议退款、数据安全工具和专业责任边界文件。不要把公开报价直接等同于到手利润。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 法律边界风险：客户可能把技术核验误解成 GDPR/CCPA 合规审计，必须书面声明不是法律意见。\n2. 结果承诺风险：Consent Mode 不等于 cookie banner，也不保证 Google Ads 建模、转化数、受众规模或 ROAS 恢复。\n3. 权限安全风险：后台账号、GTM 容器、广告账户和像素配置有高风险，必须使用最小权限、变更记录和客户确认。\n4. 测试口径风险：地区、浏览器、广告拦截器、CMP 版本、Shopify app 更新都会影响测试结果，报告必须写清测试条件和时点。\n5. 数据隐私风险：不要下载客户个人数据；截图要遮挡邮箱、订单号、客户姓名、广告账户 ID 等敏感信息。\n6. 平台更新风险：Google、Shopify、CMP app 和 EU/UK/US 隐私规则变化快，需要持续复查资料。\n\n不适合人群：不愿读英文官方文档的人；不会 GTM/GA4/基础 JS 的人；喜欢承诺“包合规、包恢复广告效果”的人；安全意识弱、习惯让客户发主账号密码的人；无法承受复杂客户沟通和反复验证的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 用测试 Shopify 店铺或演示站，安装一个免费/低价 cookie banner app，分别测试拒绝、接受、仅分析、仅营销四种状态，记录 ad_storage、analytics_storage、ad_user_data、ad_personalization 的 Tag Assistant 截图。\n2. 做一份英文样例报告模板：包含 scope、test environment、before/after findings、consent signals、tags fired/blocked、changes made、remaining risks、not legal advice disclaimer。\n3. 在 Upwork/Fiverr/LinkedIn 只发布“single-store consent mode verification mini-audit”小包，限定 1 个店铺、1 个 CMP、1 个 GTM 容器、2 个地区测试，不接律师函全案和法律合规背书。\n\n## 点评 Agent 审稿\n审稿结论：建议通过，但需加两条边界声明：这是“技术配置核验/排错服务”，不是 GDPR/CCPA/UK GDPR 法律合规审计；核验结果只代表测试时点，不承诺广告数据恢复、转化恢复或 ROAS 提升。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：整体克制；分层报价没有明显夸大，但高价单依赖案例、英文沟通、GTM/GA4 排错经验和责任边界。\n- 信息来源是否足够可信：足够；核心依据来自 Shopify、Google、ICO、Shopify App Store、Upwork/Fiverr 样本、中国税务和外汇官方资料。\n- 最该补充或提醒的一句话：本服务只核验 Cookie Banner/CMP/GTM/GA4/Google Consent Mode v2 的技术信号与配置证据，不出具法律合规意见，客户应自行确认适用法域和隐私文本。\n\n## 关键来源\n1. Shopify Help Center：Understanding customer privacy settings in your Shopify admin，说明 Shopify 可设置隐私政策、cookie banner、按地区管理，并说明 Google Consent Mode v2 需要正确传递用户同意。https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/understanding-customer-privacy-settings\n2. Shopify Dev Docs：Customer Privacy API，说明该浏览器 API 可检查数据处理权限、注册 consent，并提醒未获同意收集数据可能不符合法律要求。https://shopify.dev/docs/api/customer-privacy\n3. Google Ads Help：Updates to consent mode for traffic in EEA，说明 EEA 用户使用 Google tags 测量行为时，需要向 Google 传递终端用户同意选择，并新增 ad_user_data、ad_personalization 参数。https://support.google.com/google-ads/answer/13695607?hl=en\n4. Google Tag Platform：Set up consent mode on websites，说明 consent mode 用于根据用户对广告和分析目的的同意控制数据收集。https://developers.google.com/tag-platform/security/guides/consent\n5. Google Tag Manager Help：Verify consent mode implementation，说明可用 Tag Assistant 核验，并检查 ad_storage、ad_personalization、ad_user_data、analytics_storage 等参数。https://support.google.com/tagmanager/answer/14218557?hl=en\n6. Google Analytics Help：Set up Shopify to obtain user consent，说明 Shopify 内置 cookie banner 可作为起点，启用后 consent mode 会自动启用。https://support.google.com/analytics/answer/14563069?hl=en\n7. ICO：Cookies and similar technologies，说明非必要 cookie/类似技术通常需要告知、解释用途并取得主动明确 consent。https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/cookies-and-similar-technologies/\n8. Shopify App Store：Consentmo、Pandectes、Consentik 等 privacy/cookie banner app 的定价和功能样本，用于判断工具生态和商家需求。https://apps.shopify.com/gdpr-backpack 、https://apps.shopify.com/gdpr-cookie-consent 、https://apps.shopify.com/eu-cookies-notification\n9. Upwork：Shopify Privacy & Tracking Audit、Google Tag Manager & Shopify Setup 等公开招聘样本，用于观察海外需求、技能要求和报价区间。https://www.upwork.com/freelance-jobs/apply/Shopify-Privacy-Tracking-Audit-CIPA-Consent-Compliance_~022060475864952543904/ 与 https://www.upwork.com/freelance-jobs/apply/Google-Tag-Manager-Shopify-Setup_~022072970549000984861/\n10. Fiverr：Google Consent Mode / Cookie Consent v2 服务页，作为低价平台报价样本。https://www.fiverr.com/gigs/google-consent-mode\n11. 财政部、税务总局：关于境外所得有关个人所得税政策的公告，居民个人来源于境外的经营所得应与境内经营所得合并计算。https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html\n12. 国家外汇管理局资料：个人真实、合法的经常项目外汇需求按规定办理，超过便利化额度需提供真实性材料。https://www.safe.gov.cn/neimenggu/file/file/20200228/fa90770027ed4d919de981c09bc25751.pdf\n13. Federal Reserve H.10：人民币兑美元历史汇率，作为 2026-07-13 附近 USD/CNY 粗略折算参考。https://www.federalreserve.gov/releases/h10/hist/dat00_ch.htm",
+      "startedAt": "2026-07-18T16:00:54+08:00",
+      "finishedAt": "2026-07-18T16:04:22+08:00",
+      "duration": "3m 28s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "eu-market",
+        "uk-market",
+        "us-market",
+        "shopify",
+        "google-consent-mode",
+        "privacy-tech"
+      ],
+      "nextSteps": [
+        "用测试 Shopify 店铺完成 cookie banner 与 Google Consent Mode v2 四类信号核验截图。",
+        "制作英文 mini-audit 样例报告，明确 scope、测试条件、修复前后证据和非法律意见声明。",
+        "在 Upwork/Fiverr/LinkedIn 发布单店小包，限定 1 个店铺、1 个 CMP、1 个 GTM 容器和 2 个地区测试。"
+      ],
+      "artifacts": [
+        {
+          "label": "Shopify customer privacy settings",
+          "path": "https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/understanding-customer-privacy-settings"
+        },
+        {
+          "label": "Shopify Customer Privacy API",
+          "path": "https://shopify.dev/docs/api/customer-privacy"
+        },
+        {
+          "label": "Google Ads consent mode EEA update",
+          "path": "https://support.google.com/google-ads/answer/13695607?hl=en"
+        },
+        {
+          "label": "Google consent mode setup",
+          "path": "https://developers.google.com/tag-platform/security/guides/consent"
+        },
+        {
+          "label": "Verify consent mode with Tag Assistant",
+          "path": "https://support.google.com/tagmanager/answer/14218557?hl=en"
+        },
+        {
+          "label": "Google Analytics Shopify consent setup",
+          "path": "https://support.google.com/analytics/answer/14563069?hl=en"
+        },
+        {
+          "label": "ICO cookies and similar technologies guidance",
+          "path": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/cookies-and-similar-technologies/"
+        },
+        {
+          "label": "Consentmo Shopify App Store pricing",
+          "path": "https://apps.shopify.com/gdpr-backpack"
+        },
+        {
+          "label": "Pandectes Shopify App Store pricing",
+          "path": "https://apps.shopify.com/gdpr-cookie-consent"
+        },
+        {
+          "label": "Consentik Shopify App Store pricing",
+          "path": "https://apps.shopify.com/eu-cookies-notification"
+        },
+        {
+          "label": "Upwork Shopify privacy tracking audit sample",
+          "path": "https://www.upwork.com/freelance-jobs/apply/Shopify-Privacy-Tracking-Audit-CIPA-Consent-Compliance_~022060475864952543904/"
+        },
+        {
+          "label": "Upwork GTM Shopify setup sample",
+          "path": "https://www.upwork.com/freelance-jobs/apply/Google-Tag-Manager-Shopify-Setup_~022072970549000984861/"
+        },
+        {
+          "label": "Fiverr Google Consent Mode services",
+          "path": "https://www.fiverr.com/gigs/google-consent-mode"
+        },
+        {
+          "label": "境外所得个人所得税政策公告",
+          "path": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207136/content.html"
+        },
+        {
+          "label": "个人外汇管理政策及常见问题解答",
+          "path": "https://www.safe.gov.cn/neimenggu/file/file/20200228/fa90770027ed4d919de981c09bc25751.pdf"
+        },
+        {
+          "label": "Federal Reserve H.10 USD/CNY historical rates",
+          "path": "https://www.federalreserve.gov/releases/h10/hist/dat00_ch.htm"
+        }
+      ],
+      "sourceFile": "runs/2026-07-18/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-17",
       "taskId": "niche-profit-industry",
