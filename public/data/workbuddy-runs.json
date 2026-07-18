@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-07-17T08:06:44.996Z",
+  "generatedAt": "2026-07-18T00:55:20.363Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-18",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：专利附图/技术制图（Patent Illustration）",
+      "status": "success",
+      "summary": "把发明人的草图/照片/CAD 文件，转成符合专利局（USPTO/EPO/PCT）格式规范的黑白线条附图。这是每份非临时专利申请几乎都要用、却极少有人专门去搜的隐蔽刚需；纯线上异步交付、按图计费、工具几乎免费，非常适合一人远程公司与数字游民。",
+      "details": "### 1. 行业是什么，为什么小众\n一句话定义：把发明人的手绘草图、产品照片或 CAD 模型，转画成符合专利局格式规范（美国 37 CFR §1.84，及 EPO/WIPO/PCT 等）的黑白线条“专利附图”（patent drawings / patent illustration），交给律师或发明人用于专利申请。\n\n为什么小众/被低估：\n- 搜索量低、需求隐蔽：普通人只知道“申请专利要找律师”，几乎没人意识到附图是一个可以单独外包的独立环节。它藏在“专利申请”这个大流程里的一个小工序。\n- 看起来门槛高、其实是格式活：很多人以为要懂法律或工程，其实核心是“看懂结构 + 按规矩画干净的线条图 + 标注引用标号（reference numerals）”。§1.84 规定得极细（纸张、页边距、线宽、剖面线、标号引线），反而让它成了一个“照章办事”的标准化技能。\n- 夹在几个行业之间：它既不是纯“插画/平面设计”，也不是“专利代理”，而是横跨制图 + 合规的中间地带，主流设计师和主流律师都不专门做，留给了细分玩家。\n\n### 2. 如何运作\n典型客户与需求触发点：\n- 专利律师事务所 / 专利代理人（最稳定的 B 端客户，重复下单量大，一家所可能常年外包）。\n- 独立发明人、硬件/消费品初创、亚马逊卖家（要申请外观设计专利 design patent 保护产品外观）。\n- 触发点：临近申请截止日、收到 USPTO 的附图缺陷通知（OPAP Notice / Office Action）要补正、把临时申请转正式申请时需要正式图。\n\n核心交付物：一套符合专利局格式的矢量线条图（PDF，或 300+ DPI 的 TIFF/PNG），含多视图（正/背/侧/顶/底/立体、爆炸图、剖视图）、一致的引用标号与引线，随时可上传到 USPTO Patent Center。\n\n完整工作流：\n1. 获客：Fiverr/Upwork 上架 gig、给本地及海外律所发冷邮件、LinkedIn 展示作品集、老客户转介绍。\n2. 收料：客户发草图/照片/CAD/文字说明，签 NDA（专利未公开前保密极重要）。\n3. 报价：按“图数 × 单价 + 修改轮次”报价，明确含几轮免费修改。\n4. 制图：用矢量/CAD 工具画线条图 → 加引用标号与引线 → 按 §1.84 校对页边距、线宽、剖面线、页码格式（如 1/8）。\n5. 交付：发 PDF/矢量文件 + 源文件，配合修改直到律师/审查员满意。\n6. 收款：平台托管自动打款（Fiverr/Upwork），独立客户用 Wise/PayPal/Stripe 首尾款。\n\n关键工具与平台：Adobe Illustrator、Inkscape（免费）、CorelDRAW、AutoCAD/SolidWorks/Fusion 360（处理 CAD 源文件）、Visio（流程图/框图）；接单平台 Fiverr、Upwork；参照 USPTO 官方 37 CFR §1.84 与 MPEP §608.02。\n\n### 3. 盈利模式\n收入来源与定价（2026 年公开行情）：\n- 按图/按页计费是行业惯例，分三档：低价/离岸每图约 $25–$59；美国中端每页约 $100–$125；资深/复杂（机械装配、医疗器械、诉讼级）每图 $75–$300。\n- 一件发明专利通常 5–10 幅图，整套约 $300–$2,000；美国外观设计专利至少 7 个视图，整套约 $525–$2,100。\n- 修改按轮计费：通常含 1–2 轮小改，之后每轮 $50–$100。\n- 加急溢价：标准交付约 7–10 个工作日，加急通常加收 20–50%。\n\n利润空间：工具成本极低（Inkscape 免费；Illustrator 约 $23/月），无库存无场地，主要成本是时间与平台 10–20% 抽成。熟练后一张标准图 1–3 小时，毛利率常达 70–90%。\n\n复购/长期合同：非常强。律所是高频重复客户——Fiverr 上头部卖家（如 9 年经验、1500+ 项目、20000+ 张图）大量收入来自律所回头客与“审查意见补正图（replacement sheets）”这类持续小单。\n\n### 4. 入门门槛\n技能：会用一款矢量或 CAD 工具（Illustrator/Inkscape/AutoCAD）是基础；核心是读懂 37 CFR §1.84 的格式规则 + 会标引用标号。有工程/制图/设计背景的人上手最快，从零系统学约 3–6 周即可产出合规图。\n工具：Inkscape 免费即可起步；Illustrator 约 $23/月；处理 CAD 源文件时可用 Fusion 360 个人版。初期几乎零付费。\n资金：启动成本约 $0–$50（域名/作品集）。\n时间：从零到第一单约 3–6 周（学规则 + 做 3–5 张作品集样图 + 上架 gig 接低价首单）。\n\n### 5. 为什么适合 OPC / 数字游民\n- 纯数字异步交付：全程收文件、画图、发文件，无需实体到场，时差反而是优势（客户睡觉时你交图）。\n- 全球客户、以美国为主：USPTO 是全球最大的“付费画图”市场，英语 + 通用制图工具即可接全球单；印度、巴基斯坦的自由职业者已证明离岸远程完全可行。\n- 边际成本极低、可复用：同类产品的视图有大量可复用模板，第二单往往比第一单快数倍。\n- 标准化、可规模化：§1.84 规则固定，可做成 Fiverr 分级套餐（$30/$40/$240）自动接单，也可专攻某一细分（外观设计、软件流程图、医疗器械）建立口碑。\n- B 端复购稳定：绑定几家律所后现金流可预测，适合一个人长期经营。\n\n### 6. 潜在收益（谨慎，不承诺）\n参考数据（来自公开平台报价与行业指南，不等于个人收入）：\n- 单价：Fiverr 在售套餐从 $5–$5 起步价到复杂单 $200–$500+/图；专业服务商 $40–$150/页（如 Straight Line Services 均价约 $85/页）。\n- 市场体量：WIPO 数据显示 2024 年全球专利申请达创纪录的 370 万件，USPTO 一家就受理约 60.3 万件；几乎每份非临时申请都需附图，需求基数巨大且逐年增长。\n- 阶段区间（谨慎估算）：\n  - 新手期（练手 + 低价单）：月约 $300–$1,500，主要靠 Fiverr 基础套餐走量、积累好评。\n  - 成熟期（绑定 2–4 家律所 + 稳定回头客 + 加急/补正单）：月约 $2,000–$6,000，头部专职者更高。\n  这些是参考数据，实际收入取决于获客、质量、语言与所在时区，不构成收入承诺。\n\n### 7. 主要风险\n- 市场/技术风险：AI 制图工具（如 PatentDrawingAI、PatentFig AI）已能把草图/CAD 几分钟转成 §1.84 风格图，单价约 $1–$5/张，正在压低简单图（流程图、框图）的价格。应对：向复杂机械/外观设计/诉讼级、以及“AI 出图 + 人工把关合规”的服务上移。\n- 平台风险：高度依赖 Fiverr/Upwork 的排名与抽成；账号被限或算法变动会直接影响单量。应对：尽早把律所客户沉淀到站外私域。\n- 合规/保密风险：专利公开前极度敏感，泄露可能毁掉客户的新颖性；务必签 NDA、妥善存储文件。跨境收款涉及税务与外汇合规。\n- 现金流风险：律所常见账期（Net 30/60）；独立客户可能拖尾款。应对：新客户先收定金、用平台托管、明确修改轮次上限避免无休止免费改图。\n\n### 8. 不适合的人群\n- 完全没有制图/绘图耐心、看到密密麻麻的格式规则就头疼的人。\n- 想要“被动收入、不动手”的人——这是靠手艺和交付时间换钱的服务，不是躺赚。\n- 不愿处理保密与跨境合规、也不愿签 NDA 谨慎存档的人。\n- 只想接中文本地单的人——最大市场是英文（USPTO），语言与时区错配会限制天花板。\n\n### 9. 3 个可验证的入门步骤\n1. 今天：读一遍 USPTO 官方 37 CFR §1.84 附图规则，用 Inkscape（免费）把一张简单产品照片临摹成符合规则的黑白线条图并标 2–3 个引用标号（验证你能否在几小时内产出“看起来合规”的一张图）。\n2. 第 2 天：在 Fiverr 搜 “patent drawing”，读 15 个在售 gig 的套餐、价格与评价，整理出你的定价与差异化定位，并建一个含 3–5 张样图的作品集页（验证真实需求与竞品报价）。\n3. 第 3 天：给 5–10 家本地/海外小型专利事务所发一封带作品集链接的冷邮件，或在 Upwork 投 3 个 patent illustration 项目，主动提出首单折扣换好评（验证客户是否愿意付费、你的报价是否有回应）。\n\n### 10. 核验来源\n见 artifacts 字段所附公开链接（USPTO 官方规则、WIPO 全球专利统计、Fiverr 在售 gig 与真实卖家页、多家专利制图服务商公开报价、行业价格指南）。",
+      "startedAt": "2026-07-18T08:50:00+08:00",
+      "finishedAt": "2026-07-18T09:32:00+08:00",
+      "duration": "42m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "patent-illustration",
+        "technical-drawing",
+        "intellectual-property",
+        "freelance-service"
+      ],
+      "nextSteps": [
+        "今天：读一遍 USPTO 37 CFR §1.84 附图规则，用免费的 Inkscape 把一张产品照片临摹成合规黑白线条图并标 2–3 个引用标号（验证几小时内能否产出一张“看起来合规”的图）。",
+        "第 2 天：在 Fiverr 搜 'patent drawing' 读 15 个在售 gig 的套餐/价格/评价，定好自己的报价与差异化定位，并建一个含 3–5 张样图的作品集页（验证真实需求与竞品行情）。",
+        "第 3 天：给 5–10 家本地/海外小型专利事务所发带作品集链接的冷邮件，或在 Upwork 投 3 个 patent illustration 项目，用首单折扣换公开好评（验证客户付费意愿）。"
+      ],
+      "artifacts": [
+        {
+          "label": "USPTO 官方 37 CFR §1.84 专利附图标准（eCFR）",
+          "path": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-1/subpart-A/subject-group-ECFR5f2b0c6c3a4e5b9/section-1.84"
+        },
+        {
+          "label": "WIPO 世界知识产权指标 2025：2024 全球专利申请 370 万件、USPTO 60.3 万件",
+          "path": "https://www.wipo.int/web-publications/world-intellectual-property-indicators-2025-highlights/en/patents-highlights.html"
+        },
+        {
+          "label": "Fiverr 专利附图在售 gig 分类页（真实供给与报价）",
+          "path": "https://pro.fiverr.com/gigs/patent-drawing"
+        },
+        {
+          "label": "Fiverr 真实卖家页（9 年经验、1500+ 项目、20000+ 张图）",
+          "path": "https://www.fiverr.com/patent_drawing/excellent-quality-patent-drawings-and-free-consultation-provided"
+        },
+        {
+          "label": "Straight Line Services 公开报价（实用型 $40–150/页，均价 $85）",
+          "path": "https://www.patentdrawings.com/pricing"
+        },
+        {
+          "label": "Twenty20 Illustrations 公开价目表（含补正/转案报价）",
+          "path": "https://twenty20illustrations.com/estimated-cost"
+        },
+        {
+          "label": "Made Patents：专利附图要求、费用与要点（2026）",
+          "path": "https://madepatents.com/guides/patent-drawings"
+        },
+        {
+          "label": "PatentDrawingAI：2026 十家专利制图服务商报价评测",
+          "path": "https://patentdrawingai.com/blog/patent-drawing-services"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-07-18/niche-opc-industry.json"
+    },
     {
       "date": "2026-07-17",
       "taskId": "niche-opc-industry",
