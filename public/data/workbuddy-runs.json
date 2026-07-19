@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-07-18T08:06:57.250Z",
+  "generatedAt": "2026-07-19T11:57:51.655Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-19",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：AI 电商商品图生成服务",
+      "status": "success",
+      "summary": "AI 电商商品图生成服务：用 Photoroom、Pebblely、Botika 等 AI 工具，为 Amazon、Shopify、淘宝、小红书等卖家批量生成棚拍级商品图、场景图与虚拟模特上身图，全程无需实体摄影棚。市场已被多家机构验证（2025 约 15 亿美元、2033 约 50 亿美元），且完全远程、单人可闭环、启动成本低于 200 美元，非常适合一人公司与数字游民。",
+      "details": "### 1. 行业是什么，为什么小众\n一句话定义：用 AI 图像工具（Photoroom、Pebblely、Booth.ai、Botika、Topaz 等）为电商卖家批量生成「棚拍级」商品图、场景图、白底图与虚拟模特上身图的服务，全程无需实体摄影棚。\n为什么被低估：①搜索量低——多数人搜 \"product photography\" 想到的是传统摄影师，AI 代生成这一细分还没独立成类目；②需求隐蔽——海量中小卖家（Amazon/Shopify/Etsy/TikTok Shop/淘宝/小红书）想做更好看的图，却不知道可以「不拍而生成」；③夹在「平面设计」「修图」「AI 工具」三个大行业之间，被两头忽略；④看似技术门槛高，实际一天就能上手，是典型的「被低估但真有付费需求」方向。\n\n### 2. 如何运作\n典型客户：DTC / 跨境独立站卖家、Amazon / Etsy 中小卖家、淘宝 / 小红书品牌、需要大量上新图的内容电商团队。\n需求触发：上新季、投广告需要多套素材、想做 lifestyle 场景但请不起摄影棚、想把白底图变「上身 / 场景图」。\n核心交付物：白底精修图、AI 场景 / 背景图、虚拟模特上身图（服装）、信息图 / A+ 图文、社媒广告素材套图。\n完整工作流：①获客（Fiverr / Upwork 挂 gig、小红书 / Pinterest 引流、直接进 Amazon 卖家社群）；②接单（确认品类 / 平台规范 / 张数 / 风格）；③处理（抠图 → 换背景或生成场景 → 调光与阴影 → 服装类按需虚拟模特）；④交付（源文件 + 成品，按平台尺寸导出）；⑤收款（平台托管或预付 50%）。\n关键工具与平台：Photoroom（去背 / 场景，$12.99/月起，300M+ 下载）、Pebblely（场景背景，约 $19/月）、Booth.ai / Flair.ai（艺术指导级场景）、Botika（服装虚拟模特，服务 3000+ 品牌）、Topaz Photo AI（精修，$17/月）、Canva（排版）、Remove.bg（去背）、Fiverr / Upwork（接单）。\n\n### 3. 盈利模式\n收入来源：按张 / 按套收费、按月 retainer（为固定卖家持续供图）、加急费、增值项（A+ 页面 / 视频动图）。\n定价参考（公开数据）：Bet on AI 2026 年 6 月统计 Fiverr / Upwork 上「AI Image & Product Photography」gig 为 $60–$400/单；Pixii 统计 Fiverr 产品图编辑 $5–$50/张、Upwork 设计师 $15–$35/小时、agency 全套 listing $1,500–$8,000。\n利润空间：工具月费约 $20–$60、平台抽成 20%（Fiverr 新卖家前 10 单 10%，Upwork 10–20%），扣除后单图毛利可达 70–90%；批量复用模板后边际成本极低。\n复购 / 长期合同：强——电商持续上新，月度 retainer 与长期供货很常见，客户黏性高。\n\n### 4. 入门门槛\n技能：会用上述工具 + 基础审美（构图 / 光影 / 平台规范），1–3 天可学会；服装类需懂尺码版型呈现，进阶才需提示词技巧。\n工具：起步 $20–$60/月订阅 + 免费档即可，无需相机 / 摄影棚 / 库存。\n资金：启动 < $200（含首月工具费 + 制作作品样张），远低于传统摄影棚投入。\n时间：从零到第一单约 1–3 周（做 10–20 张样张 + 挂 gig + 主动报价）。\n\n### 5. 为什么适合 OPC / 数字游民\n①异步交付：客户发图、你处理、传回，全程无需实时会议，时区友好；②全球客户：Fiverr / Upwork 自带跨境流量，美元结算、人民币成本，汇率差明显；③零边际设备：纯云端工具，一台笔记本即可，任何有网的地方都能干；④可规模化：模板复用 + 批量处理，深圳卖家实测单日可交付 15+ 单、净利约 ¥3,200/天；⑤低合规负担：无本地执照、无实体，纯数字服务，适合边旅行边接单。\n\n### 6. 潜在收益（谨慎，不承诺）\n参考数据（不等于个人收入）：新手月入约 $500–$3,000（Liezhe 实测 Topaz 接单），成熟接单者可达 $6,000/月；retainer 模式 $150–$1,300/月/客户，全套 listing agency 报价 $1,500–$8,000。\n市场体量：AI 电商商品图工具市场 2025 约 $15 亿、CAGR ~22%、2033 约 $50 亿（DataInsightsMarket）；AI 产品摄影整体 2024 $4.5 亿 → 2035 $50 亿、CAGR 24.5%（Business Research Insights）。SHEIN 用 AI 日产 10,000+ 商品图、Inditex 承诺到 2026 年底投 $4 亿做 AI 摄影基建——说明需求真实且在扩张。\n这些是行业 / 平台数据，不等于个人收入；实际取决于获客能力、作品质量与定价策略。\n\n### 7. 主要风险\n市场风险：传统摄影师与「AI 修图」已有内卷；Canva / Photoroom 等大平台也在抢终端用户，挤压中间服务者。\n技术风险：工具依赖——某工具涨价或关停即影响交付；AI 对透明 / 反光 / 复杂布料易翻车，需人工兜底（约 78% 企业保留人工复核）。\n合规风险：Amazon 要求 AI 图标注「Simulated Image」；Etsy 禁止未声明 AI 作品；欧盟 AI Act / C2PA 数字水印要求、违规最高罚营业额 4%；FTC 2026 加强 AI 商品图披露要求（市场研究摘要）；存在版权与「以假乱真」误导消费者风险。\n现金流风险：平台账期（Fiverr 首款冻结 14 天）、获客前期 0 收入、低价内卷压利润。\n\n### 8. 不适合的人群\n想「躺赚 / 全自动」的人（仍需审美与交付）；不愿做客服 / 改稿的人；对平台规则与知识产权完全无感的人；想做实体摄影棚 / 囤库存的人（本方向恰恰避开这些）；对欧美客户沟通有语言障碍且不打算补的人。\n\n### 9. 3 个可验证的入门步骤\n1. 今天：用 Photoroom 免费档 + Pebblely 试用，挑 3 个商品各生成「白底图 + 1 张场景图 + 1 张虚拟模特图」（服装用 Botika 试用），做成 9 图作品集——1 天内可完成，验证工具是否真能出片。\n2. 第 2 天：在 Fiverr 挂一个 gig「I will create AI product photos for your e-commerce」，三档定价 $5/$15/$35，Tags 用 product photo / ecommerce / AI generated，并去 Buyer Request 每天报 10 单——验证是否有真实询单。\n3. 第 3 天：用小红书 / Pinterest 发「AI 商品图前后对比」引流，或主动私信 10 个 Amazon 小卖家提供免费样张换反馈——验证除平台外是否有自然流量与复购意愿。\n\n### 10. 核验来源\n1) Rainfrog 2026 终极指南：AI 产品摄影市场 2024 $4.5 亿→2035 $50 亿、传统摄影 $85–250/SKU、SHEIN 日产 1 万+图、Inditex 投 $4 亿。\n2) DataInsightsMarket：AI 电商商品图工具市场 2025 ~$15 亿、CAGR 22%、2033 ~$50 亿。\n3) PMarketResearch：区域份额（北美 36.1%）、云端占 74.4%、FTC 2026 与欧盟 DSA 合规提示。\n4) Bet on AI（2026.6）：Fiverr / Upwork「AI Image & Product Photography」gig 实际成交 $60–$400/单。\n5) Pixii：Fiverr 产品图编辑 $5–$50/张、Upwork $15–$35/小时、agency $1,500–$8,000/listing。\n6) 猎者出海：Topaz AI 修图接单，新手月入 $500–3,000、单图 $5–50、启动 < ¥1500。\n7) Pebblely 官网：真实商家证言、场景背景工具、约 $19/月。\n8) Botika 官网：服装虚拟模特，服务 3000+ 品牌、视觉生产成本降 90%。",
+      "startedAt": "2026-07-19T19:40:00+08:00",
+      "finishedAt": "2026-07-19T19:56:00+08:00",
+      "duration": "16m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "ecommerce",
+        "ai-imaging",
+        "product-photography",
+        "freelance"
+      ],
+      "nextSteps": [
+        "今天：用 Photoroom 免费档 + Pebblely 试用，挑 3 个商品各生成白底图+场景图+虚拟模特图（服装用 Botika），做成 9 图作品集，验证工具能否出片。",
+        "第 2 天：在 Fiverr 挂 gig「I will create AI product photos for your e-commerce」，三档 $5/$15/$35，Tags 用 product photo/ecommerce/AI generated，每天去 Buyer Request 报 10 单，验证真实询单。",
+        "第 3 天：用小红书 / Pinterest 发「AI 商品图前后对比」引流，或私信 10 个 Amazon 小卖家送免费样张换反馈，验证自然流量与复购意愿。"
+      ],
+      "artifacts": [
+        {
+          "label": "Rainfrog 2026 AI 产品摄影终极指南（市场数据/案例）",
+          "path": "https://www.rainfrog.ai/blog/the-ultimate-guide-to-ai-generated-product-photography-for-e-commerce-2026"
+        },
+        {
+          "label": "DataInsightsMarket：AI 电商商品图工具市场报告",
+          "path": "https://www.datainsightsmarket.com/reports/ai-product-photography-tools-for-e-commerce-526255"
+        },
+        {
+          "label": "PMarketResearch：AI 商品图生成器区域与合规数据",
+          "path": "https://pmarketresearch.com/it/ai-product-photo-generator-market/"
+        },
+        {
+          "label": "Bet on AI：2026.6 Fiverr/Upwork AI 产品摄影 gig 成交价",
+          "path": "https://betonai.net/the-10-highest-earning-ai-automation-gigs-on-fiverr-upwork-in-june-2026-what-is-actually-selling-real-earnings-data-and-the-gig-templates-that-convert"
+        },
+        {
+          "label": "Pixii：Amazon listing 设计师 / 产品图报价区间",
+          "path": "https://pixii.ai/updates/how-much-does-an-amazon-listing-designer-cost"
+        },
+        {
+          "label": "猎者出海：Topaz AI 修图接单实战（收入/定价）",
+          "path": "https://www.liezhe.com/topaz-ai-xiutu-zhuanqian/"
+        },
+        {
+          "label": "Pebblely 官网（场景背景 AI 工具与商家证言）",
+          "path": "https://pebblely.com/zh/"
+        },
+        {
+          "label": "Botika 官网（服装虚拟模特，3000+ 品牌）",
+          "path": "https://botika.io/products/flat"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-07-19/niche-opc-industry.json"
+    },
     {
       "date": "2026-07-18",
       "taskId": "niche-opc-industry",
