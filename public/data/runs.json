@@ -1,7 +1,89 @@
 {
-  "generatedAt": "2026-07-20T00:56:21.288Z",
+  "generatedAt": "2026-07-20T08:06:35.645Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-20",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型机构的 PDF 无障碍修复、Tagged PDF 与验证报告交付服务，属于中国境内可做的海外英语市场。它适合有英文、PDF 标签结构、无障碍检查和客户数据安全意识的 OPC/数字游民小规模试单，但只能交付技术修复记录和检查报告，不能出具 ADA、Section 508 或 EAA 法律合规证明。",
+      "details": "## 行业是什么，为什么小众\nPDF 无障碍修复服务，是把客户已有 PDF 文件整理成更容易被屏幕阅读器、键盘导航和辅助技术读取的结构化文件。典型工作包括：添加或修正 Tagged PDF 结构、标题层级、段落和列表标签、图片替代文本、表格表头与单元格关系、阅读顺序、书签、表单字段标签、链接文本、文档语言、元数据，以及对扫描件做 OCR 文本层。\n\n它小众，是因为它夹在出版排版、网页无障碍、政府采购、教育内容和 PDF 技术之间。普通设计师会做视觉版式，但不一定理解 PDF 标签树、阅读顺序和 PDF/UA；普通网页无障碍测试者熟悉 WCAG，但不一定会在 Acrobat、PAC、CommonLook 或 API 工具里修 PDF；很多小机构有历史 PDF 存量，又没有内部无障碍团队。\n\n重要边界：本服务只能写成技术修复记录、PDF/UA/WCAG 机器检查报告与人工复核说明，不得写成 ADA、Section 508、EAA 或任何法域的法律合规证明。自动检查通过也不等于完整可访问，复杂内容仍需要人工判断和客户确认。\n\n## 目标市场\n本期选择：中国境内可做的海外市场，重点是英语市场。\n\n潜在客户包括美国地方政府供应商、小型非营利组织、学校和培训机构、协会、咨询公司、SaaS 企业、电子书和白皮书发布者，以及海外无障碍咨询公司的外包产能。它们常见需求不是开发一个新系统，而是把既有 PDF、表格、申请表、报告、课程讲义、宣传册和下载资料修到可检查、可交付、可归档的状态。\n\n为什么适合中国境内验证：工作主要围绕文件、工具和报告远程交付，不需要海外实体门店，不依赖当地线下资质，不需要进入客户现场。一个人可以先从 5-20 页的小文件、只读审计或修复前后对比样例开始验证需求。\n\n## 典型需求场景和客户是谁\n1. 小型政府承包商或咨询公司要给美国州、市、县机构提交 PDF 报告，希望至少满足 Section 508 项目交付要求。\n2. 非营利组织、协会和教育机构有大量下载 PDF，希望减少视障用户阅读障碍和投诉风险。\n3. 海外无障碍顾问接到大批量 PDF 项目，需要把简单文件、表格或扫描件拆给外包人员预处理。\n4. SaaS、金融科技或 B2B 公司发布英文白皮书、产品手册、年度报告，需要 tagged PDF 和检查报告作为销售或采购材料的一部分。\n5. Kindle/EPUB、PPT、Word 无障碍服务商顺带承接 PDF 修复，但需要专人处理 PDF 标签树和验证报告。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括客户内容负责人、设计或排版人员、无障碍顾问、PDF 修复服务商、法律或采购团队、辅助技术用户，以及 Acrobat Pro、Adobe PDF Services API、PAC、CommonLook、AxesPDF、GrackleDocs 等工具。\n\n典型工作流：\n1. 范围评估：确认页数、源文件、是否扫描件、是否有复杂表格、图表、表单、脚注、数学公式、多语言或敏感信息。\n2. 报价与授权：约定按页、按文件或按小时计费，写清只做技术修复，不提供法律意见；客户确认有权提供文件并允许处理。\n3. 基线检查：用 Acrobat Accessibility Checker、Adobe PDF Services API 或其他工具生成初始问题清单，同时人工检查阅读顺序和内容语义。\n4. 修复执行：调整标签树、标题、表格结构、表单标签、替代文本、书签、语言、元数据、链接和 OCR 文本层。\n5. 人工复核：用屏幕阅读器抽查关键页面，检查阅读顺序是否符合语义，确认表格和图表不是只靠自动工具硬改。\n6. 交付验收：交付修复后 PDF、检查报告、修复说明、已知限制、未处理项和建议客户从源文件侧改进的清单。\n\n## 盈利模式和报价口径\n收入来自小文件诊断包、按页修复、复杂表单/扫描件加价、批量项目、白标外包和月度文档无障碍维护。\n\n公开样本显示，Fiverr 上 PDF remediation 相关服务有数百个，低价服务常见从 10-110 美元起；Accessible.org 公开 PDF remediation 价格为简单文件 7.50-9.50 美元/页，高级文件 9.50-11.50 美元/页，复杂文件 11.50 美元/页以上。另有自动化或半自动化服务把入门价打到更低，这说明市场真实存在，但价格分层和竞争都很明显。\n\n按 2026-07-20 参考汇率 1 USD 约 6.780 CNY 粗略折算：\n- 新手小文件诊断包：10-50 美元，约 68-339 元人民币，适合 5-20 页文件的检查报告或少量修复。\n- 简单按页修复：2-8 美元/页，约 14-54 元人民币/页，用于文字为主、结构简单、源文件清晰的 PDF。\n- 复杂文件：表单、扫描件、复杂表格、图表和多语言内容应另报价，不建议新手低价承诺。\n- 月度试单假设：每月 8-20 个小包，或 100-300 页简单文件，毛收入可能从数千元到一两万元人民币；但平台佣金、工具订阅、支付手续费、税费、返工和沟通时间都会显著压缩净收入。\n\n这些数字只能作为报价样本和试单测算，不是收益承诺。低价平台竞争强，页数收入也不能简单线性外推，因为复杂表格和表单会吞掉大量时间。\n\n## 入门门槛\n技能：英文读写、WCAG 基础、PDF/UA 基础、Tagged PDF 结构、Acrobat Pro 标签树操作、表格结构判断、替代文本写作、OCR 和阅读顺序复核。更高阶项目还需要了解屏幕阅读器、复杂表单、图表描述和客户行业术语。\n\n设备/软件：普通电脑、稳定网络、Acrobat Pro 或同类 PDF 工具、检查工具、屏幕阅读器测试环境、截图和版本记录工具。初期不要急着购买昂贵企业工具，应先用试用版、公开指南和简单文件做样例报告。\n\n资质/合规：通常不需要当地强制牌照，但不能冒充律师、认证审计机构或政府认可检测机构。若客户要求正式 VPAT、ACR、法律意见或政府采购合规背书，应与专业无障碍顾问或律师合作，而不是单人硬接。\n\n资金：轻资产启动，主要成本是工具订阅、学习时间、作品集制作和平台抽佣。可以先做 2-3 份公开材料的前后对比样例，证明自己能读懂标签树和报告，而不是只会点自动修复按钮。\n\n渠道：Upwork、Fiverr、PeoplePerHour、LinkedIn、海外无障碍咨询机构外包、出版和教育技术社群、独立站案例页。获客文案应强调 technical PDF remediation、tagged PDF、accessibility report、manual review，不要写 guaranteed legal compliance。\n\n时间成本：2-4 周可学会基础工具和简单文档修复；要稳定处理表格、表单、扫描件和客户验收，通常需要 2-6 个月实战。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：优先通过平台试单或与海外无障碍顾问、设计代理、内容代理合作。冷邮件和 LinkedIn 私信要克制，不购买名单群发，不制造恐吓式合规焦虑。\n\n远程交付：只处理客户授权文件，使用加密传输和版本管理，敏感文件尽量让客户脱敏。交付前后文件、报告、截图和修改记录要保存，但保存期限、删除方式和备份范围应在合同里说明。\n\n合同/发票或收款：平台订单按平台合同和托管流程；独立客户用英文 SOW，列明页数、复杂度、工具、交付物、验收标准、返工次数、保密、数据删除、付款节点和非法律意见声明。收款可使用平台托管、Payoneer、PayPal、Wise Business 或银行跨境收款等合规渠道，按自身账户资质和所在地规则处理。\n\n税务申报：中国境内个人或一人公司承接海外服务，应保留合同、平台账单、收款流水、结汇记录和费用凭证。个体工商户、个人独资企业、有限公司和个人劳务的增值税、个税或企业所得税口径不同；跨境销售服务是否适用免税或征税，也要按具体服务、客户所在地和主管税务机关要求判断。\n\n外汇与结算：真实、合法的经常项目收支应按银行和外汇管理要求办理，必要时提供合同、发票、平台账单或服务证明。不要使用地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：不得绕开平台私下收款、刷单、虚假评价、冒用认证、上传客户敏感文件到未授权 AI 或第三方工具。若使用云端 PDF 工具，必须确认客户是否允许文件上传到该服务。\n\n数据/隐私合规：PDF 可能包含学生、患者、求职者、客户名单、合同和财务数据。尽量只接公开发布资料或脱敏文件；涉及医疗、教育、政府、儿童或个人敏感信息时，必须签 NDA/DPA 并限制访问。不能把客户文件用于作品集，除非取得书面授权。\n\n语言和时区门槛：需要英文解释技术限制、返工范围和检查结果；欧美客户可能要求工作日会议，可用异步报告、录屏和问题清单降低时区压力。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：单人能完成小文件评估、修复、复核和报告；固定资产轻；交付物清晰；容易用模板化检查表提升效率；可与 Alt Text、EPUB、PPT/Word 无障碍、网页无障碍服务组合销售。\n\n不完全适合点：复杂文件质量责任高，法律语境敏感，客户可能把检查报告误解成合规证明。单人要控制文件复杂度、页数、返工次数和数据安全，不能盲目接政府大批量、诉讼相关或高敏文件。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：主要工具在线，文件远程交付，普通电脑即可开始；项目颗粒度可小可大；适合异步沟通和跨时区交付。\n\n不完全适合点：客户文件安全要求高，不适合在不可信网络和共享电脑上处理；大文件上传下载依赖稳定网络；长期旅居还会影响税务居民身份、平台 KYC 和收款账户合规。\n\n## 潜在收益和成本结构\n低成本验证期：每月 3-8 个 10-50 美元小包，毛收入约 203-2712 元人民币，重点是积累样例、评价和流程。\n\n标准接单期：每月 100-300 页简单或中等复杂文件，按 2-8 美元/页计算，毛收入约 200-2400 美元，约 1356-16272 元人民币。能否达到取决于获客、速度、质量、返工率和客户复购。\n\n白标合作期：与海外无障碍顾问或设计代理合作，可能按批量低价稳定供稿，但需要 SLA、质量控制和数据安全流程。若能专攻表格、表单、扫描件或教育材料，单页单价可能更高，但学习曲线也更陡。\n\n主要成本包括 Acrobat Pro 或专业工具、平台佣金、收款手续费、汇损、税费、云存储或安全工具、返工、客户沟通和质量复核时间。自动化工具能提速，但不能替代人工语义判断。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 法律边界风险：客户可能要求出具 ADA、Section 508、EAA 合规证明，个人服务商应拒绝或转给专业机构。\n2. 自动检查误导：Adobe 等工具会输出 passed、failed、needs manual check，但机器可验证项目不是全部可访问性。\n3. 数据安全风险：PDF 常含个人信息、合同、成绩、医疗或财务内容，未经授权不能上传到第三方工具或 AI 服务。\n4. 质量风险：表格、表单、图表和脚注最容易出错，低价按页接复杂件会亏损并引发纠纷。\n5. 平台竞争风险：低价平台已有大量服务商，新手必须用清晰样例、范围控制和响应速度区分，而不是拼包过。\n6. 税务外汇风险：跨境收款要真实申报和留存凭证，不能把海外收入当作无需申报的小钱。\n\n不适合人群：不愿读英文标准和工具报告的人；只会自动修复、不愿人工复核的人；安全意识弱、喜欢把客户文件随意上传工具的人；想用合规焦虑做夸大营销的人；无法承受重复细致校对的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 选 2 份公开 PDF，一份文字型、一份带表格或图片，用 Acrobat 或同类工具生成修复前检查报告，再手动修复标签、阅读顺序、Alt Text 和书签，做前后对比样例。\n2. 制作英文 mini-audit 模板，包含 scope、file inventory、tool results、manual review notes、fixed issues、known limitations、not legal advice disclaimer 和 data deletion statement。\n3. 在 Upwork/Fiverr/LinkedIn 发布小包，只接 1 个文件、20 页以内、非敏感资料、1 次返工的技术修复或诊断，明确复杂表格、扫描件和表单另报价。\n\n## 点评 Agent 审稿\n审稿结论：通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：是，整体克制。用小包、按页、复杂件另报价、不保证月收入的表述是稳妥的，没有明显夸大；但应提醒低价平台竞争强，页数收入不能简单线性外推。\n- 信息来源是否足够可信：足够。Section508.gov、W3C、PDF Association、Adobe、ADA.gov 属于强依据；Fiverr 和 Accessible.org 适合作为价格样本，不宜作为行业均价定论。\n- 最该补充或提醒的一句话：交付物只能写成技术修复记录、PDF/UA/WCAG 机器检查报告与人工复核说明，不得写成 ADA/Section 508/EAA 法律合规证明，且自动检查通过不等于完整可访问。\n\n## 关键来源\n1. Section508.gov：Create Accessible PDFs，提供 PDF 创建、测试和修复指南入口，并提醒 PDF 并不总是最适合的数字格式。https://www.section508.gov/create/pdfs/\n2. W3C WAI：WCAG 2.2 Techniques，列出 PDF1-PDF7 等 PDF 技术，如 Alt、书签、阅读顺序、表格和 OCR。https://www.w3.org/WAI/WCAG22/Techniques/\n3. ADA.gov：Title II web and mobile app accessibility guide，说明州和地方政府 web content 包括 documents，并列出部分既有文档和受保护个人化文档例外。https://www.ada.gov/resources/small-entity-compliance-guide/\n4. PDF Association：ISO 14289-1 / PDF/UA 资料，说明 Tagged PDF 是语义信息载体，也提醒 PDF/UA 本身不必然保证内容完全可访问。https://pdfa.org/resource/iso-14289-pdfua/\n5. Adobe Developers：PDF Services API Accessibility Checker，可检查 PDF/UA 和 WCAG 的机器可验证项目，并输出 passed、failed、needs manual check。https://developer.adobe.com/document-services/apis/pdf-services/check-pdf-accessibility/\n6. Fiverr：PDF remediation 服务列表，作为海外低价平台需求和报价样本。https://www.fiverr.com/gigs/pdf-remediation\n7. Accessible.org：PDF Remediation Services，公开列出简单、高级和复杂 PDF 修复的按页价格样本。https://accessible.org/services/pdf-remediation/\n8. Foreign Exchange Resource：USD/CNY 近月汇率，2026-07-20 显示 1 USD 约 CN¥6.780。https://www.foreignexchangeresource.com/forex_rates.php?a=CNY&c=USD&d=20\n9. 国家税务总局：跨境应税行为免征增值税政策问答，列出向境外单位提供且完全在境外消费的部分服务类别。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n10. 国家外汇管理局：个人外汇管理办法，明确个人外汇业务按交易性质区分经常项目和资本项目，银行按规定审核和办理。https://www.safe.gov.cn/safe/2022/0818/21330.html\n11. 国家税务总局：个体工商户个人所得税计税办法，说明查账征收个体工商户经营所得计算规则。https://12366.chinatax.gov.cn/bzds/070/070-5-9.html",
+      "startedAt": "2026-07-20T16:01:12+08:00",
+      "finishedAt": "2026-07-20T16:04:42+08:00",
+      "duration": "3m 30s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "us-market",
+        "eu-market",
+        "accessibility",
+        "pdf-remediation",
+        "pdf-ua"
+      ],
+      "nextSteps": [
+        "选 2 份公开 PDF 做修复前后对比样例，重点练习标签树、阅读顺序、Alt Text 和表格。",
+        "制作英文 mini-audit 模板，写清范围、工具结果、人工复核、已知限制、非法律意见和数据删除声明。",
+        "发布 20 页以内、非敏感文件的小包试单，限定 1 次返工，复杂表格、扫描件和表单另报价。"
+      ],
+      "artifacts": [
+        {
+          "label": "Section508.gov Create Accessible PDFs",
+          "path": "https://www.section508.gov/create/pdfs/"
+        },
+        {
+          "label": "W3C WCAG 2.2 Techniques",
+          "path": "https://www.w3.org/WAI/WCAG22/Techniques/"
+        },
+        {
+          "label": "ADA.gov Title II small entity guide",
+          "path": "https://www.ada.gov/resources/small-entity-compliance-guide/"
+        },
+        {
+          "label": "PDF Association ISO 14289 PDF/UA",
+          "path": "https://pdfa.org/resource/iso-14289-pdfua/"
+        },
+        {
+          "label": "Adobe PDF Accessibility Checker API",
+          "path": "https://developer.adobe.com/document-services/apis/pdf-services/check-pdf-accessibility/"
+        },
+        {
+          "label": "Fiverr PDF remediation services",
+          "path": "https://www.fiverr.com/gigs/pdf-remediation"
+        },
+        {
+          "label": "Accessible.org PDF remediation pricing",
+          "path": "https://accessible.org/services/pdf-remediation/"
+        },
+        {
+          "label": "USD/CNY exchange reference",
+          "path": "https://www.foreignexchangeresource.com/forex_rates.php?a=CNY&c=USD&d=20"
+        },
+        {
+          "label": "国家税务总局跨境应税行为免税问答",
+          "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+        },
+        {
+          "label": "国家外汇管理局个人外汇管理办法",
+          "path": "https://www.safe.gov.cn/safe/2022/0818/21330.html"
+        },
+        {
+          "label": "个体工商户个人所得税计税办法",
+          "path": "https://12366.chinatax.gov.cn/bzds/070/070-5-9.html"
+        }
+      ],
+      "sourceFile": "runs/2026-07-20/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-18",
       "taskId": "niche-profit-industry",
