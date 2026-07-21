@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-07-20T08:06:35.645Z",
+  "generatedAt": "2026-07-21T00:54:01.387Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-21",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：自助出版电子书排版与格式化服务",
+      "status": "success",
+      "summary": "自助出版电子书排版与格式化服务，是帮独立作者把稿件排成符合 Amazon KDP / IngramSpark / Apple Books 等平台规范的 EPUB 与印刷级 PDF 的内文版式工作。它夹在写作与封面设计之间、搜索量低却需求真实（2025 年美国带 ISBN 自出版书超 350 万本、同比 +38.7%），一人即可用免费或低价工具远程异步交付，启动成本近乎为零、净利率约 70–85%，非常适合 OPC 与数字游民。",
+      "details": "### 1. 行业是什么，为什么小众\n一句话定义：帮自出版作者把 Word 终稿排版成符合 Amazon KDP / IngramSpark / Apple Books 等平台规范的 EPUB 电子书 + 印刷级 PDF，属于「内文版式设计 / Interior Book Formatting」。\n\n为什么普通人容易忽略它：\n- 搜索量低：普通人搜「如何自出版」远多于「book formatting service」，需求隐蔽——作者写完书才意识到版式是上架前的拦路虎。\n- 夹在大行业之间：它既不是纯写作、也不是封面设计，而是「内文排版 / 文字工程」，被出版产业链两头忽略。\n- 看起来技术门槛高：涉及 EPUB 语义标签、CSS、trim size、margins、bleed，吓退非技术作者；但熟练后其实是高度模板化的重复劳动。\n- 有真实付费需求：2025 年美国带 ISBN 自出版作品 350 万+ 本（同比 +38.7%），其中约 90% 卖不过 100 本，作者愿意花钱让书「看起来像传统出版社出品」以脱颖而出。\n\n### 2. 如何运作\n典型客户：独立作者（小说 / 非虚构 / 回忆录）、企业人士出书、低内容书（planner / journal）出版商、需要 lead magnet / PDF 的创作者与知识博主。\n需求触发点：写完稿、决定上架 KDP / IngramSpark 时；被平台以 trim / margin 错误拒稿后；想做纸质书但 Word 排版崩了；做系列书每本都需排版。\n核心交付物：EPUB（通用电子书，适配 Kindle / Apple / Kobo）、KPF（Kindle 专用）、印刷级 PDF（paperback / hardcover，含页码、页眉、TOC）、可选 MOBI 与协助上传 KDP 后台。\n\n完整工作流（获客→交付→收款）：\n1. 获客：在 Reedsy / Fiverr / Upwork 挂服务；在 Reddit r/selfpublish、Facebook 作者群、NaNoWriMo 季（11 月–次年 2 月旺季）发案例；靠老客户转介。\n2. 接单：作者给「已编辑好的 Word 终稿」→ 你确认字数 / 页数 / 图片表格 / 目标平台 → 报价（按项目 / 按页 / 按时）。\n3. 交付：用 Atticus / Vellum / Reedsy Editor / InDesign 排版 → 导出多格式 → 在 Kindle Paperwhite、手机 App、Apple Books 三端测试。\n4. 收款：25–50% 定金 + 验收尾款；平台托管（Reedsy / Fiverr 款先押后放）。\n关键工具与平台：Atticus（$147 一次性）、Vellum（$249 Mac）、Reedsy Book Editor（免费）、Kindle Create（免费）、Draft2Digital（免费）、Adobe InDesign（$22.99/月）、Calibre（免费）；发布平台 KDP / IngramSpark / Lulu / Apple Books / Kobo。\n\n### 3. 盈利模式\n收入来源与定价方式：\n- 按项目（最常见）：标准小说电子书 $50–200、纸书 $100–300、电子+纸组合 $150–400、精装 +$50–150（Zinn Hub）；Reedsy 标准小说约 $200–300；专业版小说 $300–800、复杂书 $600–3,500（The Author Central）。\n- 按页：印刷排版 $3–8 / 页。\n- 按时：格式化工时 $35–75 / 小时；电子书排版 $25–60 / 小时（Remote Job Leads）。\n- 增值服务：KDP 上架协助、ISBN / 版权页处理、关键词与类目研究 $100–300、全套代运营 $500–1,500+。\n利润空间：纯服务、无库存，软件成本极低（免费工具起步，Atticus $147 一次性可摊到无数本书），扣除平台抽成（Fiverr 约 20%、Reedsy 约 10%）与税费后，净利率约 70–85%。\n复购与长期合同：作者系列书每本都要排版，带来稳定复购；可转 retainer——自助出版顾问月费 $1,500–5,000（Small Business Ideas）；老客户转介是主要增长来源。\n\n### 4. 入门门槛\n技能：会用排版工具 + 理解平台规范（trim size、margins、bleed、EPUB 语义标签、TOC）。会 Word / Google Docs 基础即可上手；复杂书（图文 / 表格 / 学术）需 InDesign 或 Affinity。学会基础约 1–2 周（每天 2 小时看教程 + 练 1 本书）。\n工具：起步用免费 Kindle Create / Reedsy Editor / Calibre；想规模化买 Atticus $147 一次性（非 Mac 用户最划算），或 Vellum $249（Mac）。无需设计功底，模板化作业。\n资金：几乎为零——免费工具即可接第一单；若买 Atticus 约 ¥1,050 一次性。无库存、无场地。\n时间：从零到第一单约 2–4 周（学工具 1–2 周 + 在 Fiverr / Reedsy 上架接单 1–2 周）。头几单可低价（$30–80）换好评与案例。\n\n### 5. 为什么适合 OPC / 数字游民\n- 异步交付：交付物是文件（EPUB / PDF），不需要实时在线会议，邮件与平台消息即可，天然适配时区差，半夜收到需求白天处理。\n- 全球客户：英语自出版市场以美 / 英 / 澳为主，但客户来自全球；你身在何处无所谓，只要能收 PayPal / Wise。\n- 边际成本低：一旦做好小说 / 非虚构 / 教材模板，后续每本只是替换内容，时间成本递减，规模化靠模板而非加人。\n- 可规模化：从单一排版 → 叠加封面协调、KDP 上架、关键词研究、代运营，单人可做到月入数千美元而不雇人。\n- 时区友好：作者常在非工作时间发需求，无需值守；跨时区反而成了优势而非障碍。\n- 无本地执照 / 场地：纯线上文字工作，不受地域监管限制（区别于需要持证上岗的线下工种）。\n\n### 6. 潜在收益（谨慎，不承诺）\n以下为公开数据与行业区间，是参考而非个人收入承诺：\n- 新手阶段（前 3–6 月）：Fiverr / Reedsy 低价单 $30–200 / 本，月接 4–8 单，月入约 $200–1,500（约 ¥1,400–10,500）；中文市场兼职月入约 ¥2,000–5,000（头条案例）。\n- 成熟阶段：稳定客源后标准小说 $300–800、组合 $400–1,200、复杂书 $1,500–3,500；月接 8–15 单或转顾问 retainer $1,500–5,000 / 月，月入可达 $2,000–6,000+（约 ¥14,000–42,000+）。\n- 市场支撑：自助出版「服务」市场（含排版）2025 年约 $2.69 亿、2033 年约 $4.3 亿（CAGR 6.4%）；Reedsy 平台有 400+ 认证内文设计师、Fiverr 上 book formatting 有数千个 gig、KDP 年新增 140 万+ 自出版书——需求池持续扩大。\n- 重要提示：以上为行业区间与平台数据，个人实际收入取决于获客能力、作品质量与定价，不构成任何收益承诺。\n\n### 7. 主要风险\n- 市场风险：低门槛导致 Fiverr 低价内卷（预算单 $30 起），简单小说排版价格被持续压低；若自出版热度降温，需求增速可能放缓。\n- 技术风险：AI 工具（Atticus / Vellum 自动排版、ChatGPT 辅助）让作者能 DIY，挤压简单单；平台政策变化——Amazon 2025 年中调整 KDP 部分纸书版税率、降低部分市场每页印刷成本，影响定价与利润；EPUB 标准与设备兼容持续变动，需持续学习。\n- 合规风险：跨境收款税务（美 / 英客户付款需申报自雇 / 1099，中国居民按个税法申报）；服务类大多不涉及 VAT，但欧盟大额合同需留意；不得伪造 ISBN / 版权页；用 AI 排版须按平台要求披露（Fiverr 已要求告知 AI 使用情况）。\n- 现金流风险：平台账期（Reedsy / Fiverr 放款在交付验收后）；获客需要时间运营案例与评价；定金比例谈不拢时可能垫资排版。\n\n### 8. 不适合的人群\n- 想「被动收入 / 躺赚」的人：这是按项目交付的活，不做单就没收入。\n- 厌恶细节、对排版美感无感的人：margin 错一点、破折号乱码一个都会被读者差评。\n- 完全不懂英语、不愿服务海外市场的人：最大付费池在英语自出版；中文市场单量小、单价低（¥300–3,000 / 本）。\n- 想靠 AI 全自动代劳的人：简单书正被 AI 替代，人需做复杂书 / 质检 / 客户沟通才有溢价。\n- 需要稳定月薪兜底的人：前期收入波动较大。\n\n### 9. 3 个可验证的入门步骤\n1. 用免费工具排一本样书（1 天内可验证）：下载 Kindle Create 或 Reedsy Book Editor（均免费），把你手头一篇 3,000 字文章或公版文本排成 EPUB + 打印 PDF，导入手机 Kindle App 与 Apple Books 看是否错位。能跑通 = 你具备基础能力。\n2. 在 Fiverr / Reedsy 上架一个 $30–80 的「小说电子书排版」gig，并在 Reddit r/selfpublish 发一条「免费帮 1 位作者排版样章换反馈」的帖子（1–3 天）。看是否有人咨询 / 下单——直接验证需求真实存在。\n3. 研究 3 个竞品定价与交付物（1 天）：打开 Reedsy book-layout-design 页面与 Fiverr 前 5 个 book formatting gig，记录它们的价格档、交付格式、修订次数、评价数。据此定出你的首档报价与差异化（如「含三端设备测试报告」）。若发现你无法在 2 天内报出有竞争力的方案，说明需先补工具技能。\n\n### 10. 核验来源\n1. 自助出版市场规模与产量统计（2025 自出版 ISBN 350 万+、市场 $2.16B→2033 $6.16B）：https://www.automateed.com/self-publishing-statistics\n2. Reedsy 内文排版设计师市场（400+ 认证设计师、top 3% 审核）：https://reedsy.com/design/book-layout-design\n3. Kindlepreneur：如何雇佣图书排版师（价格档与接单渠道）：https://kindlepreneur.com/how-to-hire-a-book-formatter\n4. Oscar Ghostwriting：Amazon KDP 排版成本详解（电子 / 纸书 / 组合报价）：https://www.oscarghostwriting.com/blog/how-much-does-it-cost-to-format-a-book-for-amazon-kdp\n5. Financially Free Author：5 款排版工具实测对比（免费 vs 付费）：https://financiallyfreeauthor.com/blog/b/book-formatting-software-tested\n6. Fiverr 真实排版 gig 案例（716 单、4.9 分）：https://www.fiverr.com/bookstohook/format-your-fiction-ebook-and-print-book-for-a-low-price\n7. Zinn Hub：KDP 自由职业者指南（排版定价 $50–200、获客渠道）：https://zinnhub.com/self-publishing-amazon-kdp-freelancer-guide/\n8. PMarketResearch：自助出版市场预测（2025 $1.65B→2032 $4.82B，CAGR 16.55%）：https://pmarketresearch.com/it/self-publishing-book-ebook-market/",
+      "startedAt": "2026-07-21T08:13:02+08:00",
+      "finishedAt": "2026-07-21T08:53:02+08:00",
+      "duration": "40m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "self-publishing",
+        "book-formatting",
+        "ebook",
+        "remote-service"
+      ],
+      "nextSteps": [
+        "用免费工具（Kindle Create / Reedsy Book Editor）排一本样书，导出 EPUB + 打印 PDF 并在 Kindle App 与 Apple Books 三端测试，验证基础能力。",
+        "在 Fiverr / Reedsy 上架一个 $30–80 的「小说电子书排版」gig，并在 Reddit r/selfpublish 发免费帮 1 位作者排版样章换反馈的帖子，验证需求真实存在。",
+        "研究 Reedsy 与 Fiverr 前 5 个竞品的定价、交付格式、修订次数与评价数，定出首档报价与差异化（如含三端设备测试报告）。"
+      ],
+      "artifacts": [
+        {
+          "label": "自助出版市场规模与产量统计（automateed）",
+          "path": "https://www.automateed.com/self-publishing-statistics"
+        },
+        {
+          "label": "Reedsy 内文排版设计师市场（400+ 认证）",
+          "path": "https://reedsy.com/design/book-layout-design"
+        },
+        {
+          "label": "Kindlepreneur：如何雇佣图书排版师（价格档）",
+          "path": "https://kindlepreneur.com/how-to-hire-a-book-formatter"
+        },
+        {
+          "label": "Oscar Ghostwriting：KDP 排版成本详解",
+          "path": "https://www.oscarghostwriting.com/blog/how-much-does-it-cost-to-format-a-book-for-amazon-kdp"
+        },
+        {
+          "label": "Financially Free Author：排版工具实测对比",
+          "path": "https://financiallyfreeauthor.com/blog/b/book-formatting-software-tested"
+        },
+        {
+          "label": "Fiverr 真实排版 gig 案例（716 单/4.9 分）",
+          "path": "https://www.fiverr.com/bookstohook/format-your-fiction-ebook-and-print-book-for-a-low-price"
+        },
+        {
+          "label": "Zinn Hub：KDP 自由职业者指南（定价/获客）",
+          "path": "https://zinnhub.com/self-publishing-amazon-kdp-freelancer-guide/"
+        },
+        {
+          "label": "PMarketResearch：自助出版市场预测",
+          "path": "https://pmarketresearch.com/it/self-publishing-book-ebook-market/"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-07-21/niche-opc-industry.json"
+    },
     {
       "date": "2026-07-20",
       "taskId": "niche-opc-industry",
