@@ -1,7 +1,89 @@
 {
-  "generatedAt": "2026-07-22T00:54:44.245Z",
+  "generatedAt": "2026-07-22T08:08:53.745Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-22",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外独立 App 和小型 SaaS 的 App Store / Google Play 商店页本地化 QA、元数据翻译与截图文案适配服务，属于中国境内可做的海外市场。它适合有英文、移动应用语境、平台字段规则和本地化 QA 能力的 OPC/数字游民小规模验证，但必须限定为文案与风险清单服务，不能承诺下载量、搜索排名或平台审核通过。",
+      "details": "## 行业是什么，为什么小众\nApp Store / Google Play 商店页本地化 QA、元数据翻译与截图文案适配，是帮海外独立 App、小游戏、小型 SaaS、移动工具和应用工作室，把应用商店里的 title、subtitle、short description、full description、keywords、promotional text、release notes、screenshot captions、preview video 文案、隐私政策链接说明、IAP 文案和本地化字段整理成目标语言可读、符合平台字段限制、符合基本政策边界、便于开发者提交审核的一项远程服务。\n\n它不是普通翻译，也不是泛泛的 ASO。普通翻译只把英文转成另一种语言；这个行业要同时理解移动应用功能、用户搜索语境、商店页字段长度、截图顺序、平台 metadata 政策、商标和竞品词风险、隐私披露边界、版本更新节奏，以及机器翻译容易出错的 UI 语境。Apple 官方说明，App Store Connect 可以添加语言和 localized metadata，本地化关键词会影响对应语言和地区用户搜索；Google Play 也允许为 store listing、app strings 和 in-app products 添加翻译，并支持 localized graphic assets。小型团队常知道本地化有价值，但没有专门 localization manager 或 ASO agency 预算，于是形成了一个适合单人切入的细分服务。\n\n重要边界：服务者只做授权范围内的商店页文案、本地化 QA、字段长度检查、截图文案适配、术语表和风险清单，不承诺 App Review 或 Google Play 审核通过，不承诺下载量、排名、转化率或收入增长，不代替律师、隐私顾问或开发者填写最终合规声明，也不参与刷榜、假评论、关键词堆砌、侵权竞品词、误导性截图或规避平台审核。\n\n## 目标市场\n本期选择：中国境内可做的海外市场。\n\n潜在客户主要是美国、加拿大、英国、澳洲、欧盟、新加坡、日本、韩国等市场的 indie app developer、bootstrap SaaS、移动端工具 App、小型游戏工作室、Notion/AI/效率工具、健康习惯类 App、教育 App、移动端代理商和 Shopify/SaaS 产品的小型移动客户端团队。\n\n为什么适合中国境内验证：交付物主要是表格、文档、截图文案、术语表、字段长度报告和上线前 checklist，不需要海外实体门店，不需要当地线下牌照，不需要访问生产数据库。服务者可以从英文到简体中文、繁体中文、日文、韩文、东南亚语种协作审校，或从中文团队出海到英文商店页优化开始试单。初期可只做只读审计和 1 个语言的小包，不碰客户后台账号。\n\n## 典型需求场景和客户是谁\n1. 独立开发者准备把英文 App 推到中国台湾、香港、新加坡、日本或韩国市场，需要商店页标题、描述、截图文案和 release notes 的本地化 QA。\n2. 小型 SaaS 有 iOS/Android 客户端，产品界面已有机器翻译，但 App Store / Google Play 页面仍是英文，希望做 1-3 个重点语言的商店页本地化。\n3. 游戏或工具 App 已经在 Google Play 使用自动翻译，但用户反馈本地语言别扭、截图文案不自然、功能描述误导，需要人工修订。\n4. 移动端代理商或 ASO agency 需要外包一个语言方向的 metadata 翻译、关键词候选、截图 caption 适配和长度 QA。\n5. 中国开发者或一人公司做出海 App，需要英文商店页、隐私政策摘要、截图短句和版本更新文案，但不想一开始请大型代理。\n6. 海外团队准备做 product page optimization / custom store listing / 多国家广告落地，需要特定国家或语言的商店页变体文案。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括 App 开发者、产品经理、设计师、ASO 顾问、翻译/本地化服务商、截图设计师、隐私或法律顾问、Apple App Store Connect、Google Play Console、翻译管理工具、表格和截图标注工具。\n\n典型工作流：\n1. 范围确认：确认平台、目标国家/语言、应用类别、已有商店页、目标用户、截图数量、是否要进后台、是否只做文案表格。SOW 写清服务不承诺审核、排名、下载量或法律合规结论。\n2. 资料收集：收集公开商店页链接、源语言 metadata、应用功能说明、品牌术语表、截图源文件、隐私政策链接、IAP 名称和 release notes。尽量不索要用户数据或生产后台权限。\n3. 基线审计：检查字段长度、重复词、机器翻译痕迹、功能误译、敏感词、价格/排名夸大、竞品词、商标词、截图文字和目标市场文化不匹配。\n4. 本地化与适配：翻译并重写 title、subtitle、short/full description、keywords、promotional text、release notes、截图 caption；必要时按 Apple 与 Google 的字段差异输出两套文本。\n5. QA 和交付：用字符计数、设备截图预览、术语一致性表、政策风险清单和修改记录做交付。客户自行或授权代理上传，服务者只在最小权限、限时授权下协助后台录入。\n6. 复盘维护：按版本更新、节日活动、新功能发布、截图改版和新增语言做月度维护，不把一次文案服务包装成长期增长保证。\n\n## 盈利模式和报价口径\n收入来自只读审计、单语言商店页本地化小包、多平台 metadata 套餐、截图文案适配、release notes 月度维护、机器翻译人工 QA、代理商白标分包和术语表/SOP 交付。\n\n公开价格只能说明市场存在和价格参考，不能推导稳定收入。Google Play Console 的帮助页显示，开发者可购买第三方人工翻译，价格低至 0.07 美元/词；Gengo 公开价格中，English 到 Chinese/Japanese/Korean/French/German/Italian 等语言的 web standard 约 0.08 美元/词、business 约 0.14 美元/词；Fiverr 的 app localization 页面显示有大量 app localization 服务，起步价可见 5、20、65、90 美元等不同档位。这说明市场真实存在，但低价竞争和机器翻译替代压力都很明显。\n\n按 2026-07-22 参考汇率 1 USD 约 6.77 CNY 粗略折算：\n- 基础商店页审计/字段清单：49-149 美元，约 332-1009 元人民币，适合只读检查、问题分类和改写建议。\n- 单语言元数据本地化小包：99-399 美元，约 670-2701 元人民币，取决于 App 复杂度、目标语言、截图数量、是否含关键词候选和截图 caption。\n- 按词翻译/本地化：0.06-0.14 美元/词，约 0.41-0.95 元人民币/词。但商店页不宜只按字数报价，因为上下文理解、字段长度、关键词去重、政策 QA 和截图适配会消耗大量时间。\n- 月度维护：200-800 美元/月，约 1354-5416 元人民币，适合频繁发布版本、做多语言截图和多国家 store listing 的小团队。\n\n这些数字只适合做试单测算，不是收益承诺。新手前 1-3 个月可能只有少量 49-149 美元的小单；平台抽佣、收款手续费、汇损、税费、翻译工具、截图软件、售前沟通、返工和客户教育会显著压缩净收入。\n\n## 入门门槛\n技能：英文读写、至少一个目标语言的高质量表达能力、移动应用产品理解、Apple / Google 商店页字段规则、基础 ASO 语义判断、截图文案写作、术语表管理、字符长度控制、机器翻译后编辑、基础隐私与数据安全意识。\n\n设备/软件：普通电脑、稳定网络、表格工具、字符计数工具、截图标注工具、翻译记忆或术语表工具、App Store / Google Play 页面查看能力、必要时的 Figma/Canva/Photoshop 协作能力。初期不必购买昂贵 TMS，可用表格和固定 QA 模板验证。\n\n资质/合规：通常不需要当地牌照，但不能冒充 Apple/Google 官方合作审核渠道、律师、隐私合规认证机构或 ASO 包排名服务。涉及医疗、金融、儿童、健康、赌博、加密资产、约会、AI 生成内容等敏感类别时，应显著提高风险评估，必要时拒接或要求客户找专业法律/合规顾问。\n\n资金：轻资产启动，主要成本是时间、样例制作、平台获客、翻译和截图工具。真正门槛在于能否把“自然语言翻译”升级成“可提交的商店页资产包”。\n\n渠道：Upwork、Fiverr、LinkedIn、Indie Hackers、Product Hunt、Reddit 的 indie dev / SaaS 社群、X/Twitter 独立开发者圈、移动端代理商、ASO agency 白标分包、App 本地化工具周边服务。冷启动应避免群发恐吓式邮件，优先用公开页面做 3-5 条具体问题示例。\n\n时间成本：1-2 周可熟悉字段和基础 checklist；要稳定处理不同类别 App、截图文案和政策风险，通常需要 2-4 个月项目积累。若做日文、韩文、德文、法文等非母语方向，必须找母语审校或只做项目管理和中文/英文方向。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台获客必须遵守平台规则。Upwork 明确禁止在平台内认识后绕平台收款；Fiverr 等平台也应按站内订单、沟通和支付规则执行。独立获客可用个人网站、案例页、LinkedIn、Product Hunt 发帖和代理商合作，但不要购买名单群发，不用“你的 App 违规会下架”之类恐吓营销。\n\n远程交付：优先交付 Google Sheet、CSV、Markdown、截图批注、术语表和 QA 报告。后台代填只在客户明确授权、最小权限、限时账号、双因素认证和操作记录齐备时进行。不要要求客户提供 Apple ID 主账号或 Google Play Console 超额权限。\n\n合同/发票或收款：平台订单按平台合同、托管和争议流程；独立客户用英文 SOW 写清语言、字段、截图数量、交付格式、修改轮次、上线责任、保密、数据删除、付款节点和不承诺事项。中国境内个人或一人公司应保留合同、平台账单、收款流水、结汇记录、沟通记录和费用凭证。\n\n税务申报：中国境内个人或公司承接海外服务，应按自身主体类型处理个税、增值税、企业所得税或经营所得。国家税务总局公开资料列明，境内单位和个人向境外单位提供且完全在境外消费的部分服务和无形资产可适用跨境应税行为免征增值税规则，但具体是否适用、如何备案或开票要按服务性质和主管税务机关要求判断。\n\n外汇与结算：国家外汇管理局《个人外汇管理办法》将个人外汇业务按交易性质区分经常项目和资本项目，并要求银行审核真实性；不得用分拆、虚假单据等方式逃避管理。真实服务贸易收入应留存订单、合同、发票或平台账单，按银行要求办理收结汇或公司账户结算。\n\n平台规则：不得刷下载、买评价、承诺排名、堆砌无关关键词、冒用竞品商标、把价格或排名夸大写进截图、用误导性 UI 截图骗审、上传侵权素材。Apple 明确不当关键词可能导致拒审；Google Play 强调 metadata policy 适用于所有翻译。\n\n数据/隐私合规：服务者通常不需要处理终端用户个人数据。若客户给你 privacy label、data safety form、SDK 清单或隐私政策草稿，你只能做语言清晰度、字段一致性和明显缺漏提醒；最终数据收集、共享、删除和合规声明必须由开发者负责。Apple 和 Google 都要求开发者保持隐私披露准确、及时更新。\n\n语言和时区门槛：需要英文异步沟通，并能解释为什么某些词不能直译、为什么截图短句要重写、为什么关键词不能塞竞品名。欧美客户常可异步交付；日本/韩国客户更重视语气和本地表达，建议找母语审校。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：单人可以完成公开页审计、字段表整理、术语表、本地化改写、截图 caption QA 和交付报告；固定资产轻；项目颗粒度小；能从一个语言、一个 App、一个版本开始验证。它还可与英文文案、产品营销、基础 ASO、截图设计、应用内字符串 QA 组合销售。\n\n不完全适合点：多语言和多平台同时交付容易超出单人能力；敏感类别和隐私披露风险不能单人兜底；客户可能误以为做完本地化就会增长或过审。OPC 应限制语言方向、交付物和责任边界，把法律判断、商标授权、隐私披露和最终提交留给客户。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：工作主要依赖浏览器、文档、表格和截图文件，可以异步沟通和远程交付；无需线下门店；适合按版本或语言小包接单。数字游民可以在稳定网络环境下处理文案和 QA。\n\n不完全适合点：截图和后台预览需要稳定网络和较大屏幕；跨时区沟通会影响紧急版本发布；长期旅居会影响税务居民身份、平台 KYC、收款账户和客户信任。处理客户未发布截图或产品路线图时，也要注意公共 Wi-Fi、共享电脑和文件泄露风险。\n\n## 潜在收益和成本结构\n低成本验证期：每月 2-6 个 49-149 美元只读审计或改写小包，毛收入约 663-6054 元人民币，重点是积累样例、评价和流程，而不是追求高价。\n\n标准接单期：每月 3-8 个 99-399 美元单语言小包，毛收入约 2010-21643 元人民币。能否达到取决于语言能力、平台评价、交付速度、垂直类别、客户复购和售前效率。\n\n维护合作期：与 2-5 个 indie team、移动端代理商或 ASO agency 做月度维护，每个 200-800 美元/月，毛收入可能更平滑，但需要稳定响应版本更新、截图改版和紧急发布需求。\n\n主要成本包括平台抽佣、收款手续费、汇损、税费、翻译工具、截图和设计工具、母语审校、售前样例、返工、合同沟通和客户教育。机器翻译会压低纯翻译价格，人工服务必须卖上下文判断、字段适配、政策边界和可审计交付。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 结果承诺风险：不能承诺搜索排名、下载量、转化率、审核通过或收入增长。\n2. 平台政策风险：无关关键词、竞品名、商标词、夸大排名、价格促销文字和误导性截图可能触发审核或政策问题。\n3. 隐私合规风险：隐私标签、Data safety、SDK 数据收集由开发者负责，服务者只能做文案和一致性检查，不能代替合规判断。\n4. 语言质量风险：机器翻译、非母语硬译、文化误读和术语不一致会损害品牌信任。\n5. 数据安全风险：未发布截图、产品路线图、后台权限和开发者账号都属于敏感资产，不应过度索权或长期保存。\n6. 跨境收款风险：平台绕单、虚假合同、地下钱庄、拆分结汇和不申报收入都不可取。\n7. 低价竞争风险：Fiverr 等平台已有大量低价服务，新手必须靠垂直类别、样例报告和 QA 流程差异化。\n\n不适合人群：英文弱或目标语言表达弱的人；只想用机器翻译批量交付、不愿看平台规则的人；想承诺包排名/包过审的人；不愿处理表格和字段长度的人；对商标、隐私、未发布资料安全没有概念的人；不能长期耐心做细节 QA 的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 选 3 个公开的海外小型 App 商店页，做只读审计样例：列出 title、subtitle、description、screenshots、keywords 假设、截图文案、字段长度和 5 条可改写建议，不抓取后台或用户数据。\n2. 做一个单语言交付模板：source text、localized text、character count、field limit、termbase、policy note、screenshot note、needs client confirmation，把“不承诺审核/排名/下载量”和“隐私披露由开发者负责”写进模板。\n3. 上架低风险小包：1 个 App、1 个语言、App Store 或 Google Play 二选一、5 张截图以内、1 次修改、交付表格和 QA 报告；只接工具、效率、教育、生活方式等低敏类别，暂不接医疗、金融、儿童、赌博或高监管类别。\n\n## 点评 Agent 审稿\n审稿结论：通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：克制，无明显夸大；已注明试单估算、扣除费用、不承诺稳定收入，且最低项目费逻辑合理。\n- 信息来源是否足够可信：足够可信。核心依据来自 Apple 与 Google 官方帮助/政策页，价格参考有 Gengo、Fiverr 等市场样本，平台收款边界有 Upwork 规则，税务/跨境边界有税务机关资料。\n- 最该补充或提醒的一句话：服务合同和交付物必须写清“隐私披露、数据安全表、商标/竞品词使用、最终上线提交和平台审核结果均由开发者负责，服务者只提供文案、本地化 QA 和风险清单”。\n\n## 关键来源\n1. Apple Developer Help：Localize app information，说明 App Store Connect 可添加语言和 localized metadata，本地化关键词可用于对应语言/地区搜索，且语言管理受 app status editable 限制。https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information\n2. Apple Developer：Creating Your Product Page，说明 description、promotional text、keywords 的作用，keywords 100 characters 限制，以及不当关键词可能导致拒审。https://developer.apple.com/app-store/product-page/\n3. Google Play Console Help：Translate and localize your app，说明可添加 store listing、app strings、in-app products 翻译，人工翻译低至 USD 0.07/word，也可使用机器翻译和 localized graphic assets。https://support.google.com/googleplay/android-developer/answer/9844778\n4. Google Play Console Help：Best practices for your store listing，说明商店页描述、标题、截图和图形素材应准确、简洁、适合一般受众，metadata policy 适用于所有翻译。https://support.google.com/googleplay/android-developer/answer/13393723\n5. Apple Developer：App Privacy Details，说明开发者负责保持 App Store 隐私披露准确并及时更新。https://developer.apple.com/app-store/app-privacy-details/\n6. Google Play Console Help：User Data policy，说明开发者必须完成准确的 Data safety section，并与隐私政策保持一致。https://support.google.com/googleplay/android-developer/answer/10144311\n7. Fiverr：App localization services 页面，作为海外 app localization 服务供给和低价报价样本。https://www.fiverr.com/gigs/app-localization\n8. Gengo：Pricing & Languages，作为翻译服务按词价格样本。https://gengo.com/terms-of-service/pricing/\n9. Upwork Help：Circumvention, and why it's against the rules，说明平台内认识后绕平台收款违规。https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules\n10. 国家税务总局：哪些业务可以享受跨境应税行为免征增值税政策，列出境内单位和个人向境外单位提供且完全在境外消费的若干服务类别。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n11. 国家外汇管理局：个人外汇管理办法，说明个人外汇业务按交易性质区分经常项目和资本项目，并要求真实性审核。https://www.safe.gov.cn/safe/2022/0818/21330.html\n12. Investing.com CA：USD/CNY historical data，2026-07-22 附近 USD/CNY 约 6.77，本文仅作粗略折算。https://ca.investing.com/currencies/usd-cny-historical-data",
+      "startedAt": "2026-07-22T16:04:47+08:00",
+      "finishedAt": "2026-07-22T16:06:39+08:00",
+      "duration": "1m 52s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "app-store",
+        "google-play"
+      ],
+      "nextSteps": [
+        "选 3 个公开海外小型 App 商店页做只读审计样例，输出字段长度、截图文案和改写建议。",
+        "制作单语言交付模板，包含 source/localized text、字符数、字段限制、术语表、policy note 和需客户确认项。",
+        "上架一个低风险小包：1 个 App、1 个语言、5 张截图以内、1 次修改，明确不承诺审核、排名或下载量。"
+      ],
+      "artifacts": [
+        {
+          "label": "Apple Localize app information",
+          "path": "https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information"
+        },
+        {
+          "label": "Apple Creating Your Product Page",
+          "path": "https://developer.apple.com/app-store/product-page/"
+        },
+        {
+          "label": "Google Play Translate and localize your app",
+          "path": "https://support.google.com/googleplay/android-developer/answer/9844778"
+        },
+        {
+          "label": "Google Play Store listing best practices",
+          "path": "https://support.google.com/googleplay/android-developer/answer/13393723"
+        },
+        {
+          "label": "Apple App Privacy Details",
+          "path": "https://developer.apple.com/app-store/app-privacy-details/"
+        },
+        {
+          "label": "Google Play User Data policy",
+          "path": "https://support.google.com/googleplay/android-developer/answer/10144311"
+        },
+        {
+          "label": "Fiverr app localization services",
+          "path": "https://www.fiverr.com/gigs/app-localization"
+        },
+        {
+          "label": "Gengo Pricing & Languages",
+          "path": "https://gengo.com/terms-of-service/pricing/"
+        },
+        {
+          "label": "Upwork circumvention policy",
+          "path": "https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules"
+        },
+        {
+          "label": "国家税务总局跨境应税行为免征增值税政策问答",
+          "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+        },
+        {
+          "label": "国家外汇管理局个人外汇管理办法",
+          "path": "https://www.safe.gov.cn/safe/2022/0818/21330.html"
+        },
+        {
+          "label": "USD/CNY historical data",
+          "path": "https://ca.investing.com/currencies/usd-cny-historical-data"
+        }
+      ],
+      "sourceFile": "runs/2026-07-22/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-20",
       "taskId": "niche-profit-industry",
