@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-07-21T00:54:01.387Z",
+  "generatedAt": "2026-07-22T00:54:44.245Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-22",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：无代码自动化与 AI Agent 搭建服务（n8n / Zapier / Make）",
+      "status": "success",
+      "summary": "为中小企业/创作者用 n8n、Zapier、Make 等无代码工具搭建自动化工作流，并叠加 LLM 做成可自主决策的 AI 智能体（Agent），把线索录入、邮件跟进、数据同步、客服分流等重复人工操作连成自动跑的管道。需求隐蔽、搜索量低、技术门槛被高估，一人远程即可完成从获客到交付到收款的闭环，工具几乎零成本、边际成本极低，非常适合 OPC 与数字游民。",
+      "details": "1. 行业是什么，为什么小众\n一句话定义：用无代码自动化工具（n8n / Zapier / Make）为中小企业、创作者和机构搭建可运行的自动化工作流，并叠加大语言模型（LLM）做成能自主调用工具、做判断的「AI 智能体（Agent）」——把线索录入、邮件跟进、跨系统数据同步、客服分流、内容定时发布等重复人工操作连成自动跑的管道。\n为什么普通人容易忽略它：① 搜索量低——「automation freelancer / n8n 搭建」的主动搜索热度远低于 dropshipping、affiliate 等烂大街领域；② 需求隐蔽——企业主常说「我效率太低」却不知道「这能用 n8n 解决」，需求是被顾问在诊断中挖出来的，而非用户主动寻找；③ 看起来技术门槛高——「工作流」「webhook」「API」「节点」等词吓退外行，实则主流是可视化拖拽，零代码也能上手；④ 它夹在「IT 外包」和「虚拟助理」之间，没有一个统一定义的行业名，所以供给极其分散、没有铺天盖地的教程和红海竞争者。\n\n2. 如何运作\n典型客户：电商卖家、SaaS 初创团队、营销/猎头/房产机构、独立开发者、内容创作者、本地服务型商家。需求触发点：老板被「每天手动搬数据、重复发消息」折磨，或在 Reddit、X、n8n 官方 Discord 看到别人晒「我把它自动化了」的案例。\n核心交付物：① 可运行的 n8n / Zapier / Make 工作流文件；② 接线与维护文档（Loom 录屏讲解 + 文字 SOP）；③ 可选的月度维护与迭代。\n完整工作流（从获客到交付到收款）：\n1) 获客：在 Upwork / Fiverr 挂 gig、LinkedIn 发真实案例、进 n8n / Make 官方 Discord 与社区答疑、写 Medium / Newsletter 拆解文、向目标 SMB 做冷邮件/冷私信。\n2) 诊断：用免费或低价（$100–250）做「流程审计」，找出客户最浪费时间的 1–3 个环节，输出方案 + 报价。\n3) 交付：在客户账号内搭建工作流，端到端实测跑通，录 Loom 讲解，交付 SOP 文档与所有权说明。\n4) 收款：平台内置托管（Upwork / Fiverr 自动结算）、Stripe / Wise 对公转账，或按月 retainer 自动扣款。\n5) 复购：月度维护 retainer、按需求追加新流程、为客户团队做培训交接。\n关键工具与平台：n8n（自托管免费 / 云版）、Zapier、Make、OpenAI / Claude API、Airtable、Notion、GoHighLevel、Calendly、Loom、Docker（自托管 n8n）。\n\n3. 盈利模式\n收入来源与定价：① 按项目收费——单条简单工作流 $500–$3,000，复杂端到端系统 $2,000–$15,000+；② 按月 retainer——自动化 VA / 维护 $600–$2,000 / 月；③ 按时计费——$50–$250 / 小时（AI 工作流专家可达 $120–250）；④ 产品化——把通用流程做成模板 / 小工具一次性卖 $50–300。\n利润空间：纯数字交付，工具成本极低（n8n 自托管 $0、Zapier $19.99–69 / 月、LLM API 按量仅几分钱），扣除平台抽成（Upwork 约 10%、Fiverr 约 20%）与少量推广费后，净利率约 70–90%。\n复购与长期合同：retainer 与「加流程」带来强复购；企业一旦跑通自动化，替代成本高、黏性强，容易转成年框。\n\n4. 入门门槛\n技能：理解拖拽式逻辑（条件分支 / 循环 / 变量）、能读懂 API 文档、基础 JS / Python 可加分但不强制；n8n 偏技术、Zapier 最易上手、Make 居中。学起来：每天 1–2 小时，约 2–4 周可接简单单。\n工具：起步几乎为 0——n8n Community 版自托管免费、Zapier 免费版 100 任务 / 月、Make 免费 1,000 ops、ChatGPT $20 / 月。规模化再买 n8n Starter 20€ / 月、Zapier Professional $19.99 起。\n资金：启动 < $100（主要是电脑 + 网络）。\n时间：从零到第一单约 2–6 周（先做 1–2 个作品集项目，再挂平台接单）。\n\n5. 为什么适合 OPC / 数字游民\n① 异步交付：搭建与调试无需实时在线，客户散落任意时区，靠 Loom 录屏 + 文档交接，时区零冲突，睡醒看结果即可。\n② 全球客户池：Upwork / Fiverr + n8n 官方 Discord 是英语世界买家集中地，需求与你的物理位置无关，在巴厘岛或里斯本都能接硅谷小公司的单。\n③ 边际成本极低：一条为某电商做的「弃单召回」流程，可模板化复制卖给同行业几十家客户，一次搭建多次售卖。\n④ 可规模化：路径清晰——接单 → 沉淀作品集 → 产品化模板 / 迷你课程 → 必要时招兼职，单人即可撑到月入数万再考虑扩张，不必先雇团队。\n⑤ 全云化、零场地：工具全在浏览器 / 云端，一台笔记本走天下，不要求固定场所或本地执照。\n\n6. 潜在收益（谨慎，不承诺）\n引用公开数据：\n- 市场体量：企业级 AI 工作流自动化 2026 年约 $108.6 亿，CAGR 44–46%（Precedence Research，经 AI Agent Square 2026 买家指南引用）；更广义 AI 自动化市场 2026 年约 $1,694 亿。\n- 自由职业费率（ptutorials 汇编）：Zapier 自由职业 $50–100 / 小时、Make 专家 $60–120 / 小时、AI 工作流专家 $120–250 / 小时、自动化架构师 $150–300 / 小时；自动化 VA 月费 $600–$2,000；自动化顾问 $75–200 / 小时、单项目 $2,500–$50,000（upcode）。\n- 平台在售实况：Upwork 上「N8n Workflow Engineer」gig 从 $149 起、1,000+ 评价；Fiverr 上 n8n / 自动化 gig 大量 5.0 分、数百到 1,000+ 单，单价约 $50–$950（例如 Sohan Islam 的 n8n gig：5.0 / 464 评、2,958+ 已完成单，$80 / $450 / $950 三档）。\n新手阶段（0–6 月，边学边接、单价低）：月入约 $500–$2,000。\n成熟阶段（6–18 月，有作品集 + retainer）：月入约 $2,000–$8,000+，顶尖 / 产品化者更高。\n⚠️ 这些是平台与行业公开数据，不等于个人收入；实际收入取决于获客能力、技能深度、所在时区客户池与持续学习的投入。\n\n7. 主要风险\n- 市场风险：AI 低代码平台（如 Zapier 自带 AI、ChatGPT 原生自动化、各类 SaaS 内置流程）持续降低「简单连线」活的价格；必须往「带业务逻辑 + AI 判断 + 监控告警」的高价值方向走，避免只做可被平台一键替代的搬运。\n- 技术风险：工具依赖——n8n / Zapier / Make 任一改 API、定价或节点行为，存量工作流可能失效；部分套餐存在「沉默失败」（silent failure），需自建监控与重试。\n- 合规风险：跨境收款（Stripe / Wise / 税号与申报）、数据隐私（GDPR / CCPA，勿处理敏感个人数据）、API 服务条款（避免违反平台 ToS 抓取或滥用）。\n- 现金流风险：平台账期（Upwork 放款 14 天 +）、获客成本（Fiverr 推广 $20–50 / 月）、大项目可能需要垫资与分阶段收款。\n\n8. 不适合的人群\n- 完全抗拒技术、读不懂 API 文档也不愿学基础逻辑的人（这行至少要看懂节点与字段）。\n- 想要「挂机被动收入」、不愿持续学习新工具的人（平台与 AI 能力半年一变）。\n- 不愿做客户沟通与售前诊断的人（这行一半是「挖需求 + 把价值讲清楚」）。\n- 追求稳定工资、厌恶收入波动的人（自由职业早期收入起伏大）。\n\n9. 3 个可验证的入门步骤\n1) 3 天内免费搭 1 个真实 n8n 工作流（如「表单提交 → 写 Notion + 发 Slack 通知」），用 n8n 社区版自托管成本 $0，把成品录成 Loom 当作品集。验证：n8n 官方 Discord / 模板库能否跑通、你是否能看懂节点逻辑——跑不通说明先补基础。\n2) 1–3 天内在 Upwork 或 Fiverr 发布一个 $50–$150 的「n8n 小工作流」gig，或进 n8n 官方 Discord 连续回答 3 个新人问题、观察真实需求。验证：7 天内有无咨询 / 点击，判断需求是否真实、自己能否讲清楚。\n3) 用 $100–250 做 1 次「流程审计」迷你服务——给一个小商家免费或低价诊断 1 个最耗时的环节并出方案。验证：对方是否愿意为完整搭建付费；愿意即证明方向可行可继续，不愿则先补作品集与案例。\n\n10. 核验来源\n- n8n 官方定价页（社区版自托管免费、Starter 20€/月）：https://n8n.io/pricing\n- Zapier 官方定价页（Free $0、Professional $19.99 起）：https://zapier.com/pricing\n- Fiverr 自动化服务类目（大量 n8n / Zapier / Make 在售 gig，5.0 分、数百到上千单）：https://www.fiverr.com/gigs/automated\n- Upwork 自动化服务页（N8n Workflow Engineer 从 $149 起、1,000+ 评价）：https://www.upwork.com/services/web-programming/web-application\n- ddiy.co：2026 年自动化虚拟助理费率（$600–$2,000 / 月，按时 $7–$50）：https://ddiy.co/hire/virtual-assistant\n- upcode.com：自动化专家费率（自由职业 $25–150/小时、顾问 $75–200/小时、项目 $2,500–$50,000）：https://upcode.com/hire/automation-expert\n- AI Agent Square：2026 企业级 AI 工作流自动化市场 $108.6 亿、CAGR 44–46%：https://aiagentsquare.com/blog/enterprise-workflow-automation-ai\n- ptutorials：自动化认证与自由职业费率汇编（Zapier $50–100/h、Make $60–120/h、AI 工作流 $120–250/h）：https://www.ptutorials.com/elearning/automation/automation-certification-career.php",
+      "startedAt": "2026-07-22T08:53:29+08:00",
+      "finishedAt": "2026-07-22T09:33:29+08:00",
+      "duration": "40m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "no-code-automation",
+        "n8n",
+        "ai-agent",
+        "workflow-automation"
+      ],
+      "nextSteps": [
+        "3 天内用 n8n 社区版（自托管 $0）搭一个真实小工作流（如表单→Notion+Slack），录 Loom 当作品集，验证能否看懂节点逻辑。",
+        "1–3 天内在 Upwork / Fiverr 发布一个 $50–$150 的『n8n 小工作流』gig，或进 n8n 官方 Discord 回答 3 个新人问题，观察 7 天内是否有真实咨询。",
+        "用 $100–250 做 1 次『流程审计』迷你服务，给小商家诊断 1 个最耗时的环节并出方案，验证对方是否愿意为完整搭建付费。"
+      ],
+      "artifacts": [
+        {
+          "label": "n8n 官方定价页（社区版自托管免费、Starter 20€/月）",
+          "path": "https://n8n.io/pricing"
+        },
+        {
+          "label": "Zapier 官方定价页（Free $0、Professional $19.99 起）",
+          "path": "https://zapier.com/pricing"
+        },
+        {
+          "label": "Fiverr 自动化服务类目（n8n/Zapier/Make 在售 gig 实况）",
+          "path": "https://www.fiverr.com/gigs/automated"
+        },
+        {
+          "label": "Upwork 自动化服务页（N8n Workflow Engineer 从 $149 起）",
+          "path": "https://www.upwork.com/services/web-programming/web-application"
+        },
+        {
+          "label": "ddiy.co：2026 自动化虚拟助理费率",
+          "path": "https://ddiy.co/hire/virtual-assistant"
+        },
+        {
+          "label": "upcode.com：自动化专家费率与项目报价",
+          "path": "https://upcode.com/hire/automation-expert"
+        },
+        {
+          "label": "AI Agent Square：2026 企业级 AI 工作流自动化市场数据",
+          "path": "https://aiagentsquare.com/blog/enterprise-workflow-automation-ai"
+        },
+        {
+          "label": "ptutorials：自动化认证与自由职业费率汇编",
+          "path": "https://www.ptutorials.com/elearning/automation/automation-certification-career.php"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-07-22/niche-opc-industry.json"
+    },
     {
       "date": "2026-07-21",
       "taskId": "niche-opc-industry",
