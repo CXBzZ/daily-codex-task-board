@@ -1,7 +1,100 @@
 {
-  "generatedAt": "2026-07-24T00:54:48.990Z",
+  "generatedAt": "2026-07-24T08:07:50.172Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-24",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外 Shopify/DTC 店铺的退货与换货流程 QA、RMA 规则核验服务，属于中国境内可做的海外市场。它适合有英文、Shopify 后台、测试订单、售后规则和流程文档能力的 OPC/数字游民小规模验证，但必须限定为授权测试、截图证据、规则核验和轻量配置建议，不做当地消费者法判断、售后客服代运营或真实退款争议处理。",
+      "details": "## 行业是什么，为什么小众\n\n退货与换货流程 QA、RMA 规则核验，是在海外 DTC 品牌或 Shopify 店铺上线退货门户、自助退货、换货流程、退货规则、邮件通知或大促活动前，模拟客户从下单、发起退货/取消、选择原因、查看退款估算、打印标签、选择换货商品、接收通知到客服后台处理的完整链路，并输出问题清单、截图证据和配置建议。\n\n它不是普通客服，也不是法律审查。服务重点是业务规则和用户流程是否一致：页面写 30 天可退，后台是否也是 30 天；Final sale 商品是否真的不能发起退货；免费退货、固定运费、手续费、restocking fee 是否在估算退款里清楚展示；客户账号登录、验证码邮件、退货入口、邮件通知、退货标签、换货商品、B2B 或订阅订单例外是否正常。它小众，是因为多数小店把退货当成客服问题，开发和运营常在大促前只测 checkout，不系统测试 post-purchase 和 reverse logistics；大型品牌会买成熟系统和顾问，小型品牌则常缺一份可执行的 QA checklist。\n\n## 目标市场\n\n目标市场：人在中国境内可做的海外英语市场，主要面向美国、加拿大、英国、欧盟、澳大利亚等使用 Shopify、AfterShip Returns、Loop Returns、ReturnGO、Narvar 等退货工具的 DTC 品牌和电商代理商。\n\n中国境内个人、个体工商户或一人公司可以远程承接：通过 Upwork、Fiverr、Contra、LinkedIn、独立站、Shopify agency 和电商社群获客；客户提供测试店、测试订单、预览链接、最小权限 collaborator access 或临时测试账号；服务者远程交付报告、截图、录屏、配置差异清单和轻量修复建议。关键边界是只做客户明确授权范围内的流程测试和配置核验，不代持物流账号，不承诺降低退货率或减少欺诈，不判断退货政策是否符合客户所在地消费者保护法。\n\n## 典型需求场景和客户是谁\n\n1. 小型 Shopify/DTC 品牌：上线自助退货、换货或取消订单功能前，需要确认客户视角能顺利发起请求，后台规则和页面政策一致。\n2. 大促前电商品牌：黑五、圣诞、换季清仓前，Final sale、折扣商品、礼品卡、套装、国际订单、超期订单等规则容易出错，需要回归测试。\n3. Shopify 代理商：帮客户实施 AfterShip Returns、Loop Returns 或 Shopify 原生 self-serve returns 后，需要外包一轮 QA 报告和复测截图。\n4. 客服外包团队：客户投诉集中在退货入口找不到、退款金额不清楚、换货失败、邮件通知不一致，希望把流程问题和客服话术问题分开。\n5. 跨境 DTC 小团队：创始人和运营在欧美时区，愿意把夜间异步测试交给中国境内远程服务者。\n\n## 行业如何运作：参与方和工作流\n\n典型参与方包括品牌方运营/客服负责人、Shopify 管理员、电商代理商、退货管理应用、物流/标签服务、支付退款系统、QA 服务者和最终消费者。\n\nOPC 的标准工作流可以设计为：\n\n1. 范围确认：确认平台、退货工具、市场、币种、语言、退货规则、测试订单数量、是否包含换货、是否只出报告或包含配置建议。\n2. 权限和数据最小化：优先使用测试店、测试订单、匿名订单和客户提供的预览链接；如需进后台，用 Shopify Partner collaborator account 或临时账号，只申请必要权限，项目结束后撤权。\n3. 测试矩阵设计：覆盖普通商品、Final sale 商品、折扣商品、超期订单、未发货取消、已发货退货、换尺码/换色、部分退货、国际订单、礼品卡、订阅订单、B2B 订单或多市场订单等。\n4. 客户视角测试：从订单状态页或客户账户入口发起退货/取消请求，检查登录验证码、入口可见性、退货原因、产品状态、费用、退款估算、邮件通知和标签说明。\n5. 商家后台核验：检查 Shopify return rules、written policy、退货窗口、return shipping cost、restocking fee、final sale exceptions、邮件模板、应用规则、标签/手续费和客服备注是否一致。\n6. 证据交付：用表格或 Notion 记录问题编号、严重度、复现步骤、预期结果、实际结果、截图/录屏、影响范围和建议修复。\n7. 复测和交接：客户或代理商修复后，服务者复测关键链路，输出 pass/fail 结果和剩余风险。\n\n## 盈利模式与收入来源\n\n收入来自按店铺、按测试矩阵、按应用实施后 QA、按大促回归测试或按月巡检收费。本文用 2026-07-24 可查询的 USD/CNY 约 1 USD = 6.776 CNY 粗略折算，汇率仅用于人民币口径估算。\n\n1. Mini audit：80-150 USD/店，约 542-1016 元。覆盖 1 个市场、3-5 个测试订单、核心退货入口和规则一致性，适合新手试单。\n2. 标准退货流程 QA：250-600 USD/店，约 1694-4066 元。覆盖 Shopify 原生规则或一个第三方退货应用、8-15 个测试场景、截图报告和一次复测。\n3. 大促前回归测试：700-1500 USD/项目，约 4743-10164 元。覆盖多市场、多商品类型、折扣/Final sale、换货、取消、邮件通知和客服后台交接，适合已有经验者。\n4. 月度巡检：300-900 USD/月，约 2033-6098 元。适合给代理商或稳定 DTC 品牌做活动前抽检、规则变更复测和问题库维护。\n5. 白标外包：给 Shopify agency 或退货应用实施顾问做后台 QA，单价可能低于直客，但复购更稳定。\n\n市场参照要克制看待。Upwork 公开成本指南显示软件 QA 测试者历史合同常见小时价约 12-20 USD/h，Upwork 平台最低 hourly contract 为 3 USD/h、fixed-price project 为 5 USD。AfterShip Returns 官方帮助文档显示 Essentials 年付约 16 USD/月、Premium 年付约 99 USD/月，Loop Returns 的 Shopify App Store 页面显示 Essential 约 155 USD/月、Advanced 约 340 USD/月。它们说明退货工具本身已有付费预算，但服务者不能把工具订阅价直接等同于服务收入，报价仍取决于经验、交付物和客户痛点。\n\n## 入门门槛\n\n技能：英文读写、Shopify 后台基础、订单/履约/退款/退货概念、测试用例设计、截图标注、问题复现表达、表格报告、基础消费者体验判断。加分项是懂 Shopify Markets、多币种、Shop Pay/Shop app、Klaviyo 或 Gorgias 客服联动、AfterShip/Loop 等退货应用。\n\n设备/软件：稳定电脑和网络、多个测试邮箱、截图/录屏工具、表格/Notion、浏览器移动端模拟、基础 VPN 或海外访问环境、Shopify Partner account、测试店或客户授权店铺。通常不需要重资产设备，也不需要本地仓库。\n\n资质/合规：一般不需要当地专业牌照，但不能冒充律师、消费者权益顾问或 Shopify 官方认证审核。服务协议要写明：服务是技术和流程 QA，不构成法律意见；客户负责退货政策、消费者法、物流承运、退款决定、邮件内容和实际客服争议。\n\n资金：冷启动成本可控制在 0-300 USD，主要用于作品集页面、项目管理工具、截图/录屏工具和少量平台费用。不要在没有订单前购买高价工具或承诺覆盖所有退货应用。\n\n渠道：Upwork/Fiverr 可验证需求；LinkedIn 可找 Shopify agency、Klaviyo agency、DTC operator、customer support manager；独立站可以发布样例 checklist 和匿名报告；也可从电商代理商的白标 QA 做起。\n\n时间成本：2-4 周可熟悉 Shopify 原生 self-serve returns、return rules 和基础 QA 报告；1-3 个月可形成可收费模板。真正难点不是点流程，而是把退货政策、后台规则、应用设置、客户体验和客服处理串成一致的测试矩阵。\n\n## 中国境内承接海外市场的执行要点\n\n跨境获客：定位要具体，例如 Shopify returns flow QA、RMA rules audit、pre-BFCM returns regression test，而不是泛称电商顾问。作品集展示匿名报告、测试矩阵和问题截图，不展示客户真实订单信息。\n\n远程交付：只在客户明确授权的测试店、测试订单、匿名订单或最小权限后台中执行。Shopify collaborator accounts 允许 Partner 通过自己的 Partner Dashboard 访问商家授权的店铺部分，且权限由商家控制；这比共享主账号密码更适合一人服务者。\n\n合同/发票或收款：平台订单按平台规则结算；独立客户应签简单服务协议，写清交付物、返工次数、权限范围、数据删除、客户责任和非法律意见声明。中国境内主体可通过平台托管、Payoneer、银行跨境收款或合规企业收款账户结算，并按所在地税务规则开票或申报。\n\n税务申报：不要把海外平台收入视为不用申报。中国个人所得税法英文版显示，在中国有住所，或无住所但一个纳税年度在中国境内居住累计满 183 天的个人，为居民个人，其境内外所得通常需依照中国个税法纳税；没有扣缴义务人的所得也有自行申报义务。个体工商户或一人公司还要按经营主体口径处理增值税、经营所得或企业所得税等事项，具体以当地税务机关和专业顾问为准。\n\n平台规则：遵守 Shopify Partner Program、collaborator access 和应用服务条款；不绕过客户权限，不抓取或下载不必要数据，不私自保存订单数据，不使用客户数据训练模型，不承接仿冒、虚假折扣、灰产或高投诉品类。\n\n数据/隐私合规：退货流程可能接触姓名、邮箱、地址、订单号、购买商品和退款金额。中国个人信息保护法强调处理个人信息应有明确合理目的、限于最小范围，并要求个人信息处理者对处理活动负责；受托处理时，双方应约定处理目的、期限、方式、个人信息种类、保护措施和权利义务。实际接单时应优先使用测试订单和脱敏数据；如需处理真实数据，要签 NDA/DPA、限定保存期限、项目结束后删除并留痕。\n\n语言和时区门槛：英文报告必须清楚，能把问题写成客户可复现、开发可修复、客服可理解的格式。美国客户常在大促前要求 24-48 小时内完成回归测试，中国时区适合异步夜间测试，但紧急项目可能需要晚间沟通。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻；可产品化为 checklist 和报告模板；一人可完成销售、测试、截图、交付和复测；不依赖线下仓库或当地实体；客户复购来自活动前回归、政策更新、退货应用升级和新市场上线。\n\n不完全适合点：复杂退货场景会涉及物流、支付、税费、消费者法和客服策略，一人公司不能越界承诺；客户若要求 24 小时实时客服、真实退款审批、物流赔付处理或法律合规审查，应拒绝或转给专业服务商。建议新手只卖 pre-launch / pre-BFCM QA report，不做代运营。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：全流程可线上完成；交付物是截图、录屏、测试矩阵和文档；客户对远程电商协作接受度高；中国时区可利用欧美下班时间做异步测试。\n\n不完全适合点：需要稳定网络、固定设备和安全的账号管理；频繁旅行可能触发客户后台的 2FA/登录风控；处理真实订单数据时不适合在公共网络和公共电脑上操作；大促项目节奏紧，不适合完全不可预测的作息。\n\n## 潜在收益：区间、前提和成本结构\n\n保守兼职验证：每月 3-5 个 mini audit，按 80-150 USD/单，月收入约 240-750 USD，折合约 1626-5082 元。前提是用客户测试店和免费工具，主要成本是时间、平台费和收款汇损。\n\n熟练 OPC：每月 3 个标准 QA 项目加 1 个大促回归项目，按 350-600 USD/标准单和 900-1200 USD/大促单，月收入约 1950-3000 USD，折合约 13213-20328 元。前提是有样例报告、固定测试矩阵、英文沟通能力和至少 1-2 个复购代理商。\n\n小团队服务：1-3 人服务 3-5 家代理商或品牌，月收入可能达到 3000-6000 USD，折合约 20328-40656 元，但这已经需要 SOP、权限管理、数据安全、质量复核和销售管道，不适合作为新手承诺。\n\n成本结构：电脑、网络、测试邮箱、截图/录屏、项目管理工具、平台佣金、收款汇损、税费、可能的 Shopify 主题/应用学习成本。最大的隐性成本是学习不同退货应用规则和处理客户反复变更政策。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：客户把 QA 报告误解成法律合规背书；服务者接触过多真实订单和个人信息；共享主账号密码导致安全责任不清；测试订单影响库存、财务或真实通知；退货政策本身违反客户所在地消费者保护要求；服务者被卷入真实退款纠纷；客户要求承诺降低退货率、减少欺诈或提高复购。\n\n合规注意事项：只在授权范围内测试；优先使用测试订单和脱敏数据；不下载客户名单和支付信息；不判断当地消费者法合法性；不处理真实客服争议；不承接仿冒品、虚假折扣、赌博、传销、灰产、违法药品/保健品等高风险商家；合同写明客户负责政策、退款决定、物流承运、消费者法和税务规则。\n\n不适合人群：英文沟通弱、不了解电商售后流程、不愿写详细测试记录、只想靠模板报告批量糊弄客户、不重视数据安全、愿意共享账号或接灰产订单、想承诺高收益或结果包过的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做一份匿名样例 QA checklist 和报告模板：用 Shopify 测试店或演示流程覆盖退货入口、退货窗口、Final sale、手续费、换货、邮件通知和退款估算，输出英文样例。\n2. 做 20 个精准冷启动：联系小型 Shopify agency、DTC 店主或客服负责人，提供 paid mini audit，报价 80-150 USD，只测 3-5 个测试订单和核心规则。\n3. 前 3 单严格限权：只使用测试订单、匿名数据、预览链接或 collaborator access；交付截图报告和复测结果，不碰真实客户名单、支付信息和退款审批。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：整体克制，没有明显夸大；人民币换算已标注 2026-07-24 汇率口径，仍应提醒报价和汇率会变化。\n- 信息来源是否足够可信：基本足够。Shopify 官方文档、Shopify Partner/collaborator 文档、NRF/Happy Returns 报告和中国税法/PIPL 来源支撑力较强；AfterShip/Loop 和 Upwork 适合作为市场参照，但价格与功能会变，应以实际页面为准。\n- 最该补充或提醒的一句话：本服务必须只在客户明确授权的测试店、测试订单或匿名数据中执行，不判断退货政策在当地消费者法下是否合法，也不介入真实退款争议。\n\n## 关键来源\n\n1. Shopify Help Center - Self-serve returns: https://help.shopify.com/manual/orders/self-serve-returns\n2. Shopify Help Center - Setting up return rules and return policy: https://help.shopify.com/en/manual/orders/self-serve-returns/return-rules\n3. Shopify Help Center - Setting up self-serve returns and cancellations: https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/self-serve-returns/setup\n4. Shopify Help Center - Creating and processing returns and exchanges: https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/creating-returns\n5. NRF and Happy Returns - 2024 Retail Returns to Total 890 Billion USD: https://nrf.com/media-center/press-releases/nrf-and-happy-returns-report-2024-retail-returns-total-890-billion\n6. Shopify Help Center - About the Shopify Partner Program: https://help.shopify.com/en/partners/partner-program/about\n7. Shopify.dev - Collaborator accounts: https://shopify.dev/docs/storefronts/themes/tools/collaborator-accounts\n8. AfterShip Returns pricing models and plans: https://support.aftership.com/en/returns/articles/15389082-aftership-returns-pricing-models-and-plans\n9. Loop Returns Shopify App Store listing: https://apps.shopify.com/loop-returns\n10. Upwork - Software QA Tester Hourly Rates: https://www.upwork.com/hire/software-qa-testers/cost/\n11. Upwork Help - Minimum hourly and fixed-price rates: https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork\n12. State Taxation Administration - Individual Income Tax Law of the PRC: https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html\n13. Personal Information Protection Law of the PRC reference translation: https://en.spp.gov.cn/2021-12/29/c_948419.htm\n14. Investing.com USD/CNY historical data, 2026-07-24 reference: https://ca.investing.com/currencies/usd-cny-historical-data",
+      "startedAt": "2026-07-24T16:02:25+08:00",
+      "finishedAt": "2026-07-24T16:05:24+08:00",
+      "duration": "2m 59s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "us",
+        "uk",
+        "eu",
+        "shopify",
+        "ecommerce-qa"
+      ],
+      "nextSteps": [
+        "做一份匿名样例 QA checklist 和报告模板，覆盖退货入口、退货窗口、Final sale、手续费、换货、邮件通知和退款估算。",
+        "联系 20 个小型 Shopify agency、DTC 店主或客服负责人，提供 80-150 USD 的 paid mini audit。",
+        "前 3 单只使用测试订单、匿名数据、预览链接或 collaborator access，不碰真实客户名单、支付信息和退款审批。"
+      ],
+      "artifacts": [
+        {
+          "label": "Shopify Self-serve returns",
+          "path": "https://help.shopify.com/manual/orders/self-serve-returns"
+        },
+        {
+          "label": "Shopify return rules and policy",
+          "path": "https://help.shopify.com/en/manual/orders/self-serve-returns/return-rules"
+        },
+        {
+          "label": "Shopify self-serve returns setup",
+          "path": "https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/self-serve-returns/setup"
+        },
+        {
+          "label": "Shopify returns and exchanges",
+          "path": "https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/creating-returns"
+        },
+        {
+          "label": "NRF 2024 retail returns report",
+          "path": "https://nrf.com/media-center/press-releases/nrf-and-happy-returns-report-2024-retail-returns-total-890-billion"
+        },
+        {
+          "label": "Shopify Partner Program",
+          "path": "https://help.shopify.com/en/partners/partner-program/about"
+        },
+        {
+          "label": "Shopify collaborator accounts",
+          "path": "https://shopify.dev/docs/storefronts/themes/tools/collaborator-accounts"
+        },
+        {
+          "label": "AfterShip Returns pricing",
+          "path": "https://support.aftership.com/en/returns/articles/15389082-aftership-returns-pricing-models-and-plans"
+        },
+        {
+          "label": "Loop Returns Shopify App Store",
+          "path": "https://apps.shopify.com/loop-returns"
+        },
+        {
+          "label": "Upwork QA tester cost guide",
+          "path": "https://www.upwork.com/hire/software-qa-testers/cost/"
+        },
+        {
+          "label": "Upwork minimum rates",
+          "path": "https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork"
+        },
+        {
+          "label": "China Individual Income Tax Law",
+          "path": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+        },
+        {
+          "label": "China Personal Information Protection Law",
+          "path": "https://en.spp.gov.cn/2021-12/29/c_948419.htm"
+        },
+        {
+          "label": "USD/CNY 2026-07-24 reference",
+          "path": "https://ca.investing.com/currencies/usd-cny-historical-data"
+        }
+      ],
+      "sourceFile": "runs/2026-07-24/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-23",
       "taskId": "niche-profit-industry",
