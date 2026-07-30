@@ -1,7 +1,82 @@
 {
-  "generatedAt": "2026-07-29T08:08:11.445Z",
+  "generatedAt": "2026-07-30T08:06:54.366Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-07-30",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外 Shopify/DTC 服装品牌的尺码表、Fit Guide 与商品变体数据 QA 服务，属于中国境内可做的海外英语市场。它适合有英文、Shopify 后台、表格数据整理和移动端 QA 能力的 OPC/数字游民小规模验证，但必须限定为客户授权数据整理和前端核验，不承诺实际合身、退货率下降、转化率提升或平台/法律合规背书。",
+      "details": "## 行业是什么，为什么小众\n面向海外 Shopify/DTC 服装品牌的尺码表、Fit Guide 与商品变体数据 QA 服务，是帮服装、鞋履、运动服、宠物服饰、内衣/泳装、配饰等独立站商家，把分散的尺寸信息整理成可读、可检索、可上架、可移动端使用的商品页资料。\n\n典型交付包括：清洗供应商提供的尺码表；统一厘米/英寸、US/UK/EU/JP 等单位和地区口径；按产品类型区分 body measurement、garment measurement、international conversion、model wears、fit note、care guide；把尺码表关联到 Shopify product、variant、collection、tag、metafield 或 size chart app；检查桌面和移动端是否显示在尺码选择器附近；对照 SKU/variant、库存选项、颜色和尺码组合做 QA；交付截图证据、问题清单和修复建议。\n\n它小众，是因为它夹在服装商品运营、Shopify 后台、UX、尺码工程和客服/退货之间。普通虚拟助理会传商品图和描述，但不一定理解尺码口径、变体结构和移动端购买路径；普通开发者会改主题，但不一定愿意逐 SKU 校对表格；普通服装设计师懂版型，却不一定会把信息稳定落到独立站后台。许多小型 DTC 品牌没有专职商品数据经理，尺码信息又直接影响消费者是否敢下单，于是形成了一个可远程交付的细分运营服务。\n\n重要边界：客户必须确认原始尺码数据的来源、真实性和使用授权。服务方只做客户授权数据整理、配置和前端 QA，不对实际合身、消费者体型判断、退货率下降、转化率提升、尺码推荐算法准确性、消费者纠纷或法律合规作保证；不得抓取竞品尺码表、复制未授权品牌资料或处理真实退款争议。\n\n## 目标市场\n本期选择：中国境内可做的海外市场，重点是英语市场和使用 Shopify 的 DTC 服装商家。\n\n潜在客户包括美国、加拿大、英国、澳洲、欧盟、新加坡等市场的小型 Shopify 服装品牌、Print-on-demand 店铺、宠物服饰店、运动服/瑜伽服品牌、鞋履和配饰商家、Shopify 建站代理、商品上新团队和跨境电商虚拟助理团队。\n\n为什么适合中国境内验证：工作主要围绕表格、商品数据、Shopify 后台配置、截图和 QA 报告远程交付，不需要海外门店、仓库、当地雇员或强制本地牌照。一个人可以先从 10-30 个 SKU、只读审计、size chart app 配置检查或移动端显示 QA 的小包开始验证。\n\n## 典型需求场景和客户是谁\n1. 海外服装品牌从多个供应商拿到尺码表，单位、列名、尺码命名和测量位置不统一，需要整理成统一模板。\n2. Shopify 商家商品有 size/color 变体，但尺码表没有按产品类型或 collection 正确关联，用户在商品页找不到适配信息。\n3. DTC 店铺安装了 Smart Size Chart、Kiwi、BF Size Chart、Avada、Pify 等 size chart / fit guide app，但图表样式、移动端位置、单位转换或关联规则混乱。\n4. Print-on-demand 或 dropship 商家用供应商图片尺码表上架，文字太小、无法被搜索、移动端难读，需要重做成结构化表格和 FAQ。\n5. 建站代理完成主题和商品导入后，需要外包人员逐 SKU 检查尺码表、variant、库存选项、model info 和 fit note 是否一致。\n6. 品牌准备进入海外新市场，需要把厘米/英寸、US/UK/EU/JP 尺码转换、测量教程和本地表达补齐。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括品牌 owner、商品运营、服装打版或供应链人员、客服/退货团队、Shopify 开发者、主题设计师、size chart app、商品数据 VA、消费者和售后团队。\n\n典型工作流：\n1. 范围确认：确认 SKU 数量、产品类型、已有尺码表来源、供应商文件、是否已有 Shopify app、是否需要后台权限、目标国家和单位口径。SOW 写清不承诺退货率、转化率或合身结果。\n2. 数据盘点：导出 product/variant 列表，收集 supplier size chart、tech pack 摘要、product measurements、model measurements、图片尺码表和现有商品页链接。\n3. 清洗标准化：统一尺码命名、单位、测量部位、表头、空值、范围值、国际转换、产品类型和 collection 关联规则；无法确认的数据标为 needs client confirmation。\n4. 配置上架：按客户授权把尺码表写入 Shopify metafield、主题 section、页面模板、CSV、商品描述或 size chart app；尽量使用可维护的结构化方式，而不是把小字图片塞进描述。\n5. QA 验证：在桌面和移动端检查尺码表入口是否靠近 size selector，表格是否可读，厘米/英寸是否正确，产品类型是否匹配，variant 是否缺失或拼写不一致。\n6. 交付验收：提交更新后的表格、配置说明、截图、问题清单、待客户确认项、返工范围和后续维护建议。\n\n## 盈利模式和报价口径\n收入来自只读尺码信息审计、单店 size chart app 配置、按 SKU 批量整理、按 collection 迁移、移动端 QA、月度上新维护和 Shopify 代理白标分包。\n\n公开报价只能说明需求和供给存在，不能推导稳定收入。Fiverr 的 size guide 相关服务显示大量报价样本，常见起步价从 5、10、20、30、50 美元不等，也有 Shopify size chart / size guide app setup 标到 30-70 美元或更高；Upwork 有 Shopify Product Listing and Size Chart Optimization 远程岗位样本，报价为每小时 4-5 美元；Shopify App Store 上 Smart Size Chart & Fit Finder 这类工具有免费、9 美元/月、12 美元/月、19 美元/月等公开套餐，说明商家愿意围绕尺码展示付费，但工具订阅不等于人工服务价格。\n\n按 2026-07-30 附近 1 USD 约 6.77 CNY 粗略折算：\n- 只读尺码/变体审计小包：30-150 美元，约 203-1016 元人民币，适合 10-30 个 SKU 的问题清单和截图证据。\n- 单店 size chart app 配置或修复：80-300 美元，约 542-2031 元人民币，取决于 app、主题复杂度、collection 数量和是否需要后台操作。\n- 批量 20-100 个 SKU 数据整理与 QA：150-600 美元，约 1016-4062 元人民币；复杂品类、内衣/鞋履/多地区转换、供应商数据混乱应另计。\n- 月度维护：已有稳定客户或代理商合作后，200-800 美元/月，约 1354-5416 元人民币，用于每月上新、变体检查和尺码表维护。\n\n这些数字是毛收入和试单测算，不是收益承诺。平台佣金、收款手续费、汇损、税费、工具订阅、售前沟通、客户反复改表、截图 QA 和返工都会压缩净收入。低价平台竞争明显，新手不应把低价批量录入误认为稳定高利润项目。\n\n## 入门门槛\n技能：英文读写、Shopify product/variant 基础、CSV/表格清洗、单位换算、服装测量术语、移动端 QA、基础 UX 判断、截图标注、客户权限和数据安全意识。更高阶项目需要了解 Shopify metafields、theme app extensions、不同 size chart app 的规则、国际尺码转换的局限，以及服装品类差异。\n\n设备/软件：普通电脑、稳定网络、Google Sheets/Excel、Shopify Partner 账号、浏览器开发者工具、截图工具、字符和单位换算工具、必要时的测试 Shopify store。初期可用公开商品页做只读样例，不必购买昂贵工具。\n\n资质/合规：通常不需要海外本地牌照，但不能冒充 Shopify 官方、App 官方支持、服装打版师、法律顾问或尺码推荐算法供应商。若客户要求建立个性化身体测量数据库、处理消费者订单/退货数据或自动推荐算法，应提高数据保护和责任边界要求，必要时拒接或转给专业服务商。\n\n资金：轻资产启动，主要成本是学习、样例制作、平台获客、表格工具、测试店铺和可能的 app 试用。真正门槛是细致度和边界控制，而不是硬件。\n\n渠道：Upwork、Fiverr、PeoplePerHour、LinkedIn、Shopify Partner 生态、DTC/indie brand 社群、Shopify 代理白标分包、Print-on-demand 商家社群。冷启动时优先用公开商品页做 3-5 条具体、非恐吓式改进建议，不要群发夸大退货损失的营销话术。\n\n时间成本：1-2 周可熟悉 Shopify 商品/变体、常见尺码表 app 和 QA 模板；要稳定处理不同品类、多供应商数据和客户后台配置，通常需要 1-3 个月实战。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台获客要遵守平台规则，尤其不要在 Upwork 等平台绕单、诱导站外付款或做虚假评价。独立获客可通过个人网站、案例页、LinkedIn、Shopify Partner 关系和代理商合作，但不要购买名单群发，也不要用“你的退货率一定会暴涨”这类恐吓营销。\n\n远程交付：优先交付 Google Sheet/CSV、配置清单、截图报告、loom 录屏和待确认项。后台操作应使用 Shopify collaborator account 或客户创建的最小权限账号，Shopify 官方明确建议合作方通过 collaborator account 访问客户店铺，并禁止索要商家密码。不要要求 store owner 主账号或长期保留过高权限。\n\n合同/发票或收款：平台订单按平台合同、托管和争议流程；独立客户用英文 SOW 写清 SKU 数量、品类、输入资料、交付格式、权限、修改轮次、验收标准、保密、数据删除、付款节点和不承诺事项。中国境内个人或一人公司应保留合同、平台账单、收款流水、结汇记录、沟通记录和费用凭证。\n\n税务申报：中国境内个人或公司承接海外服务，应按自身主体类型处理个人所得税、经营所得、增值税或企业所得税。国家税务总局资料列明，境内单位和个人向境外单位提供且完全在境外消费的部分服务和无形资产可适用跨境应税行为免征增值税规则，但具体是否适用、如何备案或开票要按服务性质和主管税务机关要求判断。\n\n外汇与结算：国家外汇管理局《个人外汇管理办法》将个人外汇业务按交易性质区分经常项目和资本项目，并要求银行审核真实性；不得分拆、使用虚假单据或凭证逃避真实性管理。真实服务贸易收入应留存订单、合同、发票或平台账单，按银行要求办理收结汇和国际收支申报。\n\n平台规则：不得绕过平台收款、刷单、虚假评价、复制竞品尺码表、冒用品牌素材、抓取未授权商品数据、上传客户资料到未授权 AI 工具或把客户后台权限交给第三方。若使用第三方 app 或云端表格处理客户资料，应确认客户授权和访问范围。\n\n数据/隐私合规：尺码表项目原则上应处理商品数据，不处理消费者个人数据。若客户提供消费者身体测量、fit quiz 记录、订单、退货原因或客服对话，可能涉及个人信息或敏感商业数据，应签 NDA/DPA、最小化字段、避免下载、限制保存期限，并在交付后按约删除。新手最好只接公开商品资料、供应商尺码表和脱敏 SKU 表。\n\n语言和时区门槛：需要英文解释哪些数据无法确认、哪些尺码转换不是绝对等价、为什么表格要贴近 size selector、为什么移动端小字图片不可取。欧美客户多可异步交付，但上新前 QA 可能有紧急时限，要在 SOW 里写清响应时间。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：单人可以完成小店审计、表格清洗、app 配置、截图 QA 和交付报告；固定资产轻；项目颗粒度小；容易形成模板；能和商品上架、Shopify 运营、PDP 优化、图片 alt text、退货流程 QA 等服务组合销售。\n\n不完全适合点：客户数据质量差会导致返工；多品类、多供应商、多国家尺码转换会迅速变复杂；后台权限和数据安全需要流程；客户可能把服务误解成“保证合身”或“保证降退货率”。OPC 应限制 SKU 数量、品类、修改轮次、权限和责任边界。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：工作依赖浏览器、表格和 Shopify 后台，可异步交付；无需线下门店；普通电脑即可完成；适合按 SKU、小包或月度维护接单。\n\n不完全适合点：需要稳定网络和较大屏幕做表格/移动端对照；后台权限操作不适合在公共网络或共享电脑上做；跨时区紧急上新会打断节奏；长期旅居会影响税务居民身份、平台 KYC、收款账户和客户信任。\n\n## 潜在收益和成本结构\n低成本验证期：每月 3-8 个 30-150 美元小包，毛收入约 609-8124 元人民币，重点是积累样例、评价和流程，不应追求大批量复杂项目。\n\n标准接单期：每月 3-6 个 150-600 美元批量 SKU 项目，毛收入约 3047-24372 元人民币。能否达到取决于 Shopify 熟练度、客户资料质量、品类复杂度、平台评价、返工率和代理商复购。\n\n维护合作期：已有稳定客户或 Shopify 代理合作后，每月 2-5 个 200-800 美元维护项目，毛收入可能更平滑，但要承担上新节奏、紧急修复、权限管理和长期 QA 责任。\n\n主要成本包括平台抽佣、收款手续费、汇损、税费、表格和截图工具、测试店铺或 app 订阅、售前样例、返工、客户培训和数据核对时间。不要按 SKU 机械报价到极低水平，否则供应商资料混乱会让项目亏损。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 数据授权风险：客户可能给来路不明的竞品尺码表或供应商图片，服务者不能帮忙复制未授权资料。\n2. 结果承诺风险：不能承诺实际合身、退货率下降、转化率提升、客服量减少或消费者纠纷解决。\n3. 数据质量风险：供应商尺码表可能错误、过期或只适合样衣，服务者只能标注问题并要求客户确认。\n4. 隐私风险：fit quiz、订单、退货和客服数据可能涉及个人信息，新手不应主动处理。\n5. 平台和权限风险：索要商家密码、长期保留高权限账号、绕过平台收款或虚假评价都可能导致账号风险。\n6. 低价竞争风险：Fiverr/Upwork 上已有大量低价商品上架和 size guide 服务，新手要靠细致 QA、清晰边界和垂直样例区分。\n7. 税务外汇风险：海外收入需要真实申报和留存凭证，不能用地下钱庄、虚假合同、代收代付或拆分规避审核。\n\n不适合人群：不愿做重复表格校对的人；英文弱且不愿读 Shopify 文档的人；想承诺降退货率或包转化的人；对消费者数据和后台权限没有安全意识的人；喜欢复制竞品素材的人；无法接受客户资料混乱和反复确认的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 选 2 个公开海外服装 Shopify 店，做只读样例：列出 size guide 入口位置、表格可读性、单位、产品类型匹配、移动端截图和 5 条改进建议，不抓取后台或复制素材。\n2. 做一个尺码 QA 模板：SKU、product type、variant option、body/garment measurement、cm/in、international conversion、source、confidence、needs client confirmation、storefront URL、desktop/mobile screenshot、issue severity。\n3. 上架低风险小包：10-30 个 SKU、一个品类、只处理客户授权资料、一次修改、交付表格和截图报告；后台操作只用 collaborator/minimum permission，暂不处理消费者 fit quiz、订单或退货数据。\n\n## 点评 Agent 审稿\n审稿结论：通过，小修后发布，不需要重选题。本报告已按审稿意见补强“原始尺码数据授权”和“不承诺合身/退货率/转化率”的边界。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：基本克制，无明显夸大。小包和批量价有现实参照；月度维护已标注为已有稳定客户或代理商合作后的阶段，不暗示新手容易拿到。\n- 信息来源是否足够可信：足够，但应区分强弱来源。Shopify 官方变体、metafield 和协作账号文档可信；NRF 2025 退货数据可信；Baymard 服饰 UX 研究可信；Shopify App Store 价格、Fiverr、Upwork 只能作为市场样本，不宜当作行业均价或稳定需求证明。\n- 最该补充或提醒的一句话：客户需确认原始尺码数据来源、真实性和使用授权，服务方只做授权数据整理与前端 QA，不对实际合身、退货率、转化率或消费者纠纷作保证。\n\n## 关键来源\n1. Shopify Help Center：Variants，说明产品可用 size/color 等 option 形成 variants，并可管理每个 variant 的库存；variant metafields 可保存专门信息。https://help.shopify.com/en/manual/products/variants\n2. Shopify Help Center：Category metafields，说明商品分类属性可记录 clothing size、neckline、sleeve length type 等，并可连接到 variant options。https://help.shopify.com/en/manual/custom-data/metafields/category-metafields\n3. Shopify Help Center：Working on client stores，说明 Shopify Partner 可用 collaborator account 访问客户店铺，且禁止索要商家密码。https://help.shopify.com/en/partners/getting-started/working-on-client-stores\n4. Shopify Dev Docs：Collaborator accounts，说明 collaborator accounts 由商家控制访问范围，适合合作方管理主题等授权任务。https://shopify.dev/docs/storefronts/themes/tools/collaborator-accounts\n5. Shopify App Store：Smart Size Chart & Fit Finder，公开列出 size chart/fit finder app 的免费、9 美元/月、12 美元/月、19 美元/月等套餐和商家评价摘要。https://apps.shopify.com/smartsize\n6. Shopify Blog：Sizing Charts: How to Make a Size Chart for your Retail Business，说明尺码表帮助消费者选择尺寸，并提到服装电商中尺码/合身导致退货的问题。https://www.shopify.com/blog/why-your-retail-store-needs-a-sizing-guide-and-how-to-create-one\n7. NRF：Consumers Expected to Return Nearly $850 Billion in Merchandise in 2025，说明 2025 年美国零售商预计 15.8% 年销售额会退货，线上销售预计 19.3% 会退货。https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025\n8. Baymard Institute：5 UX Best Practices for Apparel E-Commerce，说明服饰电商中尺码信息不足会影响购买信心，并给出多项 sizing UX 建议。https://baymard.com/blog/apparel-5-best-practices\n9. Baymard Institute：87 Size Guide Design Examples，说明 size guide/size chart 是帮助用户选码的核心信息，并提供服饰网站样例。https://baymard.com/ecommerce-design-examples/size-guide\n10. Fiverr：Size Guide services，作为海外 size guide/size chart 服务供给和低价报价样本。https://www.fiverr.com/gigs/size-guide\n11. Upwork：Shopify Product Listing and Size Chart Optimization job sample，作为远程商品上架和尺码表优化需求样本。https://www.upwork.com/freelance-jobs/apply/Shopify-Product-Listing-and-Size-Chart-Optimization_~022011101726713256794/\n12. Upwork Help：Circumvention, and why it is against the rules，说明平台内认识后绕平台收款违规。https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules\n13. 国家税务总局：哪些业务可以享受跨境应税行为免征增值税政策，列出境内单位和个人向境外单位提供且完全在境外消费的若干服务类别。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n14. 国家外汇管理局：个人外汇管理办法，说明个人外汇业务按交易性质区分经常项目和资本项目，并要求真实性审核。https://www.safe.gov.cn/safe/2006/1225/5319.html\n15. Wise：USD/CNY historical rate，2026-07-28 附近 1 USD 约 6.768 CNY；本文按 1 USD 约 6.77 CNY 粗略折算。https://wise.com/zh-cn/currency-converter/usd-to-cny-rate/history",
+      "startedAt": "2026-07-30T16:03:12+08:00",
+      "finishedAt": "2026-07-30T16:08:30+08:00",
+      "duration": "5m 18s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "shopify",
+        "ecommerce",
+        "apparel"
+      ],
+      "nextSteps": [
+        "选 2 个公开海外服装 Shopify 店，做只读尺码信息 QA 样例，不抓取后台或复制素材。",
+        "制作 SKU、variant、尺码表、单位、截图和待确认项模板，形成可复用交付格式。",
+        "上架 10-30 个 SKU 的低风险小包，只处理客户授权资料，并限定权限、返工和不承诺事项。"
+      ],
+      "artifacts": [
+        {
+          "label": "Shopify Help Center: Variants",
+          "path": "https://help.shopify.com/en/manual/products/variants"
+        },
+        {
+          "label": "Shopify Help Center: Category metafields",
+          "path": "https://help.shopify.com/en/manual/custom-data/metafields/category-metafields"
+        },
+        {
+          "label": "Shopify Help Center: Working on client stores",
+          "path": "https://help.shopify.com/en/partners/getting-started/working-on-client-stores"
+        },
+        {
+          "label": "Shopify App Store: Smart Size Chart & Fit Finder",
+          "path": "https://apps.shopify.com/smartsize"
+        },
+        {
+          "label": "NRF 2025 Retail Returns Landscape press release",
+          "path": "https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025"
+        },
+        {
+          "label": "Baymard apparel ecommerce UX best practices",
+          "path": "https://baymard.com/blog/apparel-5-best-practices"
+        },
+        {
+          "label": "Fiverr size guide services sample",
+          "path": "https://www.fiverr.com/gigs/size-guide"
+        },
+        {
+          "label": "Upwork circumvention rules",
+          "path": "https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules"
+        },
+        {
+          "label": "国家税务总局跨境应税行为资料",
+          "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+        },
+        {
+          "label": "国家外汇管理局个人外汇管理办法",
+          "path": "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+        }
+      ],
+      "sourceFile": "runs/2026-07-30/niche-profit-industry.json"
+    },
     {
       "date": "2026-07-29",
       "taskId": "niche-profit-industry",
