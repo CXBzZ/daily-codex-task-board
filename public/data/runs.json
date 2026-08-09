@@ -1,7 +1,79 @@
 {
-  "generatedAt": "2026-08-08T08:09:49.415Z",
+  "generatedAt": "2026-08-09T08:07:50.052Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-08-09",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外移动 App 的 App Store 隐私标签、Google Play Data Safety 与 SDK 数据清单整理服务，属于中国境内可做的海外市场。它适合有英文、移动开发基础、SDK 文档阅读和隐私边界意识的 OPC/数字游民小规模验证，但必须限定为资料清点、表单草稿和风险提示，不做法律意见、不隐瞒数据收集，也不承诺平台审核通过。",
+      "details": "## 行业是什么，为什么小众\n\n海外移动 App 隐私标签、Google Play Data Safety 与 SDK 数据清单整理服务，是帮独立开发者、小型 SaaS、移动游戏小团队和外包开发工作室，把 iOS/Android App 的 SDK、权限、数据类型、数据用途、共享/追踪、加密传输、删除机制和隐私政策口径整理成可提交、可复核、可交给客户最终确认的资料包。\n\n它不是代写万能隐私政策，也不是 App Store 或 Google Play 审核包过服务。更准确的定位是移动 App 上架和更新流程里的 privacy operations / store privacy metadata QA：把 Apple App Store Connect 的 App Privacy 信息、PrivacyInfo.xcprivacy、Google Play Data safety form、SDK 官方 data safety guidance、客户隐私政策和实际 App 配置放到同一张证据表里，找出缺口和不一致。\n\n它小众，是因为它夹在移动开发、应用商店运营、隐私合规、SDK 文档、英文技术写作和版本发布流程之间。开发者知道自己用了 Firebase、AppsFlyer、RevenueCat、Sentry、AdMob、Meta SDK、Stripe、OneSignal 等 SDK，但不一定愿意逐项阅读 Apple/Google 的数据类型、purpose、tracking、sharing、encryption/deletion 口径；律师能审隐私政策，但不一定能读 Gradle、CocoaPods、Swift Package Manager、Android permissions、iOS entitlements、网络请求和 SDK 指南；普通 ASO 运营会写标题截图，但往往不敢碰隐私表单。\n\n核心边界：服务方只能做客户授权下的资料清点、SDK/权限/数据类型映射、表单草稿、提交前 QA 和风险提示；不能替客户作法律判断，不能承诺 App Store/Google Play 审核通过，不能代客户隐瞒 SDK 收集数据，不能冒充律师、DPO 或平台官方顾问。\n\n## 目标市场\n\n本期选择：中国境内可做的海外市场，主要面向英语市场的独立开发者、小型 SaaS、轻量工具 App、内容订阅 App、移动游戏小团队、外包开发工作室和准备上架/更新 iOS、Android App 的早期公司。\n\n为什么适合中国境内验证：交付物主要是表格、证据链接、问题清单、表单草稿、截图和异步说明，不需要海外实体门店，不需要当地线下资质，也不需要进入客户办公室。一个人可以先从非儿童、非医疗、非金融、SDK 数量较少的工具类 App 做小包验证。\n\n## 典型需求场景和客户是谁\n\n1. App 更新时被要求补充 App Privacy、privacy manifest 或 Google Play Data safety 信息。\n2. 客户新增广告、分析、推送、订阅支付、登录、崩溃报告或 attribution SDK 后，原有隐私表单、隐私政策和 store listing 已经过期。\n3. 外包开发团队交付 App，客户要求同时交付 App Store Connect/Play Console 隐私资料包。\n4. 小型 SaaS 的移动端、网页隐私政策、App Store 隐私标签、Google Play Data safety 声明互相不一致。\n5. 客户准备出售 App、融资、接企业客户或做供应商尽调，需要先清点 SDK、权限和数据流。\n6. 海外隐私律师、vDPO、移动开发代理或 ASO 代理需要白标助理整理证据和初稿。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括 App 创始人、移动开发者、外包开发工作室、产品经理、隐私律师或合规顾问、App Store Connect/Play Console 管理员、SDK 服务商和隐私资料整理服务商。\n\n典型工作流：\n\n1. 授权与范围确认：确认 App 包名、平台、版本、目标市场、是否面向儿童、是否涉及健康/金融/精准定位/广告追踪、是否允许查看后台截图和依赖清单。\n2. 资料收集：收集当前隐私政策、App Store/Play Console 隐私页面截图、SDK 清单、权限清单、数据流说明、后端接口、第三方服务列表、SDK 官方文档和客户已知的数据处理说明。\n3. 技术清点：查看 Android manifest、Gradle 依赖、iOS Info.plist、entitlements、CocoaPods/SPM、PrivacyInfo.xcprivacy、推送/登录/支付/广告/分析 SDK 配置和简单网络请求证据。\n4. 平台口径映射：按 Apple 和 Google Play 的 taxonomy 映射数据类型、用途、是否 linked to user、是否 used for tracking、是否 shared、是否 optional/required、是否 encrypted in transit、是否提供 deletion request。\n5. SDK 指南核对：查 Google Play SDK Index、SDK 官方 data safety/privacy guidance、Apple 第三方 SDK privacy manifest/signature 要求，标出需要客户确认的灰区。\n6. 输出草稿：交付 App Store Connect privacy answers 草稿、Google Play Data safety form 草稿、SDK data inventory、权限/SDK 不一致清单、privacy policy alignment notes、客户待确认问题和提交前检查表。\n7. 最终确认：客户、律师或开发负责人最终确认并提交；服务方只保留版本化记录，不替客户作最终合规承诺。\n\n## 盈利模式和报价口径\n\n收入来自单次隐私资料体检、单平台表单更新、iOS+Android 双平台发布前资料包、SDK 更新月度维护、以及白标交付给移动开发代理、隐私律师或 vDPO。\n\n公开报价只能当样本看。Upwork 公开资料显示，Mobile App Developers 常见小时费率约 18-39 美元，移动开发相关子类大致可见 16-75 美元/小时区间；Upwork 合同有最低小时和固定价规则。Fiverr 上能看到 App/privacy policy、Play Store App 隐私政策等低价文档服务样本，入门价甚至低到个位数美元或几十美元级别，说明需求真实但低价竞争明显。这里按 1 USD 约 7.2 RMB 粗略折算：\n\n- 轻量隐私资料体检：80-250 美元，约 576-1800 元。适合 SDK 少、只输出不一致清单和待确认问题的 App。\n- 单平台表单草稿与 QA：150-500 美元，约 1080-3600 元。适合只处理 App Store Connect 或 Google Play Data safety 一端。\n- iOS+Android 双平台资料包：400-1200 美元，约 2880-8640 元。适合已有隐私政策、SDK 清单和开发负责人配合确认的客户。\n- 月度 SDK 更新维护：300-1500 美元/月，约 2160-10800 元/月。前提是客户持续迭代 SDK、权限、广告和分析配置。\n\n这些数字是毛收入和项目报价测算，不是收益承诺。实际净收入要扣平台佣金、收款手续费、汇损、税费、工具订阅、售前沟通、返工和客户确认时间。儿童、健康、金融、精准定位、广告追踪或需要接触真实用户数据的项目，不应按普通小包低价承接。\n\n## 入门门槛\n\n技能：英文阅读与写作、iOS/Android 基础、App Store Connect/Play Console 基础、SDK 文档阅读、隐私表单 taxonomy 理解、表格证据整理、客户边界表达和问题清单写作。更高阶项目还需要懂广告 attribution、订阅支付、推送、登录、崩溃分析、儿童隐私和多地区隐私政策差异。\n\n设备/软件：普通电脑、稳定网络、表格工具、可选 Xcode/Android Studio、依赖查看和简单抓包辅助工具、密码管理器、2FA、加密存储、截图和版本记录工具。初期不需要购买昂贵企业合规平台，但必须会保留证据链接和版本记录。\n\n资质/合规：通常不需要海外本地牌照；但不能提供法律意见，不能自称 attorney、DPO、certified privacy auditor 或 Apple/Google 官方代表。若客户需要 GDPR、CCPA/CPRA、COPPA、儿童隐私、医疗、金融、跨境数据传输或广告追踪法律判断，应转给律师或隐私合规顾问。\n\n资金：轻资产启动，主要成本是学习时间、作品集样例、工具订阅、平台会员或投标成本、跨境收款手续费和税务处理成本。\n\n渠道：Upwork、Fiverr、LinkedIn、indie app 社区、移动开发代理、隐私律师/vDPO 合作、App 外包工作室、ASO 代理和 SaaS 创始人社群。获客文案应写成 privacy label QA、Data Safety form draft、SDK data inventory、store privacy metadata cleanup，不要写 legal compliance guaranteed 或 app review approved。\n\n时间成本：有移动开发基础的人，2-4 周可完成官方规则和常见 SDK 样例学习；要稳定处理客户真实项目、灰区问题和多 SDK 版本差异，通常需要 1-3 个月试单沉淀。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：优先用平台小包、移动开发代理白标、隐私律师/vDPO 助理和 indie app 社区。冷启动样例应使用自有 demo 或公开材料，不展示客户真实后台截图。\n\n远程交付：尽量让客户导出 SDK/权限清单和后台截图；必须登录后台时使用最小权限、临时账号、2FA 和操作记录。不要要求共享个人密码，不要下载生产用户数据，不要把客户代码或截图上传到未经授权的 AI 或第三方工具。\n\n合同/发票或收款：平台订单按平台合同和托管规则；独立客户用英文 SOW，写清交付物、资料范围、客户最终确认责任、非法律意见、不保证审核通过、不处理未授权数据、不隐瞒 SDK 数据、返工次数、保密、删除期限和付款节点。收款可用 Upwork/Fiverr 平台托管、Payoneer、PayPal、Wise Business 或银行跨境收款等合规路径，按账户资质和所在地规则处理。\n\n税务申报：中国境内个人或一人公司承接海外服务，应保留合同、订单、收款流水、结汇记录、发票或形式发票、成本凭证。居民个人境外所得、个体工商户经营所得、个人独资企业和有限公司企业所得税口径不同；部分向境外单位提供且完全在境外消费的服务可能涉及跨境应税行为增值税免税或零税率政策，但是否适用要结合服务性质、客户主体、服务消费地和主管税务机关要求判断。\n\n外汇与结算：真实、合法的服务贸易或经常项目收支应按银行和外汇管理要求办理，必要时提供合同、平台账单、发票或服务证明。不要使用地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：不得绕开平台私下收款、刷单、虚假评价、共享账号、冒用认证、代客户提交明知虚假的 Data safety 或 App Privacy 声明。若客户要求“先填不收集，过审再说”，应拒绝。\n\n数据/隐私合规：若处理海外客户面向海外用户的 App 资料，仍应按客户所在地和平台政策约定保密、最小化处理和删除。若接触中国境内个人信息或中国客户资料，应遵守《个人信息保护法》的合法、正当、必要、最小范围原则；涉及向境外提供中国境内个人信息时，要由客户按 PIPL 跨境提供规则、单独同意、标准合同/认证/安全评估等路径判断，服务方不能自行决定。\n\n语言和时区门槛：需要能用英文写清 implemented、not implemented、needs client confirmation、evidence pending、legal review required、out of scope 等边界。欧美客户可能要求发布前紧急沟通，适合用异步问题清单和固定窗口会议降低时区压力。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻，交付物文档化，可用模板和清单复用；一个人能从小型工具 App、单平台表单和 SDK 少的项目开始；可与移动开发、ASO、本地化 QA、隐私政策律师或 vDPO 形成转介绍。\n\n不完全适合点：隐私声明错误可能导致平台审核、用户信任和法律风险，客户也可能把草稿误解成合规证明。单人公司必须控制高风险类别、让客户最终确认、保存证据链，并明确不做法律意见。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：资料、表格、后台截图和说明文档都能远程交付；普通电脑即可开始；适合异步沟通和跨时区交付。\n\n不完全适合点：客户资料和后台权限敏感，不适合在公共 Wi-Fi、共享电脑或不可信设备上处理；长期移动办公会带来设备丢失、屏幕窥视、网络不稳、税务居民身份和平台 KYC 的额外管理成本。数字游民必须有硬盘加密、密码管理器、2FA、备份、资料删除和安全网络纪律。\n\n## 潜在收益和成本结构\n\n验证期：每月 2-5 个小包，按 80-250 美元/个，毛收入约 160-1250 美元，约 1152-9000 元。重点是积累样例、评价和 SOP，不是追求高客单。\n\n熟练期：每月 3-8 个单平台或双平台项目，按 150-1200 美元/个，毛收入约 900-6000 美元，约 6480-43200 元。前提是有移动技术和隐私表单经验、客户资料齐全、返工率低、获客稳定。\n\n维护期：若有 2-4 个长期客户，每月毛收入可能约 600-6000 美元，约 4320-43200 元。前提是客户持续迭代 SDK、权限和版本发布，且服务方能稳定跟踪平台规则更新。\n\n主要成本包括平台佣金、跨境收款和换汇费用、税费、工具订阅、合同/NDA 模板、设备安全、售前诊断、返工、时区沟通和学习平台政策更新的时间。不能把毛收入当净利润，更不能把一次上架项目线性外推成稳定月收入。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：客户误以为服务方能提供法律合规结论；SDK 实际行为和官方文档不一致；客户隐瞒数据收集；平台政策更新；儿童、健康、金融、精准定位、广告追踪类 App 风险高；客户要求代填假声明；服务方处理未脱敏用户数据；跨境收款和纳税资料不完整。\n\n合规注意事项：所有表单草稿都必须由客户、律师或开发负责人最终确认；高风险项目默认要求客户法务/隐私顾问介入；不得代客户隐瞒 SDK 收集和分享；不得承诺审核通过；不得使用未授权 AI 工具处理客户代码、后台截图和用户数据；不得把客户资料用于作品集；要保留授权、证据、交付和删除记录。\n\n不适合人群：英文差、不愿读官方规则、不懂基本移动技术、保密意识弱、喜欢“包过”承诺、只会套模板、不愿做证据表、无法拒绝客户虚假声明要求的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 用一个公开示例 App 或自有 demo 做 SDK data inventory 模板，列出依赖、权限、数据类型、用途、证据链接、客户待确认栏和 legal review required 栏。\n2. 选 2-3 个常见 SDK，例如 Firebase、Sentry、RevenueCat、AdMob 或 OneSignal，阅读官方 data safety / privacy guidance，做一份“新增 SDK 前后隐私表单变化”的样例报告。\n3. 在平台发布 1 个限定小包：只接非儿童、非医疗金融、20 个 SDK 以内、客户提供资料、只输出草稿和不一致清单，明确不做法律意见、不保证审核通过、不代提交虚假声明。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 结论：通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：较克制。明确写了毛收入、非收益承诺、需扣佣金税费返工，验证期和熟练期数字也没有明显夸大。\n- 信息来源是否足够可信：基本可信。Apple/Google 政策依据与官方说明吻合，包括 Apple App Privacy、privacy manifest、第三方 SDK 责任，Google Play Data safety、SDK Index 与开发者声明责任。Upwork 费率样本也能支撑“有需求但低价竞争存在”。建议正文加上官方链接与发布日期/访问日期，并补中国税务、外汇、PIPL 的官方出处。\n- 最该补充或提醒的一句话：儿童、健康、金融、精准定位、广告追踪或需要接触真实用户数据的项目，应默认要求客户法务/隐私顾问介入，单人服务方只做证据整理和草稿，不做最终合规判断。\n\n补充采纳：已在正文补充官方来源链接、中国税务/外汇/PIPL 依据，以及高风险项目拒接或升级给客户法务/隐私顾问的规则。\n\n## 关键核验来源\n\n1. Apple Developer - App privacy details on the App Store：核验 App Store Connect 需要提供 App 隐私实践信息，包含第三方伙伴代码实践，并要求保持准确。https://developer.apple.com/app-store/app-privacy-details/\n2. Apple Developer Documentation - Privacy manifest files：核验 PrivacyInfo.xcprivacy 记录 App 或第三方 SDK 收集的数据类型和 required reasons APIs。https://developer.apple.com/documentation/bundleresources/privacy-manifest-files\n3. Apple Developer Support - Third-party SDK requirements：核验部分常用第三方 SDK 在提交新 App 或更新时需要 privacy manifest 和 signature。https://developer.apple.com/support/third-party-SDK-requirements/\n4. Apple Developer - App Review Guidelines：核验 App 隐私政策需说明收集数据、用途、第三方共享、保留/删除和撤回同意等内容。https://developer.apple.com/app-store/review/guidelines/\n5. Google Play Console Help - Provide information for Google Play's Data safety section：核验所有发布 App 都需完成 Data safety form，且包括第三方库/SDK 处理的数据，开发者对声明准确性负责。https://support.google.com/googleplay/android-developer/answer/10787469\n6. Google Play Developer Program Policy：核验 Data safety section、privacy policy、第三方 SDK 数据实践和声明一致性的政策要求。https://support.google.com/googleplay/android-developer/answer/17190352\n7. Android Developers - Google Play SDK Index：核验 SDK Index 提供常用商业 SDK 的安全/可靠性信号和 data safety guidance 链接。https://developer.android.com/distribute/sdk-index\n8. Google Developers - Prepare for Google Play data disclosure requirements：核验部分 Google Play services SDK 的数据披露指导，并提醒开发者对整体 Data safety 表单负责。https://developers.google.com/android/guides/play-data-disclosure\n9. Upwork - Mobile App Developer Hourly Rates：核验移动 App 开发者公开费率样本约 18-39 美元/小时，以及复杂度、平台和经验会影响成本。https://www.upwork.com/hire/mobile-app-developers/cost/\n10. Upwork - Upwork hourly rates by skill：核验 Android、iOS、Mobile App Developers、QA、web analytics 等相邻技能公开费率样本。https://www.upwork.com/resources/upwork-hourly-rates\n11. Upwork Help - Minimum hourly and fixed-price rates：核验 Upwork 平台最低小时和固定价规则。https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork\n12. Fiverr - App/Play Store privacy policy gig sample：核验平台上存在 App/privacy policy、Play Store App 隐私政策等低价文档服务样本和低价竞争。https://www.fiverr.com/faiz_creations/write-legal-privacy-policy-for-your-app-or-playstore-app\n13. 国家税务总局 - 关于境外所得有关个人所得税政策的公告：核验居民个人境外所得申报和折算等基本要求。https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html\n14. 国家税务总局 - 哪些业务可以享受跨境应税行为免征增值税政策：核验向境外单位提供且完全在境外消费的部分服务可能适用免征增值税政策。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n15. 国家外汇管理局 - 个人外汇管理办法：核验个人外汇业务按主体和交易性质管理，个人跨境收支应办理国际收支统计申报，银行进行真实性审核。https://www.safe.gov.cn/safe/2006/1225/5319.html\n16. 国家外汇管理局 - 个人外汇管理办法实施细则：核验个人结汇和购汇年度总额及经常项目材料要求。https://www.safe.gov.cn/safe/2007/0105/22509.html\n17. 中华人民共和国个人信息保护法：核验个人信息处理应合法、正当、必要、最小范围，向境外提供个人信息需满足法定条件并取得单独同意等要求。https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i",
+      "startedAt": "2026-08-09T16:03:14+08:00",
+      "finishedAt": "2026-08-09T16:05:42+08:00",
+      "duration": "2m 28s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "app-store",
+        "google-play",
+        "mobile-apps",
+        "privacy"
+      ],
+      "nextSteps": [
+        "用公开示例 App 或自有 demo 建一张 SDK data inventory 模板，记录依赖、权限、数据类型、用途、证据链接和客户待确认栏。",
+        "挑选 Firebase、Sentry、RevenueCat、AdMob 或 OneSignal 等常见 SDK，阅读官方 data safety/privacy guidance，制作新增 SDK 前后隐私表单变化样例。",
+        "发布一个限定小包，只接非儿童、非医疗金融、20 个 SDK 以内的 App，输出草稿和不一致清单，明确不做法律意见、不保证审核通过。"
+      ],
+      "artifacts": [
+        {
+          "label": "Apple App privacy details",
+          "path": "https://developer.apple.com/app-store/app-privacy-details/"
+        },
+        {
+          "label": "Apple Privacy manifest files",
+          "path": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files"
+        },
+        {
+          "label": "Apple third-party SDK requirements",
+          "path": "https://developer.apple.com/support/third-party-SDK-requirements/"
+        },
+        {
+          "label": "Google Play Data safety form",
+          "path": "https://support.google.com/googleplay/android-developer/answer/10787469"
+        },
+        {
+          "label": "Google Play SDK Index",
+          "path": "https://developer.android.com/distribute/sdk-index"
+        },
+        {
+          "label": "Upwork mobile app developer rates",
+          "path": "https://www.upwork.com/hire/mobile-app-developers/cost/"
+        },
+        {
+          "label": "国家税务总局境外所得个税政策",
+          "path": "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html"
+        },
+        {
+          "label": "国家外汇管理局个人外汇管理办法",
+          "path": "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+        },
+        {
+          "label": "中华人民共和国个人信息保护法",
+          "path": "https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i"
+        }
+      ],
+      "sourceFile": "runs/2026-08-09/niche-profit-industry.json"
+    },
     {
       "date": "2026-08-08",
       "taskId": "niche-profit-industry",
