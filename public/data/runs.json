@@ -1,7 +1,90 @@
 {
-  "generatedAt": "2026-08-09T08:07:50.052Z",
+  "generatedAt": "2026-08-23T14:20:16.038Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-08-23",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型网站的 Core Web Vitals、PageSpeed/Lighthouse 性能诊断与轻量修复服务，属于中国境内可做的海外英语市场。它适合懂前端性能、WordPress/Shopify/Webflow 后台、英文报告和数据安全边界的 OPC/数字游民小规模验证，但必须限定为客户授权下的技术诊断、可回滚修复和前后对比报告，不承诺 Google 排名、流量、转化率或 28 天 CrUX 数据稳定过线。",
+      "details": "## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外小型网站、Shopify/DTC 店、WordPress 内容站、Webflow 营销站和独立 SaaS 官网的 Core Web Vitals、PageSpeed/Lighthouse 性能诊断与轻量修复服务。\n\n它不是泛泛的“网站加速包”，而是围绕 Google Core Web Vitals 里的 LCP、INP、CLS 三项用户体验指标，帮客户定位真实拖慢页面的原因，并做可控的小范围技术修复。典型交付包括：PageSpeed Insights 和 Lighthouse 基线报告、移动端/桌面端问题拆解、LCP 图片或首屏资源优化、字体加载策略、脚本延迟加载、CSS/JS 体积清理、缓存/CDN 配置核验、布局偏移来源排查、第三方脚本影响说明、修复前后截图和报告。\n\n它小众，是因为客户知道 PageSpeed 分数低，却常常不知道该找 SEO、前端、WordPress 维护、Shopify 开发、主机商还是广告代理处理。真正可收费的部分不是跑一次免费工具，而是把工具输出转成可执行的优先级、在客户授权范围内做小改动、保留回滚路径，并解释为什么实验室分数、CrUX 现场数据和 Search Console 验证周期不一定同步。\n\n重要边界：本服务只能写成性能技术诊断、轻量修复、监测配置和建议清单；不能承诺 Google 排名提升、自然流量增长、广告转化改善、平台审核通过、法律合规结论或 28 天真实用户数据稳定过线。未经授权不得扫描、压测、修改生产站或访问客户后台。\n\n## 目标市场\n\n本期选择：中国境内可做的海外市场，重点是英语市场。\n\n潜在客户包括海外 Shopify/DTC 小店、WordPress 内容站和本地服务商网站、Webflow 营销站、小型 SaaS 官网、独立开发者落地页、海外 SEO/网页设计代理商、内容工作室和技术营销顾问。它们常见痛点是移动端加载慢、Search Console Core Web Vitals 报告出现 poor URL group、PageSpeed Insights 分数影响客户观感、主题和插件堆叠导致 CLS/INP 问题、图片过大、字体和第三方脚本阻塞首屏。\n\n为什么适合中国境内验证：工作主要在线完成，不需要海外实体门店，不需要当地强牌照，客户可以通过平台托管或英文 SOW 授权交付。单人可以先从“3 个 URL 的性能审计”和“1 个页面的 LCP/CLS 轻修复”开始试单，避免直接承诺整站重构或长期性能 SLA。\n\n## 典型需求场景和客户是谁\n\n1. Shopify 店铺换主题、装营销插件后移动端 LCP 变差，需要压缩首屏图片、排查第三方脚本、检查 Shopify app 对页面的影响。\n2. WordPress 内容站或本地服务商网站使用 Elementor、WooCommerce、广告脚本和多个插件后 PageSpeed 分数很低，需要缓存、图片、字体和脚本加载优化。\n3. Webflow 或 Framer 营销站视觉做得好，但首屏大图、动画和字体资源过重，需要保留设计效果的性能修复建议。\n4. 小型 SaaS 官网在投放广告前想做落地页速度检查，减少明显的移动端体验问题，但没有内部前端性能工程师。\n5. 海外 SEO 或设计代理商需要白标供应商，把客户站点的 PageSpeed/Lighthouse 问题整理成报告，并完成低风险修复。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括客户站点 owner、开发者或主题维护人员、SEO/营销代理、主机/CDN 服务商、Shopify/WordPress/Webflow 平台、性能服务商，以及 PageSpeed Insights、Chrome DevTools、Lighthouse、Search Console、CrUX、WebPageTest、GTmetrix、Cloudflare、图片压缩和监控工具。\n\n典型工作流：\n\n1. 范围确认：确认站点 URL、平台类型、重点页面、目标市场设备、是否有 Search Console/GA4/主机/CDN 权限、是否允许后台临时访问，以及哪些改动必须避开。\n2. 授权与基线：通过平台订单或英文 SOW 获取书面授权；用 PageSpeed Insights、Lighthouse、Chrome DevTools、Search Console 截图和客户后台只读信息建立基线。\n3. 问题拆解：区分实验室数据和现场数据；按 LCP、INP、CLS、TTFB、图片、字体、JS、CSS、第三方脚本、缓存/CDN、主题/插件冲突列优先级。\n4. 轻量修复：在测试环境、主题副本或可回滚配置中处理图片尺寸和格式、lazy-load 例外、fetch priority、字体 display、缓存规则、无用插件/脚本延迟、布局空间预留、CSS/JS 减载等低风险项。\n5. 复测和报告：交付前后 Lighthouse/PSI 截图、修改清单、未处理项、风险说明、回滚步骤和客户后续维护建议。\n6. 监测与交接：如果客户有 Search Console，可提醒 Core Web Vitals 修复验证依赖 28 天监控窗口；如果做月度维护，只做轻量巡检和新页面建议，不承担 24/7 运维。\n\n官方资料支撑这些工作流的真实性：Google Search Central 把 Core Web Vitals 定义为衡量加载、交互和视觉稳定性的指标；PageSpeed Insights 同时提供实验室数据和 CrUX 现场数据；Lighthouse 可以在 DevTools、PageSpeed Insights、命令行或 Node 模块中运行并生成报告；Search Console 的 Core Web Vitals 修复验证会启动 28 天监控窗口。\n\n## 盈利模式和报价口径\n\n收入来自技术服务费，而不是平台套利或 SEO 结果分成。常见收费方式：\n\n1. 固定价小审计包：检查 1-3 个 URL，输出 PageSpeed/Lighthouse/CrUX 口径说明、问题优先级和修复建议。\n2. 单页轻量修复包：对首页、产品页或落地页做 LCP/CLS/脚本加载的低风险优化，并交付前后报告。\n3. 平台专项包：WordPress/Shopify/Webflow 的图片、字体、缓存、主题/插件配置、第三方脚本整理。\n4. 性能 sprint：为一个小站点做 1-2 周的性能排查和有限修复，不重写整站架构。\n5. 月度轻维护：每月复测重点页面、检查新增内容和插件影响、输出简短报告。\n\n公开报价样本只能作为毛收入参考，不代表稳定成交价：Fiverr 上 web optimization/Core Web Vitals 相关服务大量从 30 美元起，也有 Shopify speed/Core Web Vitals 小包从 40-90 美元起；一个公开 Fiverr gig 显示 Basic/Standard/Premium 为 30/50/65 美元，评论订单样本多在 50-200 美元区间。Upwork 可见样本里有 20 美元的低价修复需求，也有 49/98 美元的技术咨询，个别 PageSpeed/Core Web Vitals 项目目录样本从 125 美元、160 美元到 750 美元不等。另有独立服务商公开写出一次性 Core Web Vitals 优化 299-799 美元、月度监控 399 美元的口径，但这更像成熟专家报价，不适合新手直接照搬。\n\n按 2026-08-21 国家外汇管理局人民币汇率中间价 100 美元=678.17 元人民币粗略折算：\n\n- 新手审计/轻修复小包：30-150 美元，约 203-1017 元人民币。\n- 单站性能 sprint：200-800 美元，约 1356-5425 元人民币。\n- 月度轻维护：100-400 美元/月，约 678-2713 元人民币/月。\n- 成熟专家或复杂项目可能更高，但通常要求真实案例、代码能力、平台经验和客户信任。\n\n这些数字是平台报价样本和汇率折算，不是收益承诺。到手收入还要扣平台服务费、收款手续费、汇损、工具订阅、插件/CDN 成本、税费、售前时间、返工和沟通时间。低价平台竞争强，且性能优化常受主题、主机、第三方脚本和客户业务决策限制，不能把一次工具分数提升包装成稳定月收入。\n\n## 入门门槛\n\n技能：英文商务沟通、HTML/CSS/JavaScript 基础、浏览器渲染和网络瀑布图理解、LCP/INP/CLS 指标含义、图片格式和响应式图片、字体加载、缓存/CDN 基础、WordPress/Shopify/Webflow 常见后台、Lighthouse/DevTools/PageSpeed 报告解读、风险边界和文档写作。\n\n设备/软件：普通电脑、稳定网络、Chrome DevTools、PageSpeed Insights、Lighthouse CLI 或 DevTools、截图/录屏工具、表格或文档工具、客户授权的后台账号；进阶可用 WebPageTest、CrUX API、RUM 工具、Cloudflare、图片压缩工具和版本管理。\n\n资质/合规：通常不需要当地牌照，但需要客户书面授权、最小权限访问、变更记录和回滚方案。不能冒充 Google 官方、SEO 保排名专家、法律合规顾问或安全测试人员。涉及客户分析账号、订单数据、用户行为数据时，要签 NDA/DPA 或在合同里写清数据处理边界。\n\n资金：轻资产启动，主要成本是学习时间、测试站、必要插件/工具订阅、作品集和平台抽佣。不要一开始购买大量“加速插件”或昂贵监控工具，应先用公开工具和 demo 站做前后对比样例。\n\n渠道：Upwork、Fiverr、PeoplePerHour、LinkedIn、海外 SEO/设计代理、WordPress/Shopify/Webflow 社群、个人独立站案例页。冷启动标题应聚焦具体问题，例如 Shopify LCP audit、WordPress CLS fix、Core Web Vitals report、Lighthouse performance sprint，而不是空泛写 guaranteed 100 score。\n\n时间成本：有前端基础的人，2-4 周可完成指标和工具学习、3-5 个 demo、1 个英文样例报告；要稳定处理客户主题、插件、CDN、第三方脚本和跨平台问题，通常需要 2-6 个月实战。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：优先通过 Upwork/Fiverr 等平台小单或与海外 SEO/设计代理合作，避免冷邮件夸大“Google penalty”“ranking loss”等恐吓式营销。平台获客要遵守沟通、付款、绕单和评价规则；站外成交要保留英文合同、需求确认、交付证据和收款记录。\n\n远程交付：必须取得客户书面授权，优先使用只读权限、临时账号、测试环境、主题副本或 staging 站。需要改生产站时，应让客户先备份，并写清可改范围、回滚方式和不承担主机/第三方服务稳定性的边界。不要接收客户主账号密码，不把客户代码、订单数据或分析截图上传到未获授权的第三方工具或 AI 服务。\n\n合同/发票或收款：平台订单按平台合同、托管和里程碑流程；独立客户用英文 SOW，列明 URL、页面数量、权限、改动范围、交付物、复测方式、返工次数、数据处理、保密、回滚和非 SEO 结果承诺声明。收款可用平台托管、Payoneer、Wise Business、PayPal 或银行跨境收款等合规路径，具体取决于账户资质、平台支持国家/地区和所在地银行要求。\n\n税务申报：中国境内个人或一人公司承接海外服务，应保留合同、平台账单、收款流水、结汇记录、工具订阅和成本凭证。居民个人取得境外所得依法申报；若用个体工商户、个人独资企业或有限公司主体承接，要按经营所得、增值税、企业所得税或当地税务口径处理，不能把外币平台收入当作无需申报的小额副业。\n\n外汇与结算：个人结汇、购汇有年度总额管理，超过或特殊经常项目要按银行真实性审核提供材料。公司主体服务贸易收款也要配合银行和外汇管理要求，保留合同、发票、平台账单和服务交付记录。不要使用地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：不得绕过平台私下收款，不刷评价，不冒用认证，不承诺违规 SEO 结果，不帮助客户做垃圾广告、恶意跳转、隐藏内容、黑帽 SEO、绕过第三方脚本限制或破坏平台规则的改动。Fiverr 付款条款也明确不能要求买家用站外支付方式付款。\n\n数据/隐私合规：性能诊断本身通常不需要个人数据，但 Search Console、GA4、Shopify 后台和订单系统可能包含流量、客户、订单或广告数据。应只看任务所需页面和设置，避免下载未必要的数据；如果要看 GA4 或 Search Console 截图，应要求客户脱敏或授予最低权限。Google Analytics 资料也提醒客户是数据控制者，需遵守隐私政策和适用法律。\n\n语言和时区门槛：需要英文解释工具结果、技术取舍和未覆盖场景。美国客户常要求中国早晚沟通，欧洲客户相对友好；可用异步报告、Loom 录屏、截图注释和固定响应窗口降低时区压力。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻，交付物清楚，单人可完成审计、轻改、复测和报告；可从小页面、小站点、小范围改动开始；容易沉淀成检查表、报告模板和平台专项包。具备前端基础的人还可以把它和 WordPress 维护、Shopify 主题小改、Webflow QA、技术 SEO 审计组合销售。\n\n不完全适合点：性能问题常牵涉主机、第三方脚本、广告、主题架构和客户业务选择，单人不能保证最终指标完全过线。客户可能把 PageSpeed 分数当成排名承诺，或要求紧急修改生产站。OPC 必须控制范围、备份回滚、责任限制和验收口径，不适合接大型电商核心交易链路、金融/医疗高敏站点或 24/7 SLA。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：只需电脑和网络，工具在线，交付可异步完成；截图、报告、代码 diff 和前后测试能形成证据；项目颗粒度适合远程接单和跨时区协作。\n\n不完全适合点：调试客户后台、2FA、VPN、地区访问和 CDN 缓存时需要稳定网络；生产站改动需要及时响应回滚；长期旅居会影响平台 KYC、税务居民身份和收款账户合规。频繁移动的人要保证固定工作窗口，不能在客户上线前后失联。\n\n## 潜在收益、成本结构和前提\n\n低成本验证期：每月 2-5 个 30-150 美元的小审计或轻修复包，毛收入约 407-5086 元人民币，重点是积累英文样例、评价和流程，不应当作稳定收入。\n\n标准接单期：有 5-10 个案例后，可尝试 200-800 美元的单站性能 sprint。每月 2-4 个项目的毛收入约 2700-21700 元人民币，实际取决于成交价、平台抽佣、返工、工具成本、税费和客户复杂度。\n\n维护模型：少量老客户每月 100-400 美元/站做重点页面复测、新内容提醒、插件影响检查和月报；适合补充现金流，但不能承诺 24/7 运维或业务指标改善。\n\n主要成本包括平台服务费、跨境收款费、汇兑损益、税费、图片/缓存/CDN/监控工具、测试设备、售前未成交时间、返工、客户沟通和生产站回滚风险。最大隐性成本是“客户不允许动影响指标的核心资源”，例如广告脚本、个性化工具、大型主题和低端主机，因此报价前必须问清可改范围。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：未经授权访问或修改客户站；改生产站造成页面错乱、转化追踪失效或交易流程异常；客户把实验室分数改善误解为 Search Console 28 天验证通过；过度压缩图片影响品牌视觉；延迟脚本破坏广告、聊天、A/B 测试或分析；承诺 Google 排名、流量或销售提升；处理客户分析和订单数据时越界；平台低价竞争导致无限返工。\n\n合规注意事项：只在客户授权范围内操作；使用临时账号和最小权限；改动前备份和记录；交付后撤权；不保存不必要的数据；不提供法律、隐私、广告合规、SEO 排名或平台审核承诺；不接黑帽 SEO、隐藏内容、恶意重定向、刷流量、绕过平台规则或攻击测试需求。\n\n不适合人群：没有前端基础、只会点插件、英文解释能力弱、不愿写报告和回滚说明、想靠“保证 100 分/保证排名”获客、不能承担细致测试和返工沟通的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 自建 2-3 个 demo 站或找公开页面做只读审计：分别模拟大图 LCP、字体阻塞、CLS 和第三方脚本问题，做 PageSpeed/Lighthouse 基线、问题拆解、修复建议和前后对比样例。\n2. 制作一个英文 mini-audit 模板：包含 scope、authorized access、URLs tested、lab vs field data、LCP/INP/CLS priority、changes made、before/after screenshots、known limitations、rollback notes、not SEO ranking guarantee。\n3. 在 Upwork/Fiverr/LinkedIn 发布低风险小包：只接 1-3 个 URL、非关键生产链路、1 次轻修复或只读审计，明确不保证 Google 排名、流量、转化率、广告效果或 CrUX 28 天数据稳定过线。\n\n## 点评 Agent 审稿\n\n审稿结论：建议通过，不需要重选题。这个题目技术边界清楚、远程交付强、单人可执行；主要要把“性能诊断/轻修复”与“SEO 承诺、隐私合规背书、未授权扫描、生产事故兜底”切开。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制：克制。用 30-150 美元、200-800 美元、100-400 美元/月这类试单和平台样本口径，并明确是毛收入且需扣平台费、工具/CDN、收款、汇损、税费、返工和沟通时间，没有明显夸大。\n- 信息来源是否足够可信：基本足够。技术口径有 Google 官方支撑；收款、平台费、税务、外汇来源方向正确；Fiverr/Upwork 报价样本波动大，只适合作样本，不宜当作均价。\n- 最该补充或提醒的一句话：必须取得客户书面授权并限定可回滚小改动，交付只说明当前测试与 CrUX/PSI 口径下的性能问题和建议，不保证 Google 排名、流量、转化率或 28 天数据稳定过线。\n\n## 关键来源\n\n1. Google Search Central：Understanding Core Web Vitals and Google search results，说明 LCP、INP、CLS 及建议阈值。https://developers.google.com/search/docs/appearance/core-web-vitals\n2. web.dev：Web Vitals，说明 Core Web Vitals 适用于所有网页，并建议以移动端和桌面端第 75 百分位判断。https://web.dev/articles/vitals\n3. web.dev：How the Core Web Vitals metrics thresholds were defined，列出 LCP <=2.5s、INP <=200ms、CLS <=0.1 的 good 阈值及 75th percentile 口径。https://web.dev/articles/defining-core-web-vitals-thresholds\n4. Google Developers：About PageSpeed Insights，说明 PSI 同时提供 lab data 和 field data，field data 来自 CrUX 最近 28 天。https://developers.google.com/speed/docs/insights/v5/about\n5. Chrome for Developers：CrUX Tools，说明 PageSpeed Insights、CrUX API、Search Console 等工具的数据更新和 28 天滚动窗口差异。https://developer.chrome.com/docs/crux/methodology/tools\n6. Search Console Help：Core Web Vitals report，说明修复验证会启动 28 天监控窗口，且不会触发重新索引。https://support.google.com/webmasters/answer/9205520\n7. Chrome for Developers：Lighthouse，说明 Lighthouse 可在 PageSpeed Insights、Chrome DevTools、命令行或 Node 模块中运行并生成报告。https://developer.chrome.com/docs/lighthouse\n8. web.dev：Optimize Largest Contentful Paint，说明 LCP 优化需要关注资源发现、优先级、渲染阻塞、资源大小和 TTFB 等。https://web.dev/articles/optimize-lcp\n9. Fiverr：Web optimization 服务列表，作为海外低价平台报价样本。https://www.fiverr.com/gigs/web-optimization\n10. Fiverr：Core Web Vitals optimization gig 样本，显示 30/50/65 美元套餐和若干 50-200 美元订单样本。https://www.fiverr.com/zain_sher_work/fix-core-web-vitals-and-improve-performance-for-your-website\n11. Upwork：Core Web Vitals 相关低价固定价 job 样本，作为需求存在和低价竞争参考。https://www.upwork.com/freelance-jobs/apply/Fix-core-web-vitals-website_~021960756973783990637/\n12. Upwork：技术咨询样本，显示 30 分钟 49 美元、60 分钟 98 美元，并列出 PSI/Lighthouse/field data 工作流。https://www.upwork.com/services/consultation/development-it-david-1980724570535581675\n13. Upwork：Freelancer profile 样本，显示 PageSpeed/Core Web Vitals 项目目录从 125 美元、160 美元到 750 美元等。https://research.upwork.com/freelancers/~01a7d3f3ea8bf54d9a\n14. Upwork Help：What are the minimum hourly and fixed-price rates on Upwork，说明小时和固定价最低要求。https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork\n15. Upwork Help：How Fixed-Price Payment Protection works for freelancers on Upwork，说明 funded milestone、提交工作和 14 天审核等保护条件。https://support.upwork.com/hc/en-us/articles/211063748-How-Fixed-Price-Payment-Protection-works-for-freelancers-on-Upwork\n16. Fiverr：Payment Terms of Service，说明买家付款方式、服务费和不得要求站外付款等规则。https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service\n17. Payoneer 中国：自由职业者跨境收款资料。https://www.payoneer.com.cn/freelancer/\n18. Payoneer 中国：跨境收款服务协议，说明适用于中国境内自然人、法人或组织商户收取跨境贸易相关款项。https://www.payoneer.cn/service-agreement/\n19. Wise Business：Receive international payments，说明可开立多币种收款信息和接收海外付款。https://wise.com/us/business/receive-money\n20. 国家税务总局：《中华人民共和国个人所得税法》，说明居民个人境外所得申报及外币所得折算人民币。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n21. 国家外汇管理局：《个人外汇管理办法实施细则》，说明个人结汇和购汇年度总额管理及真实性审核。https://www.safe.gov.cn/safe/2007/0105/22509.html\n22. 国家外汇管理局：人民币汇率中间价，2026-08-21 显示 100 美元=678.17 元人民币。https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do",
+      "startedAt": "2026-08-23T22:14:27+08:00",
+      "finishedAt": "2026-08-23T22:20:04+08:00",
+      "duration": "5m 37s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "us",
+        "global",
+        "web-performance"
+      ],
+      "nextSteps": [
+        "自建 2-3 个 demo 站或公开页面只读审计，做 LCP、CLS、第三方脚本问题的前后对比样例。",
+        "制作英文 mini-audit 模板，写清授权范围、测试 URL、lab vs field data、修改清单、限制、回滚和不保证排名声明。",
+        "在 Upwork/Fiverr/LinkedIn 发布 1-3 个 URL 的低风险小包，只接非关键生产链路和 1 次轻修复或只读审计。"
+      ],
+      "artifacts": [
+        {
+          "label": "Google Search Central Core Web Vitals",
+          "path": "https://developers.google.com/search/docs/appearance/core-web-vitals"
+        },
+        {
+          "label": "web.dev Web Vitals",
+          "path": "https://web.dev/articles/vitals"
+        },
+        {
+          "label": "web.dev Core Web Vitals thresholds",
+          "path": "https://web.dev/articles/defining-core-web-vitals-thresholds"
+        },
+        {
+          "label": "PageSpeed Insights documentation",
+          "path": "https://developers.google.com/speed/docs/insights/v5/about"
+        },
+        {
+          "label": "Chrome UX Report tools",
+          "path": "https://developer.chrome.com/docs/crux/methodology/tools"
+        },
+        {
+          "label": "Search Console Core Web Vitals report",
+          "path": "https://support.google.com/webmasters/answer/9205520"
+        },
+        {
+          "label": "Chrome Lighthouse documentation",
+          "path": "https://developer.chrome.com/docs/lighthouse"
+        },
+        {
+          "label": "web.dev Optimize LCP",
+          "path": "https://web.dev/articles/optimize-lcp"
+        },
+        {
+          "label": "Fiverr web optimization samples",
+          "path": "https://www.fiverr.com/gigs/web-optimization"
+        },
+        {
+          "label": "Upwork payment protection",
+          "path": "https://support.upwork.com/hc/en-us/articles/211063748-How-Fixed-Price-Payment-Protection-works-for-freelancers-on-Upwork"
+        },
+        {
+          "label": "Payoneer freelancer cross-border payments",
+          "path": "https://www.payoneer.com.cn/freelancer/"
+        },
+        {
+          "label": "SAFE personal foreign exchange rules",
+          "path": "https://www.safe.gov.cn/safe/2007/0105/22509.html"
+        }
+      ],
+      "sourceFile": "runs/2026-08-23/niche-profit-industry.json"
+    },
     {
       "date": "2026-08-09",
       "taskId": "niche-profit-industry",
