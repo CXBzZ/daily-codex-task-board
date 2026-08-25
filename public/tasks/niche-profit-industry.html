@@ -17,9 +17,186 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">30 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">31 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-08-25.html">2026-08-25</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外 Chrome 扩展开发者和小型 SaaS 的 Chrome Web Store 上架资料、权限说明、隐私字段与 Manifest V3 发布前 QA 服务，属于中国境内可做的海外英语市场。它适合懂英文、Chrome 扩展基础、平台政策和数据边界的 OPC/数字游民小规模验证，但必须限定为提交前资料与合规 QA，不代登录客户账号、不承诺审核通过，也不做刷量、规避审核或法律意见。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+这个行业可以叫“Chrome Web Store 上架资料、权限说明、隐私字段与 Manifest V3 发布前 QA 服务”。服务对象不是普通网站，而是已经有 Chrome 扩展、浏览器插件或小型 SaaS 配套扩展的海外独立开发者、小团队和 B2B 软件公司。服务商帮助客户在提交 Chrome Web Store 审核前，把商店页资料、截图、隐私字段、single purpose 描述、权限 justification、测试账号说明、Manifest V3 风险点、远程托管代码问题、审核回复草稿和版本发布 checklist 整理清楚。
+
+它小众，是因为大多数人把 Chrome 扩展发布理解成“写好代码、打包上传”。但 Chrome Web Store 的审核不只看功能能不能跑，还会看扩展是否单一目的清晰、权限是否最小化、隐私披露是否准确、商店页是否误导、是否有关键词堆砌、是否操纵评价/安装、是否包含远程托管代码或难以审查的逻辑。纯开发外包常常不愿做资料和政策 QA，纯文案服务又缺少权限、manifest、host permissions、content script、service worker 和 review blocker 的技术判断，于是形成了一个夹在技术 QA、产品运营、隐私披露和开发者支持之间的细分服务。
+
+## 目标市场
+
+目标市场是中国境内可做的海外英语市场。客户主要在美国、加拿大、英国、欧盟、澳大利亚、印度、新加坡等英语沟通环境中，但交付可以完全远程完成，不需要服务商在当地注册门店，也通常不需要当地专业牌照。中国境内个人、个体户或一人公司可以通过 Upwork、Fiverr、独立站、LinkedIn、开发者社区、Indie Hackers、Reddit 相关社区、Chrome extension 开发者社群和小型 SaaS 圈层获客。
+
+它适合 OPC/一人公司验证，因为固定资产轻，交付物可以标准化：资料诊断表、权限风险清单、商店页改写建议、隐私字段核对表、测试说明模板、截图清单、审核回复草稿和发版前 checklist。它也适合数字游民，因为沟通、代码阅读、文档交付、截图标注和异步 review 都能线上完成。限制在于：需要较好的英文政策阅读能力、Chrome 扩展基础、跨时区沟通能力，以及对数据和账号权限的硬边界意识。
+
+## 典型需求场景和客户是谁
+
+典型客户包括独立 Chrome 扩展开发者、小型 SaaS 团队、B2B 工具创业公司、代理商内部工具团队、生产力工具开发者、开源扩展维护者、从 Manifest V2 迁移到 Manifest V3 的老扩展维护者，以及要发布企业内部/私有扩展的海外公司 IT 或产品团队。
+
+典型需求场景包括：
+
+1. 扩展能本地加载，但开发者不知道 Chrome Web Store Developer Dashboard 的 Store Listing、Privacy、Distribution、Test instructions 应该怎么填。
+2. 扩展要求 tabs、cookies、downloads、webRequest、broad host permissions 或 &lt;all_urls&gt;，客户需要把权限必要性写清楚，并尽量改成更窄权限。
+3. 审核被拒，原因涉及 metadata、隐私披露、single purpose、remote hosted code、关键词堆砌、误导性描述或测试账号不足。
+4. Manifest V2 老扩展迁移到 Manifest V3 后，要检查 service worker、远程代码、内容脚本、权限声明和商店页是否同步更新。
+5. 小型 SaaS 做浏览器扩展作为配套产品，需要发布前 QA，但不想聘全职 Chrome extension specialist。
+6. 企业内部扩展要 unlisted/private/trusted testers 发布，需要准备截图、说明、测试账号和管理员交接文档。
+
+## 行业如何运作，典型参与方和工作流
+
+典型参与方包括客户开发者、产品负责人、隐私/法律顾问、Chrome Web Store 发布账号 owner、设计或截图制作人员、QA 服务商，以及必要时的外部 Chrome extension developer。
+
+典型工作流：
+
+1. 授权和边界确认：客户提供书面授权、扩展 zip 或只读仓库、商店页草稿、隐私政策链接、测试账号和审核邮件。服务商只使用客户自管账号和最小必要权限，不代持 Google/Chrome Web Store 账号、2FA、恢复码或付款资料。
+2. 基础盘点：检查扩展的 single purpose、核心功能、manifest 权限、host permissions、content scripts、remote resources、privacy policy、数据收集类型和第三方服务。
+3. 政策 QA：对照 Chrome Web Store Program Policies，标注误导性描述、关键词堆砌、虚假评价、affiliate disclosure、广告行为、用户数据披露、最小权限和数据安全要求。
+4. Manifest V3 风险检查：重点看是否有远程托管 JavaScript/WASM、eval 或从远程配置执行逻辑、过宽 host permissions、难以审查的代码结构，以及是否需要给 reviewer 提供测试步骤。
+5. Listing 和素材整理：改写标题、副标题、描述、功能点、截图文案、隐私说明摘要、支持链接、测试说明和审核回复草稿。复杂法律条款由客户律师或隐私顾问最终确认。
+6. 提交前交付：输出 issue list、risk level、建议改法、可复制字段、截图清单、review checklist 和交付录屏。客户自己登录 Developer Dashboard 提交。
+7. 版本维护：每次扩展新增权限、接入新 SDK、改变数据收集、修改收费模式或收到审核 warning 时，按小包做更新 QA。
+
+## 盈利模式和收入口径
+
+收入来自服务费，不来自刷量、排名操纵、账号代持、广告灰产或违规推广。按 2026-08-25 附近公开汇率样本 1 USD 约 6.723 CNY 粗算，所有金额都应理解为税费、平台佣金、提现费、汇兑损益、获客时间和返工成本之前的毛收入样本，不是稳定收益承诺。
+
+可设计的报价口径：
+
+- Listing/Privacy/Permission 快速体检：USD 80-250，约 RMB 538-1681。适合一个功能较简单的扩展，交付 1 份风险清单和字段修改建议。
+- 发布前完整 QA 包：USD 250-800，约 RMB 1681-5378。覆盖 manifest、权限、远程代码风险、隐私字段、商店页、截图、测试说明和审核回复草稿。
+- 被拒后 review response 整理：USD 150-600，约 RMB 1008-4034。只协助客户理解拒审邮件、整理修复清单和回复草稿，不承诺申诉成功。
+- 月度或版本更新维护：USD 100-500/月，约 RMB 672-3362/月。适合有持续发版的小型 SaaS 或扩展团队。
+- 技术改修另计：如果需要实际改代码、改 manifest、迁移 MV3、拆权限或重构远程代码，应按 Chrome extension development 另行报价，不应混在资料 QA 小包里。
+
+公开市场样本只能用来校准客单，不可当作稳定收入证明。Fiverr 上可检索到 Chrome extension custom development 服务样本，基础包约 USD 85 起并包含发布协助或发布指南；Upwork 上 Chrome extension developer 远程岗位样本出现过 USD 15-75/hour 区间，也能看到开发者个人资料样本约 USD 30/hour。平台成本要扣除：Upwork freelancer service fee 可能按合同显示为 0%-15%，Fiverr 帮助中心说明卖家每个订单通常取得订单金额的 80%。
+
+## 入门门槛
+
+技能门槛：英文技术阅读和写作、Chrome Web Store 发布流程、Chrome extension manifest、Manifest V3、service worker、content script、host permissions、OAuth/API key 基础、隐私政策字段理解、截图和产品文案 QA、异步客户沟通。
+
+设备和软件：普通电脑、Chrome/Edge 浏览器、Node/zip/代码编辑器、Google Docs/Notion/Linear/GitHub、截图标注工具、录屏工具、表格工具、测试账号管理工具。正式服务尽量使用客户提供的测试环境或只读仓库，不接收不必要的生产用户数据。
+
+资质和合规：做提交前资料 QA 通常不需要当地律师牌照或 Google 官方身份，但不能冒充 Chrome Web Store 官方、不能出具法律意见、不能保证审核通过、不能帮客户绕过平台规则。隐私政策、用户数据处理条款、跨境传输条款和面向特定司法辖区的法律判断，应由客户或其律师最终确认。
+
+资金门槛：启动成本低，主要是学习、模板制作、样例项目、网站/作品集、平台手续费和少量工具费用。Chrome Web Store 开发者发布账号由客户自己注册和付款；Chrome 官方文档说明发布前需要注册 CWS developer 并支付一次性注册费，服务商不应替客户注册或持有账号。
+
+渠道门槛：平台接单可以从 Upwork/Fiverr 的小包开始，独立获客可面向“Chrome extension rejection help”“MV3 store submission QA”“Chrome Web Store privacy fields help”“extension listing audit”等关键词做案例页。冷启动更适合提供一份低价 sample audit，而不是直接卖“包过审核”。
+
+时间成本：有 JS 和浏览器扩展基础的人，集中学习 Chrome Web Store 政策、发布流程、MV3 要点和 3-5 个真实扩展案例，通常需要 2-4 周做出可售模板；要稳定判断复杂权限、隐私披露和审核风险，往往需要 2-6 个月的项目积累。
+
+## 中国境内如何合规承接海外客户
+
+跨境获客：可以通过 Upwork/Fiverr 等平台接单，也可以通过独立站、LinkedIn、GitHub、开发者社区和内容 SEO 获客。平台内获客要遵守平台服务条款，不私下诱导绕平台交易；独立站获客要提供真实身份、服务边界、退款/返工规则和隐私说明。
+
+远程交付：优先交付文档、表格、issue list、PR comments、录屏和可复制字段，由客户自己登录 Chrome Web Store Developer Dashboard 执行提交。服务商可以协助客户准备材料，但不应远程控制客户账号提交，不代持 2FA、恢复码、银行卡或 Google Payments 信息。
+
+合同、发票和收款：平台订单按平台合同、托管和结算规则执行。独立客户建议使用英文 Statement of Work，写明服务范围、非法律意见、不保证审核、客户负责账号和最终提交、数据处理、保密、返工次数和付款节点。中国境内个人、个体户或一人公司应根据自己的主体和当地税务要求开票或留存收入凭证。收款可用平台托管、PayPal、Payoneer、银行电汇等正规渠道，保留合同、订单、流水、费用和汇兑记录。
+
+税务申报：中国居民个人取得境内外所得应依法申报。国家税务总局英文和中文个税法资料列出劳务报酬、经营所得、境外所得申报等情形；如果以个体户或公司承接，还要按主体类型处理增值税、企业所得税/经营所得、发票和成本凭证。这里不提供税务筹划建议，新手应咨询当地税务机关或专业会计。
+
+平台规则：Chrome Web Store 明确要求 listing 准确完整，隐私字段与隐私政策一致，权限请求要采用实现功能所需的最小权限，不允许关键词堆砌、虚假评价、操纵安装量、误导性安装、未披露广告/affiliate 行为，也不允许 Manifest V3 扩展包含无法审查的远程执行逻辑。Upwork/Fiverr 也有自己的服务费、身份验证、服务发布和平台交易规则。
+
+数据和隐私合规：只查看完成 QA 所必需的扩展代码、manifest、测试数据和商店页材料。若涉及用户数据、日志、浏览记录、账号信息或客户数据，应签 NDA/DPA，使用脱敏数据、最小权限和限期删除。不要处理真实用户密码、支付资料、生产浏览记录、未授权 scraping 数据或广告定向数据。
+
+语言和时区：主要门槛是英文准确表达和异步协作。北美客户的发版、审核回复和紧急修复可能落在中国夜间；数字游民要明确响应窗口，避免客户在提交审核、收到 rejection 或发布窗口内找不到人。
+
+## 为什么适合或不完全适合 OPC/一人公司
+
+适合点：服务可拆小包、资产轻、单人可交付、复用模板多、客户付费点清楚。一个人可以先专注一个细分，例如只做 Manifest V3 privacy/permission audit，或只做被拒后 review response 文档整理。
+
+不完全适合点：合规边界比普通文案服务硬。客户可能要求你帮他把过宽权限写得“看起来合理”、隐瞒数据收集、处理浏览记录、接入 affiliate injection、刷安装和评论、绕过远程代码限制，或者直接把 Google 账号交给你代操作。OPC 如果缺少拒单标准，很容易从合规 QA 滑向灰产发布服务。
+
+## 为什么适合或不完全适合数字游民/远程工作者
+
+适合点：交付在线化、客户全球化、文件轻量、会议需求少，可以异步完成。只要网络稳定、英文能力够、能够安全管理客户资料，就能在中国境内或旅行途中完成大部分工作。
+
+不完全适合点：Chrome Web Store 审核时间不稳定，官方 review process 文档也提示多数扩展可能几天完成，但有时可能到数周；如果客户正卡在上线窗口，服务商需要更稳定响应。数字游民还要注意跨境登录风控、平台账号安全、时区延迟和本地税务申报连续性。
+
+## 潜在收益、前提和成本结构
+
+低成本验证期：每月 1-3 个小包，毛收入约 USD 80-750，折合约 RMB 538-5042。前提是已有基础样例、能在平台拿到试单、交付范围很窄。
+
+稳定接单期：每月 2-5 个发布前 QA 包，加 1-3 个维护客户，毛收入可能约 USD 800-4500，折合约 RMB 5378-30254。前提是有真实案例、能处理常见审核问题、能用英文写清楚风险和修改建议。
+
+进阶阶段：如果能叠加 Chrome extension development、Manifest V3 迁移、权限重构和隐私工程协作，客单可能更高，但风险和责任也会明显上升，最好拆成技术开发合同并引入代码审查和安全边界。
+
+主要成本包括平台服务费、提现费、汇兑损益、获客时间、政策学习、客户沟通、返工、隐私/法律顾问咨询、代码阅读时间、文档模板维护和税费。最大的隐性成本是客户需求不合规：拒绝一个灰产需求可能损失订单，但这是这个行业能长期做下去的前提。
+
+## 主要风险、合规注意事项和不适合人群
+
+主要风险：承诺“包过审核”；替客户登录或代持 Chrome Web Store/Google 账号；帮客户隐瞒真实数据收集；把过宽权限包装成合理；处理真实用户浏览记录、密码、支付数据或未授权 scraping 数据；参与刷安装、刷评价、关键词堆砌和 misleading listing；给隐私政策出法律背书；收款不留合同和流水；未申报境外收入。
+
+合规注意事项：
+
+- 服务协议必须写明：只做提交前资料与合规 QA，不代表 Google，不提供法律意见，不保证审核通过。
+- 客户自己持有和操作 CWS/Google 账号，服务商不代登录、不代持 2FA、不接触付款资料。
+- 所有代码、测试账号、日志和用户数据必须有书面授权、最小权限、限期删除和交付后撤权。
+- 对广告、affiliate、浏览记录、cookies、webRequest、tabs、downloads、&lt;all_urls&gt; 等高敏权限要提高审查强度。
+- 发现刷量、恶意扩展、广告替换、钓鱼、绕审核、数据转售或虚假披露需求，应直接拒单。
+
+不适合人群：不会英文政策阅读、没有 JavaScript/Chrome extension 基础、想靠灰产推广赚钱、不能拒绝客户违规要求、不愿写文档、不重视账号和隐私边界的人。
+
+## 新手可验证的 3 个低成本入门步骤
+
+1. 选 3 个公开 Chrome 扩展案例做非侵入式 listing/permission/privacy 体检样稿，只分析公开商店页、manifest 可见信息和政策 checklist，不接触任何用户数据。
+2. 做一个 USD 80-150 的小包页面：交付 1 份 Chrome Web Store listing、privacy fields、permissions 和 MV3 review blocker 清单，明确不代登录、不保证审核、不做法律意见。
+3. 在 Upwork/Fiverr/LinkedIn/开发者社区找 10 个近期发布或迁移 MV3 的小团队，提供一次免费 5 条问题样例审计，用真实反馈验证客户是否愿意付费。
+
+## 点评 Agent 审稿
+
+审稿结论：通过，不需要重选题。这个题目适合中国境内个人/一人公司远程承接海外英语市场：交付物轻、可异步、客单不夸张、需求点真实。但它不是低风险纯文案活，边界必须写硬。
+
+- 中国境内承接海外市场适配度：4/5
+- OPC/一人公司适配度：4/5
+- 数字游民适配度：4/5
+- 合规风险等级：中
+- 跨境执行风险等级：中
+- 收益口径是否克制：克制。报价是小额服务包和维护费，并明确 Fiverr/Upwork 样本不是稳定收益承诺；已补充“均为税费、平台佣金、提现费和获客时间成本前的毛收入”。
+- 信息来源是否足够可信：总体可信。Chrome 政策、Review Process、MV3/RHC、税务来源都是官方来源；Upwork/Fiverr 平台费页面也能支撑平台成本判断。公开报价样本仍应只作为 volatile gross quote samples，不作为稳定收入证据。
+- 最该补充或提醒的一句话：只做提交前资料与合规 QA，不代登录/代持客户 Google/CWS 账号，不承诺审核通过，隐私政策和数据处理条款由客户或律师最终确认。
+
+## 关键来源
+
+1. Chrome Web Store Program Policies，说明用户隐私、limited use、最小权限、listing 准确性、关键词堆砌、虚假评价/安装操纵、广告和 affiliate 行为等政策边界。https://developer.chrome.com/docs/webstore/program-policies/policies?hl=en
+2. Chrome Web Store Developer Agreement，说明开发者需接受协议并支付一次性注册费，付费产品的交易、认证、记录和税务由开发者自行负责。https://developer.chrome.com/docs/webstore/program-policies/terms?authuser=7
+3. Register your developer account，说明发布前需注册 CWS developer 并支付一次性注册费，开发者邮箱不可随意更换。https://developer.chrome.google.cn/docs/webstore/register?hl=en
+4. Publish in the Chrome Web Store，说明上传 zip、填写 Store Listing、Privacy、Distribution、Test instructions 并提交审核的流程，以及新 publisher 初始 item limits。https://developer.chrome.google.cn/docs/webstore/publish?hl=en
+5. Chrome Web Store review process，说明审核会检查政策合规，审核时间可能从几天到数周，新开发者、危险权限、广泛 host permissions、代码量或难以审查代码可能增加审核时间。https://developer.chrome.com/docs/webstore/review-process?authuser=1&amp;hl=en
+6. Manifest V3 overview，说明 MV3 使用 service worker、禁止远程托管代码、改变网络请求修改方式等平台变化。https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3
+7. Additional Requirements for Manifest V3，说明扩展功能逻辑应可从提交包中判断，不能通过远程脚本、eval 或远程命令解释器执行逻辑。https://developer.chrome.com/docs/webstore/program-policies/mv3-requirements
+8. Deal with remote hosted code violations，说明 Chrome Web Store 如何界定 remotely hosted code，以及常见 Blue Argon 类拒审原因。https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code?hl=en
+9. Upwork Freelancer Service Fee，说明自由职业者服务费会在合约中显示，可能为 0%-15%，并影响报价净收入。https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee
+10. Fiverr Earnings Page，说明 Fiverr 收益页显示税前金额，卖家通常获得订单金额的 80%。https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page
+11. 国家税务总局英文版 Individual Income Tax Law，说明中国居民个人境内外所得纳税、劳务报酬、经营所得、境外所得申报等基本规则。https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html
+12. 国家税务总局中文版《中华人民共和国个人所得税法》，作为中文税务边界核验来源。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html
+13. Exchange-rates.org USD/CNY 汇率样本，2026-08-25 显示 1 USD 约 6.723 CNY，用于人民币粗略折算。https://www.exchange-rates.org/converter/usd-cny
+14. Fiverr Chrome extension custom development/publishing assistance 服务样本，作为公开报价参考，不作为稳定收入证据。https://www.fiverr.com/wp_amazon/develop-a-custom-chrome-extension-for-your-business-or-workflow
+15. Upwork Chrome extension developer 岗位样本，显示公开小时费率区间样本，不作为稳定收入证据。https://www.upwork.com/freelance-jobs/apply/Experienced-Chrome-Extension-Developer-Needed_~021947121288857042674/</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>25/08/2026, 16:03</p>
+        <p class="meta-line"><span>Finished</span>25/08/2026, 16:18</p>
+        <p class="meta-line"><span>Duration</span>15m</p>
+        
+        <p class="meta-line"><span>File</span><code>runs/2026-08-25/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global-english-market</span><span>chrome-web-store</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>选 3 个公开 Chrome 扩展案例做非侵入式 listing/permission/privacy 体检样稿，只分析公开商店页、manifest 可见信息和政策 checklist，不接触任何用户数据。</li><li>做一个 USD 80-150 的小包页面：交付 1 份 Chrome Web Store listing、privacy fields、permissions 和 MV3 review blocker 清单，明确不代登录、不保证审核、不做法律意见。</li><li>在 Upwork/Fiverr/LinkedIn/开发者社区找 10 个近期发布或迁移 MV3 的小团队，提供一次免费 5 条问题样例审计，用真实反馈验证客户是否愿意付费。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://developer.chrome.com/docs/webstore/program-policies/policies?hl=en">Chrome Web Store Program Policies</a></li><li><a href="https://developer.chrome.com/docs/webstore/program-policies/terms?authuser=7">Chrome Web Store Developer Agreement</a></li><li><a href="https://developer.chrome.google.cn/docs/webstore/register?hl=en">Register your developer account</a></li><li><a href="https://developer.chrome.google.cn/docs/webstore/publish?hl=en">Publish in the Chrome Web Store</a></li><li><a href="https://developer.chrome.com/docs/webstore/review-process?authuser=1&amp;hl=en">Chrome Web Store review process</a></li><li><a href="https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3">Manifest V3 overview</a></li><li><a href="https://developer.chrome.com/docs/webstore/program-policies/mv3-requirements">Additional Requirements for Manifest V3</a></li><li><a href="https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code?hl=en">Deal with remote hosted code violations</a></li><li><a href="https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee">Upwork Freelancer Service Fee</a></li><li><a href="https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page">Fiverr Earnings Page</a></li><li><a href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html">State Taxation Administration Individual Income Tax Law</a></li><li><a href="https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html">中华人民共和国个人所得税法</a></li><li><a href="https://www.exchange-rates.org/converter/usd-cny">USD/CNY exchange rate sample</a></li><li><a href="https://www.fiverr.com/wp_amazon/develop-a-custom-chrome-extension-for-your-business-or-workflow">Fiverr Chrome extension service price sample</a></li><li><a href="https://www.upwork.com/freelance-jobs/apply/Experienced-Chrome-Extension-Developer-Needed_~021947121288857042674/">Upwork Chrome extension developer job sample</a></li></ul></div>
+    </article>
+  
     <article class="run-card">
       <div class="run-card-header">
         <div>
@@ -4255,7 +4432,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
   </div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 24/08/2026, 16:10</span>
+      <span>Generated 25/08/2026, 16:07</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
