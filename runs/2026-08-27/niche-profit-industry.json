@@ -1,0 +1,97 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-08-27T16:02:49+08:00",
+  "finishedAt": "2026-08-27T16:12:00+08:00",
+  "summary": "今天的小众行业是面向海外在线课程、YouTube/Vimeo 营销视频和小型会员内容站的预录视频字幕 SRT/VTT 清理、时间轴校准与上传前 QA 服务，属于中国境内可做的海外英语市场。它适合有英文听辨、字幕格式、无障碍意识和客户数据边界能力的 OPC/数字游民小规模验证，但必须限定为授权素材下的技术 QA，不做实时 CART、无障碍法律认证、版权判断或平台审核保证。",
+  "details": "## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外在线课程、YouTube/Vimeo 营销视频、小型 SaaS 教程、会员内容站、播客视频剪辑和创作者频道的预录视频字幕 SRT/VTT 清理、时间轴校准与上传前 QA 服务。\n\n它不是普通“听写字幕”，也不是影视翻译大项目。更准确地说，它是把客户已有的自动转写、粗字幕、AI 字幕或人工初稿，整理成可上传、可阅读、可被平台接受的字幕文件。典型交付包括：英文错词和专有名词修正、说话人标识、必要音效提示、断句和阅读速度优化、SRT/VTT 时间码修复、UTF-8 编码检查、行长和重叠时间轴检查、YouTube/Vimeo/Udemy/Thinkific 上传前 QA、字幕文件与视频片段抽样复核、问题清单和返修说明。\n\n它小众，是因为需求夹在内容运营、无障碍、平台上传规范、英文听辨、视频后期和文件格式之间。很多创作者会用自动字幕，但没时间逐句校对；视频剪辑师能压字幕，却不一定愿意处理 WebVTT、平台上传错误和无障碍提示；专业字幕公司又常按较高单价和批量流程服务企业客户。小型客户需要的是“自动字幕之后的最后一公里”：低成本、可复核、能上传、可交接。\n\n## 目标市场\n\n本期选择：中国境内可做的海外市场。\n\n目标客户主要是美国、英国、加拿大、澳洲、欧盟英语市场的在线课程作者、Udemy/Thinkific/Teachable 类课程运营者、YouTube 教育/营销频道、Vimeo 托管视频团队、小型 SaaS 的帮助中心视频、B2B webinar 团队、播客视频剪辑团队和小型内容代理。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、PeoplePerHour、LinkedIn、创作者社群、课程制作社群和内容代理白标分包获客，远程交付 SRT/VTT 文件、QA 表、截图/录屏证据和术语表。\n\n为什么适合 OPC/一人公司或数字游民验证：固定资产轻，主要需要电脑、耳机、稳定网络、字幕编辑工具、表格和英文沟通；可以从 10-30 分钟短视频、1 门小课程的 3-5 节课、或一批 YouTube Shorts/Reels 字幕文件开始，不需要海外实体门店、高门槛当地牌照或复杂供应链。但它要求严格区分技术交付和法律结论，不能承诺 ADA/WCAG/FCC 合规认证、课程销量、观看增长或平台推荐。\n\n## 典型需求场景和客户是谁\n\n1. 在线课程作者已有自动字幕，但专有名词、产品名、口音词和断句错误较多，影响学生理解。\n2. SaaS 团队把 webinar、demo、onboarding 视频放到帮助中心，需要英文 closed captions、说话人标识和音效提示，方便无声观看和听障用户理解。\n3. YouTube 或 Vimeo 创作者用 AI 字幕生成 SRT/VTT 后，上传时遇到时间码、编码、格式或分段问题，需要排错和重导出。\n4. Udemy 课程讲师需要上传 .vtt 字幕文件，或者修改平台自动生成的字幕，但没有时间逐课时处理。\n5. Thinkific 课程运营者希望把 SRT 上传到视频库，并抽查字幕是否和视频内容同步。\n6. 内容代理或视频剪辑团队想把字幕 QA 外包给远程自由职业者，自己保留剪辑和客户管理。\n7. B2B webinar 团队希望把长视频切成片段，并为每段交付可读字幕、转录稿和章节标题，但不需要实时字幕服务。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括内容 owner、课程作者、视频剪辑师、字幕 QA 服务者、YouTube/Vimeo/Udemy/Thinkific 等平台、自动转写工具、专业字幕服务商、翻译/本地化人员和最终观看者。\n\n典型工作流：\n\n1. 预筛选：确认客户拥有视频、音频、脚本、课件和字幕文件的使用权；拒绝盗版影视、未经授权课程搬运、偷拍视频、敏感未脱敏会议、医疗/法律证词类高风险内容，以及要求伪造字幕或规避平台规则的需求。\n2. 授权和范围：用平台订单或英文 SOW 写清视频数量、分钟数、源语言、是否只校对英文、是否包含翻译、是否需要音效提示、交付格式、返修轮次、保密、数据删除和不承诺项。\n3. 素材接收：优先使用客户提供的云盘链接、平台临时协作权限或下载副本；如涉及个人信息、学员信息、内部会议或客户访谈，应要求脱敏素材、NDA/DPA 和最小权限。\n4. 初稿生成或导入：客户可提供自动字幕；服务者也可用 Descript、Subtitle Edit、Aegisub、CapCut、Whisper/Rev/Happy Scribe 等工具生成初稿，但要确认工具的数据使用和保密边界。\n5. 文本清理：按视频听辨修正错词、术语、数字、品牌名、课程章节名；统一大小写、标点、口头禅删留规则和术语表。\n6. 无障碍提示：closed captions 不只是对白，应在必要时加入说话人标识和有意义的非语音声音提示，例如音乐、掌声、门铃、警报或屏幕外说话人。\n7. 时间轴校准：检查字幕是否跟随语音，避免过早/过晚、重叠 cue、过长行、过快阅读速度和断句割裂；长课程可以按抽样+重点段落+客户标记问题组合复核。\n8. 格式 QA：按目标平台导出 SRT 或 WebVTT，检查 UTF-8 编码、WEBVTT 头、SRT 序号、时间码格式、空行、特殊字符、平台支持格式和上传错误。\n9. 上传前或上传后验证：在 YouTube、Vimeo、Udemy、Thinkific 或客户播放器中抽样播放，记录字幕开关、语言标签、显示位置、同步情况和上传报错截图。\n10. 交付：交付 SRT/VTT、术语表、QA 表、问题清单、抽样截图/录屏、已知限制和删除确认；明确这不是无障碍法律认证、版权审查、广播合规认证或实时字幕服务。\n\n官方资料支撑这些工作流的真实性：W3C WCAG 2.2 的 1.2.2 Captions (Prerecorded) 要求预录同步媒体为音频内容提供字幕；W3C 对该成功准则的理解文档说明字幕不只包含对白，还应识别说话人和有意义声音信息。YouTube 帮助文档说明字幕/闭路字幕文件包含文本和时间码，并支持 SRT、WebVTT 等格式；Vimeo 帮助文档说明支持 SRT 和 WebVTT，推荐 WebVTT 且要求 UTF-8；Udemy 说明课程字幕上传依赖 .vtt 文件；Thinkific 说明可上传 SRT，也提示 closed captions 对无障碍、理解和多语言市场有帮助。\n\n## 盈利模式和报价口径\n\n收入来自按分钟、按文件、按课程批次或按月服务收费，而不是平台流量分成或版权套利。常见模式：\n\n1. 自动字幕清理包：客户提供 AI/平台自动字幕，服务者按视频逐句校对，修正错词、断句、标点和同步问题。\n2. SRT/VTT 格式修复包：修复无法上传、乱码、时间码错误、WEBVTT 头缺失、SRT 序号断裂、cue 重叠和特殊字符问题。\n3. 课程批量字幕 QA：为 1 门课程或 1 个 help center 视频库统一术语表、文件名、语言标签、章节标题和上传前检查。\n4. YouTube/Vimeo 频道字幕维护：每周处理新视频，交付 SRT/VTT、描述区章节时间戳和字幕抽样 QA。\n5. 代理商白标分包：给视频剪辑、课程制作、播客后期或营销代理做字幕文件校对与格式交付。\n6. 多语言字幕协调：只在自身语言能力足够时承接翻译/双语字幕；否则定位为英文源字幕整理和 QA，不冒充母语译审。\n\n公开报价样本只能证明市场存在，不能当成稳定收入承诺。Rev 2026 价格页显示 human captions 为 $1.99/min，AI services 为 $0.25/min，global subtitles 为 $6.49-$15.99/min；Happy Scribe 价格页显示人工字幕服务约从 $2.25/min 起，人工 proofreading 约从 $1.90-$2.00/min 起；Fiverr 字幕样本可见 $5 起、$0.50/min 或 $10/hour 的低价自由职业服务；Upwork 官方帮助显示自由职业者服务费可能为 0%-15% per contract；Fiverr Payment Terms 显示卖家成功完成订单通常入账购买金额的 80%。按 2026-08-27 新华网转载中国外汇交易中心人民币市场汇价 100 美元 = 678.40 元人民币，即 1 USD = 6.7840 CNY 粗略折算：\n\n- 新手试单：10-30 分钟视频 $15-$60，约 102-407 元人民币/单。\n- 按分钟字幕清理：$0.5-$1.5/min，约 3.39-10.18 元人民币/分钟，适合自动字幕后校对，不适合复杂口音或专业术语视频。\n- 标准小包：1-3 条课程或营销视频 $80-$200，约 543-1357 元人民币。\n- 课程批量 QA：1 门小课程或一批帮助中心视频 $100-$400，约 678-2714 元人民币。\n- 专业人工字幕市场参考：Rev $1.99/min 约 13.50 元人民币/分钟，Happy Scribe $2.25/min 约 15.26 元人民币/分钟，但中国境内新人通常无法直接按专业平台品牌价成交。\n\n这些都是毛报价。净收入还要扣平台费、跨境收款费、汇损、税费、字幕/转写工具订阅、云盘流量、返工、售前沟通、抽样复核和客户等待时间。复杂视频如多人会议、强口音、噪音、专业医学/法律/金融内容、带屏幕共享且需描述视觉信息的课程，应提高报价或拒接。不要把每分钟报价简单乘以工作时长，因为字幕清理通常需要 1.5-4 倍视频时长，难音频可能更久。\n\n## 入门门槛\n\n技能：英文听辨、基础标点和断句、常见口音适应、术语表管理、SRT/WebVTT 格式、字幕阅读速度和行长意识、closed captions 与 subtitles 的区别、基础无障碍意识、YouTube/Vimeo/Udemy/Thinkific 上传规则阅读、英文客户沟通和 QA 报告写作。\n\n设备/软件：普通电脑、封闭式耳机、稳定网络、字幕编辑工具如 Subtitle Edit、Aegisub、Descript、Kapwing、CapCut、Premiere Pro 或 DaVinci Resolve；表格工具；截图/录屏工具；云盘；可选自动转写工具如 Whisper、Rev、Happy Scribe。新手可先用免费/低价工具练习，不必先买昂贵剪辑套件。\n\n资质/合规：通常不需要当地牌照，但必须有客户书面授权和素材权利确认。不能把技术 QA 包装成 ADA、WCAG、FCC 或 Section 508 法律合规认证。遇到医疗、法律、教育无障碍强监管、政府采购、广播电视交付或大型企业采购，应让客户自行做法律/合规确认，服务者只交付技术文件和检查记录。\n\n资金：启动成本较低，主要是耳机、工具订阅、样例网站/作品集、平台费用和学习时间。更大的成本是时间和注意力：每分钟视频可能需要数倍人工校对，低价接复杂音频会迅速亏损。\n\n渠道：Fiverr、Upwork、PeoplePerHour、LinkedIn、YouTube 创作者社群、播客和课程制作社群、Vimeo/Thinkific/Udemy 相关社区、海外课程制作代理和小型 SaaS 内容团队。冷启动时标题要具体，例如 SRT/VTT subtitle cleanup、YouTube caption timing QA、Udemy VTT caption formatting、Vimeo WebVTT upload fix、course video caption proofreading。\n\n时间成本：英文基础较好的人，1-2 周可掌握 SRT/VTT 和主流平台上传规则；要稳定处理课程批量交付、术语表、多人说话人、复杂音频和代理商白标流程，通常需要 1-3 个月真实项目打磨。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台获客要遵守 Upwork/Fiverr 的站内沟通、付款和反绕单规则；独立站或 LinkedIn 获客要避免垃圾邮件式群发和夸张承诺。最稳妥的冷启动是展示匿名化样例：原始自动字幕片段、修正后 SRT/VTT、上传前 QA checklist、术语表和截图证据。\n\n远程交付：优先让客户提供可下载副本或临时协作权限，避免接收主账号密码。需要直接进入 YouTube/Vimeo/Udemy/Thinkific 后台时，应使用客户创建的最小权限账号、明确操作范围，并在项目结束后撤权。中国境内访问部分海外平台和云盘可能不稳定，报价和交付周期要预留下载、上传和校验时间。\n\n合同、发票与收款：平台单按平台合同、托管和账单走；独立客户用英文 SOW，写清视频分钟数、源语言、交付格式、是否包含翻译、音效提示规则、返修轮次、验收方式、保密、数据删除、版权素材由客户保证、责任限制和不提供法律认证。收款可用平台托管、Payoneer、Wise Business、PayPal 或银行跨境收款等合规路径，具体取决于账户资质、平台支持地区和银行要求。\n\n税务申报：中国税务居民通常需要依法申报境内外所得；以个人劳务、个体工商户或一人有限公司承接时，经营所得、劳务报酬、增值税、企业所得税、成本扣除和发票口径不同。应保留平台账单、合同、收款流水、结汇记录、工具订阅、外包或软件成本凭证，并咨询会计或税务师。\n\n外汇与结算：真实、合法的经常项目服务收入通常需配合银行真实性审核；公司主体收款或超过个人便利化额度时，可能需要合同、发票、平台订单和交付记录。不要使用地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：遵守 YouTube、Vimeo、Udemy、Thinkific、Fiverr、Upwork 等平台规则。不得上传未经授权素材，不得绕过课程/视频平台的版权和访问控制，不得诱导客户站外付款以规避平台规则，不得伪造字幕、刷评价或承诺平台推荐。\n\n数据/隐私合规：字幕素材可能包含姓名、邮箱、学员提问、客户访谈、内部会议、财务信息或健康信息。服务者应尽量要求脱敏素材、使用客户授权工具、限制下载副本传播、项目结束删除本地文件。若涉及中国境内个人信息向境外提供，应关注《个人信息保护法》和《促进和规范数据跨境流动规定》中的告知、单独同意、影响评估和安全保护要求；若只是海外客户把海外素材交给中国境内服务者处理，也仍要按客户合同、当地隐私法和 DPA/NDA 管好数据。\n\n语言和时区门槛：需要用英文解释“caption vs subtitle”“burned-in vs sidecar file”“SRT vs VTT”“proofreading vs legal compliance”“review speed vs accuracy”。美国客户可能要求中国早晚沟通，欧洲客户较友好；可用异步交付、Loom 录屏、QA 表和固定响应窗口降低时区成本。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：单人即可完成听辨、字幕清理、格式修复、抽样 QA 和交付；设备轻、流程可模板化、项目边界清楚，适合从小视频和小课程试单。OPC 可以把服务打包成字幕清理、VTT 修复、课程批量 QA、YouTube 上传前检查等小产品。\n\n不完全适合点：大批量课程、强时效、复杂多语言、政府/教育/广播合规交付和高保密企业内容可能需要多人复核、专业保险、律师/合规团队和成熟项目管理。OPC 不应接“包无障碍合规”“包平台通过”“法院/医疗/广播级准确率”的高责任订单。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：核心工作依赖电脑、耳机、云端素材和文档，天然可远程；交付物是小文件和 QA 记录；可在旅居中按异步节奏处理批量视频，适合和转录、show notes、课程资料整理、知识库发布 QA 组合销售。\n\n不完全适合点：需要稳定网络、安静听音环境和数据安全设备；公共网络、共享电脑或不稳定时差会影响保密和交付质量。视频下载上传体积大，旅居网络差时会拖慢交付；处理客户后台和敏感素材时不适合在公共环境工作。\n\n## 潜在收益、成本结构和前提\n\n低成本验证期：每月 2-6 个短视频小包，每单 $15-$60，毛收入约 203-2442 元人民币，重点是建立样例、流程和评价，不应视为稳定收入。\n\n标准接单期：有 5-10 个评价和样例后，可承接 $80-$200 的小批次视频或课程章节包；每月 3-8 单毛收入约 1628-10854 元人民币，取决于视频质量、分钟数、返工、平台抽佣和成交稳定性。\n\n批量合作期：与课程制作、视频剪辑、播客后期或 SaaS 内容团队形成白标合作后，可按 $100-$400/批或 $0.8-$2/min 报价；收入更平滑，但需要稳定术语表、交付 SLA、文件命名规范和复核流程。\n\n主要成本包括平台费、收款费、汇损、税费、字幕工具、自动转写成本、云盘流量、耳机设备、售前沟通、下载上传等待、返工、噪音音频低效率和隐私合规管理。核心前提是英文听辨和质量稳定；如果只能依赖机器翻译/自动转写，不适合把服务卖成“人工高质量字幕”。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：客户没有素材版权或授权；下载未脱敏内部会议、学生信息、客户访谈或敏感数据；误把 subtitles 当成 closed captions，漏掉说话人和重要音效；低价接强口音、噪声、多讲者或专业术语视频导致亏损；错误时间码导致平台无法上传；承诺法律合规或平台审核通过；把客户素材上传到未授权 AI 工具；平台账号权限过大导致安全风险。\n\n合规注意事项：接单前确认客户拥有素材和字幕处理授权；使用书面范围、最小权限、脱敏素材、NDA/DPA、文件删除确认和本地加密存储；不要接盗版、偷拍视频、成人灰产、赌博、诈骗、侵权课程搬运或政治敏感违法内容；不要提供 ADA/WCAG/FCC/Section 508 法律认证；不要承诺观看增长、SEO、课程销量或平台推荐。\n\n不适合人群：英文听力弱、不耐烦逐句校对、不愿查平台官方格式、不能稳定交付细节、喜欢用 AI 一键生成不复核、版权和隐私意识弱、无法在安静环境工作、不能接受低价试单和返工沟通的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做 3 个匿名 demo：选公开授权的英语演讲/课程片段，生成一版粗字幕，再交付修正后 SRT、WebVTT、术语表、时间轴 QA 表和上传截图。\n2. 制作一份英文 QA checklist：覆盖素材授权、源语言、SRT/VTT 格式、UTF-8、时间码、cue 重叠、行长、说话人、音效提示、平台目标和删除确认。\n3. 发布低风险小包：限定 10-30 分钟英文预录视频、客户提供授权素材、只做字幕清理和格式 QA、1 次返修，不承诺法律合规、翻译母语审校、平台审核或观看增长。\n\n## 点评 Agent 审稿\n\n审稿结论：建议通过，不需要重选题。点评 Agent 未编辑仓库文件。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制。只写毛报价样本，并提示平台费、收款费、汇损、税费、工具、返工和沟通成本，没有明显夸大。\n- 信息来源是否足够可信：整体可信，覆盖标准、平台格式要求、市场价和中国个人信息/数据跨境边界。审稿建议补充 Happy Scribe 来源，已在关键来源和 artifacts 中补充。\n- 最该补充或提醒的一句话：接单前必须确认客户拥有素材授权，并尽量使用脱敏素材、最小权限账号和书面交付边界；本服务只做字幕技术 QA，不提供无障碍或版权法律认证。\n\n主要理由：这个选题小众、可远程、交付物清晰，适合中国境内一人公司从短视频、小课程和代理分包验证。风险集中在素材版权、隐私/敏感内容、平台账号权限、海外平台访问稳定性和法律认证边界，所以合规和跨境执行都不宜评为低风险，但不构成不适合作为赚钱行业科普的高风险。\n\n## 关键来源\n\n1. W3C：Web Content Accessibility Guidelines (WCAG) 2.2：https://www.w3.org/TR/WCAG22/\n2. W3C WAI：Understanding SC 1.2.2 Captions (Prerecorded)：https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html\n3. YouTube Help：Supported subtitle and closed caption files：https://support.google.com/youtube/answer/2734698\n4. Vimeo Help：How to add captions or subtitles to my video：https://help.vimeo.com/hc/en-us/articles/21956884955537-How-to-add-captions-or-subtitles-to-my-video\n5. Vimeo Help：Troubleshooting Caption file types：https://help.vimeo.com/hc/en-us/articles/21957353918609-Troubleshooting-Caption-file-types\n6. Udemy Help：Adding Captions to Your Videos：https://support.udemy.com/hc/en-us/articles/229605428-Adding-Captions-to-Your-Videos\n7. Thinkific Help：Add Closed Captions to Your Videos：https://support.thinkific.com/hc/en-us/articles/360030375274-Add-Closed-Captions-to-Your-Videos\n8. Rev Help Center：Pricing：https://support.rev.com/hc/en-us/articles/18893487380365-Pricing\n9. Happy Scribe：Pricing：https://www.happyscribe.com/pricing\n10. Happy Scribe Help Center：How much is the Human-made transcription and subtitle service：https://help.happyscribe.com/en/articles/6087164-how-much-is-the-human-made-transcription-and-subtitle-service\n11. Fiverr 字幕服务样本：https://www.fiverr.com/jackson_26/add-perfectly-synced-captions-and-subtitles-to-your-videos\n12. Fiverr Payment Terms：https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service\n13. Upwork Help：Learn about the Freelancer Service Fee：https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee\n14. 中国人大网：中华人民共和国个人信息保护法：https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i\n15. 中国政府网/国务院公报：促进和规范数据跨境流动规定：https://www.gov.cn/gongbao/2024/issue_11366/202405/content_6954192.html\n16. 中央网信办：数据出境安全管理政策法规问答（2026年7月）：https://www.cac.gov.cn/2026-07/24/c_1786638883119336.htm\n17. 新华网：人民币市场汇价（8月27日）：https://www.news.cn/fortune/20260827/76811365a8d241c4afc2bbbef916d6de/c.html",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global-english-market",
+    "captioning",
+    "subtitle-qa",
+    "course-video"
+  ],
+  "nextSteps": [
+    "做 3 个匿名 demo：粗字幕、修正后 SRT/WebVTT、术语表、时间轴 QA 表和上传截图。",
+    "制作英文 QA checklist，覆盖素材授权、格式、编码、时间码、说话人、音效提示和删除确认。",
+    "发布 10-30 分钟低风险小包，只做授权素材下的字幕清理和格式 QA，限定 1 次返修。"
+  ],
+  "artifacts": [
+    {
+      "label": "W3C WCAG 2.2",
+      "path": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C Understanding Captions Prerecorded",
+      "path": "https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html"
+    },
+    {
+      "label": "YouTube supported subtitle files",
+      "path": "https://support.google.com/youtube/answer/2734698"
+    },
+    {
+      "label": "Vimeo add captions or subtitles",
+      "path": "https://help.vimeo.com/hc/en-us/articles/21956884955537-How-to-add-captions-or-subtitles-to-my-video"
+    },
+    {
+      "label": "Vimeo caption file troubleshooting",
+      "path": "https://help.vimeo.com/hc/en-us/articles/21957353918609-Troubleshooting-Caption-file-types"
+    },
+    {
+      "label": "Udemy adding captions",
+      "path": "https://support.udemy.com/hc/en-us/articles/229605428-Adding-Captions-to-Your-Videos"
+    },
+    {
+      "label": "Thinkific closed captions",
+      "path": "https://support.thinkific.com/hc/en-us/articles/360030375274-Add-Closed-Captions-to-Your-Videos"
+    },
+    {
+      "label": "Rev pricing",
+      "path": "https://support.rev.com/hc/en-us/articles/18893487380365-Pricing"
+    },
+    {
+      "label": "Happy Scribe pricing",
+      "path": "https://www.happyscribe.com/pricing"
+    },
+    {
+      "label": "Happy Scribe human service pricing",
+      "path": "https://help.happyscribe.com/en/articles/6087164-how-much-is-the-human-made-transcription-and-subtitle-service"
+    },
+    {
+      "label": "Fiverr subtitle gig sample",
+      "path": "https://www.fiverr.com/jackson_26/add-perfectly-synced-captions-and-subtitles-to-your-videos"
+    },
+    {
+      "label": "Fiverr payment terms",
+      "path": "https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service"
+    },
+    {
+      "label": "Upwork freelancer service fee",
+      "path": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+    },
+    {
+      "label": "China Personal Information Protection Law",
+      "path": "https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i"
+    },
+    {
+      "label": "China data cross-border flow rules",
+      "path": "https://www.gov.cn/gongbao/2024/issue_11366/202405/content_6954192.html"
+    },
+    {
+      "label": "CAC data export policy Q&A 2026",
+      "path": "https://www.cac.gov.cn/2026-07/24/c_1786638883119336.htm"
+    },
+    {
+      "label": "Xinhua RMB market rates 2026-08-27",
+      "path": "https://www.news.cn/fortune/20260827/76811365a8d241c4afc2bbbef916d6de/c.html"
+    }
+  ]
+}
