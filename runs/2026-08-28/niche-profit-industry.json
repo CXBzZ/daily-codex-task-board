@@ -1,0 +1,86 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-08-28T16:01:39+08:00",
+  "finishedAt": "2026-08-28T16:18:20+08:00",
+  "summary": "今天的小众行业是面向海外小型 SaaS、开源工具和开发者产品的 Release Notes / Changelog 整理、GitHub Releases 发布 QA 与多渠道产品更新服务，属于中国境内可做的海外英语市场。它适合有英文技术写作、GitHub/GitLab、版本管理和保密边界意识的 OPC/数字游民小规模验证，但必须限定为授权草稿和发布 QA，不替代安全公告、法律披露或客户最终公开发布。",
+  "details": "## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外小型 SaaS、开发者工具、开源项目、B2B 微型团队和独立软件产品的 Release Notes / Changelog 整理、GitHub Releases 发布 QA 与多渠道产品更新服务。\n\n它不是泛泛的技术文案，也不是替客户写营销软文。更准确地说，它把工程团队的 PR、issue、commit、Linear/Jira ticket、产品经理粗稿、客服反馈和演示录屏，整理成用户能读懂、开发者能追踪、销售/客服能转述的发布说明。典型交付包括：CHANGELOG.md、GitHub Release 草稿、短版 in-app announcement、邮件/Slack 摘要、迁移注意事项、breaking changes 标记、贡献者署名检查、截图/链接 QA、发布前敏感信息检查和发布后归档 SOP。\n\n它小众，是因为需求夹在产品运营、技术写作、版本管理、开源协作、客户沟通和工程流程之间。小团队经常会发版，但发布说明容易变成 raw git log，或者只写给内部工程师看；产品经理懂用户语言但未必会读代码 diff；工程师知道改了什么但不一定愿意整理“哪些变化对用户重要”。Keep a Changelog 的核心原则之一就是 changelog 是给人看的，记录 notable changes，而不是机械堆 commit。AI 可以起草，但仍需要人判断取舍、分组、解释影响和删除不应公开的信息。\n\n## 目标市场\n\n本期选择：中国境内可做的海外市场，重点是英语 SaaS、开源工具、API/SDK、开发者工具、AI 工具、小型 B2B 软件和插件生态。\n\n潜在客户包括 1-20 人 SaaS 团队、独立开发者、开源商业化项目、Chrome/VS Code/Figma/Shopify/WordPress 插件作者、API/SDK 提供商、技术型 agency、产品营销顾问和客户成功团队。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、GitHub/LinkedIn、开源社群、Product Hunt/Indie Hackers、开发者工具社群和代理白标分包获客，远程交付 Markdown、GitHub Release 草稿、产品更新页面草稿、邮件摘要和 QA checklist。\n\n为什么适合 OPC/一人公司或数字游民验证：固定资产轻，主要需要英文技术写作、GitHub/GitLab 基础、版本号常识、产品理解、截图和异步沟通；不需要海外实体门店、不需要当地强牌照、不处理实物库存。新手可以从“一个小版本/一个功能的 release note cleanup”或“把 10-20 个 PR 整理成 changelog 草稿”的小单验证。\n\n## 典型需求场景和客户是谁\n\n1. 小型 SaaS 每周或每两周发版，但 release notes 长期拖欠，需要把多个版本补成可读的 changelog。\n2. 开源工具维护者有 GitHub 自动生成 release notes，但需要人工检查分类、breaking changes、贡献者署名、依赖升级和安全敏感内容。\n3. API/SDK 团队发布新版本，需要把 SemVer、兼容性、迁移步骤、弃用字段和示例链接写清楚。\n4. B2B 产品团队要把工程 ticket 转成客户成功、销售和用户都能使用的短版产品更新。\n5. 插件/扩展作者要在 GitHub Releases、CHANGELOG.md、官网 update page、邮件和 Slack/Discord 社群同步一版一致口径。\n6. 技术文档 agency 或产品营销顾问已有客户关系，但不想逐周整理工程变更，可以把发布说明整理分包给远程服务者。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括创始人、产品经理、工程师、DevRel、技术写作者、客户成功、开源维护者、GitHub/GitLab、Linear/Jira、LaunchNotes/Beamer/Headway 类产品更新工具、邮件/Slack/Discord 渠道和最终用户。\n\n典型工作流：\n\n1. 预筛选：确认客户有权提供仓库、ticket、录屏和用户反馈；拒绝未授权私有代码、泄露漏洞细节、伪造用户评价、未公开融资/并购/客户名单、夸大功能能力和欺骗性宣传。\n2. 授权和范围：用平台订单或英文 SOW 写清版本范围、来源材料、是否只读、是否可创建 draft、是否包含截图、是否发布到生产渠道、返修轮次、保密、删除确认和不承诺项。\n3. 素材收集：读取 merged PR、issue、release draft、tag diff、Linear/Jira ticket、产品经理 notes、demo 视频和客服反馈；只拿最小必要权限。\n4. 信息筛选：区分 user-facing、developer-facing、internal-only、dependency/noise、security-sensitive 和 breaking changes；删除不应公开的内部链接、客户名、密钥、漏洞利用细节和未确认承诺。\n5. 结构化写作：按 Added、Changed、Deprecated、Removed、Fixed、Security 或产品自定义分类整理；对 API/SDK 项目注明 SemVer、迁移提醒、兼容性和示例链接。\n6. 多渠道改写：长版 CHANGELOG.md、GitHub Release、中版产品更新页、短版邮件/Slack/in-app notification 分别适配语气和长度，避免多处口径冲突。\n7. 发布前 QA：检查版本号、tag、日期、链接、截图、贡献者署名、issue/PR 引用、截图里是否有敏感信息、是否把 beta/preview 写成 GA。\n8. 交付和归档：交付 Markdown/HTML/平台草稿、变更来源表、已删敏感项、待客户确认问题、下次发版 checklist 和模板。\n\n官方资料支撑这些工作流的真实性：GitHub Docs 说明 release 可打包软件、release notes 和二进制文件，并基于 git tags；GitHub 自动生成 release notes 会列出 merged PR、contributors 和 full changelog link，但也提醒发布前检查生成内容是否只包含应包含的信息。Keep a Changelog 2.0 明确 changelog 是面向人的 notable changes 记录，release notes 是单次发布公告，二者相关但不相同；它也提醒 LLM/自动化可用于起草，但人仍要判断什么值得写、如何分组、怎样面向读者表达。SemVer 则为 API/SDK 类项目提供 MAJOR.MINOR.PATCH 的兼容性语义。\n\n## 盈利模式和报价口径\n\n收入来自一次性 release note cleanup、历史 changelog 重建、月度/双周产品更新维护、开源 release QA、API/SDK 迁移说明整理、产品更新工具代配置和 agency 白标分包。\n\n公开报价样本只能证明市场存在，不能当成稳定收入承诺。Fiverr 上有 SaaS release notes/changelog/technical documentation 服务样本，基础包 $10，用于为一个 feature 写简单 release notes 或 changelog。Upwork 技术写作者成本页显示 technical writers on Upwork cost $20-$45/hr。Beamer 价格页显示 changelog/feedback/NPS 有免费计划，Starter 为 $59/月或年付折合 $49/月，Pro 为 $119/月或年付折合 $99/月，Scale 为 $299/月或年付折合 $249/月，说明小型 SaaS 对产品更新工具和发布沟通存在真实预算。LaunchNotes 官网和更新页也把产品更新、roadmap、feedback、email/Slack/in-app/RSS 分发作为产品沟通工作流。\n\n按 2026-08-28 新华网转载中国外汇交易中心人民币市场汇价 100 美元 = 678.11 元人民币，即 1 USD = 6.7811 CNY 粗略折算：\n\n- 新手单功能小包：$10-$40，约 68-271 元人民币，适合一个 feature 或 3-5 个 PR 的英文整理。\n- 单版本 release notes：$50-$150，约 339-1017 元人民币，适合 10-30 个 PR/ticket 的长短版发布说明。\n- 历史 changelog 重建：$150-$500，约 1017-3391 元人民币，适合 3-10 个历史版本，但需明确资料完整度和返工范围。\n- 月度维护：$200-$800，约 1356-5425 元人民币，适合每月 2-4 次发版的小型 SaaS，包含素材收集、草稿、QA 和多渠道短版。\n- Agency 白标：可按小时或按版本计费，单价可能低于直客，但更稳定；若涉及 API 兼容性、迁移指南和开发者文档，报价才有上探空间。\n\n这些都是毛报价。净收入还要扣平台费、跨境收款费、汇损、税费、工具订阅、售前沟通、客户会议、返修、术语表维护和等待工程师确认的时间。不能把“技术写作小时价”直接乘以全天工时，因为获客、排期、资料缺失和客户审核会造成空档。\n\n## 入门门槛\n\n技能：英文技术写作、Markdown、GitHub/GitLab Releases、PR/issue 阅读、基础 Git tag/diff、SemVer、Keep a Changelog、产品语气改写、面向用户解释技术影响、基础安全和隐私敏感信息识别。API/SDK 方向还需要读懂接口变更、参数弃用、兼容性和迁移步骤。\n\n设备/软件：普通电脑、稳定网络、GitHub/GitLab 账号、Markdown 编辑器、Google Docs/Notion、截图/录屏工具、表格工具、可选的 LaunchNotes、Beamer、Headway、Linear、Jira、Slack/Discord 测试环境。初期不需要购买昂贵工具，可以先用公开开源项目做匿名样例。\n\n资质/合规：通常不需要当地牌照，但不能冒充客户官方发言人、不能发布未授权路线图、安全漏洞、客户名单、收入数据或法律/投资者关系公告。若 release 涉及安全漏洞，应让客户走安全 advisory、CVE、法律和客户通知流程，服务者只做授权范围内的文字整理和发布 QA。\n\n资金：轻资产启动，主要成本是学习时间、作品集、平台费用、订阅工具和少量测试环境。真正门槛是判断能力：哪些变化值得写、哪些是内部噪音、哪些内容不能公开。\n\n渠道：Upwork、Fiverr、LinkedIn、GitHub 开源项目、Indie Hackers、Product Hunt、SaaS 创始人社群、开发者工具 Discord/Slack、技术文档 agency 和产品营销顾问。标题应具体，例如 SaaS release notes cleanup、GitHub Release QA、CHANGELOG.md reconstruction、API changelog and migration notes、product update announcement drafting。\n\n时间成本：英文和 GitHub 基础较好的人，1-2 周可掌握基本格式和样例；要稳定处理 API/SDK、复杂 B2B、开源贡献者署名、安全边界和多渠道发布，通常需要 1-3 个月真实项目打磨。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台获客要遵守 Upwork/Fiverr 站内沟通、付款和反绕单规则；GitHub/LinkedIn 冷启动应展示公开样例，不抓取邮箱群发。对开源项目可先做公开 issue/PR 的示范性 rewrite，但不要未经邀请提交带商业导流的垃圾 PR。\n\n远程交付：优先只读权限、客户导出的 PR/ticket 列表、release draft 和录屏。需要进入私有仓库、Linear/Jira、LaunchNotes、Beamer 或 Slack 时，使用临时最小权限账号；若要发布到公开渠道，必须让客户最终确认或由客户自己点击 publish。\n\n合同、发票与收款：平台单按平台合同、托管和账单走；独立客户用英文 SOW，写清版本范围、源材料、交付格式、渠道、是否只做 draft、客户最终审核责任、保密、删除确认、付款节点和不提供法律/安全披露/投资者关系意见。收款可用平台托管、Payoneer、Wise Business、PayPal 或银行跨境收款等合规路径，取决于主体、平台支持地区和银行要求。\n\n税务申报：中国境内个人或一人公司承接海外服务，应保留合同、平台账单、收款流水、结汇记录、交付稿和工具费用凭证。个人劳务、个体工商户、个人独资企业和有限公司的增值税、个税、企业所得税、成本扣除和发票口径不同；跨境服务是否适用免税政策，要按具体服务性质、客户所在地和主管税务机关判断。\n\n外汇与结算：真实、合法的服务贸易/经常项目收入通常要配合银行真实性审核。国家外汇管理局资料要求个人外汇业务按交易性质管理，银行审核材料真实性，不得分拆或使用虚假单证规避管理。因此不要用地下钱庄、虚假贸易、代收代付或拆分结汇处理收入。\n\n平台规则：遵守 GitHub/GitLab、Upwork、Fiverr、Slack/Discord、LaunchNotes/Beamer 等平台规则。不得诱导站外付款规避平台，不得发布恶意代码、泄露 token、伪造贡献者、刷评价、冒充客户或平台官方。\n\n数据/隐私合规：release 素材可能包含客户名、用户邮箱、工单截图、崩溃日志、内部 URL、API key、未公开漏洞和商业路线图。服务者应尽量使用脱敏材料；涉及个人信息或商业敏感信息时，签 NDA/DPA、限制下载、本地加密、交付后删除。若素材涉及中国境内个人信息向境外提供，或境外客户数据进入中国后再回传，也要关注《个人信息保护法》和《促进和规范数据跨境流动规定》的告知、同意、标准合同/认证/安全评估等边界。\n\n语言和时区门槛：需要用英文和客户确认 tone、audience、breaking change、known issue、beta/GA、deprecation、migration 和 security-sensitive 的边界。美国客户可能要求中国早晚沟通；可用异步问题表、评论模式和固定交付窗口降低时区压力。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：单人能完成素材整理、英文改写、Markdown、GitHub draft、发布前 QA 和模板维护；固定资产轻，项目可以从一个小版本切入；交付物清晰，容易产品化为“release notes cleanup”“monthly changelog maintenance”“GitHub Release QA”。\n\n不完全适合点：复杂 API/SDK、大企业安全公告、法律披露、上市公司投资者关系、重大事故复盘和多语言全球发布需要专业团队、律师/安全团队和客户内部审批。OPC 应控制在草稿、QA 和流程整理，不做未经授权的最终公开发布。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：核心工作依赖电脑、英文、仓库/ticket 只读权限和文档工具，天然可远程；成果是文本和 QA 表，适合异步交付；可与技术文档、帮助中心、开源维护、DevRel 内容和产品营销组合销售。\n\n不完全适合点：需要稳定网络、安全设备和安静沟通环境；私有仓库和未公开路线图不适合在公共 Wi-Fi 或共享电脑上处理。旅居会影响平台 KYC、收款账户、税务居民身份和客户会议时间。\n\n## 潜在收益、成本结构和前提\n\n低成本验证期：每月 3-8 个单功能或小版本小包，每单 $10-$80，毛收入约 203-4339 元人民币，重点是建立样例、评分和模板，不应视为稳定收入。\n\n标准接单期：有案例后，每月 4-8 个 $50-$150 的单版本 release notes，或 1-3 个 $200-$800 月度维护，毛收入约 1356-16275 元人民币。能否达到取决于英文质量、是否懂技术、客户复购、工程资料完整度和返修效率。\n\n高阶合作期：专攻 API/SDK、开发者工具、开源商业化或安全边界清晰的产品更新，可能按小时 $20-$45 或按月 retainer 合作；但需要更强的技术阅读、版本语义和客户内部协作能力。\n\n主要成本包括平台费、收款费、汇损、税费、文档/产品更新工具、售前样稿、客户会议、返修、资料等待和保密管理。核心前提是客户有真实发布节奏和授权素材；没有发版节奏的小项目不会持续复购。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：把未公开功能或路线图提前发布；泄露客户名、用户信息、token、内部链接或漏洞细节；误写 breaking change；把 beta 写成正式发布；伪造贡献者或客户评价；用 AI 生成未复核的技术说明；越权点击 publish；客户把产品 adoption 或收入增长归因给发布说明。\n\n合规注意事项：只处理客户授权素材；优先只读和 draft；最终公开发布由客户确认；涉及安全漏洞、法律披露、隐私事件、上市公司公告和重大事故时，必须让客户专业团队把关。不要承诺提升留存、转化、投资者信心或媒体报道。\n\n不适合人群：英文写作弱、不愿读 PR/issue、看不懂基本技术变更、不愿反复核对链接和版本号、喜欢把 git log 原样改写、没有保密意识、无法接受客户审稿和多轮确认的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 选 2-3 个公开开源项目，用最近一个 release 的 PR/commit/issue 做匿名练习：输出 CHANGELOG.md 片段、GitHub Release 草稿、短版 Slack/邮件摘要和 QA checklist。\n2. 制作英文 release notes 模板：覆盖 audience、source links、Added/Changed/Fixed/Security、breaking changes、migration notes、known issues、contributors、screenshots、sensitive-info check 和 final approval。\n3. 发布低风险小包：限定 1 个版本、10-20 个 PR/ticket、只做草稿和 QA，不触碰生产发布按钮，不处理安全公告、法律披露、未脱敏客户数据和重大事故复盘。\n\n## 点评 Agent 审稿\n\n审稿结论：建议通过，不需要重选题。点评 Agent 未编辑仓库文件。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制。Fiverr、Upwork、Beamer/LaunchNotes 只能证明需求和报价区间存在，不能推导稳定月收入；需扣除平台费、工具费、汇损、税费、沟通和返工时间。\n- 信息来源是否足够可信：足够可信。GitHub Docs、Keep a Changelog、SemVer、Beamer、LaunchNotes、Upwork、Fiverr、汇率和合规提醒覆盖了需求真实性、交付标准、定价样本和边界风险。\n- 最该补充或提醒的一句话：必须取得书面授权和最小权限访问，遇到未公开路线图、客户数据、个人信息或安全漏洞内容时，应先 NDA/DPA、脱敏和确认发布边界。\n\n主要理由：这个方向小众、真实、适合远程交付，但正文必须明确不代写安全公告、法律披露、IR 公告，也不替客户最终发布背书。本文已把这些边界写入服务范围、合规注意事项和新手验证步骤。\n\n## 关键来源\n\n1. GitHub Docs：About releases，说明 release、release notes、git tags、权限和安全 advisory 边界。https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases\n2. GitHub Docs：Automatically generated release notes，说明自动生成内容、PR/贡献者/changelog link 以及发布前检查。https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes\n3. Keep a Changelog 2.0，说明 changelog 的目的、格式、release notes 区别和 LLM/自动化边界。https://keepachangelog.com/en/2.0.0/\n4. Semantic Versioning 2.0.0，说明 MAJOR.MINOR.PATCH 兼容性语义。https://semver.org/\n5. Beamer Pricing，作为产品更新/changelog 工具预算样本。https://www.getbeamer.com/pricing\n6. LaunchNotes 官网，说明产品更新、roadmap、feedback、email/Slack/in-app/RSS 等产品沟通工作流。https://www.launchnotes.com/\n7. LaunchNotes Product Updates，作为真实产品更新页面和 2026 年发布节奏样本。https://updates.launchnotes.io/\n8. Fiverr：SaaS release notes/changelog/technical documentation 服务样本。https://www.fiverr.com/lourawriterpro/write-saas-release-notes-changelog-and-technical-documentation\n9. Upwork：Technical Writer hourly rates，作为技术写作报价样本。https://www.upwork.com/hire/technical-writers/cost/\n10. Upwork Help：Learn about the Freelancer Service Fee。https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee\n11. 新华网：人民币市场汇价（8月28日）。https://www.news.cn/20260828/8ded7ca354aa4c95b9a24a3cdd0b4fb8/c.html\n12. 国家税务总局：哪些业务可以享受跨境应税行为免征增值税政策？https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n13. 国家外汇管理局：个人外汇管理办法。https://www.safe.gov.cn/safe/2022/0818/21330.html\n14. 中央网信办：促进和规范数据跨境流动规定。https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global-english-market",
+    "saas",
+    "technical-writing",
+    "release-notes",
+    "changelog"
+  ],
+  "nextSteps": [
+    "选 2-3 个公开开源项目，用最近一个 release 做 CHANGELOG、GitHub Release 草稿、短版摘要和 QA checklist。",
+    "制作英文 release notes 模板，覆盖变更分类、breaking changes、迁移提示、贡献者、截图链接和敏感信息检查。",
+    "发布 1 个版本、10-20 个 PR/ticket 的低风险小包，只做草稿和 QA，不触碰生产发布按钮。"
+  ],
+  "artifacts": [
+    {
+      "label": "GitHub About releases",
+      "path": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+    },
+    {
+      "label": "GitHub automatically generated release notes",
+      "path": "https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes"
+    },
+    {
+      "label": "Keep a Changelog 2.0",
+      "path": "https://keepachangelog.com/en/2.0.0/"
+    },
+    {
+      "label": "Semantic Versioning 2.0.0",
+      "path": "https://semver.org/"
+    },
+    {
+      "label": "Beamer pricing",
+      "path": "https://www.getbeamer.com/pricing"
+    },
+    {
+      "label": "LaunchNotes product communication",
+      "path": "https://www.launchnotes.com/"
+    },
+    {
+      "label": "LaunchNotes product updates",
+      "path": "https://updates.launchnotes.io/"
+    },
+    {
+      "label": "Fiverr release notes service sample",
+      "path": "https://www.fiverr.com/lourawriterpro/write-saas-release-notes-changelog-and-technical-documentation"
+    },
+    {
+      "label": "Upwork technical writer rates",
+      "path": "https://www.upwork.com/hire/technical-writers/cost/"
+    },
+    {
+      "label": "Upwork freelancer service fee",
+      "path": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+    },
+    {
+      "label": "新华网人民币市场汇价 2026-08-28",
+      "path": "https://www.news.cn/20260828/8ded7ca354aa4c95b9a24a3cdd0b4fb8/c.html"
+    },
+    {
+      "label": "国家税务总局跨境应税行为免征增值税政策问答",
+      "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+    },
+    {
+      "label": "国家外汇管理局个人外汇管理办法",
+      "path": "https://www.safe.gov.cn/safe/2022/0818/21330.html"
+    },
+    {
+      "label": "中央网信办促进和规范数据跨境流动规定",
+      "path": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
+    }
+  ]
+}
