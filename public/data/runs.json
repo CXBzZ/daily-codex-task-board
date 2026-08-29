@@ -1,7 +1,110 @@
 {
-  "generatedAt": "2026-08-28T08:12:16.422Z",
+  "generatedAt": "2026-08-29T08:05:39.647Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-08-29",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型 SaaS/API 产品的 OpenAPI 规范、Postman Collection 与开发者入门示例包清理服务，属于中国境内可做的海外英语市场。它适合有英文技术写作、API/HTTP 基础、Postman/OpenAPI 和数据安全意识的 OPC/数字游民小规模验证，但必须限定为授权文档、测试集合和示例 QA，不做生产系统代维、安全审计、法律合规或集成效果承诺。",
+      "details": "## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外小型 SaaS、API-first 产品、开发者工具、B2B 集成平台、开源商业化项目和技术型 agency 的 OpenAPI 规范、Postman Collection 与开发者入门示例包清理服务。\n\n它不是泛泛的技术文案，也不是完整后端开发外包。更准确地说，它帮客户把“开发者真的能照着跑通”的 API 入口材料整理好：OpenAPI YAML/JSON、Postman Collection、environment template、示例请求/响应、鉴权说明、错误码、rate limit、分页、webhook 示例、SDK 链接、quickstart、变更记录和发布前 QA 报告。\n\n它小众，是因为需求夹在后端/API 设计、技术写作、开发者体验、DevRel、QA、信息安全和客户成功之间。工程师知道接口怎么写，但常常没时间补齐 schema、example、错误响应和教程；普通文案能润色句子，却不一定能看懂 HTTP method、OAuth/API key、JSON Schema、pagination、webhook signature、idempotency key 和 sandbox/production 环境差异；测试人员会跑用例，但不一定能把可执行集合和文档交付成客户可复用的 onboarding asset。\n\nOpenAPI Initiative 说明，OpenAPI Specification 是一种面向 HTTP API 的标准描述方式，通常用 YAML 或 JSON 编写，可帮助 API 能力被发现、理解、生成代码和创建测试。Postman 文档也显示，Collection 可保存和组织 API 请求，并包含 authorization、parameters、headers、body、tests、settings、response examples 等信息，还可生成文档、mock server，并与 OpenAPI 定义导入/生成互通。这些都说明这个行业有真实的技术工作流，而不是空泛内容包装。\n\n## 目标市场\n\n本期选择：中国境内可做的海外市场，重点是英语 SaaS/API/开发者工具市场。\n\n典型客户包括 1-30 人小型 SaaS、API-first 创业公司、开发者工具、AI API、低代码/自动化工具、B2B 数据服务、支付/物流/CRM 周边集成商、开源商业化项目、技术文档 agency、DevRel 顾问和软件外包 agency。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、LinkedIn、GitHub、开发者社群、Indie Hackers、Product Hunt、Discord/Slack 社群和 agency 白标分包获客。\n\n它适合 OPC/一人公司或数字游民验证，因为固定资产轻，核心设备就是电脑、稳定网络、测试工具、文档工具和英文沟通能力；不需要海外实体门店，不需要当地强制牌照，也不需要库存或线下驻场。新手可以从“5-10 个 endpoint 的 Postman Collection QA”或“一个 quickstart + environment template + 示例响应清理”这种小包开始试单。\n\n## 典型需求场景和客户是谁\n\n1. 小型 SaaS 有 API，但文档和真实接口长期不一致，客户集成时频繁问同样的问题。\n2. 产品已有 OpenAPI 文件，但 schema 缺字段、required 不准、response example 过旧、错误码和分页说明不完整。\n3. 团队有 Postman Collection，但变量混乱、文件夹结构不清、鉴权示例跑不通，甚至混入真实 token 或内部 URL。\n4. B2B 客户 onboarding 需要一个 30 分钟内跑通的 quickstart，包括 sandbox key、第一条请求、常见错误和下一步链接。\n5. API/SDK 新版本发布后，需要补 migration notes、deprecated fields、breaking changes 和 GitHub/Docs/Collection 多处一致性检查。\n6. 技术文档 agency 或 DevRel 顾问接到 API 文档项目，但希望把 spec lint、collection cleanup、示例验证和截图证据分包出去。\n7. 开源商业化项目想把零散 README、Swagger UI、Postman workspace 和官网文档整理成统一口径，降低 issue 和 support 问答成本。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括客户方 founder、后端工程师、DevRel、技术写作者、客户成功、QA、平台管理员、API 消费者、Postman/OpenAPI/Swagger/Redoc/Stoplight/ReadMe/GitHub 等工具链，以及自由职业 API 文档 QA 服务者。\n\n典型工作流：\n\n1. 预筛选：确认客户有权提供 API 文档、测试环境、OpenAPI 文件、Collection、示例 payload 和 staging key；拒绝未授权抓取第三方 API、绕过访问控制、批量爬取、破解、撞库、伪造认证或处理非法数据源的需求。\n2. 授权和边界：用平台订单或英文 SOW 写清 endpoint 数量、环境、交付物、是否只做 draft、是否允许登录 workspace、是否可运行测试请求、是否触碰生产环境、返修轮次、保密和删除确认。\n3. 素材收集：获取 OpenAPI YAML/JSON、现有文档、Postman Collection、environment template、sandbox base URL、测试 key、示例账号、error response、rate limit 文档和客户已知问题。优先使用只读资料和 sandbox。\n4. 规范检查：用 Swagger Editor、Spectral、Postman Spec Hub 或客户现有工具检查 schema、路径、method、parameters、request body、response、security scheme、examples、tags、operationId、servers、version 和 lint issue。\n5. Collection 整理：按 onboarding 路径或资源对象拆分 folder；补齐变量、pre-request script、test script、example response、auth inheritance、description、code samples 和环境说明；确保新开发者知道先设置什么变量、再跑哪条请求。\n6. 可运行验证：在 sandbox/staging 中跑通 happy path、常见 error path、分页、webhook 或 callback 示例；记录不能跑通的原因，区分文档错误、接口错误、权限错误和测试数据缺失。\n7. 安全和隐私检查：检查 Collection、environment、截图、文档和示例中是否含真实 API key、access token、refresh token、cookie、客户 PII、内部域名、未公开 endpoint、生产 order/customer id 或敏感业务数据。Postman 官方资料特别提醒公开文档或集合时不要泄露 API keys/tokens，secret variable、Vault/current value 等机制可降低误共享风险。\n8. 交付和移交：提交修正后的 OpenAPI 文件、Postman Collection、environment template、quickstart 文档、示例请求/响应、问题清单、redaction log、截图证据、待客户确认项和下次版本维护 checklist。最终公开发布或生产凭证配置应由客户确认和执行。\n\n## 盈利模式和报价口径\n\n收入来自一次性 API 文档/Collection audit、OpenAPI spec cleanup、Postman Collection 重构、developer quickstart 包、SDK/example QA、API changelog/migration notes、月度开发者文档维护和 agency 白标分包。\n\n公开报价样本只能证明市场需求和预算存在，不能作为稳定收入承诺。Upwork 的 API developer 成本页显示 API developer 常见成本约 20-40 USD/hour，并列出单 endpoint/简单集成 150-500 USD/project、较完整 API 项目 500-2000 USD/project 等样本。Upwork API consultant 页面显示，API specification review 约 500-1200 USD/project，API documentation generation 约 1200-2500 USD/project，API contract definition 约 2500-4500 USD/project。本文只把这些作为海外平台报价样本；新手做的是更窄的文档和可执行示例 QA，不应把完整 API 咨询项目价格当成默认成交价。\n\n按 Wise 在 2026 年 8 月下旬显示的公开汇率样本 1 USD 约 6.72 CNY 粗略折算：\n\n- 新手小型 Collection/doc audit：100-300 USD，约 672-2016 元人民币，适合 5-10 个 endpoint、一个 auth flow 和一份 quickstart QA。\n- 5-15 个 endpoint cleanup：150-500 USD，约 1008-3360 元人民币，适合补 description、examples、environment template 和可运行验证。\n- 小型 OpenAPI specification review：500-1200 USD，约 3360-8064 元人民币，通常需要较强 API 设计和 schema 能力，不适合作为零经验起步承诺。\n- API documentation generation / developer onboarding package：1200-2500 USD，约 8064-16800 元人民币，适合已有案例后承接，通常包含文档结构、collection、sample code、QA 和多轮客户确认。\n- 月度维护或 agency 白标：可按 20-45 USD/hour 或按版本/模块报价；稳定性可能更好，但需要保密、响应和版本同步能力。\n\n这些都是毛报价。净收入还要扣平台服务费、跨境收款费、汇损、工具订阅、测试账号、税费、售前样稿、客户会议、等待工程确认和返工成本。更现实的测算方式是先按 endpoint 数、auth 复杂度、示例数量、是否需要运行测试、是否触碰 webhook/OAuth 和返修轮次报价，再倒推实际时薪。\n\n## 入门门槛\n\n技能：英文技术写作、HTTP/REST 基础、JSON/YAML、OpenAPI 3.x、Postman Collection、API key/OAuth 基础、curl、Markdown、JSON Schema、错误码、pagination、webhook、rate limit、版本管理、截图证据和异步沟通。更高阶项目需要理解 SDK、GraphQL/gRPC、CI 文档检查、API breaking changes 和开发者体验设计。\n\n设备/软件：稳定电脑、密码管理器、Postman、Swagger Editor/Swagger UI、Spectral 或类似 lint 工具、VS Code、Git/GitHub、Markdown/Notion/Google Docs、截图工具、可选的 mock server 和测试账号。起步不需要重资产，但必须有安全处理 token 和客户资料的习惯。\n\n资质/合规：通常不需要海外本地牌照，但不能冒充客户官方、安全审计员、律师或平台认证专家。不能承诺 API 零故障、客户集成成功率、合规认证、漏洞排查或生产安全。涉及支付、医疗、金融、儿童数据、身份认证或跨境个人信息时，应缩小为文档和测试环境 QA，让客户专业团队负责法律、安全和隐私判断。\n\n资金：轻资产启动，主要成本是学习时间、平台账户、作品集、少量工具订阅、域名/个人页、测试 API 和跨境收款成本。不要先购买昂贵课程或承诺大型项目；更适合先做公开 API 的 before/after 样例。\n\n渠道：Upwork、Fiverr、LinkedIn、GitHub、Postman Public API Network 周边社群、DevRel 社群、Indie Hackers、Product Hunt、技术文档 agency、SaaS founder 社群和软件外包 agency。服务标题应具体，例如 Postman Collection cleanup、OpenAPI spec review、API quickstart QA、developer onboarding examples、API docs and examples audit。\n\n时间成本：已有编程/API 基础的人，1-2 周可做公开 API 练习和小包模板；要稳定承接 OAuth、webhook、SDK、版本迁移和真实客户 staging 环境，通常需要 1-3 个月项目打磨；复杂 API 设计咨询则需要更长工程经验。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台获客遵守 Upwork/Fiverr 等站内沟通、付款、最低费率和反绕单规则。Upwork 官方帮助中心明确，平台内认识的客户绕开 Upwork 收款会违反规则并可能导致账号失去访问；因此平台客户必须按平台合同和付款机制走，除非按平台规则支付转换费用。独立获客可以用 LinkedIn、GitHub、个人站、社群和 agency 转介绍，但不要抓取邮箱群发、冒充平台官方或用安全恐吓话术获客。\n\n远程交付：优先使用 sandbox/staging、只读 spec、临时测试 key、脱敏 payload 和客户导出的文档。若必须进入 Postman workspace、GitHub 私有仓库、ReadMe/Stoplight/Docs 后台或 issue tracker，应使用最小权限、单独账号、2FA、操作记录和项目结束撤权。原则上不接生产密钥、不跑会产生真实交易/邮件/扣费/物流动作的请求。\n\n合同、发票与收款：平台订单按平台合同、托管、发票/账单和争议规则走；独立客户用英文 SOW，写清 endpoint 数量、源材料、测试环境、交付文件、验收方式、客户最终审核责任、保密、数据处理、删除确认、付款里程碑和不提供安全审计/法律合规/生产稳定性保证。收款可用平台、Payoneer、Wise Business、PayPal 或银行跨境收款等合规路径，取决于主体、平台支持地区和银行要求。\n\n税务申报：中国境内个人、个体工商户或一人公司承接海外服务，应保留合同、平台订单、交付记录、收款流水、结汇记录、发票/账单和工具费用凭证。国家税务总局关于境外所得的公告显示，居民个人取得境外所得应在次年 3 月 1 日至 6 月 30 日申报纳税；个体工商户、个人独资企业或有限公司还涉及不同的经营所得、增值税、企业所得税、成本扣除和发票口径，具体应让会计或主管税务机关确认。\n\n外汇与结算：真实服务贸易收入需要保留可证明业务真实性的合同、发票/账单、平台记录和交付材料。国家外汇管理局个人外汇管理办法强调按交易性质管理和真实性审核，不应使用虚假单证、分拆、地下钱庄、代收代付或虚假贸易处理收入。\n\n平台规则：除自由职业平台规则外，还要遵守 Postman、GitHub、ReadMe/Stoplight、Slack/Discord 等工具的访问、共享和公开发布规则。不得上传客户真实密钥到公共 workspace，不得把客户未公开 API 当作品集展示，不得伪造接口可用性或测试结果。\n\n数据/隐私合规：API 示例常带用户邮箱、订单号、支付 intent、病历/健康字段、地理位置、内部客户名、access token 或 webhook secret。服务者应尽量要求测试数据和脱敏 payload；如涉及 GDPR/CCPA/PIPL 等个人信息范围，至少签 NDA/DPA，限定用途、保存期限、加密、子处理者和删除确认。不要把客户私有 API 文档、payload 或 token 输入未获授权的 AI 工具。\n\n语言和时区门槛：需要英文解释 endpoint、auth、rate limit、idempotency、pagination、webhook signature、breaking changes 和 sample code 的边界。欧美客户通常可异步，但 API 文档上线前可能需要中国晚间会议和 24-48 小时内修复高优先级文档错误。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻；一人可以完成审计、规范清理、Postman 整理、quickstart、截图证据和交付报告；服务颗粒度可小可大，容易从 5-10 个 endpoint 的小单开始；交付物可复用为模板和 checklist；可以与技术写作、DevRel、帮助中心、release notes、SDK 文档和自动化 QA 组合销售。\n\n不完全适合点：复杂 API 架构设计、生产集成排障、安全审计、合规认证、支付/医疗/金融数据、高可用 SLA 和企业级多团队文档治理，不适合新手一人公司直接承诺。OPC 应把边界控制在“授权文档、测试集合、示例和 QA 报告”，客户工程/安全/法律团队负责最终判断和发布。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：核心工作依赖电脑、稳定网络、英文、测试环境和文档工具，天然可远程；成果是文件、集合、报告和截图，适合异步交付；不需要固定门店或本地设备。\n\n不完全适合点：私有 API、token、客户数据和未公开路线图不适合在公共 Wi-Fi、共享电脑或不稳定环境处理；频繁跨国旅居可能影响平台 KYC、收款账户、税务居民身份和客户信任；遇到上线前集中 QA，时区会挤压晚间时间。\n\n## 潜在收益、成本结构和前提\n\n低成本验证期：每月 2-5 个 100-300 USD 小包，毛收入约 1344-10080 元人民币，重点是建立样例、评价、模板和拒单边界，不应视为稳定月收入。\n\n标准接单期：有案例后，每月 2-4 个 150-500 USD 的 endpoint cleanup，加 1 个 500-1200 USD 的 spec review，毛收入约 5376-21504 元人民币。前提是有 API 基础、英文交付质量、客户资料完整、能避免 production side effect 和返工失控。\n\n进阶合作期：专攻 API-first SaaS、开发者工具、SDK 文档或 agency 白标，可能按小时 20-45 USD 或按月 retainer 合作；但需要更强的技术判断、版本治理、客户沟通和保密管理。\n\n主要成本包括平台费、收款费、汇损、税费、Postman/文档工具订阅、测试账号、个人站、售前样稿、会议、返修、等待工程确认和安全处理客户资料的时间。核心前提是客户有真实 API 消费者和文档维护需求；没有开发者用户的项目不会持续复购。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：真实 API key/token 泄露；误调用生产 API 造成真实订单、扣费、邮件、物流或数据变更；处理未授权 PII 或敏感行业数据；文档写错导致客户开发者集成失败；把测试环境结果误写成生产承诺；越权发布公开文档；将客户私有 API 上传到公共 workspace 或未授权 AI 工具；平台绕单；税务和外汇处理不规范。\n\n合规注意事项：只处理客户授权素材；优先 sandbox/staging 和测试 key；最小权限；交付前做 secret scan/redaction；最终公开发布由客户确认；涉及安全漏洞、隐私事件、支付/医疗/金融/儿童数据、法律披露时，必须让客户专业团队把关。不要承诺安全、合规、性能、可用性、转化率或开发者采用率。\n\n不适合人群：英文技术阅读弱、不懂 HTTP/API 基础、不愿跑通示例、不愿逐字段核对 schema、保密意识弱、喜欢直接复制客户 token、无法接受客户工程师反复确认、想把 API 文档包装成“快速暴利项目”的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 选 2-3 个公开 API，用其公开文档做 before/after 练习：整理一个不含真实密钥的 Postman Collection、environment template、5 条常见请求、示例响应和 quickstart，并记录哪些内容来自公开资料。\n2. 做一份 API docs QA checklist：覆盖 auth、base URL、environment variables、schema、required fields、examples、pagination、rate limit、errors、webhooks、SDK links、version、secret scan、PII redaction 和 final approval。\n3. 上架一个低风险小包：限定 5-10 个 endpoint、只用 sandbox/test key、只做 draft/QA，不接生产密钥、不跑真实交易、不做安全审计、不处理未脱敏 PII；用 1-2 单验证沟通、返工和实际时薪。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。点评 Agent 未编辑仓库文件。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：比较克制，没有明显夸大；已说明平台样本不代表稳定成交，也扣除了平台费、收款费、税费、汇损、工具和返工。\n- 信息来源是否足够可信：方向可信。OpenAPI、Postman、Upwork、Wise、国家税务总局和国家外汇管理局资料组合能支撑需求真实性、交付标准、报价样本和跨境执行边界。报价和汇率属于易变样本，正式接单时应重新核验。\n- 最该补充或提醒的一句话：必须取得客户书面授权，并优先使用 staging/test key，明确不接收、不保存生产密钥、未脱敏 PII 或未经授权的私有 API 数据。\n- 审稿结论：题目小众但真实，技能边界清楚，交付物可标准化；只要继续强调不是安全审计、不是法律合规背书、不是生产发布担保，适合作为每日选题。\n\n## 关键来源\n\n1. OpenAPI Initiative - What is OpenAPI: https://www.openapis.org/what-is-openapi\n2. OpenAPI Initiative Publications: https://spec.openapis.org/\n3. Learn OpenAPI - Introduction: https://learn.openapis.org/introduction.html\n4. Postman Docs - Create and manage request collections in Postman: https://learning.postman.com/docs/use/use-collections/overview/\n5. Postman Docs - About Postman elements: https://learning.postman.com/docs/getting-started/basics/postman-elements/\n6. Postman Docs - Design your APIs with Postman Collections: https://learning.postman.com/docs/design-apis/collections/overview\n7. Postman Docs - Integrate Postman with OpenAPI: https://learning.postman.com/docs/integrations/available-integrations/working-with-openAPI/\n8. Postman - Securely Using API Keys in Postman: https://quickstarts.postman.com/guide/securing-api-keys/index.html\n9. Postman Security & Shared Responsibility: https://www.postman.com/security/shared-responsibility/\n10. Postman Docs - Prepare your public collections for the Postman API Network: https://learning.postman.com/docs/postman-api-network/showcase/prepare/public-collections\n11. Upwork - Best Freelance API Developers for Hire: https://www.upwork.com/hire/api-developers/\n12. Upwork - Best Freelance API Consultants for Hire: https://www.upwork.com/hire/api-consultants/\n13. Upwork Help - Circumvention, and why it is against the rules: https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules\n14. Upwork Help - Minimum hourly and fixed-price rates: https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork\n15. Wise - USD to CNY exchange rate history: https://wise.com/us/currency-converter/usd-to-cny-rate/history\n16. 国家税务总局 - 财政部 税务总局关于境外所得有关个人所得税政策的公告: https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html\n17. 国家外汇管理局 - 个人外汇管理办法: https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "startedAt": "2026-08-29T16:00:40+08:00",
+      "finishedAt": "2026-08-29T16:04:41+08:00",
+      "duration": "4m 1s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "saas",
+        "api-docs"
+      ],
+      "nextSteps": [
+        "选 2-3 个公开 API 做不含真实密钥的 Postman Collection、environment template、示例请求和 quickstart before/after 样例。",
+        "制作 API docs QA checklist，覆盖 auth、base URL、schema、examples、errors、webhooks、secret scan、PII redaction 和 final approval。",
+        "上架 5-10 个 endpoint 的低风险小包，只用 sandbox/test key，只做 draft/QA，不接生产密钥、不跑真实交易、不处理未脱敏 PII。"
+      ],
+      "artifacts": [
+        {
+          "label": "OpenAPI Initiative - What is OpenAPI",
+          "path": "https://www.openapis.org/what-is-openapi"
+        },
+        {
+          "label": "OpenAPI Initiative Publications",
+          "path": "https://spec.openapis.org/"
+        },
+        {
+          "label": "Learn OpenAPI - Introduction",
+          "path": "https://learn.openapis.org/introduction.html"
+        },
+        {
+          "label": "Postman Docs - Create and manage request collections",
+          "path": "https://learning.postman.com/docs/use/use-collections/overview/"
+        },
+        {
+          "label": "Postman Docs - About Postman elements",
+          "path": "https://learning.postman.com/docs/getting-started/basics/postman-elements/"
+        },
+        {
+          "label": "Postman Docs - Design APIs with Collections",
+          "path": "https://learning.postman.com/docs/design-apis/collections/overview"
+        },
+        {
+          "label": "Postman Docs - Integrate Postman with OpenAPI",
+          "path": "https://learning.postman.com/docs/integrations/available-integrations/working-with-openAPI/"
+        },
+        {
+          "label": "Postman - Securely Using API Keys",
+          "path": "https://quickstarts.postman.com/guide/securing-api-keys/index.html"
+        },
+        {
+          "label": "Postman Security & Shared Responsibility",
+          "path": "https://www.postman.com/security/shared-responsibility/"
+        },
+        {
+          "label": "Postman Docs - Prepare public collections",
+          "path": "https://learning.postman.com/docs/postman-api-network/showcase/prepare/public-collections"
+        },
+        {
+          "label": "Upwork - Best Freelance API Developers for Hire",
+          "path": "https://www.upwork.com/hire/api-developers/"
+        },
+        {
+          "label": "Upwork - Best Freelance API Consultants for Hire",
+          "path": "https://www.upwork.com/hire/api-consultants/"
+        },
+        {
+          "label": "Upwork Help - Circumvention policy",
+          "path": "https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules"
+        },
+        {
+          "label": "Upwork Help - Minimum rates",
+          "path": "https://support.upwork.com/hc/en-us/articles/211062988-What-are-the-minimum-hourly-and-fixed-price-rates-on-Upwork"
+        },
+        {
+          "label": "Wise - USD to CNY exchange rate history",
+          "path": "https://wise.com/us/currency-converter/usd-to-cny-rate/history"
+        },
+        {
+          "label": "国家税务总局 - 境外所得个人所得税政策",
+          "path": "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html"
+        },
+        {
+          "label": "国家外汇管理局 - 个人外汇管理办法",
+          "path": "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+        }
+      ],
+      "sourceFile": "runs/2026-08-29/niche-profit-industry.json"
+    },
     {
       "date": "2026-08-28",
       "taskId": "niche-profit-industry",
