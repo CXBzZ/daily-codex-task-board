@@ -1,0 +1,97 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-08-31T16:04:00+08:00",
+  "finishedAt": "2026-08-31T16:15:00+08:00",
+  "summary": "今天的小众行业是面向海外 Shopify、Webflow、小型 SaaS 和独立站的多语言网站本地化 QA、hreflang/URL/语言切换上线前检查服务，属于中国境内可做的海外市场。它适合懂英文、基础网页结构、平台本地化配置和截图报告的 OPC/数字游民小规模验证，但必须限定为授权站点的技术 QA 和修复建议，不承诺翻译终审、SEO 排名、法律合规或转化提升。",
+  "details": "# 面向海外小团队的多语言网站本地化 QA 与 hreflang 上线检查服务\n\n## 行业是什么，为什么小众\n多语言网站本地化 QA 与 hreflang 上线检查服务，是帮海外 Shopify、Webflow、小型 SaaS 官网、WordPress/WooCommerce 独立站和 DTC 品牌，在发布多语言或多地区版本前，检查“用户能不能看到正确语言，搜索引擎能不能理解正确版本，表单和购买路径会不会混用默认语言”。\n\n它不是普通翻译，也不是技术 SEO 包排名。典型工作包括：检查语言切换器、URL 结构、hreflang 双向返回链接、x-default、canonical、sitemap、页面 lang 属性、导航/页脚/按钮/表单错误提示、货币和单位、图片 alt、移动端文本截断、RTL 语言初检、政策页和第三方 App 插件文案是否仍是默认语言，并输出可复核的问题清单和修复建议。\n\n它小众，是因为它夹在翻译、本地化、前端 QA、Shopify Markets/Webflow Localize 配置和国际 SEO 之间。客户往往以为机器翻译或平台本地化插件已经解决全部问题，但真正上线时会出现西语页面跳回英文 checkout、法语商品 URL 没翻、hreflang 缺回链、canonical 指错、政策页无法自动翻译、移动端德语按钮溢出等细碎问题。大代理不一定愿意接 100-300 美元的小检查，小团队内部又缺少懂平台规则和多语言 QA 的人。\n\n## 目标市场\n本期选择：中国境内可做的海外市场，重点是英语沟通下的美国、加拿大、英国、欧盟、澳洲和多语言跨境电商/小型 SaaS 客户。\n\n为什么适合中国境内验证：交付物主要是截图、表格、测试记录、问题分级、修复建议和少量后台配置陪跑，不需要海外实体门店，不需要当地执业牌照，不需要处理物流或库存。一个人可以从“1 个站点、2 个语言、10-20 个核心页面”的上线前 QA 小包开始试单。\n\n中国境内从业者不能把海外案例直接当中国现实来卖。合规承接时应把服务定位成 technical localization QA / multilingual website QA / hreflang audit，客户仍负责翻译终审、当地法律页面、税务、消费者条款、隐私合规和最终发布决定。\n\n## 典型需求场景和客户是谁\n1. Shopify DTC 店铺开通 Shopify Markets 或 Translate & Adapt 后，要上线法语、德语、西语市场，担心语言、货币、URL、商品页、政策页和邮件模板不一致。\n2. Webflow 小型 SaaS 官网使用 Webflow Localize 或第三方本地化工具，上线前需要检查 CMS 项、表单、CTA、定价页、移动端布局和 SEO 字段。\n3. WooCommerce/WordPress 站点用 WPML、Polylang、Weglot 等插件后，需要检查语言切换、canonical、sitemap 和关键转化路径。\n4. 海外营销代理接了本地化项目，但不想让资深 SEO 或开发人员做重复 QA，于是外包“逐页检查 + issue sheet”。\n5. 初创公司从英文官网扩展到欧洲或拉美市场，内部只有机器翻译稿，需要外部人员做语言一致性、按钮长度和基础技术核验。\n\n客户通常是 1-50 人小团队、DTC 品牌、独立开发者、精品 Webflow/Shopify 代理、本地化代理、海外华人创业团队和内容网站运营者。付款人可能是创始人、营销负责人、国际化负责人、网站项目经理或代理公司交付负责人。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括客户业务方、译者或机器翻译工具、Shopify/Webflow/WordPress 等建站平台、SEO 顾问、网站开发者、QA 服务商、支付/表单/邮件/评论等第三方插件，以及客户所在地的法律或隐私顾问。\n\n标准工作流：\n1. 范围确认：确认平台、默认语言、目标语言/地区、核心页面清单、URL 结构、是否有 staged preview、是否允许后台访问、是否检查 checkout、邮件模板和政策页。\n2. 授权与最小权限：优先使用公开预览链接、客户导出的 URL 清单、只读后台或屏幕共享；如需编辑权限，使用客户创建的临时账号，交付后撤销。\n3. 基线抓取：爬取或整理首页、导航、集合页、商品页、博客、价格页、表单页、政策页和结账路径，记录每个页面的语言版本、URL、title、meta、canonical、hreflang 和状态码。\n4. 人工 QA：逐页检查语言切换、混合语言、未翻译字段、按钮长度、移动端截断、货币/尺寸单位、表单提示、图片 alt、RTL 初步布局、地区文案和明显文化不适配。\n5. 技术核验：按 Google Search Central 的 hreflang 指南检查自引用、互相返回链接、语言/地区代码、x-default、canonical 与 alternate 的关系，抽查 sitemap 是否包含已发布语言版本。\n6. 平台配置核验：对 Shopify 检查 Markets、domains/subfolders、published languages、Translate & Adapt 字段限制、URL handles 和 language selector；对 Webflow 检查 locales、CMS/static pages、localized SEO、assets/style/localized URLs 等功能是否在客户套餐内。\n7. 交付：输出 issue sheet、截图、严重级别、复现步骤、建议责任人、修复优先级、二次复查范围和“不承诺排名/法律合规/翻译终审”的说明。\n\n## 盈利模式和报价口径\n收入来自上线前 QA 小包、hreflang/国际 SEO 技术审计、逐页问题表、修复后复测、代理白标 QA、月度新增页面抽检和本地化发布 SOP。\n\n公开样本显示，Fiverr 上 Shopify multilingual 相关服务超过 1000 个，页面可见起价从 5、15、25、35、80、100、125 美元不等；Fiverr Webflow multilingual localization 样本显示 80/200/350 美元三档；Upwork Project Catalog 的 international and multilingual SEO with hreflang 样本显示 70/150/280 美元三档；Upwork localization specialists 页面可见若干自由职业者小时费率样本如 25、36、38 美元/小时。这些只适合做报价样本，不代表稳定成交或行业均价。\n\n按 2026-08-31 新华网公布的人民币市场汇价 100 美元 = 678.28 元人民币粗略折算，1 美元约 6.7828 元：\n- 入门小包：15-70 美元，约 102-475 元人民币。适合 1 个站点、2 个语言、少量页面的抽样检查或只读报告。\n- 标准 QA 包：80-200 美元，约 543-1357 元人民币。适合 10-30 个页面、2-3 个语言、移动端截图和 issue sheet。\n- 复杂上线前审计：250-500+ 美元，约 1696-3391+ 元人民币。适合多地区 URL、Shopify Markets、Webflow CMS、WordPress 插件、hreflang/canonical/sitemap 复测和二次回归。\n\n保守验证期每月 3-6 个小包，毛收入可能约 300-4000 元人民币；熟练后每月 4-10 个 100-300 美元项目，毛收入可能约 2700-20300 元人民币。前提是有英文沟通、平台经验、样板报告、稳定获客和严格拒单边界。净收入还要扣平台服务费、提现费、汇损、税费、工具订阅、测试设备、返工和客户沟通时间。\n\n## 入门门槛\n技能：英文书面沟通、基础 HTML/SEO、URL/canonical/hreflang/sitemap 概念、Shopify Markets 或 Webflow Localize 的后台理解、表格化 QA、截图标注、移动端检查、基础本地化意识。若接欧洲语言，需要至少能用客户提供的译文、术语表和浏览器/本地化工具发现明显漏翻、混排和长度问题；不能冒充母语译审。\n\n设备/软件：普通电脑、稳定网络、Chrome DevTools、移动端模拟器或真实手机、Google Search Console/URL inspection 截图由客户提供、Screaming Frog 或同类爬虫、表格工具、截图工具、VPN/海外访问环境、Shopify/Webflow 测试账号或公开教程。初期可用免费工具和客户预览链接开始，不必先买昂贵 SEO 套件。\n\n资质/合规：通常不需要当地牌照，但不能出具法律合规、隐私合规、消费者条款、税务、广告效果或搜索排名保证。涉及欧盟、美国州隐私、无障碍、医疗、金融等高敏行业时，只能做技术 QA 和风险提示，具体合规由客户本地专业人士确认。\n\n资金：轻资产启动，主要成本是学习、测试站点、工具和作品集制作。可先用一个 Webflow/Shopify demo 或公开多语言站点做匿名样板报告，展示自己能发现 hreflang、URL、语言切换和 UI 文案问题。\n\n渠道：Upwork Project Catalog、Fiverr、LinkedIn、Shopify/Webflow 代理社群、独立站案例页、本地化代理白标合作、海外华人创业群、Indie Hackers/Reddit 合规发帖。服务标题应具体，例如 multilingual website QA before launch、Shopify Markets hreflang and localization QA、Webflow Localize CMS QA，不要写“保证国际 SEO 排名”。\n\n时间成本：有网页 QA 或 SEO 基础的人，1-2 周可掌握基础检查表；熟练处理 Shopify/Webflow/WordPress 多平台差异通常需要 1-3 个月实战。真正耗时的不是发现问题，而是把问题写到开发、运营和译者都能执行。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台上资料和项目描述应使用英文，Upwork 帮助中心也要求个人资料、job posts 和 Project Catalog 项目使用英文；独立获客时可用英文样板报告、前后对比截图和 10 页免费 checklist 获得信任。不要购买名单群发，不制造“Google 惩罚恐惧”式营销。\n\n远程交付：优先使用预览链接、导出 CSV、只读权限和屏幕共享。需要后台修改时，明确哪些记录由客户自己改，哪些由服务方在临时权限下改；保存改动清单，避免误改 live site。不要保管客户主账号、2FA 恢复码、支付后台、生产 API key 或用户数据库。\n\n合同/发票或收款：平台订单按 Upwork/Fiverr 的托管、服务费和平台沟通规则执行；Fiverr 明确禁止绕平台付款。独立客户应使用英文 SOW，写清 technical localization QA、页面数量、语言数量、交付格式、复查次数、客户提供资料、保密、数据删除、付款节点和责任排除。收款可使用平台、Payoneer、Wise、银行跨境收款等合规渠道，按主体资质和所在地银行要求入账。\n\n税务申报：中国居民个人取得境外所得、没有扣缴义务人收入或经营所得时，应依法申报；《个人所得税法》规定居民个人从中国境内和境外取得所得依法纳税，外币所得按人民币汇率中间价折合成人民币。境内单位和个人向境外单位提供完全在境外消费的部分专业技术、商务辅助、鉴证咨询等服务，可能涉及跨境应税行为免征增值税或零税率规则，但需按具体主体、合同、服务内容和主管税务机关要求判断，不能自动套用。\n\n平台规则：不要绕平台收款、刷评价、冒充 Shopify/Webflow/Google 官方代理、承诺审核或排名结果。Upwork 固定价项目应使用里程碑和清晰交付物；项目目录也强调清楚定义 scope、price 和 terms。\n\n数据/隐私合规：通常无需下载客户用户数据。检查表单时使用测试数据，邮件/订单/客户名单应脱敏；如果必须接触个人数据，签 NDA/DPA，限制用途和保存期限。不能把客户未发布页面、截图或数据放入作品集，除非有书面授权。\n\n语言和时区门槛：需要英文解释技术问题，最好能读懂目标语言中的明显 UI 问题；涉及非自己熟悉语言时，应把自己定位成 QA coordinator/technical QA，而不是母语翻译。北美客户沟通可能在中国早晚，欧洲客户相对友好；可用异步 Loom、截图和表格降低会议频率。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：交付范围可切小，固定资产轻，工具成本低，报告模板和检查表可复用；一个人能完成问诊、抓取、QA、截图、报告和复测。服务天然可与 Shopify/Webflow 建站、技术 SEO、小语种译审、本地化项目管理和网站发布 SOP 组合销售。\n\n不完全适合点：多语言站点问题容易跨到开发、SEO、翻译、法务、隐私、税务和本地运营。OPC 必须限定自己只做授权站点的技术本地化 QA 报告和修复建议，不承诺翻译质量终审、SEO 排名、法律合规或转化提升。大型站点、多国家法律页面、复杂 checkout 和高流量发布，应拆分范围或与本地译者、SEO、开发者合作。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：几乎全流程可远程完成，不需要线下场地；交付物是报告、截图、表格和复测记录；项目颗粒度小，适合异步交付和跨时区合作。\n\n不完全适合点：需要稳定访问客户后台和海外站点，公共网络或旅途中不稳定网络会影响交付；处理未发布页面和客户数据时要有设备加密、密码管理、访问日志和删除流程；长期旅居还会影响税务居民身份、平台 KYC、收款账户和数据跨境判断。\n\n## 潜在收益、前提条件和成本结构\n低成本验证期：每月 3-6 个 15-70 美元小包，毛收入约 45-420 美元，折合约 305-2849 元人民币。重点是验证服务标题、报告模板、客户反馈和复购，不应期待高净利润。\n\n标准接单期：每月 4-10 个 100-300 美元项目，毛收入约 400-3000 美元，折合约 2713-20348 元人民币。前提是有 3-5 个样板、明确平台定位、能快速判断范围、能拒绝翻译终审/排名保证/法律合规类需求。\n\n代理白标期：与 Webflow/Shopify/本地化代理合作，可能按站点或按页面批量收费，单价低但复购强。主要成本包括平台抽佣、工具订阅、VPN/测试设备、收款手续费、汇损、税费、项目管理、返工、会议和文档维护。德语、法语、西语等长文案移动端 QA 会显著增加时间，不能按英文页面线性报价。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 结果承诺风险：hreflang 正确不等于 Google 一定展示目标语言，也不等于排名、流量或转化提升。\n2. 翻译责任风险：技术 QA 不能替代母语译审，尤其是法律、医疗、金融、隐私、退换货和广告承诺页面。\n3. 权限风险：误改 Shopify Markets、DNS、URL handle、redirect 或 Webflow locale 配置，可能导致页面 404、重复内容或转化路径中断。\n4. 数据风险：表单、订单、账号、邮件和用户截图可能包含个人信息，必须使用测试数据和最小权限。\n5. 平台限制风险：Shopify Translate & Adapt 有不可翻译内容类型和语言限制；Webflow Localize 功能与套餐相关；第三方 App 内容可能不在平台翻译资源里。\n6. 低价竞争风险：Fiverr 上大量 multilingual/translation 服务低价竞争，新手要用“技术 QA + 截图证据 + issue sheet”区分，而不是和纯翻译拼字数单价。\n7. 税务外汇风险：跨境收入、平台账单、发票、结汇和纳税申报要留痕，不能把小额外币收入当作无需申报。\n\n不适合人群：不愿读英文平台文档的人；只懂翻译不懂 URL 和网页结构的人；想承诺 SEO 排名或转化提升的人；安全意识弱、喜欢直接要客户主账号的人；没有耐心逐页检查截图和表格的人；不能接受跨时区沟通的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 做一份公开样板 QA：找一个公开多语言 Shopify/Webflow/WordPress 站点，只检查公开页面，输出 10 条问题或“未发现问题”的证据表，包含 URL、语言版本、截图、严重级别和建议，不公开客户品牌负面截图。\n2. 搭一个 2 语言 demo checklist：用 Webflow/Shopify 测试站或本地静态页做 en/fr、en/de 示例，手动配置或模拟 hreflang、language selector、canonical、URL slug、移动端按钮长度，形成可展示的报告模板。\n3. 上架一个窄服务包：例如 10-page multilingual website QA before launch，限定 1 个站点、2 个语言、只读/预览链接、48-72 小时交付、1 次复测，报价 25-80 美元起，并写清不承诺排名、不做法律页面终审、不接未授权站点。\n\n## 点评 Agent 审稿\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制。已明确是报价样本和试单测算，并提示平台费、提现、汇损、税费、工具和返工成本；无明显夸大。\n- 信息来源是否足够可信：足够可信。Google、Shopify、Webflow 官方依据支撑服务必要性；Upwork/Fiverr 只能作为价格样本，不应当作稳定成交证明。\n- 最该补充或提醒的一句话：交付物应写成“授权站点的技术本地化 QA 报告和修复建议”，明确不承诺翻译质量终审、SEO 排名、法律合规或转化提升。\n\n## 关键来源\n1. Google Search Central：Managing multi-regional and multilingual sites。说明多语言/多地区站点应使用不同 URL、hreflang 或 sitemap 等明确标注，不建议只靠动态语言切换。https://developers.google.com/search/docs/advanced/crawling/managing-multi-regional-sites\n2. Google Search Central：Tell Google about localized versions of your page。说明 hreflang 的 HTML、HTTP header、sitemap 方法、自引用/互相返回链接、x-default 和常见错误。https://developers.google.com/search/docs/advanced/crawling/localized-versions\n3. Google Search Central：How to specify canonical。说明 canonical 与 hreflang/alternate 是不同用途，canonical 建议使用绝对 URL。https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls\n4. Shopify Help Center：International SEO for markets。说明 Shopify Markets 在正确配置 domains、languages 和 localized content 后可自动处理 hreflang、canonical、sitemap 等国际 SEO 要求。https://help.shopify.com/en/manual/markets/seo\n5. Shopify Help Center：Add language translations using Translate & Adapt。说明可翻译产品、集合、页面、政策、URL handles，也列出 collection filters、Shopify Forms、tags、第三方 app 内容等限制。https://help.shopify.com/en/manual/international/translate-adapt-app\n6. Shopify Help Center：International domains。说明可为不同市场使用子目录、子域名或顶级域名，以及部分 ccTLD 的注册要求、多币种需要 Shopify Payments 等限制。https://help.shopify.com/en/manual/international/managing-international-domains\n7. Webflow Help Center：Webflow Localize overview。说明 Localize 可按 locale 定制静态页、CMS、样式、资产、页面设置等。https://help.webflow.com/hc/en-us/articles/33961240752147-Webflow-Localize-overview\n8. Webflow Pricing：Localization add-ons。显示 Localization Essential 和 Advanced 的公开价格与能力样本。https://webflow.com/pricing?tab=localization-tab\n9. Upwork Project Catalog：Professional International and Multilingual SEO with Hreflang。作为 70/150/280 美元三档报价样本。https://www.upwork.com/services/product/marketing-professional-international-and-multilingual-seo-with-hreflang-2086406457469695496\n10. Fiverr：Shopify multilingual services。作为 Shopify 多语言服务数量和低价竞争样本。https://www.fiverr.com/gigs/shopify-multilingual\n11. Fiverr：Webflow multilingual localization gig。作为 80/200/350 美元三档报价样本。https://www.fiverr.com/grant_awson/build-webflow-multilingual-website-localization-webflow-global-translation-site\n12. Upwork Help：Do I have to use English on Upwork? 说明资料、职位和 Project Catalog 项目应使用英文。https://support.upwork.com/hc/en-us/articles/27766332610195-Do-I-have-to-use-English-on-Upwork\n13. Upwork Help：How Upwork protects your payments。说明固定价里程碑、提交审核和 14 天自动释放等付款保护口径。https://support.upwork.com/hc/en-us/articles/211062568-How-Upwork-protects-your-payments\n14. Fiverr Payment Terms 与 Off-platform policy。说明 Fiverr 付款、服务费和禁止绕平台交易。https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service\n15. 新华网：人民币市场汇价（2026-08-31）。显示 100 美元 = 678.28 人民币。https://www.news.cn/20260831/b95d5129f054459c9196a04bea60c01f/c.html\n16. 国家税务总局：《中华人民共和国个人所得税法》。说明居民个人境内外所得纳税、境外所得申报和外币折算人民币。https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c3970366/content.html\n17. 国家税务总局：哪些业务可以享受跨境应税行为免征增值税政策。用于提示部分向境外单位提供且完全在境外消费的服务可能适用免税规则，但需按具体情况判断。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html",
+  "sourceThread": "automation-3",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "website-localization",
+    "shopify-webflow",
+    "usa-eu"
+  ],
+  "nextSteps": [
+    "做一份公开样板 QA：只检查公开页面，输出 URL、语言版本、截图、严重级别和建议。",
+    "搭一个 2 语言 demo checklist：覆盖 hreflang、language selector、canonical、URL slug 和移动端按钮长度。",
+    "上架一个 10-page multilingual website QA before launch 窄服务包，限定只读/预览链接、2 个语言、1 次复测和不承诺排名。"
+  ],
+  "artifacts": [
+    {
+      "label": "Google Search Central - Managing multi-regional and multilingual sites",
+      "path": "https://developers.google.com/search/docs/advanced/crawling/managing-multi-regional-sites"
+    },
+    {
+      "label": "Google Search Central - Localized versions / hreflang",
+      "path": "https://developers.google.com/search/docs/advanced/crawling/localized-versions"
+    },
+    {
+      "label": "Google Search Central - Canonical URLs",
+      "path": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+    },
+    {
+      "label": "Shopify Help - International SEO for markets",
+      "path": "https://help.shopify.com/en/manual/markets/seo"
+    },
+    {
+      "label": "Shopify Help - Translate & Adapt app",
+      "path": "https://help.shopify.com/en/manual/international/translate-adapt-app"
+    },
+    {
+      "label": "Shopify Help - International domains",
+      "path": "https://help.shopify.com/en/manual/international/managing-international-domains"
+    },
+    {
+      "label": "Webflow Help - Localize overview",
+      "path": "https://help.webflow.com/hc/en-us/articles/33961240752147-Webflow-Localize-overview"
+    },
+    {
+      "label": "Webflow Pricing - Localization add-ons",
+      "path": "https://webflow.com/pricing?tab=localization-tab"
+    },
+    {
+      "label": "Upwork Project Catalog - International and Multilingual SEO with Hreflang",
+      "path": "https://www.upwork.com/services/product/marketing-professional-international-and-multilingual-seo-with-hreflang-2086406457469695496"
+    },
+    {
+      "label": "Fiverr - Shopify multilingual services",
+      "path": "https://www.fiverr.com/gigs/shopify-multilingual"
+    },
+    {
+      "label": "Fiverr - Webflow multilingual localization sample",
+      "path": "https://www.fiverr.com/grant_awson/build-webflow-multilingual-website-localization-webflow-global-translation-site"
+    },
+    {
+      "label": "Upwork Help - English language policy",
+      "path": "https://support.upwork.com/hc/en-us/articles/27766332610195-Do-I-have-to-use-English-on-Upwork"
+    },
+    {
+      "label": "Upwork Help - Payment protection",
+      "path": "https://support.upwork.com/hc/en-us/articles/211062568-How-Upwork-protects-your-payments"
+    },
+    {
+      "label": "Fiverr - Payment Terms",
+      "path": "https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service"
+    },
+    {
+      "label": "新华社 - 人民币市场汇价 2026-08-31",
+      "path": "https://www.news.cn/20260831/b95d5129f054459c9196a04bea60c01f/c.html"
+    },
+    {
+      "label": "国家税务总局 - 中华人民共和国个人所得税法",
+      "path": "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c3970366/content.html"
+    },
+    {
+      "label": "国家税务总局 - 跨境应税行为免征增值税政策",
+      "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+    }
+  ]
+}
