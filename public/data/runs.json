@@ -1,7 +1,94 @@
 {
-  "generatedAt": "2026-08-31T08:08:35.222Z",
+  "generatedAt": "2026-09-01T08:10:27.964Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-01",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外独立作者、旁白员和小型出版工作室的有声书 ACX/Audible 提交前音频母带、章节切分与 QA 报告服务，属于中国境内可做的海外市场。它适合懂英文、音频后期、平台规范和数据保密边界的 OPC/数字游民小规模验证，但中国境内从业者不应冒充 ACX 平台入驻 Producer 或 Audible/ACX 官方代理，只能在客户授权下做远程技术供应商。",
+      "details": "# 有声书 ACX/Audible 提交前音频母带、章节切分与 QA 报告服务\n\n## 行业是什么，为什么小众\n这个行业是帮海外独立作者、旁白员、播客转有声书团队、小型出版社和出版服务工作室，把已经录好的有声书音频整理成符合 ACX/Audible 等平台提交前技术要求的文件包。典型交付包括降噪、去口水音/爆破音/明显失误、响度与动态控制、统一 RMS/峰值/noise floor、章节切分、opening/closing credits 检查、retail sample 导出、文件命名、MP3 CBR 编码、ACX Audio Lab 或本地工具检测截图、问题清单和返工建议。\n\n它不是普通播客剪辑，也不是旁白录制，更不是有声书出版代理。它小众，是因为需求夹在“作者以为自己只要录完就能上传”和“专业录音棚完整制作太贵”之间。ACX 对章节、时长、音量、峰值、底噪、room tone、文件格式和 AI/TTS 授权都有明确要求；大量自录作者或小工作室会卡在技术 QA、批量章节一致性和提交前返工上。对一人小团队来说，价值不在神秘技巧，而在把每个文件可测量、可复核、可返工地整理好。\n\n## 目标市场\n本期选择：中国境内可做的海外英语市场，重点面向美国、英国、加拿大、爱尔兰等 ACX 主要适用地区的 rights holder、producer、independent author、narrator、小型 publisher 和 audiobook service studio。\n\n必须强调：ACX 官方 rights holder checklist 显示，ACX 目前开放给美国、英国、加拿大、爱尔兰居民或公司，并要求对应国家的 mailing address、本地 taxpayer identification number 和银行信息。因此中国境内个人或一人公司不宜把这个行业包装成“直接入驻 ACX 当 producer 收版税”的机会。更稳妥的承接方式，是通过 Upwork、Fiverr、LinkedIn、独立站或客户转介绍，作为客户授权的远程音频技术供应商，向符合平台资格的客户交付可上传文件和 QA 报告；上传、rights holder 批准、平台收款、税务资料和出版责任仍由客户或合格 producer 处理。\n\n它适合中国境内小规模验证，是因为核心交付物是音频文件、截图报告、表格清单和复测记录，不需要海外门店，不需要本地线下设备安装，也不需要掌握客户主账号。一个人可以先从 30-60 分钟样章、短篇有声书或提交前抽检开始，不碰权利归属、销售承诺和平台账号托管。\n\n## 典型需求场景和客户是谁\n1. 独立作者自己录完有声书，但 ACX Audio Lab 提示 RMS、peak、noise floor、bitrate、spacing 或文件命名问题，需要提交前修整。\n2. 旁白员负责录制，想把后期母带、章节切分和最终 QC 外包给音频编辑，以便专注录音。\n3. 小型出版工作室同时处理多本非虚构、冥想、课程型或短篇 fiction 有声书，需要外部人员做 batch QA 和统一输出格式。\n4. 播客、课程或演讲内容改编为有声书，需要从长音频切成章节、统一开头结尾、去除明显杂音，并生成样章。\n5. 已被 ACX/Audible QA 退回的项目，需要定位是单文件底噪、章节合并、room tone、峰值、采样率、CBR 编码、标题/credits 不一致，还是内容缺失。\n\n客户通常是 1-10 人内容团队、自由旁白员、独立作者、写作教练、精品出版服务商、有声书制作公司和营销代理。付款人多是 rights holder、narrator、producer 或工作室项目经理。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括 rights holder、作者/出版社、旁白员、录音师、音频后期编辑、ACX/Audible 或其他分发平台、封面/元数据服务商、付款平台和客户所在地税务主体。中国境内承接者应把自己放在“授权音频后期与提交前 QA”位置，不介入客户与 ACX 的合同、版税、税号、银行、版权和最终发布决策。\n\n标准工作流：\n1. 范围确认：确认书名、作者、旁白员、总时长、章节数、目标平台、是否只做技术母带还是包含细剪、是否已有 ACX Audio Lab 失败截图、是否有 opening/closing credits 文案和样章选择。\n2. 授权与素材接收：客户确认拥有文字和录音权利，允许服务商处理；通过加密云盘传 WAV/AIFF/高码率音频、章节表和文本稿。涉及未出版书稿或真人声音时，签 NDA 或数据处理条款。\n3. 初检：用 DAW、iZotope RX/Audition/Reaper/Audacity、ffmpeg、loudness/peak/noise 工具检查采样率、声道、底噪、爆音、口水音、呼吸、错读、空白、章节长度和标题一致性。\n4. 编辑与母带：轻度降噪、EQ、de-click、de-essing、compression/limiting、响度归一、room tone 修整、章节拆分和导出；保留自然人声，避免过度处理导致失真。\n5. 平台规格复核：按 ACX 要求检查每章/每节单独文件、文件不超过 120 分钟、同一 mono/stereo 格式、RMS -23dB 至 -18dB、peak 不高于 -3dB、noise floor 不高于 -60dB RMS、192 kbps 或更高 CBR 44.1kHz MP3、opening/closing credits 和 retail sample。ACX Audio Lab 可以检测 RMS、peak、bitrate、sample rate、spacing 等指标，但官方 FAQ 也说明它不检测 noise floor 或编辑错误，自动工具没有报错也不等于 QA 一定通过，所以人工精听和问题清单仍是交付价值。\n6. 交付与返工：交付 MP3 文件、检测截图、CSV/表格问题清单、不可修复问题说明、建议客户或旁白员重录的时间码。客户自行上传或由符合 ACX 资格的 producer 上传。\n\n## 盈利模式和报价口径\n收入来自提交前 QA 小包、每 finished hour 后期母带、已退回项目修复、章节切分与命名、retail sample 制作、批量短书处理、旁白员长期后期合作、出版工作室白标 QC。\n\n公开报价样本只能作为市场观察，不能当作稳定成交承诺。Upwork 的 audio editors 页面显示，音频编辑自由职业者一般 $15-$40/hour；同页的 audiobook editing 样本为 $300-$1,600/project，并列出 chapter assembly、pacing and consistency、platform-ready files 等交付。页面上的个人服务样本还出现 ACX-compliant mastering、audiobook split chapters、audio mastering 等关键词，小时费率样本有 $10、$20、$30、$40、$45/hour 等。Fiverr 上 ACX audiobook editing/mastering 样本显示 0-30 分钟基础包 $40，包含 audio editing、split chapters、retail audio sample、mixing & mastering；评论区也能看到 $600-$800 的有声书订单样本。\n\n按 2026-09-01 新华社公布的人民币对美元中间价 1 美元约 6.7809 元粗略折算：\n- 入门 QA/母带小包：$40-$120，约 271-814 元人民币。适合 30-60 分钟样章、1-3 个章节或已处理文件的提交前检查。\n- 标准短书/章节处理：$300-$1,600，约 2034-10849 元人民币。适合短篇有声书、课程型内容或完整项目中的技术后期与章节输出。\n- PFH/finished hour 计价：可按每成品小时报价，但要把剪辑深度、底噪质量、是否逐字 proofing、返工次数、重录边界写清楚。ACX 资料也提醒，一小时成品音频通常不等于一小时工作，制作会消耗多倍时间。\n\n保守验证期每月 2-6 个 $40-$150 小包，毛收入可能约 80-900 美元，折合约 542-6103 元人民币；熟练后每月 2-5 个 $300-$800 项目，毛收入可能约 600-4000 美元，折合约 4069-27124 元人民币。前提是英文沟通、音频质量判断、交付模板、返工管理和获客稳定。净收入还要扣平台费、提现费、汇损、税费、软件订阅、监听设备、云存储、返工和跨时区沟通时间。\n\n## 入门门槛\n技能：英文邮件与报告、基础音频工程、DAW 操作、降噪与去点击、响度/峰值/RMS/noise floor 判断、MP3 CBR 编码、章节与样章规则、时间码标注、对有声书语速和人声自然度的审美。只会一键降噪不够，因为过度处理会让人声出现水声、金属感和听感疲劳。\n\n设备/软件：稳定电脑、封闭式监听耳机、可选入门监听音箱、安静环境、Reaper/Audition/Audacity 或同类 DAW、iZotope RX 或平价替代插件、ffmpeg/MediaInfo、LOUDNESS/peak/noise 检测工具、云盘、加密压缩包和模板化 QA 表格。新手可用 Audacity、Reaper 试用、ffmpeg 和公开示例音频学习，不必先买昂贵棚内设备。\n\n资质/合规：一般做技术后期不需要当地执业牌照，但不能提供版权法律意见、税务建议、平台官方认证、ACX 入驻担保或审核通过承诺。涉及儿童、医疗、心理、宗教、成人内容、政治敏感或真人访谈素材时，要提高保密和拒单标准。\n\n资金：轻资产启动，主要是电脑、耳机、软件/插件和学习时间。更重要的是作品集：可以用公版文本自录或客户授权样本做 before/after 片段、检测截图和匿名 QA 报告。\n\n渠道：Upwork、Fiverr、LinkedIn、独立作者社群、旁白员社群、出版服务商白标合作、ACX/Audible 相关内容营销、Reddit/论坛合规答疑。服务标题应具体，例如 ACX audiobook mastering and pre-submission QA、Audiobook chapter splitting and QC report、Fix ACX Audio Lab issues，不要写“guaranteed Audible approval”。\n\n时间成本：有音频基础的人，2-4 周可掌握 ACX 技术参数和工具链；做到稳定听辨底噪、爆音、口水音、压缩失真、过度降噪和章节一致性，通常需要 1-3 个月项目练习。英文客户沟通和返工边界会直接影响利润。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：优先用英文平台和作品集获客。Upwork/Fiverr 的优势是信任、托管和评价体系，缺点是抽佣和低价竞争；独立站/LinkedIn 的优势是可做白标长期单，缺点是信任建立慢。不要爬取邮箱群发恐吓式营销，不要声称自己是 ACX/Audible 官方审核人员。\n\n远程交付：使用客户授权素材，不要索要客户 ACX/Audible 主账号、税号、银行、2FA 或 KDP 登录。尽量让客户自行上传；如客户确需平台内操作，应使用客户创建的临时低权限账号或屏幕共享，并在合同里写清不承担平台最终审核和销售结果。ACX 账户资格、上传、税务、版税与最终审核责任只属于合格 rights holder/producer；中国境内服务商不得代称 ACX/Audible 官方或平台 Producer，ACX Audio Lab 截图也应由客户合规账号运行或在明确授权下完成，并在交付后删除原始书稿和声音文件。\n\n合同/发票或收款：平台订单遵守平台站内沟通、托管和禁止绕平台付款规则。独立客户应签英文 SOW，列明素材权利由客户保证、处理范围、文件数量、总时长、交付格式、检测工具、返工轮次、重录边界、保密、删除期限、付款节点、争议处理和责任排除。中国境内主体可按个体工商户/个人独资/有限责任公司或个人劳务路径收款并开票或出具 invoice，具体按所在地税务和银行要求处理。\n\n税务申报：中国居民个人从境内外取得所得依法纳税；个人从事有偿服务或经营活动取得收入，需要按劳务报酬或经营所得等口径申报，经营所得通常需预缴和年度汇算。跨境服务还可能涉及增值税免税/零税率、外汇入账和平台账单留存，需按主体、合同、客户所在地和服务消费地向主管税务机关确认，不能把小额外币收入等同于无需申报。\n\n平台规则：ACX 资料显示，rights holder 或 producer 上传文件，rights holder 审听批准后进入 QA；ACX QA 可能退回要求修改，并通常需要约 10 个工作日审核。ACX 还禁止未经授权的 TTS/AI 自动录音。中国境内服务商要把自己限定为音频技术处理，不承诺通过、不代客户隐瞒 AI/TTS 来源、不参与刷评、盗版搬运、伪造版权或冒充旁白。\n\n数据/隐私合规：音频包含真人声音，未出版书稿可能是商业秘密；访谈类内容还可能含个人信息。根据个人信息保护法的委托处理思路，应约定处理目的、期限、方式、个人信息种类、保护措施、双方权利义务和交付后删除/返还。实际执行中用加密传输、最小保留、项目结束删除、不开公开作品集、不把素材喂给未获授权的 AI 工具。\n\n语言和时区门槛：需要英文读写合同、报告和时间码说明；听辨英语口音、章节标题、credits 和明显错读会提升单价。北美客户常在中国早晚沟通，欧洲相对友好；可以用异步报告、短视频说明和检测截图减少会议。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：固定资产轻、交付标准可模板化、项目可按分钟或 finished hour 切小，且一个人能完成初检、修复、导出、报告和复测。它可以从“ACX failed file fix”这类小单验证，再扩展到旁白员长期后期、出版工作室白标 QC 和有声书完整后期。\n\n不完全适合点：完整长篇有声书非常耗时，且返工责任容易扩大到旁白错读、文本 proofing、版权、平台发布和客户销量焦虑。OPC 必须设定上限：只处理授权素材、只做技术 QC 或约定范围内编辑、只对自己处理过的文件负责；长书、逐字 proofing、多旁白剧、音乐/SFX、敏感内容和严重录音质量问题应单独报价或拒单。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：全流程可远程交付，设备可压缩到笔记本、耳机、软件和稳定网络；交付物是音频文件和 QA 报告，异步协作友好。旅居不同城市不影响大多数文件处理工作。\n\n不完全适合点：音频后期对监听环境和稳定大文件上传依赖较高，嘈杂住处、酒店网络和公共 Wi-Fi 会影响效率与保密。数字游民还要注意设备加密、素材备份、税务居民身份、平台 KYC、收款账户所在地和客户数据跨境处理。\n\n## 潜在收益、前提条件和成本结构\n低成本验证期：每月 2-6 个 $40-$150 小包，毛收入约 $80-$900，折合约 542-6103 元人民币。这个阶段重点是验证客户愿不愿为“提交前不返工”付费，而不是追求高月入。\n\n标准接单期：每月 2-5 个 $300-$800 项目，毛收入约 $600-$4000，折合约 4069-27124 元人民币。前提是能稳定处理 3-10 小时成品音频、有可展示匿名样本、能快速识别需要重录的问题、能守住返工边界。\n\n白标合作期：与旁白员、出版服务商或作者教练合作，可能按 finished hour 或包月 QC 收费。主要成本包括平台抽佣、收款手续费、汇损、税费、软件/插件、云存储、监听设备折旧、备份盘、样本制作、返工、客户沟通和学习。录音源质量越差，净利润越容易被返工吞掉。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 平台资格误导：ACX 对 rights holder/producer/payee 地区和税务资料有限制，中国境内个人不能把它宣传成“直接在 ACX 赚版税”的通道。\n2. 审核承诺风险：技术指标达标不等于 Audible/ACX 一定批准，更不等于上架、销售或版税收益。\n3. 版权和 AI 风险：客户必须拥有文本、录音、音乐和 SFX 权利；ACX 明确禁止未经授权的 TTS/AI 自动录音，服务商不能帮助客户隐瞒来源。\n4. 数据和保密风险：未出版书稿、作者真实姓名、旁白员声音、访谈内容和敏感主题都可能需要 NDA、加密传输和删除确认。\n5. 低价竞争风险：平台上有大量低价音频编辑，新手如果只卖“一键降噪”会陷入价格战，应卖清楚范围、检测证据和返工边界。\n6. 技术责任风险：过度降噪、错误压缩、章节漏切、采样率/CBR 导出错误都会造成客户返工甚至延期。\n7. 税务外汇风险：跨境收入、平台账单、提现记录、汇率折算和纳税申报要留痕。\n\n不适合人群：不愿戴耳机长时间精听的人；只想用 AI 一键处理、不愿理解音频指标的人；英文沟通弱、无法写时间码报告的人；喜欢承诺“包过审/包上架/包销量”的人；不重视版权、隐私和客户素材保密的人；居住环境长期嘈杂且网络不稳的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 做一个匿名样板包：用公版文本或自录 5-10 分钟英语样音，故意制作 RMS、peak、noise floor、room tone 和文件命名问题，再输出 before/after、检测截图和 QA 表格。\n2. 上架一个窄服务：标题限定为 30-minute ACX pre-submission audio QA and mastering，范围只含 1-3 个文件、一次检测报告、一次轻量修复和一次复测，明确不含逐字 proofing、重录、版权判断和审核通过承诺。\n3. 找 10 个目标客户试沟通：联系独立作者、旁白员或小型出版服务商，提供一页 checklist 和一个免费 2 分钟样本诊断，测试他们是否愿意为完整章节 QA 付费。\n\n## 点评 Agent 审稿\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制。报价按项目/小时样本列示，并说明平台费、收款费、汇损、税费、软件、返工和沟通时间，未包装成稳定月入。\n- 信息来源是否足够可信：够用。ACX 官方要求和账户限制可信；APA/AAP 能证明有声书市场需求真实；Upwork/Fiverr 只能作为报价波动样本，不能代表稳定获客。\n- 最该补充或提醒的一句话：ACX 账户资格、上传、税务、版税与最终审核责任只属于合格 rights holder/producer；中国境内服务商不得代称 ACX/Audible 官方或平台 Producer，ACX Audio Lab 截图也应由客户合规账号运行或在明确授权下完成，并在交付后删除原始书稿和声音文件。\n\n## 关键来源\n1. ACX Help：ACX audio submission requirements。用于核验章节、时长、RMS、peak、noise floor、room tone、MP3 CBR、AI/TTS 授权等提交要求。https://help.acx.com/s/article/what-are-the-acx-audio-submission-requirements\n2. ACX Help：Upload audio files。用于核验 rights holder / producer 上传流程、rights holder 批准和 QA 时间口径。https://help.acx.com/s/article/upload-audio-files\n3. ACX Help：Rights holder checklist。用于核验 ACX 地区、mailing address、TIN 和银行信息限制。https://help.acx.com/s/article/the-acx-rights-holder-s-audiobook-checklist\n4. ACX Help：Producer Checklist。用于核验 producer 地区资格、制作流程、15-minute checkpoint、QA 退回和可聘请工程师做 editing/mastering。https://help.acx.com/s/article/the-acx-producer-s-checklist\n5. ACX Help：Check your audio quality / Audio Lab FAQ。用于核验 Audio Lab 可检测项目和自动工具不能覆盖 noise floor、editing errors 等限制。https://help.acx.com/s/article/acx-audio-analysis-tool-faq-s\n6. ACX Help：How royalties work。用于核验 P4P、Royalty Share、Royalty Share Plus 和 producer 付款路径，不作为收益承诺。https://help.acx.com/s/article/how-royalties-work\n7. Audio Publishers Association：2026 Consumer & 2025 Sales Surveys Announcement。用于核验美国有声书销售收入、活跃标题和听众数据。https://www.audiopub.org/surveys\n8. Association of American Publishers：2025 StatShot Annual Report press release。用于核验美国出版业和 digital audio 收入背景。https://publishers.org/news/aap-statshot-annual-report-publishing-revenues-totaled-33-4-billion-for-calendar-year-2025/\n9. Upwork：Hire the Best Audio Editors。用于核验音频编辑小时费率、audiobook editing 项目样本和 ACX-compliant mastering 服务样本。https://www.upwork.com/hire/audio-editors/\n10. Fiverr：ACX audiobook editing/mastering gig sample。用于核验 0-30 分钟 $40 起和服务项样本，仅作报价样本。https://www.fiverr.com/mastercraft360/edit-and-master-your-audiobook-to-acx-or-audible-standard\n11. 新华网：Chinese yuan strengthens to 6.7809 against USD Tuesday。用于 2026-09-01 美元人民币折算口径。https://english.news.cn/20260901/0ae52bfe5cf443a89775cf321dad0eb8/c.html\n12. 国家税务总局：《中华人民共和国个人所得税法》。用于提示中国居民境内外所得、经营所得和申报义务。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n13. 中央网信办：《中华人民共和国个人信息保护法》。用于提示委托处理个人信息、处理目的/期限/方式/保护措施和删除/返还边界。https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "startedAt": "2026-09-01T16:03:00+08:00",
+      "finishedAt": "2026-09-01T16:06:40+08:00",
+      "duration": "3m 40s",
+      "sourceThread": "automation-3",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "audiobook",
+        "audio-production",
+        "usa-uk-canada-ireland"
+      ],
+      "nextSteps": [
+        "用公版文本或自录 5-10 分钟英语样音，做 before/after、检测截图和 QA 表格。",
+        "上架 30-minute ACX pre-submission audio QA and mastering 窄服务，限定文件数、返工次数和责任边界。",
+        "联系 10 个独立作者、旁白员或小型出版服务商，用一页 checklist 和免费 2 分钟诊断验证付费意愿。"
+      ],
+      "artifacts": [
+        {
+          "label": "ACX Help - Audio submission requirements",
+          "path": "https://help.acx.com/s/article/what-are-the-acx-audio-submission-requirements"
+        },
+        {
+          "label": "ACX Help - Upload audio files",
+          "path": "https://help.acx.com/s/article/upload-audio-files"
+        },
+        {
+          "label": "ACX Help - Rights holder checklist",
+          "path": "https://help.acx.com/s/article/the-acx-rights-holder-s-audiobook-checklist"
+        },
+        {
+          "label": "ACX Help - Producer Checklist",
+          "path": "https://help.acx.com/s/article/the-acx-producer-s-checklist"
+        },
+        {
+          "label": "ACX Help - Audio Lab FAQ",
+          "path": "https://help.acx.com/s/article/acx-audio-analysis-tool-faq-s"
+        },
+        {
+          "label": "ACX Help - How royalties work",
+          "path": "https://help.acx.com/s/article/how-royalties-work"
+        },
+        {
+          "label": "Audio Publishers Association - 2026 Consumer & 2025 Sales Surveys Announcement",
+          "path": "https://www.audiopub.org/surveys"
+        },
+        {
+          "label": "Association of American Publishers - 2025 StatShot Annual Report",
+          "path": "https://publishers.org/news/aap-statshot-annual-report-publishing-revenues-totaled-33-4-billion-for-calendar-year-2025/"
+        },
+        {
+          "label": "Upwork - Hire Audio Editors",
+          "path": "https://www.upwork.com/hire/audio-editors/"
+        },
+        {
+          "label": "Fiverr - ACX audiobook editing/mastering sample",
+          "path": "https://www.fiverr.com/mastercraft360/edit-and-master-your-audiobook-to-acx-or-audible-standard"
+        },
+        {
+          "label": "Xinhua - USD/CNY central parity 2026-09-01",
+          "path": "https://english.news.cn/20260901/0ae52bfe5cf443a89775cf321dad0eb8/c.html"
+        },
+        {
+          "label": "国家税务总局 - 中华人民共和国个人所得税法",
+          "path": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html"
+        },
+        {
+          "label": "中央网信办 - 中华人民共和国个人信息保护法",
+          "path": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm"
+        }
+      ],
+      "sourceFile": "runs/2026-09-01/niche-profit-industry.json"
+    },
     {
       "date": "2026-08-31",
       "taskId": "niche-profit-industry",
