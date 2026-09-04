@@ -17,9 +17,184 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">40 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">41 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-09-04.html">2026-09-04</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 B2B/SaaS/服务公司的 CRM 数据清洗、去重、字段映射与导入 QA 服务，属于中国境内可做的海外市场。它适合有英文、表格、CRM 后台和数据隐私边界意识的 OPC/数字游民小规模验证，但必须限定为客户授权下的数据整理和导入 QA，不承接来源不明线索、垃圾邮件名单、隐私法律意见或销售增长承诺。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+今天的行业是面向海外小型 B2B、SaaS、服务公司和销售团队的 CRM 数据清洗、去重、字段映射与导入 QA 服务。它不是“倒卖客户名单”，也不是外呼获客，而是把客户已经合法持有的联系人、公司、交易、线索、活动记录、备注、标签和自定义字段，从 CSV、Excel、Google Sheets、旧 CRM 或多个分散表格中整理出来，按 HubSpot、Pipedrive、Salesforce、Zoho 等 CRM 的字段规则清洗、映射、去重、试导入、检查错误文件，并交付导入记录和问题清单。
+
+它小众，是因为它处在虚拟助理、数据清洗、CRM 管理员、RevOps 和销售运营之间：很多小公司知道 CRM 脏数据会影响销售协作，但又请不起全职 RevOps 或实施顾问；而普通数据录入人员不一定懂 CRM 对象、唯一键、联系人-公司关联、pipeline 阶段、字段类型、导入错误和权限边界。服务价值来自“减少脏数据和错误导入”，不是承诺客户销售增长。
+
+官方资料能核验这个需求真实存在。HubSpot 官方知识库说明，联系人会用 Email 去重，公司会用 Company domain 去重；导入时可用 Record ID 或自定义唯一值属性辅助去重，若缺少 Email、domain 或其他唯一标识，每一行可能被当成新记录导入。HubSpot Imports API 文档也显示，导入 CRM records and activities 需要文件、导入操作和 column mappings，可设置 create/update/upsert。Pipedrive 官方文档说明导入时可识别并合并重复项，people 会按 organization、phone、email 等字段判断，organizations 可按 address 处理，而 deals 没有通用 duplicate identifier。Salesforce Help 显示 Data Import Wizard 可从 CSV 等文件导入，单次最多 50,000 records；Salesforce Duplicate Rules 和 Matching Rules 也可能标记或阻止重复数据。
+
+## 目标市场
+
+目标市场：中国境内可做的海外英语市场，重点是美国、加拿大、英国、澳大利亚和欧盟英语客户中的小型 B2B SaaS、咨询公司、代理商、本地服务公司、招聘/培训服务商、轻量销售团队和从表格迁移到 CRM 的创业团队。
+
+中国境内个人或 OPC 可以承接，但不能把海外报价样本直接等同于国内现实。合理承接方式是：通过 Upwork、Fiverr、LinkedIn、独立站、英文案例页、CRM 社群、营销代理转介绍获客；以客户自有账号、受限协作者权限或脱敏样本交付；用平台订单、SOW、NDA/DPA、发票和交付清单明确服务范围；通过自由职业平台托管、Payoneer、PayPal、Wise 或公司账户等合规通道收款；按中国境内个人、个体工商户或公司主体的实际情况依法申报收入和纳税。
+
+## 典型需求场景和客户是谁
+
+典型客户包括：
+
+1. 从 Google Sheets/Excel 迁移到 HubSpot 或 Pipedrive 的小型销售团队，需要整理联系人、公司、deal、owner、stage、source、notes 等字段。
+2. 收购、换 CRM、换营销工具后的 SaaS/代理商，多个来源的数据字段不一致，重复联系人、旧邮箱、空公司名、错误国家/行业标签较多。
+3. 使用 HubSpot 免费版或 starter plan 的创始人团队，CRM 里堆了几千条 lead，但重复、无 owner、生命周期阶段混乱，销售无法跟进。
+4. 营销代理、网站开发者或 CRM 顾问，把基础数据清洗和导入 QA 分包给懂表格和 CRM 后台的远程执行者。
+5. 即将上线新 pipeline 的服务公司，需要在正式导入前做 100-300 条样本导入、错误截图、字段映射表和回滚/修复建议。
+
+不应承接的客户包括：来源不明的冷邮件名单卖家、要求清洗爬取个人邮箱用于群发的人、要求绕过退订/隐私规则的人、要求你用客户数据训练模型或上传到不明 AI 工具的人。
+
+## 行业如何运作：参与方和工作流
+
+典型参与方包括客户方 owner 或 sales ops、CRM 平台、旧系统/表格、外包服务商、可能存在的营销代理或 CRM 顾问。中国境内 OPC 的定位应是“授权数据整理与导入 QA 供应商”，不是数据控制者、线索卖家、平台官方代理或法律合规顾问。
+
+典型工作流：
+
+1. 范围确认：确认 CRM 平台、对象类型、记录数量、字段数量、来源系统、是否含个人数据、是否需要保留 notes/activities、是否需要关联 contacts-companies-deals、是否有目标字段字典。
+2. 授权和数据边界：签订单/SOW/NDA/DPA；要求客户确认数据来源合法；优先使用脱敏样本；如需后台权限，只接受最小权限和临时账号，不接收主账号、支付权限或 2FA 恢复码。
+3. 数据盘点：检查列名、字段类型、空值、重复邮箱、重复域名、电话格式、国家/州、省市、owner、pipeline stage、日期格式、货币、source、consent/status 等。
+4. 清洗和映射：制作 field mapping sheet，把源字段映射到目标 CRM 属性；统一日期、电话、国家、公司域名、stage 名称；标记无法自动判断的冲突记录。
+5. 样本导入和 QA：先做小批量测试导入，检查唯一键、关联、字段类型、必填项、错误文件、跳过记录、重复规则和导入历史。
+6. 正式导入或交付客户导入包：根据授权由客户自行点击导入，或在客户授权下执行；交付 clean CSV、field mapping、duplicate review、import error log、截图和未决问题。
+7. 收尾：确认客户验收，删除本地数据副本，移除临时权限，保留必要的合同、发票、交付记录和收款流水用于税务和争议处理。
+
+## 盈利模式和报价口径
+
+收入来自固定小包、按记录数量计费、按小时计费、迁移前数据清洗包、导入 QA 报告包和月度 CRM 数据卫生维护包。
+
+公开服务报价只能作为市场样本，不代表稳定收入。Fiverr 上的 HubSpot migration / CRM cleanup / data import 样本显示，一个 Pro 服务把“CRM Cleanup up to 1,000 records, duplicate removal and property mapping”标为 80 美元，5,000 records 的 migration + cleanup 标为 300 美元，deep cleanup / overhaul 标为 550 美元；另一个 HubSpot CRM migration 样本显示 45 / 110 / 220 美元档位。Fiverr Payment Terms 显示 seller 完成订单后 credited earnings 为 purchase amount 的 80%。Upwork 官方帮助页显示 freelancer service fee 按合同为 0%-15%，合同开始后费率锁定。Wise 2026-09-04 USD/CNY 中间价约 1 USD = 6.718 CNY。
+
+按 1 USD = 6.718 元人民币粗算：
+
+- 35-80 美元小包约 235-537 元人民币毛收入，常见范围是小批量 contact/company 清洗、字段映射和导入前检查。
+- 100-300 美元标准包约 672-2015 元人民币毛收入，适合 1000-5000 条记录的清洗、去重建议、字段映射和一次导入 QA。
+- 500-800 美元项目约 3359-5374 元人民币毛收入，通常要求多对象关联、旧 CRM 迁移、错误修复和更长沟通，不适合新手直接承诺。
+- 100-300 美元/月维护包约 672-2015 元人民币毛收入，可做月度重复数据检查、字段卫生报告、导入模板维护和轻量培训。
+
+净收入要扣除平台抽佣、跨境收款费、汇损、软件订阅、网络工具、税费、沟通和返工时间。若数据很脏、字段无字典、客户频繁改需求，实际时薪会明显下降。报价应写明记录数量、对象数量、字段数量、导入轮次、修订次数、是否包含 notes/activities、是否包含自动化和 dashboard，避免“无限清洗”。
+
+## 入门门槛
+
+技能门槛：英文读写和异步沟通；Excel/Google Sheets 熟练度；CSV 编码、日期格式、查重、VLOOKUP/XLOOKUP、数据透视或基础脚本能力；HubSpot/Pipedrive/Salesforce 至少一个平台的 contacts、companies、deals、properties、import history、duplicate rules、permissions 基础；能写 field mapping、QA report 和风险说明。
+
+设备/软件：稳定电脑、可靠网络、表格软件、截图/录屏工具、密码管理器、加密存储或受控云盘。可以使用 OpenRefine、Google Sheets、Excel、Airtable、HubSpot/Pipedrive/Salesforce 免费或试用账号做 demo。处理真实客户数据时不应随意上传到公开 AI 工具或不明第三方清洗网站。
+
+资质/合规：通常不需要当地牌照，因为不提供法律、税务、金融、医疗或隐私合规意见；但需要合同、保密、数据处理边界和平台规则意识。涉及 EU/UK 个人数据时，客户可能要求 DPA、subprocessor disclosure、data deletion proof 和安全措施。涉及中国境内主体处理个人信息，也要遵守个人信息保护法中关于受托处理、必要性、约定范围和删除/返还的要求。
+
+资金门槛：初期主要是学习时间和工具成本。可先用免费 CRM 账号做 demo，不必购买大型迁移工具；但稳定承接后可能需要密码管理器、加密云盘、项目管理、专业邮箱、Upwork/Fiverr 经营成本和记账报税服务。
+
+渠道门槛：Upwork、Fiverr、LinkedIn、英文独立站、CRM agency 分包、HubSpot/Pipedrive 社群都可试。难点是信任：客户把 CRM 数据给你，核心顾虑不是价格，而是数据安全、误导入、可追溯和返工边界。
+
+时间成本：熟悉一个 CRM 的基础导入和去重规则约需 1-2 周；做出 demo、模板和 QA checklist 约需 1 周；第一单可能因为权限、数据字典、字段类型和客户确认拉长，应把交付节奏拆成“样本诊断 - 清洗映射 - 样本导入 - 正式交付”。
+
+## 中国境内承接海外市场的合规执行
+
+跨境获客：可以通过自由职业平台、LinkedIn、独立站、CRM 社群和代理商转介绍获客。不得刷单刷评价、虚构认证、冒充 HubSpot/Pipedrive/Salesforce 官方顾问；不得购买、转售或清洗来源不明的邮箱名单；冷邮件获客要遵守目标地区反垃圾邮件和退订规则。
+
+远程交付：优先使用脱敏样本和客户创建的临时受限账号。需要真实数据时，应限定字段、数量、目的、存储位置、删除时间和授权人员。避免在公共 Wi-Fi、共享电脑或个人网盘中处理 CRM 导出文件。不要索要客户主账号、付款资料、恢复码或全局管理员权限。
+
+合同/发票/收款：合同或平台订单应写明记录数量、对象类型、字段范围、导入轮次、验收标准、返工次数、客户负责数据来源合法和业务判断、服务商负责技术整理和报告。收款可走 Upwork/Fiverr 托管，也可用合规跨境收款通道或公司账户；保留订单、SOW、发票、交付物和流水。
+
+税务申报：中国境内个人、个体工商户或公司承接境外服务收入，应按主体性质依法申报。外币收入折算、经营所得或劳务报酬、增值税/企业所得税等问题应按实际主体和税务机关要求处理，必要时找专业会计，不要把平台余额当作“无需申报”。
+
+平台规则：Upwork 和 Fiverr 都对站内交易、费用、付款和争议有规则。Fiverr 条款显示平台订单完成后卖家收入为订单金额的 80%，且不得诱导站外付款；Upwork 官方说明 freelancer service fee 为 0%-15%。报价时要把抽佣和提现成本计入，不应要求客户违规绕开平台。
+
+数据/隐私合规：CRM 数据通常含姓名、邮箱、电话、公司、职位、沟通记录、购买意向、地区和来源，属于可识别自然人的个人数据或商业敏感数据。欧盟委员会对 GDPR controller/processor 的说明强调，委托处理需要合同或其他法律行为，processor 只能按 documented instructions 处理，并需保密和安全措施。中国个人信息保护法也要求受托方按约定处理，不得超范围处理，合同终止后返还或删除，未经同意不得转委托。因此应签 NDA/DPA、最小化下载、记录删除证明、不要转包、不要把数据用于训练或营销。
+
+语言和时区门槛：英文要能写清楚字段问题、重复判断、风险、客户决策项和交付限制。欧美客户多为异步沟通，但导入窗口可能在客户工作时间或上线前夜，需要约定响应时段。对 EU/UK 客户，还要能理解 DPA、processor、subprocessor、data deletion 等基础术语。
+
+## 为什么适合或不完全适合 OPC/一人公司
+
+适合点：固定资产轻；可从 500-1000 条记录和单一 CRM 平台开始；交付物可模板化；项目可远程完成；不需要本地门店、库存或实体设备；一人公司可把定位做窄，如“HubSpot CSV import cleanup for small B2B teams”。
+
+不完全适合点：数据责任重，误删、误合并、字段错映射会直接影响客户业务；客户需求容易扩张到 CRM 战略、自动化、报表、销售流程、隐私合规和营销运营；一人公司需要严格拒绝大规模复杂迁移、含敏感行业数据、要求站外违规付款或来源不明 lead list 的项目。
+
+## 为什么适合或不完全适合数字游民/远程工作者
+
+适合点：电脑、网络、表格、CRM 后台和异步沟通即可完成；交付可用截图、录屏、CSV、mapping sheet 和 QA report；项目粒度可从几百条记录开始；不需要现场交付。
+
+不完全适合点：数据安全要求高，不适合在不稳定网络、公共电脑、共享住宿或未加密设备上处理；部分客户会要求固定时区窗口、DPA、安全问卷或公司邮箱；大型导入可能要求长时间在线、客户屏幕共享和即时回滚配合。
+
+## 潜在收益、前提和成本结构
+
+更合理的收益假设如下：
+
+- 试单阶段：每月 1-3 个 35-100 美元小包，毛收入约 235-2015 元人民币。目标是积累脱敏案例、评价和模板，不是高利润。
+- 稳定阶段：每月 2-5 个 100-300 美元标准包，毛收入约 1344-10077 元人民币。前提是已有清晰服务包、英文沟通稳定、能控制返工边界。
+- 小团队阶段：1-3 人分工字段映射、清洗、CRM 后台 QA 和客户沟通，可承接 500-800 美元以上项目，但需要更强项目管理、保密、权限和错误恢复机制。
+
+成本结构包括平台费、提现和汇损、税费、工具订阅、CRM 学习、沟通、返工、数据备份/删除、争议处理和机会成本。任何“清洗一次就月入数万”的包装都不可信。
+
+## 主要风险、合规注意事项和不适合人群
+
+主要风险：
+
+1. 数据来源风险：来源不明的冷邮件名单、爬虫数据或购买名单可能涉及隐私、反垃圾邮件和平台违规，不应承接。
+2. 权限和误操作风险：后台导入可能覆盖字段、合并错误记录、创建重复对象或破坏关联，应先样本导入、备份、截图并让客户确认。
+3. 隐私风险：CRM 数据含个人信息和商业机密，应最小化下载、加密存储、签 NDA/DPA、交付后删除，不转包不外泄。
+4. 合规越界风险：不要出具 GDPR/CAN-SPAM/CCPA/PIPL 法律意见，不替客户判断营销同意、合法权益或数据保留期限。
+5. 收益夸大风险：公开报价是毛价样本，平台抽佣、汇损、税费、返工和沟通会吞掉利润。
+6. 客户管理风险：客户字段字典缺失、业务规则不清、sales stage 各说各话，会导致项目拖延。必须要求客户指定决策人。
+
+不适合人群：英文沟通薄弱者；不愿写交付边界的人；没有数据安全习惯的人；喜欢用未经授权 AI 工具处理客户数据的人；想通过倒卖名单、批量群发或承诺销售额获客的人；对表格、CSV、字段映射和 CRM 后台缺乏耐心的人。
+
+## 新手可验证的 3 个低成本入门步骤
+
+1. 做一个脱敏 demo：用 HubSpot 或 Pipedrive 免费/试用账号，准备 300-500 条虚拟联系人和公司数据，故意加入重复邮箱、重复域名、空字段、错误日期和 stage，完成清洗、字段映射、样本导入和 QA 截图。
+2. 发布一个窄服务包：只卖“最多 1000 条 HubSpot/Pipedrive contact/company CSV 清洗 + duplicate review + field mapping + import QA report”，限定 1 个 CRM、2 个对象、1 次修订、客户负责数据来源合法。
+3. 找 10 个反馈对象：联系海外小型 SaaS、CRM agency、销售顾问或营销代理，提供一次免费样本诊断或低价试单，换取脱敏前后对比、报价反馈和客户最担心的问题清单。
+
+## 点评 Agent 审稿
+
+本次已启动独立点评 Agent 审稿。审稿结论：建议通过。题目真实、小众、可远程执行，边界设定比普通“CRM 咨询/数据清洗”更稳，适合作为一人公司小包验证。
+
+- 中国境内承接海外市场适配度：4/5
+- OPC/一人公司适配度：4/5
+- 数字游民适配度：4/5
+- 合规风险等级：中
+- 跨境执行风险等级：中
+- 收益口径是否克制：基本克制，无明显夸大；但 Fiverr/Upwork 价格应明确为平台毛报价样本，还要扣平台费、汇损、税费、工具订阅、沟通和返工时间。
+- 信息来源是否足够可信：足够可信。HubSpot、Pipedrive、Salesforce、欧盟委员会、PIPL、Upwork、Fiverr、Wise 都是合适来源；Salesforce 原链接抓取显示加载异常，但同域官方 Help 可核到 Data Import Wizard、CSV 导入和 Duplicate Rules/Matching Rules 逻辑。
+- 最该补充或提醒的一句话：服务商应明确作为客户授权下的 processor/受托方，只按书面指令处理数据，签 NDA/DPA，使用最小权限，交付后删除或返还数据，不转委托、不用客户数据训练模型，也不替客户判断名单来源或营销合规。
+
+## 关键来源
+
+1. HubSpot Knowledge Base - Deduplicate records in HubSpot: https://knowledge.hubspot.com/records/deduplication-of-records
+2. HubSpot Developers - Imports API: https://developers.hubspot.com/docs/api-reference/latest/crm/imports/guide
+3. Pipedrive Knowledge Base - How to avoid duplicates during an import: https://support.pipedrive.com/en/article/how-to-avoid-duplicates-during-an-import
+4. Salesforce Help - Salesforce Data Import: https://help.salesforce.com/s/articleView?id=sf.importing.htm
+5. Salesforce Help - Duplicate data blocks import: https://help.salesforce.com/s/articleView?id=000391118&amp;type=1&amp;language=en_US
+6. European Commission - Can someone else process data on my organisation&#39;s behalf?: https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations/controllerprocessor/can-someone-else-process-data-my-organisations-behalf_en
+7. Personal Information Protection Law of the People&#39;s Republic of China: https://en.spp.gov.cn/2021-12/29/c_948419.htm
+8. Fiverr HubSpot CRM cleanup pricing sample: https://www.fiverr.com/luizapor/do-hubspot-migration-hubspot-crm-cleanup-data-import
+9. Fiverr HubSpot CRM migration pricing sample: https://www.fiverr.com/leoniebecker6/migrate-your-data-to-hubspot-crm-safely-and-accurately
+10. Fiverr Payment Terms: https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service
+11. Upwork Freelancer Service Fee: https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee
+12. Wise USD/CNY 2026-09-04 exchange rate sample: https://wise.com/us/currency-converter/usd-to-cny-rate/history/04-09-2026</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>04/09/2026, 16:03</p>
+        <p class="meta-line"><span>Finished</span>04/09/2026, 16:07</p>
+        <p class="meta-line"><span>Duration</span>4m</p>
+        
+        <p class="meta-line"><span>File</span><code>runs/2026-09-04/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>us</span><span>english-market</span><span>crm-data-ops</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用 HubSpot 或 Pipedrive 免费/试用账号做 300-500 条脱敏虚拟数据的清洗、字段映射、样本导入和 QA 截图 demo。</li><li>发布一个最多 1000 条 contact/company CSV 清洗、duplicate review、field mapping、import QA report 的窄服务包，明确 1 个 CRM、2 个对象、1 次修订。</li><li>联系 10 个海外小型 SaaS、CRM agency、销售顾问或营销代理，用免费样本诊断或低价试单验证真实痛点和报价。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://knowledge.hubspot.com/records/deduplication-of-records">HubSpot Deduplicate Records</a></li><li><a href="https://developers.hubspot.com/docs/api-reference/latest/crm/imports/guide">HubSpot Imports API</a></li><li><a href="https://support.pipedrive.com/en/article/how-to-avoid-duplicates-during-an-import">Pipedrive Avoid Duplicates During Import</a></li><li><a href="https://help.salesforce.com/s/articleView?id=sf.importing.htm">Salesforce Data Import</a></li><li><a href="https://help.salesforce.com/s/articleView?id=000391118&amp;type=1&amp;language=en_US">Salesforce Duplicate Import Rules</a></li><li><a href="https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations/controllerprocessor/can-someone-else-process-data-my-organisations-behalf_en">European Commission GDPR Processor Guidance</a></li><li><a href="https://en.spp.gov.cn/2021-12/29/c_948419.htm">Personal Information Protection Law of PRC</a></li><li><a href="https://www.fiverr.com/luizapor/do-hubspot-migration-hubspot-crm-cleanup-data-import">Fiverr CRM Cleanup Pricing Sample</a></li><li><a href="https://www.fiverr.com/leoniebecker6/migrate-your-data-to-hubspot-crm-safely-and-accurately">Fiverr CRM Migration Pricing Sample</a></li><li><a href="https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service">Fiverr Payment Terms</a></li><li><a href="https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee">Upwork Freelancer Service Fee</a></li><li><a href="https://wise.com/us/currency-converter/usd-to-cny-rate/history/04-09-2026">Wise USD/CNY Exchange Rate Sample</a></li></ul></div>
+    </article>
+  
     <article class="run-card">
       <div class="run-card-header">
         <div>
@@ -5986,7 +6161,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
   </div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 03/09/2026, 16:07</span>
+      <span>Generated 04/09/2026, 16:08</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
