@@ -1,0 +1,72 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-09-08T16:02:56+08:00",
+  "finishedAt": "2026-09-08T16:14:30+08:00",
+  "summary": "今天的小众行业是面向海外 Shopify/DTC 小卖家的 Google Merchant Center 商品 Feed 诊断、数据清洗与上架前 QA 服务，属于中国境内可做的海外英语市场。它适合懂英文、电商商品数据、Shopify/WooCommerce 后台和平台规则边界的 OPC/数字游民小规模验证，但必须限定为商品数据质量 QA 和字段修复建议，不承诺 Google 审核通过、账号解封、广告 ROAS、排名或销量。",
+  "details": "## 行业是什么，为什么小众\n\n今天的行业是面向海外 Shopify/DTC 小卖家的 Google Merchant Center 商品 Feed 诊断、数据清洗与上架前 QA 服务。\n\n它不是代投广告，也不是“包过 Merchant Center 审核”或“解封账号”。服务者的核心工作，是在客户授权下检查 Google Merchant Center、Shopify Google & YouTube 渠道、商品 CSV/XML/API 数据源和商品落地页之间的字段一致性，找出 title、description、link、image_link、price、availability、brand、gtin、mpn、item_group_id、color、size、shipping、returns、Google product category 等字段的问题，并输出可执行的修复清单、字段映射表、截图证据和复测报告。\n\n它小众，是因为很多独立站卖家知道要投 Google Shopping 或 Performance Max，却不理解 Merchant Center 的商品数据规范。问题常见但分散：变体属性缺失、GTIN/MPN/brand 写错、图片有水印或低质量、价格/库存和落地页不一致、商品分类错误、运输和退货设置不完整、Shopify 同步覆盖旧 Feed、网站信任信息不足或触发 misrepresentation 风险。广告代理未必愿意接这种细碎的商品数据清理，小卖家也未必有内部运营能系统排查，于是形成一类可远程交付的技术 QA 小服务。\n\n## 目标市场\n\n目标市场：中国境内可做的海外市场，主要面向英语市场的 Shopify、WooCommerce、BigCommerce、Webflow Commerce、小型 DTC 独立站、跨境电商小团队、小型 Google Ads 代理商和电商运营顾问。\n\n为什么适合中国境内验证：交付物主要是表格、后台截图、字段映射、商品页核对、Merchant Center 问题复核和异步报告，不需要海外门店，不需要本地仓储，不需要当地广告牌照，也不需要代表客户处理真实订单。中国境内个人、一人有限公司、个体工商户或小团队可以通过 Upwork、Fiverr、LinkedIn、独立站案例页、Google Ads/Shopify 社群和代理商分包获取小单，远程完成技术诊断。\n\n不能把海外报价和平台案例直接当作中国现实。中国境内承接时，应保留合同、平台订单、客户授权、交付记录、收款凭证和税务申报材料；只承接商品数据和技术配置范围，不做法律意见、广告效果承诺、账号解封承诺或灰产商品包装。\n\n## 典型需求场景和客户是谁\n\n1. Shopify 店主安装 Google & YouTube 渠道后，产品无法正常同步或部分商品显示 not eligible，需要有人对照 Merchant Center 问题、Shopify 商品字段和落地页逐项排查。\n2. DTC 服装/配饰店有大量 size、color、age group、gender、item_group_id 变体字段错误，广告能开但商品覆盖率低，需要字段整理和批量 QA。\n3. 小型 WooCommerce 店用插件导出 Feed，价格、库存、图片和落地页不一致，Merchant Center 出现 disapproval 或 limited eligibility。\n4. Google Ads 代理商擅长投放，但不愿花时间清理客户几百个 SKU 的商品标题、描述、分类、GTIN 和 custom labels，于是外包 Feed 清理。\n5. 新独立站准备开 Google Shopping，需要一次上线前检查：域名、联系方式、退款政策、配送信息、商品页结构化数据、Feed 字段和 Merchant Center 权限。\n6. 多国家/多语言站点准备扩展目标国家，需要核对币种、语言、运费、退货、税费和落地页一致性。此类项目复杂度高，新手应先做单一国家小目录。\n\n## 行业如何运作：参与方和工作流\n\n典型参与方包括海外电商卖家、Shopify/WooCommerce 等建站平台、Google Merchant Center、Google Ads、商品 Feed 插件或 API、广告代理商、网站开发者、客服/运营人员、支付和物流设置方，以及远程商品数据 QA 服务商。\n\n标准工作流：\n\n1. 范围确认：确认目标国家、店铺平台、商品数量、商品类目、广告目标、是否已有 Merchant Center、是否使用 Shopify Google & YouTube 渠道或第三方 Feed 插件、是否只做诊断还是包含字段修复建议。\n2. 授权和权限：客户通过 Merchant Center、Shopify 或屏幕共享提供最小必要权限。优先使用 read-only 诊断；如需修改商品数据，明确变更范围和回滚方式。避免索要 Google/Shopify 主账号、支付、税务、订单、客户消息和广告预算权限。\n3. 问题导出：读取 Merchant Center 的 Needs attention / product diagnostics、商品状态、数据源、处理后的商品字段和 issue details，并保存截图或导出表。\n4. 字段核对：对照 Google 商品数据规范检查 ID、标题、描述、链接、图片、价格、库存、商品标识符、变体、分类、运输和退货等字段；同时核对落地页、结构化数据和 checkout 中显示的信息是否一致。\n5. 平台同步检查：如果是 Shopify，核对 Google & YouTube 渠道要求、目标国家/语言/币种、域名 claim、商品可售渠道、分类、唯一产品标识符和变体选项。提醒客户：连接现有 Merchant Center 时，Shopify 同步可能覆盖已有产品 Feed。\n6. 修复建议或批量表：输出问题优先级、字段映射表、SKU 清单、标题/描述模板、变体字段规则、图片问题、落地页不一致项和客户需自行决策的问题。\n7. 复测报告：客户或服务者在授权范围内更新后，等待系统处理，再复核商品状态、截图留证，明确哪些已修复、哪些待 Google 重新抓取或人工审核、哪些属于政策/法律/业务问题而非技术 QA。\n\n## 盈利模式和报价口径\n\n收入来自一次性 Feed audit、Merchant Center setup checklist、小目录字段清理、批量 SKU QA、Shopify Google & YouTube 同步排错、商品标题/分类/变体字段模板、图片和落地页一致性检查、月度商品数据健康监控。这里按 2026-09-08 USD/CNY 约 6.71 粗略折算，所有金额均为市场样本和毛收入假设，不代表稳定成交或净利润。\n\n公开报价样本显示，Upwork 在 2026 年给出的 Google Shopping freelancer 项目成本口径中，Feed audit and Merchant Center setup 约 500-1500 美元/项目，Feed remediation and disapproval cleanup 约 2000-5000 美元/项目，ongoing performance and catalog management 约 800-3000 美元/月。Fiverr 2026 年 Google Merchant expert 成本说明中，基础设置和 Feed 创建约 40-80 美元，中阶优化和 Campaign launch 约 90-150 美元，高阶策略和持续优化可到 180-250 美元以上，并可见若干 Google Merchant / Shopping / feed fix 服务从 40、50、70、80 美元起。\n\n更克制的中国境内 OPC 早期报价假设：\n\n- 小目录诊断包：45-180 美元，约 302-1208 元人民币。适合 20-80 个 SKU，只做问题读取、字段抽样、截图和优先级清单，不代改后台。\n- 标准 Feed QA 包：180-520 美元，约 1208-3489 元人民币。适合 80-300 个 SKU，包含字段映射表、批量问题分类、标题/分类/变体规则建议、一次复测。\n- Shopify 同步排错包：120-350 美元，约 805-2349 元人民币。适合 Google & YouTube 渠道连接、域名/目标国家/商品可售渠道/基本字段检查，不含广告投放。\n- 月度商品数据健康监控：150-700 美元/月，约 1007-4697 元人民币。适合每月固定商品上新、Feed 问题复核和轻量报告，不包含全天候响应或 ROAS 优化。\n\n成本包括学习 Merchant Center 和 Shopify 规则、表格处理、平台抽佣、跨境收款费、汇损、税费、英文沟通、返工、截图报告时间、必要工具订阅和数据安全管理。低价平台竞争激烈，新手如果把范围写成“修复所有问题直到通过”，很容易陷入无边界返工。\n\n## 入门门槛\n\n技能门槛：英文读写、Google Merchant Center 商品数据规范、Shopify/WooCommerce 商品字段、CSV/Google Sheets、基础 HTML/结构化数据、图片链接和可抓取性、商品标题和类目规则、错误排查文档能力。懂 Google Ads 会加分，但新手应避免把 Feed QA 包装成投放代运营。\n\n设备/软件：普通电脑、稳定网络、Google Sheets 或 Excel、浏览器、截图工具、Shopify/WooCommerce 测试店或 demo 数据、Merchant Center 学习账号或客户授权账号、CSV 编辑工具。进阶可使用 Screaming Frog、Lighthouse、Merchant API、Feed 插件和简单脚本做批量检查，但起步不必须。\n\n资质/合规：通常不需要当地广告牌照，因为这是客户授权下的商品数据 QA 和技术配置服务。但必须避开假货、侵权、仿牌、药品、医疗、金融、成人、武器等高风险品类；不提供法律意见；不承诺 Google 审核、账号恢复、排名、免费展示、点击量、ROAS 或销量。\n\n资金门槛：轻资产启动，主要成本是学习、样例制作和可能的工具订阅。可以先用自建测试店和公开 demo 商品做一套问题清单模板，再以小目录诊断包验证需求。\n\n渠道门槛：Upwork、Fiverr、Contra、LinkedIn、Shopify Partner/Google Ads 社群、Reddit 合规社区、独立站案例页、小型代理商分包都可尝试。获客话术应强调 Merchant Center product feed audit、Shopify Google channel troubleshooting、SKU data QA、disapproval issue report，不写“guaranteed approval”“suspension fix guaranteed”“instant ROAS”。\n\n时间成本：熟悉 Google 商品数据规范和 Shopify 渠道要求约需 1-2 周；搭建一套 50-100 SKU demo、QA checklist、报告模板和报价范围约需 1 周；真实项目稳定交付通常需要 1-2 个月，因为客户后台、数据源、商品类目、政策风险和返工边界差异很大。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：可以用自由职业平台、LinkedIn 私信、英文独立站、内容案例、Shopify/Google Ads 社群和广告代理分包获客。不要刷平台评价、冒充 Google Partner、使用客户案例未脱敏截图、承诺审核通过或接“解封包过”需求。遇到仿牌、虚假折扣、不可交付商品、隐藏身份、缺少政策页或诱导性落地页，应拒绝或只做风险提示，不参与包装。\n\n远程交付：优先让客户导出 Merchant Center 问题、商品 CSV、Shopify 商品数据和落地页 URL，再离线分析并交付报告。确需后台访问时，用客户邀请的 read-only 或 standard 权限，并记录变更；不接管主账号、付款方式、广告预算、税务设置和真实订单。Google 官方权限文档显示 Merchant Center 支持 read-only、standard、admin 等不同访问层级，适合最小权限协作。\n\n合同/发票或收款：自由职业平台订单应遵守平台沟通、托管、交付和退款规则；独立客户用英文 SOW 写清 SKU 数量、目标国家、平台、数据源、检查字段、修订次数、交付物、排除项、保密、数据删除和不承诺事项。收款可走平台托管、PayPal、Payoneer、银行跨境收款等合规渠道，实际可用性以账户、平台、银行和所在地规则为准。\n\n税务申报：中国境内主体应依法处理境外服务收入。国家市场监督管理总局发布的《中华人民共和国市场主体登记管理条例》把公司、个人独资企业、合伙企业、个体工商户等列为市场主体，且市场主体应依照条例办理登记。国家税务总局关于跨境应税行为的说明显示，境内单位和个人向境外单位提供、完全在境外消费的软件服务、信息系统服务、业务流程管理服务、离岸服务外包业务等符合条件的服务，可能适用增值税零税率或免税政策，但需按具体业务、发票和主管税务机关要求处理。个人或个体工商户也要按实际收入性质依法申报，不应以私人收款规避纳税。\n\n外汇和收款合规：保留平台订单、合同、发票或收据、聊天记录、交付报告、收款流水和结汇记录。不要使用地下钱庄、虚假合同、代收代付或拆分交易规避银行/平台审核。涉及服务贸易收汇时，银行和支付机构可能要求交易真实性材料。\n\n平台规则：Google 商品数据规范要求商品数据满足 Shopping ads policies、落地页、配送费率、checkout、币种和语言等要求；错误、缺失或不一致信息可能导致 disapproval、limited eligibility 或展示问题。Shopify 官方说明 Google & YouTube 渠道会同步店铺域名、商品信息以及相关运费和税费设置，并提醒连接现有 Merchant Center 时同步可能覆盖已有 Feed。Google misrepresentation 政策对虚假身份、冒充品牌、不可交付商品、关键信息遗漏等非常严格，违反可能导致账号暂停。\n\n数据/隐私合规：服务应尽量只处理商品目录、商品页 URL、后台问题截图和非个人数据。不要下载客户订单、买家姓名、地址、邮箱、支付信息或广告受众数据。若客户提供含消费者个人信息的截图，应先脱敏；如接触欧盟、英国、美国等市场数据，应签 NDA/DPA、限定处理目的和保留期限，并避免把未授权数据上传到公共 AI 工具或公开案例页。\n\n语言和时区门槛：需要英文工单、截图标注和报告写作能力。北美客户通常与北京时间夜间重叠较少，适合异步交付；但广告上线前、促销季、账号暂停申诉等紧急需求对一人服务者并不友好，应该在报价中排除或另收加急费。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻；可以从 20-80 个 SKU 的小目录诊断开始；报告、字段表和 checklist 可模板化；不需要线下交付；一个人可以完成售前筛选、数据检查、问题归类、英文报告和复测。\n\n不完全适合点：客户常把 Merchant Center 问题和广告投放、网站信任、物流、退货、支付、法律政策、账号暂停混在一起。OPC 必须有强边界：只做商品数据质量、配置检查和技术建议；遇到账号 suspension、misrepresentation、仿牌、医疗/金融等高风险类目，应转给合规/法律/资深广告顾问或拒绝。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：完整远程交付，普通电脑、表格、截图和异步英文沟通即可启动；客户可以用最小权限邀请或导出数据；交付物是报告和字段表，地点依赖低。\n\n不完全适合点：需要稳定网络、可信设备、密码管理、2FA 协作和数据保密；公共 Wi-Fi 和共享电脑不适合处理客户后台。跨时区紧急排错、促销季夜间响应和客户要求实时屏幕共享，会削弱数字游民的时间自由度。\n\n## 潜在收益、前提和成本结构\n\n验证期：每月 3-8 个小目录诊断包，按 45-180 美元/单，毛收入约 135-1440 美元，约 906-9662 元人民币。前提是 SKU 数量受控、只做诊断和一次复测、客户商品合法且数据源清楚，主要目标是积累案例和报告模板。\n\n熟练 OPC：每月 4-10 个标准 Feed QA 或 Shopify 同步排错项目，按 180-520 美元/单，再加 1-3 个轻量月度监控客户，毛收入可能约 900-4500 美元，约 6040-30195 元人民币。前提是有稳定英文获客、能筛掉高风险客户、形成批量检查流程，并把修订次数和排除项写清。\n\n1-3 人小团队：可按客户沟通、字段清洗、落地页核对、复测报告分工，承接更大目录或代理商分包。但权限管理、数据安全、版本控制、质量复核和责任边界会更复杂，不适合新手直接承诺大目录全修复。\n\n主要成本是平台抽佣、跨境收款手续费、汇损、税费、工具订阅、报告模板制作、沟通时间、返工、争议处理和学习成本。收益必须按毛收入区间和前提说明，不能宣传“无成本稳定月入”或“包过就收高价”。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：\n\n1. Google 政策风险：misrepresentation、假货、不可交付商品、隐藏身份、缺少联系方式/退货/配送信息等可能导致严重后果，服务者不能包装或规避。\n2. 账号权限风险：过高权限会扩大责任，尤其是 admin、广告预算、付款方式、税务和订单权限。优先 read-only 诊断和客户自行执行。\n3. 收益夸大风险：Upwork 高价项目通常包含广告策略、复杂修复或资深经验，新手不能直接套用为收入预期。\n4. 数据隐私风险：商品 Feed QA 原则上不需要消费者 PII，接触订单、客户名单、广告受众或支付信息会显著提高合规要求。\n5. 跨境税务/外汇风险：境外服务收入需要保留真实材料并依法申报，不应通过私人账户、虚假交易或拆分规避。\n6. 客户预期风险：Google 系统重新抓取和审核有延迟；某些问题依赖客户网站、物流、退货、支付、品牌授权和业务真实性，不是字段修复能解决。\n7. 平台变化风险：Google、Shopify 和广告政策会更新，报告只能基于核验当天规则和客户提供信息。\n\n不适合人群：没有英文读写能力的人；不了解电商商品数据和表格处理的人；愿意接仿牌、虚假折扣、灰产商品的人；喜欢承诺“包过审核”“保证解封”“提升 ROAS”的人；不愿意做权限和数据边界管理的人；不能长期更新平台规则的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 建一个 50-SKU demo 检查样本：用公开可售的普通商品样例或自建测试商品表，故意设置价格不一致、图片不可抓取、GTIN 缺失、变体错误、分类错误等问题，做成一份英文 Feed audit 报告模板。\n2. 做一个低风险固定小包：只卖“20-80 个 SKU 的 Google Merchant Center product feed audit + priority issue list + one retest”，限定目标国家、字段范围、交付时间、修订次数和不承诺事项，不接 suspension guaranteed fix。\n3. 找 10 个真实反馈：联系 Shopify 小店主、Google Ads 小代理、WooCommerce 开发者或 DTC 运营顾问，提供低价样本审计或免费 5-SKU 抽查，换取脱敏案例、报价反馈和常见问题样本。\n\n## 点评 Agent 审稿\n\n本次已启动独立点评 Agent 审稿。审稿结论：建议通过，不需要换题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制，无明显夸大；已把 Upwork 较高项目价向下折算为新手小目录固定价，并明确不承诺稳定收入。\n- 信息来源是否足够可信：基本足够。Google/Shopify/中国税务与市场主体依据可信；Upwork/Fiverr 价格只能作市场信号，不宜作为强证明。\n- 最该补充或提醒的一句话：这是商品数据质量 QA 和字段修复服务，不是 Google 审核通过、账号解封、广告 ROAS 或销量提升服务。\n\n## 关键来源\n\n1. Google Ads Help / Merchant Center - Product data specification：说明商品数据格式、必填和条件字段，以及错误、缺失、不一致信息可能导致 disapproval、limited eligibility 或展示问题。https://support.google.com/google-ads/answer/7052112/product-data-specification?hl=en-GB\n2. Google Merchant Center Help - Needs attention tab：说明 Merchant Center 中 Needs attention 以前称 Diagnostics，用于提示需要处理的问题。https://support.google.com/merchants/answer/15625564?hl=en-GB\n3. Google Ads Help - Product diagnostics：说明产品诊断可在账号、广告系列、listing group、广告组层级显示商品是否 eligible、eligible limited 或 not eligible，并帮助定位需处理的问题。https://support.google.com/google-ads/answer/12097493?hl=en\n4. Shopify Help Center - Google & YouTube channel requirements：说明 Shopify 的 Google & YouTube 渠道会同步商品、域名、运费和税费等，并列出 Google Merchant Center、域名、商品分类、唯一商品标识符和变体要求。https://help.shopify.com/en/manual/online-sales-channels/marketplaces/google/requirements\n5. Google Merchant Center Help - Manage people and access levels：说明 Merchant Center 支持 super admin、admin、standard、read-only 等访问层级，适合按最小权限协作。https://support.google.com/merchants/answer/12160472?hl=en-001\n6. Google Merchant Center Help - Misrepresentation policy：说明虚假身份、不可交付商品、冒充品牌、诱导性或遗漏关键信息等行为不被允许，严重违反可能导致账号暂停。https://support.google.com/merchants/answer/6150127\n7. Google for Retail - How Google Merchant Center works：说明 Merchant Center 可添加商品信息、连接电商平台、管理商品展示并用于 Google 生态。https://www.google.com/intx/business/retail/how-google-merchant-center-works/\n8. Upwork - Best Freelance Google Shopping Specialists for Hire, Sep 2026：提供 Google Shopping freelancer 的项目成本样本，包括 Feed audit、setup、remediation 和 ongoing management。https://www.upwork.com/hire/google-shopping-freelancers/\n9. Fiverr - Google Merchant Expert Cost Breakdown 2026：提供 Google Merchant expert 的项目和小时报价样本，包括 basic setup、intermediate optimization 和 ongoing maintenance。https://www.fiverr.com/resources/guides/costs/google-merchant-expert\n10. 国家市场监督管理总局 - 中华人民共和国市场主体登记管理条例：说明公司、个人独资企业、合伙企业、个体工商户等属于市场主体，且市场主体应依法办理登记。https://www.samr.gov.cn/djzcj/zyfb/zjfb/art/2023/art_2a71fe3f890947e4860918946cb60386.html\n11. 国家税务总局 - 跨境应税行为适用增值税零税率政策如何享受：说明境内单位和个人向境外单位提供、完全在境外消费的软件服务、信息系统服务、业务流程管理服务、离岸服务外包业务等符合条件服务可能适用零税率或免税政策。https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html\n12. Wise - USD to CNY exchange rate history, 2026-09-08：2026-09-08 显示 1 USD 约 6.71 CNY，本文仅用于粗略折算。https://wise.com/us/currency-converter/usd-to-cny-rate/history/08-09-2026",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "us",
+    "shopify",
+    "google-merchant-center"
+  ],
+  "nextSteps": [
+    "建一个 50-SKU demo 检查样本：用公开可售的普通商品样例或自建测试商品表，故意设置价格不一致、图片不可抓取、GTIN 缺失、变体错误、分类错误等问题，做成一份英文 Feed audit 报告模板。",
+    "做一个低风险固定小包：只卖“20-80 个 SKU 的 Google Merchant Center product feed audit + priority issue list + one retest”，限定目标国家、字段范围、交付时间、修订次数和不承诺事项，不接 suspension guaranteed fix。",
+    "找 10 个真实反馈：联系 Shopify 小店主、Google Ads 小代理、WooCommerce 开发者或 DTC 运营顾问，提供低价样本审计或免费 5-SKU 抽查，换取脱敏案例、报价反馈和常见问题样本。"
+  ],
+  "artifacts": [
+    {
+      "label": "Google Product Data Specification",
+      "path": "https://support.google.com/google-ads/answer/7052112/product-data-specification?hl=en-GB"
+    },
+    {
+      "label": "Merchant Center Needs Attention",
+      "path": "https://support.google.com/merchants/answer/15625564?hl=en-GB"
+    },
+    {
+      "label": "Google Product Diagnostics",
+      "path": "https://support.google.com/google-ads/answer/12097493?hl=en"
+    },
+    {
+      "label": "Shopify Google & YouTube Requirements",
+      "path": "https://help.shopify.com/en/manual/online-sales-channels/marketplaces/google/requirements"
+    },
+    {
+      "label": "Merchant Center Access Levels",
+      "path": "https://support.google.com/merchants/answer/12160472?hl=en-001"
+    },
+    {
+      "label": "Google Misrepresentation Policy",
+      "path": "https://support.google.com/merchants/answer/6150127"
+    },
+    {
+      "label": "Upwork Google Shopping Freelancer Costs",
+      "path": "https://www.upwork.com/hire/google-shopping-freelancers/"
+    },
+    {
+      "label": "Fiverr Google Merchant Expert Costs",
+      "path": "https://www.fiverr.com/resources/guides/costs/google-merchant-expert"
+    },
+    {
+      "label": "市场主体登记管理条例",
+      "path": "https://www.samr.gov.cn/djzcj/zyfb/zjfb/art/2023/art_2a71fe3f890947e4860918946cb60386.html"
+    },
+    {
+      "label": "国家税务总局跨境应税服务说明",
+      "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html"
+    },
+    {
+      "label": "USD/CNY 2026-09-08",
+      "path": "https://wise.com/us/currency-converter/usd-to-cny-rate/history/08-09-2026"
+    }
+  ]
+}
