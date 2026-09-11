@@ -1,7 +1,113 @@
 {
-  "generatedAt": "2026-09-10T08:07:54.682Z",
+  "generatedAt": "2026-09-11T08:06:50.640Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-11",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外英文播客/视频播客创作者的 RSS 迁移、分发目录提交、平台元数据配置与上线前 QA 服务，属于中国境内可做的海外市场。它适合有英文、RSS/平台规则阅读、权限边界和截图报告能力的 OPC/数字游民小规模验证，但必须限定为技术 QA 和迁移验收，不承诺平台审核通过、听众增长、榜单排名或版权/广告法律合规结论。",
+      "details": "# 英文播客 RSS 迁移、分发目录提交与上线前 QA 服务\n\n## 行业是什么，为什么小众\n今天选择的行业是：面向海外英文播客、视频播客和品牌内容团队的 RSS feed 迁移、分发目录提交、平台元数据配置与上线前 QA 服务。\n\n它不是泛泛的播客剪辑、转录或节目增长服务，而是把一档节目从“音频文件和简介已经准备好”推进到“RSS 可被平台读取、主要目录能提交或迁移、平台后台权限和验证流程清楚、上线前错误被尽量提前发现”的技术型小服务。典型交付包括 RSS feed 技术检查、Apple Podcasts/Spotify/Amazon Music/YouTube Podcasts 等平台提交或迁移 checklist、show 和 episode metadata QA、封面规格和缓存问题排查、音频 URL、HTTP HEAD、byte-range、GUID、enclosure、pubDate、分类、explicit 标记、邮箱验证、301 redirect 和旧 host 保持期检查。\n\n它小众，是因为大多数创作者只知道“上传到 Spotify/Apple”，却不熟悉 RSS 作为播客分发地址的作用，也容易在托管平台切换、节目认领、目录验证、封面更新、旧 feed 跳转、YouTube RSS 导入、邮箱公开、重复剧集等细节上卡住。普通音频剪辑师可能只会交 MP3，普通 VA 又未必能读懂 RSS 和平台规则；可收费的价值在于把平台规则、迁移步骤、技术验证和截图证据做成稳定流程。\n\n重要边界：本服务只做客户授权下的 RSS、目录提交、迁移和上线 QA，不承诺 Apple/Spotify/Amazon/YouTube 审核通过、听众增长、榜单排名、广告变现、版权合规或当地广告法合规结论。不得冒充平台官方、不得要求客户共享主密码、不得绕过平台验证或提交未授权内容。\n\n## 目标市场\n本期属于“中国境内可做的海外市场”，重点面向英语播客市场，尤其是美国、英国、加拿大、澳大利亚和跨国英文内容团队。\n\n潜在客户包括刚启动节目的独立创作者、教练/顾问、B2B SaaS 内容营销团队、远程创业者、YouTube 频道转音频播客的小团队、播客剪辑师和小型制作公司。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、LinkedIn、播客制作人社群、Notion/独立站作品集和白标合作获客，远程接收客户授权资料并交付检查表、后台配置截图、RSS 验证记录和迁移验收报告。\n\n为什么适合 OPC/数字游民验证：它不需要海外门店、本地牌照或重资产设备；电脑、稳定网络、英文沟通、RSS/平台规则阅读和项目管理模板就是主要生产资料。新手可以先从“单档节目 2-3 个平台提交 QA”“旧 host 到新 host 的迁移 checklist”这类小包验证，不必一上来承诺全案制作或增长。\n\n## 典型需求场景和客户是谁\n1. 新播客已经有节目名、封面、简介和 trailer，但不知道如何生成 RSS、提交 Apple Podcasts、Spotify、Amazon Music、YouTube Podcasts 等目录。\n2. 创作者从 Spotify for Creators、Buzzsprout、Podbean、Libsyn、RSS.com 等 host 之间迁移，担心丢订阅者、重复节目、旧链接失效或统计断层。\n3. 品牌播客更换节目名、封面、分类、explicit 标记、作者字段或官网链接，需要确认 RSS 和平台目录是否一致。\n4. 客户想把音频优先播客导入 YouTube，但不清楚 RSS ingestion 的国家/地区限制、静态图视频生成、广告/品牌内容声明和音频重新上传限制。\n5. 播客剪辑师或 VA 有客户需求，但不想自己处理 Apple/Spotify/Amazon/YouTube 后台、验证邮件、RSS 错误和迁移验收，愿意白标外包。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括节目所有者、主持人、剪辑师、封面设计师、podcast hosting 服务商、Apple Podcasts Connect、Spotify for Creators、Amazon Music for Podcasters、YouTube Studio、播客目录/聚合器、网站/CMS 服务商和远程 VA。\n\n标准工作流：\n1. 预筛选：确认节目语言、目标国家/地区、host、已有 RSS、目标平台、是否为新节目或迁移、是否含广告/赞助/成人内容、是否有原创或授权音频和封面。\n2. 授权和权限：用平台订单或英文 SOW 写清客户是内容所有者或授权代表；客户自行完成验证码、付款/税务/银行信息；服务方优先使用平台邀请角色、只读/Show Manager 权限、屏幕共享或客户自行操作，不索要主密码。\n3. RSS 检查：核对 RSS 2.0、公开可访问、必要标签、至少一集、封面、episode enclosure 的 URL/length/type、GUID 唯一且不变、ASCII URL、RFC 2822 pubDate、XML entity、HTTP HEAD 和 byte-range 支持。\n4. 平台提交或迁移：按 Apple、Spotify、Amazon、YouTube 等规则提交或协助客户提交 RSS；如果换 host，先确认新 feed 已完整导入、旧 host 301 redirect 可用，再更新平台 feed URL 或等待目录刷新。\n5. QA 和截图证据：检查节目页标题、作者、分类、简介、封面、剧集顺序、explicit 标记、链接、YouTube 默认可见性、重复剧集、封面缓存和错误提示。\n6. 交付：输出平台状态表、问题清单、修复建议、客户需自行确认项、权限撤销/数据删除记录和 7-21 天后复查提醒。\n\n## 盈利模式和报价口径\n收入来自技术配置、迁移 QA、目录提交协助和项目管理服务费，不来自平台套利、刷量、榜单或广告分成。常见收费方式包括：按节目收取新播客 launch QA；按平台数量收取目录提交小包；按迁移项目收取旧 host 到新 host 的 RSS/301 redirect 验收；按月为小型制作公司处理多档节目上线和目录维护。\n\n公开报价只能作为市场信号，不代表成交率或净利润。2026-09-11 核验时，Upwork 的 Podcasting Producer 成本页显示播客制作人中位小时费率约 $20-$31/hour，并提示价格取决于谈判和项目复杂度；Fiverr 可见播客 RSS 分发到 Spotify 和 Apple Podcasts 的小包样本 $20/2 platforms，另一个 launch/distribution 服务样本为 $30、$80、$150 三档，覆盖 2、6、10 个平台。Upwork 官方帮助说明 freelancer service fee 按合同为 0%-15%。\n\n按 2026-09-08 Bank of England 历史参考汇率 1 USD 约 6.7069 CNY 粗略折算：\n- 入门目录提交 QA：$20-$80，约 134-537 元人民币，适合 1 档节目、2-4 个平台、1 次复查。\n- 新播客 launch checklist + 平台提交协助：$80-$250，约 537-1677 元人民币，适合 1 档节目、4-8 个平台、截图交付。\n- Host 迁移 + 301 redirect 验收：$150-$500，约 1006-3353 元人民币，适合已有节目、旧 feed 到新 feed、2-3 周跟踪复查。\n- 制作公司白标月包：$300-$1200/月，约 2012-8048 元人民币，取决于每月节目数量、平台数量、返工和时区响应。\n\n更现实的收益模型是：新手先用每月 3-10 个小包验证 SOP，毛收入可能只有 $60-$800；熟练后通过播客剪辑师、内容营销代理或 SaaS 品牌团队转介绍，承接更复杂的迁移和 launch QA。净收入要扣除平台费、收款费、汇损、税费、工具订阅、售前沟通、返工、跨时区会议和长期复查时间。不能把少数高价 podcast launch package 包装成稳定收入。\n\n## 入门门槛\n技能：英文读写、RSS 基础、XML 常见错误识别、播客平台后台操作、截图标注、项目 checklist、客户权限管理、音频/封面基础规格、host 迁移流程、异步沟通。需要能读懂 Apple/Spotify/YouTube/Amazon/Buzzsprout 等官方文档，并把规则翻译成客户能执行的清单。\n\n设备/软件：普通电脑、稳定网络、密码管理器、截图和录屏工具、表格/Notion 模板、RSS validator、HTTP header 检查工具、浏览器多账户隔离、云盘。通常不需要专业录音棚；如果不提供剪辑服务，也不必购买昂贵音频插件。\n\n资质/合规：通常不需要海外本地牌照，但必须确认客户是内容所有者或授权代表。涉及音乐、影视剪辑、品牌赞助、成人内容、医疗/金融建议、儿童内容、政治广告等高风险内容时，只能做平台技术提交，不做版权、广告法、FTC/ASA 或行业合规判断；必要时应要求客户咨询当地律师或合规顾问。\n\n资金和时间：低成本可从免费工具、公开文档和样板项目开始，启动资金主要是域名/作品集和少量平台会员。若有英文和基础网页经验，1-2 周可做出 demo checklist；要稳定处理迁移、YouTube RSS、Amazon/Apple 验证和封面缓存问题，通常需要 1-2 个月积累案例和错误库。\n\n渠道：Upwork/Fiverr、LinkedIn 搜索 podcaster/podcast producer/content marketing manager、播客剪辑师白标合作、B2B 内容营销社群、Reddit/Slack/Discord 播客社区、独立站展示“Podcast RSS launch QA checklist”。服务标题应具体，例如 Podcast RSS launch QA、Apple Spotify Amazon YouTube podcast distribution setup、Podcast host migration and 301 redirect verification。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台获客应遵守 Upwork/Fiverr 站内沟通、托管付款、交付和退款规则；独立站或 LinkedIn 获客要使用英文 SOW，避免“guaranteed approval”“rank boost”“audience growth”等表达。可用脱敏 checklist 和公开 demo 展示能力，不使用客户未授权后台截图做案例。\n\n远程交付：优先让客户导出 RSS URL、host 截图、节目素材和目标平台清单。Apple Podcasts Connect 支持用户角色和 show access，应让客户邀请独立账号并限定角色；Spotify/Amazon/YouTube 的验证邮件或 2FA 由客户完成。确需屏幕共享时，服务者只指导客户点击，不记录密码、付款方式、税务、银行、广告或 YouTube monetization 信息。\n\n合同/发票或收款：平台订单以平台合同和账单为凭证；直客单应写清节目数量、平台范围、迁移起止、客户授权、素材责任、返工轮次、验证方式、旧 host 保持期、排除项、保密、数据删除和不承诺事项。中国境内个人、个体工商户或公司应按自身主体开具 invoice 或国内发票，并保留合同、平台账单、收款和汇率记录。\n\n税务申报和外汇：境内单位和个人向境外单位提供、完全在境外消费的软件服务、信息系统服务、业务流程管理服务、离岸服务外包业务等符合条件的服务，可能适用增值税零税率或免税政策，但应按具体服务、主体类型、发票和主管税务机关要求处理。个人结汇和购汇年度便利化额度通常为每人每年等值 5 万美元；超过额度或经营性收支应按外汇和银行真实性审核要求提供材料。不能把平台提现、PayPal/Payoneer 到账或私人收款等同于免税收入。\n\n平台规则：Apple 对 RSS 技术要求较细，包括公开可访问、必要标签、HEAD/byte-range、GUID、ASCII URL、RFC 2822 日期和 XML entity；Spotify 提醒 RSS 邮箱会公开且不自动分发到所有平台；YouTube RSS ingestion 仅在部分国家/地区，并会用节目封面生成静态视频，且不会自动同步 show details 或替换音频；Amazon Music 要求提交者是 podcaster 或授权代表，并通过 RSS 邮箱验证。平台规则会变，应在每单开始前重新核验。\n\n数据/隐私合规：节目素材、后台截图和 host 账户信息可能包含邮箱、姓名、未发布节目、赞助合同、广告信息或 YouTube 频道数据。根据个人信息保护法的合法、正当、必要和最小范围原则，只处理必要材料，不下载无关听众数据、付款信息或客户通讯录；项目结束后按约定删除本地素材和截图。\n\n语言和时区门槛：英文售前、工单写作、平台错误解释和异步截图沟通是硬门槛。北美客户可能需要北京时间早晚响应；迁移和发布窗口最好提前约定，避免客户在节目发布当天临时要求实时救火。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：固定资产轻、流程可模板化、单人可以完成规则核验、客户沟通、RSS 检查、平台提交协助、截图报告和复查提醒。项目可以拆成 1 档节目、2-4 个平台的小包，风险和工作量可控。\n\n不完全适合点：客户容易把 RSS QA、剪辑、封面设计、节目策划、增长、广告变现、版权判断和账号申诉混在一起。OPC 必须写清服务边界，不接盗版音乐、未授权转载、虚假身份、平台封禁绕过、刷播放量、刷评价、榜单操纵或“包上架”需求。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：全流程可远程交付，大多数步骤是浏览器后台、RSS 检查、表格和截图；地点依赖低，适合异步英文服务。数字游民可以用模板化 checklist、权限清单和复查提醒管理多个小项目。\n\n不完全适合点：平台登录、2FA、后台操作和客户素材需要可信设备与稳定网络；公共 Wi-Fi 和共享电脑不适合处理客户账户。迁移期间若旧 feed/新 feed 出错，客户会期待及时响应，旅行中网络不稳会放大交付风险。\n\n## 潜在收益、前提条件和成本结构\n低成本验证期：每月 3-10 个 $20-$80 小包，毛收入约 $60-$800，折合约 402-5366 元人民币。这个阶段主要验证英文沟通、平台规则、截图报告和返工边界，不适合预期高收入。\n\n标准接单期：每月 4-12 个 $80-$250 launch QA 或目录提交协助项目，外加 1-3 个 $150-$500 迁移项目，毛收入可能约 $600-$4500，折合约 4024-30181 元人民币。前提是有清晰作品集、能筛掉高风险内容、平台规则更新及时、客户按时提供验证码和素材。\n\n白标合作期：与播客剪辑师、内容营销代理或小型制作公司合作，按月处理多档节目目录提交、迁移复查和平台问题跟踪，毛收入可更稳定，但净利润取决于 SLA、返工率、客户临时发布需求、时区会议和工具成本。收益只能按公开报价样本和前提估算，不应承诺稳定月入。\n\n主要成本包括平台抽佣、收款手续费、汇损、税费、域名/作品集、模板制作、RSS 检查工具、云存储、售前沟通、截图报告、复查提醒和争议处理。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 内容授权风险：客户必须拥有音频、音乐、封面、Logo、嘉宾授权和节目名称/商标使用权。\n2. 平台审核风险：提交或 QA 不等于目录收录；平台可能因内容、地区、邮箱、封面、RSS 错误或政策原因拒绝或延迟。\n3. 账号权限风险：共享主密码和 2FA 会扩大责任，应使用邀请角色、客户自行验证或屏幕共享。\n4. YouTube RSS 风险：RSS ingestion 有国家/地区和账号资格限制，且音频重新上传不会自动替换已发布视频。\n5. 迁移风险：301 redirect 过早、旧 host 过早取消、GUID 改变或重复导入可能造成目录混乱和听众丢失。\n6. 隐私和保密风险：RSS 邮箱可能公开；后台截图、未发布节目和赞助信息需要最小化处理和删除记录。\n7. 低价竞争风险：简单目录提交容易陷入 $20 小包，只有迁移 QA、错误排查、截图证据和白标流程能提高议价空间。\n8. 税务外汇风险：跨境服务收入要留存合同、订单、发票、收款和汇率记录并依法申报。\n\n不适合人群：英文弱、不愿读平台文档的人；想靠刷榜、刷播放或“包上架”获客的人；不重视版权和客户授权的人；习惯索要客户主密码的人；不能接受细碎 checklist 和 2-3 周复查的人；没有稳定网络和安全设备的长期旅居者。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 做一个公开 demo：用自己创建的测试节目或客户授权样例，整理 Apple/Spotify/Amazon/YouTube/Buzzsprout 的 RSS launch checklist，包含 RSS 字段、封面、音频 URL、验证邮箱、权限和不承诺边界。\n2. 做一次迁移沙盘：用两个低成本 podcast host 或测试 RSS，模拟旧 feed 到新 feed 的导入、301 redirect、平台 feed URL 更新和 7 天后复查，形成截图版 SOP。\n3. 上架一个窄服务试单：在 Upwork/Fiverr/LinkedIn 发布 Podcast RSS launch QA for 2 platforms 或 Podcast host migration checklist 小包，报价 $25-$99，明确不含剪辑、封面设计、账号托管、版权判断、审核保证和增长承诺，用 3 单记录耗时与返工率。\n\n## 点评 Agent 审稿\n本次已启动独立点评 Agent 审稿。审稿结论：建议通过，不需要换题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制。以 $20-$31/hr 和 Fiverr 小包服务作参照合理，没有把分发/迁移服务包装成增长、排名或变现承诺。\n- 信息来源是否足够可信：足够可信。平台官方文档覆盖 Apple、Spotify、YouTube、Amazon，迁移实践有 Buzzsprout，价格参考有 Upwork/Fiverr，中国侧合规依据也基本齐。\n- 最该补充或提醒的一句话：每单必须留存客户授权、平台权限范围、验证码/主密码不接触记录、301 跳转验证截图，以及“非增长/非法律意见”的书面边界。\n- 是否建议通过：建议通过。这个行业足够小众、远程可交付、技术检查点明确，且能从中国境内服务海外英文客户；但应把卖点限定为“上线与迁移 QA 降错”，不要碰账号托管、版权判断、广告合规判断或听众增长承诺。\n\n## 关键核验来源\n1. Apple Podcasts for Creators - Podcast RSS feed requirements：核验 RSS 2.0、公开可访问、必要标签、HEAD/byte-range、enclosure、GUID、ASCII URL、RFC 2822 日期和 XML entity 等要求。https://podcasters.apple.com/support/823-podcast-requirements\n2. Apple Podcasts for Creators - Users and access：核验 Apple Podcasts Connect 可邀请用户、角色权限和 Show Manager/Analyst 等访问边界。https://podcasters.apple.com/support/885-users-and-access\n3. Spotify Support - Finding and enabling your RSS feed：核验 Spotify for Creators RSS feed、邮箱公开、需要自行提交其他平台、第三方抓取等提醒。https://support.spotify.com/us/creators/article/finding-and-enabling-your-rss-feed/\n4. Spotify Support - Updating an RSS feed link or hosting provider：核验更换 podcast host 后可在 Spotify for Creators 更新 RSS feed 和 hosting provider。https://support.spotify.com/us/creators/article/updating-an-rss-feed-link-or-hosting-provider/\n5. YouTube Help - Deliver podcasts using an RSS feed：核验 RSS ingestion 可用地区、静态图视频、不会自动分发到其他平台、不会自动更新 show details/音频、品牌内容声明和验证方式。https://support.google.com/youtube/answer/13525207?hl=en\n6. Amazon Music for Podcasters FAQ：核验提交 RSS、授权代表身份、邮箱验证、更新 RSS feed URL、处理状态和内容授权等平台规则。https://podcasters.amazon.com/frequently-asked-questions\n7. Amazon Music for Podcasters Terms of Service：核验不得共享用户名密码、不得冒充或提供误导信息、内容许可和 RSS delivery 规则。https://podcasters.amazon.com/terms-of-service\n8. Buzzsprout Help - Moving your podcast to Buzzsprout：核验迁移时导入剧集、设置旧 feed redirect、旧 host 建议保持活跃至少约 2 周。https://www.buzzsprout.com/help/6-migration\n9. Buzzsprout Help - Redirect Podcast Feed：核验 301 redirect 对订阅者和目录迁移的重要性，并建议保持 redirect 2-3 周。https://www.buzzsprout.com/help/56-redirect-podcast-feed\n10. Upwork - Podcasting Producer hourly rates：核验 podcasting producers 中位小时费率约 $20-$31/hr，且实际价格取决于谈判和复杂度。https://www.upwork.com/hire/podcasting-freelancers/cost/\n11. Fiverr - Podcast RSS distribution sample：核验公开小包 $20/2 platforms、2-day delivery、1 revision 等价格样本。https://www.fiverr.com/nomadicstudio/upload-your-podcast-to-spotify-and-apple\n12. Fiverr - Podcast setup and distribution packages：核验 $30/$80/$150 三档 podcast setup/distribution 样本，仅作市场报价参考。https://www.fiverr.com/mehrose786/setup-and-distribute-your-podcast-on-spotify-google-apple-and-more\n13. Upwork Help - Freelancer Service Fee：核验 Upwork freelancer service fee 为每合同 0%-15%。https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee\n14. 国家市场监督管理总局 - 中华人民共和国市场主体登记管理条例：核验公司、个人独资企业、个体工商户等市场主体登记要求。https://www.samr.gov.cn/djzcj/zyfb/zjfb/art/2023/art_2a71fe3f890947e4860918946cb60386.html\n15. 国家税务总局 - 跨境应税行为适用增值税零税率政策如何享受：核验境内单位和个人向境外单位提供完全在境外消费的相关服务可能适用零税率及备案/发票要求。https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html\n16. 国家外汇管理局 - 个人外汇管理办法实施细则：核验个人结汇和购汇年度总额/便利化额度、真实性审核和经常项目证明材料要求。https://www.safe.gov.cn/safe/2007/0105/22509.html\n17. 中华人民共和国个人信息保护法：核验个人信息处理的合法、正当、必要、最小范围和安全义务原则。https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_515a4b20c12f430eab54bb4f56d89f56.html\n18. Pound Sterling Live / Bank of England historical USD-CNY 2026：核验 2026-09-08 1 USD 约 6.7069 CNY 的折算参考。https://www.poundsterlinglive.com/bank-of-england-spot/historical-spot-exchange-rates/gbp/USD-to-CNY-2026",
+      "startedAt": "2026-09-11T16:03:04+08:00",
+      "finishedAt": "2026-09-11T16:06:40+08:00",
+      "duration": "3m 36s",
+      "sourceThread": "automation-3",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "english-market",
+        "podcast"
+      ],
+      "nextSteps": [
+        "做一个公开 demo：用自己创建的测试节目或客户授权样例，整理 Apple/Spotify/Amazon/YouTube/Buzzsprout 的 RSS launch checklist。",
+        "做一次迁移沙盘：用两个低成本 podcast host 或测试 RSS，模拟旧 feed 到新 feed 的导入、301 redirect、平台 feed URL 更新和复查。",
+        "上架一个窄服务试单：发布 Podcast RSS launch QA for 2 platforms 或 Podcast host migration checklist 小包，报价 $25-$99，用 3 单记录耗时与返工率。"
+      ],
+      "artifacts": [
+        {
+          "label": "Apple Podcasts RSS feed requirements",
+          "path": "https://podcasters.apple.com/support/823-podcast-requirements"
+        },
+        {
+          "label": "Apple Podcasts users and access",
+          "path": "https://podcasters.apple.com/support/885-users-and-access"
+        },
+        {
+          "label": "Spotify finding and enabling your RSS feed",
+          "path": "https://support.spotify.com/us/creators/article/finding-and-enabling-your-rss-feed/"
+        },
+        {
+          "label": "Spotify updating RSS feed link or hosting provider",
+          "path": "https://support.spotify.com/us/creators/article/updating-an-rss-feed-link-or-hosting-provider/"
+        },
+        {
+          "label": "YouTube deliver podcasts using an RSS feed",
+          "path": "https://support.google.com/youtube/answer/13525207?hl=en"
+        },
+        {
+          "label": "Amazon Music for Podcasters FAQ",
+          "path": "https://podcasters.amazon.com/frequently-asked-questions"
+        },
+        {
+          "label": "Amazon Music for Podcasters Terms of Service",
+          "path": "https://podcasters.amazon.com/terms-of-service"
+        },
+        {
+          "label": "Buzzsprout moving your podcast",
+          "path": "https://www.buzzsprout.com/help/6-migration"
+        },
+        {
+          "label": "Buzzsprout redirect podcast feed",
+          "path": "https://www.buzzsprout.com/help/56-redirect-podcast-feed"
+        },
+        {
+          "label": "Upwork podcasting producer hourly rates",
+          "path": "https://www.upwork.com/hire/podcasting-freelancers/cost/"
+        },
+        {
+          "label": "Fiverr podcast RSS distribution sample",
+          "path": "https://www.fiverr.com/nomadicstudio/upload-your-podcast-to-spotify-and-apple"
+        },
+        {
+          "label": "Fiverr podcast setup and distribution packages",
+          "path": "https://www.fiverr.com/mehrose786/setup-and-distribute-your-podcast-on-spotify-google-apple-and-more"
+        },
+        {
+          "label": "Upwork freelancer service fee",
+          "path": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+        },
+        {
+          "label": "市场主体登记管理条例",
+          "path": "https://www.samr.gov.cn/djzcj/zyfb/zjfb/art/2023/art_2a71fe3f890947e4860918946cb60386.html"
+        },
+        {
+          "label": "国家税务总局跨境应税行为零税率说明",
+          "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html"
+        },
+        {
+          "label": "个人外汇管理办法实施细则",
+          "path": "https://www.safe.gov.cn/safe/2007/0105/22509.html"
+        },
+        {
+          "label": "中华人民共和国个人信息保护法",
+          "path": "https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_515a4b20c12f430eab54bb4f56d89f56.html"
+        },
+        {
+          "label": "Bank of England USD-CNY historical reference via Pound Sterling Live",
+          "path": "https://www.poundsterlinglive.com/bank-of-england-spot/historical-spot-exchange-rates/gbp/USD-to-CNY-2026"
+        }
+      ],
+      "sourceFile": "runs/2026-09-11/niche-profit-industry.json"
+    },
     {
       "date": "2026-09-10",
       "taskId": "niche-profit-industry",
