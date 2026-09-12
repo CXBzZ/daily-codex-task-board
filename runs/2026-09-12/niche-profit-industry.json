@@ -1,0 +1,113 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-09-12T16:03:25+08:00",
+  "finishedAt": "2026-09-12T16:04:39+08:00",
+  "summary": "今天的小众行业是面向海外独立作者和小型出版团队的 Amazon KDP 电子书/平装内页排版、格式转换与上传前 QA 服务，属于中国境内可做的海外英语市场。它适合懂英文、排版、KDP 文件规范和客户授权边界的 OPC/数字游民小规模验证，但必须限定为客户授权下的文件制作与上传前检查，不代管 KDP 账号，不承诺审核通过、销量、畅销榜、版权或税务法律结论。",
+  "details": "# Amazon KDP 电子书/平装内页排版、格式转换与上传前 QA 服务\n\n## 行业是什么，为什么小众\n今天选择的行业是：面向海外独立作者、ghostwriter、小型出版社、教练/顾问和内容创业者的 Amazon KDP 电子书/平装内页排版、格式转换与上传前 QA 服务。\n\n它不是写书、编辑、封面设计、代出版或图书营销，而是把客户已经完成或接近完成的 manuscript，整理成 Kindle Direct Publishing 可上传和预览的电子书文件、平装/精装 print-ready PDF，以及上传前的错误检查清单。典型交付包括 Word styles 清理、章节标题层级、front matter/back matter、点击目录、页眉页脚、页码、trim size、margins、gutter、bleed、图片嵌入、表格/脚注风险提示、KPF/EPUB/PDF/DOCX 输出、Kindle Previewer 或 Online Previewer 截图、KDP 常见 rejection/quality issue 修复建议。\n\n它小众，是因为大多数作者知道要上架 Kindle 或 paperback，却未必理解 reflowable eBook 与 print PDF 的差异，也容易在目录、页码、封面插入、图片清晰度、页边距、bleed、字体嵌入、metadata 与 manuscript 不一致、AI 内容披露、版权/公版书差异化等细节上卡住。普通 VA 可能只会转换 PDF，普通设计师又未必熟悉 KDP 的内容质量和提交规范；可收费的价值在于把文件工程、平台规则和上传前 QA 做成可复用流程。\n\n重要边界：本服务只做客户授权下的排版、格式转换、上传前 QA 和截图报告，不承诺 KDP 审核通过、账号恢复、销量、畅销榜、Kindle Unlimited 收入、类目排名、版权合法性、AI 内容合规或美国/当地税务结论。不得登录或代管客户 KDP 主账号，不接刷评、刷榜、侵权搬运、公版书洗稿、误导性 AI 书籍、低质重复内容或规避平台审核的需求。\n\n## 目标市场\n本期属于“中国境内可做的海外市场”，重点面向英语自出版市场，尤其是美国、英国、加拿大、澳大利亚和面向全球英语读者的独立作者。\n\n潜在客户包括小说作者、非虚构作者、教练/顾问、课程创作者、商业书作者、memoir 作者、ghostwriter、编辑、封面设计师、小型出版工作室和 author assistant。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、LinkedIn、Reedsy 外围合作、Facebook/Discord 作者社群、独立站作品集和白标合作获客，远程接收客户 manuscript 与规格需求，交付排版文件、QA 报告和预览截图。\n\n为什么适合 OPC/数字游民验证：它不需要海外实体门店、本地出版牌照或重资产设备；电脑、英文沟通、排版软件、KDP 官方规则阅读能力和文件版本管理就是主要生产资料。新手可以先从纯文本小说、短篇非虚构、100 页以内 paperback 或 30k 字以内 eBook 试单开始，不必一上来承接 cookbook、workbook、儿童绘本、复杂表格教材或多格式特殊版。\n\n## 典型需求场景和客户是谁\n1. 独立作者写完 Word/Google Docs 稿件，需要 Kindle eBook、paperback interior PDF 或二者一起交付。\n2. 作者自行上传 KDP 后遇到目录不可点、页码不对、图片模糊、bleed/margin 错误、封面插入 manuscript、表格被截断、章节从错误位置开始等问题。\n3. ghostwriter 或编辑完成文字服务后，想把排版与 KDP 文件制作外包给专门服务商。\n4. 小型出版社或 author assistant 有多位作者项目，需要稳定的白标排版和上传前 QA 流程。\n5. 教练、顾问、课程作者想把 lead magnet、workbook、商业方法论或 memoir 做成 Kindle/POD 图书，但不熟悉 KDP 文件要求。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括作者或版权所有者、编辑/校对、封面设计师、排版服务商、KDP 平台、Amazon 内容审核、POD 印刷链路、作者助理和营销服务商。\n\n标准工作流：\n1. 预筛选：确认书籍类型、语言、字数、页数、图片/表格数量、目标格式、trim size、black and white 或 color、是否有 bleed、是否已有封面、是否含 AI 生成内容、是否为公版/翻译/伴读/敏感题材。\n2. 授权和边界：用平台订单或英文 SOW 写清客户是权利人或授权代表，客户负责版权、AI 披露、类目、关键词、税务资料、定价和最终提交；服务方只做文件与 QA，不代管账号。\n3. 文件清理：移除多余空行、手动制表符、错误分页、track changes、隐藏批注和不适合 eBook 的页眉页脚；用样式统一标题、正文、引用、列表和章节起始。\n4. 电子书制作：按 KDP 支持格式准备 DOCX/KPF/EPUB，建立可点击目录，测试字体大小、链接、图片、表格和不同设备预览。\n5. 平装/精装制作：按客户 trim size、页数、margins、gutter 和 bleed 输出 print-ready PDF，核对 front/back matter、页码、空白页、章节起始、图像分辨率和封面尺寸匹配。\n6. QA 交付：用 Kindle Previewer、KDP Online Previewer 或本地 PDF 检查，输出截图、问题清单、修复版本、客户需自行确认项和文件删除/备份记录。\n\n## 盈利模式和报价口径\n收入来自排版服务费、格式转换费、上传前 QA 费、返修费、急单费、多格式/多 trim size 加收费和白标月包，不来自平台套利、刷量、版税分成或虚假出版承诺。\n\n公开报价只能作为市场信号，不代表稳定成交价。2026-09-12 核验时，Upwork Project Catalog 可见 KDP/book formatting 样本从 $25、$35、$50、$75、$100、$150 到 $200+ 不等，也有 eBook plus print layout 的 $120/$240/$360 三档样本；Reedsy 2026 自出版成本文章称约 50% 的 book interior design 项目在 Reedsy 上成本为 $475-$1,275；独立服务商公开套餐中，BookFormattingServices 显示 $99/$149/$199 三档，All The Proof 显示 eBook $50、eBook plus paperback $80、复杂格式 from $150，Hawthorn & Aster 的 print/reflowable EPUB 组合样本约 $200-$520。\n\n按 2026-09-09 中国外汇交易中心受权公布的人民币汇率中间价 1 USD = 6.7769 CNY 粗略折算：\n- 基础 sizing、简单 eBook 或短稿 QA：$25-$80，约 169-542 元人民币。\n- 标准 eBook plus paperback 或 100-200 页纯文本书：$99-$199，约 671-1349 元人民币。\n- 设计感更强的 print plus eBook、较长小说或多格式项目：$200-$750，约 1355-5083 元人民币。\n- 专业平台或复杂内页项目：$475-$1275，约 3219-8641 元人民币，但这更依赖作品集、审美和出版经验，新手不应直接按此预期。\n\n更现实的收益模型是：新手先用 1-3 个低价限定范围试单验证流程，毛收入可能只有 $75-$300；熟练后每月处理 5-12 个标准项目，毛收入可能约 $500-$3000；如果和编辑、封面设计师、author assistant 建立白标合作，收入更稳定，但净利润取决于返修率、售前沟通、平台抽佣、收款手续费、汇损、税费、软件成本和文件 QA 时间。不能把少数高价排版项目包装成稳定月入。\n\n## 入门门槛\n技能：英文读写、Word styles、InDesign 或 Affinity Publisher 基础、Kindle Create、Kindle Previewer、EPUB/PDF 基础、KDP 官方规则阅读、排版审美、项目 checklist、截图报告、客户沟通和版本管理。需要能解释 reflowable eBook 与 print PDF 的差异，知道为什么 eBook 不应强行保留页码和复杂固定版式。\n\n设备/软件：普通电脑、稳定网络、Microsoft Word 或兼容办公软件、Kindle Create、Kindle Previewer、Adobe InDesign/Affinity Publisher/Atticus/Vellum/Reedsy Studio 等可选工具、PDF 检查工具、截图和云盘工具。Calibre 等工具可用于内部检查，但交付时要以平台支持和客户需求为准。\n\n资质/合规：通常不需要海外出版牌照，因为服务方不是出版商、代理人或法律顾问，只是客户授权下的技术供应商。中国境内经营应按自身情况办理个体工商户、一人公司或其他合规经营主体，留存合同、订单、发票/收款凭证和交付记录。涉及版权、翻译权、公版书、AI 生成内容、医学/金融/法律建议、儿童内容或成人内容时，只能做文件技术检查，不做合法性结论。\n\n资金和时间：低成本可从免费工具和公开文档开始，启动资金主要是作品集、域名、少量软件订阅和样稿制作。若已有英文和文档排版经验，1-2 周可做出 demo；要稳定处理复杂 paperback、图片书、workbook 或 fixed-layout 项目，通常需要 1-3 个月案例积累。\n\n渠道：Upwork/Fiverr、LinkedIn 搜索 indie author、self-publishing author、ghostwriter、book editor、author assistant；加入自出版作者社群；与编辑、封面设计师、播客/课程制作人白标合作；独立站展示 before/after 样张和 KDP formatting QA checklist。服务标题要具体，例如 Amazon KDP eBook formatting、paperback interior PDF、Kindle Previewer QA、KDP formatting fix。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台获客应遵守 Upwork/Fiverr 的站内沟通、托管付款、交付和退款规则；独立站或 LinkedIn 获客要使用英文 SOW，避免 guaranteed approval、bestseller、rank boost、royalty increase 等表达。案例展示必须脱敏并取得客户同意，不使用未发布 manuscript 或后台截图做公开样例。\n\n远程交付：客户提供 manuscript、封面文件、trim size、目标格式、图片源文件和 KDP 错误截图。服务方用云盘或平台附件交付，不索要 KDP 主密码、税务资料、银行信息或 2FA。确需协助上传时，优先屏幕共享指导客户自行操作；如果客户所在平台支持角色权限，应使用最小权限并在项目结束后撤销。\n\n合同/发票或收款：平台订单以平台合同和账单为凭证；直客单应写清书籍数量、字数/页数、图片数量、目标格式、返工轮次、急单费、客户授权、排除项、保密、文件删除和不承诺事项。中国境内个人、个体工商户或公司应按自身主体开具 invoice 或国内发票，并保留合同、平台账单、收款和汇率记录。\n\n税务申报和外汇：境内单位和个人向境外单位提供完全在境外消费的专业技术、咨询、商务辅助、软件或信息系统等相关服务，符合条件时可能适用跨境应税行为增值税免税或零税率政策，但应按具体服务、主体类型、发票和主管税务机关要求处理。个人或一人公司应依法申报经营所得或企业所得/个人所得等相关税费。美国客户或平台可能要求 W-8BEN 或 W-8BEN-E 用于确认非美国税务身份；这不是中国纳税申报的替代。收款可用平台托管、PayPal、Payoneer、Wise 或银行电汇等合规渠道，留存真实性材料和汇率记录。\n\n平台规则：KDP 官方资料强调电子书、平装和精装需要按对应规格准备；eBook 要关注 DOCX/KPF/EPUB 支持、点击目录、可重排文本、图片、链接和 Previewer 检查；paperback 要关注 trim size、margins、bleed、front/body/back matter、封面和 print-ready PDF；内容质量指南覆盖 typo、metadata、unsupported characters、cover issues、image quality、formatting issues、links、tables、duplicated/missing/wrong content 等风险；内容指南还涉及侵权、AI-generated 内容披露、公版书差异化和 poor customer experience。平台规则会变，每单开始前应重新核验。\n\n数据/隐私合规：manuscript、作者姓名、邮箱、未发布书稿、合同信息、封面素材和后台截图都可能是保密资料或个人信息。根据个人信息保护法的合法、正当、必要和最小范围原则，只处理必要材料，不下载客户税务、银行、读者名单或广告数据；项目结束后按约定删除本地文件和截图，未经同意不转包、不训练模型、不做公开案例。\n\n语言和时区门槛：英文售前、错误解释、修订意见和异步截图沟通是硬门槛。北美客户可能需要北京时间早晚响应；急单应加价并写清客户需按时确认，不要承诺当天上架或平台审核时效。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：固定资产轻，流程可模板化，一人可以完成排版、格式转换、QA 和交付；项目可以拆成 eBook only、paperback only、eBook plus paperback、formatting fix 等小包，便于控制风险。\n\n不完全适合点：客户容易把排版、编辑、封面设计、出版代理、类目关键词、版权判断、税表填写和图书营销混在一起。OPC 必须写清服务边界，不接账号代管、侵权内容、刷榜刷评、KDP 封禁绕过、版权/税务/法律意见或包审核需求。复杂图文书、cookbook、workbook 和儿童绘本返修多，单人容易被低价项目拖垮。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：全流程可远程交付，大多数步骤是文档处理、平台规则阅读、预览检查、截图和异步沟通；地点依赖低，适合用模板、清单和版本命名管理多个小项目。\n\n不完全适合点：大文件、字体、图片和 PDF 输出需要稳定电脑环境；公共 Wi-Fi 和共享电脑不适合处理客户未发布书稿。旅行中网络不稳或设备临时故障，会放大急单和返修风险；专业交付最好有固定备份、加密磁盘和可靠云同步。\n\n## 潜在收益、前提条件和成本结构\n低成本验证期：每月 3-6 个 $25-$80 小包，毛收入约 $75-$480，折合约 508-3253 元人民币。这个阶段主要验证英文沟通、样式清理、Previewer QA 和返工边界，不适合预期高收入。\n\n标准接单期：每月 5-12 个 $99-$199 标准项目，外加 1-3 个 $200-$750 的较复杂项目，毛收入可能约 $700-$4500，折合约 4744-30496 元人民币。前提是有清晰作品集、能筛掉高风险内容、客户按时提供最终稿和图片、返工轮次被合同限制。\n\n白标合作期：与编辑、封面设计师、ghostwriter 或 author assistant 合作，按月处理多本书的排版和 QA，收入可更稳定，但净利润取决于 SLA、返工率、客户临时改稿、平台抽佣、收款手续费、税费、软件订阅和 QA 时间。所有收益都只是基于公开报价样本和前提估算，不应承诺稳定月入。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 内容授权风险：客户必须拥有文字、图片、封面、字体、翻译、插图和商标使用权。\n2. AI 内容披露风险：KDP 要求发布者披露 AI-generated 内容；服务方不能替客户隐瞒或判断法律后果。\n3. 平台审核风险：排版通过预览不等于 KDP 审核通过；平台可能因内容、metadata、版权、公版书、低质重复内容或政策原因拒绝。\n4. 账号权限风险：代登录客户主账号、接触税务或银行信息会扩大责任，应避免。\n5. 隐私和保密风险：未发布书稿泄露会造成严重信任和法律风险。\n6. 技术风险：复杂表格、脚注、图片、公式、固定版式、儿童绘本和 cookbook 容易出现跨设备显示问题。\n7. 低价竞争风险：基础 formatting 容易陷入 $25-$50 小包，只有出版文件经验、QA 报告、复杂内页和白标稳定交付能提高议价空间。\n8. 税务外汇风险：跨境服务收入要留存合同、订单、发票、收款和汇率记录并依法申报。\n\n不适合人群：英文弱、不愿读官方文档的人；想靠包审核、包畅销或刷榜获客的人；不重视版权、AI 披露和客户授权的人；习惯索要客户主密码的人；不能接受细碎样式、反复修订和截图 QA 的人；没有稳定设备和文件安全习惯的长期旅居者。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 做 3 套公开 demo：用公版短篇或自己写的样章，分别做 eBook、paperback、eBook plus paperback 样稿，输出 Kindle Previewer/PDF 截图和 KDP formatting QA checklist。\n2. 接 1-3 个限定范围试单：只接 30k 字以内纯文本 eBook 或 100 页以内 paperback，不含封面设计、编辑、账号登录、版权判断和审核保证，用低价记录真实耗时、返工率和客户问题。\n3. 沉淀报价表和合规模板：准备英文 SOW、文件命名规范、返工条款、客户授权确认、AI/版权责任确认、文件删除 SOP 和不承诺 KDP 审核/销量的说明。\n\n## 点评 Agent 审稿\n本次已启动独立点评 Agent 审稿。审稿结论：建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制，没有明显夸大。低价试单、返修成本、不承诺稳定收入这些提醒是加分项。\n- 信息来源是否足够可信：足够可信。Amazon KDP 官方格式与质量规范、Supported eBook Formats、Format Your Paperback、Reedsy 2026 成本文章、IRS W-8BEN 说明都能支撑核心判断。Upwork/服务商报价适合作为市场样本，但应标注为动态样本，不宜当作稳定成交价。\n- 最该补充或提醒的一句话：不要承诺 KDP 审核通过、销量或畅销榜结果，不登录或代管客户 KDP 账号；版权、AI 内容披露、税务身份与出版责任必须由客户确认并留痕。\n- 是否建议通过：建议通过。这个选题“小众、轻资产、可远程、规则驱动、可由中国境内交付”的特征清楚，风险也已基本覆盖；只需强化“不代运营/不担保审核/不提供版权税务法律意见”的边界。\n\n## 关键核验来源\n1. Amazon KDP - Book Formatting：核验 KDP 对 paperback、hardcover、eBook 和工具资源的整体格式要求。https://kdp.amazon.com/en_US/help/topic/GKX2T59EVGFSMKQK\n2. Amazon KDP - Prepare Your Manuscript：核验 manuscript templates、trim size、eBook/print 准备和质量 review 流程。https://kdp.amazon.com/en_US/help/topic/G202187840\n3. Amazon KDP - Format Your Paperback：核验 paperback 需要 manuscript file 和 cover file，并关注 trim size、margins、bleed、front/body/back matter 和保存上传。https://kdp.amazon.com/en_US/help/topic/G201834190\n4. Amazon KDP - eBook Manuscript Formatting Guide：核验 eBook 的段落、章节标题、目录、front/back matter、图片、page breaks、Previewer 等要求。https://kdp.amazon.com/en_US/help/topic/G200645680\n5. Amazon KDP - Paperback Submission Guidelines：核验 paperback 常见失败点、cover size、spine、barcode、interior specifications 等。https://kdp.amazon.com/en_US/help/topic/G201857950\n6. Amazon KDP - Guide to Kindle Content Quality：核验 typo、metadata、unsupported characters、cover、image quality、formatting、links、tables、duplicate/missing/wrong content 等质量风险。https://kdp.amazon.com/en_US/help/topic/G200952510\n7. Amazon KDP - Content Guidelines：核验侵权、AI-generated 内容披露、poor customer experience、公版书等平台内容边界。https://kdp.amazon.com/en_US/help/topic/G200672390\n8. Amazon KDP - Supported eBook Formats：核验 DOC/DOCX、KPF、EPUB、PDF 等格式支持和 Kindle Previewer 检查建议。https://kdp.amazon.com/help?topicId=G200634390\n9. Amazon KDP - Kindle Previewer：核验 Previewer 支持的设备预览、文件格式和系统要求。https://kdp.amazon.com/en_US/help/topic/G202131170\n10. Upwork Project Catalog - KDP formatting sample：核验 KDP eBook/paperback formatting 的 $35/$50/$100 三档公开样本，仅作动态市场信号。https://www.upwork.com/services/product/design-kindle-ebook-formatting-amazon-kdp-paperback-kindle-epub-1315400910655528960\n11. Upwork Project Catalog - eBook and print layout sample：核验 eBook and print book layout 的 $120/$240/$360 三档公开样本，仅作动态市场信号。https://www.upwork.com/services/product/design-ebook-print-book-layout-design-1864012157157867092\n12. Upwork Project Catalog - KDP formatting sample：核验 $25/$75/$150 的 KDP formatting 样本，仅作动态市场信号。https://www.upwork.com/services/product/design-your-current-book-formatted-for-kdp-1769179412451008512\n13. Reedsy - Cost to self-publish a book in 2026：核验 Reedsy 对 book interior design 成本和专业排版区间的公开说明。https://reedsy.com/blog/guide/how-to-self-publish-a-book/cost-to-self-publish/\n14. BookFormattingServices pricing：核验 $99/$149/$199 的固定套餐样本，仅作报价参考。https://bookformattingservices.com/\n15. All The Proof formatting pricing：核验 eBook $50、eBook plus paperback $80、complex from $150 等样本，仅作报价参考。https://www.alltheproof.org/formatting\n16. Hawthorn & Aster custom formatting：核验 print/reflowable EPUB 组合约 $200-$520 的样本，仅作报价参考。https://www.hawthornandaster.com/book-us/p/custom-formatting\n17. 国家税务总局 - 哪些业务可以享受跨境应税行为免征增值税政策：核验境内单位和个人向境外单位提供完全在境外消费的部分服务可能适用免征增值税政策。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html\n18. 国家税务总局 - 提供跨境服务免征增值税是否需要备案：核验跨境应税行为免税备案要求。https://www.chinatax.gov.cn/chinatax/c102449/c5239202/content.html\n19. IRS - Instructions for Form W-8BEN：核验非美国个人在被要求时使用 W-8BEN 确认非美国身份和预提税相关信息。https://www.irs.gov/instructions/iw8ben\n20. 中华人民共和国个人信息保护法：核验委托处理个人信息、最小必要、安全措施和泄露处理等原则。https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i\n21. 中国外汇交易中心/中国人民银行 2026-09-09 人民币汇率中间价公告：核验 1 USD = 6.7769 CNY 的折算参考。https://fec.mofcom.gov.cn/article/zyfw/jrfw/jrfwywzn/jrfwwh/hlfxglzy/202609/7938.html",
+  "sourceThread": "automation-3",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "english-market",
+    "self-publishing",
+    "kdp"
+  ],
+  "nextSteps": [
+    "做 3 套公开 demo：用公版短篇或自己写的样章，分别做 eBook、paperback、eBook plus paperback 样稿，输出 Kindle Previewer/PDF 截图和 KDP formatting QA checklist。",
+    "接 1-3 个限定范围试单：只接 30k 字以内纯文本 eBook 或 100 页以内 paperback，不含封面设计、编辑、账号登录、版权判断和审核保证，用低价记录真实耗时、返工率和客户问题。",
+    "沉淀报价表和合规模板：准备英文 SOW、文件命名规范、返工条款、客户授权确认、AI/版权责任确认、文件删除 SOP 和不承诺 KDP 审核/销量的说明。"
+  ],
+  "artifacts": [
+    {
+      "label": "Amazon KDP Book Formatting",
+      "path": "https://kdp.amazon.com/en_US/help/topic/GKX2T59EVGFSMKQK"
+    },
+    {
+      "label": "Amazon KDP Prepare Your Manuscript",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G202187840"
+    },
+    {
+      "label": "Amazon KDP Format Your Paperback",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G201834190"
+    },
+    {
+      "label": "Amazon KDP eBook Manuscript Formatting Guide",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G200645680"
+    },
+    {
+      "label": "Amazon KDP Paperback Submission Guidelines",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G201857950"
+    },
+    {
+      "label": "Amazon KDP Kindle Content Quality",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G200952510"
+    },
+    {
+      "label": "Amazon KDP Content Guidelines",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G200672390"
+    },
+    {
+      "label": "Amazon KDP Supported eBook Formats",
+      "path": "https://kdp.amazon.com/help?topicId=G200634390"
+    },
+    {
+      "label": "Amazon KDP Kindle Previewer",
+      "path": "https://kdp.amazon.com/en_US/help/topic/G202131170"
+    },
+    {
+      "label": "Upwork KDP formatting sample",
+      "path": "https://www.upwork.com/services/product/design-kindle-ebook-formatting-amazon-kdp-paperback-kindle-epub-1315400910655528960"
+    },
+    {
+      "label": "Upwork eBook and print layout sample",
+      "path": "https://www.upwork.com/services/product/design-ebook-print-book-layout-design-1864012157157867092"
+    },
+    {
+      "label": "Upwork KDP formatting sample",
+      "path": "https://www.upwork.com/services/product/design-your-current-book-formatted-for-kdp-1769179412451008512"
+    },
+    {
+      "label": "Reedsy 2026 self-publishing cost",
+      "path": "https://reedsy.com/blog/guide/how-to-self-publish-a-book/cost-to-self-publish/"
+    },
+    {
+      "label": "BookFormattingServices pricing",
+      "path": "https://bookformattingservices.com/"
+    },
+    {
+      "label": "All The Proof formatting pricing",
+      "path": "https://www.alltheproof.org/formatting"
+    },
+    {
+      "label": "Hawthorn & Aster custom formatting",
+      "path": "https://www.hawthornandaster.com/book-us/p/custom-formatting"
+    },
+    {
+      "label": "国家税务总局跨境应税行为免征增值税政策",
+      "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html"
+    },
+    {
+      "label": "国家税务总局跨境服务免税备案说明",
+      "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239202/content.html"
+    },
+    {
+      "label": "IRS Form W-8BEN instructions",
+      "path": "https://www.irs.gov/instructions/iw8ben"
+    },
+    {
+      "label": "中华人民共和国个人信息保护法",
+      "path": "https://www.npc.gov.cn/WZWSREL25wYy9jMi9jMzA4MzQvMjAyMTA4L3QyMDIxMDgyMF8zMTMwODguaHRtbD9yZWY9aW1i"
+    },
+    {
+      "label": "2026-09-09 人民币汇率中间价公告",
+      "path": "https://fec.mofcom.gov.cn/article/zyfw/jrfw/jrfwywzn/jrfwwh/hlfxglzy/202609/7938.html"
+    }
+  ]
+}
