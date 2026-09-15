@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-09-11 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-09-11</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：AI 模型微调服务（LLM &amp; LoRA 定制）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-09-11.html">2026-09-11</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">AI 模型微调服务（LLM &amp; LoRA 定制）：帮企业用自有数据把开源大模型训成更懂其业务、语气与术语的专属模型，是按项目交付的远程技术服务。它夹在「写提示词（已烂大街）」与「ML 博士」之间被严重低估，但 LoRA/PEFT 已把成本打到消费级显卡可跑、GPU 按秒计费，需求却真实且隐蔽（企业部署通用模型后普遍需要领域适配）。完全异步、全球接单、边际成本极低、可转月度 retainer，是典型的一人公司/数字游民技术型生意。</p>
+      <div class="details">1. 行业是什么，为什么小众
+AI 模型微调服务（LLM &amp; LoRA 定制微调 / Custom Model Fine-tuning）：帮企业、团队或创作者把开源大模型（Llama、Mistral、Qwen、Gemma 等）用他们自己的业务数据做「微调」，产出一个更懂其术语、语气、流程的专属模型，并按项目交付权重、评估报告与部署脚本。
+为什么小众/被低估：① 夹在「写提示词（已严重 commoditize）」和「ML 工程师（以为要 PhD）」之间，普通自由职业者觉得自己够不着，于是不去搜、不去卖；② 搜索量低——多数人搜的是「怎么用 ChatGPT」，而不是「怎么把模型微调成我的业务大脑」，需求隐蔽；③ 看起来技术门槛高（GPU、Transformers、LoRA、训练脚本），但实际上 Hugging Face PEFT + LoRA/QLoRA 已把成本打到消费级显卡可跑，RunPod 按秒计费让算力近乎零库存；④ 真实需求却很强烈且隐蔽：企业部署通用大模型后，普遍遇到「答非所问/语气不对/幻觉/调用成本高」，急需专属适配——这是 2026 年企业 AI 落地里最被低估的「最后一公里」服务。
+
+2. 如何运作
+- 典型客户：SaaS / AI 初创（想要私有、可控、低延迟的领域模型）、法律/医疗/金融等强领域公司、内容平台（品牌语气模型）、电商/客服团队（意图分类与抽取）、想做「品牌声音」的创作者/MCN。需求触发点：通用模型在自家数据上效果差、GPT 类 API 调用成本高、或想要数据不出境的私有模型。
+- 核心交付物：① 清洗好的训练数据集（JSONL，Q&amp;A 格式）；② 微调好的 LoRA / 适配权重（可本地或私有部署，客户拥有模型）；③ 评估报告（前后对比 benchmark）；④ 推理/部署脚本（Ollama / vLLM / Hugging Face）。这是一个「交付可运行模型」的服务，而不是只给咨询建议。
+- 完整工作流：① 获客（Upwork / Toptal / Contra / Arc.dev 上架、LinkedIn 直触海外 SaaS 的 CTO / AI PM、用 GitHub 公开微调项目做作品集）；② 需求诊断（明确用例、数据规模、目标基座模型）；③ 数据准备（把客户 PDF / CSV / 聊天记录 / 文档清洗标注成 Q&amp;A，jakeinsight 建议 ≥500 条样例）；④ 训练（RunPod / Replicate 租 GPU，LoRA / QLoRA，3–12 小时）；⑤ 评估（前后对比、人工抽检）；⑥ 交付权重 + 报告 + 部署脚本；⑦ 收款（平台托管或直签合同，可加月度维护 retainer）。
+- 关键工具/平台：Hugging Face Transformers + PEFT / LoRA、Unsloth（加速训练、降显存）、Weights &amp; Biases / MLflow（实验追踪）、RunPod / Replicate / Modal（按秒计费的云 GPU）、Ollama / vLLM（本地部署）、OpenAI / Anthropic 微调 API（托管式替代方案）。
+
+3. 盈利模式
+- 收入来源与定价（三档）：① 按项目（最常见）：标准微调（7B/14B、约 2000 条样例）$1,500–$4,000；企业级（多轮评估 + vLLM 部署指导 + 完整交付）$4,000–$15,000+（jakeinsight 2026 数据）；② 按时：经验者 $65–$175/小时（Upwork 经验 ML 接包方 $65–$120、Toptal $100–$175；earnifyhub 把「Fine-Tuning &amp; Model Adaptation」列为 $90–$250/hr）；③ 按月 retainer（模型随业务数据持续迭代）：$1,500–$4,000/月（jakeinsight）。
+- 利润空间：边际成本极低——主要支出是 GPU 算力。RunPod 实测：微调一个 7B 模型用 LoRA 约 3 小时 ≈ $2（RTX 4090）；13B 在 A100 上约 6 小时 ≈ $8；即便全量微调 70B 量化版在 H100 上 24 小时也仅约 $72（runpod 2026-08 实测价）。扣除平台抽成（Upwork 10–20%、Toptal 更高）和工具费后，单人服务毛利率可到 70–90%+，因为「人的时间」是主要成本而非硬件。
+- 复购/长期合同：强。模型要随业务数据持续迭代，客户从「单次微调」转向「持续迭代微调」，jakeinsight 提到 2026 客户平均每模型迭代 3.2→4.8 次；retainer 是稳定收入来源，也是这个方向最值钱的部分。
+
+4. 入门门槛
+- 技能：Python（必备）、Hugging Face Transformers + PEFT / LoRA（核心）、基础云 GPU 操作（RunPod 起容器）、基本评估方法。不需要 PhD；jakeinsight 称后端/全栈转行需 3–4 周集中学习 + 真实数据集练手。会 Unsloth 可进一步提速降显存。
+- 工具与费用：起步几乎零成本——Hugging Face 生态开源免费；RunPod 按秒计费（A100 $1.19–1.39/小时、RTX 4090 $0.34–0.74/小时），一个 7B LoRA 训练实测约 $2；可选 W&amp;B 免费层；走托管 API 则 OpenAI / Anthropic 按 token 计费。初期工具月费可控制在 $0–$50。
+- 资金：几乎为零。无需库存、场地、重型设备；最大「设备」是一台能联网的笔记本。
+- 时间：从零到第一单，jakeinsight 估计有 Python / ML 背景者 6–10 周（含作品集搭建 + 持续投递）；冷启动平台前几份提案常被忽略，需 3–4 周持续申请才拿到首个回复。
+
+5. 为什么适合 OPC / 数字游民
+① 异步交付：训练是后台跑的，人在哪都行；客户给数据、你给权重 + 报告，天然异步，时区友好，可在任意有网时区工作。② 全球客户：需求不分地域，Upwork / Toptal / Contra / Arc.dev 都是全球市场；LinkedIn 直触海外 SaaS 可绕过平台费。③ 边际成本低、可规模化：GPU 按秒计费、训练脚本可复用，一个项目跑通后可产品化为「X 行业微调套餐」；retainer 带来稳定现金流。④ 资产复利：公开 GitHub 微调项目是最强作品集，且能持续带来被动询盘，越做越「复利」。⑤ 启动极轻：无库存、无场地、无执照、无团队，一个人从接单到交付到收款全闭环。它是「一人远程、地点自由、低启动、高毛利、可复利」的典型技术型 OPC 生意。
+
+6. 潜在收益（谨慎，不承诺）
+这些是参考区间，不等于个人收入，受技能、niche、获客能力、平台政策影响极大：
+- 新手阶段（0–6 个月，靠平台）：月入约 $500–$2,000（jakeinsight 称首单后靠 2–3 个成功案例可上 retainer；earnifyhub 称 LLM 自由职业者中位月入约 $6,000，但那是有经验者，新手勿对标）。
+- 成熟阶段（6–18 个月，有作品集 + 直客）：月入 $2,000–$8,000+（3 个 retainer 各 $2,000 = $6,000/月，jakeinsight 案例）；资深按项目 $3,000–$15,000/单。
+- 市场底盘参考：Custom LLM Training Platforms 市场 2025 年约 $28.2B → 2026 年 $35.2B（CAGR 24.9%，The Business Research Company / GII 报告）；自由职业需求侧 Upwork「LLM fine-tuning」常年有 40–80 个活跃职位。注意：不同机构对整体「微调服务」规模估算差异极大（$87B–$478B 不等，且彼此矛盾），建议仅作「需求在快速增长」的方向性参考，不要当成个人收入预期。
+明确标注：以上为公开报道与平台公开报价的区间参考，不等于任何人实际收入，新手大概率从低价/试点单起步。
+
+7. 主要风险
+- 市场风险：纯提示词工程正在 commoditize（betonai 称「pure prompt engineering is declining」），若只卖「写提示词」会被取代；但「把模型真正训好并部署」仍稀缺。竞争在低端已拥挤——Fiverr 上图像 LoRA 训练 $20–$150、文字 LoRA $150–$695，需往「企业级 / 垂直领域 / 评估 + 部署」上移，避免陷入 $20 档价格战。
+- 技术风险：工具链依赖（Hugging Face、RunPod、各类 trainer），版本变动需跟进；模型基座更新快（Llama / Mistral / Qwen 频繁发新版），交付物需适配；GPU 供应商价格/可用性波动。
+- 合规风险：跨境数据——客户业务数据出境可能触发生成式 AI / 数据跨境监管（欧盟 AI Act、各地数据合规）；训练数据的版权与隐私（用客户文档训练需授权）；强监管行业（医疗 / 金融 / 法律）微调可能有行业监管要求。需签数据处理协议（DPA）、明确数据可删除/不出境。
+- 现金流风险：平台账期与抽成（Upwork 10–20%）；前期获客成本高、首单周期长（6–10 周）；retainer 若客户数据断供则收入不稳。
+
+8. 不适合的人群
+- 完全零编程基础、且不愿意学 Python 的人（这是硬门槛，不同于纯设计/写作类）。
+- 想要「今天做明天就有钱」的快钱心态者——冷启动 6–10 周起。
+- 对 GPU / 云账单没有成本意识、容易把训练跑成天价的人。
+- 不愿意做「交付 + 评估 + 部署」完整闭环、只想卖咨询话术的人。
+- 处理强监管行业数据却不愿签合规协议、规避责任的冒险者。
+
+9. 3 个可验证的入门步骤
+① 验证技能底座：用 3–4 天在本地/Google Colab 跑通一个最小 LoRA 微调（参考 Hugging Face PEFT 官方示例，用公开数据集微调一个 7B 模型），把过程与「前后评估对比」写成公开笔记 / GitHub README。验证点：你能独立产出可运行的训练脚本和评测——这是后续所有获客的「作品集底座」。
+② 验证市场真实存在：第 2 周起，在 Fiverr / Upwork 搜 &quot;LLM fine-tuning&quot; / &quot;LoRA training&quot;，记录 10 个真实在售 gig 的定价、交付物、好评数（如 it.fiverr.com 上 LoRA 微调 gig 标价 $150–$695、图像 LoRA $20–$150），同时建一个 Contra / Arc.dev 资料页。验证点：确认市场真实存在、你的报价区间有依据，而不是凭空定价。
+③ 验证需求可转化：第 3 周发起一次「免费/低价试点」——在 LinkedIn 找 3–5 家「刚宣布 AI 功能」的海外小 SaaS，用模板化 pitch（附你的 GitHub 微调项目链接，给出「降低 X 任务幻觉率 / 对齐品牌语气」的具体承诺）换取 1 个真实数据集做微调样例。验证点：有人愿意把真实数据交给你、并对交付满意——这比任何教程都更能证明方向可行。
+
+10. 核验来源
+见下方 artifacts（共 8 条可验证公开链接）。</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>11/09/2026, 09:02</p>
+        <p class="meta-line"><span>Finished</span>11/09/2026, 09:14</p>
+        <p class="meta-line"><span>Duration</span>12m 45s</p>
+        <p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p>
+        <p class="meta-line"><span>File</span><code>runs-workbuddy/2026-09-11/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>ai</span><span>llm-finetuning</span><span>machine-learning</span><span>remote-service</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>验证技能底座：3–4 天在本地/Colab 跑通一个最小 LoRA 微调（Hugging Face PEFT 官方示例 + 公开数据集微调 7B 模型），把过程与前后评估对比写成公开笔记/GitHub README，作为作品集底座。</li><li>验证市场真实存在：第 2 周在 Fiverr/Upwork 搜 &#39;LLM fine-tuning&#39;/&#39;LoRA training&#39;，记录 10 个真实 gig 的定价与交付物（LoRA 微调 $150–$695、图像 LoRA $20–$150），同时建 Contra/Arc.dev 资料页，确认报价有依据。</li><li>验证需求可转化：第 3 周在 LinkedIn 找 3–5 家&#39;刚宣布 AI 功能&#39;的海外小 SaaS，用附 GitHub 项目链接的模板化 pitch 换取 1 个真实数据集做微调样例，目标本周拿到至少 1 个付费咨询或试单。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://huggingface.co/docs/peft">Hugging Face PEFT 官方文档（参数高效微调，低成本原理）</a></li><li><a href="https://platform.openai.com/docs/guides/fine-tuning">OpenAI Fine-tuning 官方指南（托管式微调流程与模型）</a></li><li><a href="https://www.runpod.io/articles/guides/ai-server-cost">RunPod 算力定价实测（7B LoRA 微调≈$2、13B A100≈$8、按秒计费）</a></li><li><a href="https://it.fiverr.com/james_bond_bond/fine-tune-llama-mistral-or-qwen-on-your-data-with-lora">Fiverr 真实在售 LLM LoRA 微调 gig（$150–$695）</a></li><li><a href="https://www.fiverr.com/sitpagrue/train-a-custom-lora-model">Fiverr 真实在售图像 LoRA 训练 gig（$20–$150）</a></li><li><a href="https://jakeinsight.com/side-income/2026-03-23-make-money-with-llm-finetuning-services">Jake&#39;s Insights：2026 自由职业 LLM 微调收入与接单实情（项目 $1,500–$15,000、retainer $2k–4k/月）</a></li><li><a href="https://earnifyhub.com/blog/freelancing/freelance-ai-prompt-engineering-llm-2026">EarnifyHub：2026 LLM 自由职业费率（Fine-Tuning &amp; Model Adaptation $90–$250/hr）</a></li><li><a href="https://www.gii.tw/report/tbrc1987636-custom-large-language-model-llm-training-platforms.html">GII / The Business Research Company：Custom LLM Training Platforms 2026 报告（$28.2B→$35.2B，CAGR 24.9%）</a></li></ul></div>
+    </article>
+  </div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 15/09/2026, 09:07</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>

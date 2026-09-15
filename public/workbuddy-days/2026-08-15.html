@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-08-15 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-08-15</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：软件与 App 本地化（多语言 UI / 文档 / 应用商店本地化）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-08-15.html">2026-08-15</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">软件与 App 本地化，是为 SaaS、独立开发者与游戏工作室把 UI、文档和应用商店列表适配成多语言（含 ASO 关键词本地化与 LQA）的 B2B 专业服务，是夹在翻译、i18n 工程与 App 增长之间的高专业化小众子品类。它一人可远程完成、启动几乎零成本、客户全球且异步交付并具持续复购，非常适合 OPC 与数字游民；但需向“ASO 本地化 + 垂直专精”升级以抵御 AI 机翻的低价冲击。</p>
+      <div class="details"># 1. 行业是什么，为什么小众
+一句话定义：软件与 App 本地化（Software &amp; App Localization），是为 SaaS、独立开发者、移动 App 与游戏工作室，把软件的 UI 文案、帮助文档、应用商店（App Store / Google Play）列表和营销页，从一种语言适配成多种语言并做文化/搜索习惯适配的 B2B 专业服务。它不只是“翻译”，还包括关键词本地化（ASO）、字符数限制合规、截图文案、从右到左（RTL）布局检查等。
+
+为什么小众、容易被低估：
+- 需求隐蔽：独立开发者和小 SaaS 创始人往往在产品上线几个月、想出海扩量时才意识到需要本地化；它不是消费者会主动搜的词，藏在“出海/国际化/i18n”的决策链里，搜索量远低于“翻译”“文案代写”等红海词。
+- 夹在几个大行业之间：既是“翻译”的子集，又是“软件工程 i18n”的协作环节，还是“App 增长/ASO”的延伸，没有专属赛道，教程和竞争都少。
+- 看似门槛低（有翻译软件谁都能翻），实则门槛在：懂 CAT 工具与 TMS 平台、懂 App Store 关键词本地化（不是字对字翻译）、懂 UI 文案拓展（德文比英文长约 30%）、能做语言质量测试（LQA）。外行很难交付达标。
+- 不是“烂大街”：dropshipping、联盟营销、刷量无可比性；它卖的是语言专业能力 + 工具链，AI 纯机翻只能做约 90% 的 UI 初稿，真正落地仍需人。
+
+# 2. 如何运作
+典型客户：独立 iOS/Android 开发者、早期 SaaS（ARR &lt; $5M）、游戏工作室（手游/独立游戏）、出海工具类 App、想在日/德/西/葡/阿语市场扩量的产品团队。需求触发点：App 想进新市场、ASO 想抢非英语搜索词、投资人要求国际化数据、用户投诉看不懂英文 UI。
+
+核心交付物：
+- App Store / Google Play 元数据本地化（名称、副标题、关键词、描述、更新说明），每语言约 300–500 词。
+- 应用内 UI 字符串本地化（JSON / XLIFF / .strings / .arb 等格式），常见 2,000–30,000 词。
+- 帮助文档 / 落地页 / 邮件流本地化。
+- 语言质量测试（LQA）：在真机/模拟器里检查译文是否溢出、是否截断、术语一致。
+- 可交付为双语对照表 + 导入 TMS 的文件 + 截图标注。
+
+完整工作流：
+1. 获客：Upwork / Fiverr / ProZ / Smartcat 上架服务；独立开发者社区（Indie Hackers、r/iOSProgramming、Product Hunt、开发者 X/Twitter）；LinkedIn 触达 SaaS 出海团队；老客户续做新语言。
+2. 接单与 brief：确认目标市场、源文件格式（CSV / JSON / XLIFF）、是否需要 ASO 关键词研究、截图是否要本地化。
+3. 翻译与适配：用 CAT 工具（OmegaT / SmartCAT）或 TMS（Crowdin / Lokalise / Tolgee）翻译，配合 DeepL / LLM 初稿 + 人工审校；对元数据做本地关键词研究（不是翻译关键词）。
+4. 质检：LQA 在真机检查字符溢出、RTL、术语一致性；客户母语者复审关键页。
+5. 交付与收款：导出目标格式文件或直接在 TMS 交付；平台 escrow 或 PayPal / Payoneer / Wise / Stripe 收款；多年合作客户按月/按语言 retainer。
+
+关键工具和平台：TMS/协作 Crowdin（免费起）、Lokalise、Tolgee（免费起）、Phrase、Transifex、POEditor；CAT 工具 OmegaT（免费开源）、SmartCAT（免费）、Wordfast；AI 初稿 DeepL Pro / Claude / GPT；接单 Upwork、Fiverr、ProZ.com、Smartcat Marketplace、TranslatorsCafe；ASO 关键词研究 App Store Connect、Sensor Tower、Keyword Tool；收款 PayPal / Payoneer / Stripe / Wise。
+
+# 3. 盈利模式
+收入来源与定价：
+- 按词（最常见翻译部分）：通用 $0.04–$0.12/词；软件/技术/专业 $0.10–$0.25/词（legalclarity / aitrainingjobs 2026 费率）。
+- 按项目/语言：App 元数据本地化 $50–200/语言（自由职业者），$100–300/语言（机构）；完整 App 本地化（5–10 语言）$3,000–15,000+（机构），自由职业者 $500–5,000（asotxt / legalclarity）。
+- 按小时：LQA 审校 $31–$48/小时；美国本地化专家约 $46/小时；创译（transcreation）$50–$150/小时（legalclarity / Alconost / Ulatus）。
+- 平台参考：Upwork 翻译者 $15–$40/小时，资深本地化 $40–$80+/小时；Fiverr 常见语言对 1,000 词 $15–$100；Payoneer 2024 调研称翻译是平台最抢手技能前 10，全职译者年均约 $28,000。
+
+利润空间：纯人力 + 轻量订阅，扣除平台费（Upwork 0–15%、Fiverr ~20%）、工具费（多数免费或 $10–30/月）、税费后，净利率约 70–90%。例如一份 5 语言元数据本地化收 $600，主要成本是时间（约 6–12 小时，含关键词研究）。
+
+复购/长期：强。App 持续发版 → 每次更新只需翻译新增字符串（翻译记忆 TM 复用），客户长期按月/按语言续费；把 1–2 个客户做成 retainer（$300–2,000+/月）是稳定现金流。
+
+# 4. 入门门槛
+技能：需母语级目标语言 + 工作语言（通常英语为源）；会用 CAT/TMS 工具；懂 App Store 关键词本地化逻辑与字符限制；懂基本文件格式（JSON / XLIFF）。学起来：有语言基础的人 1–2 周可上手工具，2–4 周能接小单；成为“懂 ASO 的本地化”差异化需 1–3 个月积累案例。
+工具：初期 OmegaT（免费）+ DeepL 免费档 + Crowdin / Tolgee 免费层 + 一个接单平台账号（均免费）。轻量付费：DeepL Pro ~$8–27/月、SmartCAT 免费、ProZ Pro $150/年（可选）。启动几乎零成本。
+资金：启动资金约 $0–$200（主要是可选 ProZ 会员 / DeepL Pro / 作品集站域名）。无库存、无场地、无重型设备。
+时间：从零到第一单约 2–6 周（建作品集 + 平台接单 + 低价跑通）。语言基础好、已有目标客户资源的人可缩短到 1–2 周。
+
+# 5. 为什么适合 OPC / 数字游民
+- 异步交付：客户发来字符串文件，你翻译后回传，全程无需同步会议；适合跨时区接全球客户（北美 SaaS 白天发需求，你在亚洲夜间交付）。
+- 全球客户：语言服务是全球市场，客户可在美/欧/日/中东；你人在哪不影响交付，只要有网。
+- 边际成本低：翻译记忆（TM）让重复术语/句子免费复用，第二单同客户成本递减；TMS 自动化导入导出省人工。
+- 可规模化（轻）：通过 TMS + AI 初稿处理大量字符串，单人可以服务 10+ 语言；也可把超出自己语对的工作转包给母语者（你做项目管理抽成）。
+- 时区友好且稳定：App 本地化是持续 recurring 需求（每次发版都来），不像临时项目一次性；retainer 模式带来可预测月收入，特别适合数字游民的现金流规划。
+- 具体而非空泛：不需要团队、不需要办公室、不需要本地执照；一台笔记本 + 网络即可闭环，是教科书级的“一人远程 B2B 服务”。
+
+# 6. 潜在收益（谨慎，不承诺）
+引用公开数据（这些是参考数据，不等于个人收入）：
+- 市场大盘：CSA Research 估算 2025 全球语言服务市场约 $595 亿（另有 Nimdzi 估 $757 亿、Statista 估 2026 $655 亿），年增 6–9%（CSA / Nimdzi 多源）。游戏本地化细分 2021 $17 亿 → 2025 $23.5 亿 → 2033 预计 $44.8 亿。
+- 需求侧强信号：CSA“Can&#39;t Read, Won&#39;t Buy”研究覆盖 29 国 8,700+ 消费者——76% 倾向用母语购买、40% 会因非母语网站直接不买；appstorelocalization.com 引用 CSA 数据称 72.4% 消费者更愿买有母语信息的产品。App Store 67% 收入来自非英语市场。
+- 收益区间（行业公开区间，非个人承诺）：新手阶段（前 3–6 月，平台接小单）月入参考 $300–$1,500；成长期（有案例、做 ASO 本地化 / retainer）月入 $2,000–$6,000；资深/垂直专精（游戏、法律、医疗本地化 + 转包）月入 $5,000–$10,000+。Payoneer 2024 称平台全职译者年均约 $28,000，但专精本地化者明显高于均值。
+- 客户侧 ROI 佐证需求刚性：多家机构测算本地化项目 Year-1 ROI 普遍 &gt;200%，Ekitai 模型保守 816% / 乐观 2,233%、回本约 7 周；linguidoor 称 96% 企业报告正向 ROI。这是客户愿意持续付费的根本原因。
+明确标注：以上为市场与从业者公开区间，受语言对、专业度、获客能力影响极大，不等于任何个人收入保证。
+
+# 7. 主要风险
+- 市场风险：AI / 机器翻译（DeepL、LLM）压低通用文本价格，纯“字对字翻译”被 commoditize；需求随客户出海预算波动。应对：向“ASO 关键词本地化 + LQA + 垂直专精”升级，卖 AI 做不好的部分。
+- 技术风险：高度依赖 TMS 平台（Crowdin / Lokalise）与 AI 供应商政策/定价变动；格式生态（XLIFF / JSON）迭代。应对：掌握开源/免费工具（OmegaT、Tolgee 自托管）降低单点依赖。
+- 合规风险：跨境收款税务（各国对自由职业者征税不同）；数据隐私（处理用户数据/截图可能触 GDPR）；某些市场（如医疗/金融）本地化需合规术语。应对：用合规收款通道、签 NDA、了解居住地报税规则。
+- 现金流风险：平台账期与 escrow 放款延迟；获客成本（初期在 Upwork / Fiverr 抢单要抽成）；客户拖款。应对：积累直接客户（LinkedIn 触达）降低平台抽成、用里程碑收款、设 retainer 平滑现金流。
+
+# 8. 不适合的人群
+- 只想“用翻译软件一键赚钱”、不愿学 CAT/TMS 工具和 ASO 逻辑的人——会被 AI 低价取代。
+- 语言能力仅单一、且无目标市场母语能力的人（无法保证质量）。
+- 追求“立刻暴富/被动收入”的人——本地化是按交付计费的专业服务，需持续接单与积累口碑。
+- 不愿做客户沟通与项目管理、只想纯写的人——App 本地化常需和客户 PM/开发对齐格式与术语。
+- 对持续学新工具/新平台有抵触的人（工具链迭代快）。
+
+# 9. 3 个可验证的入门步骤
+1. 上 Fiverr / Upwork / ProZ 搜 “app localization” / “software localization” / “ASO translation”，记录 10 个高评价卖家的定价、语言对、交付物与评价数；同时在 App Store Connect 看元数据字符限制，确认需求真实并找到差异化缺口（如专做“中→日/西语 + ASO 关键词”）。
+2. 用免费工具（OmegaT + DeepL 免费档 + Crowdin 免费层）把一款你熟悉的 App 的英文元数据/少量 UI 字符串本地化成一个目标语言，做成 1 份示范样本（含关键词研究与截图标注），发布到个人作品集站（Carrd / Notion 免费）作为门面。
+3. 在 Fiverr / Upwork 上架一个低价 gig（如 $30–$80 做单语言 App 元数据本地化），接 1–2 个真实低价单，跑通“接单→翻译→LQA→交付→收款”闭环，验证自己能否稳定交付并拿到好评。
+
+# 10. 核验来源
+（见本 JSON 的 artifacts 字段，均为真实可访问链接：CSA Research 市场数据、golingo CSA 百强榜报道、AppStoreLocalization 下载/收入提升研究、RetranslateAI 开发者真实数据、ASOtxt 与 LegalClarity 本地化成本费率、LocaFlow 2026 TMS 定价、Cube Localization ROI 实测案例。）</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>15/08/2026, 08:05</p>
+        <p class="meta-line"><span>Finished</span>15/08/2026, 08:55</p>
+        <p class="meta-line"><span>Duration</span>50m</p>
+        <p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p>
+        <p class="meta-line"><span>File</span><code>runs-workbuddy/2026-08-15/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>software-localization</span><span>app-localization</span><span>freelance-localization</span><span>saas-globalization</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>上 Fiverr/Upwork/ProZ 搜 &#39;app localization&#39; / &#39;software localization&#39; / &#39;ASO translation&#39;，记录 10 个高评价卖家的定价、语言对、交付物与评价数；同时在 App Store Connect 看元数据字符限制，确认需求真实并找到差异化缺口（如专做中→日/西语 + ASO 关键词）。</li><li>用免费工具（OmegaT + DeepL 免费档 + Crowdin 免费层）把一款熟悉 App 的英文元数据/少量 UI 字符串本地化成一个目标语言，做成 1 份含关键词研究与截图标注的示范样本，发布到 Carrd/Notion 免费作品集站作为门面。</li><li>在 Fiverr/Upwork 上架一个低价 gig（如 $30–$80 做单语言 App 元数据本地化），接 1–2 个真实低价单，跑通“接单→翻译→LQA→交付→收款”闭环，验证自己能否稳定交付并拿到好评。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://csa-research.com/">CSA Research 官网（全球语言服务市场数据与基准工具）</a></li><li><a href="https://golingo.cn/news/38?source_page=1">golingo：CSA 2026 百强榜报道，引 2025 全球语言服务市场约 $595.3 亿</a></li><li><a href="https://appstorelocalization.com/blog/app-localization-increases-revenue">AppStoreLocalization：CSA 72.4% 母语购买偏好、67% App Store 收入来自非英语市场、本地化下载提升 30–300%</a></li><li><a href="https://retranslateai.com/appstore-translator/blog/does-app-store-localization-increase-downloads">RetranslateAI：开发者真实数据，本地化后下载 +20–150%</a></li><li><a href="https://asotxt.com/news/1806">ASOtxt：App 本地化成本（自由职业者 vs 机构费率，$50–200/语言、整包 $500–15,000+）</a></li><li><a href="https://legalclarity.org/app-localization-cost-rates-hidden-fees-and-savings">LegalClarity：软件/App 本地化按词费率（亚洲 $0.05–0.10、西欧 $0.10–0.18、北美 $0.12–0.20/词）与 LQA 时薪</a></li><li><a href="https://locaflow.dev/blog/best-app-localization-tools-for-mobile-apps">LocaFlow：2026 主流本地化 TMS 定价（Lokalise / Crowdin / Phrase / Tolgee / Transifex 等）</a></li><li><a href="https://cubelocalization.com/localization-roi/">Cube Localization：本地化 ROI 实测案例（西语 LATAM 投资 $65k→收益 $220k，ROI 238%）</a></li></ul></div>
+    </article>
+  </div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 15/09/2026, 09:07</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>

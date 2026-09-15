@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-08-09 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-08-09</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：AI 语音智能体搭建服务（AI Voice Agent / 电话智能体）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-08-09.html">2026-08-09</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">AI 语音智能体搭建服务是用 Vapi/Retell/Bland 帮中小企业搭一个能自动接打电话的「AI 前台」：7×24 接听、约排期、筛线索。需求真实且正在爆发（68% 美国小企业常用 AI 但仅 14% 部署了生产级 AI agent），交付可全 no-code 异步完成、客户全球、启动成本近乎为零，极适合一人远程（OPC）与数字游民。</p>
+      <div class="details">1. 行业是什么，为什么小众
+AI 语音智能体搭建服务（AI Voice Agent Building）是帮中小企业用 Vapi / Retell / Bland 这类平台搭一个能自动接打电话的「AI 前台/电话销售」：7×24 接来电、回答常见问题、预约排期、筛选线索、转人工。普通人容易忽略它，是因为它夹在「电话总机/客服外包」「AI chatbot」「自动化（Zapier/n8n）」几个大词之间，搜索量低、没有铺天盖地的教程，但每个漏接电话就丢生意的服务型企业（诊所、律所、水管工、房产、餐饮）都是真实付费客户。它本质是 2024-2025 年才成熟的新基础设施（端到端延迟降到 500ms 以内、电话/SIP 接入变便宜），大多数人还没意识到「搭一个会打电话的 AI」现在一个人用 no-code 就能干。
+
+2. 如何运作
+- 典型客户：本地服务型企业（牙科/医美、律所、HVAC/水管工、房产中介、餐厅、健身）、需 after-hours 接线的初创与电商。需求触发点：漏接电话丢单、请不起全职前台、想做 outbound 回访/提醒/催收。
+- 核心交付物：一个可上线运行的语音智能体 + 话术脚本 + 与日历/CRM（Google Calendar、GoHighLevel、HubSpot）的对接 + 通话记录/摘要回传 + 简短交接文档。轻量版可只交付「配置好能接电话的 agent」。
+- 工作流：① 获客（Fiverr/Upwork 挂 gig、LinkedIn/X 直触本地商家、代理商转介）→ ② 接 brief（行业、常见来电、要问什么、是否接日历/CRM）→ ③ 在平台 no-code builder 配对话流、写 prompt、选声音（ElevenLabs 等）→ ④ 接 Twilio 号码 + 日历/CRM webhook → ⑤ 实测通话、调话术、设人工转接规则 → ⑥ 交付 + 教客户用 + 收尾款；之后可按月收托管/优化费。
+- 关键工具/平台：Vapi、Retell AI、Bland、Synthflow（no-code）、ElevenLabs/Cartesia（TTS）、Twilio/Telnyx（电话）、n8n/Make（工作流）、GoHighLevel/HubSpot（CRM）。
+
+3. 盈利模式
+- 收入来源与定价：① 一次性搭建费为主。Fiverr 上「AI receptionist / AI voice agent」gig 从 $15 起（多为 $75–$250，含牙科/地产等垂直套餐 $150–$590，整套 GoHighLevel 系统 $1,200）；② 按复杂度分级，Upwork 上单 agent 搭建 $500–$2,000、含 CRM/API 对接 $3,000–$8,000、多 agent 系统 $8,000–$20,000；③ 月度 retainer：托管+优化 $200–$1,500/月（小型）到 $2,000–$5,000+/月（机构）。
+- 利润空间：核心成本是平台按分钟计费与 Twilio 话费，搭建本身是一次性人力。扣除平台佣金（Fiverr 20%、Upwork ~10%）与极少工具费后，搭建项目净利率约 60–85%；retainer 模式下边际成本极低（主要是监控+调优），净利率可到 80–90%。
+- 复购/长期：强。电话费按月产生、客户需要持续调话术/扩场景，易转成按月 retainer；一个商家满意后可转介同行（本地商家圈层传播明显）。
+
+4. 入门门槛
+- 技能：会用 no-code 平台 builder + 写清晰对话 prompt + 基础 API/webhook 概念（接日历/CRM）+ 把需求翻译成话术。不要求会训练模型或写底层代码（Vapi 类可全 no-code；想做深度可学一点 JS/Python）。认真学 1–3 周可独立交付简单 inbound agent。
+- 工具：初期几乎全免费——Retell/Vapi 均给 $10 免费额度、Synthflow 有免费层；Twilio 试用号几美元。可选付费：ElevenLabs $5/月起、n8n 社区版自托管免费。启动成本 $0–$50。
+- 资金：从零启动几乎为 0（用免费额度练手）；若要买测试号码/声音约 $10–$50。
+- 时间：从零到第一单——在 Fiverr 挂产品化 gig + 用免费额度做出 1–2 个 demo 后，通常 1–2 周内有首单/咨询；LinkedIn 直触本地商家转化更快（有案例称 1 周内赚到第一笔）。
+
+5. 为什么适合 OPC / 数字游民
+① 异步交付：搭建是配置+文档，不要求实时陪同；客户在任意时区，你按自己节奏工作。② 全球客户 + 时区友好：英语国家本地商家海量（北美占语音 AI 市场约 38%），且「帮小商家接电话」是跨国通用痛点，时差反而利于「夜间接听」卖点。③ 边际成本低、可规模化：一个 agent 模板可复制到无数同类商家（牙科模板卖 100 家），搭建一次、微调复用；retainer 模式下一份监控覆盖多客户。④ 无需场地/执照：纯电脑+网络，不涉及线下面试或本地执业牌照（合规见风险章，但没有「持证上岗」硬门槛）。⑤ 平台即基础设施：Vapi/Retell 已把 STT+LLM+TTS+电话编排打包好，你卖的是「部署+话术+对接」的集成能力，不重造轮子。
+
+6. 潜在收益（谨慎，不承诺）
+参考数据，不等于个人收入：
+- 市场面：对话式 AI 市场 2026 年约 $17.97B、CAGR 约 21%、到 2034 年 $82.46B（Fortune Business Insights）；AI 语音智能体子市场 2026 约 $3.51B → 2033 约 $35.24B、CAGR 39%（Grand View Research）；Gartner 预计 2026 年对话式 AI 为联络中心节省 $80B 人工成本。
+- 需求面：68% 美国小企业已常用 AI，但 200 人以下企业仅 14% 部署了生产级 AI agent（McKinsey/Salesforce）；10–500 人企业部署/试点语音 AI 的比例从 2024 Q1 的 8% 升至 2026 Q1 的 34%（SMB Group）——需求在爆发但能可靠搭出来的人仍稀缺。Upwork 上 AI 相关招聘中「语音 agent/前台」是最大类。
+- 成本对比（说服力来源）：AI 处理一通电话约 $0.40，人工约 $7–$12（Teneo.ai；平均人工接听 $7.16/通，Retell）。案例：Medical Data Systems 用 Retell 处理 100% 来电、月收约 $28 万、仅 30% 转人工；某 HVAC 承包商首月挽回本要丢给语音信箱的 $1.8 万营收。
+- 个人收入区间（参考，非承诺）：新手阶段（0–6 月）靠 Fiverr/Upwork 接单月入约 $300–$3,000；进阶（有案例+retainer）月入 $2,000–$8,000；成熟（多个 retainer + 代理商渠道）可达 $5,000–$15,000+/月（convocore freelance 指南给出的 AI 语音搭建区间 $2,000–$15,000/月、时薪 $30–$250）。
+
+7. 主要风险
+- 市场风险：平台按分钟计费价格可能下调/上调（Bland 2025-12 涨价 55%），Fiverr 上竞争者已很多低价 gig，需靠垂直深耕（某行业话术模板）和 retainer 拉开差距。
+- 技术风险：强依赖 Vapi/Retell/Twilio 等第三方，平台政策/定价/接口变更会直接影响交付；延迟、断线、幻觉答错（约 92–96% 标准场景可解，但长尾会出错）需设人工转接兜底。
+- 合规风险（重点）：① 美国 FCC 2024-02-08 裁定（FCC-24-17）——AI 生成 voice 属 TCPA「人工/预录语音」，outbound AI 呼叫须取得事前明示同意，违规 $500–$1,500/通且无上限；但 inbound（客户打进来的）不受影响。② 多州立法（科州 AI Act 2026 等）可能把语音 AI 列为高风险。③ 医疗/金融需 HIPAA/SOC2（Retell/Vapi 可签 BAA，Vapi HIPAA 加价约 $1,000/月；Bland 含 HIPAA）。④ 跨境（EU GDPR/AI Act）需披露 AI 身份、数据驻留。建议：只做 inbound 或已取得同意的 outbound，通话开头明确「我是 AI」，留存同意记录。
+- 现金流风险：搭建项目多为预付/尾款，retainer 有账期；获客初期靠平台抽成，获客成本（平台 10–20% 佣金）侵蚀利润，建议尽早建私域/直客。
+
+8. 不适合的人群
+- 完全不想碰任何 API/webhook、看到「配置」就头大的人（虽可 no-code，但接日历/CRM 仍需一点技术）；
+- 想「纯被动躺着赚」、不愿做客户沟通与话术调优的人（这是服务型交付，不是卖货）；
+- 计划做大规模 outbound 冷呼、又不愿研究 TCPA 合规的人（违规风险极高）；
+- 所在市场本地商家几乎不用英文/不接电话、且无跨境客户的人（需求不足）。
+
+9. 3 个可验证的入门步骤
+① 竞品与需求核验（1 天，零成本）：在 Fiverr 搜「AI receptionist」、Upwork 搜「Vapi/Retell/Bland」，记录 10–15 个竞品的价格、套餐档位、评价数，确认需求真实且定价区间（多数 $75–$250/单）。
+② 用免费额度跑通一个 demo（2–3 天，成本 ≤$10）：注册 Retell 或 Vapi（均 $10 免费额度），用 no-code builder 为虚构「牙科诊所」搭一个能接电话、问症状、约时间的 inbound agent，拨测并录下一段通话验证可行性。
+③ 挂产品化 gig 收首单（3 天内验证）：在 Fiverr 挂「用 Vapi/Retell 搭 AI 电话接待员（含话术+日历对接）」定价 $80–$200，同步在 LinkedIn/X 发一条 demo 案例帖，看 3 天内是否收到咨询/首单；有咨询即说明值得继续。
+
+10. 核验来源
+（见 artifacts 字段，均为可访问的真实链接：市场数据、平台官方定价、真实在售 gig、自由职业费率、合规裁定、案例与小生意指南。）</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>09/08/2026, 08:50</p>
+        <p class="meta-line"><span>Finished</span>09/08/2026, 09:05</p>
+        <p class="meta-line"><span>Duration</span>15m</p>
+        <p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p>
+        <p class="meta-line"><span>File</span><code>runs-workbuddy/2026-08-09/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>voice-ai</span><span>ai-agent</span><span>automation</span><span>small-business</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>竞品与需求核验（1 天，零成本）：在 Fiverr 搜「AI receptionist」、Upwork 搜「Vapi/Retell/Bland」，记录 10–15 个竞品的价格、套餐档位、评价数，确认需求真实且定价区间（多数 $75–$250/单）。</li><li>用免费额度跑通一个 demo（2–3 天，成本 ≤$10）：注册 Retell 或 Vapi（均 $10 免费额度），用 no-code builder 为虚构「牙科诊所」搭一个能接电话、问症状、约时间的 inbound agent，拨测并录下一段通话验证可行性。</li><li>挂产品化 gig 收首单（3 天内验证）：在 Fiverr 挂「用 Vapi/Retell 搭 AI 电话接待员（含话术+日历对接）」定价 $80–$200，同步在 LinkedIn/X 发一条 demo 案例帖，看 3 天内是否收到咨询/首单。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://www.retellai.com/blog/best-voice-ai-providers">Retell AI 官方 2026 语音 AI 平台评测（市场数据、$0.07/min 定价、Medical Data Systems $28万/月案例）</a></li><li><a href="https://www.bland.ai/blog/voice-ai-pricing-enterprise">Bland AI 官方企业级语音 AI 定价（按分钟与套餐实情）</a></li><li><a href="https://www.fiverr.com/gigs/receptionist?page=4">Fiverr 在售「AI receptionist / AI voice agent」gig 与真实定价（$15–$650）</a></li><li><a href="https://www.upwork.com/hire/bland-ai-developers">Upwork Bland AI 开发者雇佣指南（单 agent $500–$2,000、系统 $8,000–$50,000）</a></li><li><a href="https://trillet.ai/blogs/voice-ai-market-size-and-agency-opportunity-2026">Trillet：2026 语音 AI 市场规模与代理商机会（对话式 AI $17.97B、语音 agent $3.51B、CAGR 39%）</a></li><li><a href="http://fcc.gov/document/fcc-confirms-tcpa-applies-ai-technologies-generate-human-voices">FCC 2024-02-08 裁定：AI 生成语音适用 TCPA（合规依据 FCC-24-17）</a></li><li><a href="https://weblaunch.ca/blog/ai-voice-agents-small-business-guide">weblaunch.ca：小生意 AI 语音智能体指南（solo 商家盈亏平衡、$1.8万挽回案例）</a></li><li><a href="https://convocore.ai/make-money-with-ai/ai-freelancing">ConvoCore：用 AI 技能自由职业赚钱（语音 agent 搭建收入 $2,000–$15,000/月、时薪 $30–$250）</a></li></ul></div>
+    </article>
+  </div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 15/09/2026, 09:07</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>

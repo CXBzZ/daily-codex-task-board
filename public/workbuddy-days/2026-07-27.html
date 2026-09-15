@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-07-27 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-07-27</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：网页数据抓取与数据即服务（Web Scraping / Data-as-a-Service）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-07-27.html">2026-07-27</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">网页数据抓取与「数据即服务」（DaaS）是把公开网页信息批量、可复用地采集、清洗成结构化数据集（CSV/JSON/API/Google Sheet）卖给企业的技术型服务。它靠 Python + 云平台（Apify/Zyte/Bright Data）就能一人闭环，全球客户、异步交付、边际成本极低，尤其适合有点编程基础的数字游民；真实需求由电商比价、销售线索、市场情报、AI 训练数据驱动，Fiverr/Upwork 上有上万在售订单，市场规模也在稳定扩张。</p>
+      <div class="details">1. 行业是什么，为什么小众
+网页数据抓取（Web Scraping）/ 数据即服务（Data-as-a-Service, DaaS）：用自动化脚本或云平台，把公开网页上的信息（商品价格、评论、招聘、房源、企业名录、社媒公开数据等）批量采集下来，清洗成结构化数据集（Excel/CSV/JSON），或搭成定时更新的数据管道/API，交付给需要这些数据的企业。
+为什么小众且被低估：普通人一听「爬虫」要么觉得是黑客技术、门槛极高不敢碰，要么觉得违法不能干——两种误解都劝退了大量人。实际上：(a) 抓公开数据在美国主流判例（hiQ v. LinkedIn、Meta v. Bright Data）里被反复确认不违反 CFAA；(b) 有了 Apify、Zyte、Bright Data 这类云平台，代理轮换、反爬绕过、无头浏览器都被封装好，技术门槛比五年前低得多。它夹在「编程外包」和「数据分析」两个大类中间，很少有人把它当成一个独立、可标准化售卖的服务品类，于是竞争相对温和、报价却不低。
+
+2. 如何运作
+- 典型客户是谁：电商卖家/品牌（比价、竞品选品、评论监控）、市场研究与增长团队（销售线索、行业名录、舆情）、房产/招聘/旅游等垂直平台（聚合房源、职位、机票）、投研与数据团队（另类数据）、以及近两年爆发的 AI 公司（要大量训练语料/数据集）。需求触发点通常是「我需要某网站/某批网站上的数据，但人工复制粘贴做不完、也没有现成 API」。
+- 核心交付物：一次性数据集（一份干净的 CSV/JSON/Google Sheet）、或可复用的抓取脚本、或「定时跑 + 自动推送」的数据管道/小型 API。高阶客户还要数据清洗、去重、字段标准化、增量更新。
+- 完整工作流：① 获客（Fiverr/Upwork 挂 gig、冷邮 + 案例、在数据/增长社群接单）→ ② 需求确认（目标站点、字段清单、数据量、更新频率、交付格式、是否含个人数据）→ ③ 可行性与合规评估（是否公开、有无登录墙/robots 限制、反爬强度）→ ④ 开发抓取（requests/httpx + BeautifulSoup 抓静态；Playwright/Selenium/Puppeteer 抓 JS 动态；配代理与限速）→ ⑤ 清洗与校验（去重、格式化、抽样核对准确率）→ ⑥ 交付（CSV/JSON/Sheet/API + 简短说明）→ ⑦ 收款与维护（网站改版后修脚本，转月度维护）。
+- 关键工具和平台：Python 生态（Scrapy、Playwright、BeautifulSoup、pandas）；云平台 Apify（Actor 市场 + 调度）、Zyte（Scrapy Cloud + 智能解析 API）、Bright Data（代理 + 预置数据集）、ScraperAPI/ScrapingBee（渲染代理 API）；交付用 Google Sheets/Airtable/S3；定时用 cron/Apify Schedule/n8n。
+
+3. 盈利模式
+- 收入来源与定价：① 一次性抓取按项目计价（Fiverr 基础档 $5–50、标准档 $50–150、高级/大数据集 $150–500+，$500+ 多为定制）；② 按记录/按站点复杂度报价；③ 定时监控/数据管道走月度订阅（retainer，$200–$2,000+/月，网站越多、更新越频、反爬越强越贵）；④ 现成数据集/名录打包重复售卖（一次开发、多次卖）。
+- 利润空间：主要成本是云平台与代理费（简单静态页每页约 $0.0005–0.002，JS 渲染页约 $0.003–0.01，住宅代理约 $1.5–4/GB）+ 平台抽成（Fiverr 抽卖家 20%）+ 时间。工具成本相对交付价占比很低，扣除后净利率普遍约 70–90%；定时监控/数据集复卖类因边际成本趋近于零，利润率最高。
+- 复购/长期合同：非常突出。价格监控、竞品评论、线索更新天然是「持续需求」，一旦脚本跑通、客户依赖数据做决策，就会转成稳定月费；网站改版还带来周期性维护收入。
+
+4. 入门门槛
+- 技能：需要基础 Python（requests/Playwright/BeautifulSoup、pandas 清洗）、会看 HTML/CSS 选择器与浏览器开发者工具、理解 HTTP 与 JSON、懂代理与限速礼仪、了解基本合规边界。有编程基础者 2–6 周可做出能交付的第一版；零基础学起来更久，但也可先用 Octoparse 等可视化工具接简单单。
+- 工具：起步几乎零成本——Python、Scrapy、Playwright 全免费；Apify 免费额度 $5/月、Starter $29/月；Zyte 纯按量 $0.13/千次起；需要住宅代理时再按量买（Bright Data PAYG 约 $4/GB）。
+- 资金：$0–100 即可起步（一台能跑 Python 的电脑 + 少量平台/代理按量费），随单量增长再加预算。
+- 时间：有编程底子，从零到第一单常见 2–6 周（含学习 + 做作品集样例 + 挂 gig）。
+
+5. 为什么适合 OPC / 数字游民
+- 完全异步 + 远程：需求用文字说清字段，脚本在云端跑，交付一个文件/链接即可，无需实时协作或到场。
+- 全球客户、低时区依赖：Fiverr/Upwork 上买家遍布欧美，数据交付不看时区，睡觉时脚本也在云端跑。
+- 边际成本极低、可复用可规模化：同一套抓取框架换选择器就能服务不同站点；数据集与监控管道可「一次开发、重复售卖/持续收费」，单人也能承接多个长期客户。
+- 轻资产：无库存、无场地、无本地执照，一台笔记本 + 云平台账号即可开工，天然契合数字游民。
+- 技能可复利：抓取 + 清洗 + 自动化能力可平滑延伸到 n8n 自动化、数据看板、AI 数据准备等相邻高价服务。
+
+6. 潜在收益（谨慎，不承诺）
+- 参考市场数据（公开报告，非个人收入承诺）：全球「数据抓取服务」市场 2025 约 8.5 亿美元 → 2032 约 20.6 亿美元（CAGR≈13.5%，PMarketResearch）；另一口径「数据抓取服务」2025 约 18.5 亿美元 → 2034 约 43.7 亿美元（CAGR≈9.8%，IntelMarketResearch）；「网页抓取软件与平台」市场 2025 约 14 亿美元 → 2032 约 34 亿美元（CAGR≈13.5%）。生成式 AI/LLM 对大规模训练数据的需求是近两年最强增长引擎。
+- 平台报价区间：Fiverr「Data Mining &amp; Web Scraping」在售 gig 上万个，基础 $5–50、标准 $50–150（多数一次性提取的甜点区）、高级/定制 $150–500+，Top Rated 卖家如 Shafaqat Ali、Vijay 均有 1k+ 评价，起价 $30–100；Pro/资深卖家起价 $100–500。Apify 官方「Personal training」标价 $150/小时，可间接反映专家时薪水平。
+- 阶段区分（参考，不等于个人收入）：新手接零散一次性单，月收入常见 $300–1,500；进入成长期、积累作品集与长期监控客户后，$2,000–6,000/月区间较常见；把「定时监控 + 数据集复卖」做成产品化的成熟卖家可更高。以上均为区间参考，实际取决于技能、获客、客户质量与合规风险控制。
+
+7. 主要风险
+- 市场风险：低端一次性抓取单竞争激烈、价格被大量 $5–30 卖家压低；越来越多网站直接提供官方 API 或反爬加强，简单单减少，需向「复杂站点 + 定时监控 + 数据工程」上移。
+- 技术风险：目标网站频繁改版导致脚本失效（要持续维护）；反爬手段（CAPTCHA、IP 封禁、指纹识别、限速）不断升级，抬高代理/工具成本；高度依赖 Apify/Zyte/Bright Data 等平台，其定价与政策变动会直接影响利润。
+- 合规风险（最关键）：抓公开数据在美国判例（hiQ、Meta v. Bright Data）总体获支持，但边界严格——① 不得绕过登录墙/付费墙/技术保护措施（Reddit v. Perplexity 2025 以 DMCA §1201 起诉绕过反爬，仍在审）；② 违反网站服务条款可能构成违约（Air Canada v. Seats.aero）；③ 涉及个人数据要受 GDPR/CCPA 约束，法国 CNIL 2025 就对 KASPR 抓 LinkedIn 个人数据罚款 24 万欧元；④ 版权作品不能直接复制转售。务必只抓公开、非个人、可转化使用的数据，避开登录墙与敏感数据。
+- 现金流风险：Fiverr/Upwork 有账期与 20% 抽成；获客初期成本（时间、试单）不低；定制大单可能遇到需求反复与多轮返工。
+
+8. 不适合的人群
+- 完全没有编程意愿、也不愿学可视化工具的人（纯外包会被低价卷死）。
+- 想「零门槛躺赚」、不愿持续维护脚本、讨厌和网站反爬来回博弈的人。
+- 对法律边界无感、可能去抓登录墙内数据/个人隐私/版权内容以求捷径的人——这是最容易踩雷、代价最高的方向。
+- 需要立刻稳定高收入、无法承受接单初期不确定性与账期的人。
+
+9. 3 个可验证的入门步骤
+① （1–2 天）用 Python + BeautifulSoup 或 Playwright 抓一个公开、结构清晰、无登录墙的站点（如某电商类目商品名+价格、或公开企业名录），导出成干净 CSV，作为第一个作品集样例——验证你能独立跑通「抓取→清洗→交付」闭环。
+② （1 天）注册 Apify 免费账号，跑通一个现成 Actor（如 Website Content Crawler / Google Maps Scraper）并设置一次定时任务，把结果自动导出到 Google Sheet——验证你能用云平台交付「可复用/可监控」而非一次性数据。
+③ （1–3 天）在 Fiverr/Upwork 上架一个明确定位的 gig（如「我为电商卖家做竞品价格监控数据表」），用步骤①②的样例做展示，主动给 3–5 个潜在客户发带样例的冷邮/提案——用真实市场回应验证需求与定价，再决定是否深入。
+
+10. 核验来源
+- PMarketResearch《Data Scraping Service Market》市场规模与 CAGR：https://pmarketresearch.com/it/secure-flash-memory-market/data-scraping-service-market
+- PMarketResearch《Web Scraping Software and Platform Market》：https://pmarketresearch.com/it/web-scraping-software-and-platform-market
+- IntelMarketResearch《Data Scraping Service Market 2026-2034》：https://www.intelmarketresearch.com/data-scraping-service-market-38235
+- Fiverr「Data Mining &amp; Web Scraping」在售 gig 与真实报价：https://www.fiverr.com/categories/data/data-mining
+- Apify 官方定价（Free/$29/$199/$999 + 按量、Personal training $150/h）：https://apify.com/pricing
+- 2026 网页抓取平台价格横评（Apify/Zyte/Bright Data 等 9 平台，Zyte $0.13/千次起）：https://use-apify.com/blog/web-scraping-pricing-guide-all-platforms
+- Zyte《数据抓取的创新与监管平衡》（hiQ/Meta v. Bright Data/GDPR 解读）：https://www.zyte.com/blog/balancing-innovation-and-regulation-in-data-scraping
+- 网页抓取合规概览 2026（CFAA/GDPR/CCPA、KASPR 罚款、Reddit v. Perplexity）：https://tendem.ai/blog/is-web-scraping-legal-compliance-overview</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>27/07/2026, 08:50</p>
+        <p class="meta-line"><span>Finished</span>27/07/2026, 08:56</p>
+        <p class="meta-line"><span>Duration</span>6m</p>
+        <p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p>
+        <p class="meta-line"><span>File</span><code>runs-workbuddy/2026-07-27/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>web-scraping</span><span>data-as-a-service</span><span>python</span><span>automation</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>（1–2 天）用 Python + BeautifulSoup/Playwright 抓一个公开、无登录墙的站点（电商类目或企业名录），导出干净 CSV 作为第一个作品集样例，验证能跑通抓取→清洗→交付闭环。</li><li>（1 天）注册 Apify 免费账号，跑通一个现成 Actor 并设置定时任务，把结果自动导出到 Google Sheet，验证能用云平台交付可复用/可监控的数据管道。</li><li>（1–3 天）在 Fiverr/Upwork 上架一个定位明确的 gig（如电商竞品价格监控数据表），用样例展示并向 3–5 个潜在客户发带样例的冷邮/提案，用真实回应验证需求与定价。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://pmarketresearch.com/it/secure-flash-memory-market/data-scraping-service-market">PMarketResearch：Data Scraping Service 市场规模与 CAGR</a></li><li><a href="https://pmarketresearch.com/it/web-scraping-software-and-platform-market">PMarketResearch：Web Scraping Software and Platform 市场</a></li><li><a href="https://www.intelmarketresearch.com/data-scraping-service-market-38235">IntelMarketResearch：Data Scraping Service 2026-2034</a></li><li><a href="https://www.fiverr.com/categories/data/data-mining">Fiverr：Data Mining &amp; Web Scraping 在售 gig 与真实报价</a></li><li><a href="https://apify.com/pricing">Apify 官方定价（含 $150/h 专家培训价）</a></li><li><a href="https://use-apify.com/blog/web-scraping-pricing-guide-all-platforms">2026 网页抓取平台价格横评（9 平台对比）</a></li><li><a href="https://www.zyte.com/blog/balancing-innovation-and-regulation-in-data-scraping">Zyte：数据抓取创新与监管平衡（hiQ/Meta 判例解读）</a></li><li><a href="https://tendem.ai/blog/is-web-scraping-legal-compliance-overview">网页抓取合规概览 2026（CFAA/GDPR/CCPA、CNIL 罚款）</a></li></ul></div>
+    </article>
+  </div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 15/09/2026, 09:07</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>

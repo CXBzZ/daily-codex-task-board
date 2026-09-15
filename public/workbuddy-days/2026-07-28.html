@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-07-28 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-07-28</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid">
+    <article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：邮件送达率咨询（Email Deliverability Consulting）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-07-28.html">2026-07-28</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">邮件送达率咨询是帮企业解决「邮件发得出去却进垃圾箱」的技术服务：诊断并修复 SPF/DKIM/DMARC 认证、域名信誉、收件箱放置率。2024 年起 Google/Yahoo/Microsoft 相继强制邮件认证（覆盖约 90% 全球邮箱用户），不合规邮件被直接拒收，需求被监管硬性催生；而全球 top 1000 万域名只有约 18% 配好了有效 DMARC。整个交付只需一台电脑远程改 DNS 和分析报告，按审计/按月 retainer 收费（审计 $2,000–8,000、retainer $1,500–5,000+/月），几乎零边际成本，是典型的高客单、低工具成本、可异步交付的一人生意。</p>
+      <div class="details">1. 行业是什么，为什么小众
+邮件送达率咨询（Email Deliverability Consulting）：帮企业诊断和修复「邮件进垃圾箱/被拒收」的问题——检查并正确配置 SPF、DKIM、DMARC 认证记录，修复域名/IP 信誉，优化列表卫生和发送行为，监控收件箱放置率（inbox placement），让邮件真正落到收件人「可见的收件箱」里。
+为什么小众且被低估：(a) 需求极其隐蔽——企业只看 ESP 后台的「送达率 98%」，不知道这只代表服务器接收，实际可能 36% 进了垃圾箱（2026 年基准测试：全行业平均只有 60% 邮件进可见收件箱）；问题爆发时才紧急找人，平时没人搜索这个词。(b) 看起来技术门槛高——DNS、TXT 记录、认证协议听起来像运维黑话，营销人不敢碰、程序员不屑碰，它恰好夹在「邮件营销」和「IT 安全」两个大行业之间，两边都不认领。(c) 教程少、从业者少——比起烂大街的「邮件营销代运营」，专门做 deliverability 的自由职业者非常少，但 2024 年 2 月起 Google/Yahoo 强制新规把它从「可选优化」变成了「不做就发不出邮件」的刚需。
+
+2. 如何运作
+- 典型客户：① 冷邮件获客的 B2B 公司/销售团队（回复率暴跌、域名被烧）；② 用 Klaviyo/Mailchimp/HubSpot 的电商和 SaaS（营销邮件进 spam，收入直接掉）；③ 日发 5,000+ 封的 newsletter/媒体（触发大厂 bulk sender 强制要求）；④ 被 Microsoft 550 5.7.515 拒收、上了黑名单、或 PCI DSS v4.0 合规要求 DMARC 的中小企业。需求触发点：打开率/回复率断崖下跌、邮件被退回、IT 审计不过。
+- 核心交付物：送达率审计报告（认证状态、黑名单、信誉、放置率测试）；DNS 修复实施（SPF 10-lookup 限制内合并、DKIM 签名配置、DMARC 从 p=none 渐进到 p=quarantine/p=reject）；域名信誉修复方案（列表清洗、发送节奏、预热计划）；持续监控月报（DMARC 聚合报告解读、放置率跟踪）。
+- 完整工作流：① 获客（LinkedIn/冷邮件定向找「正在发大量邮件的公司」、Upwork/Fiverr 挂 gig、写 SEO 内容接「email going to spam」类搜索、ESP 代理商转介绍）→ ② 免费/低价快速扫描当钩子（用 MXToolbox/dmarcian 免费工具 10 分钟出初诊）→ ③ 付费深度审计（DNS 记录、Google Postmaster Tools 数据、种子测试放置率、黑名单、内容与列表分析）→ ④ 实施修复（改 DNS、配 ESP 后台、制定 DMARC 渐进策略）→ ⑤ 验证（重新扫描 + 放置率复测）→ ⑥ 转月度监控 retainer（看 DMARC 报告、盯信誉漂移、新增发件系统时重新对齐）。
+- 关键工具和平台：Google Postmaster Tools（免费，Gmail 端信誉数据）、MXToolbox（免费 DNS/黑名单检查）、dmarcian/PowerDMARC/EasyDMARC（DMARC 报告解析，有免费层）、GlockApps/Mailreach（收件箱放置率与预热测试）、各 ESP 后台（Klaviyo、Mailchimp、SendGrid、Google Workspace、Microsoft 365 管理台）。
+
+3. 盈利模式
+- 收入来源与定价：① 一次性修复（SPF/DKIM/DMARC 配置 + 健康报告）$500–1,500/单；② 深度审计 $2,000–8,000/次（行业公开报价区间）；③ 时薪制 $75–250/h，资深（ESP 出身）$150–400/h，常设 2 小时起步；④ 月度 retainer $1,500–5,000+/月（多域名冷邮件项目、持续监控）；机构套餐低至 $399/月起，高至 $5,000+/月。⑤ 衍生收入：DMARC 托管监控转售（用 PowerDMARC 等白标）、ESP 迁移项目（$2,000–15,000）。
+- 利润空间：核心成本只有工具订阅（GlockApps/DMARC 平台合计 $50–150/月）+ 自己的时间；一次审计有经验者 4–10 小时完成。扣除工具、平台抽成（如走 Upwork 10%）和税费，净利率约 80–90%，是本系列调研中利润率最高的方向之一。
+- 复购/长期合同：非常强。送达率不是一次性状态——信誉随每次发送漂移，网站/ESP 变更、新增 SaaS 发件系统都会破坏对齐（misalignment 已是 2026 年第一大拒收原因），Fortra 数据显示 63% 已发布 DMARC 的域名停在 p=none 没做完，天然存在「从 p=none 推进到 p=reject」的多阶段项目和长期监控月费。
+
+4. 入门门槛
+- 技能：理解 DNS（TXT/CNAME 记录）、SPF/DKIM/DMARC 协议原理与对齐（alignment）、主流 ESP 和 Google Workspace/M365 的配置流程、会读 DMARC 聚合报告（XML/平台图表）。不需要写代码。有 IT/营销技术基础者 3–6 周可上手实战（官方文档 + 拿自己域名练习）；纯新手约 2–3 个月。
+- 工具：起步近乎零成本——Google Postmaster Tools、MXToolbox、dmarcian 免费层全免费；接单后再上 GlockApps（放置率测试）等付费工具约 $59–99/月。
+- 资金：$0–300 即可启动（域名 + 少量工具订阅 + 可选的测试邮箱账号）。
+- 时间：认真学 1–2 个月 + 用免费扫描做冷启动获客，从零到第一单参考 4–8 周；有邮件营销或 IT 运维背景的人可以更快。
+
+5. 为什么适合 OPC / 数字游民
+- 100% 远程交付：全部工作是查 DNS、看报告、改配置、写文档、开视频会，无任何物理现场需求。
+- 异步友好：审计和 DMARC 报告分析天然异步——收集数据要跑 24–72 小时（种子测试、聚合报告周期），正好适配跨时区工作节奏，客户也不期待即时响应。
+- 全球客户池：邮件认证标准（RFC）全球统一，Gmail/Outlook 的规则对美国公司和新加坡公司完全一样，一套技能服务全球，英语市场客单价最高。
+- 零边际成本 + 高杠杆：审计模板、修复 SOP、DMARC 推进 playbook 一次沉淀反复复用；同样的 SPF 合并方案可以卖给 100 个客户。
+- 监管持续加码=需求持续：2024 Google/Yahoo → 2025-05 Microsoft → 2025-11 Gmail 永久拒收 → 2026-05 RFC 9989 新标准，每一波政策收紧都制造一批「邮件突然发不出去」的紧急客户，这是极少数「需求由平台强制令持续制造」的服务业。
+- 一人可闭环：获客（内容+冷邮）、诊断（工具自动化）、交付（文档+DNS变更）、收款（Stripe/Wise）全流程一人完成，无需雇人。
+
+6. 潜在收益（谨慎，不承诺）
+以下为公开参考数据，不等于个人收入：
+- 时薪：自由职业 deliverability 专家公开区间 $75–250/h（prospeo 2026 招聘指南），资深/ESP 出身 $150–400/h（DataInnovation/ScaledMail 2026）；对比：美国全职岗位总薪酬 $77K–143K/年。
+- 单价：一次性认证修复 $500–1,500；结构化审计 $2,000–8,000；月度 retainer $1,500–5,000+。
+- 新手阶段（前 3–6 个月）：以 $300–800 的小额修复单和 Upwork 时薪单为主，月入参考 $500–2,000；
+- 成熟阶段（1 年+，有案例和转介绍）：2–4 个 retainer 客户 + 每月 1–2 个审计项目，月入参考 $4,000–10,000+。
+- 市场背书：DMARC 软件市场 2025 年约 $7.36 亿 → 2034 年预计 $23.4 亿（CAGR 13.7%，Dimension Market Research）；全球 top 1000 万域名仅 ~18% 有有效 DMARC、~4% 达到 p=reject，缺口巨大；Mailgun 2025 调研中 23% 未部署 DMARC 的企业承认「团队缺乏技术知识」——这正是付费咨询的直接需求。
+
+7. 主要风险
+- 市场风险：AI 引导式自助工具（如各类免费 SPF/DKIM/DMARC 生成器）正在把「简单配置单」的价格打下来，低端一次性配置活会被工具吃掉；必须往诊断、信誉修复、多系统对齐、持续监控等复杂场景走。
+- 技术风险：强依赖 Gmail/Microsoft/Yahoo 的政策与算法，规则每 6 个月一变（这既是需求来源也是学习负担）；第三方测试工具（种子列表法）的准确性有局限。
+- 合规风险：帮冷邮件客户「提高送达率」可能触碰 CAN-SPAM/GDPR/反垃圾邮件法的灰色地带，须明确只服务合法许可式发送，拒绝纯 spam 客户；处理客户邮件数据涉及数据隐私条款。
+- 现金流风险：紧急修复单是脉冲式需求，淡旺季明显；B2B 客户账期 30–60 天；获客前期依赖平台（Upwork 抽成）或内容 SEO 的长周期投入。
+
+8. 不适合的人群
+- 完全不愿碰 DNS/协议文档、对「读 RFC 和官方文档」有生理排斥的人——这行的核心竞争力就是啃标准；
+- 只想做一锤子买卖、不愿持续跟进监管变化的人——规则每半年一变，吃老本会快速失效；
+- 英语读写吃力的人——高客单客户和一手资料（Google/Microsoft 官方文档、M3AAWG）基本全英文；
+- 需要即时正反馈的人——信誉修复要 2–6 周才见效，DMARC 推进以月计；
+- 想靠帮垃圾邮件发送者「绕过过滤器」赚快钱的人——这是行业红线，会烧掉自己的声誉。
+
+9. 3 个可验证的入门步骤
+（1）1–2 天：拿自己的域名完整走一遍——用 MXToolbox 和 Google Admin Toolbox 检查 SPF/DKIM/DMARC，把 DMARC 从无到 p=none 配好并接入 dmarcian 免费层收报告，全程截图整理成一篇「配置实录」，验证自己能否独立完成核心交付。
+（2）1–2 天：做一个「免费送达率快诊」钩子——选 10 个正在发 newsletter 或冷邮件的中小公司（LinkedIn/产品目录找），用免费工具跑出各自的认证缺陷，发出 10 封个性化诊断邮件（附 1–2 个具体问题截图），验证这个钩子的回复率是否 &gt;10%。
+（3）2–3 天：在 Upwork/Fiverr 上架定位明确的服务（如「Fix email going to spam: SPF/DKIM/DMARC setup + deliverability report」定价 $150–300），同时在 r/emailmarketing、冷邮件社群回答 3–5 个送达率问题建立可见度，验证两周内能否拿到第一个询盘。
+
+10. 核验来源
+见 artifacts：Google 官方发件人指南、2026 送达率专家招聘指南（费率/薪酬）、咨询定价对比（DIY vs 顾问）、顾问定价与商业模式分析（两篇）、Google/Yahoo 强制令两周年数据复盘、Mailgun 邮件影响力报告（DMARC 采用率）、DMARC 软件市场规模报告。</div>
+      <div class="run-meta">
+        
+        <p class="meta-line"><span>Started</span>28/07/2026, 08:50</p>
+        <p class="meta-line"><span>Finished</span>28/07/2026, 09:02</p>
+        <p class="meta-line"><span>Duration</span>12m</p>
+        <p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p>
+        <p class="meta-line"><span>File</span><code>runs-workbuddy/2026-07-28/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>email-deliverability</span><span>dmarc</span><span>email-security</span><span>b2b-services</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>（1–2 天）拿自己的域名完整配置 SPF/DKIM/DMARC 并接入 dmarcian 免费层收报告，整理成带截图的「配置实录」，验证能独立完成核心交付。</li><li>（1–2 天）用免费工具给 10 个正在发 newsletter/冷邮件的中小公司做认证缺陷快诊，发个性化诊断邮件，验证回复率是否 &gt;10%。</li><li>（2–3 天）在 Upwork/Fiverr 上架「Fix email going to spam: SPF/DKIM/DMARC setup + report」服务（$150–300），并在邮件营销社群回答 3–5 个送达率问题，验证两周内能否拿到第一个询盘。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://support.google.com/a/answer/81126">Google 官方：Email sender guidelines（发件人强制要求）</a></li><li><a href="https://prospeo.io/s/email-deliverability-specialist">Prospeo：2026 送达率专家招聘指南（$75–250/h、$77K–143K 薪酬、60% 收件箱基准）</a></li><li><a href="https://bizloon.com/blog/email-deliverability-consultant-vs-diy">BizLoon：顾问 vs DIY 定价拆解（一次性 $500–1,500、审计 $2,000–5,000）</a></li><li><a href="https://datainnovation.io/en/email-deliverability-consultant-what-your-vendor-is-not-telling-you">Data Innovation：送达率顾问市场定价（$150–400/h、审计 $2K–8K、firm $3K–5K/月）</a></li><li><a href="https://www.scaledmail.com/blogs/email-deliverability-consultant">ScaledMail：是否需要送达率顾问（$150–400/h、retainer $1.5K–5K+/月）</a></li><li><a href="https://autospf.com/blog/google-yahoo-bulk-sender-mandate-changes-over-two-years/">AutoSPF：Google/Yahoo 强制令两周年复盘（265B 未认证邮件减少、时间线、Microsoft/Gmail 升级）</a></li><li><a href="https://www.mailgun.com/es/email-impact-report/chapter/deliverability-impact/">Mailgun Email Impact Report：DMARC 采用率 61%、23% 缺技术知识</a></li><li><a href="https://www.dimensionmarketresearch.com/report/dmarc-software-market">Dimension Market Research：DMARC 软件市场 2025 $736M → 2034 $2.34B（CAGR 13.7%）</a></li></ul></div>
+    </article>
+  </div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 15/09/2026, 09:07</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
