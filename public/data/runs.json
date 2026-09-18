@@ -1,7 +1,101 @@
 {
-  "generatedAt": "2026-09-18T01:16:44.888Z",
+  "generatedAt": "2026-09-18T08:09:07.940Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-18",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外独立游戏开发者的 Steam 商店页素材、本地化字段、标签与上线前 QA 服务，属于中国境内可做的海外市场。它适合懂英文、Steamworks 文档、游戏商店页表达、基础图像/视频规格和账号权限边界的 OPC/数字游民小规模验证，但必须限定为客户授权下的提交前技术 QA、文案整理和截图报告，不冒充 Valve/Steam 官方，不承诺审核通过、曝光、愿望单、销量或推荐效果。",
+      "details": "## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外独立游戏开发者的 Steam 商店页素材、本地化字段、标签与上线前 QA 服务。\n\n它不是游戏发行代理、不是 PR 营销、不是愿望单增长服务，也不是替开发者运营 Steamworks 主账号。更准确地说，它是一种提交前 launch-readiness QA：在客户授权下，按 Steamworks 官方文档检查商店页描述、图形素材、截图、预告片、语言字段、标签、内容问卷、AI/成人内容披露、coming soon 时间线、权限设置和发布前清单，把问题整理成可执行的截图报告、字段表、素材规格表和修复建议。\n\n它小众，是因为很多独立游戏团队会做游戏和美术，却不一定熟悉 Steamworks 后台的商店页要求。Steam 的审核不是只看“游戏能不能运行”，还会看商店页是否只展示 launch 时可用内容、capsule 是否有清晰标题或 logo、截图是否只展示 gameplay、描述是否 detailed and coherent、是否包含不允许的外链、build 是否支持商店页列出的系统和功能、内购是否使用 Steam Wallet 等。大型发行商有 producer 和 marketing ops，小团队通常由开发者本人临时填字段、裁图、上传 trailer、选 tags、写本地化文案，容易在细节上返工。\n\n该服务的价值是把“看似杂乱的 Steam 上线准备”拆成清单和证据，而不是承诺平台结果。最重要的边界是：服务者不得自称 Steam/Valve 官方、不得代发行、不得托管主账号、不得承诺审核通过、愿望单、曝光、销量、算法推荐、活动入选、Daily Deal 或节日促销资格；也不得帮助客户伪造素材权利、隐瞒 AI/成人内容、误导内容问卷或规避平台规则。\n\n## 目标市场\n\n目标市场：中国境内可做的海外市场，重点面向英语世界和多语言独立游戏开发者。\n\n潜在客户包括 solo developer、2-10 人 indie studio、小型发行商、游戏 jam 项目商业化团队、外包美术/本地化团队、Steam 首发或抢先体验团队，以及已经有 build 和素材但缺少上线运营经验的开发者。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、LinkedIn、itch.io/Discord/Reddit 游戏开发社群、indie publisher 社群、独立站和过往外包客户转介绍获客。\n\n它适合中国境内验证，是因为核心交付物是文档、表格、截图报告、本地化字段和素材规格检查，不需要海外门店，不需要当地强牌照，也不需要成为 Steamworks partner 或掌握客户 Actual Authority。一个人可以从“Steam store page QA report”“capsule/screenshot/trailer requirement checklist”“Steam tags and localization field cleanup”这类窄服务试单。\n\n## 典型需求场景和客户是谁\n\n1. 独立开发者第一次上 Steam，已经付费开通 app credit，但不知道商店页 checklist、coming soon、review、build review 的时间线和材料顺序。\n2. 小团队有主视觉和截图，但不确定 capsule/library assets 尺寸、文字规则、截图内容、trailer 文件和缩略图是否符合官方要求。\n3. 非英语母语开发者希望优化英文短描述、长描述、feature bullets、early access 问答和多语言字段，但不需要完整发行代理。\n4. 团队想做多语言商店页，担心 English fallback、语言代码、localized images/trailers、图片中文字和游戏实际语言支持不一致。\n5. 项目含成人、暴力、生成式 AI、第三方素材、音乐、字体或 UGC 元素，需要把 Content Survey、mature content、AI disclosure 和素材授权提醒列清楚，再由客户最终确认。\n6. 小型发行商或外包团队批量服务多个项目，希望把 Steamworks 上线 QA 白标外包给懂平台规则的人。\n\n客户通常是开发者、制作人、发行负责人、市场负责人、外包项目经理或 solo founder。付款人购买的是“减少提交前返工和遗漏”的检查流程，而不是购买 Steam 平台结果。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括游戏开发者、发行商、Steamworks 管理员、美术/视频/本地化供应商、QA 服务者、收款平台、法律或税务顾问。中国境内承接者应把自己放在“授权资料整理、字段 QA 和上线前检查供应商”位置，不接触客户银行、税务、Actual Authority、主账号 2FA 或最终发布控制权。\n\n标准工作流：\n\n1. 范围确认：确认客户已有 Steamworks partner/app 状态、目标是 coming soon 还是 release、是否 early access、支持系统、语言、成人/暴力/AI 内容、素材完成度、是否允许进入后台、是否只做报告。\n2. 授权和权限：优先让客户导出截图、字段表和素材包；如需后台协助，使用客户创建的最小权限账号或屏幕共享。Steamworks 官方文档显示权限可通过 users、groups 和 specific permissions 管理，Actual Authority 可修改银行、税务、法律协议和 app 转让，外包服务者不应索取或接受此类权限。\n3. 商店页字段检查：按 Store Page 文档核对 basic info、description、short description、supported features、social links、pricing/package 提醒、early access tab、publish/beta preview 差异。描述中不能把未上线功能说成已可用，也不应放外站链接或仿 Steam UI 的图片。\n4. 图形素材和视频检查：按 Graphical Assets 文档核对 header capsule、small capsule、main capsule、vertical capsule、screenshots、library capsule、library hero、library logo、icons 等尺寸和格式；按 Graphical Asset Rules 检查 base capsule 是否只含游戏 artwork、game name、official subtitle，避免 review scores、awards、discount copy、跨产品推广和其他杂项文字。按 Trailer 文档检查 trailer 分辨率、帧率、码率、文件容器、排序和缩略图来源。\n5. 标签和语言检查：按 Steam Tags 文档整理至少 5 个 launch 前 tags，建议最多 20 个，优先具体 genre/subgenre、视角、视觉风格、主题、功能和玩家支持；按 Localization/Languages 文档检查 store page localization、in-game language support、English fallback、localized images/trailers 和语言声明一致性。\n6. 内容问卷和披露提醒：按 Content Survey 文档提醒客户如实完成 General Content、Mature Content、Generative AI Content 三部分；服务者可整理问题清单和证据，但不能替客户隐瞒成人内容、生成式 AI 使用、版权来源或风险材料。\n7. 审核前报告：输出 checklist、问题截图、字段建议、素材规格缺口、权限和时间线提醒、客户最终确认项。Steamworks 文档显示 store presence review 通常需要 3-5 business days，并建议至少提前 7 business days 提交；Steam Direct onboarding 还涉及 $100 app fee、身份/税务/银行资料、首批 title 付费后 30 天等待期和 coming soon 至少两周要求。\n8. 交付和撤权：客户自行点击 Mark as ready for review、Publish、Post as Coming Soon 或 Release App；如服务者曾获临时权限，项目结束后客户撤权，服务者删除素材和截图。\n\n## 盈利模式和收入来自哪里\n\n收入来自提交前 QA、文案字段整理、素材规格检查、本地化字段校对、标签建议、截图报告、白标检查和返修复测，不来自 Steam 销售分成、愿望单增长或平台套利。\n\n常见收费方式包括：\n\n- 固定小包：Steam store page QA checklist and report，适合客户提供截图和素材，服务者只给问题清单。\n- 资产规格包：capsule/library/screenshot/trailer requirement audit，检查尺寸、命名、文字规则、PG-13 和 gameplay 截图要求。\n- 本地化字段包：英文商店页润色、多语言字段整理、localized image/trailer checklist、English fallback 检查。\n- 标签和竞品表：按相似游戏整理 tags、genre/subgenre、feature tags、视觉风格和玩家支持标签。\n- 白标交付：给小发行商、游戏营销顾问、美术外包团队做 Steamworks 文档 QA 子任务。\n- 复测和上线周支持：按轮次复测客户修复后的素材和字段，但仍不代客户最终提交或承诺结果。\n\n公开报价样本只能作为市场存在和价格带参考，不能代表稳定成交。Fiverr 上 Steam capsule art/Steam art 相关公开服务样本可见 $50/$120/$200、$150/$260/$395 等套餐，也有目录页显示 steam art 服务从 $5 到 $350+ 不等；Upwork 曾有 Steam Capsule Art Package 固定价 $75 的公开岗位样本。这些更偏素材设计，不完全等于 QA，但能说明独立游戏团队愿意为 Steam 上线素材付费。按 2026-09-18 国家外汇管理局/中国外汇交易中心人民币汇率中间价 1 USD = 6.7521 CNY 粗略折算：\n\n- 入门 QA 小包：$99-$299，约 668-2019 元人民币。适合 1 个 app 的截图/字段/素材缺口报告，不进入后台或只屏幕共享。\n- 素材和商店页复合包：$300-$800，约 2026-5402 元人民币。适合含 capsule、screenshots、trailer、tags、语言字段和一次复测的项目。\n- 白标或发行顾问分包：按项目 $500-$1500 或按月 retainer，约 3376-10128 元人民币。前提是客户稳定、责任边界清楚、交付模板成熟。\n\n更克制的验证口径是：新手先以 $49-$149 的商店页截图诊断或素材规格审计切入，积累 3-5 个匿名样例和 checklist；熟练后再做 $299-$799 的完整 launch QA 包。净收入要扣除平台抽佣、收款费、汇损、税费、软件、设计/翻译协作成本、售前沟通、返工、时区会议和游戏试玩时间。不能把公开设计报价或 Steam 平台规模推导成稳定月入。\n\n## 入门门槛\n\n技能：英文读写、Steamworks 文档阅读、游戏类型理解、商店页表达、基础营销文案、图像/视频规格判断、标签和竞品分析、本地化 QA、项目管理、截图报告和权限边界说明。懂游戏开发流程、版本发布、early access、demo、playtest、DLC、soundtrack、bundle 会加分。\n\n设备/软件：稳定电脑、宽带网络、浏览器、表格工具、截图标注工具、图像尺寸检查工具、视频信息工具、Figma/Canva/Photoshop 或替代工具、Steam 客户端、密码管理器、加密云盘、模板化 QA 表格。新手不必先做设计师，但至少要会看尺寸、格式、可读性和规则冲突。\n\n资质/合规：通常不需要海外本地牌照，也不需要自己成为 Steamworks developer。关键是不得冒充平台官方、不得代签法律协议、不得触碰客户银行/税务/Actual Authority、不得出具版权/评级/法律意见、不得承诺审核、曝光、销量或活动资格。涉及成人内容、暴力、赌博、NFT/crypto、AI 生成内容、版权音乐、字体和第三方 IP 时，应提醒客户寻求当地法律或发行专业意见。\n\n资金：轻资产启动，主要成本是学习、作品集、平台账号、简单工具和时间。若做素材设计会涉及设计软件、字体和授权素材成本；若只做 QA，成本更低，但要有清晰样例和 checklist。\n\n渠道：Upwork、Fiverr、LinkedIn、Reddit/Discord 独立游戏社群、itch.io、IndieDB、游戏 jam 社群、小型发行商、游戏营销顾问、Steam capsule artist、本地化团队、QA 外包团队。服务标题应具体，例如 Steam store page pre-review QA、Steam capsule/screenshot/trailer requirements audit、Steam tags and localization fields cleanup。\n\n时间成本：有英文和游戏背景的人，1-2 周可读完核心 Steamworks 文档并做出 checklist；做到能稳定识别 early access 文案、AI/成人内容披露、标签权重、素材规则和权限边界，通常需要 1-2 个月真实项目或样例练习。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台接单要遵守 Upwork/Fiverr 的站内沟通、托管付款和禁止绕平台规则；独立获客要用英文服务页、样例报告、NDA/SOW、交付清单和不承诺项建立信任。不要使用“guaranteed Steam approval”“official Steam expert”“wishlist growth guaranteed”等高风险话术。\n\n远程交付：优先用客户导出的 Steamworks 截图、字段表、素材包、trailer 文件和公开测试链接。确需查看后台时，使用屏幕共享或最小权限账号；不要索要主账号、2FA、银行、税务、payment threshold、Actual Authority 或 app transfer 权限。客户负责最终点击提交、发布和承担平台责任。\n\n合同/发票或收款：平台订单以平台合同和账单为凭证；直客单应写明 app 数量、目标版本、素材数量、语言数量、交付格式、返工轮次、权限方式、保密、删除期限、客户对素材和内容权利负责、服务者不提供法律/税务/评级/版权意见、不承诺审核和商业结果。中国境内个人、个体工商户或公司应保留合同、invoice、平台账单、汇率、收款、提现和纳税记录。\n\n税务申报和跨境服务：国家税务总局个人所得税法显示，中国居民个人从中国境内和境外取得所得应依法缴纳个人所得税；若以个体工商户或公司承接，还要按经营所得、增值税、企业所得税、银行入账和所在地主管税务要求处理。国家税务总局跨境应税行为资料也提示，部分向境外单位提供并在境外消费的咨询、软件、信息系统、业务流程管理等服务可能涉及免税或零税率规则，但通常需要书面合同和主管税务口径确认，不能把外币平台收入简单理解为免税。\n\n平台规则：Steam Direct 官方页面说明开发者从 paperwork、app fee、银行/税务/身份验证到商店页、build、pricing、review 都由 partner 完成。中国境内 QA 服务者可以帮助整理资料和检查，但不应代客户成为权利主体、收取 Steam 销售款、签署法律文件或控制发布按钮。\n\n数据/隐私合规：未发布游戏素材、商业计划、销售策略、build 截图、开发者姓名、邮箱、后台截图、财务页面都可能是商业秘密或个人信息。按照中国个人信息保护法的委托处理思路，应约定处理目的、期限、方式、个人信息种类、保护措施、双方权利义务和删除/返还；若客户位于欧盟或处理欧盟个人数据，也要尊重 GDPR controller/processor、保密、安全、分包和删除要求。不要把客户未公开素材上传到未获授权的 AI 工具、公开作品集或第三方云服务。\n\n语言和时区门槛：英文是硬门槛，尤其要能解释 Steamworks 官方条款、素材规则和“为什么不能承诺审核/曝光”。北美客户常在中国早晚沟通，欧洲客户相对友好；用异步截图报告、表格、短录屏和批注可减少会议。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：固定资产轻、交付物清晰、服务可标准化，一个人可以完成资料接收、规则核对、文案润色、素材规格检查、截图报告、复测和客户复盘。项目能从单一模块切入，例如只做 capsule/screenshot audit 或 tags/localization cleanup，风险可控。\n\n不完全适合点：完整 Steam 上线涉及发行策略、法律权利、评级、税务、定价、促销、社区、build 技术 QA 和客户商业焦虑。OPC 必须拒绝超出能力范围的承诺，把自己定位为提交前资料和商店页 QA，而不是发行商、律师、税务顾问、版权顾问、评级顾问、增长顾问或 Valve 代理。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：全流程可远程完成，主要依赖电脑、英文、网络、截图报告和文档协作；文件和素材可异步收发，客户也习惯跨时区外包。旅居不同城市不影响大多数字段和素材检查。\n\n不完全适合点：游戏素材和 trailer 文件较大，酒店网络和公共 Wi-Fi 会影响下载上传与保密；部分客户可能需要临时会议、屏幕共享或在上线窗口快速复测。数字游民要准备密码管理器、设备加密、网络备份、云盘权限管理、项目结束删除流程和明确的响应时间边界。\n\n## 潜在收益、前提条件和成本结构\n\n低成本验证期：每月 3-10 个 $49-$149 小包，毛收入约 $147-$1490，折合约 993-10060 元人民币。这个阶段重点验证客户是否愿意为“减少 Steam 提交前返工”付费，而不是追求高月入。\n\n标准接单期：每月 2-6 个 $299-$799 完整 QA 包，毛收入约 $598-$4794，折合约 4038-32371 元人民币。前提是英文沟通、Steamworks 文档理解、截图报告模板、权限边界和复测效率都稳定，并能从设计师、发行顾问、本地化团队拿到复购。\n\n白标合作期：与小型发行商、Steam capsule artist、游戏本地化团队或营销顾问合作，可能按项目或月度 retainer 收费。主要成本包括平台抽佣、收款手续费、汇损、税费、工具订阅、字体/素材授权检查、云存储、售前样例、客户会议、返工、游戏下载和设备折旧。\n\n这些只是报价样本推导，不是收益承诺。Steam 平台规模大不等于个人服务商容易获客，公开 gig 起价也不等于实际净利润；新账号、无游戏案例、英语表达弱或边界不清时，成交会很慢。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：\n\n1. 平台身份误导：不得自称 Steam/Valve 官方、审核人员、官方合作伙伴或保证通过者。\n2. 权限风险：不得索要 Actual Authority、银行、税务、payment threshold、legal agreement、app transfer、主账号或 2FA；如需后台访问，只用最小权限和项目结束撤权。\n3. 审核和商业结果风险：商店页 QA 不等于 Steam 审核通过，更不等于曝光、愿望单、销量、推荐、活动入选或 Daily Deal。\n4. 内容披露风险：成人内容、暴力内容、生成式 AI 内容、UGC、赌博、crypto/NFT、敏感政治或儿童内容必须由客户如实披露和承担责任。\n5. 知识产权风险：capsule、logo、截图、trailer、音乐、字体、商标、IP、角色和 AI 生成素材都必须由客户拥有或授权；服务者不能替客户出具版权法律结论。\n6. 数据保密风险：未发布游戏素材、后台截图、发布计划和商业资料泄露会严重影响客户。\n7. 规则变化风险：Steamworks 文档、素材尺寸、AI disclosure、内容问卷和语言支持会变，交付前必须重新核验官方文档。\n8. 低价竞争风险：平台上大量设计师和营销顾问提供相邻服务，单纯“帮你填字段”很容易被压价，差异化在官方规则、报告证据和边界清晰。\n9. 跨境税务风险：外币收入、平台账单、汇率折算、提现和纳税都要留痕。\n\n不适合人群：英文弱且不愿读官方文档的人；没玩过或不理解 PC/独立游戏的人；喜欢承诺“包过审、包愿望单、包销量”的人；不重视账号权限和客户素材保密的人；没有耐心做截图和清单的人；想直接控制客户 Steamworks 主账号的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做一份 40 项 Steam store page QA checklist：覆盖商店页字段、description 禁忌、capsule/library assets、screenshots、trailer、tags、languages、Content Survey、AI/mature disclosure、权限和 coming soon/review 时间线。\n2. 选 3 个已公开的独立游戏商店页做匿名拆解样例：只使用公开页面，不抓后台；输出 tags、截图质量、描述结构、语言字段、capsule 可读性和可改进项，形成作品集格式。\n3. 上架一个窄服务试单：Steam store page pre-review QA report，报价 $49-$149，要求客户提供截图和素材包，不进入主账号；明确不含发行代理、法律/版权/评级意见、审核通过、愿望单、曝光、销量或促销承诺。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：比较克制，无明显夸大；报价样本已被限定为公开样本，不等于稳定成交。\n- 信息来源是否足够可信：足够可信。核心依据以 Steamworks 官方文档为主，可信度高；Fiverr/Upwork 只能作为价格参考，不宜作为需求规模强证据。\n- 最该补充或提醒的一句话：该服务必须明确排除 Steam/Valve 官方身份、代发行、账号托管、审核通过、曝光、愿望单、销量承诺，并坚持最小权限，绝不索要 Actual Authority、税务、银行或 2FA 权限。\n- 是否建议通过：建议通过；无需重选题。最终报告已强化权限边界、AI/mature content/IP 披露责任，以及“客户最终提交并承担平台责任”。\n\n## 关键核验来源\n\n1. Steamworks Partner Program / Steam Direct。核验开发者加入流程、digital paperwork、app fee、bank/tax/identity verification、store page/build review、1-5 days brief review、30-day waiting period、coming soon 至少两周等。https://partner.steamgames.com/steamdirect\n2. Steamworks Documentation：Steam Direct Fee。核验每个 new app 需 $100 USD or equivalent app fee。https://partner.steamgames.com/doc/gettingstarted/appfee\n3. Steamworks Documentation：Store Page, Building and Editing。核验 Edit Store Page、required checklist、beta preview、publish 后数据/assets 到 public servers、description 中不应有外部链接或仿 Steam UI 图片等。https://partner.steamgames.com/doc/store/page\n4. Steamworks Documentation：Graphical Assets - Overview。核验 store/library required assets 和尺寸，如 header capsule、small capsule、main capsule、vertical capsule、screenshots、library hero、library logo 等。https://partner.steamgames.com/doc/store/assets\n5. Steamworks Documentation：Store Graphical Assets。核验截图至少 5 张、1920x1080 minimum、16:9、应展示 gameplay，以及 capsule 和 page background 要求。https://partner.steamgames.com/doc/store/assets/standard\n6. Steamworks Documentation：Graphical Asset Rules。核验 base capsule 仅限 game artwork、game name、official subtitle，不能含 review scores、awards、discount copy、跨产品推广等。https://partner.steamgames.com/doc/store/assets/rules\n7. Steamworks Documentation：Review Process。核验 store presence review 通常 3-5 business days、建议至少提前 7 business days，审核项目包括 launch 可用内容、capsule 可读 logo/title、screenshots only gameplay、description detailed/coherent/no outside links、build 启动和功能对应等。https://partner.steamgames.com/doc/store/review_process\n8. Steamworks Documentation：Release Options。核验 coming soon、early access、full release、coming soon 至少两周和 release date 14 天窗口说明。https://partner.steamgames.com/doc/store/types\n9. Steamworks Documentation：Localization and Languages。核验 store page localization、in-game localization、Steam 支持多语言且 over 60% users use non-English。https://partner.steamgames.com/doc/store/localization\n10. Steamworks Documentation：Languages Supported on Steam。核验 full platform supported languages、game support only languages、English fallback。https://partner.steamgames.com/doc/store/localization/languages\n11. Steamworks Documentation：Steam Tags。核验 launch 前至少 5 tags、推荐 up to 20、top 20 可见且影响 visibility/search/recommendations，以及 Tagging Wizard 权限。https://partner.steamgames.com/doc/store/tags\n12. Steamworks Documentation：Content Survey。核验 review 前必须完成 General Content、Mature Content、Generative Artificial Intelligence Content，且回答用于 review 和向客户展示。https://partner.steamgames.com/doc/gettingstarted/contentsurvey\n13. Steamworks Documentation：Managing Your Steamworks Account。核验 users/groups/permissions、Actual Authority 可改 bank/tax/legal agreements/payment thresholds/app transfers，应避免外包服务者持有此权限。https://partner.steamgames.com/doc/gettingstarted/managing_users\n14. Steamworks Documentation：Trailers。核验 trailer 为 release process 所需、first two valid trailers 展示在截图前、上传格式和缩略图要求。https://partner.steamgames.com/doc/store/trailer\n15. Steamworks 官网。核验 Steamworks 公开展示 132 million monthly active users、29+ languages、35+ currencies 等平台规模背景。https://partner.steamgames.com/\n16. Steam Store Stats。核验 2026-09-17 附近 concurrent users 数据，仅作平台规模背景。https://store.steampowered.com/stats/stats/?l=english\n17. Fiverr：Steam capsule art 服务样本。核验公开套餐价 $50/$120/$200、$150/$260/$395 等，仅作报价样本。https://www.fiverr.com/audiovisualprod/be-your-integral-designer-for-your-kickstarter-projects\n18. Fiverr：Steam art 服务目录。核验 steam art/capsule art 相关服务存在且公开起价多样，仅作市场样本。https://es.fiverr.com/gigs/steam-art\n19. Upwork：Steam Capsule Art Package job sample。核验 $75 fixed-price 公开岗位样本，仅作市场样本。https://www.upwork.com/freelance-jobs/apply/Steam-Capsule-Art-Package_~022089492782904497041/\n20. 国家外汇管理局：人民币汇率中间价。核验 2026-09-18 美元兑人民币中间价 6.7521。https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760\n21. 国家税务总局：中华人民共和国个人所得税法。核验中国居民个人境内外所得依法纳税。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n22. 国家税务总局：跨境应税行为适用增值税免税政策资料。核验跨境应税行为、书面合同和免税发票等提示。https://www.chinatax.gov.cn/chinatax/c102449/c5239203/content.html\n23. 中华人民共和国个人信息保护法。核验委托处理个人信息应约定处理目的、期限、方式、个人信息种类、保护措施和双方权利义务。https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_515a4b20c12f430eab54bb4f56d89f56.html",
+      "startedAt": "2026-09-18T16:01:45+08:00",
+      "finishedAt": "2026-09-18T16:10:30+08:00",
+      "duration": "8m 45s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "steam",
+        "gamedev"
+      ],
+      "nextSteps": [
+        "做一份 40 项 Steam store page QA checklist，覆盖字段、description 禁忌、素材、截图、trailer、tags、languages、Content Survey、AI/mature disclosure、权限和时间线。",
+        "选 3 个已公开的独立游戏商店页做匿名拆解样例，只使用公开页面，输出 tags、截图质量、描述结构、语言字段、capsule 可读性和可改进项。",
+        "上架一个 Steam store page pre-review QA report 小服务，报价 $49-$149，要求客户提供截图和素材包，不进入主账号，并明确不承诺审核、愿望单、曝光或销量。"
+      ],
+      "artifacts": [
+        {
+          "label": "Steamworks Partner Program / Steam Direct",
+          "path": "https://partner.steamgames.com/steamdirect"
+        },
+        {
+          "label": "Steamworks：Steam Direct Fee",
+          "path": "https://partner.steamgames.com/doc/gettingstarted/appfee"
+        },
+        {
+          "label": "Steamworks：Store Page, Building and Editing",
+          "path": "https://partner.steamgames.com/doc/store/page"
+        },
+        {
+          "label": "Steamworks：Graphical Assets - Overview",
+          "path": "https://partner.steamgames.com/doc/store/assets"
+        },
+        {
+          "label": "Steamworks：Graphical Asset Rules",
+          "path": "https://partner.steamgames.com/doc/store/assets/rules"
+        },
+        {
+          "label": "Steamworks：Review Process",
+          "path": "https://partner.steamgames.com/doc/store/review_process"
+        },
+        {
+          "label": "Steamworks：Localization and Languages",
+          "path": "https://partner.steamgames.com/doc/store/localization"
+        },
+        {
+          "label": "Steamworks：Steam Tags",
+          "path": "https://partner.steamgames.com/doc/store/tags"
+        },
+        {
+          "label": "Steamworks：Content Survey",
+          "path": "https://partner.steamgames.com/doc/gettingstarted/contentsurvey"
+        },
+        {
+          "label": "Steamworks：Managing Users",
+          "path": "https://partner.steamgames.com/doc/gettingstarted/managing_users"
+        },
+        {
+          "label": "Steam Stats",
+          "path": "https://store.steampowered.com/stats/stats/?l=english"
+        },
+        {
+          "label": "Fiverr：Steam capsule art service sample",
+          "path": "https://www.fiverr.com/audiovisualprod/be-your-integral-designer-for-your-kickstarter-projects"
+        },
+        {
+          "label": "国家外汇管理局：人民币汇率中间价",
+          "path": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760"
+        },
+        {
+          "label": "国家税务总局：个人所得税法",
+          "path": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html"
+        },
+        {
+          "label": "中华人民共和国个人信息保护法",
+          "path": "https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_515a4b20c12f430eab54bb4f56d89f56.html"
+        }
+      ],
+      "sourceFile": "runs/2026-09-18/niche-profit-industry.json"
+    },
     {
       "date": "2026-09-17",
       "taskId": "niche-profit-industry",
