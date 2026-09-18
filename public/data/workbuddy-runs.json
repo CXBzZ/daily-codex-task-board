@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-09-17T01:12:11.288Z",
+  "generatedAt": "2026-09-18T01:16:44.888Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-18",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：AI 治理文档与 EU AI Act 合规就绪服务（AI Governance Documentation / AI Act Readiness）",
+      "status": "success",
+      "summary": "AI 治理文档与 EU AI Act 合规就绪服务，是帮用 AI 的中小企业把'用了哪些 AI、风险多高、该留什么记录'整理成可交付合规文件包的细分服务。它夹在 AI 研发与法律合规之间、长期被低估但需求真实且全球分布（EU AI Act 有域外效力），单人靠免费法规资源与模板即可异步远程交付，低启动成本、强复购、人才缺口巨大，非常适合一人公司或数字游民作为切入点。",
+      "details": "1. 行业是什么，为什么小众\nAI 治理文档与 EU AI Act 合规就绪服务（AI Governance Documentation / EU AI Act Readiness）：帮企业（尤其是用 AI 但没合规团队的中小公司）把\"用了哪些 AI、风险多高、该留什么记录、怎么向监管和客户证明自己合规\"整理成一套可交付的文件包——AI 资产清单、风险分级表、透明性告知文案、技术文档（Annex IV 证据包）、内部 AI 政策、员工 AI 素养培训材料，以及面向 EU AI Act 的\"我还差什么\"差距清单。\n它之所以被忽略，是因为它夹在\"AI 研发\"这个大热赛道和\"法律合规\"之间——几乎所有内容都在谈\"怎么把模型做出来\"，却很少有人专门做\"上线前把合规文件备齐\"这道收尾工序。大公司靠法务+合规团队，小公司既请不起又看不懂法规条文，于是这个被低估的细分需求长期存在：需求真实、供给端专注\"出文件\"的个体服务者极稀缺，且 EU AI Act 有域外效力（非欧盟公司只要输出落到欧盟市场也要合规），客户天然全球分布。\n\n2. 如何运作\n典型客户：把 AI（含第三方 SaaS、GPT 类接口、内部模型）用在招聘、信贷、客服、营销里的欧盟及出海中小企业；向欧盟市场提供 AI 功能的产品团队；被客户/投资人要求出具\"AI 合规说明\"才肯签约的供应商。需求触发点通常是：法务或采购甩来一句\"你们符合 EU AI Act 吗？\"；想接欧盟订单但拿不出技术文档；被投资条款或大客户问卷逼着补治理材料。\n核心交付物：①《AI 资产清单与风险分级表》（逐系统标 prohibited / high-risk / limited / minimal）；②《EU AI Act 差距清单 + 整改路线》；③《技术文档 / Annex IV 证据包》（high-risk 必备）；④《内部 AI 使用政策 + 员工 AI 素养培训稿》；⑤《面向用户的 AI 透明性告知文案》。可扩展为月度\"AI 治理托管\"（新增系统持续登记、政策随法规更新）。\n完整工作流：\n① 获客：在 Upwork / Fiverr 上架\"EU AI Act documentation\"类 gig；从出海社群、SaaS  founders 群、合规 Slack/Discord 接散单；或做\"免费帮你判断你的 AI 算不算 high-risk\"的钩子帖。\n② 接单与范围确认：客户列出现有 AI 用途（公开信息即可），明确交付物与所用框架（EU AI Act / NIST AI RMF / ISO 42001）。\n③ 核查与撰写：对照法规逐条比对，套用模板产出上述文件包，人工把\"法条\"翻成\"这家公司该怎么做\"的人话。\n④ 交付：PDF/Notion/表格文件包 + 15–30 分钟语音解读，附法规条款出处。\n⑤ 收款：平台托管或定金+尾款；可转月度 retainer。\n关键工具和平台：EU AI Act 官方文本与 AI Act 单一信息门户（免费）、NIST AI RMF / ISO 42001 公开框架、Credo AI / Holistic AI 等治理平台的免费档或试用（做清单与证据辅助）、交付用 Notion / Google Docs / Canva。\n\n3. 盈利模式\n收入来源与定价：最轻量的是\"单项文件包\"——Fiverr 上 EU AI Act 合规文档/Annex IV 证据包从 $150 起，AI 合规审计从 $50 起，大量 gig 分布在 $15–$2,500；Upwork 对 AI Governance 顾问的典型项目价 $800–$2,500，其中 AI 风险盘点 $800–$1,500、政策/制度撰写 $1,500–$3,000、合规对齐（EU AI Act / OECD）$3,000–$5,500、AI 管理体系搭建（ISO 42001 化）$5,500–$9,000。\n利润空间：纯文档交付模式下，工具多为免费/低价档，平台抽成（Fiverr 20%、Upwork 约 10%）后，单份文件包毛利可达 70%–90%；一份差距清单+政策包实际耗时 3–8 小时，时薪可观。\n复购/长期合同：强。法规分阶段生效（2025–2028 连续有新义务落地），客户需要\"文件随法规滚动更新\"，天然转为月度治理托管或年度复检。\n\n4. 入门门槛\n技能：需要能读懂法规的\"风险分级逻辑\"（哪些用途算 high-risk）、会把条款翻成企业可执行的清单与模板；懂英文（EU AI Act 为英文法规）即可，不需要法律学位。学起来约 2–4 周可上手出合格文件包（重点吃透 Annex III 高风险清单、Article 50 透明性、Annex IV 技术文档）。\n工具：初期用 EU AI Act 官方门户（免费）+ NIST AI RMF（免费）+ 一个治理平台试用档即可开张；稳定后月费 $0–$200 足够。无需自有服务器或代码能力。\n资金：启动几乎零成本——一台电脑+网络，首月工具投入 < $100（多用免费资源）。\n时间：从零到第一单，若直接上架 Fiverr/Upwork gig 并用\"免费 high-risk 判断\"样品引流，通常 1–3 周内可收到首单；有出海/SaaS 社群资源可更快。\n\n5. 为什么适合 OPC / 数字游民\n异步交付：客户发来 AI 用途清单，你随时出文件、写政策，无需实时会议，天然适配跨时区。\n全球客户：EU AI Act 有域外效力，美国/亚洲/中东向欧盟市场提供 AI 功能的公司都需合规，英语即可服务全球，不依赖本地执照。\n边际成本低：一份模板（资产清单、差距清单、政策稿）可复用到上百家企业，多接一单几乎不增加固定成本。\n可规模化：从单份文件包 → 月度治理托管 → 标准化\"EU AI Act 自检 SaaS/Notion 模板\"产品化，客单价与复购同步上升。\n时区友好：欧美客户在其工作时间提需求，你在亚洲时区\"次日交付\"，反而成优势；且这是文档活，不要求你在线等。\n核心壁垒是\"把法条翻成可执行清单的判断力+可信模板\"，这恰恰是个人比大咨询公司更灵活、交付更快的环节。\n\n6. 潜在收益（谨慎，不承诺）\n以下是公开行业参考，不等于个人收入：\n- AI 治理整体市场多家机构估算差异较大：Kings Research 估 2025 年约 $10.87 亿、2032 年约 $120.1 亿（CAGR ~41%）；Stratics MRC（Responsible AI Governance）估 2025 年 $46.3 亿、2032 年 $698.1 亿（CAGR 47.3%）；MarketResearch.com 估 2025 年 $3.04 亿、2032 年 $23.24 亿（CAGR 33.7%）。共同指向：高速增长、供不应求。\n- 人才缺口巨大：IAPP《2025 AI Governance Profession Report》（与 Credo AI 合出）显示 77% 的组织正在做 AI 治理（用 AI 的企业近 90%），但 98% 预计还需增员、仅 8% 在招聘，23.5% 把\"找不到合格 AI 治理人才\"列为重大挑战——这正是外部个体服务者的机会。\n- 需求增速：Refonte Learning 援引 LinkedIn 2026 技能数据，AI 治理类工作需求同比 +150%；EU AI Act 就绪潮期间专项岗位一度 +1,257%（高波动峰值，仅作趋势参考）。\n- 平台定价（可验证）：Fiverr AI 合规 gig 单项 $15–$2,500；Upwork AI 治理顾问 $800–$2,500/项目，AI 合规技能 $800–$3,500/项目。\n新手阶段（前 3–6 个月）：靠平台接散单，月入参考 $300–$1,500，主要成本是时间和平台抽成。\n成熟阶段（建立口碑/复购后）：月托管 + 项目文件包，参考 $2,000–$8,000+/月，做到\"AI 治理顾问\"或卖出标准化模板后更高。\n\"这些是参考数据，不等于个人收入。\"实际取决于获客能力、是否聚焦某行业（如招聘/信贷 AI）与交付质量。\n\n7. 主要风险\n市场风险：EU AI Act 部分义务生效期长（high-risk 延到 2027–2028），客户可能\"先拖着\"，短期需求集中在透明性与 GPAI 条款；若监管执行宽松，部分客户会砍合规支出。\n技术风险：法规仍在细化（委员会授权法、协调标准陆续出），文件包需持续更新，否则会过时；过度依赖单一治理平台的口径可能偏差。\n合规风险（最重要）：这行是\"文档与咨询支持\"，不是法律意见——不得出具\"保证合规/免责\"的承诺，重大法律判断须引导客户找执业律师；跨境服务涉及税务（如美国客户需 W-8BEN）；处理客户 AI 系统信息注意保密与数据隐私。\n现金流风险：平台托管账期（Fiverr/Upwork 收款有约 14 天待解冻期）；初期需自垫少量工具/课程费；获客若只靠单一平台则有单源风险。\n\n8. 不适合的人群\n- 想把\"合规文档\"包装成\"法律保证\"去承诺效果的人：越界即有合规与声誉风险。\n- 完全读不进英文法规、害怕长条文的人：这行核心是把 EU AI Act 等条款读懂并转译。\n- 期望一夜爆单的人：前期靠口碑与平台排名积累，冷启动有 1–3 周空窗。\n- 不愿碰跨境/英文沟通的人：核心客户多为海外或出海团队。\n- 只想做\"AI 开发\"、不喜欢写制度/清单/培训稿的人：这是偏文档与咨询的活。\n\n9. 3 个可验证的入门步骤\n① 用 EU AI Act 官方门户（免费）对照 Annex III 高风险清单，挑 3 个你熟悉的 SaaS/AI 产品，判断它们\"算不算 high-risk\"并写出理由——沉淀出你的《高风险判定模板》，这就是你的样品。\n② 下载 NIST AI RMF（免费）与一份公开 AI 政策范本，为其中一个产品写出《AI 使用政策 + 透明性告知文案》初稿，形成你的\"文件包骨架\"。\n③ 在 Fiverr 或 Upwork 上架一个极简 gig：「EU AI Act Readiness Checklist（差距清单，$50–$150）」，用前两步样品作样例，3 天内看是否有询单——有询单即证明需求真实，可加价扩到完整文件包与月度托管。\n\n10. 核验来源\n- 欧盟委员会 AI Act 官方页面（风险分级、high-risk 类别、实施时间表）。https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai\n- artificialintelligenceact.eu 实施时间表总览（禁止条款 2025-02-02、GPAI 2025-08-02、透明性 2026-08-02、high-risk Annex III 2027-12-02 等）。https://artificialintelligenceact.eu/?p=3462/\n- IAPP《2025 AI Governance Profession Report》（77% 组织在做 AI 治理、98% 需增员、人才缺口）。https://iapp.org/resources/article/ai-governance-profession-report/\n- SetAIComply《EU AI Act 合规清单（SME 9 步路线图）》。https://www.setaicomply.com/resources/eu-ai-act-compliance-checklist-smes\n- Fiverr AI Compliance 服务集市（真实 gig 与定价，$15–$2,500）。https://pro.fiverr.com/gigs/ai-compliance\n- Upwork《Hire the Best AI Governance Consultants》（项目定价分层 $800–$15,000）。https://www.upwork.com/hire/ai-governance-consultants\n- Kings Research《AI Governance Market》（2025 $10.87 亿→2032 $120.1 亿，CAGR 40.95%）。http://kingsresearch.com/ai-governance-market-2325\n- Credo AI「Get ready for the EU AI Act」（治理平台/AI 登记册与文档工具）。https://credo.ai/eu-ai-act",
+      "startedAt": "2026-09-18T09:09:00+08:00",
+      "finishedAt": "2026-09-18T09:42:00+08:00",
+      "duration": "33m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "ai-governance",
+        "ai-act",
+        "compliance-docs",
+        "documentation"
+      ],
+      "nextSteps": [
+        "用 EU AI Act 官方门户（免费）对照 Annex III 高风险清单，挑 3 个你熟悉的 SaaS/AI 产品判断'算不算 high-risk'并写理由，沉淀出你的《高风险判定模板》作为样品。",
+        "下载 NIST AI RMF（免费）与一份公开 AI 政策范本，为其中一个产品写出《AI 使用政策 + 透明性告知文案》初稿，形成你的'文件包骨架'。",
+        "在 Fiverr 或 Upwork 上架极简 gig：'EU AI Act Readiness Checklist（差距清单，$50–$150）'，用前两步样品作样例，3 天内看是否有询单验证需求真实。"
+      ],
+      "artifacts": [
+        {
+          "label": "欧盟委员会 AI Act 官方页面（风险分级与时间表）",
+          "path": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "label": "artificialintelligenceact.eu 实施时间表总览",
+          "path": "https://artificialintelligenceact.eu/?p=3462/"
+        },
+        {
+          "label": "IAPP 2025 AI Governance Profession Report",
+          "path": "https://iapp.org/resources/article/ai-governance-profession-report/"
+        },
+        {
+          "label": "SetAIComply EU AI Act SME 9 步合规清单",
+          "path": "https://www.setaicomply.com/resources/eu-ai-act-compliance-checklist-smes"
+        },
+        {
+          "label": "Fiverr AI Compliance 服务集市（真实定价）",
+          "path": "https://pro.fiverr.com/gigs/ai-compliance"
+        },
+        {
+          "label": "Upwork AI Governance Consultants 定价分层",
+          "path": "https://www.upwork.com/hire/ai-governance-consultants"
+        },
+        {
+          "label": "Kings Research AI Governance Market 规模",
+          "path": "http://kingsresearch.com/ai-governance-market-2325"
+        },
+        {
+          "label": "Credo AI：Get ready for the EU AI Act",
+          "path": "https://credo.ai/eu-ai-act"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-09-18/niche-opc-industry.json"
+    },
     {
       "date": "2026-09-17",
       "taskId": "niche-opc-industry",
