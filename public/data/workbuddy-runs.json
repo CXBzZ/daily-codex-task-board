@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-09-18T01:16:44.888Z",
+  "generatedAt": "2026-09-19T01:16:41.331Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-19",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：域名经纪与轻量投资",
+      "status": "success",
+      "summary": "域名经纪（Domain Brokerage）是帮买家谈下未公开出售的域名、或帮卖家把高价值域名卖给终端客户的佣金服务；轻量投资则是以极低成本注册/收购潜力域名后溢价转售。两者都是零库存、零囤货、纯靠信息与谈判吃饭的远程服务，异步、全球客户、近乎零启动资金，非常适合一人公司（OPC）与数字游民，且有 NameBio、DNJournal 等公开成交数据可验证市场。",
+      "details": "一、行业是什么，为什么小众\n一句话定义：域名经纪（Domain Brokerage）是帮买家找到并谈下“已经被别人注册、但没在公开售卖”的域名，或帮卖家把高价值域名卖给对口的终端客户，按成交价抽取佣金的服务；轻量投资（Lightweight Flipping）则是用极低成本（十几美元）手工注册或低价收购有潜力的域名，持有一段时间后溢价卖出。\n\n为什么小众/被低估：\n- 搜索量低：普通人搜“怎么赚钱”几乎不会想到“域名经纪”，它夹在“域名投资（常被妖魔化为投机）”和“传统房产/业务经纪”之间，是个隐形职业。\n- 需求隐蔽：买家往往是拿到融资的初创公司、需要品牌升级的企业、或想收购精确匹配域名的个人，他们不会公开招标，而是悄悄找人代谈——因为一旦暴露身份，持有者会坐地起价（业内称“身份溢价”）。\n- 看起来门槛高：外行以为需要大量资金囤域名，其实“纯经纪”模式零库存、零囤货，只靠信息和谈判吃饭，启动近乎零成本。\n\n二、如何运作\n典型客户与需求触发：\n- 买方：拿到种子/天使轮的 AI、SaaS 初创公司（想拿下 category-defining 的 .com 或 .ai）；传统企业做品牌升级；个人想买回自己名字/品牌域名。\n- 卖方：早年随手注册、现在被终端看上的持有人；想退出持仓的小投资者。\n- 需求触发场景：投资人要求“先把 domain 拿下”、公司更名、产品发布前锁定品牌词。\n\n核心交付物：\n- 对买方：一份带估值区间和接触策略的“收购方案”，实际谈下的转让协议，以及通过 Escrow.com 安全完成的过户。\n- 对卖方：找到真实终端买家、谈出高于挂牌价的价格、完成交割。\n- 轻量投资：持有并转售的域名资产本身。\n\n完整工作流（从获客到收款）：\n1. 获客：在 X(Twitter) 的 domain 社群、NamePros 论坛、LinkedIn 触达初创创始人；或在 Sedo/Afternic 上挂出经纪服务；也可逆向——看到好域名主动联系潜在终端买家推销。\n2. 研判：用 NameBio 查同类成交价做估值，WHOIS + 历史快照（Wayback Machine）判断持有人与是否“使用中”。\n3. 接触：通过注册商转发、域名落地页联系表单、LinkedIn 找到决策人；通常以匿名主体（holding entity）接触以避免身份溢价。\n4. 谈判：报价、还价、确定付款节奏（大额可分期）。\n5. 托管过户：走 Escrow.com 或平台内置 escrow，付款到账后转移域名，平台释放资金。\n6. 收款：佣金在成交价中扣除（买方付或卖方付，按约定）。\n\n关键工具与平台：\n- 估值/数据：NameBio（公开成交库）、DNJournal（每周排行榜）、dn.com 日报。\n- 交易平台：Sedo、Afternic（GoDaddy 系）、Dan.com、Atom、Spaceship、GoDaddy Auctions、Flippa。\n- 安全交割：Escrow.com。\n- 研究：WHOIS、Wayback Machine、DomainTools。\n- 沟通/获客：X(Twitter)、LinkedIn、NamePros。\n\n三、盈利模式\n收入来源与定价：\n- 经纪佣金：主流 10%–20%，随交易额增大而下滑（六位数交易常落到 10% 左右）；GoDaddy Domain Broker Service 收 $119.99 预付 + 20% 佣金；Sedo 经纪 10%–20%；独立经纪人多为“成功后付费”，预付 $0–$500。\n- 轻量投资利润：以 $10–$30 注册/收购，几百到几千美元卖出，ROI 可非常夸张（公开案例：News24.tv 从 $226 到 $30,000；Liquid.trade 从 $138 到 $6,888）。\n- 可叠加：落地页搭建、域名估值报告等小额咨询服务。\n\n利润空间（扣除工具/平台费/税费后）：\n- 纯经纪：佣金几乎纯利，仅平台/escrow 少量费；一笔 $25,000 收购按 15% ≈ $3,750 毛利。\n- 轻量投资：扣除注册费（约 $10/年）、平台佣金（5%–25%）、escrow 费（约 0.89%–1% 含固定费），净收益仍可观。\n\n复购/长期合同：\n- 经纪多为单笔项目制，但优质中介会被 founder 列入“御用”，同一批人连续融资、收购多个域名形成复购；也可签“月度寻域名 retainer”（小额定月费，经纪持续帮找）。\n\n四、入门门槛\n技能：\n- 必须：基础估值能力（读 NameBio comps）、英文邮件谈判、耐心与情绪稳定（被拒是常态）。\n- 加分：一点品牌/营销直觉（判断哪些词值钱）、熟悉 WHOIS/escrow 流程。\n- 学起来：1–2 周可上手基础，3–6 个月积累手感。\n\n工具与费用（初期）：\n- 注册商账户（Namecheap/Porkbun，免费开户，域名 $10 起）。\n- Escrow.com 会员（免费注册，按笔收费）。\n- 一台电脑 + 网络，几乎零软件成本。\n- 可选：DomainTools 等付费研究工具（$0–$100/月，初期不需要）。\n\n资金：\n- 纯经纪模式：$0 启动（不囤货）。\n- 轻量投资模式：先准备 $50–$200 试水注册/收购几个域名即可。\n\n时间：\n- 纯经纪：从建好获客渠道到第一笔成交，通常 1–3 个月。\n- 轻量投资：注册即开始，但卖出周期可能数月到一两年（域名流动性参差）。\n\n五、为什么适合 OPC / 数字游民\n- 异步交付：整个链路是邮件 + 平台消息，不要求实时在线，天然时区友好——你在巴厘岛睡着的几小时，欧美买家/持有人照样推进谈判。\n- 全球客户：域名是无国界的数字资产，买家遍布美国、欧洲、东南亚；英文即可服务全球，不需要本地执照或实体。\n- 边际成本低：谈成一个 $50K 域名和谈一个 $5K 域名，工作量差不了几倍，但佣金差十倍——具备“杠杆效应”。\n- 可规模化：建立标准化 SOP（估值模板、接触话术、escrow 清单）后，可同时推进多个案子；也可把轻量投资做成“组合管理”。\n- 零库存零场地：不像电商压货、不像线下要门店，一部笔记本走天下。\n- 现金流可控：成功后付费，无预付风险；大额可分期降低买方门槛。\n\n六、潜在收益（谨慎，不承诺）\n以下为公开参考数据，不等于个人收入：\n- 市场规模：2025 年全球域名市场约 $9.98B，其中 aftermarket（二手域名）约 $0.68B，预计 2033 年达 $1.17B（CAGR 6.1%）。\n- 成交活跃度：NameBio 公开记录显示 2025 年共有 190,109 笔成交价 >$100 的交易，总额 $314.7M，同比美元量 +67%、笔数 +31%。\n- 中位价：Sedo 平台域名成交中位价约 $549；GoDaddy 2025 全年 aftermarket 收入 $510M。\n- 经纪佣金参考：独立经纪人单笔佣金常见 $500–$10,000+（取决于成交额 10%–20% 与交易规模）；例：一笔 $25,000 收购佣金约 $2,500–$5,000。\n- 新手阶段：纯经纪头几个月可能只做成 0–2 单；轻量投资可能数月才卖出第一个，单笔净利 $50–$500 常见。\n- 成熟阶段：建立稳定终端买家网络的成熟中介，年处理数十笔中高价值交易，理论上可达 6 位数美元年收入，但这是少数，且高度依赖人脉与声誉积累。\n明确标注：上述为行业与平台公开数据，个人实际收入取决于获客能力、谈判水平、资金与市场周期，不构成收益承诺。\n\n七、主要风险\n- 市场风险：域名热度随技术叙事波动（如 .ai 泡沫化可能压缩溢价）；mid-tier 两词 .com 流动性走弱；整体 aftermarket 受宏观与融资环境影响。\n- 技术风险：高度依赖平台（Sedo/Afternic/GoDaddy 政策、佣金、下架规则变动）；WHOIS 隐私普及使找到持有人变难；AI 域名生成器普及改变注册端供需。\n- 合规风险：跨境收款涉及外汇与税务申报；部分国家/地区对域名交易征税；涉及商标词（TM）的域名有争议与仲裁（UDRP）风险，需回避侵权词；KYC/AML 在 escrow 环节适用。\n- 现金流风险：经纪“成功后付费”，谈崩零收入；轻量投资资金被域名占用数月到数年、可能最终卖不掉；获客（如付费推广）有前置成本。\n\n八、不适合的人群\n- 想要“稳定月薪、立竿见影”的人——这是项目制、收入波动大。\n- 厌恶被拒绝、缺乏耐心做长周期跟进的人——大量冷接触石沉大海。\n- 完全不懂英文、不愿写英文商务邮件的人——主流市场是英语。\n- 想“无脑囤货暴富”的投机者——轻量投资需要选品判断，盲目注册大概率亏注册费。\n- 需要本地执照或实体背书才能安心的人——这行靠声誉而非资质。\n\n九、3 个可验证的入门步骤\n1. 注册并免费浏览 NameBio 与 DNJournal 各 30 分钟，读懂 10 笔近期同类成交价，建立“估值直觉”；同时开一个 Namecheap/Porkbun 免费账户。验证标准：能独立给一个指定域名写出带 comps 的估值区间。——1 天内完成。\n2. 在 X(Twitter) 关注 20 个 domain broker / domain investor 账号，进 NamePros 论坛看“Brokerage”板块真实案例；起草一份自己的“匿名收购接触邮件模板”。验证标准：模板被至少 1 位有经验的网友或 AI 点评为“专业、不冒犯”。——1–2 天完成。\n3. 用 $30–$50 实际注册或低价收购 2–3 个你认为有终端价值的短字符/.ai 域名，挂到 Afternic/Sedo（免费或低佣金），体验从挂牌到询盘的完整流程。验证标准：一周内收到至少 1 次真实询盘或出价（哪怕很低），确认市场反应再决定是否加注。——2–3 天完成。\n\n十、核验来源\n1. 域名行业统计 2025（市场规模与 aftermarket 数据）：https://corg.com/domain-industry-statistics-2025\n2. 2025 域名趋势分析（含成交案例与 .ai 热度）：https://names.center/blog/domain-name-trends-2025.html\n3. 2025 域名销售与收购数据（NameBio 公开成交，190,109 笔）：https://www.dnforum.com/threads/2025-domain-sales-and-acquisitions-and-2026-predictions-with-tess-diaz-it-com-domains.631389/post-2417667\n4. 域名经纪费用与佣金对比（GoDaddy/Sedo/独立经纪人）：https://bolddomains.com/blog/domain-broker-cost-fees-and-commission\n5. 域名经纪服务横向对比（何时该用经纪）：https://sidebysidedomains.com/blog/domain-broker-comparison.html\n6. 域名交易平台对比（Sedo/Afternic/GoDaddy/Dan 等费率与覆盖）：https://www.nameslink.com/hugo/en/posts/2026-04-10-domain-trading-platforms\n7. NameBio 每日公开成交数据（可验证的真实记录）：https://dn.com/en-us/news/detail-5126.html\n8. 域名历史最高成交记录（DNJournal / Wikipedia 来源）：https://www.domainpros.ai/sold",
+      "startedAt": "2026-09-19T08:44:33.796558+08:00",
+      "finishedAt": "2026-09-19T09:16:33.796558+08:00",
+      "duration": "32m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "domain-brokerage",
+        "aftermarket",
+        "location-independent",
+        "passive-asset"
+      ],
+      "nextSteps": [
+        "免费浏览 NameBio 与 DNJournal 各 30 分钟，读懂 10 笔近期同类成交价建立估值直觉；并开一个 Namecheap/Porkbun 免费账户。",
+        "在 X 关注 20 个 domain broker / investor 账号，进 NamePros 论坛看 Brokerage 板块，起草一份匿名收购接触邮件模板并找人点评。",
+        "用 $30–$50 实际注册或低价收购 2–3 个有终端价值的短字符/.ai 域名，挂到 Afternic/Sedo，体验挂牌到询盘全流程。"
+      ],
+      "artifacts": [
+        {
+          "label": "域名行业统计 2025（市场规模/aftermarket）",
+          "path": "https://corg.com/domain-industry-statistics-2025"
+        },
+        {
+          "label": "2025 域名趋势分析（含成交案例）",
+          "path": "https://names.center/blog/domain-name-trends-2025.html"
+        },
+        {
+          "label": "2025 域名销售数据 NameBio 公开成交",
+          "path": "https://www.dnforum.com/threads/2025-domain-sales-and-acquisitions-and-2026-predictions-with-tess-diaz-it-com-domains.631389/post-2417667"
+        },
+        {
+          "label": "域名经纪费用与佣金对比",
+          "path": "https://bolddomains.com/blog/domain-broker-cost-fees-and-commission"
+        },
+        {
+          "label": "域名经纪服务横向对比",
+          "path": "https://sidebysidedomains.com/blog/domain-broker-comparison.html"
+        },
+        {
+          "label": "域名交易平台费率对比",
+          "path": "https://www.nameslink.com/hugo/en/posts/2026-04-10-domain-trading-platforms"
+        },
+        {
+          "label": "NameBio 每日公开成交数据",
+          "path": "https://dn.com/en-us/news/detail-5126.html"
+        },
+        {
+          "label": "域名历史最高成交记录",
+          "path": "https://www.domainpros.ai/sold"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-09-19/niche-opc-industry.json"
+    },
     {
       "date": "2026-09-18",
       "taskId": "niche-opc-industry",
