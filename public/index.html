@@ -23,7 +23,7 @@
       <dl class="stats">
         <div><dt>Total runs</dt><dd>57</dd></div>
         <div><dt>Tracked days</dt><dd>55</dd></div>
-        <div><dt>Today</dt><dd>1</dd></div>
+        <div><dt>Today</dt><dd>0</dd></div>
       </dl>
     </section>
 
@@ -31,197 +31,11 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">Today</p>
-          <h2>2026-09-20</h2>
+          <h2>2026-09-21</h2>
         </div>
-        <a class="text-link" href="days/2026-09-20.html">Open day</a>
-      </div>
-      <div class="run-grid">
-    <article class="run-card">
-      <div class="run-card-header">
-        <div>
-          <a class="task-link" href="tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
-          <p class="meta-line"><span>Date</span><a href="days/2026-09-20.html">2026-09-20</a></p>
-        </div>
-        <span class="status success">Success</span>
-      </div>
-      <p class="summary">今天的小众行业是面向海外 WooCommerce 小店的结账流程、支付沙盒、配送/税费规则上线前 QA 服务，属于中国境内可做的海外英语市场。它适合懂 WooCommerce、英文报告、支付测试和权限边界的 OPC/数字游民小规模验证，但必须限定为测试环境内的技术 QA，不代管支付账户、不处理真实卡号、不做当地税务法律意见或增长承诺。</p>
-      <div class="details">## 行业是什么，为什么小众
-
-今天选择的行业是：面向海外 WooCommerce 小店的结账流程、支付沙盒、配送/税费规则上线前 QA 服务。
-
-它不是完整建站、不是广告投放、不是支付账户代运营，也不是税务合规咨询。更准确地说，它是一类“上线前技术体检”：海外小卖家已经用 WordPress + WooCommerce 搭好了店铺，准备接入 Stripe、PayPal、WooPayments 或本地支付方式，但在真正投放广告、发邮件、找网红或上线新品前，需要有人用测试环境把购买链路从商品页、购物车、优惠码、配送地址、税费、支付、订单邮件、退款/取消状态、移动端展示到后台订单记录跑一遍，并输出截图证据和问题清单。
-
-它小众，是因为多数人把电商服务理解成“建站”“设计”“投广告”“SEO”，但真正让小店亏钱的常常是非常具体的结账错误：某个国家没有配送方式、税费显示不符合店主预期、PayPal sandbox 和 live 凭据混用、Stripe webhook 没接好、3D Secure 场景没测试、移动端支付按钮遮挡、优惠码和免邮门槛冲突、订单邮件进垃圾箱、地址字段不适配目标国家、插件更新后 checkout block 与旧插件不兼容。大型品牌有 QA、开发和支付团队，小型 WooCommerce 店通常靠店主、设计师或兼职开发者拼起来，缺少专门的上线前检查角色。
-
-这个行业的核心价值是：在客户授权、最小权限、测试环境和官方沙盒内，把“能不能顺利下单”用可复现证据说清楚。最硬的边界是：只做技术 QA 和轻量配置建议，不代管 Stripe/PayPal/银行账户，不接触真实银行卡或真实交易，不做当地税务、消费者法、支付牌照或隐私法律意见，不承诺转化率、销售额、支付通过率或平台审核结果。
-
-## 目标市场
-
-目标市场：中国境内可做的海外英语市场。
-
-优先客户包括海外 WooCommerce 小卖家、DTC 独立站、手工品牌、数字产品卖家、小型代理商、WordPress 维护商、刚从 Etsy/Amazon/Shopify 迁出到自建站的商家，以及准备上线季节性活动的微型品牌。地理上可先面向美国、英国、欧盟、澳大利亚、加拿大等英语沟通较顺的市场，但承接者人在中国境内，定位应是远程技术服务供应商，而不是当地税务顾问、支付机构代理或法律合规顾问。
-
-为什么适合 OPC/一人公司或数字游民验证：交付物主要是测试计划、沙盒下单记录、截图/录屏、问题清单、轻量设置建议、复测报告和客户培训；固定资产轻，只要有稳定网络、英文沟通、WordPress/WooCommerce 基础和支付沙盒常识，一个人就能从小单开始。它不需要当地门店、不需要当地职业牌照，也不需要长期驻场。
-
-## 典型需求场景和客户是谁
-
-1. 海外小店准备上线新品或黑五活动，担心广告烧起来后 checkout 报错。
-2. 店主新接入 Stripe、PayPal、WooPayments、Apple Pay、Google Pay 或本地支付方式，希望用官方测试卡和 sandbox 先跑通。
-3. 店铺新增国际配送，shipping zones、zip/postcode、free shipping、flat rate、local pickup、DHL/UPS/FedEx 插件规则容易互相覆盖。
-4. 店铺新增欧盟/英国/美国不同地区税费规则，店主需要确认 WooCommerce 显示逻辑和税务软件/插件设置是否按其指示工作。
-5. 店铺从 classic checkout 切到 checkout block，部分优惠码、订阅、支付、地址验证或订单附加字段插件行为改变。
-6. 小型代理商交付客户站点前，希望外包一轮独立 QA，减少上线后投诉。
-7. WordPress 更新、主题更新、支付插件更新后，店主需要复测结账链路。
-8. 数字产品、课程、会员、预订、订阅型商品需要测试不同订单状态、下载邮件、自动续费或失败支付提醒。
-
-购买人通常是海外店主、运营负责人、独立站代理商、WordPress freelancer、虚拟助理团队或小型品牌创始人。他们付费买的是“上线前少踩坑、问题可复现、交付有证据”，不是买增长承诺。
-
-## 行业如何运作，典型参与方和工作流
-
-典型参与方包括店主、WordPress/WooCommerce 开发者或维护商、支付服务商、物流/税费插件供应商、主题/插件作者、消费者、以及本 QA 服务者。服务者的角色是客户授权下的测试执行与问题整理者，不是 payment facilitator，不是 merchant of record，不是税务代理，也不是平台官方支持。
-
-标准工作流：
-
-1. 授权和范围确认：客户书面确认测试站点、目标国家/地区、商品类型、支付方式、配送规则、优惠码、税费规则、测试账号、是否允许录屏和截图。只使用临时账号或最小权限，不要求客户交出主账户、银行信息、2FA 主设备或真实支付凭据。
-2. 测试环境准备：优先使用 staging site、Stripe test mode、PayPal sandbox、WooPayments 测试模式或客户指定的测试网关；如果必须在 live site 测试，只能使用不产生真实扣款的测试方式或客户明确批准的小额测试，并把风险写清楚。
-3. 测试矩阵设计：按设备、浏览器、国家、币种、配送地址、商品类型、优惠码、免邮门槛、支付方式、登录/游客结账、成功/失败/3D Secure/退款场景列出矩阵。
-4. 执行测试：从商品页加入购物车，修改数量，套用优惠码，切换地址和配送方式，进入 checkout，使用 Stripe 官方测试卡、PayPal sandbox 买家账号等完成沙盒交易，检查订单状态、邮件、后台记录、库存、税费、运费、下载链接和重定向页面。
-5. 问题分级：把问题分为 blocker、major、minor、question。blocker 是无法支付、无法配送、税费/运费明显不按客户规则显示、订单未生成、邮件不发等；minor 是文案、移动端间距、按钮样式、提示不清等。
-6. 轻量修复建议：可在客户授权下给出 WooCommerce 设置、插件冲突排查、shipping zone 顺序、webhook 检查、缓存排除、测试模式开关、日志位置等建议；涉及代码修改、复杂插件开发或法律判断时转给开发者/律师/税务顾问。
-7. 复测和交付：修复后复测关键路径，交付测试矩阵、截图/录屏、订单编号、测试卡类型、sandbox transaction id、配置变更记录、剩余风险和上线 checklist。
-8. 撤权和删除：项目结束后客户删除临时账号或 API 权限；服务者删除含客户订单、邮箱、地址、交易截图的本地副本，只保留合同、发票和必要交付记录。
-
-## 盈利模式，收入来自哪里
-
-收入来自按次 QA、上线前检查包、复测包、月度维护体检和代理商白标测试，不来自客户真实交易分成、支付处理费、税务申报代理或广告收益分成。
-
-海外报价样本和人民币折算口径可以保守参考：
-
-- 基础 checkout smoke test：80-200 美元，约 536-1340 元。覆盖 1 个站点、1-2 个支付方式、1-2 个目标国家、桌面和移动端基础成功下单。
-- 标准上线前 QA：250-600 美元，约 1675-4020 元。覆盖 3-5 个测试场景、shipping/tax/coupon/payment/email/order 状态、截图报告和一次复测。
-- 复杂多地区测试：700-1500 美元，约 4690-10050 元。覆盖多币种、多配送区、订阅/会员/数字下载、3D Secure、失败支付、退款、税费插件和多浏览器。
-- 代理商白标月包：500-2000 美元/月，约 3350-13400 元/月。按每月若干站点或若干小时提供测试矩阵、报告和复测。
-- 轻量修复与配置建议：30-80 美元/小时，约 201-536 元/小时。只适合明确授权的小范围设置排查；代码和复杂集成应另行报价或转开发者。
-
-折算采用 2026 年 9 月 18 日中国外汇交易中心人民币兑美元中间价 1 美元约 6.7521 元，并为阅读方便按 6.7 左右粗略换算。它不是结汇承诺，实际到账要扣除平台佣金、收款手续费、汇差、税费和退款风险。
-
-公开市场信号显示，WooCommerce 本身有大量小店使用；WooCommerce 官方称其生态覆盖数百万在线商店，且设置项包括 tax、shipping、payments 等多个模块。Codeable 的 2026 年 WooCommerce 成本指南显示，小型 WooCommerce 定制项目可从数百美元到上万美元不等，开发者小时费也常见 50-200 美元以上；Fiverr/Upwork 上也长期存在 WooCommerce checkout、payment gateway、bug fix、QA 等服务类目。新手不应照搬高级开发者报价，适合从小范围 QA 包切入。
-
-## 入门门槛
-
-技能：英文读写、WordPress/WooCommerce 后台、插件冲突基本判断、浏览器开发者工具、支付沙盒、测试矩阵、截图报告、客户沟通、基础隐私和权限意识。最好懂一点 HTML/CSS/缓存/CDN/DNS，但不必一开始就做插件开发。
-
-设备/软件：稳定网络、电脑、主流浏览器、移动端真机或浏览器设备模拟、截图/录屏工具、表格、Notion/Google Docs、VPN/代理网络环境（合法合规使用，用于检查目标地区访问体验）、密码管理器、加密存储。需要准备虚构测试地址、测试邮箱、测试商品和报告模板。
-
-资质/合规：通常不需要当地支付牌照，因为你不处理资金、不成为商户收单方、不代收代付、不保管真实卡号或支付凭据。但要避免触碰真实消费者支付数据和敏感认证信息；支付账户开通、KYC、税务设置、商品合法性、消费者法和隐私法律责任仍由店主和其专业顾问承担。
-
-资金：轻资产启动。主要成本是时间、学习、测试设备、插件演示环境、收款通道费用和平台佣金。可先搭一个自有 WooCommerce demo store，连接 Stripe test mode 和 PayPal sandbox 做样本报告。
-
-渠道：Fiverr、Upwork、PeoplePerHour、Contra、LinkedIn、Indie Hackers、Reddit 合规发帖、WordPress/WooCommerce 社群、海外小型 agency 白标合作、WooCommerce 维护服务商转介绍、英文博客/YouTube 教程、独立站 cold email。不要群发垃圾邮件，不要抓取来源不明商家名单。
-
-时间成本：有 WordPress 基础的人，1-2 周可熟悉 WooCommerce 设置、Stripe/PayPal sandbox 和测试报告；要稳定接复杂多地区、多插件、多支付场景，通常需要 1-3 个月真实项目经验。
-
-## 中国境内如何合规承接海外市场
-
-跨境获客：可通过平台接单、独立站、内容获客、LinkedIn 和代理商合作。要避免虚假身份、冒充 WooCommerce/Stripe/PayPal 官方、承诺账号解封或保证支付通过。合同中写明你是独立技术 QA 服务商。
-
-远程交付：尽量使用 staging site、临时账号、最小权限、测试数据和屏幕共享。不要要求客户发送主账户密码、2FA、银行账户、Stripe live secret key、PayPal live API 密钥或真实银行卡号。需要凭据时用 1Password/Bitwarden 等安全共享，项目结束后撤权。
-
-合同/发票/收款：可以用 Upwork/Fiverr 平台合同，或与海外客户签简单服务协议，写清服务范围、测试环境、交付物、返工次数、保密、数据删除、责任限制和不提供法律/税务意见。收款可通过平台、Payoneer、Wise Business、银行服务贸易收款等合规渠道；办理服务贸易外汇收支时保留合同、发票、交付记录等真实性材料。
-
-税务申报：中国境内个人或个体户/公司取得海外服务收入，应按自身主体类型申报个人所得税、企业所得税和增值税等。跨境服务是否适用免税、零税率或一般计税，要结合具体服务性质、客户所在地、合同和税务备案要求确认，不能在报告中简单承诺“免税”。如果收入稳定，应考虑注册个体户或公司并咨询税务人员。
-
-平台规则：遵守 Fiverr/Upwork 等平台服务条款，不诱导站外交易、不刷评价、不提供规避平台风控服务。遵守 WooCommerce、Stripe、PayPal 文档和政策；不要帮助高风险、违法、侵权、仿牌、成人、赌博、药品、金融投资或规避支付风控的商户上线收款。
-
-数据/隐私合规：中国个人信息保护法要求个人信息处理遵循合法、正当、必要和最小范围。若客户涉及欧盟/英国用户，服务者可能被视为 processor，需要按客户指示处理个人数据、签数据处理条款、限制子处理者、约定删除/返还和安全措施。实务中应尽量使用虚构测试账号，不下载真实客户订单和个人信息，不把客户数据上传到未经授权的 AI 工具。
-
-语言和时区门槛：主要工作语言是英文，报告要能写清复现步骤、expected/actual result、severity、browser/device、screenshots。时区上，中国晚间可覆盖欧美上午；要约定响应时间，避免 24 小时在线承诺。
-
-## 为什么适合或不完全适合 OPC/一人公司
-
-适合点：范围小、交付标准化、固定资产轻、可远程、可从 1 个测试包试单，且一人能完成售前、测试、报告、复测和培训。小店和 agency 对“上线前独立检查”有明确痛点，预算低于完整开发，但愿意为减少上线事故付费。
-
-不完全适合点：边界很容易膨胀。客户会把支付账号开通、Stripe 风控、PayPal 冻结、销售税 nexus、VAT、隐私政策、退货条款、主题 bug、插件冲突、速度优化、广告转化都丢给你。OPC 必须有服务边界和升级路径：技术 QA 可以做，复杂开发转开发者，税务/法律转专业顾问，支付账户问题转官方支持。
-
-## 为什么适合或不完全适合数字游民/远程工作者
-
-适合点：任务天然远程，交付以截图、录屏、报告和线上会议为主；客户在海外，异步英文沟通常被接受；不需要本地仓库或办公室。只要网络稳定、设备安全、时区管理好，数字游民可以在中国境内或合规旅行状态下交付。
-
-不完全适合点：支付和结账测试对网络环境、设备、浏览器、地区访问、插件版本非常敏感；公共网络和移动办公容易带来安全风险。数字游民要避免在咖啡店 Wi-Fi 处理客户后台，必须使用设备加密、密码管理器、VPN 安全策略和客户数据删除流程。
-
-## 潜在收益、前提条件和成本结构
-
-低成本验证期：每月 2-5 个基础 smoke test，客单 80-200 美元，月毛收入约 160-1000 美元，折合约 1070-6700 元。目标是验证英文沟通、报告模板和客户愿付费，不是追求高收入。
-
-稳定接单期：每月 3-6 个标准 QA 包，客单 250-600 美元，月毛收入约 750-3600 美元，折合约 5000-24100 元。前提是有作品样本、复测流程、固定获客渠道和清晰边界。
-
-代理商合作期：与 2-4 家小型 agency 做白标 QA，每月 500-2000 美元/家，但这要求响应稳定、报告专业、保密严格，并能处理临时上线窗口。
-
-成本结构：平台佣金 5%-20% 不等，收款手续费、汇差、税费、测试设备、软件订阅、售前沟通、返工、晚间会议、客户数据安全成本。不要把毛收入当净利润。
-
-## 主要风险、合规注意事项和不适合人群
-
-主要风险：
-
-1. 支付合规风险：不得代管 Stripe/PayPal/银行账户，不接触真实卡号，不保存 live secret key，不处理真实资金，不协助规避 KYC、风控、制裁、禁售品或高风险商户规则。
-2. 税务法律风险：shipping tax 显示 QA 不等于当地销售税/VAT/GST 法律意见。店主必须确认税务规则，必要时咨询当地会计师。
-3. 隐私风险：订单、邮箱、地址、电话、IP、交易号都可能是个人信息。测试尽量使用虚构数据；真实数据只在最小必要范围内处理。
-4. 平台规则风险：WooCommerce、Stripe、PayPal、税费插件、配送插件会更新，历史教程可能失效。交付前必须核验当前官方文档和客户实际版本。
-5. 安全风险：临时账号、后台权限、API key、webhook secret、日志和截图都要谨慎处理。项目结束要撤权、删除、确认。
-6. 责任边界风险：支付失败可能来自银行、发卡行、风控、插件冲突、缓存、主题、主机、地区限制等。服务者只能说明测试发现和建议，不保证所有真实交易成功。
-7. 客户质量风险：仿牌、侵权、灰产、赌博、成人、药品、金融投资、虚假折扣、dropshipping 欺诈商户会把服务者拖入风控和声誉问题，应拒绝。
-8. 收益夸大风险：不要宣传“提升转化率”“避免所有退款”“保证支付通过”“保证税费正确”。只能说减少上线前可发现错误。
-
-不适合人群：英文报告写不清的人；喜欢拿客户主账号直接操作的人；不愿意学习官方文档的人；把 QA 当作增长黑客的人；对支付、隐私、税务边界没有敬畏的人；无法忍受时区和返工的人。
-
-## 新手可验证的 3 个低成本入门步骤
-
-1. 搭一个自有 WooCommerce demo store，配置 2 个商品、2 个配送区、1 个优惠码、Stripe test mode 和 PayPal sandbox，做一份英文样本 QA 报告。
-2. 做一张 checkout QA checklist：覆盖 product/cart/coupon/shipping/tax/payment/order email/mobile/refund/failed payment/webhook/logs，并写清不处理真实支付和税务法律意见。
-3. 在 Fiverr/Upwork 或独立站发布一个 99-149 美元的基础 smoke test 小包，只接 1 个站点、2 个支付方式、2 个目标地址、一次复测，用前 3 单打磨报告模板。
-
-## 点评 Agent 审稿
-
-独立点评 Agent Anscombe 已审查并建议通过，不需要重选题。
-
-- 中国境内承接海外市场适配度：4/5
-- OPC/一人公司适配度：5/5
-- 数字游民适配度：5/5
-- 合规风险等级：中
-- 跨境执行风险等级：中
-- 收益口径是否克制，有无夸大：整体克制。只要按“按次 QA/上线前检查/问题清单”计费，不写提高转化率、保证收款成功、保证税费正确、保证 Stripe/PayPal 审核通过，就不算夸大。
-- 信息来源是否足够可信：足够可信。官方 WooCommerce/Stripe/PayPal 文档能支撑技术范围，Fiverr/Codeable 可作市场信号，税务、外汇、PIPL、GDPR/UK GDPR 可支撑边界说明。
-- 最该补充或提醒的一句话：必须要求客户书面授权、最小权限临时访问、仅用 Stripe/PayPal 官方测试环境和测试卡号，税费/配送/支付配置的最终决定与合规责任由店主确认。
-- 是否建议通过：建议通过，不需要重选题。这个题目小而清楚，适合个人远程交付；但报告里要把“技术 QA”与“支付账户代管、真实交易处理、税务法律意见、增长承诺”切开得非常硬。
-
-## 关键核验来源
-
-1. WooCommerce 官方首页。核验 WooCommerce 是 WordPress 的开放电商平台，生态覆盖数百万在线商店，并以 checkout、payments、shipping 等作为核心能力。https://woocommerce.com/
-2. WooCommerce 官方设置文档。核验 WooCommerce 后台设置包含 General、Products、Tax、Shipping、Payments、Accounts &amp; Privacy、Emails 等模块，且 tax、shipping、payments 是可配置项。https://woocommerce.com/document/configuring-woocommerce-settings/
-3. WooCommerce Shipping Zones 文档。核验 shipping zones 会决定购物车和 checkout 展示的配送选项和费率；客户只匹配一个 zone，顺序会影响结果。https://woocommerce.com/document/setting-up-shipping-zones/
-4. WooCommerce Stripe extension 文档。核验 Stripe extension 可支持信用卡/借记卡、Apple Pay、WeChat Pay、本地支付、BNPL 等，并提供 testing、webhooks、payment methods、3D Secure 等相关文档入口。https://woocommerce.com/document/stripe/
-5. Stripe Testing 文档。核验 Stripe 提供 sandbox/test mode、测试卡、拒付、3D Secure、退款等测试场景，并明确不要用真实卡号测试。https://docs.stripe.com/testing
-6. PayPal Sandbox Testing Guide。核验 PayPal sandbox 是自包含虚拟测试环境，可用虚构 sandbox 账号和凭据测试交易，不触碰真实 PayPal 账户。https://developer.paypal.com/sandbox-testing/overview
-7. Codeable WooCommerce Development Costs 2026。核验 WooCommerce 小型定制、开发者小时费和维护预算区间，用作海外 WooCommerce 服务价格背景。https://www.codeable.io/blog/woocommerce-development-cost/
-8. Fiverr 服务市场。核验 WooCommerce、WordPress、E-Commerce Development、Bug Fixes、QA &amp; Review 等服务类目存在，用作自由职业市场信号。https://www.fiverr.com/
-9. 中国外汇交易中心/公开汇率数据。核验 2026 年 9 月 18 日人民币兑美元中间价约 6.7521，作为美元报价折算人民币的参考。https://www.chinamoney.com.cn/
-10. 国家税务总局跨境应税行为免税管理办法。核验跨境应税行为存在免税/零税率等规则和备案要求，提示不能简单承诺所有海外服务收入免税。https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193713/content.html
-11. 国家外汇管理局经常项目外汇业务指引。核验服务贸易外汇收支应按规定提交能证明交易真实合法的交易单证。https://www.safe.gov.cn/safe/2020/0831/17182.html
-12. 全国人大网《中华人民共和国个人信息保护法》。核验处理个人信息应遵循合法、正当、必要、诚信和最小范围原则，并履行告知等义务。https://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html
-13. UK ICO 关于 controller/processor 合同的说明。核验处理者按控制者指示处理个人数据时，合同或其他法律文件是核心要求之一，用于提示服务者签 DPA/数据处理条款。https://ico.org.uk/</div>
-      <div class="run-meta">
         
-        <p class="meta-line"><span>Started</span>20/09/2026, 16:02</p>
-        <p class="meta-line"><span>Finished</span>20/09/2026, 16:10</p>
-        <p class="meta-line"><span>Duration</span>8m 29s</p>
-        
-        <p class="meta-line"><span>File</span><code>runs/2026-09-20/niche-profit-industry.json</code></p>
       </div>
-      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>woocommerce</span><span>ecommerce-qa</span></div>
-      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>搭一个自有 WooCommerce demo store，配置商品、配送区、优惠码、Stripe test mode 和 PayPal sandbox，做一份英文样本 QA 报告。</li><li>做一张 checkout QA checklist，覆盖 product/cart/coupon/shipping/tax/payment/order email/mobile/refund/failed payment/webhook/logs，并写清不处理真实支付和税务法律意见。</li><li>在 Fiverr/Upwork 或独立站发布一个 99-149 美元的基础 smoke test 小包，只接 1 个站点、2 个支付方式、2 个目标地址、一次复测。</li></ul></div>
-      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://woocommerce.com/">WooCommerce 官方首页</a></li><li><a href="https://woocommerce.com/document/configuring-woocommerce-settings/">WooCommerce 设置文档</a></li><li><a href="https://woocommerce.com/document/setting-up-shipping-zones/">WooCommerce Shipping Zones 文档</a></li><li><a href="https://woocommerce.com/document/stripe/">WooCommerce Stripe extension 文档</a></li><li><a href="https://docs.stripe.com/testing">Stripe Testing 文档</a></li><li><a href="https://developer.paypal.com/sandbox-testing/overview">PayPal Sandbox Testing Guide</a></li><li><a href="https://www.codeable.io/blog/woocommerce-development-cost/">Codeable WooCommerce Development Costs 2026</a></li><li><a href="https://www.fiverr.com/">Fiverr 服务市场</a></li><li><a href="https://www.chinamoney.com.cn/">中国外汇交易中心</a></li><li><a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193713/content.html">国家税务总局跨境应税行为免税管理办法</a></li><li><a href="https://www.safe.gov.cn/safe/2020/0831/17182.html">国家外汇管理局经常项目外汇业务指引</a></li><li><a href="https://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html">中华人民共和国个人信息保护法</a></li><li><a href="https://ico.org.uk/">UK ICO controller/processor contract guidance</a></li></ul></div>
-    </article>
-  </div>
+      <div class="empty-state">No Codex automation results have been reported for today yet.</div>
     </section>
 
     <section class="section">
@@ -455,7 +269,7 @@
     </section></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 20/09/2026, 16:11</span>
+      <span>Generated 21/09/2026, 09:12</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>

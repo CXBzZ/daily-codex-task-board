@@ -1,7 +1,71 @@
 {
-  "generatedAt": "2026-09-19T01:16:41.331Z",
+  "generatedAt": "2026-09-21T01:12:10.954Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-09-21",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：独立媒体赞助招商代理",
+      "status": "success",
+      "summary": "帮拥有稳定读者/听众但懒得卖广告的创作者（Newsletter 写手、播客主）谈下品牌赞助并抽成，是一个几乎零成本、可全球异步运作的一人媒体销售生意。它卡在创作者经济爆发与「绝大多数独立创作者不愿做销售」之间，需求隐蔽却真实付费，非常适合 OPC 与数字游民。",
+      "details": "每日小众赚钱行业调研：独立媒体赞助招商代理（Newsletter / Podcast 广告位代销）\n\n1. 行业是什么，为什么小众\n一句话定义：你扮演独立 Newsletter 写手与播客主的「广告销售代表（sponsorship rep）」，帮那些已经拥有稳定读者/听众、却没时间也不擅长卖广告的创作者对接品牌、谈下赞助并抽取佣金。\n为什么小众：它夹在「创作者经济」和「媒体广告销售」两个大行业之间，外人只看到网红变现的喧闹，看不到背后需要有人替创作者做 BD、报价、谈判、催收；创作者自己也常羞于谈钱、疏于商务。这个「中间人」角色长期被大 MCN /  talent agency 垄断，个人化、远程化、按佣金结算的版本极少被公开讨论，搜索量低、需求隐蔽，但付费意愿真实。\n\n2. 如何运作\n典型客户：粉丝 5k–100k 的 Newsletter 写手、独立播客主、小众 B2B YouTube / LinkedIn 创作者。需求触发点：他们偶尔收到零散赞助咨询但报价混乱，或想稳定变现又不愿把时间花在销售上。\n核心交付物：媒体资料包（media kit）、广告价目表（rate card）、品牌外联邮件/提案、谈判与成交、发票与回款、赞助内容排期表。\n完整工作流：①筛选并签约 3–10 个赛道互补的小创作者（避免互相抢同一批广告主）②用模板产出 media kit（受众画像、打开率/收听数据、往期合作案例）③在 Paved / Swapstack / Passionfroot 上架或主动 BD 品牌 ④报价谈判（按 CPM 或固定 sponsor fee）⑤起草合同与发票 ⑥赞助内容上线后追踪数据并推动复购 ⑦月底按佣金结算。\n关键工具与平台：Paved、Swapstack、Passionfroot、beehiiv Ad Network（发现与成交）；Canva / Notion（media kit 模板）；Stripe / WISE（跨境收款）；Notion / 表格（pipeline 管理）。\n\n3. 盈利模式\n收入来源：从帮创作者谈成的赞助额中抽取佣金，典型 15–20%（纯佣金模式，aligns incentives）；也可采用「小额月费 + 低佣金」（retainer + commission）。\n定价方式：按项目 / 按月 / 按成交。举例：一个 $2,000 的 newsletter 赞助，creator 实收约 $1,600–$1,700，你抽 $300–$400。\n利润空间：扣除平台费（如 Passionfroot 自接单 5% 服务费 + 3% 手续费通常由品牌承担，你一般不在 creator 侧再扣）、工具月费（数十美元）、税费后，佣金基本即净利。若同时代理 5–8 个 creator、月赞助流水 $15k–$40k，个人月净约 $2k–$7k。\n复购与长期合同：强。品牌一旦验证 ROI 会季度续约；与 creator 签 3–6 个月优先/独家代理，形成稳定抽成流。\n\n4. 入门门槛\n技能：基础商务英语（绝大多数 English-language 赞助来自欧美品牌）、报价与谈判、媒体数据解读（open rate、CPM、CTR）、轻量文案。1–2 周可搭出可复用样板。\n工具：media kit 模板（Canva / Notion，免费起）、Paved / Swapstack / Passionfroot 免费或低费账号、Stripe / WISE 收款（免费注册）。初期工具成本 < $50 / 月。\n资金：启动几乎为零，最多花几百元做一页官网/模板。\n时间：从零到第一单，若已有 1–2 个创作者愿意授权，BD 周期约 2–6 周；纯冷启动（先找 creator 再找品牌）约 1–3 个月。\n\n5. 为什么适合 OPC / 数字游民\n异步交付：品牌多在欧美时区，创作者可能分布在亚洲，谈判靠邮件与文档，不要求实时在线，时差反而是优势而非障碍。\n全球客户：English-language newsletter / podcast 受众本就全球，广告主也全球，你人只要在能稳定上网的地方即可，无需本地执照。\n边际成本低：media kit / rate card 一套模板可复用于多个 creator；谈成后排期与追踪高度可模板化，人力主要花在 BD 环节。\n可规模化：同时代理更多 creator 不会线性增加成本，抽成随流水复利增长；成熟期可雇 virtual assistant 处理发票与排期。\n时区友好：BD 邮件可批量定时发送，无需守着时钟，适合边旅行边运营。\n\n6. 潜在收益（谨慎，不承诺）\n可验证市场数据：IAB / PwC 2025 报告显示美国播客广告收入 $28.6 亿（+17.6%），数字音频整体 $84 亿；创作者广告（creator advertising）2025 年达 $370 亿、2026 预计 $440 亿。Newsletter 经济 2025 年估计超 $100 亿 / 年（含订阅 + 赞助 + 联盟 + 平台费）。Paved 已聚合 3,000+ newsletter、2.53 亿+ 订阅；Passionfroot 广告网络规模 $5,000 万+。\n新手阶段（代理 1–3 个 creator）：月赞助流水约 $3k–$10k，抽成 15–20% → 个人月收入约 $450–$2,000，需 3–6 个月积累信任与案例。\n成熟阶段（代理 8–15 个 creator，含续约）：月流水 $30k–$100k，个人月净约 $4.5k–$18k。\n明确标注：以上为基于行业与平台公开数据推导的参考区间，不等于个人收入；实际取决于你签约 creator 的受众质量、BD 能力与广告市场周期。\n\n7. 主要风险\n市场风险：广告预算随经济周期波动；若代理的 creator 掉粉、停更或被平台限流，对应流水直接归零，收入高度依赖少数头部 creator。\n技术风险：高度依赖 Paved / Passionfroot 等平台的计费规则与政策变化；平台调整抽成、封号或改算法会直接影响回款与获客路径。\n合规风险：跨境收款涉及税务（self-employment tax、依客户所在地的 VAT / 销售税）；FTC 与平台对赞助披露有明确要求；与 creator 的佣金合同必须书面约定「谁谈成的单算谁的」，否则极易纠纷。\n现金流风险：品牌账期常 30–60 天，你可能需要先垫给 creator 或等回款再分账；持续获取优质 creator 本身也是获客成本。\n\n8. 不适合的人群\n讨厌销售 / 谈判、怕被拒绝的人（这行核心就是 BD）。\n英语读写较弱、无法与欧美品牌邮件往来的人。\n想要「今天做明天收钱」的急功近利者（BD 与信任积累有周期）。\n不愿签书面代理协议、边界感模糊的人（极易与 creator 产生佣金归属纠纷）。\n\n9. 3 个可验证的入门步骤\n① 用 Passionfroot 或 Paved 免费账号，研究 10 个与你目标赛道匹配的 newsletter / podcast 的公开赞助价与 media kit，验证市场价与真实需求（1 天内完成）。\n② 用 Canva / Notion 做一份「赞助代理服务 one-pager + 标准佣金合同模板（15–20% 纯佣金）」，发给 3 个你已在关注的 5k–30k 订阅创作者，询问是否愿意授权你代销；3 天内收到至少 1 个「愿意聊聊」即验证方向成立。\n③ 帮其中 1 个创作者写一封品牌外联邮件（附 media kit），投递 5 家相关 B2B 品牌；2 周内若有品牌回询报价，说明整条链路跑通，可继续放大规模。\n\n10. 核验来源\n[1] Paved 官网「关于我们」：全球最大 newsletter 广告网络，3,000+ 媒体、2.53 亿+ 订阅 https://www.paved.com/about\n[2] Paved Marketplace FAQ：定价与佣金机制说明 https://www.paved.com/help/articles/8121068-marketplace-faqs-for-advertisers\n[3] Passionfroot Creators 页面：media kit、广告网络、全球收款与自动化排期 https://www.passionfroot.me/creators\n[4] Saaspicious《Passionfroot vs Paved》：Swapstack 10%、Paved 10–20% 等行业佣金区间 https://saaspicious.com/blog/passionfroot-vs-paved\n[5] RBR 转述 IAB / PwC 2025 报告：美国播客广告收入 $2.862B（+17.6%） https://rbr.com/?p=305558\n[6] Axis Intelligence《Podcast Advertising Statistics 2026》：CPM、收入序列与市场份额 https://axis-intelligence.com/?p=39879\n[7] EmailCloud《2025 Newsletter Platform Wars》：Newsletter 经济 2025 超 $100 亿 / 年、beehiiv 14 万+ newsletter https://emailcloud.com/timeline/2025-newsletter-platform-wars\n[8] Aruna Talent《Creator Agency Pricing 2026》：10–20% 佣金行业标准与计费结构 https://arunatalent.com/blog/creator-agency-pricing",
+      "startedAt": "2026-09-21T09:03:57+08:00",
+      "finishedAt": "2026-09-21T09:12:06+08:00",
+      "duration": "8m 9s",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "media-sales",
+        "creator-economy",
+        "sponsorship"
+      ],
+      "nextSteps": [
+        "用 Passionfroot / Paved 免费账号研究 10 个目标赛道 newsletter / podcast 的公开赞助价与 media kit，验证市场价与需求（1 天内）。",
+        "做一份赞助代理 one-pager + 15–20% 纯佣金合同模板，发给 3 个 5k–30k 订阅创作者询问授权（3 天内收到 1 个正向反馈即验证方向）。",
+        "帮 1 个创作者写品牌外联邮件并投递 5 家 B2B 品牌，2 周内若有品牌回询报价说明链路跑通。"
+      ],
+      "artifacts": [
+        {
+          "label": "Paved 关于我们：全球最大 newsletter 广告网络",
+          "path": "https://www.paved.com/about"
+        },
+        {
+          "label": "Paved Marketplace FAQ：定价与佣金机制",
+          "path": "https://www.paved.com/help/articles/8121068-marketplace-faqs-for-advertisers"
+        },
+        {
+          "label": "Passionfroot Creators：media kit 与广告网络",
+          "path": "https://www.passionfroot.me/creators"
+        },
+        {
+          "label": "Saaspicious：Passionfroot vs Paved 佣金区间对比",
+          "path": "https://saaspicious.com/blog/passionfroot-vs-paved"
+        },
+        {
+          "label": "RBR：IAB/PwC 2025 播客广告收入 $2.862B",
+          "path": "https://rbr.com/?p=305558"
+        },
+        {
+          "label": "Axis Intelligence：Podcast Advertising Statistics 2026",
+          "path": "https://axis-intelligence.com/?p=39879"
+        },
+        {
+          "label": "EmailCloud：2025 Newsletter 经济超 $100 亿/年",
+          "path": "https://emailcloud.com/timeline/2025-newsletter-platform-wars"
+        },
+        {
+          "label": "Aruna Talent：Creator Agency Pricing 2026 佣金标准",
+          "path": "https://arunatalent.com/blog/creator-agency-pricing"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-09-21/niche-opc-industry.json"
+    },
     {
       "date": "2026-09-19",
       "taskId": "niche-opc-industry",
