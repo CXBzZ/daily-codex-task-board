@@ -680,6 +680,16 @@ function renderRunCard(run, base, board) {
   const agent = run.agentName || run.agentId
     ? `<p class="meta-line"><span>Agent</span>${escapeHtml(run.agentName || run.agentId)}${run.agentRole ? ` · ${escapeHtml(run.agentRole)}` : ""}</p>`
     : "";
+  const metaLines = [
+    agent,
+    run.startedAt ? `<p class="meta-line"><span>Started</span>${escapeHtml(formatTimestamp(run.startedAt))}</p>` : "",
+    run.finishedAt ? `<p class="meta-line"><span>Finished</span>${escapeHtml(formatTimestamp(run.finishedAt))}</p>` : "",
+    run.duration ? `<p class="meta-line"><span>Duration</span>${escapeHtml(run.duration)}</p>` : "",
+    sourceThread,
+    `<p class="meta-line"><span>File</span><code>${escapeHtml(run.sourceFile)}</code></p>`,
+  ]
+    .filter(Boolean)
+    .join("");
 
   return `
     <article class="run-card">
@@ -693,18 +703,13 @@ function renderRunCard(run, base, board) {
       <p class="summary">${escapeHtml(run.summary)}</p>
       ${details}
       <div class="run-meta">
-        ${agent}
-        ${run.startedAt ? `<p class="meta-line"><span>Started</span>${escapeHtml(formatTimestamp(run.startedAt))}</p>` : ""}
-        ${run.finishedAt ? `<p class="meta-line"><span>Finished</span>${escapeHtml(formatTimestamp(run.finishedAt))}</p>` : ""}
-        ${run.duration ? `<p class="meta-line"><span>Duration</span>${escapeHtml(run.duration)}</p>` : ""}
-        ${sourceThread}
-        <p class="meta-line"><span>File</span><code>${escapeHtml(run.sourceFile)}</code></p>
+        ${metaLines}
       </div>
       ${labels}
       ${nextSteps}
       ${artifacts}
     </article>
-  `;
+  `.trim();
 }
 
 function renderArtifact(artifact) {
