@@ -17,9 +17,193 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">59 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">60 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-09-25.html">2026-09-25</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 SaaS、开源工具和软件外包团队的 SBOM 初版生成、开源许可证清单、NOTICE 草稿与发布前 QA 服务，属于中国境内可做的海外市场。它适合懂英文、软件依赖、SPDX/CycloneDX 和代码保密边界的 OPC/数字游民小规模验证，但必须限定为技术清点和证据包，不提供法律意见、安全审计或采购包过承诺。</p>
+      <div class="details"># 面向海外小型 SaaS / 开源项目的 SBOM 与开源许可证清单整理服务
+
+## 行业是什么，为什么小众
+
+今天的行业是面向海外小型 SaaS、开源工具、开发者工具、软件外包团队和轻量 B2B 软件公司的 SBOM（Software Bill of Materials，软件物料清单）初版生成、开源许可证清单、NOTICE / THIRD_PARTY_NOTICES 草稿与发布前 QA 服务。
+
+它不是法律合规顾问、不是安全审计、不是漏洞修复包，也不是帮客户“洗白”许可证风险。合规版本的服务，是在客户明确授权的代码库、构建产物、依赖锁文件或容器镜像范围内，用 GitHub dependency graph、Syft、CycloneDX、SPDX、npm / pip / Maven / Go modules 等工具生成依赖清单，再人工复核名称、版本、来源、许可证字段、直接/间接依赖、未知项和需要客户确认的风险点，最后交付 SBOM 文件、许可证汇总表、NOTICE 草稿、运行命令记录和边界说明。
+
+它小众，是因为很多小团队直到要卖给企业客户、回答安全问卷、上线开源版本、交付外包源码、准备 SOC 2 / ISO 27001 证据室、参与政府/医疗/金融供应链采购，才突然发现“我们用了哪些第三方组件、各自是什么许可证、能不能给客户一份可复核清单”并不清楚。开发者觉得这是杂活，律师不愿意从依赖树开始整理，一人服务商就有了窄切入口。
+
+## 目标市场
+
+目标市场：中国境内可做的海外市场，优先面向英语语境的美国、加拿大、英国、欧盟、澳洲、新加坡等软件客户。
+
+中国境内个人或 OPC 可以远程承接，因为交付物是文件、表格、报告和清单；客户可以提供只读仓库、导出的 package-lock / yarn.lock / pnpm-lock / requirements / pom.xml / go.mod / Docker image digest，或者由客户本地运行命令后把输出交给服务方复核。它不要求海外门店，也通常不需要当地执业牌照。但必须处理跨境获客、客户代码保密、合同和收款、税务申报、平台规则、数据/隐私合规、制裁/出口管制筛查、语言和时区门槛。
+
+中国境内从业者不能把它包装成“海外开源合规认证”或“法务包过”。正确定位是 technical SBOM and open-source license inventory support：技术清点、文档草稿、证据包和风险标记，最终许可证义务、商用合规结论、漏洞影响和发布决策必须由客户法务、安全负责人或管理层确认。
+
+## 典型需求场景和客户是谁
+
+1. 小型 SaaS 要进入企业采购流程，客户安全问卷要求提供 SBOM、第三方依赖清单、开源许可证列表或 dependency manifest。
+2. 开源开发者准备发布商业版、Docker 镜像或企业版，需要整理 third-party notices，避免 README 里只写一句 MIT/Apache 而忽略依赖许可证。
+3. 外包团队交付源码前，甲方合同要求列明使用的第三方组件、版本、来源和许可证。
+4. B2B 软件公司在 SOC 2、ISO 27001、供应链安全或客户 trust center 资料中，需要一份可重复生成的 SBOM 证据。
+5. 公司准备引入安全扫描或 Dependabot / GitHub Advanced Security，但第一步是把现有依赖树和许可证字段摸清。
+6. 技术创始人要回应客户关于 GPL、AGPL、SSPL、Elastic License、BUSL、未知许可证或 dual license 的初步问题，但还没有法务预算做完整开源尽调。
+
+客户画像通常是 1-50 人的软件公司、独立开发者、开源商业化团队、软件外包公司、AI wrapper / devtool / API 产品、小型代理和技术咨询公司。付费决策人可能是 CTO、创始人、安全负责人、工程经理、合规负责人或外包项目经理。
+
+## 行业如何运作：参与方和工作流
+
+典型参与方包括客户、开发仓库托管平台、包管理器、SBOM 标准和工具、法律/安全负责人、终端企业客户，以及服务商。
+
+典型工作流：
+
+1. 售前范围确认：确认语言栈、仓库数量、是否 monorepo、是否含私有包、是否有容器镜像、是否需要 SPDX / CycloneDX 格式、是否只做 license inventory，还是还要做 SBOM 质量检查。
+2. 授权和最小权限：优先让客户提供只读仓库、脱敏依赖文件、导出的 SBOM 或屏幕共享；不索要客户生产密钥、私有 registry 凭据、云账号、客户数据或商业秘密以外的资料。
+3. 工具生成：用 GitHub SBOM 导出、Syft、CycloneDX 工具、npm license 解析、package manager 命令或客户 CI 输出生成初版清单，记录命令、工具版本、时间戳和扫描范围。
+4. 人工复核：检查组件名称、版本、purl / CPE / repository URL、直接/间接依赖、许可证字段、UNKNOWN / NOASSERTION、多个许可证表达式、copyleft / network copyleft / source-available 许可证和手写 vendor 代码。
+5. 文档整理：输出 SBOM 文件、依赖汇总表、许可证矩阵、NOTICE / THIRD_PARTY_NOTICES 草稿、未知项清单、客户待确认项和复现步骤。
+6. 交付说明：明确这不是法律意见，不判断客户是否必须开源，不保证安全无漏洞，不保证收购/采购/审计通过；只给技术事实、来源链接和风险标记。
+7. 复测和模板化：客户修复未知许可证、移除风险依赖或补充声明后，服务商再跑一次工具并更新证据包。
+
+## 盈利模式和收入来源
+
+收入来自一次性项目、小型代码库清点、交付前 QA、月度 SBOM 刷新、白标支持和开发者工具咨询的附加包。
+
+公开报价样本只能作为市场弱信号，不能当成稳定收入证明。Upwork 上有技术咨询/项目路线图类服务，公开样本显示入门 49-50 美元、标准 99-100 美元、高阶 149-200 美元；也有 SaaS codebase audit / verification report 类邻近服务，从 499 美元到数千美元不等。另一个 Upwork 软件开发岗位明确要求交付完整 SBOM / dependency manifest，列出第三方包、库、组件、版本、来源仓库和适用许可证，说明需求确实出现在软件项目合同里。Fiverr 官方说明卖家完成订单后通常获得购买金额的 80%；Upwork 官方说明 freelancer service fee 按合同可为 0%-15%。
+
+按国家外汇管理局页面核验时最新显示的 2026-09-24 人民币汇率中间价 100 美元兑 674.89 元人民币，即 1 美元约 6.7489 元人民币粗算：
+
+- 入门范围确认 / 30-60 分钟 SBOM 可行性咨询：49-100 美元，约 331-675 元人民币。
+- 单仓库、单语言栈的 SBOM + 许可证表 + NOTICE 草稿：150-500 美元，约 1012-3374 元人民币。这个区间更适合作为 OPC 试单报价假设，而不是公开市场均价。
+- 小型 monorepo、容器镜像、CI 命令模板和复测包：500-1200 美元，约 3374-8099 元人民币。只有在代码规模、权限边界和客户配合明确时才适合承接。
+- 月度刷新 / 企业客户安全问卷证据包维护：可做 200-800 美元/月的小 retainer，但前提是客户已有持续采购需求，不应在新手阶段承诺复购。
+
+净收入要扣除平台服务费、跨境收款费、汇损、税费、工具订阅、学习时间、返工、客户权限等待、保密审查和沟通成本。收益口径必须克制：这类服务不是“高客单价躺赚”，而是靠严谨、边界清楚、可复现证据包挣钱。
+
+## 入门门槛
+
+技能门槛：需要理解软件依赖、包管理器、semver、lockfile、direct / transitive dependencies、SPDX license expressions、CycloneDX / SPDX 格式、GitHub dependency graph、容器镜像基础、开源许可证常见类型和第三方 notices。还要能用英文写清楚“发现了什么、没覆盖什么、哪些需要客户法务确认”。
+
+设备和软件：普通电脑、稳定网络、Git、GitHub/GitLab 只读访问、Node/Python/Java/Go 基础环境、Syft、CycloneDX CLI、SPDX 工具、表格工具、Markdown/Notion/Google Docs、截图和命令记录工具。更稳妥的做法是在隔离环境中分析依赖文件，不直接运行客户未知代码。
+
+资质和合规：通常不需要律师牌照或当地安全认证，因为服务定位是技术清点和文档整理。但不能出具法律意见、安全审计报告、OpenChain/ISO 认证、漏洞影响判定或收购尽调结论。涉及客户源码、私有依赖、商业秘密和安全资料时，需要 NDA、最小权限、资料删除约定和交付边界。
+
+资金门槛：前期主要是学习、测试项目和模板成本。可以用公开开源项目、自建 demo repo 和免费工具练习，启动现金成本很低；真正成本是时间、英文表达和严谨度。
+
+渠道门槛：Upwork、Fiverr、Toptal 类平台、LinkedIn、GitHub、Indie Hackers、开源商业化社群、SaaS founder 社区和软件外包公司都可尝试。新手要把服务包切得很窄，例如“1 repo CycloneDX/SPDX SBOM + license inventory + unknown items report”，不要一上来卖“open source compliance audit”。
+
+时间成本：熟练后，一个小型 Node/Python 项目的初版清点可能 2-5 小时；复杂 monorepo、私有包、容器镜像、多语言栈、许可证冲突和未知字段会拉到 1-3 天甚至更久。报价前必须问清 repo 数量、依赖文件、构建方式、是否需要运行代码、是否有私有 registry、是否要处理容器或 vendored code。
+
+## 中国境内承接海外市场的合规执行要点
+
+跨境获客：可以通过平台和独立站获客，但简介应写 technical SBOM generation / open-source license inventory / NOTICE draft support，不写 legal opinion、guaranteed compliance、audit certification、procurement pass 或 guaranteed vulnerability-free。对制裁地区、受限制主体、军工/加密/监控等敏感客户要谨慎筛查并拒绝不确定项目。
+
+远程交付：优先让客户在本地或 CI 里运行工具，服务商复核输出；如需访问私有仓库，只接受只读、限时、最小范围权限。不要下载生产数据库、客户用户数据、密钥、.env、云凭据或不必要的源码包；必要时在隔离账号/虚拟机中处理，交付后删除本地副本。
+
+合同、发票和收款：平台订单按平台规则结算；独立交易应有中英文报价单或 SOW，写明仓库范围、工具、格式、交付物、修订次数、保密、资料删除、责任限制、客户最终确认和不提供法律/安全审计意见。收款可通过 Upwork/Fiverr 托管、银行、Payoneer/Wise 或公司账户等合规渠道；实际入账、发票和税务凭证要按主体类型处理。
+
+税务申报：中国居民个人取得境外所得，应按国家税务总局关于个人所得税自行纳税申报的规定办理；以个体工商户、一人公司或其他主体承接，则按实际主体记账、申报、开票或留存凭证。国家税务总局关于跨境应税行为的资料显示，境内单位和个人向境外单位提供完全在境外消费的专业技术服务等，可能涉及增值税免税政策，但是否适用取决于主体、合同、服务接受方、消费地和主管税务机关要求，不能自动套用。
+
+外汇合规：服务贸易外汇收支应有真实合法交易基础。国家外汇管理局经常项目资料强调真实性、合理性和单证留存；实际操作中应保存合同/订单、发票或形式发票、收款流水、交付清单、沟通记录和命令记录，不虚构贸易背景、不代收代付、不拆分规避监管。
+
+平台规则：遵守 Upwork、Fiverr 等平台关于站内沟通、付款保护、禁止绕平台收费、服务范围和争议处理的规则。不要为客户绕开平台、冒充客户、提供虚假评价或隐藏费用。
+
+数据/隐私和保密：客户代码可能包含商业秘密、API 端点、架构信息和安全暴露面。服务商应只处理交付所需资料，不把客户代码上传到未经允许的 AI 工具或第三方扫描平台，不在公开作品集中展示真实包名、私有仓库、客户名称或漏洞信息。若涉及欧盟个人数据或日志样本，需按客户书面指示最小化处理，并让客户决定 GDPR 角色和 DPA 要求。
+
+语言和时区：英文异步沟通能力是硬门槛。美国客户可能需要中国晚间沟通，欧洲客户相对友好。交付物要能让非技术采购、安全负责人和开发团队都读懂。
+
+## 为什么适合或不完全适合 OPC/一人公司
+
+适合点：固定资产轻，交付物可模板化；可以从单仓库、小语言栈、一次清单试单开始；工具多为开源或平台内置；服务边界可以写得很窄。一人公司可以沉淀问诊表、拒单规则、命令模板、交付模板、许可证风险标签和资料删除 SOP。
+
+不完全适合点：复杂客户会把它扩展成法律意见、安全漏洞研判、收购尽调、全公司开源治理、CI 集成和政策建设，一人公司容易超载。遇到 GPL/AGPL/SSPL/BUSL 等高争议许可证、嵌入式固件、闭源商业分发、医疗/金融/政府采购、高额赔偿合同，应降级为“事实清单和待确认项”，或建议客户找律师、安全团队和专业开源合规顾问。
+
+## 为什么适合或不完全适合数字游民/远程工作者
+
+适合点：完整远程交付，异步协作友好；不依赖线下场地；可以通过只读仓库、导出文件、屏幕共享和文档完成；适合在稳定网络和安全设备下工作。
+
+不完全适合点：处理客户私有代码不适合在公共 Wi-Fi、共享电脑、网吧或临时设备上做。数字游民必须有全盘加密、密码管理器、2FA、VPN/安全网络、设备锁屏、备份和资料删除流程。若频繁跨境旅行，还要注意税务居民身份、平台可用性、客户安全要求和本地网络访问限制。
+
+## 潜在收益、前提条件和成本结构
+
+试单阶段：每月做 2-4 个 49-150 美元的咨询或小型 license inventory，毛收入约 661-4050 元人民币。这个阶段主要验证需求、积累样板报告和评价，净收入可能不高。
+
+小项目阶段：每月做 3-6 个 150-500 美元的单仓库 SBOM / NOTICE 包，毛收入约 3037-20247 元人民币。前提是英文沟通、工具链、报告模板和客户权限配合都稳定。
+
+进阶阶段：每月做 1-3 个 500-1200 美元的多语言栈/复测/CI 模板项目，或少量 200-800 美元/月 retainer。前提是有案例、客户信任、严格拒单边界和成熟保密流程。
+
+成本结构：平台费 0%-20% 区间内视平台而定，提现和汇损另算；税费按主体和收入性质处理；工具多数可免费起步，但进阶可能需要私有仓库扫描工具、隔离环境、代码托管席位或安全设备；隐性成本是客户授权等待、未知许可证追踪、私有包来源确认、返工和保密审查。
+
+不能承诺月入、企业采购通过、法律合规、漏洞安全或客户收购尽调成功。正确表述是：帮助客户建立一份可复核、可更新、边界清楚的软件组件和许可证证据包。
+
+## 主要风险、合规注意事项和不适合人群
+
+主要风险：
+
+- 法律边界风险：许可证义务和商用分发结论属于法律/法务决策，服务商只能做事实清单和风险标记。
+- 安全边界风险：SBOM 不等于漏洞扫描，也不等于软件安全；即使附带漏洞数据，也不能承诺无漏洞或影响判定正确。
+- 代码保密风险：客户私有代码、架构和依赖会暴露商业秘密，必须最小权限、最小下载、交付后删除。
+- 工具误差风险：自动工具可能漏掉 vendored code、动态依赖、二进制依赖、容器层、私有包、许可证多重表达式和手工复制代码。
+- 高争议许可证风险：GPL、AGPL、LGPL、SSPL、Elastic License、BUSL、PolyForm、CC-NC、未明示许可证等需要客户法务确认。
+- 跨境风险：收款、税务、外汇、客户所在地制裁/出口限制、平台规则和合同赔偿条款都要保守处理。
+- AI 工具风险：未经允许把客户代码上传给第三方 AI、SCA 或在线扫描工具，可能违反 NDA 或数据处理要求。
+
+不适合人群：只会跑工具但不会解释报告的人；想冒充律师或审计机构的人；不懂英文技术文档的人；保密意识弱的人；无法拒绝客户“帮我写成没风险”的人；没有基础命令行和软件工程常识的人。
+
+## 新手可验证的 3 个低成本入门步骤
+
+1. 选 2-3 个公开开源项目做样板：分别生成 CycloneDX 和 SPDX SBOM，整理依赖表、许可证矩阵、UNKNOWN 项、NOTICE 草稿和复现命令，形成脱敏作品集模板。
+2. 做一个极窄服务包：只接 1 个 repo、1 个语言栈、只读访问或客户提供 lockfile，交付 SBOM + license inventory + unknown items report，先以 49-150 美元试单验证。
+3. 写清拒单和边界：不提供法律意见、不保证合规/安全/采购通过、不处理未授权代码、不上传客户代码到未经批准的工具、不接高敏感行业或制裁风险客户。
+
+## 点评 Agent 审稿
+
+本次已启动独立点评 Agent 审稿。审稿结论：通过，但建议小修边界与证据口径；正文已采纳。
+
+- 中国境内承接海外市场适配度：4/5。远程交付强、工具链成熟、目标客户真实；扣分在英文信任背书、代码保密、制裁/出口管制筛查。
+- OPC/一人公司适配度：4/5。可从单 repo、单语言栈、一次 SBOM/NOTICE 草稿做起；复杂 monorepo、多语言、容器镜像会拉高工时。
+- 数字游民适配度：4/5。轻资产、异步协作友好；但不宜在不可信网络/设备上处理客户私有代码。
+- 合规风险等级：中。
+- 跨境执行风险等级：中。
+- 收益口径是否克制，有无夸大：基本克制；已把 Upwork/Fiverr 和邻近代码审计报价仅作为需求/报价样本，不当作稳定收入证明。
+- 信息来源是否足够可信：主干可信；CISA、SPDX、CycloneDX/ECMA、GitHub、npm、税务和外汇官方资料够硬，平台报价只作为弱市场信号。
+- 最该补充或提醒的一句话：本服务只交付 SBOM/许可证/NOTICE 草稿、人工复核记录、风险标记和证据包；许可证义务、商用合规结论、漏洞影响和发布决策必须由客户法务/安全负责人确认。
+
+## 关键核验来源
+
+1. CISA - 2025 Minimum Elements for a Software Bill of Materials (SBOM): https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf
+2. CISA 搜索摘录显示的 SBOM minimum elements：SBOM Author、Software Producer、Component Name、Component Version、Software Identifiers、Component Hash、License、Dependency Relationship、Tool Name、Timestamp、Generation Context。
+3. SPDX Specification 3.0.1: https://spdx.github.io/spdx-spec/v3.0.1/
+4. SPDX License List: https://spdx.org/licenses/
+5. CycloneDX Specification Overview: https://cyclonedx.org/specification/overview/
+6. ECMA-424 CycloneDX Bill of Materials specification: https://ecma-international.org/publications-and-standards/standards/ecma-424/
+7. GitHub Docs - Exporting a software bill of materials for your repository: https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom
+8. GitHub Docs - Dependency graph: https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph
+9. npm Docs - package.json license 字段和 SPDX expression 规则: https://docs.npmjs.com/cli/v11/configuring-npm/package-json
+10. Anchore Syft: https://github.com/anchore/syft
+11. Upwork 公开需求样本：软件开发岗位要求 complete SBOM / dependency manifest，列出第三方组件、版本、来源仓库和许可证: https://www.upwork.com/freelance-jobs/apply/Senior-Full-Stack-Developer-Build-Signature-DocuSign-Alternative-From-Scratch_~022094999514933002578/
+12. Upwork Project Catalog 邻近技术咨询报价样本：49/99/149 美元: https://www.upwork.com/services/product/development-it-expert-development-consultation-and-a-clear-technical-project-roadmap-2077239548759789557
+13. Upwork Project Catalog 邻近技术评估报价样本：50/100/200 美元: https://www.upwork.com/services/product/development-it-software-project-discovery-technical-specification-and-delivery-plan-2081113692277081293
+14. Upwork Help - Freelancer Service Fee: https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee
+15. Fiverr Help - Your earnings page，说明完成订单通常获得购买金额 80%: https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page
+16. 国家外汇管理局 - 人民币汇率中间价，核验时页面最新为 2026-09-24，100 美元兑 674.89 元人民币: https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do
+17. 国家税务总局 - 关于个人所得税自行纳税申报有关问题的公告: https://www.chinatax.gov.cn/chinatax/n810341/n810765/n3359382/n3359412/c4182671/content.html
+18. 国家税务总局 - 哪些业务可以享受跨境应税行为免征增值税政策？: https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html
+19. 国家外汇管理局 - 经常项目政策问答: https://www.safe.gov.cn/safe/jcxm/index.html
+20. 商务部转载外汇局《经常项目外汇业务指引（2020年版）》: https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2020/art_0dd36157a03f494db7571002c7f785b8.html</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>25/09/2026, 16:04</p><p class="meta-line"><span>Finished</span>25/09/2026, 16:10</p><p class="meta-line"><span>Duration</span>6m 24s</p><p class="meta-line"><span>Source</span>automation-3</p><p class="meta-line"><span>File</span><code>runs/2026-09-25/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>english-market</span><span>us-eu</span><span>software-supply-chain</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>选 2-3 个公开开源项目生成 CycloneDX / SPDX SBOM，整理依赖表、许可证矩阵、UNKNOWN 项和 NOTICE 草稿，形成脱敏作品集。</li><li>做一个极窄试单包：1 个 repo、1 个语言栈、只读访问或 lockfile，交付 SBOM + license inventory + unknown items report，先以 49-150 美元验证需求。</li><li>提前写清拒单边界：不提供法律意见、不保证合规/安全/采购通过、不上传客户代码到未经批准的工具、不处理未授权代码或高敏感客户。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf">CISA SBOM Minimum Elements</a></li><li><a href="https://spdx.github.io/spdx-spec/v3.0.1/">SPDX Specification 3.0.1</a></li><li><a href="https://spdx.org/licenses/">SPDX License List</a></li><li><a href="https://cyclonedx.org/specification/overview/">CycloneDX Specification Overview</a></li><li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-424/">ECMA-424 CycloneDX BOM specification</a></li><li><a href="https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom">GitHub Docs - Export dependencies as SBOM</a></li><li><a href="https://docs.github.com/en/code-security/concepts/supply-chain-security/dependency-graph">GitHub Docs - Dependency graph</a></li><li><a href="https://docs.npmjs.com/cli/v11/configuring-npm/package-json">npm package.json license field</a></li><li><a href="https://github.com/anchore/syft">Anchore Syft</a></li><li><a href="https://www.upwork.com/freelance-jobs/apply/Senior-Full-Stack-Developer-Build-Signature-DocuSign-Alternative-From-Scratch_~022094999514933002578/">Upwork SBOM demand sample</a></li><li><a href="https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee">Upwork freelancer service fee</a></li><li><a href="https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page">Fiverr earnings page</a></li><li><a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do">SAFE RMB central parity</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/n810341/n810765/n3359382/n3359412/c4182671/content.html">国家税务总局个人所得税自行纳税申报公告</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html">国家税务总局跨境应税行为免征增值税问答</a></li><li><a href="https://www.safe.gov.cn/safe/jcxm/index.html">国家外汇管理局经常项目政策问答</a></li></ul></div>
+    </article><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
@@ -8830,7 +9014,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
     </article></div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 25/09/2026, 09:14</span>
+      <span>Generated 25/09/2026, 16:10</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
