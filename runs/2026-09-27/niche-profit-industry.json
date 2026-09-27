@@ -1,0 +1,62 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-09-27T16:02:56+08:00",
+  "finishedAt": "2026-09-27T16:03:13+08:00",
+  "summary": "今天的小众行业是面向海外小型机构、咨询公司、代理商和课程/教练团队的 Notion/Confluence 客户门户权限体检、外部 guest access 清理与共享链接 QA 服务，属于中国境内可做的海外市场。它适合懂英文、协作工具权限、文档化和数据保密边界的 OPC/数字游民小规模验证，但必须限定为授权下的权限清单、截图证据、共享链接清理和整改建议，不提供法律/合规结论、不下载客户业务内容、不承诺防泄露。",
+  "details": "# Notion/Confluence 客户门户权限体检与共享链接清理服务\n\n## 行业是什么，为什么小众\n今天选择的行业是：面向海外小型机构、咨询公司、营销/设计代理商、课程/教练团队、SaaS 服务商和远程团队的 Notion/Confluence 客户门户权限体检、外部 guest access 清理、公开链接排查、页面/space 继承权限核验与交付前 QA 服务。\n\n它不是泛泛的 Notion 模板搭建，也不是网络安全渗透测试、法律合规审计或企业 IAM 咨询。更准确地说，它是在客户已经用 Notion 或 Confluence 做客户门户、项目文档、知识库、交付资料、外包协作区的前提下，帮助客户把“谁能看什么、谁能编辑什么、哪些链接可能公开、哪些 guest 或承包商应移除、哪些权限继承会意外扩大访问”梳理成可执行清单。\n\n它小众，是因为很多小团队用 Notion/Confluence 起步时先追求协作速度，后面客户、承包商、学员、自由职业者越加越多，页面嵌套、数据库视图、公开链接和 guest 权限慢慢变成隐性风险。真正愿意付费的不是“把页面做漂亮”，而是“上线客户门户前避免把 A 客户资料给 B 客户看到”“项目结束后清掉外包访问”“把公开分享链接和 guest 列表留档”。\n\n重要边界：本服务只做客户授权账号、屏幕共享、只读导出或客户提供截图下的权限体检、问题清单、清理建议、复测截图和 SOP，不做黑盒扫描、未授权访问测试、法律合规意见、SOC 2/ISO/数据保护认证、防泄露保证或员工监控；交付前要明确“不下载客户业务内容、不代管管理员账号、不绕过平台规则，客户保留最终确认权”。\n\n## 目标市场\n本期属于“中国境内可做的海外市场”，主要面向英语市场的小型服务公司和远程团队，尤其是美国、英国、加拿大、澳大利亚和欧盟客户。典型客户不一定有专职 IT 或安全团队，但已经把客户资料、项目 brief、交付物、课程资料、SOP 或知识库放进 Notion/Confluence。\n\n适合中国境内 OPC/一人公司验证的原因是：服务可以完全远程交付，不需要当地门店、仓储或高门槛本地牌照；交付物是权限矩阵、风险清单、截图证据、修复建议和清理后的复测记录。固定资产主要是电脑、英文沟通、Notion/Confluence 熟练度、权限测试账号、表格模板和保密流程。\n\n## 典型需求场景和客户是谁\n1. 咨询公司或代理商用 Notion 给多个客户做 client portal，担心数据库、子页面或模板复制后继承了不该有的访问权限。\n2. 教练、课程团队或会员社群用 Notion 发布资料，想确认公开链接、学员 guest、过期成员和协作者权限是否干净。\n3. 小型 SaaS、外包团队或产品工作室用 Confluence 与客户、承包商和 Jira/项目团队协作，需要检查 guest 只进入对应 space，匿名访问没有误开。\n4. 远程团队项目结束后需要 offboarding：移除外包、前员工、旧客户和供应商访问，导出一份清理留痕。\n5. Notion/Confluence 搭建顾问、运营助理或在线业务经理想把权限 QA 白标外包给更细心的人。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括客户方 workspace/site owner、项目经理、客户成功/运营人员、外部客户、承包商、Notion/Atlassian 顾问、法律/隐私顾问和本服务供应商。中国境内承接者应把自己定位为“协作工具权限 QA 与文档化供应商”，不是客户的数据保护官、律师或认证审计师。\n\n标准工作流：\n1. 预筛选：确认平台是 Notion、Confluence 或两者都有；确认 plan、是否有 Enterprise audit log、用户/guest 数量、页面/space 数量、是否涉及医疗、金融、未成年人、法律案件或高敏数据。\n2. 授权与边界：签 SOW/NDA，客户确认其有权邀请供应商查看权限设置；优先使用屏幕共享、临时最小权限账号、测试页面、权限导出或客户截图；不索要主账号密码、2FA、付款资料或未脱敏客户内容。\n3. 现状盘点：列出成员、guest、公开链接、默认 teamspace/space、页面/space 继承规则、数据库/page-level access、Confluence anonymous access、外部用户和旧项目访问。\n4. 风险分级：把发现分为公开链接、外部 guest、过宽 workspace/teamspace/space 权限、继承权限、旧账号、管理员/owner 过多、无法验证项等类别。\n5. 清理与复测：客户确认后，由客户操作或在屏幕共享下协助调整权限；服务者记录前后截图、变更时间、影响范围和未处理项。\n6. 交付：交付权限矩阵、问题清单、截图证据、清理建议、复测记录、后续 SOP 和下次复查时间，不交付法律结论或“已完全合规”声明。\n\n## 盈利模式和报价口径\n收入来自固定范围体检包、项目结束清理包、客户门户上线前 QA、月度/季度复查和白标协作。公开平台报价只能说明市场存在，不代表稳定成交或任何收益承诺。\n\n保守报价样本可设计为：\n- 单个 Notion 客户门户快速体检：$49-$150，约 329-1007 元人民币，覆盖 1 个 workspace 内 1-3 个客户门户、最多 10 个 guest/成员、公开链接和截图报告。\n- Notion/Confluence 权限清理标准包：$150-$500，约 1007-3358 元人民币，覆盖 1 个 workspace/site、角色矩阵、guest/space/page 检查、清理建议和一次复测。\n- 小团队月度 offboarding/共享链接复查：$100-$400/月，约 672-2686 元人民币，适合远程团队、代理商和课程业务。\n- 更复杂的企业权限、SSO、SCIM、DLP、SIEM、法律合规或安全认证项目不建议新手独立承诺，应转给专业 IT/security/privacy 顾问。\n\n报价参考：Upwork 上有 Notion permissions audit and lock-down 服务，公开服务包显示 Starter $30、Standard $90、Advanced $200；Fiverr 的 Notion setup 类目有大量从约 10-55 欧元起的服务。按 2026-09-27 查询的 Xe 汇率样本，1 USD 约 6.71 CNY，以上人民币折算仅作估算。净收入需扣除平台服务费、收款费、汇损、税费、售前会议、返工、NDA/DPA 审阅、工具订阅和样本不可公开带来的获客成本。\n\n## 入门门槛\n技能：英文沟通、Notion share/teamspace/database permission、Confluence site/space/page permission、guest/member/anonymous access 概念、表格化梳理、截图取证、SOP 写作、客户数据保密和边界表达。加分项是熟悉 SaaS 客户门户、远程团队 offboarding、Google Workspace/Slack/Atlassian 基础协作权限。\n\n设备/软件：电脑、稳定网络、密码管理器、加密磁盘、截图/录屏工具、表格、Notion/Confluence 练习 workspace、模板化报告、简单合同/SOW 和安全的文件传输方式。不需要服务器、实体设备或线下驻场。\n\n资质/合规：通常不需要海外本地牌照，但只适合做“权限体检和流程建议”。一旦客户要求数据保护影响评估、GDPR/CCPA 法律意见、SOC 2/ISO 27001 证据、渗透测试、员工调查或事故响应，就应转给当地律师、隐私顾问或安全公司。\n\n资金和时间：启动资金可低于 1000 元人民币，主要花在练习环境、域名/作品集、模板、付费平台和安全工具。已有 Notion/Confluence 经验的人，1-2 周可做样本报告；要稳定处理多客户门户、Confluence space/page 权限和英文 SOP，通常需要 1-2 个月训练。\n\n渠道：Upwork、Fiverr、LinkedIn、Notion/Atlassian 顾问社群、在线业务经理社群、代理商老板、课程运营团队、远程团队 COO/ops manager。服务标题要窄，例如 Notion client portal guest access review and public link cleanup 或 Confluence guest/space permission QA，不要写 guaranteed compliance audit。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台单遵守站内沟通和付款规则；直客单用英文 SOW 写清检查范围、平台、账号权限、客户需提供的截图/临时账号、交付格式、返工轮次、服务者不提供法律/安全认证结论。\n\n远程交付：优先用客户屏幕共享完成敏感页面检查；如必须进入 workspace/site，使用临时最小权限账号、独立邮箱、强密码和 2FA，项目结束当天移除；只记录权限界面、用户列表和设置截图，避免下载客户业务内容、合同、客户名单、学员资料或未脱敏附件。\n\n合同、发票和收款：平台订单以平台合同和账单为凭证；直客可用 Payoneer、Wise Business、银行电汇或平台托管等合规通道。中国境内个人、个体工商户或公司应保存合同、invoice、收款流水、汇率记录和服务交付证据，并按主体类型依法申报纳税。\n\n税务申报：中国居民个人取得综合所得按年计算并在次年 3 月 1 日至 6 月 30 日办理汇算清缴；取得经营所得按年计算，通常需按月度或季度预缴并在次年 3 月 31 日前办理汇算。若以个体工商户或公司承接，应按经营所得、增值税、企业所得税/个人所得税和所在地税务要求处理，不能把海外平台提现理解为免税。\n\n平台规则：Notion 官方文档显示，guest 是外部人员，通常按页面邀请，不能获得 workspace-wide access；Notion 还存在 Anyone on the web with link、继承权限、最宽权限覆盖、Enterprise 公开链接控制和 audit log 等机制。Confluence 官方文档显示，guest 只能访问一个 assigned space，但默认可访问该 space 内所有内容，除非另设 page-level restrictions；guest 也可能访问允许 anonymous access 的 spaces。因此服务重点应是按官方权限模型做核验和留痕，不做未授权测试。\n\n数据/隐私合规：中国《个人信息保护法》要求个人信息处理者采取防止未经授权访问、泄露、篡改、丢失等措施；委托处理个人信息、公开个人信息、向境外提供个人信息等场景可能触发影响评估和记录要求。国家网信办 2024 年《促进和规范数据跨境流动规定》也明确了部分数据出境活动的豁免和申报条件。中国境内服务者接触海外客户数据时，要以最小必要、客户授权、NDA/DPA、加密存储、及时删除和不使用公开 AI 工具处理客户内容为底线。\n\n语言和时区门槛：英文权限报告和客户会议是硬门槛；北美客户常需中国早晚沟通，欧洲/澳洲客户相对友好。可用异步 checklist、截图编号和 Loom/录屏说明减少实时会议。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：服务可产品化，单人可以完成访谈、权限盘点、截图、问题清单、复测和 SOP；固定资产轻，容易从 1 个门户/1 个 space 的小单开始验证，也适合与 Notion 搭建师、Atlassian 顾问和在线业务经理白标合作。\n\n不完全适合点：客户越大，权限责任越重。若涉及 SSO、SCIM、企业 DLP、SIEM、法律合规、事故响应或高敏数据，OPC 容易越界。必须设置拒单标准，只接小团队、低敏数据、明确授权和有限范围的体检项目。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：笔记本即可完成，交付物是报告、清单和截图，工作可异步，客户不要求本地驻场。数字游民可用密码管理器、设备加密、稳定网络和模板化报告远程交付。\n\n不完全适合点：权限体检本身接触客户访问控制界面，对网络、设备安全和保密习惯要求比普通虚拟助理更高。频繁使用公共 Wi-Fi、共用电脑、无 2FA、随意截图存云盘、用公开 AI 处理客户内容的人不适合做这个服务。\n\n## 潜在收益、前提条件和成本结构\n验证期：每月 3-8 个快速体检包，毛收入约 $147-$1200，折合约 987-8054 元人民币。目标是验证报告模板、客户边界和真实耗时，不适合预期高收入。\n\n熟练期：每月 4-10 个标准包或月度复查客户，毛收入约 $600-$5000，折合约 4027-33560 元人民币。前提是有可展示的脱敏样本报告、英文沟通稳定、熟悉平台权限模型，并能拒绝高敏或合规认证需求。\n\n合作期：与 Notion/Atlassian 顾问、代理商和在线业务经理合作，按上线前 QA、项目结束 offboarding 或季度复查收费。净利润受售前沟通、权限复杂度、客户确认速度、返工、平台费、收款汇损、税费和保密限制影响。收益必须用区间和前提表达，不能承诺“稳定月入”。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. 合规越界：不能把权限体检包装成 security audit、privacy compliance certification、GDPR audit 或防泄露保证。\n2. 授权不足：未获 workspace/site owner 授权，不能进入客户工具或测试链接。\n3. 数据暴露：截图、导出表、用户邮箱、客户名单和页面标题都可能包含个人信息或商业秘密。\n4. 误操作风险：直接代客户删除 guest、关闭链接或移动页面可能影响业务协作，应先备份清单并由客户确认。\n5. 平台规则变化：Notion 和 Atlassian 权限模型、plan 功能、guest 限制和 audit log 能力会变化，每单前需核验当前官方文档。\n6. 低价竞争：普通 Notion 搭建服务很多，差异化必须来自权限边界、证据留痕、复测流程和清楚拒绝越界承诺。\n7. 跨境收款和税务风险：平台收入、直客 invoice、汇率、服务费和纳税都要留痕。\n\n不适合人群：不愿读英文官方文档的人；把客户账号当自己账号随意操作的人；保密意识弱、设备安全差的人；想承诺合规认证或防泄露的人；不擅长表格和截图证据整理的人；遇到客户催促就跳过确认流程的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 搭建练习环境：分别建立 1 个 Notion workspace 和 1 个 Confluence free/试用空间，模拟 owner、member、guest、public link、anonymous access、子页面继承和旧承包商账号，做一份脱敏样本权限报告。\n2. 发布一个窄服务包：只承诺“1 个 Notion 客户门户或 1 个 Confluence space 的 guest/public link/继承权限体检 + 截图清单 + 一次复测”，报价 $49-$150，明确不含法律意见、安全审计、SSO/SCIM 和账号代管。\n3. 访谈 5 个真实客户画像：找 Notion 搭建师、代理商 owner、在线课程运营、远程团队 PM 和 Confluence 管理员，询问他们最担心的误共享场景，用 1 个付费样本验证真实耗时和客户愿付价格。\n\n## 点评 Agent 审稿\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：整体克制；只要避免使用“安全审计”“合规认证”“防泄露保障”等强承诺，定位为权限体检、共享链接 QA、清理清单交付是合适的。\n- 信息来源是否足够可信：基本可信。Notion 和 Atlassian 官方文档足以支撑权限复杂性与体检需求；Upwork/Fiverr 报价样本只能作市场存在性参考，不宜作为稳定收入证明。\n- 最该补充或提醒的一句话：交付前明确“不下载客户业务内容、不提供法律/合规结论，客户保留管理员账号和最终确认权，可配合 NDA/DPA”。\n- 是否建议通过：建议通过；不需要重选题，但标题里最好弱化“安全审计”，改成“客户门户权限体检与共享链接清理”。\n\n## 关键核验来源\n1. Notion Help - Sharing & permissions settings。核验页面分享、guest、Anyone on the web with link、权限级别、database page-level access、继承权限和最宽权限覆盖。https://www.notion.com/en-gb/help/sharing-and-permissions\n2. Notion Help - Who's who in a workspace。核验 guests 是外部人员，必须按页面邀请，不能获得 workspace-wide access，也不能添加成员或连接。https://www.notion.com/help/whos-who-in-a-workspace\n3. Notion Help - Audit log。核验 Enterprise audit log 可用于查看安全和安全相关活动、按人/时间/事件过滤，且历史最多 365 天。https://www.notion.com/help/audit-log\n4. Atlassian Support - What can guests see and do in Confluence? 核验 Confluence single space guests、默认可访问 assigned space 内内容、page-level restrictions 和 anonymous access 风险。https://support.atlassian.com/confluence-cloud/docs/what-can-guests-see-and-do-on-confluence/\n5. Atlassian Support - Manage space roles and access。核验 Confluence space roles、公开 space、anonymous access、space access 和 permission data export 等管理入口。https://support.atlassian.com/confluence-cloud/docs/manage-user-roles/\n6. Atlassian Support - Confluence permissions structure。核验 site、space、page level 权限与 restrictions 的结构。https://support.atlassian.com/confluence-cloud/docs/what-are-confluence-cloud-permissions-and-restrictions/\n7. Upwork Project Catalog - Notion permissions audit sample。核验市场上存在 Notion permissions audit / lock-down 服务，公开服务包显示 $30/$90/$200；仅作市场样本。https://www.upwork.com/services/product/admin-customer-support-your-notion-permissions-audited-and-properly-locked-down-2100590291421294264\n8. Fiverr Notion setup service listings。核验市场上存在 Notion setup、workspace、dashboard 和 automation 服务，价格样本多从约 10-55 欧元起；仅作市场样本。https://www.fiverr.com/gigs/notion-setup\n9. 中央网信办《中华人民共和国个人信息保护法》。核验个人信息处理者安全措施、委托处理、影响评估和防止未经授权访问等义务。https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm\n10. 国家网信办《促进和规范数据跨境流动规定》。核验部分数据出境活动豁免、申报和标准合同/认证门槛。https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm\n11. 国家税务总局《中华人民共和国个人所得税法》。核验综合所得、经营所得年度计算和申报口径。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n12. Xe USD/CNY 汇率页面。核验 2026-09-27 附近 1 USD 约 6.71 CNY 的折算口径。https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY",
+  "sourceThread": "automation-3",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global-english-market",
+    "notion",
+    "confluence",
+    "permissions"
+  ],
+  "nextSteps": [
+    "搭建 Notion 和 Confluence 练习环境，模拟 owner、member、guest、public link、anonymous access 和继承权限，做一份脱敏样本报告。",
+    "发布一个 $49-$150 的窄服务包，只承诺单个客户门户或 space 的 guest/public link/继承权限体检、截图清单和一次复测。",
+    "访谈 5 个 Notion 搭建师、代理商 owner、在线课程运营、远程团队 PM 或 Confluence 管理员，用 1 个付费样本验证耗时。"
+  ],
+  "artifacts": [
+    {
+      "label": "Notion sharing and permissions",
+      "path": "https://www.notion.com/en-gb/help/sharing-and-permissions"
+    },
+    {
+      "label": "Notion workspace roles and guests",
+      "path": "https://www.notion.com/help/whos-who-in-a-workspace"
+    },
+    {
+      "label": "Notion audit log",
+      "path": "https://www.notion.com/help/audit-log"
+    },
+    {
+      "label": "Confluence guest access",
+      "path": "https://support.atlassian.com/confluence-cloud/docs/what-can-guests-see-and-do-on-confluence/"
+    },
+    {
+      "label": "Confluence space roles and access",
+      "path": "https://support.atlassian.com/confluence-cloud/docs/manage-user-roles/"
+    },
+    {
+      "label": "个人信息保护法",
+      "path": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm"
+    },
+    {
+      "label": "促进和规范数据跨境流动规定",
+      "path": "https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm"
+    },
+    {
+      "label": "USD/CNY exchange sample",
+      "path": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY"
+    }
+  ]
+}
