@@ -1,0 +1,82 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-09-28T16:03:50+08:00",
+  "finishedAt": "2026-09-28T16:05:25+08:00",
+  "summary": "今天的小众行业是面向海外小型网站迁站/改版的 URL 映射、301 重定向、DNS/SSL 与上线后 404 QA 服务，属于中国境内可做的海外市场。它适合懂英文、基础 Web/SEO 技术、平台规则和上线风险控制的 OPC/数字游民小规模验证，但必须限定为客户授权下的技术核查、问题清单和证据报告，不承诺 SEO 排名、流量、零宕机或平台审核结果。",
+  "details": "# 海外小型网站迁站 URL 映射、301 重定向、DNS/SSL 与上线后 404 QA 服务\n\n## 行业是什么，为什么小众\n今天选择的行业是：面向海外小型企业、个人品牌、内容站、Webflow/Squarespace/WordPress/Shopify 小站、营销代理商和自由网页设计师的迁站/改版上线 QA 服务。核心交付不是“帮客户建一个新网站”，而是在客户换域名、换 CMS、重做 URL 结构、从临时域切到正式域、从 HTTP 切到 HTTPS、从旧站迁到 Webflow/Squarespace/WordPress/Shopify 或合并多个小站时，帮客户把旧 URL 到新 URL 的映射、301/308 永久重定向、DNS、SSL、canonical、sitemap、robots/noindex、404、redirect chain 和 Search Console 提醒检查清楚。\n\n它小众，是因为小公司迁站通常由设计师、老板、营销助理或兼职开发一起完成，大家会关注首页视觉和表单能不能用，却容易漏掉旧链接、博客路径、www/non-www、http/https、图片附件、广告落地页、邮件签名链接、Google 索引页面、站内链接和外部高流量链接。迁站出错不会像服务器宕机那样马上显眼，但会在几天到几周内表现为 404 增多、旧链接失效、广告落地页错跳、搜索流量波动、SSL 报错、重定向循环、站点地图错误和客户投诉。\n\n可收费的价值在于：把迁站前后的技术细节做成一份可执行的 URL mapping 表、上线 checklist、截图证据、crawl 报告和修复优先级，而不是泛泛讲 SEO。重要边界是：本服务只做客户授权下的迁站技术 QA、重定向规则核验、DNS/SSL 检查、上线后错误排查和报告交付；不承诺搜索排名、流量恢复、零宕机、Google 收录速度、广告转化、法律合规结论或服务器长期运维 SLA。\n\n## 目标市场\n本期属于“中国境内可做的海外市场”，主要面向英语市场的小型网站迁站场景。典型客户包括海外小型服务公司、诊所/律所/本地商家、独立创作者、咨询顾问、课程团队、非营利组织、小型 DTC 店铺、Webflow/Squarespace/WordPress/Shopify 设计师、SEO 顾问和营销代理商。\n\n它适合中国境内 OPC/一人公司或数字游民验证，是因为服务可以远程交付，不需要海外门店、仓储或高门槛当地牌照；固定资产主要是电脑、稳定网络、英文沟通、浏览器开发者工具、crawl/HTTP 检查工具、表格模板和基础 DNS/SSL 知识。新手可以从 20-100 个 URL 的小型改版项目开始，先做迁站前清单、上线当天抽检和上线后一周复查，不必接管客户服务器或整站 SEO。\n\n## 典型需求场景和客户是谁\n1. 海外小企业从旧 WordPress 站迁到 Webflow/Squarespace，旧博客、案例页和服务页 URL 改了，需要避免大量 404。\n2. 设计师给客户重做网站，但不想承担 SEO 迁站细节，希望白标外包 URL mapping、301 redirect 和上线后 crawl QA。\n3. Shopify 或 WooCommerce 小店改品类路径、合并旧产品页、换主题或换域名，需要检查旧产品链接、collection 链接、canonical 和 sitemap。\n4. 个人品牌、课程团队或咨询公司换品牌域名，需要准备 Search Console Change of Address、站点地图和旧域名到新域名的跳转检查。\n5. 小型代理商上线后收到“旧链接打不开”“SSL 警告”“www 和 non-www 不一致”“广告链接跳错”的客户反馈，需要快速定位问题并形成修复清单。\n6. 本地商家改版时保留旧 Google Business Profile、社媒、邮件签名、目录站和广告落地页链接，避免旧入口全部打到首页或 404。\n\n## 行业如何运作，典型参与方和工作流\n典型参与方包括客户 owner、网页设计师、CMS 开发者、SEO 顾问、域名注册商、DNS/CDN 平台、托管平台、Google Search Console、广告投放人员和迁站 QA 服务者。中国境内承接者应把自己定位为“授权迁站 QA 与证据报告供应商”，不是客户的服务器管理员、法律顾问或搜索排名担保方。\n\n标准工作流：\n1. 预筛选：确认迁站类型，是换域名、换 CMS、改 URL、HTTP 到 HTTPS、www/non-www 规范化、旧站合并，还是只换设计不改 URL；确认站点规模、语言、平台、上线窗口和是否有广告/邮件/社媒高流量链接。\n2. 授权与边界：签 SOW/NDA，写清客户拥有网站、域名、DNS、CMS 和 Search Console 权限；服务者只在最小权限、屏幕共享或客户导出的数据下检查，不索要主账号密码、2FA、付款方式或服务器 root 权限。\n3. 旧站盘点：从 sitemap、Search Console 导出、CMS 页面列表、Google Analytics/广告落地页、旧站 crawl、手动收集的高价值外链和客户提供列表中整理旧 URL。\n4. URL mapping：为每个旧 URL 指定最相关的新 URL，避免大量旧页面都跳首页；标记删除页、合并页、保留页、产品下架页、语言页和需要 410/404 的页面。\n5. 上线前核查：检查新站 URL、canonical、robots/noindex、sitemap、内部链接、导航、表单、图片资源、混合内容、www/non-www、http/https、移动端关键页面。\n6. 重定向与 DNS/SSL 检查：核验 Webflow/Squarespace/WordPress/Shopify/Cloudflare/服务器上的 301/308、根域和 www、A/CNAME 记录、SSL 证书、Cloudflare SSL mode、重定向循环和多跳链路。\n7. 上线后 QA：抓取一批旧 URL 和新 URL，记录状态码、最终落点、redirect chain、404/5xx、canonical、sitemap、Search Console/Change of Address 提醒、广告落地页和高价值入口。\n8. 交付：提供 URL mapping 表、问题清单、截图证据、优先级、修复建议、待客户确认项、复测结果和后续 7-30 天监测建议。\n\n## 盈利模式和报价口径\n收入来自技术核查、映射表、上线 QA、复测和白标协作，不来自流量分成或排名承诺。公开平台报价只能作为市场存在性和毛收入样本，不能代表成交率或净利润。\n\n按 2026-09-28 附近 1 USD 约 6.71 CNY 粗略折算：\n- 快速检查包：$50-$150，约 336-1007 元人民币，覆盖 20-50 个 URL、DNS/SSL 基础检查、上线后抽检和问题清单。\n- 小站迁站 QA 包：$150-$500，约 1007-3355 元人民币，覆盖 50-300 个 URL、URL mapping、301 redirect 规则检查、sitemap/canonical/noindex 和一次复测。\n- 代理商白标或月度复查：$200-$800/项目或/月，约 1342-5368 元人民币，适合设计师、SEO 顾问和小型代理商把迁站 QA 外包。\n- 更复杂的大站、多语言站、国际 SEO、日志分析、服务器迁移、数据库迁移、DNS 架构重构、Cloudflare Worker 规则、企业级发布回滚，不建议新手一人独立承诺，应转给专业开发、SEO 或运维团队。\n\n公开样本方面，Upwork 可见网站迁移 SEO、301 redirect、technical SEO migration audit 等项目目录，公开套餐样本有 $50、$120、$250 等档位；Fiverr 也有 301 redirects、domain redirect、website migration、SEO preservation 类服务。Upwork 官方说明 freelancer service fee 按合同为 0%-15%。这些只说明海外平台存在类似服务和报价参考，不能推导稳定月入。净收入还要扣平台费、收款费、汇损、税费、crawl/SEO 工具订阅、售前会议、返工、客户延迟、时区沟通和不可控故障排查时间。\n\n## 入门门槛\n技能：英文沟通、URL/HTTP 状态码、301/302/307/308、DNS A/CNAME/TXT 基础、SSL 证书、www/non-www、http/https、canonical、sitemap、robots.txt、noindex、CMS 后台规则、Search Console 基础、表格化整理和截图报告能力。需要能读懂 Google Search Central、Webflow、Squarespace、Cloudflare、WordPress/Shopify 等官方文档。\n\n设备和软件：普通电脑、稳定网络、浏览器开发者工具、curl 或 HTTP status checker、Screaming Frog/Integrity/Sitebulb/开源 crawler、Google Sheets/Excel、截图工具、Cloudflare/Webflow/Squarespace/WordPress/Shopify 测试环境、密码管理器、加密磁盘和安全云盘。\n\n资质和合规：通常不需要海外本地牌照，但不能把服务包装成法律合规审计、SEO 排名保证、Google 官方合作、网络安全认证或服务器托管 SLA。涉及医疗、金融、法律、儿童、政府和高敏数据站点时，只做公开页面和授权后台的技术检查；隐私政策、Cookie 法律要求、行业监管内容应转给当地律师或专业顾问。\n\n资金和时间：启动资金可低于 1000-3000 元人民币，主要用于域名/测试站、基础工具、作品集和平台成本。已有 Web/SEO 基础的人，1-2 周可做样本报告；要稳定处理 DNS/SSL、重定向链、CMS 差异和英文客户沟通，通常需要 1-2 个月训练。\n\n渠道：Upwork、Fiverr、LinkedIn、Webflow/Squarespace/WordPress/Shopify 设计师社群、SEO 顾问社群、海外小型代理商、网站改版工作室、No-code 社群。服务标题应具体，例如 Website migration QA, 301 redirect mapping, DNS/SSL and 404 crawl check，不要写 guaranteed SEO recovery 或 Google ranking protection。\n\n## 中国境内承接海外市场的执行细节\n跨境获客：平台单遵守站内沟通、托管付款和禁止绕平台规则；直客单用英文 SOW 写清站点、URL 数量、平台、上线窗口、检查范围、交付格式、返工轮次、客户提供权限和不承诺项。报价前应要求客户提供站点规模和迁站类型，避免把大站迁移误报成小站 QA。\n\n远程交付：优先要求客户导出 URL 列表、sitemap、Search Console 页面导出、CMS 页面表或截图；如必须进入后台，使用客户创建的临时低权限账号、独立邮箱、强密码和 2FA，并在交付后撤销。DNS/SSL 改动可能造成网站中断，应尽量由客户或其技术人员执行，服务者提供检查清单和复测证据；确需操作时必须有书面授权、备份和回滚方案。\n\n合同、发票和收款：平台订单以平台合同和账单为凭证；直客单可用 Wise Business、Payoneer、银行电汇或平台托管等合规方式。中国境内个人、个体工商户或公司应保存合同、invoice、收款流水、汇率记录、平台账单和交付证据，按主体类型依法申报纳税。\n\n税务申报和外汇：国家税务总局境外所得公告提示，居民个人从中国境外取得所得，应在取得所得的次年 3 月 1 日至 6 月 30 日内申报纳税。个人外汇管理实施细则显示个人结汇和境内个人购汇年度总额分别为每人每年等值 5 万美元；这通常是便利化额度，不是可以拆分规避或无需凭证的大额经营收款通道。若以个体工商户或公司承接，应按经营所得、增值税、企业所得税/个人所得税、跨境服务和所在地税务/银行要求处理。\n\n平台规则：Google Search Central 建议迁站前准备 URL mapping，尽可能使用服务器端永久重定向，避免 redirect chain，并在换域名或子域时使用 Search Console Change of Address；Webflow 和 Squarespace 都提供 301 redirect/URL mappings 相关功能，但平台对域名连接、SSL、路径规则和原 URL 是否仍存在有具体限制；Cloudflare Full strict 模式要求源站有有效且匹配的证书，否则可能出现 526 等错误。每单都要按客户当前平台和计划重新核验官方文档。\n\n数据/隐私合规：迁站 QA 通常处理公开 URL，但 Search Console、Analytics、广告落地页、后台截图、客户名单、订单页、会员页或未发布页面可能包含商业秘密或个人信息。应按最小必要原则处理，不下载无关数据库，不使用公开 AI 工具粘贴客户后台数据，项目结束后按约定删除临时账号、截图和导出文件。\n\n语言和时区门槛：英文问题清单、技术解释和上线窗口沟通是硬门槛。北美客户可能需要中国早晚响应，欧洲和澳洲相对友好。上线当天如果客户要求实时待命，应单独计价，并写清响应时间和不承诺零宕机。\n\n## 为什么适合或不完全适合 OPC/一人公司\n适合点：交付物可模板化，一个人可以完成 URL 收集、映射表、crawl、状态码检查、截图、问题清单和复测；固定资产轻，适合从 20-100 个 URL 的小站试单；也适合与设计师、SEO 顾问、Webflow/Squarespace 开发者白标合作。\n\n不完全适合点：DNS/SSL、重定向规则和上线窗口一旦误操作，可能造成业务中断、邮件异常或广告损耗。OPC 必须只接自己能控制风险的小型项目，不代管客户主账号，不在没有备份和回滚方案时直接改 DNS，不承诺排名/流量恢复；大站、多语言站、复杂服务器和高敏业务应转给专业团队。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n适合点：笔记本、稳定网络和工具即可交付，大部分工作可异步完成；报告、表格和截图可以远程协作；客户通常更看重上线清单和错误发现能力，而不是本地驻场。\n\n不完全适合点：上线窗口可能在客户当地工作时间，旅途中网络不稳会放大风险；公共 Wi-Fi、共享电脑、无 2FA 或随意保存客户后台截图的人不适合。数字游民做这类服务必须有设备加密、密码管理器、备份网络、明确响应窗口和客户资料删除流程。\n\n## 潜在收益、前提条件和成本结构\n低成本验证期：每月 3-8 个快速检查包，毛收入约 $150-$1200，折合约 1007-8052 元人民币。目标是验证客户是否愿意为“迁站不漏旧链接、上线后少踩坑”付费，不适合预期高收入。\n\n标准接单期：每月 4-10 个小站迁站 QA 包，毛收入约 $600-$5000，折合约 4026-33550 元人民币。前提是有脱敏样本报告、英文技术沟通能力、稳定工具链、清楚拒绝越界需求，并能与设计师/SEO 顾问形成转介绍。\n\n合作期：与网站设计师、SEO 顾问、No-code 开发者或代理商建立白标合作，按项目上线前 QA、上线当天待命和上线后 7-30 天复查收费。净利润受 URL 数量、客户资料完整度、平台复杂度、售前会议、返工、平台费、收款汇损、税费和工具订阅影响。收益只能用区间和前提说明，不能承诺稳定月入、排名恢复或流量增长。\n\n## 主要风险、合规注意事项和不适合人群\n主要风险：\n1. DNS/SSL 中断风险：错误 A/CNAME、Cloudflare SSL mode、证书不匹配、www/non-www 配置或重定向循环会造成访问失败。\n2. SEO 结果误解风险：301 和 URL mapping 只能降低迁站损失，不能保证排名、流量或收录恢复。\n3. 授权和权限风险：未获站点 owner 授权，不能进入 CMS、DNS、Search Console、Analytics 或广告后台。\n4. 误操作风险：直接改 DNS、批量删规则、改 robots/noindex 或 canonical，可能影响整个站点；应先备份、截图、列清单并由客户确认。\n5. 平台差异风险：Webflow、Squarespace、WordPress、Shopify、Cloudflare、服务器规则能力不同，通用模板不能直接套用。\n6. 数据保密风险：后台截图、Search Console 导出、广告 URL、客户名单和未发布页面可能是商业秘密或个人信息。\n7. 低价竞争风险：简单 redirect 设置服务很多，差异化来自 URL mapping 质量、上线流程、证据报告和复测，而不是低价抢单。\n8. 跨境税务和收款风险：平台收入、invoice、汇率、费用和纳税要留痕；不要用拆分结汇或私人代收规避监管。\n\n不适合人群：不愿读英文官方文档的人；只会装插件但不懂状态码和 DNS 的人；想承诺 SEO 包恢复的人；没有备份和回滚意识的人；保密习惯差的人；网络不稳定但想做上线当天实时支持的人；遇到客户催促就跳过确认流程的人。\n\n## 新手可验证的 3 个低成本入门步骤\n1. 做一份迁站 QA 样本报告：用自己的测试站或公开可控站点模拟 20 个旧 URL 到新 URL，输出 URL mapping、状态码、redirect chain、canonical、sitemap 和 404 截图。\n2. 发布一个窄服务包：只承诺“50 个 URL 以内的小站迁站前 mapping + 上线后 404/301/DNS/SSL 抽检 + 一次复测”，报价 $50-$150，明确不含服务器迁移、排名保证、法律意见和长期运维。\n3. 访谈 5 个海外设计师或 SEO 顾问：询问他们迁站最常漏的环节、是否愿意白标外包、上线窗口如何配合，用 1 个付费样本验证真实耗时和返工率。\n\n## 点评 Agent 审稿\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：较克制。明确为毛收入样本，并扣除了平台费、汇损、税费、工具、沟通、返工和时区成本；未承诺排名、流量、零宕机，口径合格。\n- 信息来源是否足够可信：足够。Google 官方迁站文档支持 URL mapping、永久重定向、避免链式跳转、Search Console、重定向至少保留 1 年等要点；Webflow、Squarespace、Cloudflare 官方文档能支撑平台实操；Upwork 0%-15% 费用口径也与当前官方说明一致。汇率约 6.71 已标注日期；税务/外汇采用官方口径，境外所得次年 3 月 1 日至 6 月 30 日申报、个人结售汇 5 万美元为便利化额度而非绝对上限。\n- 最该补充或提醒的一句话：只在客户书面授权和最小权限下做技术核查与问题清单，不代管账号、不承诺 SEO 结果，并留存合同、发票/收款、平台账单和结汇材料。\n- 是否建议通过：通过。这个题目适合中国境内远程交付、适合一人公司和数字游民，服务边界也划得比较清楚；已补充 DNS/SSL 可造成业务中断、账号权限/MFA/客户备份、低价平台竞争导致获客成本高等风险提醒。\n\n## 关键核验来源\n1. Google Search Central - Site Moves and Migrations。核验迁站 URL mapping、永久重定向、避免 redirect chain、上线后测试、Change of Address、sitemap 和 redirects 至少保留 1 年等建议。https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes\n2. Google Search Central - How to Use Search Console。核验 Search Console Change of Address 可用于域名或子域迁移并帮助迁移搜索结果。https://developers.google.com/search/docs/monitor-debug/search-console-start\n3. Webflow Help Center - How do I set up redirects in Webflow? 核验 Webflow 301 redirects、slug 改动自动创建 301 redirect、Site settings > Publishing > 301 redirects 等操作入口。https://help.webflow.com/hc/en-us/articles/33961294898835-How-do-I-set-up-redirects-in-Webflow\n4. Webflow Help Center - How do I connect my domain to Webflow? 核验 Webflow custom domain、DNS records、SSL 和域名连接流程。https://help.webflow.com/hc/en-us/articles/33961334343827-How-do-I-connect-my-domain-to-Webflow\n5. Squarespace Help Center - URL mappings。核验 Squarespace 301/302 redirects、原 URL 不应仍存在、新 URL 应存在、URL mappings 面板等要求。https://support.squarespace.com/hc/en-us/articles/205815308-URL-mappings\n6. Cloudflare Docs - Full strict SSL/TLS encryption mode。核验 Full strict 模式要求源站 443、有效未过期且匹配 hostname 的证书，否则可能出现 526 等错误。https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/\n7. Cloudflare Docs - DNS record types。核验 A/CNAME 等 DNS 记录、proxied/DNS-only 相关行为和 DNS/HTTPS 记录注意事项。https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/\n8. Upwork Project Catalog - Website migration SEO, 301 redirects and technical SEO migration audit。核验海外平台上存在迁站、301 redirects 和 technical SEO migration audit 服务；仅作市场样本。https://www.upwork.com/services/product/marketing-website-migration-seo-301-redirects-technical-seo-migration-audit-2095469250068826613\n9. Upwork Project Catalog - Complete Website SEO Migration and Redirect Strategy。核验公开套餐样本 Starter $50、Standard $120、Advanced $250；仅作报价样本。https://www.upwork.com/services/product/marketing-a-complete-website-seo-migration-and-redirect-strategy-2090926506510812860\n10. Fiverr - 301 redirect services。核验市场上存在 301 redirects、domain redirect、website migration 和 SEO preservation 类服务；仅作市场样本。https://www.fiverr.com/gigs/301-redirect\n11. Upwork Help - Learn about the Freelancer Service Fee。核验 Upwork freelancer service fee 按合同为 0%-15%。https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee\n12. Wise USD/CNY exchange rate history。核验 2026-09-28 附近 1 USD 约 6.71 CNY 的折算口径。https://wise.com/us/currency-converter/usd-to-cny-rate/history/04-09-2026\n13. 国家税务总局 - 财政部 税务总局关于境外所得有关个人所得税政策的公告。核验居民个人境外所得次年 3 月 1 日至 6 月 30 日申报纳税等口径。https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html\n14. 国家外汇管理局 - 个人外汇管理办法实施细则。核验个人结汇和境内个人购汇年度总额分别为每人每年等值 5 万美元等口径。https://www.safe.gov.cn/safe/2007/0105/22509.html",
+  "sourceThread": "automation-3",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global-english-market",
+    "website-migration",
+    "seo-qa",
+    "dns-ssl"
+  ],
+  "nextSteps": [
+    "做一份迁站 QA 样本报告：用自己的测试站或公开可控站点模拟 20 个旧 URL 到新 URL，输出 URL mapping、状态码、redirect chain、canonical、sitemap 和 404 截图。",
+    "发布一个 $50-$150 的窄服务包，只承诺 50 个 URL 以内的小站迁站前 mapping、上线后 404/301/DNS/SSL 抽检和一次复测。",
+    "访谈 5 个海外设计师或 SEO 顾问，确认他们迁站最常漏的环节、是否愿意白标外包，并用 1 个付费样本验证真实耗时。"
+  ],
+  "artifacts": [
+    {
+      "label": "Google Search Central site moves",
+      "path": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+    },
+    {
+      "label": "Google Search Console start guide",
+      "path": "https://developers.google.com/search/docs/monitor-debug/search-console-start"
+    },
+    {
+      "label": "Webflow redirects",
+      "path": "https://help.webflow.com/hc/en-us/articles/33961294898835-How-do-I-set-up-redirects-in-Webflow"
+    },
+    {
+      "label": "Webflow custom domains",
+      "path": "https://help.webflow.com/hc/en-us/articles/33961334343827-How-do-I-connect-my-domain-to-Webflow"
+    },
+    {
+      "label": "Squarespace URL mappings",
+      "path": "https://support.squarespace.com/hc/en-us/articles/205815308-URL-mappings"
+    },
+    {
+      "label": "Cloudflare Full strict SSL/TLS",
+      "path": "https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/"
+    },
+    {
+      "label": "Cloudflare DNS record types",
+      "path": "https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/"
+    },
+    {
+      "label": "Upwork website migration audit sample",
+      "path": "https://www.upwork.com/services/product/marketing-website-migration-seo-301-redirects-technical-seo-migration-audit-2095469250068826613"
+    },
+    {
+      "label": "Fiverr 301 redirect services",
+      "path": "https://www.fiverr.com/gigs/301-redirect"
+    },
+    {
+      "label": "Upwork freelancer service fee",
+      "path": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+    },
+    {
+      "label": "Wise USD/CNY exchange sample",
+      "path": "https://wise.com/us/currency-converter/usd-to-cny-rate/history/04-09-2026"
+    },
+    {
+      "label": "境外所得个人所得税公告",
+      "path": "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html"
+    },
+    {
+      "label": "个人外汇管理办法实施细则",
+      "path": "https://www.safe.gov.cn/safe/2007/0105/22509.html"
+    }
+  ]
+}
