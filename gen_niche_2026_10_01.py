@@ -1,0 +1,128 @@
+# -*- coding: utf-8 -*-
+"""Generate the daily niche OPC industry brief for 2026-10-01.
+
+Topic: 老照片修复与 AI 上色服务 (Old Photo Restoration & AI Colorization).
+Writes runs-workbuddy/2026-10-01/niche-opc-industry.json following WORKBUDDY_CONTRACT.md.
+"""
+import json
+import os
+from datetime import datetime, timezone, timedelta
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+OUT_DIR = os.path.join(BASE, "runs-workbuddy", "2026-10-01")
+OUT_FILE = os.path.join(OUT_DIR, "niche-opc-industry.json")
+
+SHANGHAI = timezone(timedelta(hours=8))
+started = datetime(2026, 10, 1, 9, 0, 0, tzinfo=SHANGHAI)
+finished = datetime(2026, 10, 1, 9, 45, 0, tzinfo=SHANGHAI)
+
+details = """# 每日小众赚钱行业：老照片修复与 AI 上色服务
+
+## 1. 行业是什么，为什么小众
+一句话定义：把客户泛黄、破损、撕裂或黑白的老照片，通过 Photoshop + AI 工具修复、上色、高清化，交付数字文件（有时含打印）的远程服务。
+为什么小众：①搜索量低，"photo restoration business" 不像 "dropshipping" 那样铺天盖地，普通人把它当"修图爱好"而非生意；②需求隐蔽，触发点分散在家谱（genealogy）、节假日礼物、纪念仪式、博物馆/档案馆数字化招标里，不在信息流显眼处；③大众误以为 AI（Remini、MyHeritage）一键免费就解决了，忽略严重破损照片仍需人工判断与重建；④它夹在"修图师""摄影师""档案修复"几个大行业之间，独立成一个可一人远程交付的细分服务时很容易被忽略。但真实付费需求稳定：Dataintelo 估计 2025 年全球在线修复交易已占 61.7%（2019 年仅 39%），Fiverr/Upwork 上活跃修复 specialist 超 28,000 人。
+
+## 2. 如何运作
+典型客户与需求触发：
+- 个人消费者（占市场 65.1%，PMarketResearch 2025）：家谱爱好者、想修复父母结婚照/祖辈军装照做礼物的人、节日（圣诞后扫描潮、纪念日、丧葬纪念）需求。
+- 机构客户：博物馆、档案馆、地方文旅（村史馆/乡土文化保护）、高校图书馆数字化项目、老字号品牌怀旧营销。Dataintelo 估计 2025 年机构采购机会约 $420M，2034 年超 $850M。
+- B2B：摄影师把老照片修复外包给自由修图师。
+
+核心交付物：修复后的高清数字图片（JPG/PNG/TIFF），可选黑白上色版、打印装裱版、或把静态照做成动态视频（AI 动画）。
+
+工作流（从获客到收款）：
+1. 获客：Fiverr/Upwork 挂 gig，或在闲鱼/小红书/某宝发 before-after；加入 genealogy Facebook 群、Reddit r/estoration、本地历史协会。
+2. 接单评估：客户上传扫描件（建议 300DPI），你评估破损等级与是否需重建缺失部位，报具体价（避免低价包干后工作量失控）。
+3. 修复：Photoshop 非破坏性编辑（修复画笔、仿制图章、频率分离去划痕）+ Topaz Photo AI 放大/人脸修复 + AI 上色（Photoshop Neural Filters / DeOldify）+ 手动调色"色彩考古"。
+4. 交付与 revisions：发低水印预览，客户确认后给高清原图；Fiverr 多带无限 revisions。
+5. 收款：Fiverr/Upwork 托管（抽成约 20%）、PayPal、国内某宝/闲鱼担保交易。机构项目可走合同+分期（30%/70% 或按月）。
+
+关键工具与平台：Adobe Photoshop（含 Neural Filters / Generative Fill）、Topaz Photo AI（放大与人脸修复）、Remini / MyHeritage（快速预览）、DeOldify（开源上色）、Photopea（免费在线 PS 替代品）；平台 Fiverr、Upwork、Etsy、闲鱼、小红书、某宝。
+
+## 3. 盈利模式
+收入来源与定价：
+- 按张/按项目计费为主。Fiverr 低端 gig 套餐 $5（1 张基础）/ $15（3 张+上色）/ $45（7 张高级）；Fiverr Pro 约 €13.8 / €27.7 / €46.1。
+- 专业机构价（FixThePhoto）：Standard $30 / Premium $45 / Extreme $60 每张；黑白上色从 $60 起；每多 1 人 +$12。InstaRestoration 示例 $19/$29/$39。
+- 高端"传家宝级"本地工作室 $200–$500+/张；婚礼相册修复项目 $180–$650（Dataintelo）。
+- 中国市场：某宝"老照片修复"2025 搜索量涨 300%，客单价超 ¥200（xiuzhaopian.cn）。
+
+利润空间：工具成本极低（Adobe Photography Plan $9.99–$11.99/月 + Topaz 一次性 $199 + 免费/低价 AI 预览），边际成本主要是时间。小额生意毛利率常被 biz-opportunity 来源估为 70–85%（smallbusinessideas.biz：月修 50–200 张 ≈ 年收入 $80K–$400K），但该数字偏乐观，应视为上限参考而非保证。扣除平台抽成 20%、税费后，单人熟练后单张净利可在 $15–$50（低端）到 $100+（高端/机构）。
+
+复购/长期合同：机构数字化项目多为多年合同（高价值、收入可见）；个人客户节日/纪念场景有复购与口碑转介绍；可做"家庭相册打包修复"月度 retain。
+
+## 4. 入门门槛
+技能：需要会 Photoshop 核心修图（修复画笔、仿制图章、图层、蒙版、频率分离）、基础色彩理论与"上色考古"判断力；严重破损需手动重建面部/衣物，靠审美与参考图。学起来：有设计基础 1–2 个月可达接单水平，零基础 3–6 个月。AI 工具降低了放大/上色门槛，但人工判断仍是高价与好评的来源。
+工具与费用：起步可全免费验证——Photopea（在线 PS）+ Remini 免费版 + DeOldify 本地跑；认真做：Adobe Photography Plan ~$10/月、Topaz Photo AI $199 一次性（或 $199/年订阅）、Luminar Neo $99 终身。初期总工具费 < $250。
+资金：几乎为零——不需要库存、场地、设备（用自己电脑）。唯一可能的小投入是扫描仪（若接纸质原件，可让客户自行扫描上传避开）。
+时间：从零到第一单，走 Fiverr/闲鱼挂 gig + 发 before-after，通常 1–3 周可拿到首单（取决于曝光与作品质量）。
+
+## 5. 为什么适合 OPC / 数字游民
+- 异步交付：客户上传扫描件、你排期修、发预览、收尾款，全程无需实时在线，天然适配时区差——可在亚洲接欧美订单，睡觉时交付。
+- 全球客户：需求跨越文化（家家都有老照片），Fiverr/Upwork 让你触达英语客户，闲鱼/小红书/某宝触达中文客户，无需本地执照。
+- 边际成本低：核心资产是你的技能与作品集，一份 before-after 可反复获客；工具费用固定，多修一张几乎不增加成本。
+- 可规模化：从单张接单 → 家庭相册打包 → 机构数字化外包；熟练后可模板化流程、用 AI 预处理省时，或招兼职修图师转小工作室（但仍可一人主控）。
+- 时区友好 + 地点自由：纯数字交付，有网即可，符合数字游民"一袋电脑走天下"。
+具体理由而非空话：Dataintelo 指出 2025 年在线渠道已占 61.7% 交易，且 Fiverr/Upwork 上 28,000+ 自由 specialist 证明"一人远程"模式已被市场验证可行。
+
+## 6. 潜在收益（谨慎，不承诺）
+区间与条件（均为公开参考数据，不等于个人收入）：
+- 新手阶段（前 3–6 个月，作品集建设中）：Fiverr 低端 $5–$45/单，月接 10–30 单 ≈ 月收入 $100–$800（含平台抽成前）。国内某宝/闲鱼客单价 >¥200，月 10 单 ≈ ¥2,000+。
+- 成熟阶段（1 年以上，有口碑+机构客户）：专业价 $30–$60/张，月修 50–150 张 ≈ 月收入 $1,500–$9,000（毛）；机构数字化合同可到 $5,000–$50,000/项目（Dataintelo 机构采购机会 $420M/年）。
+- 公开数据锚点：平均订单价值 2023–2025 上升约 18%（Dataintelo，因 AI 提升质量客户愿付更多）；#photorestoration 在 IG/TikTok 早 2026 累计 28 亿次曝光（需求被社媒放大）；全球修复服务市场 2025 约 $376M–$682M，2032–2035 达 $0.77B–$1.14B（CAGR 7.5%–7.6%）。
+明确：这些是行业/平台参考数据，不等于个人收入；实际取决于技能、作品集、获客与所在平台抽成。新手前期收入不稳定、波动大。
+
+## 7. 主要风险
+- 市场风险：AI DIY 工具（Remini、MyHeritage、DeOldify、Google Photos Magic Editor）把低端"一键修复"免费化，压缩 $5–$15 档利润；Fiverr 低端 gig 价格战严重，易陷入廉价竞争。需求有季节性（节假日旺、平时淡）。
+- 技术风险：高度依赖 Adobe / Topaz 等付费工具与订阅；AI 上色对罕见破损可能出错、需人工兜底；平台算法改动影响 gig 曝光。
+- 合规风险：修复他人照片涉及版权与肖像权（尤其名人、受版权保护照片）；处理个人敏感影像需注意数据隐私与留存；跨境收款/纳税申报（国内需按劳务/经营所得申报，海外平台有税务表单如 1099-K / 对应国要求）。
+- 现金流风险：Fiverr/Upwork 托管放款有账期、抽成约 20%、存在争议退款；机构项目回款周期长；获客成本（改图、投流）若过高会侵蚀利润。
+
+## 8. 不适合的人群
+- 厌恶细节、坐不住做精修的人（一张严重破损照可耗数小时）。
+- 想"被动收入/躺赚"的人（这是手艺+服务，需持续交付）。
+- 无法处理客户情绪与敏感场景的人（丧葬纪念、家族创伤照，需要共情与边界）。
+- 需要稳定月薪兜底的人（前期收入波动大）。
+- 不愿学 Photoshop / 抵触 AI 工具的人。
+
+## 9. 3 个可验证的入门步骤
+步骤 1（第 1 天）：用免费工具跑通交付。找 3 张公开版权老照片（如 Library of Congress / Wikimedia 公有领域图），用 Photopea + Remini 免费版 + DeOldify 做去划痕/上色/放大，产出 before-after 对比图。验证：你能否在 1 小时内做出"肉眼明显变好"的成品？不能则先补 Photoshop 基础。
+步骤 2（第 1–2 天）：挂出最小可行 gig。在 Fiverr（或闲鱼/小红书）用步骤 1 的作品建 3 档套餐（$5/$15/$45 或 ¥30/¥100/¥200），写明修复/上色/放大范围。验证：48 小时内是否获得 ≥1 次曝光/点击或咨询——有则说明需求真实、定价可接受。
+步骤 3（第 2–3 天）：用真实订单验证付费意愿。在 genealogy Facebook 群或 r/estoration 提供 1 个免费样品换 before-after 授权展示，同时接 1 个付费小单（哪怕 $10/¥50）。验证：是否有人愿意为你这一张图付钱——愿意，则方向成立，可加大作品集与机构客户拓展。
+
+## 10. 核验来源
+（真实可访问链接见 artifacts 字段，共 8 条：市场报告、平台定价、工具官网、开源项目、中国市场数据。）
+"""
+
+result = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：老照片修复与 AI 上色服务",
+    "status": "success",
+    "startedAt": started.isoformat(),
+    "finishedAt": finished.isoformat(),
+    "summary": "把泛黄、破损、黑白的家藏老照片通过 Photoshop + AI 远程修复、上色、高清化并交付数字文件的小众服务。需求藏在家谱热、节日礼物与机构数字化招标里，一人可远程异步交付、启动近乎零成本，全球客户且边际成本低，非常适合 OPC 与数字游民。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "photo-restoration", "ai-editing", "heritage", "freelance-services"],
+    "nextSteps": [
+        "用 Photopea + Remini 免费版 + DeOldify 修复 3 张公有领域老照片，产出 before-after 作品集，验证 1 小时内能否做出肉眼明显变好的成品。",
+        "在 Fiverr（或闲鱼/小红书）建 3 档套餐（$5/$15/$45 或 ¥30/¥100/¥200），48 小时内观察是否获得曝光/点击/咨询。",
+        "在 genealogy Facebook 群或 r/estoration 提供 1 个免费样品换展示授权，同时接 1 个付费小单（≥$10/¥50），验证真实付费意愿。",
+    ],
+    "artifacts": [
+        {"label": "Photograph Restoration Service Market 2026 (PMarketResearch)", "path": "https://pmarketresearch.com?p=2321925/"},
+        {"label": "Photograph Restoration Service Market (Dataintelo: 在线占比/怀旧经济/28k+自由职业者)", "path": "https://dataintelo.com/report/photograph-restoration-service-market"},
+        {"label": "Fiverr 修复 gig 定价示例 $5/$15/$45", "path": "https://www.fiverr.com/mithun_02/restore-old-photos-repair-damaged-images-and-colorize-black-and-white-pictures"},
+        {"label": "FixThePhoto 修复定价 $30/$45/$60 每张", "path": "https://fixthephoto.com/services/old-damaged-photo-restoration"},
+        {"label": "Photo Restoration Cost 公开价对比 $19–$60 (ImageRestoreAI)", "path": "https://www.imagerestoreai.com/cities/photo-restoration-cost"},
+        {"label": "Topaz Photo AI 官方定价 $199", "path": "https://www.topazlabs.com/photo-ai"},
+        {"label": "DeOldify 开源上色项目 (GitHub)", "path": "https://github.com/jantic/DeOldify"},
+        {"label": "中国市场：某宝老照片修复搜索量+300%、客单价>¥200", "path": "https://www.xiuzhaopian.cn/photo/4302.htm"},
+    ],
+}
+
+os.makedirs(OUT_DIR, exist_ok=True)
+with open(OUT_FILE, "w", encoding="utf-8") as f:
+    json.dump(result, f, ensure_ascii=False, indent=2)
+
+print("Wrote", OUT_FILE)
+print("Bytes:", os.path.getsize(OUT_FILE))
