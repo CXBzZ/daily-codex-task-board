@@ -1,7 +1,76 @@
 {
-  "generatedAt": "2026-10-01T08:05:26.367Z",
+  "generatedAt": "2026-10-02T01:10:33.286Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-10-02",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：Webflow/Framer 无代码官网搭建",
+      "status": "success",
+      "summary": "Webflow / Framer 无代码官网搭建：用可视化工具为初创团队、创作者和小企业制作品牌官网与落地页，介于模板套版与全栈开发之间的高性价比中间档。它 100% 远程、启动成本近乎为零、全球客户可地理套利，且平台仍处于高速增长期，是非常契合一人公司/数字游民的低门槛赚钱方向。",
+      "details": "1. 行业是什么，为什么小众\nWebflow / Framer 无代码官网搭建，指用可视化建站工具（而非手写代码）为中小企业、初创团队、创作者、自由职业者制作品牌官网、落地页、作品集、SaaS 营销站。它介于\"传统网页设计\"（被模板平台和廉价外包淹没）和\"全栈开发\"（技术门槛高、报价贵）之间——普通创业者要的是\"比套模板讲究、又请不起 dev 团队\"的中间档，这个细分因此长期被忽略。\n\n为什么小众：\n- 搜索量低：客户搜索词是\"做个网站\"\"品牌官网\"，几乎不会搜\"Webflow 建站\"，需求被模板站和外包平台截流，独立自由职业者很难被发现。\n- 夹缝生存：比 Wix/Squarespace 模板高级，又比定制开发便宜，定位尴尬，很多人根本不知道有\"设计师级可视化建站\"这种选项。\n- 认知偏差：外人以为要会写代码，实际是可视化操作，门槛被高估，劝退了潜在供给。\n- 平台增长快、人才供给慢：Webflow/Framer 用户量与收入暴涨，但能专业交付的人仍稀缺，供需错配。\n\n2. 如何运作\n典型客户：初创 SaaS、独立开发者、设计师/摄影师/咨询师等创作者、需要重做官网的小企业、需要做活动落地页的营销团队。\n需求触发：产品上线/融资/品牌升级/招人需要官网；活动 campaign 需要落地页；旧 WordPress 站太慢想迁移到无代码。\n\n核心交付物：一个上线可访问、响应式、含基础 SEO 与 CMS 配置的网站；Figma→Webflow/Framer 还原；以及可选的维护与迭代服务。\n\n完整工作流：\n- 获客：Upwork / Contra / Fiverr / Toptal 接单；申请 Webflow Certified Partner 目录；LinkedIn + 个人作品集站引流；熟人/社区推荐。\n- 沟通报价：看客户现有站或设计稿，出方案与报价（按项目或按月）。\n- 设计还原：把 Figma/草图在 Webflow/Framer 里搭出来，配置 CMS、响应式、交互动效。\n- 审核上线：客户审阅、微调，绑定自定义域名并发布。\n- 交付收款：交付账号与源文件、写使用文档，平台托管或用 Stripe/平台收款；可转为月度维护 retainer。\n\n关键工具/平台：Webflow、Framer、Figma（设计源头）、Relume（AI 站点地图/线框）、Memberstack（会员/登录）、Finsweet Attributes、Client-First（命名规范）、Unsplash（素材）。获客平台：Upwork、Contra、Fiverr、Toptal、Webflow Experts 目录。\n\n3. 盈利模式\n收入来源与定价：\n- 按项目：单页/品牌官网约 $2,000–$7,500，CMS 内容站 $6,000–$12,000，电商 $8,000–$20,000，SaaS 站 $10,000–$25,000（参考 Blankboard、Appsrow、DesignMonks 数据）；Framer 单站 $1,800–$20,000。\n- 按时计费：Upwork 上 Webflow 开发者 $20–$45/小时；资深自由职业者 $50–$200/小时；机构 $100–$150/小时。\n- 按月维护：retainer $300–$1,500/月（更新、小改、技术维护）；机构订阅模式 $2,950–$5,600/月（InnovitLabs）。\n- 模板产品销售：在 Framer/Webflow 模板市场卖模板，头部创作者 $1,000–$10,000/月（Codeshaper）。\n\n利润空间：工具成本极低（Webflow CMS $23/月、Framer Pro $30/月），主要是时间与技能；扣除平台费（Upwork 抽成约 10%、Contra 0 佣金）后，单人项目毛利常在 70%–90%。一份 $5,000 的官网，主要成本就是你的时间。\n\n复购/长期：维护 retainer 是天然复购；客户增长后的二次改版、加页面也带来续单。\n\n4. 入门门槛\n技能：会用 Webflow 或 Framer（可视化、不需写代码，但懂 HTML/CSS 概念、flexbox/grid、响应式更有优势）；基础视觉设计审美；能读 Figma（很多活是 Figma→Webflow 还原）；客户沟通。\n学起来多快：每天 1–2 小时，4–8 周可独立交付简单官网（Webflow University / Framer Academy 免费）。\n工具：Webflow（免费 Starter 起步，CMS $23/月）或 Framer（免费起步，Pro $30/月）；Figma 免费版够用；Relume 有免费额度；素材用 Unsplash 免费。初期月成本 < $50。\n资金：启动几乎为零，主要成本是时间；作品集站可花 $14–$30/月。\n时间：从零到首单，潜心学 1–2 月 + 做 2–3 个样站作品集，再通过 Upwork/社区接低价或朋友单，3–6 个月出首单属正常（Webflower 数据）。\n\n5. 为什么适合 OPC / 数字游民\n- 异步交付：建站按里程碑交付，时差不重要，客户睡觉时你干活，天然适合全球客户。\n- 全球客户 + 地理套利：Upwork/Contra/Webflow Experts 都是全球市场，可接美元/欧元报价；Solowise 指出接欧美客户薪资可翻数倍。\n- 边际成本低：一套模板可复用，交付速度随熟练度提升，单项目利润高。\n- 可规模化：从接单升级到\"设计订阅\"模式（按月持续交付），或卖模板做半被动收入。\n- 时区友好 + 零场地：100% 远程，只需笔记本和网络，无库存、无本地执照、无地理限制，是典型数字游民生意。\n- 平台红利：Webflow/Framer 仍处高速增长期，官方认证目录与模板市场为个人提供\"被客户发现\"的免费渠道。\n\n6. 潜在收益（谨慎，不承诺）\n以下为参考数据，不等于个人收入：\n- 新手期（0–1 年）：单站 $500–$2,000，月入常 $500–$2,000；Webflower 指出平均 side hustle 月增收约 $1,122，初期三位数很正常。\n- 成熟期（1–3 年）：资深自由职业者时薪 $50–$150，单项目 $2,000–$15,000+；Contra 称高级自由职业者时薪 $120–$150，美国入门级年薪约 $81,815；机构订阅模式月入可达 $3,000–$5,600/客户。\n- 模板侧：头部 Framer 模板创作者 $1,000–$10,000/月（Codeshaper）。\n- 市场背景：无代码建站工具市场 2025 约 $135 亿（MarketResearchForecast），无代码整体市场 2025 约 $359 亿、同比 +27%（Veroscale）；Webflow ARR 约 $2 亿、$40 亿估值、350 万用户；Framer ARR 2025 约 $5,000 万、估值 $20 亿（Sacra）。需求侧在扩张，但个人收入取决于获客与交付能力。\n\n7. 主要风险\n- 市场风险：AI 建站（Framer AI、v0、Wix ADI）降低简单建站门槛，低端模板活可能被挤压；竞争在入门层已拥挤（Contra 称入门级已饱和、模板化服务商品化）。\n- 技术风险：平台政策/定价变动（如 Webflow 带宽计费争议）、Framer 不支持代码导出导致锁定（lock-in）；工具迭代快需持续学习。\n- 合规风险：跨境收款报税（各国税法）、GDPR/数据隐私（若做表单/CRM 收集用户信息）、客户网站内容的版权与无障碍（accessibility）责任。\n- 现金流风险：项目制账期、首单前空窗期长；获客成本（平台抽成或广告）挤压利润；单一大客户依赖。\n\n8. 不适合的人群\n- 完全不愿学工具、不动手做作品集的人（没作品集几乎接不到单）。\n- 想\"今天做明天暴富\"的人（首单常需 3–6 个月积累）。\n- 只愿做超低价套版、不愿提升设计与沟通能力的人（底端已商品化）。\n- 需要稳定工资、无法承受收入波动的人。\n- 排斥客户沟通、英语薄弱又只做本地市场的人（全球客户是主要红利）。\n\n9. 3 个可验证的入门步骤\n1. 7 天内用 Webflow University 或 Framer Academy（免费）学完基础课，clone 2 个真实站，做出 1 个属于自己的样站作品集（如\"虚构咖啡品牌官网\"），部署到免费子域名。验证：能否独立搭出响应式站点——能则继续，卡住则说明需补 HTML/CSS 基础。\n2. 14 天内选一个细分（如\"为独立开发者做 SaaS 落地页\"或\"为摄影师做作品集站\"），在 Upwork/Contra 搜 10 个相关 job，记录客户真实需求与报价区间（如 Figma→Webflow 还原、$2k–$6k 项目），并申请 3 个预算较低、适合练手的单子。验证：是否有真实订单在招人、你的报价是否有竞争力。\n3. 21 天内完成第一笔真实交付（可先以朋友/熟人折扣价 $200–$500 做一单真实官网，或接一个 Upwork 小单），走完\"沟通→搭建→上线→收款\"全流程，并写下交付 SOP。验证：客户是否愿意付费、交付耗时多久、是否愿意转维护 retainer——据此判断是否值得深耕。\n\n10. 核验来源\n1. Webflow 官方定价：https://webflow.com/pricing\n2. Framer 官方定价：https://www.framer.com/pricing\n3. Webflow Certified Partners 官方接单目录：https://experts.webflow.com/browse/\n4. Sacra — Framer 财务数据（$50M ARR、估值 $2B）：https://sacra.com/c/framer/\n5. MarketResearchForecast — 无代码建站工具市场 2025 约 $135 亿：https://www.marketresearchforecast.com/reports/no-code-website-builder-tools-39493\n6. Blankboard — Webflow 项目成本（美国）：http://www.blankboard.studio/originals/blog/webflow-project-cost-usa-2025\n7. Contra — Webflow 工作市场 2025（30 万+ teams、43% 自由职业）：https://contra.com/p/2ONv7XkM-webflow-developer-jobs-understanding-the-market-in-2025\n8. Freelance Task Insights — Webflow 最被需求任务（2025-07-31）：https://freelancetaskinsights.com/most-requested-webflow-freelance-tasks-insights-as-of-july-31-2025/\n9. Codeshaper — Framer 赚钱方式（模板 $1k–$10k/月）：https://codeshaper.net/blog/framer-website-builder-pros-cons-how-to-make-money-in-2025",
+      "startedAt": "2026-10-02T09:06:00+08:00",
+      "finishedAt": "2026-10-02T09:42:00+08:00",
+      "duration": "36m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "no-code",
+        "web-design",
+        "webflow",
+        "framer"
+      ],
+      "nextSteps": [
+        "7 天内学完 Webflow University / Framer Academy 基础课，clone 2 个站并做出 1 个样站作品集部署到免费子域名，验证能否独立搭响应式站点。",
+        "14 天内选定一个细分，在 Upwork/Contra 搜 10 个相关 job 记录真实需求与报价，并申请 3 个低价练手单，验证订单真实性与报价竞争力。",
+        "21 天内以折扣价完成第一笔真实交付，走完沟通→搭建→上线→收款全流程并写 SOP，验证客户付费意愿与是否可转维护 retainer。"
+      ],
+      "artifacts": [
+        {
+          "label": "Webflow 官方定价",
+          "path": "https://webflow.com/pricing"
+        },
+        {
+          "label": "Framer 官方定价",
+          "path": "https://www.framer.com/pricing"
+        },
+        {
+          "label": "Webflow Certified Partners 官方接单目录",
+          "path": "https://experts.webflow.com/browse/"
+        },
+        {
+          "label": "Sacra — Framer 财务数据（$50M ARR、估值 $2B）",
+          "path": "https://sacra.com/c/framer/"
+        },
+        {
+          "label": "MarketResearchForecast — 无代码建站工具市场 2025 约 $135 亿",
+          "path": "https://www.marketresearchforecast.com/reports/no-code-website-builder-tools-39493"
+        },
+        {
+          "label": "Blankboard — Webflow 项目成本（美国）",
+          "path": "http://www.blankboard.studio/originals/blog/webflow-project-cost-usa-2025"
+        },
+        {
+          "label": "Contra — Webflow 工作市场 2025",
+          "path": "https://contra.com/p/2ONv7XkM-webflow-developer-jobs-understanding-the-market-in-2025"
+        },
+        {
+          "label": "Freelance Task Insights — Webflow 最被需求任务",
+          "path": "https://freelancetaskinsights.com/most-requested-webflow-freelance-tasks-insights-as-of-july-31-2025/"
+        },
+        {
+          "label": "Codeshaper — Framer 赚钱方式",
+          "path": "https://codeshaper.net/blog/framer-website-builder-pros-cons-how-to-make-money-in-2025"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-10-02/niche-opc-industry.json"
+    },
     {
       "date": "2026-10-01",
       "taskId": "niche-opc-industry",
