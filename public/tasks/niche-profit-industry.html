@@ -17,9 +17,185 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">67 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">68 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-10-03.html">2026-10-03</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 SaaS、开源商业项目和独立开发者的 GitHub Actions 工作流体检、Dependabot 更新 PR 分组/排期、失败 CI 初筛与月度维护服务，属于中国境内可做的海外市场。它适合懂英文、GitHub、CI/CD、依赖管理和权限边界的 OPC/一人公司或数字游民小规模验证，但必须限定为授权下的配置、QA 和证据报告，不做渗透测试、安全审计、生产运维托管或零故障承诺。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+本期行业是 GitHub Actions / Dependabot 基础维护外包：帮海外小型 SaaS、独立开发者、开源商业项目、小型软件代理商和远程开发团队整理 GitHub Actions 工作流、Dependabot 配置、依赖更新 PR、失败 CI 初筛、月度运行成本/噪音检查和可交接维护文档。
+
+它不是完整 DevOps 托管，也不是安全审计、渗透测试或云生产运维。更准确的定位是“GitHub CI 与依赖更新维护微服务”：客户已有 GitHub 仓库和若干 workflow，但没人愿意定期看红灯、整理 Dependabot PR、调整触发条件、控制权限、清理过期 action、排查简单失败和写月报。
+
+它小众，是因为大公司有平台工程、DevOps 或安全团队，小项目却常把 CI 当成“能跑就行”的一次性配置。直到 Dependabot PR 堆积、Actions 分钟数飙升、pull_request_target 用错、第三方 action 长期不更新、缓存和 artifact 堆积、Node/Python 版本过期、release workflow 偶发失败，才发现这是一项持续但零碎的维护工作。普通软件外包更愿意接功能开发；专业 DevOps 顾问又常把项目做大。中间这段“低风险、可清单化、可月度维护”的缝隙，正适合一人公司试单。
+
+重要边界：服务者只做客户书面授权范围内的 GitHub workflow、Dependabot、基础失败日志、权限建议和报告；不索要生产云 root/owner 权限，不下载客户完整代码库做二次用途，不处理真实生产密钥，不承诺安全合规、漏洞清零、CI 永不失败、部署零事故或月度账单一定下降。
+
+## 目标市场
+
+本期选择：中国境内可做的海外市场，重点是英语市场。
+
+目标客户包括海外小型 SaaS、独立开发者、开源商业化项目、GitHub-first 的远程团队、WordPress/Shopify/Webflow 代理商的插件/主题项目、API 工具、CLI 工具、浏览器扩展、AI side project、小型移动 App 后端，以及管理多个客户仓库的软件工作室。
+
+为什么适合中国境内验证：GitHub、CI 日志、YAML、PR、issue 和报告都可远程处理；交付可异步进行；启动设备只需要电脑、稳定网络、测试仓库和英文沟通；不需要当地实体门店，也通常不需要当地强制牌照。新手可以先做只读体检和样例报告，再逐步承接低权限配置 PR。
+
+## 典型需求场景和客户是谁
+
+1. 独立 SaaS 创始人每周看到 Dependabot 开十几个 PR，但不知道哪些能合并、哪些要等、哪些需要分组或限流。
+2. 小型开源商业项目有 npm、Docker、GitHub Actions 三类更新，CI 经常因为缓存、lockfile、Node 版本或 action 版本失败，维护者不想把半天花在日志里。
+3. 代理商交付客户网站或插件项目后，需要把基本 build/test/lint workflow、release workflow 和依赖更新机制整理成可交接状态。
+4. 小团队 Actions 账单或分钟数上涨，但无人复盘是否存在无意义 matrix、过频 schedule、过长 artifact retention、重复 workflow 或错误触发。
+5. 开源项目希望把第三方 actions、GITHUB_TOKEN 权限、pull_request_target、secret 使用和 Dependabot 配置做一次基础巡检，但预算不足以采购完整安全审计。
+6. 客户已有 AI 编程工具自动提交代码，但缺少人来维护 CI 反馈循环、整理失败原因和把“红灯”转成可执行 issue。
+
+## 行业如何运作：参与方和工作流
+
+参与方包括客户创始人/技术负责人、仓库维护者、外包开发者、GitHub、Dependabot、CI runner、包管理生态、云部署平台、支付/平台收款工具，以及提供维护服务的一人公司或自由职业者。
+
+典型工作流：
+
+1. 范围确认：确认仓库数量、技术栈、workflow 数量、Dependabot 是否开启、是否只读审计还是提交 PR、是否涉及私有依赖和部署密钥。SOW 中写清不做安全审计、不接管生产部署、不承诺 CI 永不失败。
+2. 最小权限授权：优先让客户创建临时 collaborator、只读权限或 fork/branch 工作流；需要写权限时只限指定仓库和分支；不要索要组织 owner、云平台 root、长期 PAT 或生产 secret。
+3. 基线体检：检查 .github/workflows、dependabot.yml、workflow 触发条件、permissions、actions 版本、缓存、artifact 保留、matrix、并发控制、超时、失败频率和 Dependabot PR 堆积情况。
+4. 问题分类：把问题分成低风险配置建议、需要客户确认的行为变更、可能影响发布的风险项、需要专业安全/DevOps 介入的排除项。
+5. 配置与 PR：在客户授权下提交小 PR，例如 Dependabot 分组和排期、open-pull-requests-limit、GitHub Actions ecosystem 更新、GITHUB_TOKEN 最小权限、workflow 超时、并发取消、缓存 key 修正、artifact retention 调整、README 维护说明。
+6. 失败 CI 初筛：只做日志初步归因，如依赖版本冲突、测试环境变量缺失、lockfile 未更新、runner 版本变化、第三方服务限流；复杂业务 bug 或生产部署问题转给客户开发者。
+7. 月度维护：按月整理 Dependabot PR 状态、失败 workflow Top N、账单/分钟数异常、待合并更新、需客户确认事项、下月维护清单。
+
+## 盈利模式和报价口径
+
+收入来自一次性体检包、Dependabot 配置包、CI 失败初筛包、月度维护订阅、代理商白标维护和小型仓库交接文档。以下按 2026-10-03 Wise 页面显示 1 USD 约 6.705 CNY 粗略折算，只是服务报价样本，不是收益承诺。
+
+1. 入门体检包：80-250 美元，约 536-1676 元人民币。通常覆盖 1 个仓库、3-8 个 workflow、Dependabot 配置检查、失败样本阅读和一份问题清单，不直接改生产发布流程。
+2. 标准配置包：250-800 美元，约 1676-5364 元人民币。通常包含 Dependabot 分组/排期、基础 workflow 权限和触发条件整理、1-3 个小 PR、截图证据和交接文档。
+3. 月度维护包：150-1000 美元/月，约 1006-6705 元人民币。通常覆盖每月固定次数 PR/CI 复盘、Dependabot PR 初筛、失败日志分类、轻量配置 PR 和月报。
+4. 代理商白标包：按仓库或客户项目批量报价，单价更低但 SOP 要更稳定，且必须明确客户最终审批和部署责任。
+
+公开市场只能说明需求存在，不能直接推导收入。Upwork 的 CI/CD 人才页可见 CI/CD 专业人员和不同 hourly rate 样本；Upwork 资源页说明平台最低小时费为 3 美元、最低固定价为 5 美元，并提示新手常从较低费率开始。Fiverr 有 CI/CD pipeline 服务类目，但平台公开搜索页价格和质量差异很大，只能作为“有此类服务售卖”的旁证。GitHub Actions 自身也有明确成本结构：GitHub 文档说明私有仓库会消耗计划内分钟和存储，超出部分计费，且分钟成本归仓库 owner 而不是触发者。
+
+更克制的试单口径是：新手先做 80-250 美元的只读体检或 1 个配置 PR，不承诺账单下降或安全结果；有 3-5 个案例后再卖月度维护。毛收入要扣除平台抽佣、收款费、汇损、税费、售前沟通、返工、测试仓库成本、文档维护和时区会议。这个行业不是被动收入，更像“工程卫生维护”类小服务。
+
+## 入门门槛
+
+技能：英文读写、GitHub 仓库协作、YAML、GitHub Actions 触发器和 job/step 结构、基础 shell、Node/Python/Ruby/Go 等至少一种生态的包管理、Dependabot 配置、CI 日志阅读、权限最小化、secret 安全意识和技术报告写作。
+
+设备和软件：普通电脑、稳定网络、GitHub 账号、测试仓库、密码管理器、2FA、截图/录屏工具、Markdown 报告模板、基础脚本环境。可选工具包括 GitHub CLI、act、包管理器、日志分析脚本和工时记录工具。
+
+资质/合规：一般不需要当地门店或强制牌照，但不能冒充 GitHub 官方、认证安全审计机构、SOC 2 审计师或渗透测试团队。涉及金融、医疗、政府、国防、制裁地区、高敏感数据或生产部署责任时，新手 OPC 应拒绝或只做公开/脱敏材料下的只读建议。
+
+资金：启动成本低，主要是学习、样例仓库、报告模板和获客成本。真正的门槛是稳定、谨慎和不越权：CI 权限和密钥一旦处理不当，会造成代码泄露、供应链风险或部署事故。
+
+渠道：Upwork、Fiverr、Contra、LinkedIn、GitHub 开源项目赞助者网络、indie hacker 社群、SaaS founder 社群、远程开发代理商、DevTools 社区、技术博客和独立站。获客文案应强调 GitHub CI maintenance、Dependabot triage、workflow hygiene、monthly CI report，而不是“黑客式安全加固”或“保证部署不失败”。
+
+时间成本：有开发基础的人 1-2 周可做出样例仓库和体检模板；要能稳定判断多生态 CI 失败、权限边界和 Dependabot 策略，通常需要 1-3 个月真实项目积累。
+
+## 中国境内如何合规承接海外市场
+
+跨境获客：平台订单必须遵守平台规则。Upwork 明确禁止绕平台收款或在合同前交换外部联系方式，违规可能导致账号关闭；Fiverr 社区标准也要求交易在平台内完成，不得绕过支付系统。独立获客可通过 LinkedIn、独立站、GitHub profile 和代理商转介绍，但不要购买名单群发或假冒安全告警恐吓客户。
+
+远程交付：优先从只读体检、fork PR、客户屏幕共享或临时最小权限开始。需要写权限时，要求客户指定仓库、分支保护、review 流程和权限期限；项目结束后删除访问权限、清理本地副本和临时 token。不要把客户私有代码、日志、secret、artifact 上传到未经授权的 AI 工具。
+
+合同、发票和收款：平台内按平台托管、里程碑和争议规则走；独立客户用英文 SOW 写清仓库范围、交付物、权限、修改轮次、响应时间、排除项、验收标准、数据删除、保密和不承诺项。收款可用平台、PayPal、Payoneer、Wise Business 或银行跨境收款等合规路径，按主体资质和银行要求保存合同、账单、服务证明和结汇材料。
+
+税务申报：中国境内个人、个体户或一人公司承接海外服务，应按实际主体申报收入并保留凭证。国家税务总局公开问答显示，境内单位和个人向境外单位提供且完全在境外消费的部分专业技术服务、商务辅助服务等可能适用跨境应税行为免征增值税，但是否适用取决于服务性质、主体、合同和主管税务机关要求，不能简单理解为“境外收入不用报税”。
+
+外汇合规：国家外汇管理局《个人外汇管理办法》将个人外汇业务按交易性质分为经常项目和资本项目，要求银行和个人不得用分拆或虚假单证逃避真实性管理。服务者应保留真实合同、平台订单、发票/账单、收款流水和交付证明，不使用地下钱庄、虚假贸易或代收代付。
+
+平台规则：遵守 GitHub Terms、Actions/Dependabot 文档、客户组织规则和 Upwork/Fiverr 等获客平台规则。服务者不能虚构 GitHub 官方身份，不能刷 star、刷 PR、伪造贡献，不得利用客户权限访问无关仓库或复制客户商业代码。
+
+数据和隐私合规：CI 日志、issue、PR、artifact、测试截图、依赖清单和仓库内容可能含商业秘密、个人信息、token 或客户数据。中国《个人信息保护法》对委托处理个人信息要求约定目的、期限、方式、种类、保护措施和双方权利义务；受托人应按约定处理，合同终止后返还或删除，不得保留。即使服务主要接触代码，也应按最小化、脱敏、限期保存和授权工具使用来处理。
+
+语言和时区门槛：需要用英文解释 CI 失败原因、权限风险、为什么不应把所有 PR 自动合并、为什么不接触生产 secret，以及哪些问题需要客户开发者确认。多数工作可异步，但首次范围确认、权限开通和月度复盘通常需要欧美工作时间内响应。
+
+## 为什么适合或不完全适合 OPC/一人公司
+
+适合点：固定资产轻、服务可产品化、交付物清晰，一人能完成体检、配置 PR、截图证据、月报和异步沟通。它可与软件维护、技术写作、开源维护、轻 DevOps 和代码质量服务交叉销售。
+
+不完全适合点：责任边界敏感。客户可能把“CI/Dependabot 维护”误解成“生产部署托管”“安全合规兜底”或“云成本优化保证”。OPC 应避免高权限、高赔偿责任和高敏感行业项目，把服务限制在 GitHub 层的配置、诊断和报告。
+
+## 为什么适合或不完全适合数字游民/远程工作者
+
+适合点：工作主要在浏览器、Git、编辑器和文档中完成；可异步处理；对地点依赖低；适合用固定维护窗口和月报交付。
+
+不完全适合点：需要稳定网络、2FA 设备、密码管理器和安全工作环境。旅行中公共网络、设备丢失或时区混乱会放大客户仓库访问风险。数字游民更适合做预约制体检和月度维护，不适合承诺 24/7 CI 故障响应。
+
+## 潜在收益和成本结构
+
+验证期：每月 2-5 个入门体检或小配置包，按 80-250 美元/单，税前毛收入约 160-1250 美元，约 1073-8381 元人民币。前提是每单范围小、权限简单、只做一两个仓库，重点是积累英文案例和报告模板。
+
+熟练 OPC：每月 3-6 个标准包，加 3-10 个小额月度维护客户，税前毛收入可能约 1000-6000 美元，约 6705-40230 元人民币。前提是已有稳定获客渠道、能筛掉高风险客户、模板化交付成熟，并且不被紧急发布事故拖成免费 on-call。
+
+1-3 人小团队：可与软件代理商、开源维护服务商或微型 SaaS 顾问合作做白标维护，收入上限更高，但会出现权限审计、交接、质量控制、责任保险和排班压力。新手不应把团队化上限当作个人可立即获得的收益。
+
+成本包括平台抽佣、收款手续费、汇损、税费、售前沟通、试单折扣、返工、工具订阅、测试环境、报告模板维护、权限管理和时间机会成本。收益口径必须用“毛收入、前提条件和成本结构”描述，不能承诺稳定高收益。
+
+## 主要风险、合规注意事项和不适合人群
+
+主要风险：
+1. 权限风险：GitHub 写权限、workflow 权限、secret 和 deployment token 一旦处理不当，可能导致代码泄露、供应链攻击或错误发布。
+2. 责任边界风险：服务者不能把配置建议包装成安全合规证明，也不能承诺漏洞清零、部署零事故或 CI 永不失败。
+3. 生产影响风险：改 workflow 可能改变发布、测试、打包、缓存和部署行为，必须小 PR、可回滚、客户 review 后合并。
+4. 数据风险：CI 日志可能泄露 token、用户邮箱、测试数据、内部 URL 或商业信息；不要擅自上传到第三方工具或 AI 服务。
+5. 平台风险：GitHub Actions 计费、runner 价格、Dependabot 行为、平台限制和 API 可能变化，报价和报告要按当前文档核验。
+6. 获客平台风险：Upwork/Fiverr 等平台不得绕开支付、刷评价、伪造案例或要求客户提供平台外付款。
+7. 跨境税务外汇风险：海外收款应真实申报、保存凭证，不使用虚假合同、拆分或代收代付规避审核。
+8. 能力错配风险：复杂 CI 失败可能是业务代码、私有依赖、云权限、容器环境或安全策略导致，新手不能硬接。
+
+不适合人群：没有英文技术沟通能力的人；不懂 Git/GitHub 基础的人；安全意识弱、喜欢要 owner/root 权限的人；想把服务包装成安全审计或包过合规的人；无法长期看日志和 YAML 的人；不能接受细碎维护和客户 review 流程的人。
+
+## 新手可验证的 3 个低成本入门步骤
+
+1. 做一个公开 demo 仓库：包含 Node 或 Python 项目、2-3 个 GitHub Actions workflow、dependabot.yml、失败日志案例和修复前后对比，写成英文 case study。
+2. 设计一个只读 CI 体检模板：检查 workflow 触发、permissions、第三方 actions 版本、Dependabot 分组/排期、失败 workflow 样本、artifact/caching/timeout 和月报格式，不登录客户生产云账号。
+3. 上架或对外发布一个低风险小包：1 个仓库、最多 5 个 workflow、只读审计或 1 个配置 PR、一次复盘会议，明确不接触生产 secret、不承诺安全合规、不保证 CI 永不失败。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 已审查并建议通过，不需要重选题。
+
+- 中国境内承接海外市场适配度：4/5
+- OPC/一人公司适配度：5/5
+- 数字游民适配度：4/5
+- 合规风险等级：中
+- 跨境执行风险等级：中
+- 收益口径是否克制，有无夸大：需保持克制。建议只写一次性体检费和月度维护订阅，并明确为税前毛收入，扣除平台手续费、沟通成本、返工和税费后才是实际收益。本文未承诺稳定高收益或安全合规结果。
+- 信息来源是否足够可信：足够可信。核心依据来自 GitHub Actions、Dependabot、安全使用和计费官方文档，辅以 Upwork/Fiverr 平台规则、中国税务外汇和个人信息保护公开资料。
+- 最该补充或提醒的一句话：必须要求客户最小权限授权，禁止接触生产密钥，并在合同里写明“不承诺安全合规、不保证 CI 永不失败”。
+- 审稿结论：通过。这个选题小众但真实，适合做成工程维护微服务案例；只要避开安全审计、渗透测试和生产运维承诺，就有科普价值和可执行性。
+
+## 关键来源
+
+1. GitHub Docs - Workflows：说明 GitHub Actions workflow 是仓库中 .github/workflows 下的 YAML，可按事件、手动或计划触发，并用于 build/test/deploy 等任务。https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows
+2. GitHub Docs - Secure use reference：说明 Actions 安全实践，包括 GITHUB_TOKEN 最小权限、secret 处理、pull_request_target 风险、第三方 action 风险和 pin 到完整 SHA 等建议。https://docs.github.com/en/actions/reference/security/secure-use
+3. GitHub Docs - GitHub Actions billing：说明私有仓库 Actions 分钟和存储如何计费，费用归仓库 owner，写权限用户运行 Actions 可能产生成本。https://docs.github.com/en/billing/concepts/product-billing/github-actions
+4. GitHub Docs - Actions runner pricing：列出不同 GitHub-hosted runner 的每分钟价格，并说明 job 分钟向上取整。https://docs.github.com/en/enterprise-cloud@latest/billing/reference/actions-runner-pricing
+5. GitHub Docs - Dependabot alerts：说明 Dependabot alerts 会在依赖存在已知漏洞时提醒，帮助用户在风险变成安全问题前修复。https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts
+6. GitHub Docs - Dependabot security updates：说明 Dependabot security updates 会在 alert 触发时尝试开 PR，dependabot.yml 可自定义 schedule、PR 设置和监控生态，并支持 grouped security updates。https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-security-updates
+7. GitHub Docs - Configuring Dependabot version updates：说明通过提交 dependabot.yml 开启版本更新，并配置 package-ecosystem、directory 和 schedule。https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates
+8. GitHub Docs - Dependabot options reference：说明 dependabot.yml 可配置 groups、open-pull-requests-limit、schedule、rebase-strategy 等选项。https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference
+9. GitHub Docs - Managing Dependabot PRs：说明 Dependabot PR 可像普通 PR 一样管理，并可通过 label、author 和命令处理。https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs
+10. Upwork - Hire CI/CD Professionals：作为 CI/CD 自由职业市场和公开小时费样本。https://www.upwork.com/hire/cicd-freelancers/
+11. Upwork - Hourly Rates 2026：说明 Upwork 最低小时费 3 美元、最低固定价 5 美元，并提示新手费率应结合技能和市场。https://www.upwork.com/resources/upwork-hourly-rates
+12. Upwork Help - Circumvention：说明绕平台收款或合同前交换外部联系方式违反规则，可能导致账号受限或关闭。https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules
+13. Fiverr Help - Community Standards / Off-Platform policy：说明 Fiverr 交易应在平台内完成，不得绕过支付系统。https://help.fiverr.com/hc/en-us/articles/37554441398929-Our-Community-Standards
+14. 国家税务总局 - 哪些业务可以享受跨境应税行为免征增值税政策：说明向境外单位提供且完全在境外消费的部分专业技术服务、商务辅助服务等可能适用免征增值税。https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html
+15. 国家外汇管理局 - 个人外汇管理办法：说明个人外汇业务按经常项目和资本项目管理，银行和个人不得以分拆、虚假单证逃避真实性管理。https://www.safe.gov.cn/safe/2006/1225/5319.html
+16. 国家市场监督管理总局转载 - 中华人民共和国个人信息保护法：说明委托处理个人信息应约定目的、期限、方式、种类、保护措施和双方权利义务，合同终止后应返还或删除。https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html
+17. Wise USD/CNY Currency Converter：2026-10-03 页面显示 1 USD 约 6.705 CNY，本文按此粗略折算。https://wise.com/us/currency-converter/usd-to-cny-rate</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>03/10/2026, 16:01</p><p class="meta-line"><span>Finished</span>03/10/2026, 16:03</p><p class="meta-line"><span>Duration</span>2m 36s</p><p class="meta-line"><span>File</span><code>runs/2026-10-03/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>github</span><span>devtools</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>做一个公开 demo 仓库：包含 2-3 个 GitHub Actions workflow、dependabot.yml、失败日志案例和修复前后对比，写成英文 case study。</li><li>设计一个只读 CI 体检模板：覆盖 workflow 触发、permissions、第三方 actions 版本、Dependabot 分组/排期、失败样本、artifact/caching/timeout 和月报格式。</li><li>发布一个低风险小包：1 个仓库、最多 5 个 workflow、只读审计或 1 个配置 PR、一次复盘会议，并明确不接触生产 secret、不承诺安全合规或 CI 永不失败。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows">GitHub Docs - Workflows</a></li><li><a href="https://docs.github.com/en/actions/reference/security/secure-use">GitHub Docs - Secure use reference</a></li><li><a href="https://docs.github.com/en/billing/concepts/product-billing/github-actions">GitHub Docs - GitHub Actions billing</a></li><li><a href="https://docs.github.com/en/enterprise-cloud@latest/billing/reference/actions-runner-pricing">GitHub Docs - Actions runner pricing</a></li><li><a href="https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-alerts">GitHub Docs - Dependabot alerts</a></li><li><a href="https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-security-updates">GitHub Docs - Dependabot security updates</a></li><li><a href="https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates">GitHub Docs - Configuring Dependabot version updates</a></li><li><a href="https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference">GitHub Docs - Dependabot options reference</a></li><li><a href="https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs">GitHub Docs - Managing Dependabot PRs</a></li><li><a href="https://www.upwork.com/hire/cicd-freelancers/">Upwork - Hire CI/CD Professionals</a></li><li><a href="https://www.upwork.com/resources/upwork-hourly-rates">Upwork - Hourly Rates 2026</a></li><li><a href="https://support.upwork.com/hc/en-us/articles/360052511133-Circumvention-and-why-it-s-against-the-rules">Upwork Help - Circumvention</a></li><li><a href="https://help.fiverr.com/hc/en-us/articles/37554441398929-Our-Community-Standards">Fiverr Help - Community Standards</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html">国家税务总局 - 跨境应税行为免征增值税政策</a></li><li><a href="https://www.safe.gov.cn/safe/2006/1225/5319.html">国家外汇管理局 - 个人外汇管理办法</a></li><li><a href="https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html">中华人民共和国个人信息保护法</a></li><li><a href="https://wise.com/us/currency-converter/usd-to-cny-rate">Wise USD/CNY Currency Converter</a></li></ul></div>
+    </article><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
@@ -10050,7 +10226,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
     </article></div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 03/10/2026, 09:10</span>
+      <span>Generated 03/10/2026, 16:06</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
