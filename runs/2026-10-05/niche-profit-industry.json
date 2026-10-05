@@ -1,0 +1,100 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-10-05T16:00:00+08:00",
+  "finishedAt": "2026-10-05T16:09:00+08:00",
+  "summary": "今天的小众行业是面向海外 Shopify/DTC 小店的产品评价数据迁移、去重与评价组件上线前 QA 服务，属于中国境内可做的海外市场。它适合懂英文、Shopify 后台、表格清洗、评价 App 导入和数据隐私边界的 OPC/一人公司或数字游民小规模验证，但只能处理真实且有权使用的历史评价，不做假评、买评、改写评价或增长承诺。",
+  "details": "# Shopify/DTC 产品评价数据迁移、去重与评价组件上线前 QA 服务\n\n## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外 Shopify/DTC 小店的产品评价数据迁移、去重与评价组件上线前 QA 服务。它不是“刷评价”“买评价”或泛泛的电商代运营，而是在客户已经拥有真实历史评价、订单评价或旧评价 App 导出数据的前提下，把评价数据安全迁移到 Judge.me、Yotpo、Loox 等评价工具，并核对前端展示是否正确。\n\n典型交付包括：检查客户提供的 CSV/表格字段，清理重复评价，统一日期、评分、产品 handle、SKU、review title/body、customer name/email、photo/video URL 等字段；把旧 App、旧店铺、平台导出或历史评论表映射到目标评价 App 的导入模板；做小批量测试导入；导入后检查商品页 widget、星级汇总、移动端展示、主题位置、分页、语言、图片链接、过滤规则和错误日志；最后交付问题清单、导入记录、复测截图和删除/返还数据确认。\n\n它小众，是因为多数店主知道“评价很重要”，但不知道评价迁移中最容易出问题的不是按钮，而是字段映射、来源证明、图片 URL 失效、SKU/handle 错配、重复导入、评价日期格式、客户隐私、主题兼容和平台展示资格。普通虚拟助理可能只会照表上传，Shopify 开发者又未必愿意做大量数据清洗和证据截图；可收费的价值在于把“真实评价数据整理 + App 导入 + 前端 QA + 合规边界”做成稳定流程。\n\n重要边界：服务者只处理客户真实、合法取得且有权迁移展示的评价数据；不写假评、不买评、不导入来源不明或竞品评价、不修改评价倾向、不做 review gating 或压制差评、不承诺销量、转化、排名、Shop 展示资格或平台审核结果。\n\n## 目标市场\n\n本期属于“中国境内可做的海外市场”，主要面向英语市场 Shopify/DTC 小店和小型电商服务链。\n\n潜在客户包括：从 WooCommerce、BigCommerce、Squarespace、Etsy、旧 Shopify 主题或旧评价 App 迁到新 Shopify 店铺的小商家；从 Reviews.io、Stamped、Loox、Yotpo、Judge.me 或其他评价工具互迁的商家；做店铺改版、主题升级、App 替换的小型代理商；需要白标外包导入和 QA 的 Shopify freelancer、DTC 顾问和迁站团队。\n\n为什么适合 OPC/数字游民验证：它不需要海外门店、仓储、当地牌照或线下驻场，主要依赖电脑、表格处理、英文沟通、Shopify 后台基础、评价 App 文档阅读和截图报告。新手可以从“50-200 条真实历史评价的 CSV 清理 + 测试导入 + 前端 QA”小包开始验证，不必承接完整店铺代运营。\n\n## 典型需求场景和客户是谁\n\n1. 小店从旧评价 App 换到 Judge.me、Yotpo 或 Loox，希望保留真实历史评价、图片评价和商品星级。\n2. Shopify 店铺换主题后，评价 widget 不显示、星级位置错乱、移动端折叠异常或结构化片段不一致。\n3. 客户从旧平台迁到 Shopify，只有历史评价表格，需要清理字段、匹配产品 handle/SKU 并做导入前检查。\n4. 店主误以为 CSV 导入后所有评价都能自动同步到 Shop，需要有人解释展示资格和后台限制，并提供证据化 QA。\n5. 小型代理商忙于迁站主流程，把评价迁移、重复检查、截图复测和客户说明外包给稳定供应商。\n6. DTC 品牌做多语言站点，评价内容、日期、客户名显示和图片链接需要在新版商品页上重新核对。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括 Shopify 店主、迁站/主题开发者、评价 App、第三方代理商、数据清洗服务商、支付/收款平台和消费者保护监管方。中国境内承接者应把自己定位为“授权评价数据整理与上线前 QA 供应商”，而不是增长顾问、评论营销公司或平台官方代理。\n\n标准工作流：\n\n1. 预筛选：确认客户店铺、目标评价 App、评价数量、来源系统、是否有导出记录或旧后台截图、是否包含图片/视频、是否涉及儿童、医疗、健康、金融、成人、酒精、CBD 等敏感品类。\n2. 授权确认：要求客户书面确认评价真实、来源合法、有权迁移展示，且 customer name、email、头像、图片 URL 等个人信息可在约定范围内处理；明确服务方不创建、不购买、不改写评价倾向。\n3. 数据接收：优先接收导出的 CSV、旧 App 导出文件、产品导出表和目标 App 模板；避免索要店主主账号、支付信息、税号或不必要客户名单。\n4. 字段映射：把旧字段映射到目标模板，核对 product handle、SKU、review title、body、rating、created_at、reviewer name/email、verified buyer、image URL、reply 等字段。\n5. 清洗去重：处理日期格式、编码、换行、HTML、空字段、重复行、失效图片链接、SKU 对不上、已下架产品和异常评分；保留变更日志。\n6. 测试导入：先做小批量或测试店导入，核对错误提示、字段识别和前端展示，再批量导入。\n7. 前端 QA：检查商品页 widget、集合页星级、移动端、筛选排序、语言、分页、图片、主题兼容和 Shop 展示限制说明。\n8. 交付归档：交付清洗后的导入文件、导入记录、错误清单、复测截图、未处理项、客户需确认事项和数据删除/返还确认。\n\n## 盈利模式和报价口径\n\n收入来自专业服务费，不来自平台套利、销售分成或“评论数量增长”。常见收费方式包括：按评价数量收费的 CSV 清洗；按店铺/评价 App 收费的迁移小包；按主题/页面收费的 widget QA；按小时收费的评价数据整理；给 Shopify 代理商或迁站团队做白标分包。\n\n公开报价样本只能说明市场上存在相关供需，不代表稳定收入。2026-10-05 核验时，Upwork 可见 Judge.me reviews integration 固定价约 $40 的历史样本、Judge.me reputation management 相关岗位约 $10-$35/hour、Shopify product lister 工作中包含 importing reviews 等类似任务；Fiverr 也可见 Shopify review import / product reviews import 相关低价套餐。平台样本差异大，不能把它包装成高利润项目。\n\n按 2026-10-05 1 USD 约 6.7 元人民币粗略折算：\n\n- 入门 CSV 清理/导入前 QA 小包：$30-$80，约 201-536 元人民币，适合 50-200 条评价的字段检查、去重和导入前报告。\n- 小型迁移 + widget QA：$80-$200，约 536-1340 元人民币，适合一个店铺、一个目标评价 App、200-1000 条评价、一次测试导入和一次复测。\n- 代理商白标批处理：$200-$600，约 1340-4020 元人民币，适合多店铺、多产品、较复杂字段映射或主题展示 QA，但需要更强流程和保密。\n- 按小时协作：相关公开岗位样本约 $10-$35/hour，约 67-235 元人民币/小时；实际能否接到取决于英文沟通、Shopify 经验、平台评价和返工率。\n\n更现实的收益模型是：新手前 1-2 个月用 3-8 个小单验证流程，毛收入可能只有 $90-$640；有作品集、模板和代理合作后，每月 5-15 个 $80-$200 项目才可能形成较稳定现金流。净收入需要扣除平台费、收款费、汇损、税费、工具订阅、云盘、售前沟通、返工、数据核对和时区沟通成本。不能承诺稳定月入，也不能用“增加好评数量”作为卖点。\n\n## 入门门槛\n\n技能：英文沟通、Shopify 后台基础、评价 App 导入导出流程、CSV/Google Sheets/Excel 数据清洗、字段映射、去重、日期和编码处理、基础 HTML/CSS 观察能力、截图报告、客户资料保密和平台政策意识。最好能理解 Shopify product handle、variant/SKU、collection、theme app block、metafields、app embed 等基础概念。\n\n设备/软件：电脑、稳定网络、表格工具、文本编辑器、截图工具、云盘、Shopify Partner 或 collaborator 工作流、目标评价 App 文档、可选的 OpenRefine/Excel Power Query/Google Sheets 函数。新手不需要昂贵设备，但需要严谨的数据备份、版本命名和错误回滚意识。\n\n资质/合规：通常不需要海外当地牌照，但必须把消费者评价真实性作为硬门槛。评价中可能包含姓名、邮箱、头像、订单信息、照片、视频、地理位置或健康/儿童相关敏感信息，服务方应按客户委托处理，限定范围、期限和删除机制。涉及广告法、消费者保护、隐私、医疗/金融/儿童等敏感行业时，不提供法律意见或合规认证。\n\n资金和时间：低成本启动可控制在几百元人民币内，主要投入是学习 Shopify/评价 App 文档、搭建测试店、准备 checklist 和作品集。若已有表格和电商后台基础，1-2 周可做简单 CSV 清理；要稳定处理复杂迁移、图片评价和主题兼容，通常需要 1-3 个月积累模板和错误库。\n\n渠道：Upwork、Fiverr、LinkedIn、Shopify Partner 社群、DTC 代理商转介绍、主题开发者合作、迁站 freelancer 合作、Reddit/Indie Hackers/电商社群。服务标题应具体，例如 Shopify product reviews import QA、Judge.me/Yotpo/Loox CSV migration cleanup、review widget QA for Shopify theme launch。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台单要遵守 Upwork/Fiverr 的站内沟通、托管付款、身份和禁止绕平台规则；独立站或 LinkedIn 获客要避免群发垃圾邮件、假案例和“快速增加好评”的灰色话术。冷启动素材可以是匿名 demo：一份评价 CSV 字段映射表、一份导入前检查清单、一份 widget QA 截图报告和一页合规边界说明。\n\n远程交付：优先让客户提供导出的 CSV、产品表和低敏截图。若需要进入后台，使用 Shopify collaborator 或客户创建的临时低权限 staff/collaborator 权限，只申请必要权限，避免接触支付、客户全量名单、财务、税务和主账号 2FA。项目结束后要求撤权，并按 SOW 删除或返还数据。\n\n合同/发票或收款：平台订单以平台合同和账单为凭证；直客单应签英文 SOW，写清店铺、目标评价 App、评价数量范围、数据来源由客户保证、交付格式、返工轮次、是否包含测试导入、是否包含前端 QA、不做假评/买评/营销结果承诺、付款节点、保密和删除期限。中国境内个人、个体工商户或公司应按自身主体开具 invoice 或国内发票，并保留合同、平台账单、收款流水和汇率记录。\n\n税务申报和外汇：国家税务总局资料提示，中国居民个人取得境外所得应依法办理申报，常见申报期为取得所得次年 3 月 1 日至 6 月 30 日。国家外汇管理局公开问答显示，个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值 5 万美元；服务收入应走平台、银行或合规支付机构，不使用地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：Judge.me、Yotpo、Loox 都有各自导入模板、字段要求和导入流程，平台支持“导入评价”不等于允许导入虚假或来源不明评价。Shopify 对 Shop 渠道的评价展示另有资格说明，CSV 上传或从其他 App 迁移的评价不一定能显示在 Shop；这句话必须在报价和交付说明里提前写清楚。\n\n数据/隐私合规：评价数据可能包含个人信息。根据《个人信息保护法》的合法、正当、必要、最小范围和受托处理要求，服务方只处理必要字段，不下载无关客户数据，不把 CSV 上传到未授权 AI/公开工具，不把客户评价放入作品集，按约定加密保存并删除。若涉及欧盟/英国消费者数据，也要提醒客户确认 GDPR/UK GDPR 下的 controller/processor 责任和数据处理协议。\n\n语言和时区门槛：英文售前、英文 QA 报告和评价 App 文档阅读是硬门槛。美国客户可能需要中国早晚沟通，欧洲客户相对友好；大量工作可异步完成，但批量导入前最好预约客户在线窗口，避免出错后无人确认。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：交付物清晰、固定资产轻、流程可模板化，一个人可以完成数据接收、清洗、映射、测试导入、前端 QA 和报告。它适合从小店铺、小批量评价和单 App 迁移开始，逐步沉淀字段模板、错误清单和客户授权条款。\n\n不完全适合点：大规模迁站、多语言评价、图片/视频评价、多个 App 互迁、主题深度定制和敏感品类可能超出单人能力。OPC 必须拒绝假评、买评、改写差评、来源不明数据和“提升转化/排名/Shop 展示”的承诺；复杂项目应分阶段收款、先备份、先小批量测试。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：核心工作依赖电脑、表格、浏览器后台和截图报告，天然适合远程；大多数沟通可以异步完成；小包项目周期短，适合用固定模板管理。\n\n不完全适合点：批量数据和后台权限需要稳定网络、安全设备和可靠备份。旅途中公共 Wi-Fi、共享设备、不安全云盘或随意使用 AI 工具处理客户 CSV 都会带来泄密风险。数字游民还要处理时区窗口、紧急回滚和客户撤权确认。\n\n## 潜在收益、前提条件和成本结构\n\n低成本验证期：每月 3-8 个 $30-$80 小包，毛收入约 $90-$640，折合约 603-4288 元人民币。这个阶段主要验证需求、模板、导入风险和返工边界，不适合预期高收入。\n\n标准接单期：有作品集、平台评价和 SOP 后，每月 5-15 个 $80-$200 项目，毛收入约 $400-$3000，折合约 2680-20100 元人民币。前提是能稳定处理字段映射、导入报错、主题展示 QA 和英文交付。\n\n白标合作期：与 Shopify 迁站 freelancer、主题开发者、DTC 代理商形成合作后，可按店铺或按批次收费；但净利润取决于评价数量、数据质量、图片链接有效性、客户确认速度、返工率、平台费、税费和沟通成本。主要成本包括平台抽佣、收款费、汇损、税费、工具订阅、云盘、安全备份、样例制作、售前沟通、返工和争议处理。收益只能按区间和条件表达，不能承诺稳定月入。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：\n\n1. 假评和消费者保护风险：FTC 规则明确打击虚假评价、购买特定倾向评价、内部人员未披露评价、操纵社交指标和压制差评等行为；本服务不能沾这些边。\n2. 来源授权风险：客户必须能说明评价来自真实购买、真实服务体验、旧平台或旧 App 导出，并有权迁移展示。来源说不清的评价应拒绝处理。\n3. 个人信息风险：评价 CSV 可能包含姓名、邮箱、头像、照片、订单号、IP、位置或敏感内容，必须最小化处理和按约删除。\n4. 技术错配风险：product handle/SKU 错配会把评价挂到错误商品；日期格式、编码、换行、图片 URL 和重复行也容易导致导入失败或展示异常。\n5. 平台展示误解：Shopify Shop 渠道并不保证 CSV 迁移评价可展示到 Shop；评价 App 前端显示成功也不等于所有渠道可同步展示。\n6. 权限安全风险：后台权限过大、未撤权、公共网络操作和数据备份混乱都会引发安全问题。\n7. 低价竞争风险：简单导入容易被低价替代，只有把授权确认、字段映射、复测证据和错误报告做好，才有议价空间。\n8. 跨境税务和外汇风险：平台提现、PayPal/Wise/银行入账不等于免税，应保留合同、账单、收款和结汇凭证。\n\n不适合人群：想靠假评赚钱的人；不愿拒绝灰色需求的人；表格处理粗心的人；英文沟通弱、不会读官方文档的人；不能保护客户数据的人；喜欢承诺“提升转化、快速增评、包展示”的人；不能接受重复核对和截图留痕的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做一份评价迁移 checklist：用 Judge.me、Yotpo、Loox、Shopify 和 FTC 官方资料整理 35 项检查表，覆盖来源授权、字段映射、去重、图片 URL、product handle/SKU、测试导入、widget QA、Shop 展示限制和数据删除。\n2. 搭建一个 demo 店和样例 CSV：用自造的非真实消费者样例数据，在 Shopify 测试店或开发店里练习 30-50 条评价的导入、错误修复、前端截图和报告模板，不使用任何真实客户数据做公开样例。\n3. 发布一个窄服务试单：在 Upwork/Fiverr/LinkedIn 发布“Shopify review CSV cleanup + Judge.me/Yotpo/Loox import QA”小包，限定 50-200 条真实授权评价、1 个目标 App、1 次测试导入和 1 次复测，明确拒绝假评、买评、改写评价、Shop 展示保证和增长承诺。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：4/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：克制，无明显夸大。$30-$150 小单、$10-$35/hour 作为相关岗位样本是保守写法；必须强调毛收入、平台费、收款费、税费、返工成本。\n- 信息来源是否足够可信：足够。平台官方文档、Shopify 帮助中心、FTC、国家税务总局、外汇政策和个人信息保护法属于高可信来源；Upwork/Fiverr 只能作为“有类似服务存在”的弱样本，不能用来证明稳定需求或稳定收入。\n- 最该补充或提醒的一句话：接单前必须让客户书面确认评价来源、导出权限、图片/个人信息使用授权，并明确“CSV 迁移只做真实历史评价整理与展示 QA，不保证 Shop 展示、销量、排名或转化”。\n- 是否建议通过：建议通过。应以“合规型评价数据迁移 QA 小服务”呈现，避免写成“快速增加评论/提升转化”的灰色营销题。\n\n## 关键核验来源\n\n1. Judge.me Help Center - Importing reviews with Judge.me Import Wizard：核验 Judge.me 支持通过导入向导上传 CSV 文件、选择导入类型、匹配字段和查看错误提示。https://judge.me/help/en/articles/8223181-importing-reviews-with-judge-me-import-wizard\n2. Judge.me Help Center - Reviews CSV template：核验 Judge.me 对 review title/body、rating、review date、product handle、reviewer name/email、picture/video URLs 等字段模板有具体要求。https://judge.me/help/en/articles/8398179-judge-me-reviews-csv-template\n3. Yotpo Support - Importing reviews to Yotpo：核验 Yotpo 支持 CSV 导入评论，并要求按模板字段、产品标识、reviewer 信息、content、score、date 等整理。https://support.yotpo.com/v1/docs/importing-reviews-to-yotpo\n4. Yotpo Support - Exporting your reviews：核验 Yotpo 支持导出评价，说明评价 App 之间迁移和备份场景真实存在。https://support.yotpo.com/docs/exporting-your-reviews\n5. Loox Help Center - Import reviews to Loox from a custom file：核验 Loox 支持自定义文件导入评价，并要求按模板字段和数据格式处理。https://help.loox.io/support/solutions/articles/501000162452\n6. Loox Help Center - Export reviews from Loox：核验 Loox 支持导出评价数据，支撑旧 App 数据迁出场景。https://help.loox.io/support/solutions/articles/501000099668\n7. Shopify Help Center - Review sync from partner apps：核验 Shop 渠道对从 partner app 同步的评价有资格限制，CSV 上传或迁移的评价不一定显示在 Shop。https://help.shopify.com/en/manual/online-sales-channels/shop/product-reviews/sync-partner-apps\n8. Shopify Help Center - Request access to a merchant's store：核验 Shopify collaborator access、权限请求和远程协作工作流。https://help.shopify.com/en/partners/dashboard/managing-stores/request-access\n9. FTC - Consumer Reviews and Testimonials Rule: Questions and Answers：核验美国消费者评价规则禁止虚假评价、购买特定评价、内部人员未披露评价、压制负面评价等行为。https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers\n10. FTC - Final Rule on the Use of Consumer Reviews and Testimonials：核验规则发布时间、生效时间和违法行为范围。https://www.ftc.gov/system/files/ftc_gov/pdf/r311003consumerreviewstestimonialsfinalrulefrn.pdf\n11. Upwork job sample - Shopify / Judge.me reviews integration：核验海外平台上存在 Shopify/Judge.me 评价集成小单需求和约 $40 固定价样本。https://www.upwork.com/freelance-jobs/apply/Judge-Reviews-Integration_~021891223400434211757/\n12. Upwork job sample - Judge.me Reputation Management Expert：核验相关评价管理岗位有 $10-$35/hour 样本，但本报告仅把它作为相邻岗位价格样本。https://www.upwork.com/freelance-jobs/apply/Judge-Reputation-Management-Expert_~021870284222345634119/\n13. Upwork job sample - Shopify product lister importing reviews：核验商品上架工作中包含 import reviews 等真实任务。https://www.upwork.com/freelance-jobs/apply/Shopify-Product-Lister_~021881205354246921980/\n14. Fiverr marketplace sample - Shopify reviews import search：核验 Fiverr 上存在 Shopify review import / product reviews import 相关公开服务样本，仅作市场存在参考。https://www.fiverr.com/search/gigs?query=shopify%20reviews%20import\n15. Wise USD/CNY historical rate：核验 2026-10-05 USD/CNY 约 6.7 的粗略折算口径。https://wise.com/in/currency-converter/usd-to-cny-rate/history/05-10-2026\n16. 国家税务总局政策解读 - 个人所得税自行纳税申报有关问题：核验居民个人从中国境外取得所得，应在次年 3 月 1 日至 6 月 30 日办理纳税申报。https://www.chinatax.gov.cn/chinatax/n810341/n810760/c3964127/content.html\n17. 国家外汇管理局上海市分局 - 外汇政策问答（2026 年第一期）：核验个人结汇和境内个人购汇年度便利化额度分别为每人每年等值 5 万美元，以及经常项目办理口径。https://www.safe.gov.cn/shanghai/2026/0402/2412.html\n18. 中国人大网 - 中华人民共和国个人信息保护法：核验个人信息处理、受托处理、最小必要和安全保护边界。https://www.npc.gov.cn/WZWSREL25wYy8vLy8vL2MyL2MzMDgzNC8yMDIxMDgvdDIwMjEwODIwXzMxMzA4OC5odG1s",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global",
+    "shopify",
+    "ecommerce"
+  ],
+  "nextSteps": [
+    "做一份评价迁移 checklist：用 Judge.me、Yotpo、Loox、Shopify 和 FTC 官方资料整理 35 项检查表，覆盖来源授权、字段映射、去重、图片 URL、product handle/SKU、测试导入、widget QA、Shop 展示限制和数据删除。",
+    "搭建一个 demo 店和样例 CSV：用自造的非真实消费者样例数据，在 Shopify 测试店或开发店里练习 30-50 条评价的导入、错误修复、前端截图和报告模板。",
+    "发布一个窄服务试单：限定 50-200 条真实授权评价、1 个目标 App、1 次测试导入和 1 次复测，明确拒绝假评、买评、改写评价、Shop 展示保证和增长承诺。"
+  ],
+  "artifacts": [
+    {
+      "label": "Judge.me - Importing reviews with Import Wizard",
+      "path": "https://judge.me/help/en/articles/8223181-importing-reviews-with-judge-me-import-wizard"
+    },
+    {
+      "label": "Judge.me - Reviews CSV template",
+      "path": "https://judge.me/help/en/articles/8398179-judge-me-reviews-csv-template"
+    },
+    {
+      "label": "Yotpo - Importing reviews to Yotpo",
+      "path": "https://support.yotpo.com/v1/docs/importing-reviews-to-yotpo"
+    },
+    {
+      "label": "Yotpo - Exporting your reviews",
+      "path": "https://support.yotpo.com/docs/exporting-your-reviews"
+    },
+    {
+      "label": "Loox - Import reviews from a custom file",
+      "path": "https://help.loox.io/support/solutions/articles/501000162452"
+    },
+    {
+      "label": "Loox - Export reviews from Loox",
+      "path": "https://help.loox.io/support/solutions/articles/501000099668"
+    },
+    {
+      "label": "Shopify - Review sync from partner apps",
+      "path": "https://help.shopify.com/en/manual/online-sales-channels/shop/product-reviews/sync-partner-apps"
+    },
+    {
+      "label": "Shopify - Request collaborator access",
+      "path": "https://help.shopify.com/en/partners/dashboard/managing-stores/request-access"
+    },
+    {
+      "label": "FTC - Consumer Reviews and Testimonials Rule Q&A",
+      "path": "https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers"
+    },
+    {
+      "label": "FTC - Final Rule on Consumer Reviews and Testimonials",
+      "path": "https://www.ftc.gov/system/files/ftc_gov/pdf/r311003consumerreviewstestimonialsfinalrulefrn.pdf"
+    },
+    {
+      "label": "Upwork - Shopify Judge.me reviews integration sample",
+      "path": "https://www.upwork.com/freelance-jobs/apply/Judge-Reviews-Integration_~021891223400434211757/"
+    },
+    {
+      "label": "Upwork - Judge.me reputation management sample",
+      "path": "https://www.upwork.com/freelance-jobs/apply/Judge-Reputation-Management-Expert_~021870284222345634119/"
+    },
+    {
+      "label": "Upwork - Shopify product lister reviews import sample",
+      "path": "https://www.upwork.com/freelance-jobs/apply/Shopify-Product-Lister_~021881205354246921980/"
+    },
+    {
+      "label": "Fiverr - Shopify reviews import search sample",
+      "path": "https://www.fiverr.com/search/gigs?query=shopify%20reviews%20import"
+    },
+    {
+      "label": "Wise - USD/CNY historical rate",
+      "path": "https://wise.com/in/currency-converter/usd-to-cny-rate/history/05-10-2026"
+    },
+    {
+      "label": "国家税务总局 - 境外所得申报政策解读",
+      "path": "https://www.chinatax.gov.cn/chinatax/n810341/n810760/c3964127/content.html"
+    },
+    {
+      "label": "国家外汇管理局上海市分局 - 个人外汇政策问答",
+      "path": "https://www.safe.gov.cn/shanghai/2026/0402/2412.html"
+    },
+    {
+      "label": "中国人大网 - 个人信息保护法",
+      "path": "https://www.npc.gov.cn/WZWSREL25wYy8vLy8vL2MyL2MzMDgzNC8yMDIxMDgvdDIwMjEwODIwXzMxMzA4OC5odG1s"
+    }
+  ]
+}
