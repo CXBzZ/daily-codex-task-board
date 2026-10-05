@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-10-04T08:06:34.461Z",
+  "generatedAt": "2026-10-05T01:14:17.251Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-10-05",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：Kindle 自助出版 Amazon 广告代运营",
+      "status": "success",
+      "summary": "为自助出版作者（KDP 独立作家）提供 Amazon 站内广告（AMS/Sponsored Products）的搭建、优化与托管服务。它聚焦营销侧而非内容生产，单人即可远程异步完成，启动成本近乎为零（Amazon Ads Console 免费、可选 Publisher Rocket $97 一次性），且全球 KDP 作者客户与 Amazon 广告 $68.6B 年收入的庞大市场为其提供了真实可验证的需求支撑，非常适合一人公司与数字游民。",
+      "details": "# 每日小众赚钱行业调研：Kindle 自助出版 Amazon 广告代运营\n\n## 1. 行业是什么，为什么小众\n一句话定义：帮自助出版作者（KDP 独立作家）搭建、优化并托管他们在 Amazon 站内广告（Sponsored Products / Sponsored Brands 等 AMS 广告）的投放，以提升书籍曝光与销量。\n为什么小众：自出版生态里绝大多数服务集中在\"生产侧\"——排版、封面、插图、代笔——而\"营销侧\"的 Amazon 广告投放（PPC）需要理解竞价、否定关键词、搜索词 harvest、TACoS 等一套专门技能，普通作者既不懂也不愿学；同时这个需求被夹在\"传统图书营销\"和\"跨境电商 PPC\"之间，搜索量低、教程分散，是一个被低估的隐形赛道。它与本看板已有的\"电子书排版\"\"书籍封面设计\"\"AI 儿童绘本\"等生产侧服务明确区分——本次聚焦广告投放与获客，非内容生产。\n\n## 2. 如何运作\n- 典型客户：在 Amazon KDP 上架电子书/纸书的独立作者，尤其是系列小说（言情、惊悚、奇幻）、非虚构专业书、儿童书的作者；痛点是不投广告没曝光、投了又亏钱（ACOS 过高）。需求触发点通常在\"书已上架但销量惨淡\"\"Launch 周想冲榜\"\"已有广告但 TACoS 居高不下\"。\n- 核心交付物：广告账户诊断报告 + 关键词与否定词表 + 搭建/优化后的广告活动 + 周期性（周/月）数据报告（含 ACOS/TACoS、搜索词、销量归因）。\n- 完整工作流：① 获客（Upwork/Fiverr/Reddit r/selfpublish、BookTok 社群、作家论坛、过往客户转介绍）；② 接单做诊断（读客户后台搜索词报告、看类目竞争）；③ 搭建广告活动（Sponsored Products 自动+手动、Sponsored Brands 品牌词、Category/ASIN 定向）；④ 持续优化（每周否定无效词、调整出价、扩展高转化词）；⑤ 出报告并收款（月费制或项目制，客户保留后台查看权限）。\n- 关键工具和平台：Amazon Ads Console（免费，核心操作台）；关键词/竞争研究用 Publisher Rocket（$97 一次性）、Helium 10（$39/月起）；数据报表用 ScribeCount、BookReport；接单平台 Upwork、Fiverr、Contra；沟通用邮件/Notion。\n\n## 3. 盈利模式\n- 收入来源与定价：主要有两种。① 固定月费托管：行业公开区间约 $500–$2,000/月（getecomhelp 2025；Fiverr 低端 $200–$500/月，Upwork 高端 $50–$150/小时）；② 项目制搭建+优化：$100–$300 一次性起步（Fiverr 每项目均价约 $139，amzbase 引用 Internet Archive 2025-12 快照），后续可转月费。也可采用\"固定费 + 与 TACoS 挂钩的绩效奖金\"（amzbase 建议，避免\"按广告支出抽成\"这种错向激励）。\n- 利润空间：纯服务、边际成本极低。工具成本约 $97 一次性 + 可选 Helium 10 $39–$99/月；平台抽成仅在通过 Upwork/Fiverr 接单时产生（Upwork 约 10% 起、Fiverr 约 20%）。扣掉工具与平台费后，单人托管 5–10 个作者账户、月费 $500–$1,500/客户时，月毛利可达 $2,500–$12,000+，几乎全是人力时间。\n- 复购/长期合同：强。广告是持续运营，客户一旦跑通正 ROI 通常不会停；常见按月续费，粘性高。\n\n## 4. 入门门槛\n- 技能：需要懂 Amazon Ads 后台逻辑、关键词匹配类型、否定关键词策略、搜索词 harvest、ACOS/TACoS/ROAS 指标解读、基础 Excel/数据透视。学起来 1–2 周可入门上手，2–3 个月能熟练。无需编程。\n- 工具：起步几乎零成本——Amazon Ads Console 免费即可操作；强烈建议买 Publisher Rocket（$97 一次性）做关键词/类目研究；可选 Helium 10 Starter $39/月。接单平台免费注册。\n- 资金：启动 $0–$150（Publisher Rocket 一次性可选）；无库存、无场地。\n- 时间：从零到第一单，若已有基础，1–3 周内在 Upwork/Fiverr 上架 gig 并拿到首个 $30–$100 小单是现实可行的；积累案例后 1–2 个月可稳定获得月费客户。\n\n## 5. 为什么适合 OPC / 数字游民\n- 异步交付：广告活动搭好后由 Amazon 算法自动跑，你只需每周抽几小时看搜索词报告、调否定词，不要求实时在线，时区友好，适合边旅行边做。\n- 全球客户：KDP 作者遍布美/英/德/日等 10+ 国家，英文沟通即可服务全球，没有本地执照或物理场所要求。\n- 边际成本极低：同一套方法论可复制到多个客户，增加一个客户几乎不增加固定成本，具备规模化潜力（到 10–20 个账户时再考虑用 VA 辅助）。\n- 平台化获客：Upwork/Fiverr 上有 1,600+ 在售\"Book & Ebook Marketing\"项目，需求被平台验证，无需自建流量。\n\n## 6. 潜在收益（谨慎，不承诺）\n以下为公开参考数据，不等于个人收入。\n- 新手阶段（0–6 个月）：在 Upwork/Fiverr 接单，单项目 $30–$300，或月费 $200–$500/客户托管 1–3 个账户，月收入约 $300–$1,500。ZipRecruiter 显示美国 Amazon PPC Specialist 平均年薪约 $54,526（2026-08），但这是全职岗，自由职业者弹性更大。\n- 成熟阶段（6–18 个月）：建立口碑后月费 $800–$2,000/客户、托管 5–10 个账户，月收入 $4,000–$15,000+。底层市场支撑：Amazon 广告 2025 年总收入 $68.6B（+22.1% YoY），是全球第三大广告平台（仅次于 Google、Meta），自出版作者正是其中大量中小广告主；全球自助出版市场 2025 年 $3.8B、预计 2034 年 $8.1B（CAGR 8.8%）。\n- 作者侧支付能力：Amazon 2025 年初累计向自出版作者支付约 $39 亿，全职自出版作者 2023 年中位收入 $24,000、28% 年收入超 $50,000（indie 调研），有真实预算投广告。\n- 重要提示：这些是行业与平台数据，个人收入取决于获客能力、案例与续费率，不构成收益承诺。\n\n## 7. 主要风险\n- 市场风险：Amazon 广告竞争加剧推高 CPC（2026 年均 CPC 约 $1.22），作者广告预算有限；经济下行时作者会先砍营销费。\n- 技术/平台风险：Amazon 持续改版广告后台（2025 末推出 unified Campaign Manager），操作逻辑变化需持续学习；Amazon 算法与竞价机制调整会直接影响效果。\n- 合规风险（重点）：Amazon 禁止把广告账户\"全权托管\"给第三方——不得索要主账号密码/2FA，应通过子账户或官方 API（SP-API）授权操作（大数跨境白皮书引用 Amazon Advertising Terms of Use）。更关键的是\"关联账户\"封号风险：一旦你用同一设备/网络/IP 操作多个客户 KDP 账户，Amazon 系统可能判定为\"共同控制\"而连带封号（amazonsellers.attorney 多个真实案例）。务必为每个客户用隔离环境 + 客户授权的子账户。税务上跨境收款需合规申报。\n- 现金流风险：KDP 版税平均 60 天账期，而广告费即时扣，存在约 60 天的现金占用窗口（authorclimb）；且你是先垫服务时间、后收款，需管理账期。绝不向客户承诺保销量/保排名（违反平台反欺诈条款且易引发纠纷）。\n\n## 8. 不适合的人群\n- 想\"躺赚\"、不愿学广告后台逻辑的人（这是技术型服务，不是挂机项目）。\n- 急于保证客户\"销量翻倍/必上榜单\"的人——你会踩平台红线并招致投诉。\n- 不愿处理跨境收款与税务合规的人。\n- 无法做到\"客户账户环境隔离\"的人——共用设备/IP 操作多账户极易连坐封号。\n- 完全没有英文读写能力的人（KDP 作者与后台以英文为主）。\n\n## 9. 3 个可验证的入门步骤\n1. 注册 Amazon KDP 读者账号 + 浏览 Amazon Ads 帮助中心，用 1–2 天读完 Sponsored Products / 否定关键词 / 搜索词报告 三篇官方文档，并截图证明你理解竞价逻辑（验证：能用自己的话写出\"自动广告→手动广告→否定词\"的优化路径）。\n2. 花 $97 买 Publisher Rocket（或申请 Helium 10 免费版），挑 3 本你熟悉的畅销书，分别导出其 AMS 关键词与类目竞争数据，做一份\"广告关键词清单\"样稿（验证：样稿里有具体关键词 + 建议出价 + 否定词，能发给潜在作者看）。\n3. 在 Upwork 或 Fiverr 上架一个 \"$30–$50 KDP 广告诊断\" gig，描述清楚交付物（诊断报告 + 关键词表），1–3 天内看是否有询价/下单（验证：收到至少 1 个真实咨询即说明需求成立，再决定是否深耕）。\n\n## 10. 核验来源\n（见 artifacts，均为真实可访问链接）",
+      "startedAt": "2026-10-05T09:09:20+08:00",
+      "finishedAt": "2026-10-05T09:52:00+08:00",
+      "duration": "42m 40s",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "self-publishing",
+        "amazon-ads",
+        "kdp-ppc",
+        "book-marketing"
+      ],
+      "nextSteps": [
+        "注册 Amazon KDP 读者账号并读完 Amazon Ads 帮助中心 Sponsored Products / 否定关键词 / 搜索词报告 三篇官方文档，能口述自动→手动→否定词的优化路径。",
+        "买 Publisher Rocket（$97 一次性）或申请 Helium 10 免费版，挑 3 本畅销书导出 AMS 关键词与类目竞争数据，做一份含关键词+出价+否定词的样稿。",
+        "在 Upwork/Fiverr 上架一个 $30–$50 的 KDP 广告诊断 gig，1–3 天内看是否收到真实询价，验证需求成立后再决定是否深耕。"
+      ],
+      "artifacts": [
+        {
+          "label": "Amazon KDP 官网（自出版平台）",
+          "path": "https://kdp.amazon.com"
+        },
+        {
+          "label": "Dataintelo 全球自助出版市场报告 2025→2034（$3.8B→$8.1B, CAGR 8.8%）",
+          "path": "https://dataintelo.com/report/self-publishing"
+        },
+        {
+          "label": "PPC Land：Amazon 广告 2025 收入 $68.6B（+22.1% YoY，全球第三大广告平台）",
+          "path": "https://ppc.land/amazons-69b-ad-business-gets-one-sentence-in-jassys-2025-letter"
+        },
+        {
+          "label": "MBAdv：What Is Amazon Ads（2026 平台概述、产品矩阵、平均 CPC $1.22）",
+          "path": "https://www.mbadv.agency/amazon-ads/what-is-amazon-ads"
+        },
+        {
+          "label": "Upwork Book & Ebook Marketing（1,608 个在售项目，KDP PPC gig 起价 $30）",
+          "path": "https://www.upwork.com/services/book-ebook-marketing"
+        },
+        {
+          "label": "AMZBase：雇佣 Amazon PPC 专家公开费率与筛选（月费/按支出比例）",
+          "path": "https://amzbase.com/guides/amazon-ppc-expert"
+        },
+        {
+          "label": "PublishRank：Publisher Rocket 评测（一次性 $97，AMS 关键词研究）",
+          "path": "https://publishrank.io/learn/comparisons/publisher-rocket-review"
+        },
+        {
+          "label": "AuthorClimb：KDP 账户封禁与 60 天账期现金流风险",
+          "path": "https://www.authorclimb.com/blog/why-kdp-is-a-high-risk-platform"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-10-05/niche-opc-industry.json"
+    },
     {
       "date": "2026-10-04",
       "taskId": "niche-opc-industry",
