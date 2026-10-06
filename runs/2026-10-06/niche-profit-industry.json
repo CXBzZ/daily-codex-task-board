@@ -1,0 +1,89 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-10-06T16:00:00+08:00",
+  "finishedAt": "2026-10-06T16:08:00+08:00",
+  "summary": "今天的小众行业是面向海外小型 SaaS、newsletter、B2B 服务公司和电商品牌的 SPF/DKIM/DMARC 邮件认证配置、基础投递体检与发件规范 QA 服务，属于中国境内可做的海外市场。它适合懂英文、DNS、邮件平台后台和反垃圾邮件边界的 OPC/一人公司或数字游民小规模验证，但只能做客户授权下的认证配置、检查和证据报告，不承诺进收件箱、打开率、销售额、解封或黑名单移除。",
+  "details": "# SPF/DKIM/DMARC 邮件认证配置、基础投递体检与发件规范 QA 服务\n\n## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外小型 SaaS、newsletter、B2B 服务公司和电商品牌的 SPF/DKIM/DMARC 邮件认证配置、基础投递体检与发件规范 QA 服务。它不是群发冷邮件、买卖邮箱名单、灰色投递或“包进 inbox”的投递率神话，而是在客户授权的域名、DNS 和邮件平台账户下，帮助客户把发件域名认证、域名对齐、退订机制、基础错误提示和证据留痕整理清楚。\n\n典型交付包括：检查当前 DNS 中 SPF、DKIM、DMARC、MX、CNAME/TXT 记录；协助 Google Workspace、Microsoft 365、Mailchimp、Klaviyo、ConvertKit、Postmark、SendGrid 等平台完成发件域认证；核对 Gmail 和 Yahoo 发件要求中的 SPF/DKIM、DMARC、From 域名对齐、TLS、退订入口和投诉率提示；设置 Google Postmaster Tools 或平台内 deliverability hub 的基础观察；交付变更前后截图、DNS 记录清单、风险说明和回滚建议。\n\n它小众，是因为很多小团队知道“邮件进垃圾箱”会影响业务，却不理解 SPF、DKIM、DMARC、Return-Path、From alignment、branded sending domain、one-click unsubscribe 和平台后台错误提示之间的关系。全栈开发者未必愿意处理邮件平台文档和 DNS 细节，营销顾问又容易把它包装成增长承诺；中间存在一个适合一人公司的窄服务：把认证配置、检查报告、客户说明和合规边界做扎实。\n\n重要边界：服务者只做客户授权域名和平台内的技术配置、检查和报告；不发送垃圾邮件，不购买、清洗或倒卖邮件名单，不绕过平台封禁，不承诺 Gmail/Yahoo 一定投递到收件箱，不承诺打开率、回复率、销售额、广告效果、解封或黑名单移除，也不提供法律意见、安全审计或反钓鱼认证。\n\n## 目标市场\n\n本期属于“中国境内可做的海外市场”，优先面向英语市场的小型 SaaS、newsletter 作者、B2B 服务公司、DTC/Shopify 品牌、线上课程团队、非营利组织和小型代理商。\n\n需求被 2024 年后的 Gmail/Yahoo 发件要求进一步显性化：Gmail 官方说明自 2024 年 2 月 1 日起，向 Gmail 个人账户发信的发件人需满足 SPF 或 DKIM、TLS、低垃圾投诉率等要求；日发 5000 封以上到 Gmail 的发件域还要配置 SPF 和 DKIM、DMARC、From 域名对齐和一键退订等要求。Yahoo Sender Hub 也列出了 DMARC、From alignment、退订和发件实践要求，并说明自 2024 年 2 月起逐步执行。\n\n为什么适合中国境内 OPC/数字游民验证：交付物主要是 DNS 记录、平台后台设置、截图报告、异步英文沟通和一次复测，不需要海外门店、当地雇员、仓储或线下驻场。新手可以先从“1 个域名 + 1 个邮件平台 + SPF/DKIM/DMARC 基础检查”小包试单，不碰群发业务和增长承诺。\n\n## 典型需求场景和客户是谁\n\n1. newsletter 作者或独立 SaaS 用 Mailchimp、ConvertKit、Beehiiv、Postmark、SendGrid 发信，但后台提示 domain authentication 未完成。\n2. DTC 品牌用 Klaviyo 发营销邮件，需要 branded sending domain、DKIM/SPF 认证和 DMARC 对齐说明。\n3. 小公司同时使用 Google Workspace、Mailchimp、CRM 和 transactional email，SPF 记录被重复添加或超过查找限制，需要整理授权发信源。\n4. B2B 服务公司从个人 Gmail 发营销邮件转向自有域名，希望先把基本认证和退订机制搭好。\n5. 小型代理商给客户上线邮件营销工具，但不想亲自处理 DNS、文档阅读、截图验收和客户解释。\n6. 客户收到 Gmail/Yahoo 或邮件平台的认证/退订/域名对齐警告，需要有人把问题翻译成可执行清单。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括客户域名所有者、DNS 托管商、邮箱托管商、邮件营销平台、事务邮件平台、收件箱服务商、平台型自由职业市场、隐私/反垃圾邮件监管框架和最终订阅者。中国境内承接者应定位为“授权邮件认证配置与发件规范 QA 供应商”，不是投递率保证商、冷邮件系统搭建商或反垃圾邮件规避服务商。\n\n标准工作流：\n\n1. 预筛选：确认客户行业、域名、发件量、邮件类型（事务邮件、订阅邮件、营销邮件、冷邮件）、使用平台、目标国家/地区、是否已有投诉/退信/封禁问题。\n2. 边界确认：书面说明服务只覆盖授权域名和平台的认证配置、检查和报告；拒绝垃圾邮件、购买名单、绕过封禁、冒名发信、钓鱼、欺诈和承诺进收件箱。\n3. 权限与备份：客户提供只读截图或临时低权限访问；对 DNS 变更前记录截图，列出新增/修改/删除项和回滚路径。\n4. 认证配置：按平台文档添加或修正 SPF、DKIM、DMARC、CNAME/TXT 等记录；对多平台 SPF 合并、DKIM selector、DMARC rua 邮箱和 branded sending domain 做基础整理。\n5. 发件规范 QA：核对 From 域名、Return-Path/mailed-by/signed-by 显示、DMARC alignment、退订链接、一键退订、物理地址、TLS/平台警告和 Google Postmaster/平台指标入口。\n6. 复测与报告：等待 DNS 传播后复测，交付截图、记录值、通过/未通过项、客户需确认项、后续观察周期和不承诺事项。\n\n## 盈利模式和报价口径\n\n收入来自专业服务费，不来自名单销售、发件量分成、黑箱投递或结果提成。常见收费方式包括：单域名认证配置小包；Mailchimp/Klaviyo/Google Workspace/Microsoft 365 域名认证设置；基础 deliverability audit；月度 DNS/DMARC 报告巡检；给营销代理商或 SaaS 顾问做白标分包。\n\n公开报价只能证明平台上存在类似服务和价格锚点，不能证明稳定收入。Upwork 公开页面显示，邮件投递顾问常见报价约 15-40 美元/小时，email authentication setup 的项目样本约 60-400 美元/项目，deliverability audit and diagnosis 约 90-600 美元/项目。按 2026-10-06 1 美元约 6.70 元人民币粗略折算：\n\n- 入门认证检查小包：60-120 美元，约 402-804 元人民币，适合 1 个域名、1 个平台、DNS 截图报告和一次复测。\n- 单平台配置与 QA：120-300 美元，约 804-2010 元人民币，适合 Mailchimp/Klaviyo/Google Workspace 等平台域名认证、DMARC p=none 初始配置、退订和 From 对齐检查。\n- 多平台基础体检：300-600 美元，约 2010-4020 元人民币，适合同一客户多个发信源的 SPF 合并、DKIM 状态、DMARC 报告入口、平台警告和修复清单。\n- 按小时协作：15-40 美元/小时，约 101-268 元人民币/小时；实际成交取决于英文沟通、DNS 经验、平台评价、响应速度和争议控制。\n\n更现实的收益模型是：新手前 1-2 个月用 3-8 个小单验证 SOP，毛收入可能只有 180-960 美元；有作品集、模板和代理合作后，每月 5-12 个 120-300 美元项目才可能形成相对稳定的现金流。净收入需要扣除平台费、收款费、汇损、税费、工具订阅、售前诊断、DNS 等待、返工和客户教育时间。不能承诺稳定月入，也不能把“投递率提升”写成收费承诺。\n\n## 入门门槛\n\n技能：英文文档阅读、基础 DNS、SPF/DKIM/DMARC 概念、邮件平台后台、Google/Yahoo 发件规则、商业邮件退订要求、截图报告、权限边界和客户沟通。最好能理解 TXT/CNAME/MX、SPF include、DKIM selector、DMARC policy、rua aggregate report、From alignment、branded sending domain、transactional vs marketing email。\n\n设备/软件：电脑、稳定网络、DNS 查询工具、截图工具、表格/文档工具、密码管理器、测试邮箱、可选 DMARC 报告服务。启动资金可以很低，主要投入是学习文档、搭建测试域名、制作 checklist 和匿名样例报告。\n\n资质/合规：通常不需要海外当地牌照，但必须遵守平台规则和反垃圾邮件边界。美国商业邮件还涉及 CAN-SPAM：商业邮件不能使用误导性头部或主题，必须提供清晰退订机制和有效邮寄地址，并按要求处理退订。服务者不能把自己包装成法律顾问；涉及 GDPR、CASL、金融、医疗、儿童、政治或高风险行业时，应提醒客户咨询当地专业人士。\n\n资金和时间：如果已有域名和 DNS 基础，1-2 周可完成初级 checklist 和 demo 报告；要稳定处理多平台、多域名、DMARC 报告和客户争议，通常需要 1-3 个月积累案例和错误库。\n\n渠道：Upwork、Fiverr、LinkedIn、独立站、SaaS 社群、newsletter 社群、Klaviyo/Mailchimp/Shopify 代理商合作、Google Workspace 管理员社群。服务标题应具体，例如 SPF/DKIM/DMARC setup for Mailchimp、Klaviyo branded sending domain QA、Gmail/Yahoo sender requirements checklist。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台单要遵守站内沟通、托管付款、身份认证和禁止绕平台规则；独立获客要避免群发垃圾邮件和“保证进 inbox”的广告语。作品集可以是匿名 demo：一份 DNS 变更清单、一份发件规范 checklist、一份平台认证截图报告。\n\n远程交付：优先让客户提供截图、只读信息或临时低权限账号。需要进入 DNS 或平台后台时，要求客户创建临时权限，项目结束撤权。每次 DNS 修改前后截图，记录时间、记录类型、主机名和值，保留回滚说明。不要索要主账号、信用卡、支付后台、完整客户名单或不必要的邮件内容。\n\n合同/发票或收款：平台订单以平台合同和账单为凭证；直客单应签英文 SOW，写清域名、平台、记录范围、复测次数、等待 DNS 传播的时间、客户对域名和发信内容负责、不处理垃圾邮件和名单买卖、不承诺投递结果。中国境内个人、个体工商户或公司应按自身主体开具 invoice 或国内发票，并保留合同、账单、收款流水和汇率记录。\n\n税务申报和外汇：国家税务总局资料显示，中国居民个人从中国境外取得所得应依法申报，常见申报期为取得所得次年 3 月 1 日至 6 月 30 日；居民企业一般也应就境内外所得纳税。服务贸易跨境收款应通过银行、平台或合规支付机构办理，保留真实合同、订单、发票、平台账单、交付截图和收款记录，避免地下钱庄、虚假贸易、代收代付或拆分规避真实性审核。\n\n平台规则：Mailchimp 文档说明手动认证通常需要添加 DKIM CNAME 和 DMARC TXT 等 DNS 记录；Klaviyo 的 branded sending domain 文档说明品牌发件域可帮助 SPF/DKIM 和 DMARC 合规；Cloudflare 文档也把 SPF、DKIM、DMARC 作为 DNS 安全记录管理对象。服务者应按官方文档逐项执行，而不是复制不明来源模板。\n\n数据/隐私合规：邮件后台可能包含订阅者邮箱、退订名单、活动数据和客户业务信息。按最小必要原则，只处理认证和 QA 所需信息，不下载完整名单，不上传客户邮件数据到未授权 AI/公开工具，不把客户截图放入作品集，按约删除或返还材料。涉及欧盟/英国数据时，提醒客户明确 controller/processor、DPA 和跨境访问安排。\n\n语言和时区门槛：英文售前、英文报告和官方文档阅读是硬门槛。美国客户通常需要中国早晚沟通，欧洲客户更适合异步；DNS 传播和客户授权确认会拉长项目周期，报价时应把等待时间和复测窗口写清楚。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：交付物清晰、资产轻、远程可做、流程可模板化，一个人可以完成诊断、配置、复测、截图报告和客户教育。服务边界足够窄，适合从一个域名和一个平台的小包开始。\n\n不完全适合点：复杂企业邮件架构、多品牌、多地区营销、专用 IP 暖身、黑名单申诉、被封账号恢复、安全事件响应和法律合规判断，超出一人公司的低风险范围。OPC 必须拒绝群发垃圾邮件、假身份、名单买卖、规避封禁、恶意钓鱼和“包进收件箱”。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：核心工作依赖电脑、浏览器、DNS 后台和英文文档，天然适合远程交付；多数步骤可以异步进行；小单周期短，适合用 checklist 管理。\n\n不完全适合点：DNS 修改需要稳定网络、安全设备和准确留痕。旅途中使用公共 Wi-Fi、共享电脑或不安全云盘会放大账号和客户数据风险。数字游民还要管理时区、2FA、紧急回滚和客户撤权确认。\n\n## 潜在收益、前提条件和成本结构\n\n低成本验证期：每月 3-8 个 60-120 美元小包，毛收入约 180-960 美元，折合约 1206-6432 元人民币。这个阶段主要验证话术、报告模板和返工边界，不适合预期高收入。\n\n标准接单期：有平台评价、匿名案例和 SOP 后，每月 5-12 个 120-300 美元项目，毛收入约 600-3600 美元，折合约 4020-24120 元人民币。前提是能稳定处理多平台文档、DNS 传播、客户授权和英文报告。\n\n白标合作期：与邮件营销代理商、Shopify/Klaviyo 顾问、SaaS 顾问合作后，可按客户或批次收费；但净利润取决于客户资料完整度、DNS 托管商差异、平台报错复杂度、等待时间、返工率、平台费、税费和沟通成本。收益只能按区间和前提表达，不能承诺稳定月入或投递结果。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：\n\n1. 反垃圾邮件风险：客户可能把服务当成冷邮件系统或垃圾邮件规避服务。必须拒绝名单买卖、伪造头部、钓鱼、绕封、冒名和承诺进收件箱。\n2. 法律合规风险：CAN-SPAM、GDPR、CASL、平台规则和行业监管因国家/地区不同而变化。服务者只能做技术和 checklist，不替代律师或合规官。\n3. DNS 操作风险：错误 SPF、MX、CNAME 或 DKIM 记录可能影响收发信。每次修改前必须截图备份和写回滚说明。\n4. 权限安全风险：DNS、邮箱和营销平台账号权限敏感。应使用临时低权限访问、2FA、撤权确认和最小数据访问。\n5. 结果误解风险：SPF/DKIM/DMARC 通过不等于邮件必进收件箱；内容、名单质量、投诉率、退订体验和发送历史都会影响表现。\n6. 低价竞争风险：简单复制 DNS 记录容易被低价替代，议价空间来自清晰边界、少犯错、留痕、报告和客户教育。\n7. 跨境收款和税务风险：平台提现或 PayPal/Wise/银行入账不等于免税，应保留真实交易材料并依法申报。\n\n不适合人群：想靠群发垃圾邮件赚钱的人；不愿拒绝灰色需求的人；DNS 操作粗心的人；英文文档阅读弱的人；不能保护客户账号的人；喜欢承诺“100% inbox”“秒解封”“打开率翻倍”的人；无法接受反复等待 DNS 传播和截图留痕的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做一份邮件认证 checklist：基于 Gmail、Yahoo、DMARC.org、Mailchimp、Klaviyo、Cloudflare 和 FTC 资料整理 40 项检查表，覆盖 SPF、DKIM、DMARC、From alignment、退订、物理地址、DNS 截图、回滚和不承诺事项。\n2. 用自有测试域名做 demo：在 Cloudflare 或其他 DNS 托管商中练习为一个测试邮件平台配置 DKIM、SPF 和 DMARC p=none，输出变更前后截图、DNS 查询结果和一页英文报告，不使用客户数据。\n3. 发布一个窄服务试单：标题限定为“SPF/DKIM/DMARC setup and Gmail/Yahoo sender requirements QA for one domain”，范围限定 1 个域名、1 个邮件平台、1 次配置、1 次复测和一份报告；明确拒绝冷邮件群发、名单买卖、账号解封和 inbox 保证。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：5/5\n- 合规风险等级：中，可控\n- 跨境执行风险等级：中，可控\n- 收益口径是否克制，有无夸大：克制。Upwork 价格只能作为市场挂单和报价样本，不应写成稳定收入或确定成交价。\n- 信息来源是否足够可信：足够可信。Gmail/Yahoo 发件要求、DMARC、Mailchimp/Klaviyo、FTC CAN-SPAM、国内个税和服务贸易外汇留单要求，都有官方或平台原始来源支撑。\n- 最该补充或提醒的一句话：每单必须留存客户授权、服务合同、DNS 变更前后截图和回滚说明，并明确拒绝冷邮件群发、名单买卖、绕平台封禁、承诺进收件箱等需求。\n- 是否建议通过：建议通过。这个选题是真实、细分、远程可交付的技术服务，边界设定清醒；正文必须强调“认证配置与合规 QA”，不要包装成“投递率暴涨”或“邮箱解封”生意。\n\n## 关键核验来源\n\n1. Gmail Help - Email sender guidelines：核验 2024 年后 Gmail 对 SPF/DKIM、DMARC、From alignment、one-click unsubscribe、spam rate 等发件要求。https://support.google.com/mail/answer/81126?hl=en\n2. Gmail Help - Email sender guidelines FAQ：核验 Gmail 对 bulk sender、DMARC alignment 和错误提示的补充说明。https://support.google.com/mail/answer/14229414?hl=en\n3. Yahoo Sender Hub - Sender Requirements & Recommendations：核验 Yahoo 对 DMARC、From alignment、退订和逐步执行的发件要求。https://senders.yahooinc.com/best-practices/\n4. Yahoo Sender Hub - 2024 Email Sender Requirements FAQ：核验 Yahoo 对 bulk sender、执行时间和 DMARC policy 的解释。https://senders.yahooinc.com/faqs/\n5. DMARC.org - Overview：核验 DMARC 基于 SPF/DKIM、alignment、rua 报告和 p=none -> quarantine -> reject 的部署路径。https://dmarc.org/overview/\n6. Mailchimp - Set Up Email Domain Authentication：核验 Mailchimp 手动域名认证需要添加 DNS 记录，包括 DKIM CNAME 和 DMARC TXT。https://mailchimp.com/help/set-up-email-domain-authentication/\n7. Klaviyo Help - How to set up a branded sending domain：核验 Klaviyo branded sending domain 的 DNS 和 DMARC 相关设置。https://help.klaviyo.com/hc/en-us/articles/115000357752\n8. Klaviyo Help - Understanding email authentication：核验 branded sending domain、SPF/DKIM 和 DMARC compliance 的关系。https://help.klaviyo.com/hc/en-us/articles/4402601857307\n9. Cloudflare Docs - Configure email security records：核验 SPF、DKIM、DMARC 作为 DNS 安全记录的配置对象。https://developers.cloudflare.com/dmarc-management/security-records/\n10. FTC - CAN-SPAM Act: A Compliance Guide for Business：核验商业邮件的头部/主题、退订、邮寄地址和发送方责任要求。https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business\n11. Upwork - Best Freelance Email Deliverability Consultants for Hire：核验公开平台上的邮件认证设置、投递诊断和小时/项目报价样本。https://www.upwork.com/hire/email-deliverability-consulting-freelancers/\n12. 国家税务总局 - 中华人民共和国个人所得税法：核验中国居民个人境内外所得纳税和境外所得申报口径。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n13. 国家税务总局 - 境外所得有关个人所得税政策公告：核验居民个人境外所得申报和税收抵免相关口径。https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html\n14. 商务部转载国家外汇管理局 - 经常项目外汇业务指引（2020 年版）：核验服务贸易外汇收支的真实性、合规性和交易单证审核原则。https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2020/art_0dd36157a03f494db7571002c7f785b8.html\n15. Wise - USD/CNY historical rate 2026-10-06：核验 2026-10-06 附近美元兑人民币约 6.70 的粗略折算口径。https://wise.com/au/currency-converter/usd-to-cny-rate/history/06-10-2026",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global",
+    "email",
+    "deliverability",
+    "dns"
+  ],
+  "nextSteps": [
+    "做一份邮件认证 checklist：基于 Gmail、Yahoo、DMARC.org、Mailchimp、Klaviyo、Cloudflare 和 FTC 资料整理 40 项检查表，覆盖 SPF、DKIM、DMARC、From alignment、退订、物理地址、DNS 截图、回滚和不承诺事项。",
+    "用自有测试域名做 demo：练习为一个测试邮件平台配置 DKIM、SPF 和 DMARC p=none，输出变更前后截图、DNS 查询结果和一页英文报告，不使用客户数据。",
+    "发布一个窄服务试单：限定 1 个域名、1 个邮件平台、1 次配置、1 次复测和一份报告；明确拒绝冷邮件群发、名单买卖、账号解封和 inbox 保证。"
+  ],
+  "artifacts": [
+    {
+      "label": "Gmail Help - Email sender guidelines",
+      "path": "https://support.google.com/mail/answer/81126?hl=en"
+    },
+    {
+      "label": "Gmail Help - Email sender guidelines FAQ",
+      "path": "https://support.google.com/mail/answer/14229414?hl=en"
+    },
+    {
+      "label": "Yahoo Sender Hub - Sender Requirements & Recommendations",
+      "path": "https://senders.yahooinc.com/best-practices/"
+    },
+    {
+      "label": "Yahoo Sender Hub - 2024 Email Sender Requirements FAQ",
+      "path": "https://senders.yahooinc.com/faqs/"
+    },
+    {
+      "label": "DMARC.org - Overview",
+      "path": "https://dmarc.org/overview/"
+    },
+    {
+      "label": "Mailchimp - Set Up Email Domain Authentication",
+      "path": "https://mailchimp.com/help/set-up-email-domain-authentication/"
+    },
+    {
+      "label": "Klaviyo - Set up a branded sending domain",
+      "path": "https://help.klaviyo.com/hc/en-us/articles/115000357752"
+    },
+    {
+      "label": "Klaviyo - Understanding email authentication",
+      "path": "https://help.klaviyo.com/hc/en-us/articles/4402601857307"
+    },
+    {
+      "label": "Cloudflare - Configure email security records",
+      "path": "https://developers.cloudflare.com/dmarc-management/security-records/"
+    },
+    {
+      "label": "FTC - CAN-SPAM Act compliance guide",
+      "path": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"
+    },
+    {
+      "label": "Upwork - Email deliverability consultants pricing sample",
+      "path": "https://www.upwork.com/hire/email-deliverability-consulting-freelancers/"
+    },
+    {
+      "label": "国家税务总局 - 中华人民共和国个人所得税法",
+      "path": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html"
+    },
+    {
+      "label": "国家税务总局 - 境外所得个税政策公告",
+      "path": "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html"
+    },
+    {
+      "label": "商务部转载国家外汇管理局 - 经常项目外汇业务指引",
+      "path": "https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2020/art_0dd36157a03f494db7571002c7f785b8.html"
+    },
+    {
+      "label": "Wise - USD/CNY historical rate 2026-10-06",
+      "path": "https://wise.com/au/currency-converter/usd-to-cny-rate/history/06-10-2026"
+    }
+  ]
+}
