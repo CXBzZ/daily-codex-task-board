@@ -1,0 +1,84 @@
+{
+  "taskId": "niche-profit-industry",
+  "taskName": "每日小众赚钱行业科普",
+  "status": "success",
+  "startedAt": "2026-10-07T16:03:59+08:00",
+  "finishedAt": "2026-10-07T16:12:00+08:00",
+  "summary": "今天的小众行业是面向海外小型网站、Shopify/WooCommerce 独立站、本地服务商和小型 SaaS 的 Schema.org / JSON-LD 结构化数据体检、修复与 Rich Results Test 上线前 QA 服务，属于中国境内可做的海外市场。它适合懂英文、基础前端/CMS、搜索结构化数据规则和客户授权边界的 OPC/一人公司或数字游民小规模验证，但只能做技术核验和证据报告，不承诺排名、点击率、AI 引用、Knowledge Panel 或富媒体结果展示。",
+  "details": "# Schema.org / JSON-LD 结构化数据体检、修复与 Rich Results Test QA 服务\n\n## 行业是什么，为什么小众\n\n今天选择的行业是：面向海外小型网站、Shopify/WooCommerce 独立站、本地服务商、小型 SaaS、内容站和开发者团队的 Schema.org / JSON-LD 结构化数据体检、修复、Rich Results Test 验证与上线前 QA 服务。\n\n它不是泛泛的 SEO 代运营，也不是“包上富媒体结果”“包排名”“AI 搜索收录优化”。更准确地说，它是在客户已有网站内容、商品页、文章页、服务页、FAQ、面包屑、视频页或本地商家页面的前提下，帮助客户核对页面内容与结构化数据是否一致、Google 支持的类型是否选对、JSON-LD 语法和必填字段是否有效、Search Console/Rich Results Test 是否报错，并交付截图证据、代码片段、修复建议和复测记录。\n\n它小众，是因为很多小企业知道“Schema markup”这个词，却不知道它不是越多越好，也不是把生成器代码一贴就完事。真正愿意付费的痛点通常是：Shopify 主题、SEO 插件、评论插件和页面构建器重复输出 Product/Organization/Breadcrumb；价格、库存、评分、图片、营业地址和页面可见内容不一致；开发者上线后没有复测；客户在 Search Console 看到结构化数据错误但没有人整理优先级。\n\n重要边界：本服务只做客户授权网站、测试 URL、CMS/电商后台最小权限或客户提供源码下的技术 QA 和轻量实现，不做 Google 官方代理、法律合规审查、SEO 排名承诺、点击率承诺、AI 引用承诺、Knowledge Panel 承诺、富媒体展示承诺、虚假评论/虚假库存/虚假价格/虚假地址生成，也不绕过搜索平台政策。\n\n## 目标市场\n\n本期属于“中国境内可做的海外市场”。主要面向英语市场的小型企业和轻量 Web 团队：Shopify/WooCommerce 店主、WordPress/Webflow 小站、本地服务商、SaaS 营销站、内容出版团队、SEO freelancer、Web developer 和小型代理商。\n\n适合中国境内 OPC/一人公司验证的原因是：服务可完全远程交付；不需要当地门店、仓储或高门槛本地牌照；工具链公开，主要使用 Google Search Central 文档、Rich Results Test、Schema.org Markup Validator、Search Console 截图、浏览器开发者工具、CMS/Shopify/WordPress/Webflow 最小权限和表格报告。固定资产主要是电脑、英文沟通、基础 HTML/JSON-LD、CMS 操作能力和截图报告模板。\n\n## 典型需求场景和客户是谁\n\n1. Shopify / WooCommerce 小店：Product、Offer、AggregateRating、Breadcrumb 输出重复或字段缺失，价格/库存/币种与页面内容不一致。\n2. 本地服务商网站：LocalBusiness、Organization、Service、FAQ 或 Review 标记混乱，地址、电话、营业时间和页面可见内容不一致。\n3. 小型 SaaS 营销站：Organization、SoftwareApplication、Article、Breadcrumb、VideoObject 等需要规范化，但开发团队没有专门做搜索结构化数据 QA。\n4. WordPress 内容站：SEO 插件、主题和自定义代码同时输出多个 schema graph，Search Console 出现警告或错误，需要判断哪些要修、哪些只是建议项。\n5. SEO freelancer / Web developer：他们负责客户关系和整体 SEO，把窄范围的 JSON-LD 检查、代码片段和复测截图白标外包。\n\n## 行业如何运作，典型参与方和工作流\n\n典型参与方包括客户方站长、营销负责人、Web developer、SEO 顾问、CMS/电商平台、评论插件/SEO 插件供应商、Google Search Console 管理员和本服务供应商。中国境内承接者应把自己定位为“结构化数据技术 QA 与实现助手”，不是搜索平台内部人员、SEO 结果承诺方或法律/广告合规顾问。\n\n标准工作流：\n1. 预筛选：确认网站类型、CMS/电商平台、目标 URL 数量、是否已有 Search Console 报错、是否涉及医疗、金融、法律、药品、赌博、烟草、成人内容、虚假评价或受监管商品。\n2. 授权与边界：签 SOW/NDA，客户确认其有权让供应商查看网站源码、后台或 Search Console 截图；优先使用公开 URL、测试站、只读截图、临时代码片段或最小权限账号。\n3. 类型映射：按页面主目的映射 Google 支持的结构化数据类型，例如 Product、Merchant listing、Article、Breadcrumb、Video、LocalBusiness、Organization、SoftwareApplication 等；避免给一个页面堆叠与主内容无关的类型。\n4. 技术核验：用 Rich Results Test 查看 Google 可识别的富媒体类型、错误和建议；用 Schema.org Markup Validator 检查 Schema.org 图谱和语法；用浏览器源码和渲染后 DOM 核对 JSON-LD 是否被正确输出。\n5. 内容一致性核对：核对价格、币种、库存、评分、评论数量、图片 URL、品牌、SKU、作者、发布日期、地址、营业时间等字段是否与页面可见内容和客户真实数据一致。\n6. 修复与复测：给出 paste-ready JSON-LD 片段、CMS 插件配置建议、主题代码修改建议或开发工单；客户确认后由客户开发者部署，或在最小权限下协助轻量修改；保留前后截图和回滚说明。\n7. 交付：交付 URL 清单、schema 类型映射表、问题优先级、错误截图、修复代码片段、复测截图、未处理项和风险声明。\n\n## 盈利模式和报价口径\n\n收入来自一次性体检包、标准修复包、上线前 QA、Search Console 报错清理、按月复查和白标外包。公开平台报价只能证明市场存在，不代表稳定成交或收益承诺。\n\n保守报价样本可设计为：\n- 快速体检包：$49-$150，约 328-1005 元人民币，覆盖 5-20 个 URL、结构化数据抽检、错误截图和优先级清单。\n- 标准修复包：$150-$500，约 1005-3350 元人民币，覆盖 1 个小站或 1 类页面模板的 JSON-LD 代码片段、CMS/插件配置建议和一次复测。\n- 月度复查包：$100-$400/月，约 670-2680 元人民币，适合频繁发布商品、文章或活动页的小站和代理商。\n- 更复杂的企业 SEO 策略、国际站架构、法律广告合规、数据 feed、Merchant Center 账号治理、内容重写、转化率优化和大规模开发项目，不适合新手 OPC 独立承诺。\n\n公开报价样本：Upwork Project Catalog 中有结构化数据服务包，公开显示 Starter $49、Standard $99、Advanced $149；Fiverr JSON-LD/Schema 服务列表显示多个服务从约 €5、€10、€19、€47、€74 起。按 2026-10-07 查询的汇率样本，1 USD 约 6.70 CNY，1 EUR 约 7.53 CNY。净收入还要扣除平台服务费、收款费、汇损、税费、工具订阅、售前诊断、客户沟通、返工和保密限制导致的作品集难度。\n\n## 入门门槛\n\n技能：英文读写、Google Search Central 文档阅读、HTML 基础、JSON-LD 语法、Schema.org 词汇、CMS/Shopify/WordPress/Webflow 后台、浏览器开发者工具、截图标注、表格报告和边界沟通。加分项是懂基础 SEO、Search Console、商品数据、WordPress 插件冲突、Shopify theme 片段和前端发布回滚。\n\n设备/软件：电脑、稳定网络、浏览器开发者工具、Rich Results Test、Schema.org Markup Validator、Search Console 截图、VS Code、JSON 校验工具、截图标注工具、测试站或本地演示页面。冷启动不需要昂贵订阅。\n\n资质/合规：通常不需要海外本地牌照，但只能定位为技术实现和 QA。若客户要求法律广告合规、医疗/金融/药品声明、消费者保护判断、Google manual action 申诉、排名恢复、Knowledge Panel 申请或品牌实体策略，应转给合格律师、合规顾问、资深 SEO 或品牌团队。\n\n资金和时间：启动资金可低于 1000 元人民币，主要用于域名/作品集、测试站、模板和平台获客。已有前端或 CMS 经验的人，1-2 周可做样本报告；要稳定处理 Product、LocalBusiness、Article、Breadcrumb、Video、FAQ、Review 等类型并解释政策边界，通常需要 1-2 个月训练。\n\n渠道：Upwork、Fiverr、Contra、LinkedIn、独立站、WordPress/Shopify/Webflow 开发者社群、本地 SEO 顾问、Web developer、内容站运营者和电商小店主。服务标题要窄，例如 JSON-LD schema audit and Rich Results Test QA for Shopify product pages，不要写 guaranteed rich snippets 或 AI search ranking boost。\n\n## 中国境内承接海外市场的执行细节\n\n跨境获客：平台单遵守站内沟通和付款规则；直客单用英文 SOW 写清 URL 数量、页面类型、客户需提供的后台权限或截图、交付物、复测次数、返工边界和免责声明。不要把“结构化数据 QA”包装成搜索结果服务。\n\n远程交付：优先用公开 URL、测试站或客户提供的源码片段；如必须进入 CMS/Shopify/WordPress/Webflow 后台，应使用临时最小权限账号、强密码、2FA 和操作记录，项目结束后撤权。对生产站修改要有备份、预览和回滚方案；新手优先交付代码片段和开发工单，让客户开发者部署。\n\n合同、发票和收款：平台订单以平台合同和账单为凭证；直客可用 Payoneer、Wise Business、银行电汇或平台托管等合规通道。中国境内个人、个体工商户或公司应保存合同、invoice、收款流水、汇率记录、交付报告和截图证据，并按主体类型依法申报纳税。\n\n税务申报：中国居民个人取得综合所得按年计算并在次年 3 月 1 日至 6 月 30 日办理汇算清缴；取得经营所得按年计算，通常需按月度或季度预缴并在次年 3 月 31 日前办理汇算。若以个体工商户或公司承接，应按经营所得、增值税、企业所得税/个人所得税和所在地税务要求处理；海外平台提现不等于免税。\n\n平台规则：Upwork、Fiverr 等平台通常要求站内沟通、站内支付和合同留痕；不要引导客户绕过平台托管。Google 侧要遵循 Search Essentials、结构化数据通用指南、具体结构化数据类型指南和 Spam policies。Google 明确即使页面正确实现结构化数据，也不保证富媒体结果展示。\n\n数据/隐私合规：中国《个人信息保护法》要求处理个人信息遵循合法、正当、必要和诚信原则，并采取必要措施保障安全；委托处理个人信息时，应约定处理目的、期限、方式、个人信息种类、保护措施和双方权利义务。结构化数据服务通常不需要接触客户名单、订单明细或后台用户数据；若涉及评价者姓名、订单、地址、电话、客户邮箱或个人头像，应最小化、脱敏、加密存储并项目后删除。国家网信办 2024 年《促进和规范数据跨境流动规定》对部分数据跨境流动场景设置了豁免条件，但这不代表可以无授权传输个人信息或重要数据。\n\n语言和时区门槛：英文报告、英文注释和客户会议是硬门槛。北美客户常需中国早晚沟通，欧洲/澳洲客户相对友好。可用异步 URL 清单、截图编号、Loom/录屏说明和 GitHub gist/code block 降低实时会议成本。\n\n## 为什么适合或不完全适合 OPC/一人公司\n\n适合点：服务范围可产品化，一人可完成 URL 盘点、类型映射、工具测试、代码片段、截图报告和复测；固定资产轻，容易从 5-20 个 URL 的小包验证；也适合给 SEO 顾问、Web developer、Shopify/WordPress 维护者做白标 QA。\n\n不完全适合点：客户越大，站点技术栈和责任越复杂。多语言、多地区、多货币、Headless Commerce、大型商品库、复杂评论系统、受监管行业和 Search Console 大量历史问题，会超出新手 OPC 能力。必须设置拒单标准，只接授权清楚、数据低敏、页面范围有限、可回滚的技术项目。\n\n## 为什么适合或不完全适合数字游民/远程工作者\n\n适合点：笔记本即可完成，交付物是代码片段、表格、报告和截图，工作可异步；不依赖线下门店或本地驻场。数字游民可以在稳定网络下做 URL 测试、报告和复测。\n\n不完全适合点：若要登录生产站后台、修改主题代码或与客户开发者同步上线窗口，需要稳定网络、设备安全、2FA、时区配合和回滚意识。频繁使用公共网络、设备安全差、无法准时响应上线窗口的人不适合接生产站修改，只适合做只读报告。\n\n## 潜在收益、前提条件和成本结构\n\n验证期：每月 3-8 个快速体检包，毛收入约 $147-$1200，折合约 985-8040 元人民币。目标是验证客户是否愿意为“错误清单 + 截图证据 + 修复方向”付费，不适合期待高收入。\n\n熟练期：每月 4-10 个标准修复包或月度复查客户，毛收入约 $600-$5000，折合约 4020-33500 元人民币。前提是有脱敏样本报告、英文沟通稳定、懂常见 CMS/电商平台、能拒绝 SEO 结果承诺，并有稳定获客或复购；这不是普遍结果，也不是新手可直接套用的收入预期。\n\n合作期：与 SEO 顾问、Web developer、Shopify/WordPress 维护者合作，按页面模板、URL 批次或月度复查收费。净利润受售前诊断、客户确认速度、平台费、收款汇损、税费、返工、版本回滚和保密限制影响。收益必须用区间和前提表达，不能承诺“稳定月入”。\n\n## 主要风险、合规注意事项和不适合人群\n\n主要风险：\n1. 结果承诺越界：结构化数据只能帮助搜索引擎理解页面内容，不保证排名、点击率、AI 引用、Knowledge Panel 或富媒体结果展示。\n2. 虚假结构化数据：不能生成虚假评论、虚假评分、虚假库存、虚假价格、虚假营业地址、虚假作者、虚假资质或页面不可见内容。\n3. Review / aggregateRating 红线：评分和评论必须来自真实、可展示、可追溯且客户有权使用的数据；不要给自我服务评价、本地服务、医疗、金融、法律等高敏场景乱加评分标记。\n4. 受监管行业：药品、医疗、金融、法律、赌博、烟草、武器、成人内容、减肥/健康声称等行业要谨慎或拒单，不能用结构化数据规避平台政策或监管要求。\n5. 平台规则变化：Google 支持的 rich result 类型、FAQ/HowTo 等展示策略、Merchant listing 要求和测试工具会变化，每单前要核验当前官方文档。\n6. 误操作风险：直接改生产站主题、插件或模板可能造成页面异常、重复输出或跟踪代码冲突，要先备份并由客户确认。\n7. 低价竞争：Fiverr 上存在很低的 JSON-LD 服务报价，差异化应来自窄范围、证据报告、页面内容一致性核对和清楚的免责边界。\n8. 跨境收款和税务风险：平台收入、直客 invoice、汇率、服务费和纳税都要留痕。\n\n不适合人群：不愿读英文官方文档的人；只会用生成器复制代码、不会核对页面内容的人；想承诺排名/流量/富媒体展示的人；愿意伪造评价或商品信息的人；不懂备份回滚、随手改生产站的人；保密意识弱、会把客户后台截图随意公开的人。\n\n## 新手可验证的 3 个低成本入门步骤\n\n1. 做样本报告：自建一个 WordPress/Shopify 测试站或选择公开演示页，分别制作 Product、Organization、LocalBusiness、Article、Breadcrumb 的 JSON-LD 样本，用 Rich Results Test 和 Schema.org Markup Validator 输出英文样本报告。\n2. 发布窄服务包：只承诺“5-20 个 URL 的结构化数据错误、类型匹配、页面可见内容一致性和截图证据检查”，报价 $49-$99，明确不含排名、AI 引用、Knowledge Panel、法律合规和生产站代码部署。\n3. 访谈并试单：找 5 个小站站长、Shopify 店主、本地 SEO 代理或开发者，询问他们的 Search Console 报错、主题/插件重复输出、商品页字段问题，争取 1 个付费试单并记录真实耗时。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，不需要重选题。\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径是否克制，有无夸大：总体克制，有低价平台样本、费用扣除、验证期和熟练期前提，未承诺暴利；已补充熟练期上限依赖稳定获客和复购，非普遍结果。\n- 信息来源是否足够可信：基本可信。核心来源覆盖 Google Search Central、Rich Results Test、Schema.org Validator、Google spam policies、Upwork/Fiverr 公开服务包、汇率样本，以及中国税务、外汇和个人信息保护资料。\n- 最该补充或提醒的一句话：结构化数据只能帮助搜索引擎理解页面内容，不能承诺排名、点击率、AI 引用、Knowledge Panel 或富媒体结果展示。\n- 是否建议通过：建议通过；不需要重选题。正文已强化“不是 SEO 结果服务”，并补充 Review/aggregateRating 与受监管行业红线。\n\n## 关键核验来源\n\n1. Google Search Central - Intro to structured data。核验 Google 建议使用 JSON-LD，且应依赖 Google Search Central 判断 Google Search 行为。https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data\n2. Google Search Central - Merchant listing Product structured data。核验 Product / Offer merchant listing 的适用页面、单品页要求、价格/可用性等要求，以及 Google 可能验证商品数据。https://developers.google.com/search/docs/appearance/structured-data/merchant-listing\n3. Google Search Console Help - Rich Results Test。核验 Rich Results Test 可显示页面发现的 rich result 类型、结构化数据错误和建议。https://support.google.com/webmasters/answer/7445569\n4. Google Search Console Help - Missing features in Google Search results。核验 Google 明确即使结构化数据实现正确，也不保证任何页面展示富媒体结果。https://support.google.com/webmasters/answer/9079920\n5. Schema.org - Schema Markup Validator。核验 Schema.org Markup Validator 可验证网页中的 Schema.org 结构化数据、提取 JSON-LD/RDFa/Microdata 并识别语法错误。https://schema.org/docs/validator.html\n6. Google Search Central - Spam policies for Google web search。核验 Google 将欺骗用户或操纵搜索系统突出展示内容的行为视为 spam 风险。https://developers.google.com/search/docs/essentials/spam-policies\n7. Upwork Project Catalog - Schema markup and structured data implementation service。核验市场上存在结构化数据实现服务，公开包价样本为 $49/$99/$149。https://www.upwork.com/services/product/marketing-a-schema-markup-and-structured-data-implementation-service-for-your-site-2093079868481423861\n8. Fiverr JSON-LD service listings。核验市场上存在 JSON-LD / schema markup 服务，公开低价样本从约 €5、€10、€19、€47、€74 起。https://www.fiverr.com/gigs/json-ld\n9. USD/CNY 汇率样本。核验 2026-10-07 附近 1 USD 约 6.70 CNY 的折算口径。https://exchangeratetool.com/historical/usd-cny\n10. EUR/CNY 汇率样本。核验 2026-10-07 附近 1 EUR 约 7.53 CNY 的折算口径。https://www.investing.com/currencies/eur-cny-historical-data\n11. 国家税务总局《中华人民共和国个人所得税法》。核验综合所得和经营所得的年度计算、预缴及汇算清缴口径。https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html\n12. 国家外汇管理局《个人外汇管理办法》。核验个人外汇业务真实性管理、不得用虚假单据规避管理，以及办理工商登记或执业手续后可开立外汇结算账户。https://www.safe.gov.cn/safe/2022/0818/21330.html\n13. 中央网信办《中华人民共和国个人信息保护法》。核验个人信息处理的合法、正当、必要原则、安全措施和委托处理要求。https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm\n14. 国家网信办《促进和规范数据跨境流动规定》。核验部分数据跨境流动豁免条件和数据出境规则口径。https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm",
+  "labels": [
+    "daily",
+    "industry",
+    "income-education",
+    "china",
+    "opc",
+    "digital-nomad",
+    "overseas-market",
+    "global",
+    "structured-data",
+    "seo-qa"
+  ],
+  "nextSteps": [
+    "自建一个 WordPress/Shopify 测试站或选择公开演示页，制作 Product、Organization、LocalBusiness、Article、Breadcrumb JSON-LD 样本，并用 Rich Results Test 和 Schema.org Markup Validator 输出英文样本报告。",
+    "发布一个只覆盖 5-20 个 URL 的结构化数据错误、类型匹配、页面可见内容一致性和截图证据检查服务包，报价 $49-$99，并明确不含排名、AI 引用、Knowledge Panel、法律合规和生产站部署。",
+    "访谈 5 个小站站长、Shopify 店主、本地 SEO 代理或开发者，争取 1 个付费试单，记录真实耗时、返工点和客户愿意付费的具体问题。"
+  ],
+  "artifacts": [
+    {
+      "label": "Google Search Central - Intro to structured data",
+      "path": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+    },
+    {
+      "label": "Google Search Central - Merchant listing structured data",
+      "path": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
+    },
+    {
+      "label": "Google Search Console Help - Rich Results Test",
+      "path": "https://support.google.com/webmasters/answer/7445569"
+    },
+    {
+      "label": "Google Search Console Help - Missing rich result features",
+      "path": "https://support.google.com/webmasters/answer/9079920"
+    },
+    {
+      "label": "Schema.org Markup Validator",
+      "path": "https://schema.org/docs/validator.html"
+    },
+    {
+      "label": "Google Search spam policies",
+      "path": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+      "label": "Upwork schema markup service sample",
+      "path": "https://www.upwork.com/services/product/marketing-a-schema-markup-and-structured-data-implementation-service-for-your-site-2093079868481423861"
+    },
+    {
+      "label": "Fiverr JSON-LD service listings",
+      "path": "https://www.fiverr.com/gigs/json-ld"
+    },
+    {
+      "label": "USD/CNY exchange rate sample",
+      "path": "https://exchangeratetool.com/historical/usd-cny"
+    },
+    {
+      "label": "EUR/CNY exchange rate sample",
+      "path": "https://www.investing.com/currencies/eur-cny-historical-data"
+    },
+    {
+      "label": "国家税务总局 - 中华人民共和国个人所得税法",
+      "path": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html"
+    },
+    {
+      "label": "国家外汇管理局 - 个人外汇管理办法",
+      "path": "https://www.safe.gov.cn/safe/2022/0818/21330.html"
+    },
+    {
+      "label": "中央网信办 - 中华人民共和国个人信息保护法",
+      "path": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm"
+    },
+    {
+      "label": "国家网信办 - 促进和规范数据跨境流动规定",
+      "path": "https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm"
+    }
+  ]
+}
