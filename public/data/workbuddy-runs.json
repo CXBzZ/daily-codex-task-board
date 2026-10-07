@@ -1,7 +1,71 @@
 {
-  "generatedAt": "2026-10-06T01:14:52.023Z",
+  "generatedAt": "2026-10-07T01:12:36.234Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-10-07",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：Shopify 独立站搭建与平台迁移",
+      "status": "success",
+      "summary": "电商独立站搭建与跨平台迁移（尤其 WooCommerce→Shopify 迁移）是一项被低估的一人服务：卖家要的是能上线收款、不丢 SEO 流量的结果而非教程。它 100% 远程、全球客户、近零启动成本、有 6.5M 商家与 $1.3B Partner 生态支撑，非常适合 OPC 与数字游民，并能自然转化为月维护 retainer。",
+      "details": "1. 行业是什么，为什么小众\n一句话定义：帮中小卖家把\"开一家能上线收款的 Shopify 独立站\"或\"把旧平台（WooCommerce / Magento / BigCommerce）的店铺整体搬到 Shopify\"做成一项交付服务。\n为什么容易被忽略：大众眼里\"做电商\"=开淘宝/抖音小店或做 dropshipping（已被写烂），但\"帮别人把独立站从 0 搭起来 / 跨平台迁移\"是夹在\"建站外包\"和\"电商运营\"之间的隐蔽需求。卖家要的是\"能上线、能收款、不丢 SEO 流量\"的结果，不是学 Shopify 教程；同时因为需求分散在\"shopify expert\"\"woocommerce to shopify migration\"等低搜索量长尾词里，教程虽多但真正能交付完整迁移（含 301 重定向、数据保真、SEO 保留）的人少，形成被低估的细分。\n\n2. 如何运作\n- 典型客户：① 想从 WooCommerce / BigCommerce 迁到 Shopify 的中小品牌；② 第一次做独立站、不会 Liquid/主题/收款配置的新手 DTC 卖家；③ 需要把模板店改造成转化型页面的成长品牌。需求触发：旧平台插件维护崩溃、平台费上涨、想用 Shopify Payments / Shop Pay、被性能或安全问题逼迁。\n- 核心交付物：一个能上线收款的 Shopify 店铺（主题定制、产品/分类结构、收款与物流配置、必要 App 集成）；或一次\"无流量损失\"的平台迁移（产品/客户/历史订单数据、301 重定向、SEO 元数据保留）。\n- 完整工作流：获客（Shopify Partner Directory、Upwork / Fiverr、Reddit r/shopify、社群推荐）→ 诊断与报价（看旧站 SKU 规模、是否要用迁移工具）→ 用 Shopify Partner 的 client transfer store 免费建站 / 用 LitExtension / Cart2Cart / Matrixify 迁移数据 → 主题与转化优化、配置收款/物流/税/邮件（Klaviyo）→ 301 重定向与 SEO 保真 → 交付培训与上线 → 收款（按项目或月维护费）。\n- 关键工具/平台：Shopify Admin 与 Partner Dashboard、Shopify CLI、Liquid 模板语言；迁移工具 LitExtension / Cart2Cart / Matrixify；PageSpeed Insights / Lighthouse；301 重定向工具；Klaviyo 等邮件/评论 App。\n\n3. 盈利模式\n- 收入来源与定价：按项目——基础建站 $200–$500（自由职业者）/$1,500–$5,000（机构）；主题定制 $300–$2,000；WooCommerce→Shopify 迁移 $300–$1,000（自由职业）/$1,500–$8,000（机构）；全定制主题 $3,000–$15,000+；Shopify Plus 迁移 $10,000–$30,000+。按月维护 $100–$300/月（自由职业）到 $500–$2,000/月（机构）。按效果/小时也可：$15–$165/hr 视资历与地区。\n- 利润空间：工具几乎零成本（Shopify Partner 免费 dev store、迁移工具多为客户承担的一次性费用 $59–$900），主要成本是时间；扣除平台抽成（Upwork 5–15%、Fiverr 约 20%）后，单人项目毛利约 60–85%。\n- 复购/长期合同：迁移与建站是一次性，但 70%+ 客户会续月维护、加功能、做 CRO/SEO，形成长期 retainer，这是利润稳定器。\n\n4. 入门门槛\n- 技能：会用 Shopify 后台、懂一点 Liquid / HTML / CSS、理解电商基本逻辑（产品、收款、物流、税）即可接基础单；进阶需 SEO 重定向、API / App 集成、Shopify Functions。学起来 2–4 周可接基础单。\n- 工具：Shopify Partner 账号（免费）、免费 dev store、迁移工具（客户付费，自己可先用免费 demo）、PageSpeed 等免费工具。初期费用≈$0。\n- 资金：几乎为零，最多花几十刀买个好学主题或测试。\n- 时间：从零到第一单，若已有前端基础约 1–2 周（建好 1–2 个 demo 店铺 + 上 Upwork / Fiverr）；无基础约 3–6 周。\n\n5. 为什么适合 OPC / 数字游民\n具体理由而非空话：① 100% 远程异步——店铺搭建全在 Shopify 云端，无需本地执照或固定场所，靠留言 + 录屏交付；② 全球客户——Shopify 6.5M+ 商家、覆盖 175 国，英语即可服务欧美客户，数字游民在哪都能接；③ 边际成本低——一个 dev store 模板与迁移 SOP 可复用到多个客户；④ 可规模化——从单人接单到月维护 retainer，再到带 1–2 个外包形成小团队；⑤ 时区友好——建站非实时支持，白天交活、夜里收需求，天然适合跨时区异步工作。\n\n6. 潜在收益（谨慎，不承诺）\n用区间 + 条件说明，引用公开数据：\n- 新手阶段（0–12 个月）：在 Upwork / Fiverr 接基础建站 / 主题修改，时薪 $15–$60，月入约 $500–$3,000。参考 10100 跨境：Shopify 开发岗均时薪 $35–$80、项目 $500–$3,000；memvers：Fiverr 基础建站 $200–$500、Upwork $500–$1,500。\n- 成熟阶段：专注\"WooCommerce→Shopify 迁移\"或\"Shopify Plus\"等高价细分，单项目 $1,500–$8,000+，加月维护 $500–$2,000/月，月入可到 $5,000–$20,000+。GigRadar 案例：专注迁移的 Upwork 机构单迁移项目 $15K–$60K、有机构 3 周新增 $21K；Yaxify 迁移报价 $1,500–$8,000。\n- 行业参考数据：Shopify 2024 GMV $292.3B、6.5M 商家、合作生态 2025 向 Partner 付费 $1.3B；2023 年 60.8% 电商迁移流向 Shopify、单 90 天有 8,993 个 WooCommerce 商店迁到 Shopify（GigRadar 引 LitExtension）。\n- 明确标注：以上为行业/平台层面的参考数据，不等于个人收入；实际收入取决于技能、口碑、获客能力与所在时区客户群。\n\n7. 主要风险\n- 市场风险：Shopify 自带的模板与 AI（Shopify Magic / Sidekick）降低基础建站门槛，低端\"套模板\"单会被压价；Upwork 上大量 $10–$30/hr 新手加剧低价竞争。\n- 技术风险：Shopify 频繁改 API / 结账架构（Functions、Hydrogen），需持续学习；迁移工具对复杂字段（metafield、订阅数据）支持有限，出错过数据要赔。\n- 合规风险：跨境收款涉及 Stripe / Shopify Payments 地区限制与 KYC；欧盟 VAT、美国销售税配置错误会引发合规问题；代客户处理客户数据需注意隐私。\n- 现金流风险：Shopify 付款结算有账期、Upwork / Fiverr 放款滞后、获客前期投入时间却暂无收入。\n\n8. 不适合的人群\n- 完全不想碰任何代码 / 后台配置的人（至少得会 Liquid / HTML 改主题）。\n- 想\"零技能躺着赚\"的人（迁移有技术坑，搞砸要赔）。\n- 只愿意接低价 dropshipping 套站、不愿做售后维护的人。\n- 对电商逻辑（收款、税、物流）毫无兴趣者。\n\n9. 3 个可验证的入门步骤\n1. 今天注册 Shopify Partner 账号（免费），用 client transfer store 搭一个演示店铺：选免费主题 + 上 10 个测试产品 + 配 Shopify Payments 测试模式，截图作为作品集。验证：能否在 1 天内跑通一个可演示店铺。\n2. 第 2 天在 Upwork 搜 \"Shopify store setup\" / \"WooCommerce to Shopify migration\"，筛选 TOP RATED 卖家，记录他们的报价区间与服务清单（如 memvers 整理的基础建站 $200–$500、迁移 $300–$1,000），确认需求真实存在。验证：该关键词下活跃在招项目数量。\n3. 第 3 天用免费 demo 跑一次 LitExtension / Cart2Cart 的小批量迁移（把一个小 WooCommerce 测试站约 50 个产品迁到 Shopify dev store），确认自己能完成\"数据迁移 + 301 重定向 + SEO 保真\"闭环。验证：能否零成本复现一次完整迁移。\n\n10. 核验来源\n- Shopify 2024 财报（GMV $292.3B、6.5M 商家、175 国）：https://www.shopify.com/investors/press-releases/shopify-merchant-success-powers-q4-outperformance-across-both-top-and-bottom-line\n- Shopify Partner Directory（官方专家/服务目录，可验证需求与同业）：https://www.shopify.com/partners/directory\n- Shopify Partner Program 说明（免费加入、client transfer store 机制）：https://uptek.com/blog/shopify-partner-program\n- 建站/迁移定价拆解（memvers，Fiverr/Upwork/机构分档报价）：https://memvers.com/blog/hire-shopify-developer-or-diy\n- Upwork 上 Shopify 机构定价与迁移溢价（GigRadar，含 $1.3B Partner 付费、迁移流向数据）：https://wf.gigradar.io/blog/shopify-development-agency-upwork\n- WooCommerce→Shopify 迁移工具对比（LitExtension / Cart2Cart / Matrixify 价格与适用）：https://skalum.agency/en/woocommerce-to-shopify-migration-plugin\n- Cart2Cart 自动化迁移工具官网（按实体计费，可验证工具市场）：https://www.shopping-cart-migration.com/\n- 中国跨境视角：Shopify 开发兼职接单与报价（10100，时薪 $35–$80、项目 $500–$3,000）：https://www.10100.com/encyclopedia/5/23312893",
+      "startedAt": "2026-10-07T09:00:00+08:00",
+      "finishedAt": "2026-10-07T09:50:00+08:00",
+      "duration": "50m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "ecommerce",
+        "shopify",
+        "store-migration"
+      ],
+      "nextSteps": [
+        "注册 Shopify Partner 账号，用 client transfer store 在 1 天内搭一个可演示店铺作为作品集。",
+        "在 Upwork 搜 'Shopify store setup' / 'WooCommerce to Shopify migration'，记录 TOP RATED 卖家的报价与服务清单，确认需求真实。",
+        "用 LitExtension/Cart2Cart 免费 demo 跑一次 50 产品的小批量迁移，验证自己能完成数据+301重定向+SEO保真闭环。"
+      ],
+      "artifacts": [
+        {
+          "label": "Shopify 2024 财报（GMV/商家数）",
+          "path": "https://www.shopify.com/investors/press-releases/shopify-merchant-success-powers-q4-outperformance-across-both-top-and-bottom-line"
+        },
+        {
+          "label": "Shopify Partner Directory 官方目录",
+          "path": "https://www.shopify.com/partners/directory"
+        },
+        {
+          "label": "Shopify Partner Program 说明",
+          "path": "https://uptek.com/blog/shopify-partner-program"
+        },
+        {
+          "label": "建站/迁移定价拆解（memvers）",
+          "path": "https://memvers.com/blog/hire-shopify-developer-or-diy"
+        },
+        {
+          "label": "Upwork Shopify 机构定价与迁移溢价（GigRadar）",
+          "path": "https://wf.gigradar.io/blog/shopify-development-agency-upwork"
+        },
+        {
+          "label": "WooCommerce→Shopify 迁移工具对比（Skalum）",
+          "path": "https://skalum.agency/en/woocommerce-to-shopify-migration-plugin"
+        },
+        {
+          "label": "Cart2Cart 迁移工具官网",
+          "path": "https://www.shopping-cart-migration.com/"
+        },
+        {
+          "label": "中国跨境 Shopify 开发接单与报价（10100）",
+          "path": "https://www.10100.com/encyclopedia/5/23312893"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-10-07/niche-opc-industry.json"
+    },
     {
       "date": "2026-10-06",
       "taskId": "niche-opc-industry",
