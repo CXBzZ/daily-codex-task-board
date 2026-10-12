@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-10-12 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-10-12</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-10-12.html">2026-10-12</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 SaaS、会员制内容产品和独立软件团队的 Stripe 产品/价格表、Checkout/Pricing Table、Customer Portal、Automatic Tax 提示、测试结账与订阅账单流程上线前 QA 服务，属于中国境内可做的海外市场。它适合懂英文、Stripe Billing/Checkout 基础、测试流程和权限边界的 OPC/一人公司或数字游民小规模验证，但只能做授权配置核对和上线前 QA，不代开 Stripe 账号、不代管资金、不处理真实卡号，也不承诺税务/法律合规或 Stripe 审核结果。</p>
+      <div class="details"># Stripe 订阅账单与 Checkout 上线前 QA 服务
+
+## 行业是什么，为什么小众
+今天选择的行业是：面向海外小型 SaaS、会员制内容产品、独立软件团队、线上社区、创作者订阅产品和轻量 B2B 工具的 Stripe 产品/价格表、Checkout/Pricing Table、Customer Portal、Automatic Tax 提示、测试结账与订阅账单流程上线前 QA 服务。
+
+它不是泛泛的支付网关集成，也不是代开 Stripe 账号、支付中介、税务顾问或账号解封服务。更准确地说，它是把客户已经拥有并有权使用的 Stripe 账号、测试环境、产品定价方案和网站结账入口，在上线前按清单做一轮配置核对、测试购买、订阅状态检查、客户门户体验检查、截图证据和问题清单交付。典型交付包括：核对 Product/Price 命名、币种、月付/年付、试用期、是否误把月付和年付建成不同产品；检查 Pricing Table 展示是否和官网文案一致；用测试卡走通 Checkout；检查 webhook/event destination 是否至少有待办项或已由开发者处理；检查 Customer Portal 是否支持客户自助改卡、取消或升级；提示客户确认 Stripe Tax、税码和价格含税/不含税设置；输出 QA 表、截图和风险提示。
+
+它小众，是因为很多小型 SaaS 创始人会先把支付入口“能付钱”接起来，却忽略价格目录、订阅生命周期、取消流程、收据税费展示、测试/生产 key 隔离、客户门户和失败付款处理这些上线前细节。正式的支付集成开发门槛高、客单价高；普通虚拟助理又未必懂 Stripe 里的 Product、Price、Checkout Session、Subscription、Customer Portal、Tax behavior 和 webhook 之间的关系。这个细分机会在中间层：不替客户写复杂支付系统，只做授权范围内的配置与流程 QA。
+
+重要边界：该服务应定位为上线前配置与流程 QA，不触碰收款主体、资金代管、真实卡信息、税务/法律结论或 Stripe 审核承诺。服务者不得代客户注册 Stripe 账号、规避国家/地区可用性限制、代收代付、代管 API secret key、处理真实银行卡号、服务 Stripe 禁止或受限业务、承诺付款成功率/拒付率/税务合规/账号解封/审核通过。
+
+## 目标市场
+本期属于“中国境内可做的海外市场”。目标客户不是中国大陆本地商户开通 Stripe，而是海外已经拥有合规 Stripe 账号、准备上线订阅或一次性付款的小型团队。
+
+潜在客户包括：美国、英国、欧盟、加拿大、澳大利亚、新加坡、香港等 Stripe 支持地区的小型 SaaS、AI 工具、会员内容站、在线课程工具、newsletter/社区产品、独立开发者和小型软件工作室。中国境内个人、个体工商户或一人公司可以通过 Upwork、Fiverr、Contra、LinkedIn、Indie Hackers 社群、SaaS 创始人社群、Stripe/Next.js/No-code 相关技术社区和独立站获客，远程交付 QA 清单、测试证据和修复建议。
+
+为什么适合 OPC/数字游民验证：不需要海外门店、本地库存或强牌照；客户自己持有 Stripe 账号和收款主体；服务方主要提供检查、测试、文档和轻量配置协助。新手可从“1 个产品 + 月/年两个价格 + Pricing Table + 测试 Checkout QA”小包开始，而不是一上来承诺完整支付系统开发。
+
+## 典型需求场景和客户是谁
+1. 独立 SaaS 准备上线付费墙，已有 Basic/Pro/Team 三档价格，但担心月付/年付、试用期、优惠码、取消流程和客户门户没有测试完整。
+2. 创作者会员站从 Gumroad/Patreon/手工收款迁移到 Stripe Checkout 或 Pricing Table，需要确认产品价格、税费提示和订阅成功后的跳转体验。
+3. 小型 B2B 工具准备把价格页从静态按钮改成 Stripe Pricing Table，需要检查最多展示产品/价格限制、客户 email 传递、client_reference_id 不泄露敏感信息等问题。
+4. 开发者已经接了 Stripe Checkout，但创始人需要第三方做一轮黑盒测试：测试卡、取消、重复订阅、升级降级、失败付款邮件和收据截图。
+5. no-code/low-code 团队用 Webflow、Framer、Softr、Bubble、Memberstack 或 Lemon Squeezy/Stripe 混合方案搭订阅，需要一个熟悉 Stripe 账单对象的人做上线前检查。
+
+## 行业如何运作，典型参与方和工作流
+典型参与方包括海外创始人、产品经理、全栈开发者、no-code 开发者、Stripe 账号管理员、会计/税务顾问、客服负责人和外部 QA 服务商。中国境内承接者应把自己定位为“授权测试与配置核对供应商”，而不是 Stripe 官方代理、支付机构、税务师、律师或资金清算方。
+
+标准工作流：
+1. 预筛选：确认客户所在国家/地区是否是 Stripe 支持地区，业务类型是否可能落入 Stripe prohibited/restricted businesses，是否已有测试环境，是否需要进入 Dashboard，是否涉及真实客户数据。
+2. 授权与范围：通过平台订单或英文 SOW 写清客户授权、测试环境优先、最小权限、禁止真实卡信息、禁止代收款、禁止税务/法律结论、返工轮次和保密要求。
+3. 产品/价格表核对：检查 Product/Price 命名、默认价格、币种、一次性/订阅、月付/年付、税码、tax behavior、metadata/lookup key、active/inactive 状态是否和客户官网文案一致。
+4. Checkout/Pricing Table 测试：按测试模式走通支付、取消、成功页、失败页、重复订阅、优惠码、账单地址、收据和客户 email 等流程；记录截图和测试用例结果。
+5. Customer Portal 与订阅生命周期：检查客户自助改卡、取消、升级降级、查看 invoice 的入口和文案；如果需要开发配合，则把 webhook、event destination、checkout.session.completed、invoice.payment_failed、customer.subscription.updated/deleted 等作为待办项列给客户技术方确认。
+6. 税费与合规提示：只提示客户确认 Stripe Tax、tax code、税务登记、价格含税/不含税、发票和当地税务义务；不替客户判断应纳税地、税率、注册义务或法律合规。
+7. 交付：输出 QA 表、测试截图、问题分级、复测结果、客户需要自行确认的事项和上线前 checklist。
+
+## 盈利模式和报价口径
+收入来自上线前配置核对、测试用例执行、截图证据、问题清单、轻量配置协助和复测，不来自平台套利、代收资金、刷交易、规避风控或账号解封。
+
+公开报价只能作为毛收入参考，不代表成交率或净利润。2026-10-12 核验时，Fiverr 的 Stripe setup 相关服务页可见大量 Stripe checkout、subscription、payment gateway setup 服务，页面样本显示低价服务从约 5-109 欧元起；Upwork 的一个 Stripe integration project 显示 Starter $99、Standard $299、Advanced $599，其中 Starter 描述为 Stripe integration、basic payment setup、testing。这些更偏集成开发市场，本文建议新手只截取其中“测试、配置核对、上线前 QA”这一小包，不把完整开发价当作稳定收入。
+
+按 2026-10-12 Investing.com 显示的 USD/CNY 约 6.693 粗略折算：
+- 入门 QA 小包：$49-$99，约 328-663 元人民币；适合 1 个产品、2-3 个价格、1 个 Checkout/Pricing Table、基础测试截图。
+- 标准订阅 QA 包：$120-$300，约 803-2008 元人民币；适合 2-4 个订阅档位、月/年价格、Customer Portal、优惠码、取消/升级降级、收据和测试用例报告。
+- 上线前复测/白标包：$300-$800，约 2008-5354 元人民币；适合 no-code 开发者、独立开发者或小型代理商在多个客户项目中复用 QA checklist。
+- 月度维护小包：$150-$500，约 1004-3347 元人民币；适合每月新增价格、优惠码、试用期或付款入口的团队，但必须限定为配置 QA 和复测，不做财务对账或税务申报。
+
+更现实的收益模型是：新手先用每月 2-6 个小包验证流程，毛收入可能只有 $100-$600；熟练后与 no-code 开发者、小型 SaaS 代理商、独立开发者社区合作，靠标准化测试用例和复测模板提高效率。净收入需要扣除平台佣金、收款手续费、汇损、税费、测试工具、售前沟通、返工和跨时区会议成本。
+
+## 入门门槛
+技能：英文沟通、Stripe Dashboard 基础、Product/Price/Checkout/Subscription/Customer Portal/Tax 的对象关系、测试卡和测试模式、基础 HTTP/webhook 概念、SaaS 订阅业务理解、截图报告、问题分级和权限边界。最好能读懂官方文档并把技术问题翻译成创始人能理解的待办项。
+
+设备/软件：普通电脑、稳定网络、浏览器多 profile、截图/录屏工具、表格、Notion/Google Docs、测试邮箱、Stripe 官方测试卡文档、客户提供的测试环境。可使用自动化测试或浏览器录制辅助，但必须人工复核付款金额、币种、税费、跳转、订阅状态和客户门户结果。
+
+资质/合规：通常不需要海外支付牌照，因为服务方不触碰资金、不成为收单主体、不代持商户账号、不处理真实卡号。中国境内经营应按个人、个体工商户或公司身份留存合同、订单、invoice/发票、收款和汇率记录。若客户业务涉及金融、投资、博彩、成人、药品、虚拟币、众筹、捐赠、票务、旅行、受监管医疗等高风险类别，应先让客户自行确认 Stripe 支持性和当地法规，服务方不宜承接或只做非常有限的非敏感技术 QA。
+
+资金和时间：低成本启动可以控制在几百元人民币以内，主要是作品集、域名、录屏工具和少量模板成本。若已有 Web/SaaS 基础，1-2 周可做 demo；若从零学习 Stripe Billing，建议至少用 2-4 周完成官方文档、测试模式 demo 和 3 套匿名 QA 样例。
+
+渠道：Fiverr/Upwork 上架具体小包；LinkedIn 搜索 indie SaaS founder、no-code developer、Bubble/Webflow developer、Stripe consultant；在 Indie Hackers、X、Reddit SaaS/Stripe/NoCode 社群分享“pre-launch billing QA checklist”；与 no-code 开发者、SaaS 模板作者、轻量软件外包团队白标合作。服务标题要窄，例如 Stripe Checkout pre-launch QA、Stripe subscription billing test report、Pricing Table and Customer Portal QA。
+
+## 中国境内承接海外市场的执行细节
+跨境获客：平台订单应遵守站内沟通、托管付款和禁止绕平台付款规则；直客单应使用英文 SOW。获客文案不要写 Stripe official partner、guaranteed approval、tax compliant、chargeback proof、account recovery、payment success guaranteed 等承诺。
+
+远程交付：优先使用测试模式、测试数据和客户提供的 staging 环境。需要 Dashboard 时，要求客户授予最小权限、限定时间、项目结束后撤权；避免索要主账号密码、2FA、secret key、银行账户、税务识别号和真实客户名单。能用屏幕共享让客户自己点击保存的步骤，就不要长期持有权限。
+
+合同/发票或收款：平台订单以平台合同和交付记录为凭证；直客单写清测试范围、产品/价格数量、是否含复测、返工次数、排除项、保密、文件删除和不承诺事项。中国境内个人/个体/一人公司应按自身主体开具 invoice 或国内发票，并保留收款、汇率和合同资料。
+
+税务申报：中国境内单位和个人向境外单位提供完全在境外消费的软件服务、信息系统服务、业务流程管理等服务，国家税务总局资料显示在符合条件时可能涉及跨境应税行为零税率或免税政策；实操上应让会计或主管税务机关确认自己业务归类、备案/申报、发票和所得税处理。不要把平台提现误解成免税收入。
+
+平台规则：客户必须自己拥有受支持地区的 Stripe 账号和合法收款主体。Stripe 官方 global availability 页面说明 Stripe 只在支持的国家/地区开放账户；restricted businesses 规则要求商户不得使用 Stripe 处理禁止/受限业务，部分业务需预先批准。服务方不应帮助客户绕过国家/地区、业务类型、KYC、税务或风控要求。
+
+数据/隐私合规：Stripe Dashboard 可能包含客户姓名、邮箱、账单地址、付款状态、发票和订阅记录。中国境内承接者应尽量只接触测试数据；若必须查看真实数据，需客户书面授权、最小范围、签署保密/数据处理条款、避免下载导出，项目结束删除截图和缓存。若涉及中国境内个人信息，个人信息保护法要求处理前告知处理者名称、目的、方式、种类、保存期限等；向境外提供个人信息还涉及单独同意等要求。对海外客户的 EU/UK/US 用户数据，也应由客户自行确认 GDPR/UK GDPR/CCPA 等当地义务，服务方只按客户指示处理。
+
+语言和时区门槛：需要英文读写和一定技术沟通能力。北美客户常在北京时间晚间或清晨沟通，欧洲客户较友好。推荐用异步 QA 表、截图和短录屏减少会议；紧急上线前测试要加价并明确响应窗口。
+
+## 为什么适合或不完全适合 OPC/一人公司
+适合点：固定资产轻、可完全线上交付、流程可模板化、单人能完成测试用例、截图报告和复测。服务可从小包开始，客户也容易用低风险任务验证质量。
+
+不完全适合点：支付和税务边界敏感，客户容易把 QA 服务误解成支付集成、税务合规、财务对账、风控优化或账号解封。OPC 必须把排除项写清楚：不代开账号、不代管资金、不处理真实卡、不保存 secret key、不服务受限业务、不承诺合规和交易结果。
+
+## 为什么适合或不完全适合数字游民/远程工作者
+适合点：交付依赖电脑、网络、英文、表格和截图，地点灵活；大部分测试可异步完成，很适合远程工作者在稳定网络环境下批量处理。
+
+不完全适合点：涉及支付后台，网络安全和设备安全要求高。公共 Wi-Fi、共享电脑、频繁换设备、无密码管理器、无磁盘加密、随意保存客户截图的工作方式不适合。跨时区上线前窗口也可能影响作息。
+
+## 潜在收益、前提条件和成本结构
+低成本验证期：每月 2-6 个 $49-$99 小包，毛收入约 $98-$594，折合约 656-3976 元人民币。这个阶段主要验证获客、模板、沟通和交付边界。
+
+标准接单期：每月 4-12 个 $120-$300 标准包，毛收入约 $480-$3600，折合约 3213-24095 元人民币。前提是有稳定 demo、明确 checklist、客户提供测试环境、返工可控且不卷入完整开发。
+
+白标合作期：与 no-code 开发者、小型 SaaS 代理商或独立开发者社区合作，按项目或月包处理多个客户付款流程 QA，毛收入可能更稳定。但净利润取决于单个项目复杂度、平台费、汇损、税费、售前评估、复测次数、深夜会议和风险项目筛选成本。不能承诺稳定月入。
+
+## 主要风险、合规注意事项和不适合人群
+主要风险：
+1. 支付合规边界风险：客户可能要求代开账号、代收款、绕 KYC、处理真实卡号或规避风控，必须拒绝。
+2. 受限业务风险：Stripe restricted businesses 会因国家/地区和业务类型变化；遇到金融投资、成人、博彩、药品、众筹、虚拟币、票务、旅行、医疗等行业要谨慎或拒单。
+3. 税务误导风险：Stripe Tax 是工具，不等于客户已完成税务登记、申报或当地合规；服务方只能提示确认，不出结论。
+4. 数据泄露风险：Dashboard 截图可能含客户邮件、账单地址、交易状态和发票，需要脱敏、最小化和删除 SOP。
+5. 技术责任风险：如果服务方直接改生产环境价格、税费、优惠码或 webhook，可能影响真实收入；新手应优先只读检查或测试环境。
+6. 低价竞争风险：简单支付按钮测试容易被低价 freelancer 压价，议价来自细致 checklist、SaaS 订阅理解和证据化报告。
+7. 跨境税务和收款风险：中国境内收入需要按主体依法申报，保存合同、invoice、平台账单、汇率和收款记录。
+
+不适合人群：没有英文技术阅读能力的人；不懂支付/订阅流程却想靠模板硬接的人；喜欢承诺包过、账号恢复、税务合规、拒付下降的人；会索要客户主密码或 secret key 的人；设备安全和资料保密习惯差的人；不能接受跨时区沟通和上线前压力的人。
+
+## 新手可验证的 3 个低成本入门步骤
+1. 做 3 个匿名 demo：用 Stripe 测试模式做一个 Basic/Pro 月付年付价格表、一次性付款、订阅取消/客户门户 QA，把测试截图和问题清单整理成作品集。
+2. 上架一个窄服务：只卖“Stripe Checkout/Pricing Table pre-launch QA for one SaaS pricing page”，报价 $49-$99，明确不含开发、不含税务/法律意见、不含账号开通、不含真实资金处理。
+3. 准备安全交付包：英文 SOW、权限边界说明、测试数据要求、受限业务拒单清单、QA checklist、截图脱敏规范、项目结束撤权和删除确认。
+
+## 点评 Agent 审稿
+本次已启动独立点评 Agent 审稿。审稿结论：建议通过，不需要换题。
+
+- 中国境内承接海外市场适配度：4/5
+- OPC/一人公司适配度：5/5
+- 数字游民适配度：4/5
+- 合规风险等级：中
+- 跨境执行风险等级：中
+- 收益口径是否克制，有无夸大：克制。以 Fiverr/Upwork 公开服务价格作参照，没有承诺高收入或稳定订单，风险边界也写得清楚。
+- 信息来源是否足够可信：足够可信。Stripe 官方文档、公开平台价格、国家税务总局材料、个人信息保护法条文都属于合适的一手或可核验来源。
+- 最该补充或提醒的一句话：该服务应定位为上线前配置与流程 QA，不触碰收款主体、资金代管、真实卡信息、税务/法律结论或 Stripe 审核承诺。
+- 是否建议通过：建议通过。它的小众性、远程交付属性和一人服务适配度都不错，但成文时必须把“只做测试环境/授权账号核对”和“不做 Stripe 账号/资金/税法合规兜底”放在显眼位置，避免读者误解成代运营、支付中介或合规保证服务。
+
+## 关键核验来源
+1. Stripe Documentation - Products and Prices：核验 Price 表示单位成本、币种和可选账单周期，Products 表示不同商品或服务层级。https://docs.stripe.com/api/prices
+2. Stripe Documentation - Pricing Table：核验 Pricing Table 使用 Stripe Checkout，可更新展示产品/价格，完成 Checkout 后通过 checkout.session.completed 和 event destination 做履约/对账，并提示 client_reference_id 不应包含敏感信息。https://docs.stripe.com/payments/checkout/pricing-table
+3. Stripe Documentation - Product object：核验 Product 的 name、description、default_price、tax_code 等对象字段。https://docs.stripe.com/api/products/object
+4. Stripe Documentation - Recurring pricing models：核验订阅可用 flat rate、per-seat、tiered、usage-based 等定价模式。https://docs.stripe.com/billing/subscriptions/metered-billing/thresholds
+5. Stripe Tax：核验 Checkout Session 可使用 automatic_tax[enabled]=true 添加自动税计算，并展示税费本地化。https://stripe.com/tax
+6. Stripe Global availability：核验 Stripe 账户可用国家/地区范围，客户应自行拥有受支持地区的合法收款主体。https://stripe.com/global
+7. Stripe Prohibited and Restricted Businesses FAQ：核验 Stripe 对禁止/受限业务有审查和限制，部分业务需预先批准。https://support.stripe.com/questions/prohibited-and-restricted-business-list-faqs
+8. Fiverr Stripe setup services：核验市场上存在 Stripe setup、checkout、subscription、payment gateway setup 服务，低价样本从约 5-109 欧元起。https://www.fiverr.com/gigs/stripe-setup
+9. Upwork Stripe integration project sample：核验公开服务样本包含 $99/$299/$599 层级及 basic payment setup/testing 描述。https://www.upwork.com/services/product/development-it-stripe-charge-subscriptions-connect-with-seamless-payment-integration-2064033047311521602
+10. Investing.com USD/CNY historical data：核验 2026-10-12 USD/CNY 约 6.693 的折算参考。https://www.investing.com/currencies/usd-cny-historical-data
+11. 国家税务总局 - 跨境应税行为适用增值税零税率政策：核验境内单位和个人向境外单位提供完全在境外消费的软件服务、信息系统服务、业务流程管理服务等可能涉及零税率政策和备案/申报要求。https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html
+12. 国家税务总局 - 跨境应税行为免税申报：核验跨境应税行为享受免税应按规定进行纳税申报。https://www.chinatax.gov.cn/chinatax/c102449/c5239192/content.html
+13. 中华人民共和国个人信息保护法：核验个人信息处理前告知、同意，以及向境外提供个人信息的告知和单独同意要求。https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>12/10/2026, 16:03</p><p class="meta-line"><span>Finished</span>12/10/2026, 16:08</p><p class="meta-line"><span>Duration</span>5m 37s</p><p class="meta-line"><span>Source</span>automation-3</p><p class="meta-line"><span>File</span><code>runs/2026-10-12/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>us</span><span>uk</span><span>eu</span><span>stripe</span><span>payments</span><span>saas</span><span>billing-qa</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>做 3 个匿名 demo：用 Stripe 测试模式做一个 Basic/Pro 月付年付价格表、一次性付款、订阅取消/客户门户 QA，把测试截图和问题清单整理成作品集。</li><li>上架一个窄服务：只卖“Stripe Checkout/Pricing Table pre-launch QA for one SaaS pricing page”，报价 $49-$99，明确不含开发、不含税务/法律意见、不含账号开通、不含真实资金处理。</li><li>准备安全交付包：英文 SOW、权限边界说明、测试数据要求、受限业务拒单清单、QA checklist、截图脱敏规范、项目结束撤权和删除确认。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.stripe.com/api/prices">Stripe Products and Prices</a></li><li><a href="https://docs.stripe.com/payments/checkout/pricing-table">Stripe Pricing Table</a></li><li><a href="https://docs.stripe.com/api/products/object">Stripe Product object</a></li><li><a href="https://docs.stripe.com/billing/subscriptions/metered-billing/thresholds">Stripe recurring pricing models</a></li><li><a href="https://stripe.com/tax">Stripe Tax</a></li><li><a href="https://stripe.com/global">Stripe global availability</a></li><li><a href="https://support.stripe.com/questions/prohibited-and-restricted-business-list-faqs">Stripe restricted businesses FAQ</a></li><li><a href="https://www.fiverr.com/gigs/stripe-setup">Fiverr Stripe setup services</a></li><li><a href="https://www.upwork.com/services/product/development-it-stripe-charge-subscriptions-connect-with-seamless-payment-integration-2064033047311521602">Upwork Stripe integration sample</a></li><li><a href="https://www.investing.com/currencies/usd-cny-historical-data">USD/CNY reference</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html">国家税务总局跨境应税行为零税率政策</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239192/content.html">国家税务总局跨境应税行为免税申报</a></li><li><a href="https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm">中华人民共和国个人信息保护法</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 12/10/2026, 16:06</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
