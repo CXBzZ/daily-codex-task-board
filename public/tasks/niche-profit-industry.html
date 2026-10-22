@@ -17,9 +17,101 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">83 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">84 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-10-22.html">2026-10-22</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 SaaS、独立开发者和 Next.js/React 产品的 Sentry 错误监控、source map、release 标记、PII 脱敏与告警规则上线前 QA，属于中国境内可远程承接的海外市场。它适合以固定范围的授权配置、测试证据和交接切入的 OPC/数字游民，但不承诺零事故、代替 SRE 值守或出具安全/隐私合规认证。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+这是为已有 Web 应用或轻量 SaaS 做 Sentry 错误可观测性上线前配置与 QA 的技术服务：检查 SDK 初始化、环境区分、release 标记、构建时 source map 上传、可读堆栈、必要 PII 脱敏、基础告警和交接文档。它不是泛泛“装监控”，更不是托管安全运营或 7×24 事故响应。Sentry 官方把 source maps、releases 与数据清洗都作为独立配置主题；只接 SDK 而没有可读堆栈、版本关联和数据边界，常导致报警噪声或把不应收集的数据送出。
+
+它小众，是因为横跨前端构建（Vite/Webpack/Next.js）、CI/CD、错误分组、版本发布、英文文档和隐私边界。普通建站服务通常停在“代码里加 SDK”，小团队往往在上线后才发现压缩堆栈无法定位、发布版本不匹配、告警没人处理，或错误上下文带有邮箱、token、请求体等不该进入第三方监控的数据。
+
+## 目标市场、需求与客户
+
+**目标市场：中国境内可做的海外英语市场。** 优先客户是海外独立开发者、小型 B2B SaaS、Next.js/React 产品、开发代理和有 staging 环境的早期团队。首单应排除医疗、金融、儿童、政府、支付卡数据和需要生产事故值守的项目。
+
+典型需求：首次上线；报错只显示压缩文件名；无法判断错误来自哪个 release；通知太多无人处理；需要区分测试与生产环境；或交接给新开发者前需要留下脱敏配置、报警负责人和关闭/回滚说明。
+
+## 参与方与工作流
+
+1. **范围与授权：** 英文 SOW 写明一个应用/仓库、环境、是否包含 CI 变量、staging、交付物、返工次数和客户最终部署人；不导出生产事件、会话回放、用户列表、数据库或密钥。
+2. **基线检查：** 客户在自有 Sentry 组织中创建项目并授予可撤销最小权限；检查 SDK、environment、release、采样、过滤器、source map 与基础 alert。
+3. **构建验证：** 在 staging 或自有 demo 中，用客户保管的 token/环境变量经 Sentry CLI 或官方构建插件上传 source maps/artifact bundle；以受控错误确认文件名和行号可读。token 绝不进入前端、仓库或截图。
+4. **数据与告警 QA：** 先在 SDK 的 beforeSend/采集配置或客户自控 Relay 中删除 token、cookie、Authorization、邮箱/手机号等字段，再按客户确认配置数据清洗；只用虚构测试用户。为少量高影响错误设明确负责人，避免“全部异常通知所有人”。云端数据清洗不等于数据从未离开客户环境。
+5. **交接：** 交付环境/release 对照、测试截图或事件链接、告警清单、排除项、回滚/禁用、令牌轮换与撤权清单。客户批准生产部署并处理真实告警。
+
+## 盈利模式、报价与成本
+
+收入来自单应用“基线审计 + staging 配置 + source map/release 验证 + PII/告警检查 + 交接”，多环境/多应用加价，或重大版本前回归 QA。Upwork 一个公开 Sentry Node.js/Python 设置服务展示 Starter/Standard/Advanced 为 **US$75 / $145 / $275**；这是单一公开报价样本，不是市场均价。
+
+新手试单应仅含一个非敏感 Web 应用、一个 staging、一次受控错误验证和交接清单，报价可参考 **US$100–300（约 ¥720–2,160，按 1 USD≈¥7.2 的便捷折算）**。既有复杂 CI、SSR、多个仓库/环境、性能 tracing、Session Replay、on-call 或生产故障排查必须另行评估或拒绝。收入不是净收益，需扣平台佣金、收款/换汇、税费、英文售前、构建排障、返工和时区成本。
+
+## 入门门槛
+
+- **技能：** JavaScript/TypeScript、HTTP、source map/构建产物、Git/CI 环境变量、React/Next.js 基础；能读官方英文文档并写清限制。
+- **设备/软件：** 电脑、稳定网络、编辑器、Git、浏览器开发工具、可控 demo、截图/录屏工具；无需重资产。
+- **资质/合规：** 通常无海外本地职业牌照，但不能自称 Sentry 官方、SOC 2 审计师、DPO、律师或渗透测试方；不提供安全审计、GDPR/CCPA/PIPL 法律意见或事故 SLA。
+- **渠道与时间：** 可从 Upwork/Fiverr、独立开发者社群、SaaS 开发代理和既有前端维护客户切入。具备构建基础者约 2–4 周可完成 demo 与模板；稳定应对客户 CI/发布差异仍需试单积累。
+
+## 中国境内承接海外市场
+
+- **获客、交付与合同：** 英文 SOW 写清应用/环境数、source map、release、告警、数据清洗、测试次数、客户批准责任及非保证事项；用客户自有组织、staging 和临时最小权限。不得买卖账号、冒用所在地/KYC、绕平台付款或承诺“必修复/零报警”。
+- **收款、发票和税务：** 保存 SOW/平台订单、交付、结算/收款/结汇与票据。跨境服务是否免征增值税取决于实际服务性质、合同、消费地、主体和当地执行口径；符合条件者还需按规定报告。个人或一人公司应向开户行、主管税务机关或专业人士确认结算、开票、申报和资料留存，不能因客户在海外就假定免税。
+- **平台规则：** 遵守 KYC、地区、托管付款和账号规则；不提交虚假监控/隐私配置。
+- **数据/隐私：** 事件、URL、IP、用户 ID、请求头/体、日志、source map、源码和 token 都可能敏感；默认不下载生产事件，采用最小权限、NDA/DPA、留存期限、撤权/删除。海外数据按客户所在地规则和处理者指令执行；如触及中国境内个人信息或重要数据，必须由相关主体按实际数据流核对 PIPL 的出境机制与单独同意等要求，服务方不作法律结论。
+- **语言/时区：** 要能用英文说明 release mismatch、source map upload、sampling、scrubbing、alert ownership 与 out of scope。用异步报告、预约发布窗口和明确响应时间；旅途中网络不稳不接紧急生产排障。
+
+## OPC、数字游民、收益和风险
+
+**OPC/一人公司：适合（高）。** 可产品化为单应用检查、staging 验证、证据报告和交接，固定资产轻；复杂多服务可观测性、生产权限治理、on-call、攻击响应和持续 SRE 不适合单人低价包办。
+
+**数字游民：适合但有条件（中等）。** 审计和 CI 集成多数可异步，交付轻；发布窗口、事故验证、源码/token 和权限交接要求稳定网络、设备加密与一定时区重叠。适合项目制 QA，不适合随叫随到。
+
+验证期每月 1–3 个严格小包、按 $100–300/个，毛收入情景约 $100–900（约 ¥720–6,480）；熟练后每月 2–5 个项目、按 $200–800/个，约 $400–4,000（约 ¥2,880–28,800）。这不是收益承诺，前提是技术、英文获客、清晰范围和低返工。风险包括 source map/token 泄露、事件含个人信息、CI 误改、客户误解为安全保证、告警疲劳、平台/税务/KYC 变化和客户要求处理真实事故。不得承诺零故障、零泄露、审计/合规认证或可用性指标；不得协助攻击、爬取、撞库、欺诈或规避规则。不适合缺乏构建/部署基础、不能管理凭证、英文交付弱、无法拒绝越界请求或期待被动收入的人。
+
+## 新手低成本验证
+
+1. 用自有 React/Next.js demo 在 staging 故意触发受控错误，验证 source map、release 和可读堆栈；不用真实客户数据或 token。
+2. 做一份脱敏模板：范围/环境、source map/release、PII 待确认、受控测试、告警负责人、回滚和撤权。
+3. 以英文 SOW 获取客户自有账号的单应用 staging QA 小包；客户保管 token、批准生产变更并最终接收告警，完工即撤权。
+
+## 点评 Agent 审稿
+
+**独立点评 Agent 结论：通过，可发布。** 服务必须限定为上线实施/验收，不代管生产监控，不承诺 24×7 响应；最小权限和前置脱敏是硬门槛。
+
+- 中国境内承接海外市场适配度：**4/5**；远程、轻资产且交付可标准化，但海外获客、英文、时区和客户安全审查提高首单成本。
+- OPC/一人公司适配度：**4/5**；清单、PR/CI 配置和验收报告可产品化，复杂多项目和应急值守不宜承诺。
+- 数字游民适配度：**3/5**；多数审计/CI 集成可异步，发布窗口与权限交接仍需要稳定网络和时区重叠。
+- 合规风险：**中**；事件、request/header、Session Replay、source map 可能含个人信息、密钥或源码，不能只依赖云端事后脱敏。
+- 跨境执行风险：**中**；需遵守客户所在地隐私规则、DPA 和处理者指令；涉及中国境内数据时还须核对 PIPL 数据出境要求；税务逐单核实。
+- 收益口径：**克制**；用项目样本和情景测算，未把收入或获客率作为保证，已列费用和返工成本。
+- 来源可信度：**较高**；技术依据来自 Sentry 官方文档，跨境/税务提醒来自主管部门；Upwork 仅作报价样本。
+- 最需提醒：**先在 SDK/Relay 前删除敏感字段并只使用临时最小权限；云端清洗不等于数据从未离开客户环境。**
+
+## 关键核验来源
+
+1. Sentry Docs，Source Maps：Uploading with Sentry CLI：https://docs.sentry.io/platforms/javascript/sourcemaps/uploading/cli/
+2. Sentry Docs，Releases：https://docs.sentry.io/product/releases/
+3. Sentry Docs，Scrubbing Sensitive Data：https://docs.sentry.io/security-legal-pii/scrubbing/
+4. Sentry Help，数据清洗选项（beforeSend/Relay）：https://www.sentry.help/en/articles/13964268-what-are-sentry-s-data-scrubbing-options
+5. Upwork，Sentry Node.js/Python 监控设置公开报价样本：https://www.upwork.com/services/product/development-it-sentry-error-monitoring-set-up-for-your-node-js-or-python-app-2091487757428215940
+6. 国家互联网信息办公室，《个人信息保护法》：https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
+7. 国家税务总局，跨境服务免税备案问答：https://www.chinatax.gov.cn/chinatax/c102449/c5239202/content.html</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>22/10/2026, 16:00</p><p class="meta-line"><span>Finished</span>22/10/2026, 16:15</p><p class="meta-line"><span>Duration</span>15m</p><p class="meta-line"><span>File</span><code>runs/2026-10-22/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>sentry</span><span>observability</span><span>source-maps</span><span>saas</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用自有 demo 验证 source map、release 与受控错误的完整链路。</li><li>建立不含真实数据的 PII、告警、回滚和撤权 QA 模板。</li><li>以英文 SOW 获取一个客户自有账号的单应用 staging QA 试单。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.sentry.io/platforms/javascript/sourcemaps/uploading/cli/">Sentry：Sentry CLI 上传 source maps</a></li><li><a href="https://docs.sentry.io/product/releases/">Sentry：Releases 文档</a></li><li><a href="https://docs.sentry.io/security-legal-pii/scrubbing/">Sentry：敏感数据清洗</a></li><li><a href="https://www.upwork.com/services/product/development-it-sentry-error-monitoring-set-up-for-your-node-js-or-python-app-2091487757428215940">Upwork：Sentry 设置公开报价样本</a></li><li><a href="https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm">国家网信办：个人信息保护法</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239202/content.html">国家税务总局：跨境服务免税备案</a></li></ul></div>
+    </article><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
@@ -12175,7 +12267,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
     </article></div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 22/10/2026, 09:09</span>
+      <span>Generated 22/10/2026, 16:03</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
