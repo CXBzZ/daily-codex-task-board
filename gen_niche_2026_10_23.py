@@ -1,0 +1,115 @@
+# -*- coding: utf-8 -*-
+"""生成 2026-10-23 的每日小众赚钱行业调研 JSON（虚拟活动/线上研讨会制作代运营）。"""
+import json
+import os
+from datetime import datetime, timezone, timedelta
+
+tz = timezone(timedelta(hours=8))
+started = datetime(2026, 10, 23, 9, 6, 38, tzinfo=tz)
+finished = datetime(2026, 10, 23, 9, 50, 0, tzinfo=tz)
+
+details = """1. 行业是什么，为什么小众
+一句话定义：帮企业、创作者、行业协会把线上 webinar（网络研讨会）、虚拟峰会、产品发布直播，从「技术准备 → 直播导播 → 互动管理 → 录制回放 → 数据复盘」全流程托管的交钥匙服务。客户往往只想「把内容讲出来」，却卡在 Zoom Webinar 的注册页、直播切换、多平台推流、Q&A 管控、回放剪辑这些隐性技术活上。
+为什么普通人容易忽略它：①搜索量极低——没人会主动搜「webinar producer / 虚拟活动导播」，客户用的是「活动运营 / 直播支持 / 虚拟助理」等泛词，行业词根本没进入大众视野；②需求隐蔽——它夹在「免费自己开 Zoom」和「昂贵线下活动公司」之间的中端空白，客户往往是直播翻车、没人报名、到场率惨淡之后才意识到需要专人；③门槛被高估——看起来要导播台和专业设备，其实今天一张好网卡 + 浏览器 + StreamYard/Riverside 就能做出广播级画面，入门比想象简单；④夹缝行业——它横跨活动策划、直播技术、营销运营三个大行业之间，单独把它做成一个清晰服务品类的人极少。
+
+2. 如何运作
+典型客户：B2B SaaS 公司（产品发布会、客户培训）、独立教练与知识付费创作者（常态化 webinar 引流）、行业协会 / 非营利组织（虚拟峰会、线上募资会）、企业市场部（lead-gen 网络研讨会）。
+需求从哪里触发：季度产品发布、年度虚拟峰会、每周直播栏目、把线下会议转成 hybrid（混合）形式。
+核心交付物：①活动前——注册落地页 + 邮件提醒序列 + 嘉宾技术彩排（run of show 流程单）；②活动中——直播导播 / 多机位切换 / 多平台同步推流 / 聊天与 Q&A 管控 / 转场与字幕；③活动后——录制剪辑、精彩切片、数据复盘报告（注册 → 到场 → 互动 → 转化）。
+完整工作流（获客到收款）：在 Upwork / Fiverr 上架服务档、LinkedIn 发声、行业社群露脸、老客户转介 → 诊断需求并打包报价（按规模 / 场次）→ 搭建注册页与邮件序列、配置平台 → 技术联调与彩排 → 直播当天你作为「导演」在后台执行 → 交付回放与复盘报告 → 通过平台托管或发票收款。
+关键工具与平台：StreamYard / Riverside（浏览器导播、多平台推流）、Zoom Webinar、Demio、Livestorm、BigMarker（带注册与参会分析）、Eventbrite（售票）、Calendly（排期）、Mailchimp / ConvertKit（邮件）、vMix / OBS（进阶本地导播）、Descript（剪辑与字幕）。
+
+3. 盈利模式
+收入来源与定价（按项目打包最常见、对客最友好）：
+- 单场 1 小时 webinar（小商家）：约 $500–$800
+- 标准 webinar（含注册 + 多嘉宾 + 回放）：$1,200–$2,500
+- 多场虚拟峰会 / 一日虚拟大会：$3,000–$10,000+
+- 月度 retainer（固定每周 / 每月若干场）：$1,500–$5,000 / 月
+- 也可按小时咨询或排障：$40–$150 / 时
+平台真实在售实例：Upwork「Webinar Production & Management」4.9★ / 87 条评价，档位 $899 / $1,499 / $2,799；Upwork「Professional Virtual Live Streaming Production」4.9★ / 84 条评价，$1,499 / $2,999 / $4,799；Fiverr 前 BBC 导播档位 $500 / $1,225 / $2,950。
+利润空间：工具月费约 $50–$150（StreamYard $49 起、Zoom Webinar $79–$149 起）+ 平台抽成（Upwork 约 10%、Fiverr 约 20%）+ 税费。扣除后，熟练者单场净利率常能到 60–80%，边际成本主要是你的时间与少量外包剪辑。关键原则：按价值定价而非按小时——一场帮客户带来 $50,000 销售的发布会，值得高溢价。
+复购与长期合同：极强。活动天然高频、周期性强，最容易转成 retainer 或年度框架合同（公开案例：一位自由活动协调员用 $750 试单拿下非营利 500 人虚拟募资会，随后转为 $2,000 / 月的续约）。
+
+4. 入门门槛
+技能：搞懂 1–2 个直播 / webinar 平台的操作与排障；会写 run-of-show、管注册与邮件序列；临场救场能力。核心软技能是「让非技术客户安心」。学起来快——专注一个平台（如 StreamYard）1–2 周即可接单。
+工具：起步几乎零成本——浏览器 + 稳定网络 + 免费 / 低价工具（StreamYard 免费档、Zoom 基础、OBS）。进阶月费：StreamYard $49、Zoom Webinar $79–$149、剪辑 Descript $12–$24。
+资金：启动 < $200（可选升级工具 + 录制一个小样）。无需库存、场地、重型设备。
+时间：从零到第一单约 1–3 周（做 demo 视频 + 上架 Upwork / Fiverr 服务档 + 冷启动 3–5 个潜在客户）。
+
+5. 为什么适合 OPC / 数字游民
+①异步可交付：注册页、邮件序列、回放剪辑全是异步完成；只有直播当天需要「在线」，但一场活动也就几小时，不占全天，其余时间自由。
+②全球客户：英语 webinar 需求在美国 / 欧洲最旺，但客户雇的是「远程导播」，你人在巴厘岛还是柏林都无所谓——Upwork / Fiverr 上大量英美客户在找 remote producer。
+③边际成本低：工具订阅制，一次搭好的模板（落地页 / 邮件 / run-of-show SOP）可无限复用，第二场同型活动边际成本趋近于零。
+④可规模化：流程 SOP 化后，可把剪辑 / 邮件外包给 VA，自己只做高价值的直播导演与获客；也可做「产品化套餐」（Starter / Premium）降低销售摩擦。
+⑤时区友好：多数 webinar 在客户当地工作时段，你只需在那几小时在线。
+不是空泛结论：该赛道在 Upwork / Fiverr 上已存在成百上千个「remote webinar producer」服务档且评分普遍 4.9，证明一人远程闭环已被市场验证可跑通。
+
+6. 潜在收益（谨慎，不承诺）
+区间（参考公开数据，非个人收入承诺）：
+- 新手阶段（前 3–6 个月，兼职试水）：月接 2–4 场小型 webinar，单价 $300–$800，月入约 $800–$2,500；阶段目标是攒案例与好评。
+- 成熟阶段（有口碑 + retainer）：月 8–15 场或 2–3 个 retainer，月入 $3,000–$8,000+；顶级做峰会 / 企业框架合同可达 $10,000+ / 月。
+公开佐证：Better Version Academy 给出虚拟活动策划单场 $500–$3,000、完整大会 $2,000–$5,000；Resumize 套餐 Basic $400–$800 / Standard $1,200–$2,500 / Premium $3,000+；DesignRush 引 Vimeo 估算单场 webinar（≤500 人）$2,500–$10,000、单日虚拟大会 $4,000–$25,000；Hopin 2025 专业虚拟活动制作每场均价 $3,000–$10,000（AMW 统计汇总）。
+市场大盘（说明需求基数，非你的收入）：虚拟活动市场 2025 约 $236.7B（The Business Research Company：2024 $193.45B → 2025 $236.69B，CAGR 22.4%，2029 达 $537.18B）；网络研讨会软件市场 2025 约 $9.9B → 2035 $32.7B（CAGR 12.68%，MRFR）；虚拟活动管理市场 2025 $11.3B → 2033 $21.4B（CAGR 12.9%，HTF）。Bizzabo 2026 基准：成熟活动项目年均 25 场、每场 412 注册 / 269 到场、到场率 52%，其中 33% 为虚拟、23% 为 webinar——意味着持续且大量的远程制作需求。
+明确标注：以上是行业与平台公开数据，「这些是参考数据，不等于个人收入」，实际取决于获客能力、口碑与所在时区市场。
+
+7. 主要风险
+市场风险：webinar 数量暴涨导致受众疲劳、打开率下降，客户预算波动；AI 自动直播与平台内置「一键 webinar」可能压低低端代运营价格。
+技术风险：高度依赖第三方平台（Zoom / StreamYard 的政策、定价、宕机）；一次直播翻车（断流、没声音）直接伤口碑，必须有冗余方案（备份网络、双机位、提前彩排）。
+合规风险：跨境收款的税务（你作为数字游民需在居住地 / 收入来源地合规申报）；GDPR / CCPA 对参会者数据（注册信息、聊天记录）的收集与处理；部分平台（如欧盟托管的 Livestorm）的数据驻留要求；某些地区对「提供活动服务」是否需要本地营业登记。
+现金流风险：平台账期（Upwork 月结 / 托管释放、Fiverr 清算期）；客户临时取消；冷启动期的获客成本。
+
+8. 不适合的人群
+- 怕在直播当天高压临场、抗压能力差的人（直播不可重来，救场是日常）。
+- 完全不想学任何工具 / 技术、拒绝碰后台设置的人。
+- 想要「完全异步、永不在线」的纯被动收入者（直播执行必须人在线）。
+- 只做本地线下活动、不愿转线上的人。
+- 期望一夜暴富、不愿做售前沟通与长期口碑经营的人。
+
+9. 3 个可验证的入门步骤
+步骤1（1–2 天，成本 $0）：选一个平台（推荐 StreamYard 免费档或 Zoom 基础），以自己或朋友名义办一场 30 分钟测试 webinar，完整走一遍「注册页 → 提醒邮件 → 直播导播 → 录制回放」，并录屏剪成 1 分钟 demo 视频。验证：你能否独立跑通全流程？
+步骤2（1–3 天，成本 $0–$50）：在 Upwork 上架一个「Webinar Production & Management」服务档（参考已存在的 4.9★ 档位 $899 / $1,499 / $2,799 设自己的阶梯），并在 Fiverr 发一个基础包（$500 档）；同时在 LinkedIn 发一条「我帮 X 跑通了第一场零翻车 webinar」的帖子。验证：7 天内是否有 ≥2 个咨询 / 收藏 / 私信？
+步骤3（1–3 天，成本 $0）：用免费或低价工具（Canva 落地页 + Mailchimp 免费档 + Calendly）做出一套可复用的「单场 webinar 启动包」模板（run-of-show 模板、注册页文案、邮件序列、复盘报告模板），并给 1 个非营利 / 创作者朋友免费或 $99 试做一场，换取案例与推荐信。验证：首单是否交付顺利、是否拿到可公开的好评？
+
+10. 核验来源
+1) The Business Research Company / ResearchAndMarkets：虚拟活动市场 2024 $193.45B → 2025 $236.69B（CAGR 22.4%）→ 2029 $537.18B。https://www.researchandmarkets.com/reports/5953222/4
+2) Market Research Future：网络研讨会软件市场 2025 $9.915B → 2035 $32.72B（CAGR 12.68%）。https://www.marketresearchfuture.com/zh-cn/reports/webinar-software-market-31221
+3) HTF Market Insights：虚拟活动管理市场 2025 $11.3B → 2033 $21.4B（CAGR 12.9%）。https://htfmarketinsights.com/report/4369369-virtual-event-management-market
+4) Bizzabo 2026 State of Events 基准：成熟项目年均 25 场、每场 412 注册 / 269 到场、到场率 52%，33% 虚拟、23% webinar。https://welcome.bizzabo.com/state-of-events-2026
+5) Bizzabo 2025 博客：67% 与会者认为 webinar 提供最佳学习、81% 组织者称 webinar 帮助达成目标、82% 在用 VOD。https://www.bizzabo.com/blog/why-360-event-strategy-is-key-to-engagement-success
+6) AMW 虚拟与混合活动统计汇总：2025 市场 $243B、CAGR 17.8%、平均虚拟到场率 73%、Hopin 2025 专业制作每场 $3,000–$10,000。https://amworldgroup.com/statistics/virtual-hybrid-events-statistics
+7) Upwork「Webinar Production & Management」真实在售档（4.9★ / 87 评价，$899 / $1,499 / $2,799）。https://www.upwork.com/services/product/development-it-webinar-production-management-1751017347325526016
+8) Fiverr 前 BBC 导播真实档位（$500 / $1,225 / $2,950）+ StreamYard 定价博客（On-Air $49/月起、Zoom Webinar $79–$149/月起）。https://www.fiverr.com/deanarnett/manage-and-produce-your-virtual-or-location-livestream-former-bbc 与 https://streamyard.com/blog/webinar-hosting-platform"""
+
+task = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：虚拟活动/线上研讨会制作代运营（Virtual Event & Webinar Production）",
+    "status": "success",
+    "startedAt": started.isoformat(),
+    "finishedAt": finished.isoformat(),
+    "summary": "虚拟活动/线上研讨会制作代运营：帮企业、创作者、协会把 webinar、虚拟峰会、产品发布直播从技术准备、直播导播、互动管理到录制回放与数据复盘全流程托管。它搜索量极低、需求隐蔽、夹在免费 DIY 与昂贵活动公司之间的中端空白，但一人用浏览器+StreamYard/Zoom 即可远程闭环，启动成本近乎为零、活动高频易转 retainer，是典型适合 OPC 与数字游民的小众服务。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "virtual-events", "webinar-production", "remote-production", "event-tech"],
+    "nextSteps": [
+        "步骤1（1-2天，$0）：用 StreamYard 免费档或 Zoom 基础办一场 30 分钟测试 webinar，走通注册页→邮件→导播→回放并剪成 1 分钟 demo，验证能否独立跑通全流程。",
+        "步骤2（1-3天，$0-50）：在 Upwork 上架 Webinar Production 服务档（参考 $899/$1,499/$2,799 设阶梯），Fiverr 发 $500 基础包，LinkedIn 发首单帖，验证 7 天内是否有 ≥2 个咨询。",
+        "步骤3（1-3天，$0）：用 Canva+Mailchimp+Calendly 做一套可复用「单场 webinar 启动包」模板，给 1 个朋友免费或 $99 试做一场换案例与推荐信，验证首单交付与好评。"
+    ],
+    "artifacts": [
+        {"label": "虚拟活动市场报告（ResearchAndMarkets / TBRC）", "path": "https://www.researchandmarkets.com/reports/5953222/4"},
+        {"label": "网络研讨会软件市场（Market Research Future）", "path": "https://www.marketresearchfuture.com/zh-cn/reports/webinar-software-market-31221"},
+        {"label": "虚拟活动管理市场（HTF Market Insights）", "path": "https://htfmarketinsights.com/report/4369369-virtual-event-management-market"},
+        {"label": "Bizzabo 2026 State of Events 基准数据", "path": "https://welcome.bizzabo.com/state-of-events-2026"},
+        {"label": "Bizzabo 2025 webinar 价值博客", "path": "https://www.bizzabo.com/blog/why-360-event-strategy-is-key-to-engagement-success"},
+        {"label": "虚拟与混合活动统计汇总（AMW）", "path": "https://amworldgroup.com/statistics/virtual-hybrid-events-statistics"},
+        {"label": "Upwork Webinar Production 真实在售档", "path": "https://www.upwork.com/services/product/development-it-webinar-production-management-1751017347325526016"},
+        {"label": "Fiverr 前BBC导播档 + StreamYard 定价", "path": "https://www.fiverr.com/deanarnett/manage-and-produce-your-virtual-or-location-livestream-former-bbc"}
+    ]
+}
+
+out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "runs-workbuddy", "2026-10-23")
+os.makedirs(out_dir, exist_ok=True)
+out_path = os.path.join(out_dir, "niche-opc-industry.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(task, f, ensure_ascii=False, indent=2)
+print("written:", out_path)
