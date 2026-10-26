@@ -1,7 +1,62 @@
 {
-  "generatedAt": "2026-10-26T01:10:43.161Z",
+  "generatedAt": "2026-10-26T08:07:59.887Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-10-26",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型 SaaS、独立开发者与软件工作室的 SBOM（软件物料清单）生成、开源许可证 Notices 整理与发布前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权、最小权限、固定范围的工程化交付切入 OPC/数字游民试单，但不应包装成安全审计、法律意见或 CRA 合规认证。",
+      "details": "# SBOM 生成、开源许可证 Notices 整理与发布前 QA\\n\\n## 行业是什么，为什么小众\\n\\nSBOM（Software Bill of Materials，软件物料清单）是记录软件组件及其供应链关系的正式清单。NTIA 将其定义为包含构建软件所用各组件细节和供应链关系的正式记录；SPDX 是 ISO/IEC 5962:2021 开放标准。这里的服务不是泛泛的“网络安全咨询”，而是把客户已有的代码仓库、锁文件、构建产物和依赖资料，在书面授权范围内整理为 SPDX/CycloneDX 格式 SBOM、开源许可 Notices 草案、缺口清单与上线前 QA 证据。\\n\\n它小众的原因在于：自动扫描工具能产出文件，却不能自动确认项目范围、第三方/内部组件边界、版本与哈希是否可追溯、构建上下文、重复条目、未知许可证、Notice 文本、发布包是否含相应材料，以及 CI 规则是否会误挡正常依赖。GitHub 已支持导出 SPDX SBOM、依赖审查与许可证策略；这让“把工具接入并把输出变成可复核交付物”的小范围服务有真实落点。\\n\\n## 目标市场、典型需求和客户\\n\\n**目标市场：中国境内可做的海外英语市场。** 客户包括小型 SaaS、独立开发者、软件工作室、开源商业化项目和为企业客户供货的软件团队。典型触发场景：\\n\\n1. 客户安全问卷、采购方或合作方要求提供依赖清单、许可证信息或软件供应链资料；\\n2. 新版本、桌面/移动安装包、容器镜像或 SDK 发布前，需要把 SBOM、NOTICE、第三方许可页与发布说明核对一次；\\n3. GitHub Dependency Graph/Dependabot、SCA 工具或 CI 已有告警，但团队没有人整理误报、缺失元数据和发布证据；\\n4. 想为后续漏洞排查建立基线，却不希望一开始购买大型 GRC 或 24×7 安全托管。\\n\\n不能把“所有小型 SaaS 都因欧盟 CRA 必须做 SBOM”当作事实：CRA 针对投放欧盟市场的含数字要素产品，纯 SaaS 通常并不当然在范围内；只有对相关产品不可或缺的远程数据处理等情形才可能涉及。欧委会说明其主要义务将于 2027-12-11 全面适用，部分漏洞报告义务已提前生效。对本服务而言，客户采购的应是工程透明度与发布前 QA，而不是法规保证。\\n\\n## 行业如何运作：参与方与工作流\\n\\n参与方通常为客户的工程负责人/发布经理、开发者、法务或采购方，以及服务方。适合一人团队的边界化流程：\\n\\n1. **书面定范围。** SOW 写清仓库/分支/发布版本、允许读取的构建文件、交付格式、组件或仓库上限、是否包含容器/二进制、复测次数、排除项和客户最终发布责任。\\n2. **最小权限取材。** 优先使用公开仓库、客户导出的 SBOM/锁文件、脱敏构建清单或临时只读仓库成员权限；不接收生产数据库、长期 token、私钥、源码压缩包或含真实用户数据的日志。\\n3. **生成与人工 QA。** 用客户批准的工具生成 SPDX/CycloneDX，检查组件名称、版本、包 URL、哈希、依赖关系、生成时间/工具、许可证表达与构建范围；将“已识别、待客户确认、无法识别”分开。CISA 2025 最低要素资料可作为清单参考，不能被说成客户已经合规。\\n4. **Notices 与发布核对。** 基于扫描与客户已有许可信息编制 Notices/第三方许可清单草案，核对发布包、仓库、官网或文档中的放置位置；疑难许可证、双重许可、静态链接、分发触发条件交给客户法务/律师确认。\\n5. **交付与撤权。** 交付机器可读 SBOM、阅读版组件表、问题与假设清单、Notice 草案、CI/复测证据和权限撤销确认；客户自行决定合并、发布与法律结论。\\n\\n## 盈利模式、报价与成本\\n\\n可售卖的一次性交付是“单仓库/单版本 SBOM + Notices 草案 + 发布前 QA + 一次复测”；也可按每个发布版本或每月维护 CI 规则收费。不要按“通过审计”“避免处罚”“拿下客户”收费或承诺结果。\\n\\nUpwork 的 IT Compliance specialist 公开页面将 focused IT compliance 项目样本列为 **US$500–2,500/项目**；这是相邻市场的公开报价线索，不是 SBOM 新手的市场均价或到手收入。按人民银行人民币汇率页面所示 2026-10-23 美元中间价 **1 美元=6.7180 元**粗算，约为 **¥3,359–16,795/项目**，未扣平台佣金、收款费、工具订阅、税费、获客和返工。更稳妥的新人验证包是：1 个公开或脱敏仓库、1 个发布版本、只读资料、一个 SBOM 格式、Notice 草案、一次复测；先记录实际工时，再决定固定价。持续收入取决于复购、工程能力、客户质量和交付范围，绝非收益承诺。\\n\\n## 入门门槛\\n\\n- **技能：** Git 与常见包管理器、依赖/锁文件、CI/CD、SPDX/CycloneDX 基础；能读英文许可证标识和工具报告；具备清单核对、版本追溯和英文书面沟通能力。\\n- **设备/软件：** 普通电脑、稳定网络、Git、文本编辑器、客户批准的 SBOM/SCA 工具、表格与问题跟踪工具即可；固定资产轻。\\n- **资质与合规：** 一般无强制职业牌照，但不得自称律师、安全审计师、认证机构或 CRA 合规顾问。许可证义务和监管适用性由客户法务/律师确认。\\n- **渠道与时间：** 可从 GitHub 生态、独立开发者社群、软件外包验收、英语自由职业平台或开源维护者切入。扫描/报告可异步，发布窗口、答疑与复测需和欧美时区重叠。\\n\\n## 中国境内承接海外市场：获客、交付、收款、税务、平台、数据与时区\\n\\n- **跨境获客与合同：** 英文 SOW 应明确资料类别、只读权限、允许的扫描工具/运行位置、交付格式、保密、保存/删除期限、漏洞发现的通知路径、责任上限、复测次数与不保证事项。客户应确认其有权提供代码和依赖材料。\\n- **远程交付与平台：** 遵守 GitHub、自由职业平台及客户安全政策，不买卖或共用账号。客户用组织成员/临时只读权限接入，或自行导出资料；禁止将凭据写入脚本、个人网盘、公开仓库或未经批准的 AI 工具。\\n- **收款、发票与税务：** 留存合同、范围确认、验收、工作记录、平台结算/境外收款和费用凭证。中国发票规则将提供服务中的收付款凭证纳入发票管理。部分向境外单位提供且完全在境外消费的服务可能涉及增值税免税条件和备案要求，但实际服务性质、主体、收款路径、开票、申报与结售汇应由会计/税务机关和银行按单确认，不能把海外客户等同于自动免税。\\n- **数据与隐私：** 默认只处理开源、测试或脱敏材料；只读、最小权限、限期留存和本地加密是底线。仓库、构建日志或依赖资料可能夹带密钥、邮箱、客户名或其他个人信息；一经发现应停止外传、通知客户并改用脱敏资料。若处理来自中国境内的个人信息并向境外提供，应按《个人信息保护法》及具体数据流评估法定路径、告知和单独同意等要求；“在境内远程工作”或“客户在海外”均不是自动豁免。\\n- **语言与时区：** 能用英文清楚区分“扫描发现、工程假设、证据、待法务确认项”和“法律结论”。数字游民要预留固定重叠时段；网络不稳时不承诺发布窗口实时支持。\\n\\n## 为什么适合或不完全适合 OPC/数字游民\\n\\n**OPC/一人公司适配度较高。** 扫描、SBOM 格式转换、组件表、问题模板、Notice 草案和一次复测可以产品化，且可按仓库、发布版本、组件量和交付格式控制范围。不适合一人承担大型多语言 monorepo、闭源二进制取证、24×7 漏洞响应、渗透测试、出口管制判断或律师审查。\\n\\n**数字游民适配度较高。** 盘点、报告和 CI 配置多为异步远程工作，设备轻；但私有仓库访问、客户保密要求、英文写作、时区会议和稳定网络是硬门槛。\\n\\n## 主要风险、合规注意事项与不适合人群\\n\\n- SBOM、扫描结果和 Notices 草案不是法律意见，不能保证不存在未知依赖、没有漏洞、满足开源许可证义务或符合 CRA；复杂许可证/分发问题须由客户律师或法务最终确认。\\n- 未经书面授权不得拉取私有仓库、运行第三方 SaaS 扫描、访问制品库、生成密钥、提交代码或修改 CI。\\n- 不把依赖清单、漏洞识别或许可证文本误称为安全认证、审计结论或合规证书；不给“审核包过”承诺。\\n- 生产密钥、真实 PII、金融/医疗数据、受出口管制技术与客户源代码默认排除；若触及，应由客户安全、法务和出口管制负责人先决定访问边界。\\n- 不适合英文技术沟通不足、无法理解依赖构建链、不能严格执行最小权限、希望快速把工具输出包装成专业法律/安全结论的人。\\n\\n## 新手可验证的 3 个低成本步骤\\n\\n1. 选一个有明确开源许可的公开 GitHub 项目，在本地生成 SPDX 或 CycloneDX 清单，做一份“自动发现/人工核对/无法确认”三栏演练表；不使用客户私有数据。\\n2. 为自有或开源练习项目写一份不超过 20 个组件的 Notices 草案和发布前检查清单，并在首页明确“非法律意见、须由权利人/法务确认”。\\n3. 用英文 SOW 寻找一个只读、单仓库、单版本、一次复测的脱敏试单；交付后撤销权限、删除资料、记录实际工时和时区成本，再决定是否扩展到 CI 维护。\\n\\n## 点评 Agent 审稿\\n\\n本次已启动独立点评 Agent 审查，结论：**通过；须收窄为“SBOM/许可证 Notices 的工程化交付与发布前 QA”，不得提供法律意见或 CRA 合规认证。**\\n\\n- 中国境内承接海外市场适配度：**4/5**（代码/CI 产物可远程交付，客户可授予最小化只读权限）。\\n- OPC/一人公司适配度：**4/5**（扫描、清单、Notices、CI 规则可模板化；复杂多语言、二进制、专有依赖与法律复核应转介/协作）。\\n- 数字游民适配度：**4/5**（异步交付强；英文、私有仓库安全沟通、客户时区是硬门槛）。\\n- 合规风险等级：**中**（代码、密钥、个人信息与法律结论边界）。\\n- 跨境执行风险等级：**中**（真实交易、合同/收款/税务、数据出境、平台和出口管制/客户安全要求）。\\n- 收益口径是否克制：**是**。仅使用相邻公开平台的项目报价线索，明确不代表 SBOM 市场均价、到手收入或收益承诺。\\n- 信息来源是否足够可信：**较高**。SBOM/格式和工程实现主要依据 CISA、NTIA、SPDX 与 GitHub 官方资料；法律/税务使用欧委会及中国监管资料；Upwork 仅用于报价线索。\\n- 最该补充或提醒的一句话：**扫描结果、SPDX 表达和 Notice 草案不是法律意见，也不能保证不存在未知依赖或已满足 CRA/开源许可证义务；疑难许可证、分发触发与例外须由客户律师/法务最终确认。**\\n\\n## 关键来源\\n\\n1. CISA, *Minimum Elements for a Software Bill of Materials*（2025）：https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf\\n2. NTIA, *The Minimum Elements for a Software Bill of Materials*：https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom\\n3. SPDX, Specifications（ISO/IEC 5962:2021）：https://spdx.dev/use/specifications/\\n4. GitHub Docs, Exporting a software bill of materials：https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom\\n5. GitHub Docs, License policies：https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-license-policies\\n6. European Commission, Cyber Resilience Act summary：https://digital-strategy.ec.europa.eu/en/policies/cra-summary\\n7. 国家税务总局，《中华人民共和国发票管理办法》：https://fgk.chinatax.gov.cn/zcfgk/c100010/c5195084/content.html\\n8. 中国网信网，《促进和规范数据跨境流动规定》：https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm\\n9. 国家市场监督管理总局，《个人信息保护法》：https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html\\n10. Upwork, IT Compliance specialist pricing sample：https://www.upwork.com/hire/it-compliance-specialists/\\n11. 中国人民银行，人民币汇率（2026-10-23 美元中间价）：https://wzdt.pbc.gov.cn/huilv/llChart1.jsp",
+      "startedAt": "2026-10-26T15:45:00+08:00",
+      "finishedAt": "2026-10-26T16:05:38+08:00",
+      "duration": "20m 38s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "global",
+        "sbom",
+        "open-source-compliance"
+      ],
+      "nextSteps": [
+        "用公开且许可明确的 GitHub 项目完成一次本地 SPDX/CycloneDX 清单和人工核对演练。",
+        "为练习项目做 Notices 草案与发布前检查清单，并明确其非法律意见。",
+        "用限定仓库、版本、权限和一次复测的英文 SOW 验证首个脱敏试单，完成后撤权并复盘工时。"
+      ],
+      "artifacts": [
+        {
+          "label": "CISA: SBOM Minimum Elements",
+          "path": "https://www.cisa.gov/sites/default/files/2025-08/2025_CISA_SBOM_Minimum_Elements.pdf"
+        },
+        {
+          "label": "SPDX specifications",
+          "path": "https://spdx.dev/use/specifications/"
+        },
+        {
+          "label": "GitHub: export SBOM",
+          "path": "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/export-dependencies-as-sbom"
+        },
+        {
+          "label": "European Commission: CRA summary",
+          "path": "https://digital-strategy.ec.europa.eu/en/policies/cra-summary"
+        },
+        {
+          "label": "个人信息保护法",
+          "path": "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html"
+        }
+      ],
+      "sourceFile": "runs/2026-10-26/niche-profit-industry.json"
+    },
     {
       "date": "2026-10-25",
       "taskId": "niche-profit-industry",
