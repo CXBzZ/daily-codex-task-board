@@ -21,9 +21,9 @@
         <p class="lede">A generated dashboard for Codex automations, daily runs, and historical outcomes.</p>
       </div>
       <dl class="stats">
-        <div><dt>Total runs</dt><dd>90</dd></div>
-        <div><dt>Tracked days</dt><dd>88</dd></div>
-        <div><dt>Today</dt><dd>0</dd></div>
+        <div><dt>Total runs</dt><dd>91</dd></div>
+        <div><dt>Tracked days</dt><dd>89</dd></div>
+        <div><dt>Today</dt><dd>1</dd></div>
       </dl>
     </section>
 
@@ -33,9 +33,88 @@
           <p class="eyebrow">Today</p>
           <h2>2026-10-27</h2>
         </div>
-        
+        <a class="text-link" href="days/2026-10-27.html">Open day</a>
       </div>
-      <div class="empty-state">No Codex automation results have been reported for today yet.</div>
+      <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="days/2026-10-27.html">2026-10-27</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型开源项目和软件工作室的 GitHub 贡献治理包配置与上线前 QA，属于中国境内可远程承接的海外市场。它适合以固定范围、最小权限和可审查 PR 交付试单的 OPC/数字游民，但绝不应代管组织、密钥或漏洞响应。</p>
+      <div class="details">## 行业是什么、为何小众
+
+“GitHub 贡献治理包”是把开源或开放协作仓库中容易缺失的贡献入口和审查规则整理成可执行配置：Issue Forms/模板、PR 模板、CONTRIBUTING、CODEOWNERS、SECURITY.md，并做一次测试与交接。它不是泛化的 GitHub 代运营，也不是安全审计；价值在于把“如何报 bug、怎样提 PR、哪些目录找谁审、漏洞不要公开报”的隐性规则写成仓库可识别的文件。小众之处在于买方通常只在维护者被低质量 Issue、无效 PR 或审查遗漏拖慢后才意识到需求，而通用开发外包往往不把这部分单独报价。
+
+## 目标市场与典型客户
+
+市场为“中国境内可做的海外英语市场”。目标客户是有公开 GitHub 仓库、但维护者人数少的开源项目、小型 SaaS、开发者工具工作室及软件顾问团队；典型场景包括产品开源、首次接受外部贡献、多人协作后需要审查路由，或把口头规则沉淀为仓库文档。需求并非来自中国本地线下服务，获客应以 GitHub 公开仓库、开发者社区、自由职业平台及技术内容展示为主。
+
+## 如何运作：参与方与工作流
+
+1. 客户提供书面范围、目标仓库、默认分支、维护者/团队名单及漏洞接收渠道；服务方只读盘点现有 Community Health、分支规则和公开贡献路径。
+2. 共同确认最小包：最多两类 Issue Form（例如 bug/功能建议）、一个 PR 模板、CONTRIBUTING、CODEOWNERS、SECURITY.md；不擅自添加自动化、组织成员或安全产品。
+3. 服务方在客户自有仓库用最小 Write/Maintain 权限开配置 PR，或交付补丁文件；客户管理员检查文字、标签、负责人和漏洞邮箱/私密报告设置。
+4. 在测试仓库或分支验证表单渲染、默认标签、PR 模板出现、CODEOWNERS 审查请求；客户自行决定合并、保护规则和私密漏洞报告开关。
+5. 交付变更清单、测试截图/链接、回滚方式和一页维护说明；源代码、Issue 与导出资料到期删除。
+
+GitHub 官方资料确认：Issue Forms 为放在 `.github/ISSUE_TEMPLATE` 的 YAML 文件，支持文本、下拉、复选框和上传字段；PR 模板与 Issue 模板须在默认分支的规定路径才会生效。CONTRIBUTING 会在 Issue/PR 和贡献页面被引导展示。CODEOWNERS 可触发审查请求，但被指定者须有仓库写权限；若客户另行启用必需 Code Owner 审查才会成为合并门槛。SECURITY.md 只是披露与报告指引，私密漏洞报告是另一个需由仓库管理员开启的功能。
+
+## 盈利方式与克制的收益口径
+
+收入来自一次性“仓库体检 + 固定治理包 + QA/交接”，之后可按月或按版本做文档/模板维护；不应把收入建立在代管账号、代处理漏洞或销售增长承诺上。公开 Fiverr 样本显示 Git/GitHub 配置服务有 US$30 的基础档、US$50 含工作流/自动化档，这只是低价平台样本，不等于可得收入或行业均价。
+
+新手可把第一单明确限制为：1 个仓库、2 个 Issue Form、1 个 PR 模板、4 个文档/配置文件及 1 次测试 PR，报价可试探为 US$80–250（按约 1 USD≈¥7.2 粗算约 ¥580–1,800）。这是假设约 4–10 小时英文沟通、配置、测试与返工缓冲后的试单区间，不是收益承诺；平台服务费、收款费、税费、售后返工和获客时间均未扣除。复杂组织权限、分支规则、CI、CodeQL、漏洞处置或多语言文档必须另行估价，且不应由新手打包承诺。
+
+## 入门门槛
+
+技能：英文技术写作、Git/GitHub 分支与 PR 基础、YAML/Markdown、Issue Form 与 CODEOWNERS 语法、测试和变更记录。设备软件：电脑、GitHub 账户、文本编辑器、测试仓库；固定资产很轻。时间：先用自有公开演示仓库做 2–3 个完整练习，再从固定范围小单开始。
+
+合规与权限：要求客户书面授权；用独立协作者身份和最小仓库权限，绝不索取主账号密码、PAT、部署密钥、云密钥或组织 Owner 权限。CODEOWNERS 中的团队、漏洞邮箱、受支持版本和披露时限都应由客户最终确认。不要把 SECURITY.md 写成安全认证、SLA 或法律承诺，不接真实漏洞调查、渗透、保密漏洞代收、CVE 申请或安全事件响应。
+
+## 中国境内承接海外市场的执行条件
+
+获客与交付：在 Upwork、GitHub、个人作品页或开发者社区展示脱敏演示仓库；合同应写清仓库、分支、文件清单、权限、验收、返工次数、保密与客户最终合并责任。用 PR、补丁和测试记录远程交付，时区可通过异步 issue/PR 评论和每周一次重叠时段处理。
+
+收款、合同与税务：优先使用平台托管或客户公司对公/合规收款路径，保存合同、工作说明、PR/验收记录、平台结算单和银行入账材料；以个人还是个体工商户/公司承接、应开何种凭证及纳税申报应结合实际主体、收入性质和所在地主管税务机关确认。国家税务总局资料提示，居民个人境外所得有相应申报规则；不应把“境外客户付款”误认为天然免税。
+
+平台、数据与隐私：遵守 GitHub、接单平台与客户组织规则；仅访问完成服务必需的仓库和数据，优先公开演示/脱敏私仓，不下载或在个人设备长期保留 Issue、用户邮箱、漏洞材料、日志或源代码。客户面向欧盟等市场时，跨境处理个人数据应由客户决定合法基础、处理者安排与数据传输措施；服务方不提供 GDPR/数据出境法律意见。英文读写是硬门槛，安全披露、许可证或客户协议中的不确定术语必须让客户或专业人士确认。
+
+## 适配性、风险与不适合人群
+
+适合 OPC：可产品化、远程、一次性交付且可在一个仓库内小规模验收；但高度依赖客户及时提供正确的维护者、团队和漏洞联系信息。适合数字游民：主要是异步文档、配置和 QA；不适合承诺 7×24 漏洞响应、紧急生产支持或大量实时会议。
+
+主要风险：错误 CODEOWNERS 可造成审查路由错误；错误 SECURITY.md 可能让漏洞报告公开或发往无人邮箱；过大权限会暴露私有代码和成员数据；客户期望将模板等同于安全、合规或项目增长。应把每项客户确认写入验收单，保持可回滚 PR，并明确“客户管理员合并和开启规则”。不适合不会英文技术沟通、不了解 Git/PR、想通过拿到客户 Owner 权限工作，或希望把安全文档包装成安全认证的人。
+
+## 新手可验证的 3 个低成本步骤
+
+1. 建立一个自有公开演示仓库：用虚构项目完成 bug/feature 两个 Issue Form、PR 模板、CONTRIBUTING、CODEOWNERS、SECURITY.md，并用测试账号走一遍。
+2. 做一页脱敏“贡献路径体检”清单：检查默认分支、模板入口、贡献说明、审查归属、漏洞私密报告与联系人是否可用；只展示公开仓库或得到书面许可的案例。
+3. 在平台或个人站发布固定范围试单：限定一个仓库、两个表单、一个 PR 模板和一次测试 PR，要求客户提供协作者邀请而非密码，验收后再讨论维护服务。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 已审阅选题、近期看板去重情况和关键资料。结论：通过。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险“中”（源码、Issue、漏洞报告和成员身份可能敏感）；跨境执行风险“中”（英文获客、平台 KYC/收款、税务留痕、权限与数据边界）。收益口径克制：仅采用公开低价样本和固定范围试单估算，不承诺稳定接单或利润。信息来源可信度高：功能和权限依据 GitHub 官方资料，报价仅作公开市场样本。最该补充/提醒的一句话：服务方只提交可审查的配置 PR；客户管理员必须确认合并、组织权限、漏洞收件地址和最终规则，切勿共享主账号、PAT 或部署密钥。
+
+## 核验来源
+
+- GitHub Docs《Configuring issue templates》：https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+- GitHub Docs《About issue and pull request templates》：https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
+- GitHub Docs《Setting guidelines for repository contributors》：https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors
+- GitHub Docs《About code owners》：https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+- GitHub Docs《Best practices for repositories / SECURITY.md》：https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories
+- GitHub Docs《Privately reporting a security vulnerability》：https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately
+- 国家税务总局《财政部 税务总局关于境外所得有关个人所得税政策的公告》：https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html
+- Fiverr 公开服务页（仅作低价样本）：https://www.fiverr.com/tosifsheraz/be-your-github-master</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>27/10/2026, 16:04</p><p class="meta-line"><span>Finished</span>27/10/2026, 16:08</p><p class="meta-line"><span>Duration</span>3m 27s</p><p class="meta-line"><span>File</span><code>runs/2026-10-27/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>github</span><span>open-source</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>在自有公开演示仓库完成两个 Issue Form、PR 模板、CONTRIBUTING、CODEOWNERS 与 SECURITY.md 的端到端测试。</li><li>制作一页脱敏贡献路径体检清单，只使用公开或获得书面授权的案例。</li><li>以一个仓库、两类表单、一个 PR 模板和一次测试 PR 的固定范围发布试单，并要求客户提供协作者邀请而非密码。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository">GitHub Issue Forms 官方文档</a></li><li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">GitHub CODEOWNERS 官方文档</a></li><li><a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors">GitHub 贡献指南官方文档</a></li><li><a href="https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately">GitHub 私密漏洞报告官方文档</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html">国家税务总局境外所得政策</a></li></ul></div>
+    </article></div>
     </section>
 
     <section class="section">
@@ -45,7 +124,11 @@
           <h2>All recorded days</h2>
         </div>
       </div>
-      <div class="history-list"><a class="history-row" href="days/2026-10-26.html">
+      <div class="history-list"><a class="history-row" href="days/2026-10-27.html">
+          <span class="history-date">2026-10-27</span>
+          <span class="history-summary">1 run</span>
+          <span class="status-strip"><span class="status success">Success: 1</span></span>
+        </a><a class="history-row" href="days/2026-10-26.html">
           <span class="history-date">2026-10-26</span>
           <span class="history-summary">1 run</span>
           <span class="status-strip"><span class="status success">Success: 1</span></span>
@@ -401,7 +484,7 @@
     </section></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 27/10/2026, 09:15</span>
+      <span>Generated 27/10/2026, 16:07</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
