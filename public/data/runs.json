@@ -1,7 +1,57 @@
 {
-  "generatedAt": "2026-10-29T01:20:37.974Z",
+  "generatedAt": "2026-10-29T08:10:48.438Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-10-29",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的小众行业是面向海外小型 SaaS、开源商业项目与软件工作室的 GitHub 仓库规则集、CODEOWNERS 与 PR 门禁上线前 QA 服务，属于中国境内可远程承接的海外市场。它适合以固定范围、客户最小权限和测试 PR 证据交付切入的 OPC/数字游民，但不代管组织或管理员账号，也不承诺安全、零误合并或业务结果。",
+      "details": "# GitHub 仓库规则集、CODEOWNERS 与 PR 门禁上线前 QA 服务\n\n## 行业是什么，为什么小众\n\n这是一种面向已有 GitHub 仓库的小型工程团队的协作治理配置服务：在客户授权下，盘点默认分支与现有 CI，设计或复核 repository rulesets / branch protection、CODEOWNERS、PR 模板、Issue Forms 及 required checks 的匹配关系；用测试 Pull Request 验证预期，再交付变更记录、回滚说明和维护清单。\n\n它不是写功能、全天候 DevOps、渗透测试或安全认证。小众之处在于客户购买的不是“开一个开关”，而是把团队真实职责、分支策略、自动化检查和合并路径翻译成可验证的 GitHub 配置。GitHub 文档指出，rulesets 与传统 branch protection 都可保护分支/标签，多个 rulesets 可同时作用于同一分支；CODEOWNERS 还能与“require review from Code Owners”结合。规则配错时，未触发或不存在的 required check 可能让 PR 一直等待，反而阻塞开发。\n\n## 目标市场、需求场景和客户\n\n**目标市场：中国境内可做的海外英语市场。** 典型客户是 2–20 人的小型 SaaS、开源商业项目、软件工作室、技术外包团队，以及刚开始用多名贡献者或 coding agent 的独立开发团队。\n\n常见需求触发包括：\n\n1. 从个人仓库转为组织协作，想阻止直接推送默认分支。\n2. 已有 GitHub Actions，但不知道哪些 job 应设为 required，或担心路径过滤导致检查不触发。\n3. 希望不同目录由不同维护者审核，同时保护 `.github/CODEOWNERS`、workflow 与部署配置。\n4. 想标准化 bug/feature 提交和 PR 描述，减少反复追问。\n5. 从 branch protection 迁到 rulesets，或先以 Evaluate/试运行模式观察影响。\n\n## 典型参与方与工作流\n\n参与方通常是仓库/组织管理员、技术负责人、代码所有者、贡献者、CI 提供方和本服务者。GitHub 说明，创建、修改或删除 repository rulesets 需要仓库管理员权限或带有 `edit repository rules` 权限的自定义角色；因此服务者不应要求主账号密码或组织所有权。\n\n1. **范围与授权。** 书面列出仓库、默认分支、允许接触的目录、现有 CI、是否只读、谁有最终启用权、变更窗口与回滚负责人；客户确认资料是否包含个人信息、商业秘密或受限代码。\n2. **只读盘点。** 导出现有 rules/protection、协作者角色、分支、工作流触发条件、已出现的 checks、CODEOWNERS 和模板；不下载无关源码、密钥或真实生产数据。\n3. **形成最小规则草案。** 例如要求 PR、限定审批数、只要求实际会稳定运行的 check、为关键目录定义 code owner，并用 PR/Issue 模板约束输入。规则并非越严越好：GitHub 提醒 required status check 必须在相应仓库近七天内出现并在最新提交上满足，否则可能阻塞合并。\n4. **测试与启用。** 优先在测试仓库、测试分支或 Evaluate 模式演练；以测试 PR 验证谁可提交、谁需审批、CODEOWNERS 是否被请求、check 是否触发，以及管理员/客户如何回滚。关键设置由客户管理员在书面确认后自行启用，或仅向服务者授予临时最小权限。\n5. **交接和撤权。** 交付规则矩阵、截图/PR 链接、变更时间、例外/BYPASS 边界、回滚步骤和定期复核清单；撤销临时成员、token 与屏幕共享授权。\n\n## 盈利模式与潜在收益\n\n收入来自固定范围的“现状审计 + 规则/模板草案 + 测试 PR + 交接包”，或按月的少量规则复核和新仓库复制配置。客户支付的 GitHub 订阅费、Actions 用量和安全产品费用不属于服务者收入。GitHub 当前公开页列出 Team 为每用户每月 US$4，并把私有仓库 rules、code owners、required reviewers 等列为 Team 的协作能力；客户是否需要升级计划应由其自行决定。\n\n一个谨慎的新手试单可限定为：**1 个仓库、1 条默认分支、最多 2 项 rules/protection 设置、CODEOWNERS 与模板复核、1 个测试 PR、1 份交接文档**，自定报价 **US$180–500（约 ¥1,300–3,600，按 US$1≈¥7.2 的示例汇率粗算）**。这只是服务范围定价样本，不是平台市场均价、稳定成交价或收入承诺；实际结汇汇率和手续费会波动。\n\n利润取决于英文售前、规则复杂度、是否能用测试仓库、返工次数、平台佣金、跨境收款费用、税费、无薪等待客户审批和售后边界。多仓库组织级治理、遗留 CI 修复、受监管源码、生产部署门禁、24/7 故障处理或安全审计不宜作为一人新手固定包。\n\n## 入门门槛\n\n- **技能：** Git 分支/PR 基础，GitHub Actions 的 job/trigger/check 概念，rulesets 与 branch protection、CODEOWNERS 匹配规则、Issue Forms/PR 模板、变更记录与英文技术写作。\n- **设备/软件：** 电脑、稳定网络、GitHub 测试账号/自有演练仓库、文本编辑器、截图和文档工具即可，固定资产很轻。\n- **权限与资质：** 通常没有当地职业牌照，但配置 rulesets 需要相应 GitHub 权限。不能冒充 GitHub 官方、ISO/SOC 2 审计师或安全顾问；不能接受客户主账号密码、恢复码、SSH 私钥、PAT 或云端密钥。\n- **渠道与时间：** 可从独立开发者社群、GitHub 迁移/CI 配置项目的外围需求、软件工作室、自由职业平台和已有 Web/Dev 客户切入。盘点、文档和异步 review 可远程完成；启用窗口、问题复现和客户审批需安排英语时区重叠。\n\n## 中国境内承接海外市场：获客、交付、收款、税务、平台、数据与语言\n\n- **获客与合同：** 用英文 SOW 写清仓库数量、可操作设置、是否仅建议、测试方式、客户最终批准人、回滚负责人、交付物、返工次数、响应时间与排除项。不得把“规则配置”包装成安全审计、合规认证或防入侵承诺。\n- **远程交付与平台：** 遵守 GitHub、Upwork/Fiverr 等实际使用平台当期 KYC、付款和账号规则；客户保持组织所有权及管理员控制。服务者通过客户创建的临时最小权限成员、短时屏幕共享或客户自行执行关键动作完成交付。\n- **收款和税务：** 留存 SOW/合同、发票或结算单、平台结算记录、工作记录和交付证据。外汇局《经常项目外汇业务指引》要求服务贸易外汇收支具有真实、合法交易基础，交易单证应能证明交易标的、主体和金额；中国居民个人取得境外所得应按适用规则申报。个人/一人公司应基于实际主体、服务地和收款链路向开户行、税务机关或专业人士确认结售汇、开票和申报，不能宣传“海外客户自动免税”。\n- **数据和隐私：** 源码、Issue、PR、Actions 日志、成员邮箱与部署信息可能包含个人信息或商业秘密。只处理为交付所必需的最少内容，优先只读元数据或脱敏测试仓库；不把私有代码、日志、token 或截图上传公开工具/个人 AI；合同约定保密、保存期限、删除与撤权。涉及个人信息、受限数据或敏感代码，先由客户完成数据处理及跨境传输合规评估，必要时拒单。\n- **语言和时区：** 需能用英文准确界定 `required check`、`bypass`、`code owner approval` 和 rollback，避免把技术条件翻译成保证。数字游民应约定固定重叠时段；网络不稳或旅行途中不接关键启用窗口。\n\n## 为什么适合或不完全适合 OPC / 数字游民\n\n**OPC/一人公司适配度高。** 一仓库盘点、规则矩阵、模板、测试 PR、截图证据和交接文件均可产品化，可从只读审计和测试仓库开始。它不适合一人承担大型组织的权限重构、紧急合并故障、所有 CI 维护、密钥治理或安全事件响应。\n\n**数字游民适配度中高。** 文档、规则草案和复测基本可远程异步完成，且设备轻；但真正启用会影响团队合并路径，必须有稳定网络、客户管理员、回滚计划和时区重叠。因此更适合“预检 + 约定窗口 + 证据交付”，而非旅行状态下的生产值守。\n\n## 主要风险、合规注意事项和不适合人群\n\n- required check 名称、触发路径或来源配置不当会卡住所有 PR；先用实际测试 PR 验证，并保留客户可执行的回滚路径。\n- CODEOWNERS 不是安全控制的万能替代。其文件位置、基础分支、成员写权限和审批设置都影响效果；还应保护 CODEOWNERS 文件本身。\n- 规则可能被拥有适当 bypass 权限的人绕过；必须在交接中写清例外审批与责任人，不能声称“绝对禁止误合并”。\n- 不接未授权仓库、来路不明源码、要求共享组织 owner/主账号、要求关闭检查后代合并、要求规避平台限制或把未通过 CI 标为通过的需求。\n- 不适合 Git/英语技术文档基础薄弱、无法严谨复测、不能处理权限和保密边界、希望靠一次配置承诺长期安全，或无法承受客户审批等待的人。\n\n## 新手可验证的 3 个低成本步骤\n\n1. 用自有公开测试仓库演练：创建一个简单 CI、PR 模板、Issue Form、CODEOWNERS 和一条只针对默认分支的规则；分别验证通过/失败/未触发 check 的 PR，并记录回滚。\n2. 做一次只读微审计：在客户书面授权的非敏感仓库中输出一页“现有保护—工作流检查—CODEOWNERS—模板—风险/待确认项”矩阵，不修改设置、不下载源码。\n3. 发布窄试单：限定为 1 仓库、1 分支、一个测试 PR 与交接包；约定由客户管理员最终启用、客户负责 GitHub 计划/成员许可和回滚，完成后复盘实际等待时间、返工及权限摩擦，再调整报价。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 已审查并建议通过，无需重选题。\n\n- 中国境内承接海外市场适配度：**4/5**。交付物可远程且轻资产；客户授权、管理员权限、英语时区与保密构成主要摩擦。\n- OPC/一人公司适配度：**5/5**。小仓库的盘点、规则草案、测试 PR 和文档易于模板化；大型组织治理与应急响应不应由单人固定承诺。\n- 数字游民适配度：**4/5**。多数工作可异步远程完成；启用窗口仍依赖稳定网络、时区重叠和客户回滚负责人。\n- 合规风险等级：**中**。需处理私有代码、日志、成员信息和权限；必须书面授权、最小权限、保密、限期删除，并让客户管理员完成最终变更。\n- 跨境执行风险等级：**中**。英文 SOW、平台 KYC/条款、收款单证、结售汇/税务申报、数据处理和时区需逐单落实。\n- 收益口径是否克制：**是**。US$180–500 被明确限定为自行设计的固定范围试单而非市场均价或收入承诺，且已说明汇率、佣金、返工和税费的不确定性。\n- 信息来源是否足够可信：**高**。技术机制、权限条件和产品可用性来自 GitHub 官方文档；跨境单证和税务提醒来自中国外汇/税务官方材料。\n- 最该补充或提醒的一句话：**仅在客户以最小权限书面授权、确认仓库不含或已脱敏个人信息/秘密且自行完成管理员变更的前提下交付；涉及个人信息、受限数据或敏感代码时先完成数据处理与跨境传输合规评估，必要时拒单。**\n\n## 关键核验来源\n\n1. GitHub Docs，《About rulesets》：https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets\n2. GitHub Docs，《Creating rulesets for a repository》：https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository\n3. GitHub Docs，《Available rules for rulesets》：https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets\n4. GitHub Docs，《About protected branches》：https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches\n5. GitHub Docs，《Troubleshooting required status checks》：https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks\n6. GitHub Docs，《About code owners》：https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners\n7. GitHub Docs，《About issue and pull request templates》：https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates\n8. GitHub，《Plans and pricing》：https://github.com/pricing\n9. GitHub Changelog，《Organization rulesets now available for GitHub Team plans》：https://github.blog/changelog/2025-06-16-organization-rulesets-now-available-for-github-team-plans/\n10. 国家外汇管理局，《经常项目外汇业务指引（2020年版）》：https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf\n11. 国家外汇管理局天津市分局，《2025年服务贸易外汇管理问题解答（三）》：https://www.safe.gov.cn/tianjin/2025/0416/2769.html\n12. 国家税务总局，《财政部 税务总局关于境外所得有关个人所得税政策的公告》：https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html",
+      "startedAt": "2026-10-29T16:03:00+08:00",
+      "finishedAt": "2026-10-29T16:08:00+08:00",
+      "duration": "5m",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "github",
+        "software-services"
+      ],
+      "nextSteps": [
+        "在自有测试仓库完成 rulesets、CODEOWNERS、模板和三种测试 PR 的演练，记录启用与回滚证据。",
+        "为一位客户书面授权的非敏感仓库提供只读规则矩阵，不改设置、不下载源码。",
+        "用英文 SOW 发布单仓库试单，约定客户管理员最终启用、测试 PR 与撤权交接。"
+      ],
+      "artifacts": [
+        {
+          "label": "GitHub rulesets documentation",
+          "path": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"
+        },
+        {
+          "label": "GitHub CODEOWNERS documentation",
+          "path": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
+        },
+        {
+          "label": "SAFE current-account foreign-exchange guidance",
+          "path": "https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf"
+        },
+        {
+          "label": "Independent review",
+          "path": "独立点评 Agent 已完成审稿并建议通过"
+        }
+      ],
+      "sourceFile": "runs/2026-10-29/niche-profit-industry.json"
+    },
     {
       "date": "2026-10-28",
       "taskId": "niche-profit-industry",
