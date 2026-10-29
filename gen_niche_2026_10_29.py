@@ -1,0 +1,151 @@
+# -*- coding: utf-8 -*-
+"""生成 2026-10-29 每日小众赚钱行业调研 JSON（非居民远程公司设立与虚拟信箱代管）。"""
+import json
+import os
+from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
+
+CST = ZoneInfo("Asia/Shanghai")
+now = datetime.now(CST)
+started_at = (now - timedelta(minutes=26)).isoformat(timespec="seconds")
+finished_at = now.isoformat(timespec="seconds")
+
+details = """# 1. 行业是什么，为什么小众
+一句话定义：帮「不住在目标市场、却想在那里合法拥有一家公司」的人（数字游民、独立开发者、跨境电商卖家、海外自由职业者）做调研、对比和代协调，落地一家非居民友好的公司（美国 LLC / 爱沙尼亚 e-Residency 公司 / 英国 LTD / 新加坡公司等），并配套虚拟信箱（商业地址 + 邮件扫描转发）、注册代理、以及远程可开的企业银行账户（Mercury / Wise / Revolut）。
+
+为什么小众、容易被忽略：
+- 搜索量极低：普通人不会搜「非居民公司设立代管」，他们搜的是「怎么开 Stripe」「Upwork 怎么收美元」，需求藏在「想收海外款却卡在没实体公司」的背后。
+- 需求隐蔽：夹在「免费自己折腾（但看不懂 Form 5472、EIN 无 SSN 怎么申请）」和「昂贵移民/律所全案（动辄几千到上万刀）」之间的中端空白。
+- 看起来技术/合规门槛高：涉及跨国税务、注册州选择、EIN、BOI、银行 KYC，让人以为必须请律师——其实标准化的「研究 + 协调 + 代填表」完全可以由一个人远程完成。
+- 夹在几个大行业之间：既不像传统「公司注册代理」（只卖一个州），也不像「移民顾问」（要持牌），而是一个轻量的「远程创业基础设施 concierge」。
+
+# 2. 如何运作
+典型客户是谁，需求从哪里触发：
+- 数字游民 / 独立黑客：想拿一个可信的 US/EU 实体去接 Stripe、开 Mercury、签 SaaS 客户，不想暴露个人身份。
+- 跨境电商卖家（Amazon / Shopify）：需要 US LLC 解锁平台收款、隔离风险。
+- 海外自由职业者（Upwork / Toptal / Fiverr）：用公司账户收美元、降低平台/税务摩擦。
+- 需求触发点：搜「non-resident LLC」「Stripe Atlas 替代」「Upwork 怎么用美国公司」「爱沙尼亚 e-Residency 怎么开公司」时。
+
+核心交付物：
+- 一份「落地路线图」：根据客户目标市场 / 资金来源 / 是否募资，推荐司法管辖区（Wyoming vs Delaware vs 爱沙尼亚 vs 新加坡）并给出理由。
+- 一份「文档与步骤清单」：公司名查重、注册州、EIN（无 SSN 走 Form SS-4 传真）、Operating Agreement、注册代理、商业地址、银行开户材料包。
+- 代协调 / 代提交：代填表、代对接 Firstbase / Doola / Stripe Atlas 等服务商，或代跑官方流程；把银行、虚拟信箱、税务申报（转交持牌 CPA）串成一条线。
+- 持续的「合规日历」：年度报告、Franchise Tax、Form 5472（外国独资 LLC 每年必报，零收入也要报）的截止提醒。
+
+完整工作流（获客 → 交付 → 收款）：
+1. 获客：在 Indie Hackers、Reddit r/Entrepreneur、r/digitalnomad、X（Twitter）、中文「出海」社群、Fiverr/Upwork 上发「非居民如何开美国公司收 Stripe」类内容获客；或做 SEO 长尾页。
+2. 诊断：15–30 分钟视频/问卷，弄清客户国籍、目标市场、是否募资、预计营收，给出管辖区建议。
+3. 交付路线图 + 清单（1–2 天）：写清每一步、费用、风险、推荐服务商。
+4. 代协调落地：代提交或手把手带客户走完（Usual 周期 1–4 周：LLC 2–5 天、EIN 7–14 天、银行 1–3 周）。
+5. 交付「运营包」：银行账户、虚拟信箱、合规日历、续费提醒。
+6. 收款：一次性 setup 费 + 可选月/年 retainer（合规托管）。用 Stripe / Wise 收，符合「自己就是客户」的 irony。
+
+关键工具和平台：
+- 公司注册服务商：Stripe Atlas（$500 一次性，含 EIN + Mercury）、Firstbase（$399 + 州费）、Doola（$297/年起）、StartGlobal（$399）、LaunchUSA。
+- 虚拟信箱 / 注册代理：Anytime Mailbox、Earth Class Mail、PostScan Mail、BusinessAnywhere（打包「Digital Nomad Kit」）。
+- 远程银行：Mercury（45 万+ 创业者，1/3 初创公司选用）、Wise Business、Revolut Business、Relay、Brex、Airwallex。
+- 税务申报（转交）：Form 5472.io、各州持牌 CPA。
+- 研究与展示：Notion / Google Sheets 做路线图模板，Loom 录屏讲解。
+
+# 3. 盈利模式
+收入来源与定价方式：
+- 一次性「落地咨询 + 代协调」费：按项目收 $200–$1,500（取决于管辖区数量与是否含银行开户陪跑）。参考 Fiverr 上非居民 LLC 代注册 gig 标价 $25–$200（纯填表），而带 EIN + 银行 + 合规的「全包」独立服务商 FormLLC 收 $399  flat fee、已服务 5,000+ 创始人。
+- 月度 / 年度 retainer（合规托管）：$50–$300/月，覆盖注册代理续费、年度报告、Form 5472 提醒与转交、地址续费。
+-  affiliate / 推荐佣金：推荐 Stripe Atlas、Mercury、Doola、虚拟信箱等，拿推荐返点（不强制、可透明披露）。
+
+利润空间（扣工具/平台/税费后）：
+- 纯咨询 + 代填表模式：毛利极高（70–90%），因为核心成本是你的时间；工具订阅（注册代理、虚拟信箱样板）月费 $20–$60 即可起步。
+- 若你转售服务商套餐再 markup：需注意合规边界；更稳的是「咨询费 + 客户直付服务商」模式，你只收服务费，不碰客户资金。
+- 参考：一个成熟单人顾问，月接 5–10 个 setup（$400–$1,000 每个）+ 20–40 个 retainer（$80–$200/月），月毛利可达 $3,000–$10,000+，扣除自用工具与税费后净可观。
+
+复购 / 长期合同：
+- 强复购：年度报告、EIN 续、Form 5472 每年必报，客户基本每年回来；retainer 天然锁年。
+- 增购：从「开公司」到「开第二个司法管辖区」「做商标」「做做账」，客单价递增。
+
+# 4. 入门门槛
+技能：需要懂——主流管辖区差异（Wyoming/Delaware/爱沙尼亚/新加坡的税、隐私、募资友好度）；EIN 无 SSN 申请（Form SS-4 传真流程）；Form 5472 与 BOI 基本义务；银行 KYC 常见拒因；会用上述服务商后台。学起来：一个月集中研究 + 跑通 1–2 个自己的实体即可上手。无需法律/会计执照——定位是「研究 + 协调 + 代填表」，正式税务申报转交持牌 CPA，并明确「非法律/税务意见」。
+
+工具：初期只需——电脑 + 网络；1–2 个服务商后台熟悉（免费）；虚拟信箱样板订阅 $9.99–$30/月；Notion/Sheets 做模板（免费）。启动资金 < $100。若想显得专业可买一个自己的 US LLC + 虚拟信箱做 demo（$400 左右，可选）。
+
+资金：启动 < $100（纯咨询）；若自建 demo 实体约 $400–$600。
+
+时间：从零到第一单——1–2 周学完流程并在社群发内容，2–4 周接到第一个咨询单（低价或自己的朋友/出海圈）完全可行。
+
+# 5. 为什么适合 OPC / 数字游民
+- 100% 异步、远程：客户在全球任何时区，交付是文档 + 录屏 + 代提交，几乎不需要实时；只有银行/服务商偶有实时验证。
+- 全球客户：需求来自全世界想「出海」的人（印度、拉美、欧洲、中东、中国卖家），你人在哪都行，客户池是全球的。
+- 边际成本低：一份「管辖区对比路线图」模板可复用到几十个客户，新增客户几乎不增加成本。
+- 可规模化：从纯咨询 → 产品化套餐（$399 全包）→ 卖「Digital Nomad Kit」订阅 → 招兼职，单人可先跑通再放大。
+- 时区友好：提交 EIN 用传真/邮件，银行 KYC 多为自助，无需配合客户上班时间。
+- 自带「数字游民」属性：你服务的正是同类人，懂他们的痛点（没 SSN、没美国地址、被银行拒），信任建立快。
+
+# 6. 潜在收益（谨慎，不承诺）
+以下为公开数据整理的参考区间，不等于个人收入：
+- 市场体量（需求侧）：Stripe Atlas 累计帮 100,000+ 创始人注册公司，占 Delaware 新公司法人的 25%；2025 年一年就注册 23,000 家、覆盖 169 国、42% 是 AI 初创。爱沙尼亚 e-Residency 自 2014 年来 135,000+ e-居民（185 国），2025 年 e-居民新设 5,556 家爱沙尼亚公司（+15%），项目年经济影响 €1.25 亿。虚拟邮箱服务市场 2025 年约 ¥204.9 亿（≈$2.85B），预计 2032 年 ¥432.9 亿，CAGR 11.2%。
+- 供给侧（单人可行区间，参考公开报价）：一次性 setup 咨询 $200–$1,500；年 retainer $600–$3,600；Fiverr 同类 gig $25–$200（纯填表低客单），独立全包服务商 $399 flat（FormLLC 已服务 5,000+ 创始人、Trustpilot 4.6）。
+- 新手阶段：前 3–6 个月，月接 1–3 单低价/口碑单，月收入 $200–$1,000，主要积累案例与评价。
+- 成熟阶段：建立模板 + 内容获客 + retainer 后，月 5–10 setup + 20–40 retainer，月毛利参考 $3,000–$10,000+（未扣自用工具/税费）。这是区间参考，受获客能力、口碑、合规把控影响极大，绝非保证。
+
+# 7. 主要风险
+- 市场风险：Stripe Atlas / Doola / Firstbase 等产品化平台把「开公司」越做越便宜（Atlas 已 $500 全包），低端纯代填表会被商品化；必须往上走「诊断 + 多管辖区对比 + 银行/KYC 陪跑 + 年度合规托管」才有壁垒。
+- 技术风险：服务商政策变（如 FinCEN 2025 年 3 月 interim rule 豁免了美国实体的 BOI 申报，旧教程仍在卖 BOI 附加包）；银行 KYC 规则、EIN 传真通道随时调整，需持续跟进。
+- 合规风险（最敏感）：① 越界提供法律/税务意见——必须明确「研究 + 协调 + 代填表，非法律/税务建议」，正式申报转交持牌 CPA；② 跨境税务：客户的税籍取决于实际管理与收入地，错误建议可能害人；③ 数据隐私：代管客户护照/地址等材料，需加密存储、明确授权；④ 部分国家（如巴基斯坦等）被银行列入 EDD 加强尽调，开户拒率高，需如实告知。
+- 现金流风险：B2C 单次 setup 项目制，账期短但获客成本波动；retainer 可平滑但不能替代持续获客；若依赖 affiliate 返点，受服务商政策变动影响。
+
+# 8. 不适合的人群
+- 想「挂个名就躺赚」的人：这是服务型交付，要持续研究政策、跟客户沟通。
+- 没有跨境/英文检索与阅读能力的人：核心资料是 IRS、各州务卿、服务商英文文档，看不懂容易给错建议、踩合规红线。
+- 想提供法律/税务意见的人：无执照给跨境税务/法律意见在多地属违规（UPL），本方向必须守住「协调不代诊」边界。
+- 厌恶合规责任的人：客户公司出问题（漏报 Form 5472 罚 $25,000/表/年）会回头找你，需把责任边界写进合同/免责声明。
+- 只做「纯填表低价」的人：会被平台商品化，利润薄且口碑风险高。
+
+# 9. 3 个可验证的入门步骤
+1. 跑通自己的实体（1–3 天，< $600）：以非居民身份用 Stripe Atlas 或 Wyoming LLC + 虚拟信箱，亲自走一遍「注册 → EIN（无 SSN）→ 开 Mercury/Wise → 收到第一笔测试款」全流程，把每一步截图+踩坑记成模板。验证：你真的拥有一个能收海外款的远程公司。
+2. 做一张「管辖区对比表」并发到出海/数字游民社群（1–3 天，成本 0）：用 Notion/Sheets 对比 Wyoming / Delaware / 爱沙尼亚 / 新加坡 的税、隐私、银行友好度、适合谁，发到 Indie Hackers、Reddit、X、中文出海群，看是否有人来问「帮我选 + 代弄」。验证：有无真实咨询需求与付费意愿。
+3. 接第一个低价/口碑单并交付「运营包」（1–2 周，成本 0）：在 Fiverr/Upwork 挂一个「非居民 LLC 设立路线图 + 代填表」gig（参考 $99–$299），或在朋友圈接一个真实客户，交付含银行/信箱/合规日历的包。验证：能否收钱、客户是否满意、复购/转介绍是否出现。
+
+# 10. 核验来源
+1. Stripe Atlas 官方：累计 100,000+ 公司、占 Delaware 25%、2025 注册 23,000 家/169 国/42% AI。
+2. Stripe Atlas 突破 10 万创始人里程碑（2025 数据：42% AI 初创、6 个月收入 +39%）。
+3. 爱沙尼亚 e-Residency 2025：135,000+ e-居民、5,556 家新公司、€1.25 亿影响。
+4. 虚拟邮箱服务市场（恒州诚思）：2025 ≈¥204.9 亿 → 2032 ≈¥432.9 亿，CAGR 11.2%。
+5. 非居民 LLC 设立服务商比价（Doola/Firstbase/StartGlobal 定价）。
+6. 非居民 LLC 与 Form 5472 年度申报义务（含 $25,000 罚款说明）。
+7. IRS 官方 Form 5472 说明页。
+8. 远程创始人银行账户开通指南（Mercury/Wise/Revolut 远程开户）。"""
+
+task = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：非居民远程公司设立与虚拟信箱代管",
+    "status": "success",
+    "startedAt": started_at,
+    "finishedAt": finished_at,
+    "summary": "非居民远程公司设立与虚拟信箱代管，是帮数字游民、独立开发者和跨境电商卖家研究、对比并代协调落地一家「不住在当地也能合法拥有」的公司（美国 LLC / 爱沙尼亚公司等），并配套虚拟商业地址与远程企业银行账户的轻量咨询服务。它搜索量极低、需求藏在「想收海外款却没实体」背后，一人远程可闭环、启动成本不足百美元，且有 Stripe Atlas 十万级用户、爱沙尼亚 13.5 万 e-居民、虚拟信箱市场近 30 亿美元的公开数据支撑真实付费需求，是典型的 OPC / 数字游民友好型小众行业。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "non-resident-company", "company-formation", "virtual-mailbox", "cross-border"],
+    "nextSteps": [
+        "跑通自己的实体（1–3 天，<$600）：以非居民身份用 Stripe Atlas 或 Wyoming LLC + 虚拟信箱，亲走「注册→EIN（无 SSN）→开 Mercury/Wise→收到测试款」全流程并截图成模板。",
+        "做「管辖区对比表」发到出海/数字游民社群（1–3 天，成本 0）：对比 Wyoming/Delaware/爱沙尼亚/新加坡 的税、隐私、银行友好度，验证是否有人来问「帮我选+代弄」。",
+        "接第一个低价/口碑单交付「运营包」（1–2 周）：在 Fiverr/Upwork 挂 non-resident LLC 路线图+代填表 gig（参考 $99–$299），或在朋友圈接真实客户，验证能否收钱与复购。"
+    ],
+    "artifacts": [
+        {"label": "Stripe Atlas 官方（累计 10 万+ 公司、占 Delaware 25%）", "path": "https://stripe.com/atlas"},
+        {"label": "Stripe Atlas 突破 10 万创始人里程碑（2025 数据）", "path": "https://virtualassistantva.com/news/stripe-atlas-100000-founders-42-percent-ai-startups-incorporation-2026"},
+        {"label": "爱沙尼亚 e-Residency 2025 数据（13.5 万+ e-居民、5,556 家公司）", "path": "https://1office.co/blog/how-to-form-company-estonia-eresidency-guide/"},
+        {"label": "虚拟邮箱服务市场（恒州诚思：2025≈¥204.9亿→2032≈¥432.9亿，CAGR 11.2%）", "path": "https://www.yhresearch.cn/reports/3148099/virtual-mailbox-service"},
+        {"label": "非居民 LLC 设立服务商比价（Doola/Firstbase/StartGlobal）", "path": "https://www.rebellink.com/best-llc-services/"},
+        {"label": "非居民 LLC 与 Form 5472 年度申报义务（$25,000 罚款）", "path": "https://startfleet.io/guide/best-llc-formation-services"},
+        {"label": "IRS 官方 Form 5472 说明页", "path": "https://www.irs.gov/forms-pubs/about-form-5472"},
+        {"label": "远程创始人银行账户开通指南（Mercury/Wise/Revolut 远程开户）", "path": "https://businessanywhere.io/how-to-open-a-us-business-bank-account-remotely/"}
+    ],
+}
+
+out_dir = os.path.join("runs-workbuddy", "2026-10-29")
+os.makedirs(out_dir, exist_ok=True)
+out_path = os.path.join(out_dir, "niche-opc-industry.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(task, f, ensure_ascii=False, indent=2)
+print("WROTE", out_path)
+print("BYTES", os.path.getsize(out_path))
+print("LABELS", len(task["labels"]), "ARTIFACTS", len(task["artifacts"]))
