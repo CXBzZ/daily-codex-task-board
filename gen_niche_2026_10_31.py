@@ -1,0 +1,132 @@
+# -*- coding: utf-8 -*-
+"""Generate the daily niche OPC industry brief for 2026-10-31 (Asia/Shanghai).
+
+Industry: 消费类产品出海合规认证咨询（Product Compliance & Certification Consulting）
+"""
+import json
+import os
+
+DATE = "2026-10-31"
+OUT_DIR = os.path.join("runs-workbuddy", DATE)
+OUT_PATH = os.path.join(OUT_DIR, "niche-opc-industry.json")
+
+details = """1. 行业是什么，为什么小众
+一句话定义：帮 Amazon / Shopify / TikTok Shop 等跨境卖家，厘清某款实体产品要进入美国 / 欧盟 / 英国 / 加拿大等市场到底需要哪些强制合规标志（CE、UKCA、FCC、FCC ID、UL、CPC、RoHS、REACH、Prop 65、UN38.3 等），并代为做合规路径诊断、对接认可实验室、撰写技术文件（Technical File）与符合性声明（DoC / DoP），避免产品被平台下架或账号被封。
+为什么小众且被低估：
+- 搜索量低且需求隐蔽：卖家几乎不会主动搜"产品合规认证咨询"，他们只在两种时刻才意识到需要——① 平台突然要求上传证书否则下架链接；② 账号因缺认证被停用。需求藏在"链接被下架 / 货被卡海关"的紧急事件背后，而非显性搜索词。
+- 夹在"免费 DIY 混乱"与"昂贵实验室"之间：CE/FCC 官方文件免费公开，但普通人看不懂指令、协调标准、模块；而 SGS / TÜV / Intertek 等大机构动辄数万元起、且只做测试不替你读懂"我的产品到底要哪些"。中间留出一个"翻译法规 + 协调测试 + 代制文件"的中端空白，被严重低估。
+- 技术门槛被高估：核心是"识别适用指令 / 标准 → 列测试清单 → 找认可实验室 → 写技术文件与 DoC"，不需要你是工程师或律师。很多资深从业者（如做过 TÜV 审核的人）转自由职业，单人即可闭环。
+- 与既有选题明确区分：本仓库已覆盖"隐私合规（GDPR/CCPA）""EU AI Act 合规就绪""商标检索""专利检索""ESG 报告"等，但它们分别是数据隐私、AI 法规、知识产权、可持续披露；本次是实体产品的**安全与准入法规**（电气安全、无线电、化学、玩具/儿童、机械），客户是卖实物商品的跨境卖家，交付物是测试协调 + 技术文件 + 符合性声明，完全不同。
+
+2. 如何运作
+- 典型客户：在 Amazon / Shopify / Temu / TikTok Shop 上卖实体产品的中国 / 东南亚 / 欧美中小卖家——蓝牙耳机 / 小家电 / LED 灯 / 儿童玩具 / 充电宝 / 机械小工具 / 含电池产品等。需求触发点：① 上架前自查；② 平台发"合规请求"（Compliance Request）要求 72 小时内传证书；③ 已有链接被下架；④ 准备拓新市场（如从美国加到欧盟）。
+- 核心交付物：合规路径建议书（我的产品适用哪些指令/标准、是否需要公告机构 NB）、测试清单与实验室询价对比、技术文件包（风险评估、电路/结构图、说明书、测试报告汇总、零部件清单）、EU/UK Declaration of Conformity（DoC）草案、标签与铭牌合规检查、平台申诉（POA）中的合规证据整理。
+- 完整工作流：① 免费/低价"合规体检"钩子（看类目 + 目标国，指出缺哪些标志）→ ② 出《合规路径建议书》+ 报价（按产品复杂度）→ ③ 客户确认后，对接 CNAS/ILAC 认可实验室安排测试（你拿佣金或代付）→ ④ 收到测试报告后，撰写/汇编技术文件与 DoC，做标签核查 → ⑤ 客户上传 Seller Central 合规面板 / 加贴标志出货 → ⑥ 后续：型号变更、法规更新时更新文件（可转月费/年费维护）。
+- 关键工具 / 平台：欧盟官方 CE / UKCA 指南（免费，ec.europa.eu、gov.uk）、实验室门户（SGS / TÜV SÜD / Intertek / Bureau Veritas 官网询价）、Amazon Seller Central 合规管理面板、EU 责任人 / UK 责任人服务（如 ckoverseas、红点等，约 €/£ 数百/年）、风险自查用标准数据库（如 EU 协调标准清单）、表格/Notion 管理多 SKU。
+
+3. 盈利模式
+- 收入来源与定价：
+  - 按项目（最主流）：单个产品的"合规路径诊断 + 技术文件代制 + DoC"在国内服务机构报价约 ¥15,000–¥50,000（湘应企业服务 2026，含多语言/整改支持）；纯基础代理（资料整理 + 指令匹配 + 测试对接 + DoC 编制）约 ¥3,000–¥5,000/型号（今日头条/GTS 2026）。
+  - 时薪咨询：Upwork 上 Product Compliance / Regulatory Compliance 自由职业者真实报价 $45–$125/小时（如巴基斯坦 Muhammad A. $50/hr 已做 181 单、印度 Chandrashekar N. $45/hr、荷兰 Rand N. $60/hr 已做 127 单、美国 Ashley R. $100/hr 累计收入 $200K+）。
+  - 实验室佣金 / 介绍费：部分实验室给推荐返点（非强制，须透明披露）。
+  - 责任人年费 + 维护包：欧盟/英国责任人代理 + 文件年度更新，约 €200–€600/年/品牌 + 月/年维护 retainer。
+- 利润空间：你的直接成本主要是时间 + 少量工具订阅；测试费由客户直接付给实验室（你不做重资产）。扣除平台抽成（Upwork ~10%）、税费后，单人项目毛利可达 60–80%。维护 10–20 个卖家客户的年费/复诊，可形成稳定现金流。
+- 复购 / 长期合同：强复购——每上新一个 SKU、每进一个新市场、每次法规更新（如 UKCA 过渡期 2027 年底截止）都要重新评估；老客户转介绍率高（卖家圈子小、口碑传播快）。
+
+4. 入门门槛
+- 技能：搞懂"指令（Directive）→ 协调标准（Harmonised Standard）→ 模块（Module A 自我声明 vs 需公告机构）→ 技术文件 + DoC"这条主线即可；会读产品类目、判断适用标准、写一份像样的技术文件模板。认真学 2–4 周可接第一单，不需要是工程师（但懂点电气/机械基础更顺）。
+- 工具：起步几乎零成本——欧盟/英国官网指南免费；一个 EU/UK 责任人代理账号（可先不买，接到单再代客户订）+ 表格/Notion 即可。初期工具费 <$50/月。
+- 资金：启动基本 <$200（能上网的电脑 + 资料库订阅），无需库存、场地、重型设备。
+- 时间：从零到第一单，若用"免费合规体检 → 报价"钩子，2–4 周内可拿到首个付费客户（Upwork 上 Regulatory Compliance 类目常年有大量在招、且客单价高）。
+
+5. 为什么适合 OPC / 数字游民
+- 异步交付：合规诊断、技术文件撰写、实验室对接邮件、DoC 起草全部可异步完成，不与客户时区强绑定；只有偶尔的电话/汇报需约时间。
+- 全球客户、地点自由：跨境卖家遍布全球（中国、东南亚、欧美本土品牌），你人在巴厘岛或里斯本都能接单；时差反而利于"白天沟通欧美、夜间整理文件"。这是研究 + 协调型服务，不要求本地实体办公室或本地执照（区别于需持证上岗的线下工种）。
+- 边际成本低、可规模化：核心资产是"标准知识 + 模板库"，每多服务一个 SKU 边际成本近零；用 Notion 模板化技术文件，一人可同时维护 20–50 个 SKU 的合规状态。
+- 时区友好 + 复利：年费/维护制带来可预测现金流；法规更新（如 UKCA 2027 截止、EU 新电池法规）会持续制造需求，老客户的合规档案越积越值钱。
+- 具体而非空泛：这是一个"靠专业知识而非体力、靠口碑而非广告"的一人模型，2026 年 Upwork 上已出现多位单人年入 $60K–$200K+ 的 Product Compliance 自由职业者，证明高度可行。
+
+6. 潜在收益（谨慎，不承诺）
+- 公开数据：全球测试 / 检验 / 认证（TIC）市场 2025 年约 $230.73B，2026 年 $244.37B，CAGR 5.9%（TBRC via GII）；其中"产品合规性测试服务"细分 2025 年约 $9.48B，预计 2035 年 $15B（CAGR 4.7%，WiseGuy）。需求侧极实：据大数跨境引亚马逊 2023 年报，因产品认证缺失导致的商品移除占比达 37%，居合规问题首位；TÜV 白皮书称中国卖家提交的 CE 中约 29% 因技术文档不全被拒。
+- 新手阶段（0–6 个月）：靠平台接单，月入 $500–$2,500（做诊断 + 单品文件，单价 ¥3k–¥15k）。
+- 成熟阶段（1–2 年）：建立垂直口碑后，按 $50–$125/小时或单品 ¥1.5万–¥5万，维护 15–30 个卖家客户 + 年费，月流水可达 $5k–$20k+，净边际 60%+。Upwork 上多位 Top Rated 单人合规顾问累计收入已超 $60K–$200K。
+- 明确标注：这些是行业与平台公开参考数据，不等于个人收入；实际取决于你对标准的熟稔度、获客能力与垂直竞争。合规咨询非"暴富"，是稳健专业型。
+
+7. 主要风险
+- 市场风险：法规频繁更新（UKCA 过渡期持续调整、EU 新电池/生态设计法规加码），需持续学习；AI 法规摘要工具可能压低"纯读文档"低端价，须向上走"诊断 + 实验室协调 + 文件 + 责任人"打包。
+- 技术 / 平台风险：依赖实验室排期与资质（非 ILAC/CNAS 认可报告不被平台采信）；平台（Amazon）会不定期抽检，即使上架成功，复核不通过仍下架；证书型号必须与上架产品完全一致，否则驳回。
+- 合规风险（红线）：你提供的是"研究 + 文件协调"，不是法律意见——要明确写在合同里，避免越界成"合规保证/法律意见"（多国对有偿合规建议有边界）；不得代客户伪造测试报告 / 套证（平台与海关严打，违法）；跨境收款与"欧盟责任人"等涉及税务与代理责任，须如实告知边界。
+- 现金流风险：实验室测试费多为预付、且周期 2–8 周，若客户中途弃单你可能垫资；企业客户账期 30–60 天；获客（冷邮件 / 平台抽成）有前置成本。
+
+8. 不适合的人群
+- 想"快速暴富 / 被动收入"的人——合规咨询是专业服务，要靠持续学习与口碑。
+- 不愿读官方英文法规、怕标准编号的人——核心资产就是"读懂指令与协调标准"。
+- 想完全"躺平自动化"的人——每个 SKU 情况不同，无法全托管，AI 只能辅助查标准。
+- 想伪造证书 / 套证赚快钱的人——这是违法红线，且平台与海关严打，风险极高。
+- 只懂营销不懂产品、又不愿补电气/机械基础的人——判断适用指令需要基本产品认知。
+
+9. 3 个可验证的入门步骤
+1. 今天：选 1 个你熟悉的跨境品类（如蓝牙耳机或 LED 灯），用欧盟 CE 官方页（ec.europa.eu/ce-marking）和英国 gov.uk/ukca 页，查出它适用的指令（如 RED、LVD、EMC、RoHS）与"是否需要公告机构"，做成一份 1 页《合规清单模板》。验证：2 小时内能否产出不犯低级错误的清单？
+2. 第 2 天：在 Upwork 搜 "product compliance" / "CE marking" / "FCC"，看在招项目量与报价（$45–$125/hr 区间），并在 Fiverr 上线一个 $49–$99 的"Compliance Check / 我的产品需要哪些认证"gig，或直接给 3 个 Amazon 卖家发"我看了你的链接，缺 XX 认证可能被下架"的冷邮件。验证：24–72 小时内有无咨询/下单？
+3. 第 3 天：拿下首个付费客户后，用免费官方模板帮他起草 DoC 草案 + 列测试实验室询价清单（SGS/TÜV/Intertek），交付一份《合规路径建议书》。验证：客户是否愿意为"后续技术文件 + 责任人年费"付第二笔钱（这是模型是否成立的关键信号）。
+
+10. 核验来源
+1. 欧盟委员会官方 — CE 标志（定义、制造商须建立技术文件、签署 EU 符合性声明、可自我声明）
+   https://single-market-economy.ec.europa.eu/single-market/ce-marking_en
+2. 英国政府 GOV.UK — 使用 UKCA 标志（适用范围、UK DoC、技术文档、自我声明）
+   https://www.gov.uk/guidance/using-the-ukca-marking
+3. Upwork — Regulatory Compliance 自由职业者目录（真实费率 $45–$125/hr、4.8/5 共 742 条评价、多位单人高收入案例）
+   https://www.upwork.com/hire/regulatory-compliance-freelancers/
+4. The Business Research Company via GII — 全球测试/检验/认证（TIC）市场 2025 $230.73B → 2030 $306.4B，CAGR 5.8%
+   http://gii.tw/report/tbrc1840378-testing-inspection-certification-global-market.html
+5. 大数跨境 — 亚马逊产品合规认证详解（37% 下架因认证缺失、CE 拒收 29% 因文档不全、FCC+CE 周期与费用）
+   https://www.10100.com/encyclopedia/6/68652268
+6. 湘应企业服务 — 2026 CE 认证流程与费用（技术文件 + DoC 咨询 ¥15,000–¥50,000、基础代理 ¥3,000–¥5,000/型号、测试 EMC+LVD ¥8,000–¥25,000）
+   https://www.xiang-ying.cn/faq/3856.html
+7. SGS 官网 — 全球检测认证龙头（实验室生态与认可资质参照）
+   https://www.sgs.com/
+8. 美国 FCC — Equipment Authorization（美国电子/无线产品认证主管机构）
+   https://www.fcc.gov/oet/ea/
+"""
+
+data = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：消费类产品出海合规认证咨询",
+    "status": "success",
+    "startedAt": "2026-10-31T09:10:00+08:00",
+    "finishedAt": "2026-10-31T10:15:00+08:00",
+    "summary": "消费类产品出海合规认证咨询，是帮 Amazon/Shopify 跨境卖家厘清 CE/UKCA/FCC/RoHS 等强制准入标志、对接认可实验室、代制技术文件与符合性声明（DoC）的专业服务。需求隐蔽（藏在'链接被下架/账号被封'背后）、一人可远程异步闭环、启动成本不足 $200、靠年费与口碑复购，且市场已验证（全球 TIC 市场 2025 年约 $2,307 亿、跨境卖家认证缺失致 37% 下架）。适合 OPC 与数字游民作为低库存、高专业壁垒的一人业务。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "product-compliance",
+        "cross-border-ecommerce",
+        "certification",
+        "regulatory",
+    ],
+    "nextSteps": [
+        "今天：选 1 个跨境品类（如蓝牙耳机/LED 灯），用欧盟 CE 官方页与英国 UKCA 页查出适用指令与是否需公告机构，做成 1 页《合规清单模板》（2 小时内能否不犯低级错误）。",
+        "第 2 天：在 Upwork 搜 'product compliance' 看在招量与 $45–$125/hr 报价，并在 Fiverr 上线 $49–$99 的'我的产品需要哪些认证'gig，或给 3 个 Amazon 卖家发冷邮件；24–72 小时观察是否有咨询/下单。",
+        "第 3 天：拿下单后，用免费官方模板帮客户起草 DoC 草案 + 列 SGS/TÜV/Intertek 实验室询价清单，交付《合规路径建议书》；验证客户是否愿意为'技术文件 + 责任人年费'付第二笔钱。",
+    ],
+    "artifacts": [
+        {"label": "欧盟委员会官方 — CE 标志（官方定义与 DoC/技术文件要求）", "path": "https://single-market-economy.ec.europa.eu/single-market/ce-marking_en"},
+        {"label": "英国政府 GOV.UK — 使用 UKCA 标志", "path": "https://www.gov.uk/guidance/using-the-ukca-marking"},
+        {"label": "Upwork — Regulatory Compliance 自由职业者目录（真实费率与案例）", "path": "https://www.upwork.com/hire/regulatory-compliance-freelancers/"},
+        {"label": "The Business Research Company via GII — 全球 TIC 市场报告", "path": "http://gii.tw/report/tbrc1840378-testing-inspection-certification-global-market.html"},
+        {"label": "大数跨境 — 亚马逊产品合规认证详解（下架/拒收数据）", "path": "https://www.10100.com/encyclopedia/6/68652268"},
+        {"label": "湘应企业服务 — 2026 CE 认证流程与费用明细", "path": "https://www.xiang-ying.cn/faq/3856.html"},
+        {"label": "SGS 官网 — 全球检测认证龙头（实验室生态参照）", "path": "https://www.sgs.com/"},
+        {"label": "美国 FCC — Equipment Authorization（美国电子/无线认证主管）", "path": "https://www.fcc.gov/oet/ea/"},
+    ],
+}
+
+os.makedirs(OUT_DIR, exist_ok=True)
+with open(OUT_PATH, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("written:", OUT_PATH)
+print("bytes:", os.path.getsize(OUT_PATH))
