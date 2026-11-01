@@ -1,7 +1,71 @@
 {
-  "generatedAt": "2026-10-31T01:18:30.169Z",
+  "generatedAt": "2026-11-01T01:12:43.864Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-11-01",
+      "taskId": "niche-opc-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业：电子表格自动化与定制工具代制（Google Sheets / Excel Apps Script）",
+      "status": "success",
+      "summary": "电子表格自动化代制：用 Google Apps Script / Excel VBA 把企业日常重复的表格工作流改造成自动运行的轻量内部工具。需求隐蔽（藏在'表格好慢/要手动填'的痛点里）、一人远程异步可闭环、启动成本近乎为零、有 Fiverr/Upwork 大量真实在售订单与公开定价支撑，非常适合 OPC 与数字游民。",
+      "details": "一、行业是什么，为什么小众\n一句话定义：帮中小企业、团队和个人把他们日常重复、靠手工复制粘贴的 Google Sheets / Excel 工作流，用 Google Apps Script（或 Excel VBA / Office Scripts）改造成\"自动跑、自己发邮件、自己生成报表\"的轻量内部工具，并交付源码与交接文档。\n\n为什么普通人容易忽略它：\n1. 搜索量极低：遇到\"表格好慢、要手动填\"的人不会去搜\"电子表格自动化服务\"，只会搜\"Excel 怎么用\"，真实需求完全隐蔽。\n2. 需求藏在痛点背后：客户的表述是\"每周要花两天对账\"\"表单要手动转 PDF 发邮件\"\"库存表总出错\"，而不是一个明确的服务品类词。\n3. 夹在免费 DIY 与昂贵系统之间：大公司买 SAP / NetSuite，小团队用免费表却越来越痛；中间\"用脚本把表变成小系统\"恰好没人专门卖，形成中端空白。\n4. 技术门槛被高估：真正常用的 Apps Script 是几十行的触发器 + 自定义函数，在 AI 辅助下入门极快，但外界仍以为\"要会编程\"而却步，导致供给稀缺。\n\n二、如何运作\n典型客户是谁，需求从哪里触发：\n- 客户：小微企业主、电商 / DTC 卖家、代理机构（月报 / 客户报告）、运营 / 财务 / HR 团队、自由职业者、非营利组织、教育机构。\n- 触发点：表格膨胀到几千行、每周重复导出导入、人工出错赔钱、老板想要\"随时能看的仪表盘\"、表单数据要转成 PDF / 发票并发邮件。\n\n核心交付物：\n- 修好或新建的 Google Sheet / Excel 工作簿；\n- 嵌入其中的 Apps Script（或 VBA / Office Scripts）自动化逻辑；\n- 简短交接文档与操作指南；\n- 可选：月度维护 care plan（监控与微调）。\n\n完整工作流（从获客到收款）：\n1. 发现：通过问卷 / 通话摸清客户现有流程、痛点与期望产出；\n2. 报价：先给固定价小修或\"自动化审计\"（列出可自动化项 + 每项省时），再谈搭建；\n3. 搭建：在客户自己的 Google 账号内写脚本 / 模板，不托管在第三方；\n4. 测试：用真实数据跑边缘情况（空行、0 值、错误输入）；\n5. 交付：源码 + 使用指南，客户验收；\n6. 收款：平台托管或预付 + 尾款；\n7. 增购 / 续费：第一个工作流跑顺后通常加第二个、第三个，或转月度 care plan。\n\n关键工具和平台：\n- Google Sheets + Apps Script（免费，触发器 + 自定义函数）；\n- Excel VBA / Office Scripts；\n- Google Forms、Gmail API、Looker Studio（仪表盘，免费）；\n- Zapier / Make（非 Google 系统集成，约 $19.99/月起）；\n- OpenAI / Claude API（表内 AI 摘要 / 分类）；\n- 接单平台：Fiverr、Upwork、Contra。\n\n三、盈利模式\n收入来源与定价方式：\n- 按项目固定价：小修 $149；标准搭建 $499–$1,200；端到端自动化 $1,000–$2,500；印度外包起步 ₹40,000（≈$600）/ 工作流。\n- 按小时：$30–$100（Upwork 常见）。\n- 审计费：$299（可抵后续搭建费）。\n- 月度 care plan：$199–$999 / 月（监控 + 小修 + 改进）。\n\n利润空间：\n- 工具成本近乎为 0（Apps Script 免费、免费 Gmail 即可跑），扣除平台佣金（Fiverr 约 20%、Upwork 约 10–20%）与税费后，纯脚本服务项目毛利常 >70%。\n\n是否有复购或长期合同：\n- 有。月度 care plan 提供稳定经常性收入；行业常见路径是\"先解决最痛的一个工作流\"，跑顺后客户主动加第二个、第三个，留存与增购都强。\n\n四、入门门槛\n技能：会 JavaScript 基础（Apps Script 即云端 JS）+ Sheets 常用函数（VLOOKUP / QUERY / ARRAYFORMULA）；Excel 侧需 VBA 或 Office Scripts。AI（Claude / Cursor）可辅助写和改脚本，1–2 周可接简单单。学起来快。\n\n工具：初期几乎零成本——一个 Google 账号（免费）即可；高级配额用 Workspace $6/月起；可选 Zapier $19.99/月起、Looker Studio 免费。\n\n资金：启动 <$100（甚至 $0）；如需展示作品可花几十刀做几个模板 Demo 表。\n\n时间：从零到第一单，认真学 2–4 周 + 做 1 个案例表，挂到 Fiverr / Upwork 后 1–2 周内可获首单；有现成案例更快。\n\n五、为什么适合 OPC / 数字游民\n- 异步交付：脚本写好、触发器设在 Google 云端，客户那边自己定时跑，你无须在线陪跑，时区完全友好。\n- 全球客户：Google Workspace 官方博客（2026）称平台\"超 30 亿用户、1,300 万+ 企业客户\"，英语市场（美 / 英 / 澳 / 加 / 印）需求巨大且付费意愿强，沟通用英语即可。\n- 边际成本低：一份脚本模板（如\"表单 → PDF → 邮件\"通用骨架）可复用给同类客户，第二单成本骤降。\n- 远程闭环：全程在浏览器内完成，无需本地执照、无需库存、无需见面；代码交付在客户自己的账号里，无托管负担。\n- 可规模化：从单人接单 → 标准化审计 + 模板 → 月度 care plan 形成经常性收入，不雇人也能做中等体量。\n\n六、潜在收益（谨慎，不承诺）\n新手阶段（前 3–6 个月）：在 Fiverr / Upwork 接小单，单价 $15–$150/单，月入约 $300–$1,500（兼职节奏），随好评积累逐步涨价。\n\n成熟阶段：标准搭建 $499–$1,200/单 + 自动化 $1,000–$2,500/单 + 2–5 个 care plan（$199–$999/月），月入可达 $3,000–$10,000+；机构化案例（如 BtechWaleTech 三人团队）单工作流 $600 起、Softotech 累计 6,000+ 项目。\n\n公开参考数据（不等于个人收入）：\n- Google Workspace 官方博客（2026）：平台\"超 30 亿用户、1,300 万+ 企业客户\"。\n- Fiverr / Upwork 上 \"Google Sheets automation / Apps Script\" 服务档位从 $15 到 $800+ 大量在售且有评价。\n- Softotech 公开定价：Fix $149 / Build $499–$1,200 / Automate $1,000–$2,500 / care $199–$999 月。\n- BtechWaleTech：单工作流 ₹40,000（≈$600）起。\n实际收入取决于获客能力、技能深度与定价策略，差异很大。\n\n七、主要风险\n市场风险：AI 编程工具（Cursor / Claude Code / Gemini）让\"写脚本\"门槛骤降，部分极简需求被客户自己用 AI 解决；低价 Fiverr 单竞争加剧。\n\n技术风险：Apps Script 单次执行 6 分钟上限、每日邮件 / URL fetch 配额限制；客户表结构大改会崩脚本；Google 政策或配额变动；强依赖 Google 平台。\n\n合规风险：处理客户机密数据（财务 / 医疗 / PII）需签 NDA、用脱敏副本；跨境服务涉及税务申报（如在美接单）；GDPR / 数据隐私；不越权使用客户账号。\n\n现金流风险：平台账期（Upwork 放款 14 天+、Fiverr 交付后放款）；获客成本（平台抽成 + 竞价排名）；大项目回款慢。\n\n八、不适合的人群\n- 完全不想碰代码、看到 JS 就头大的人（即便 AI 辅助也要能读懂和调试）。\n- 指望\"今天做明天暴富\"的人——这是手艺活，靠口碑与案例积累。\n- 拒绝异步 / 远程、必须要线下见面交付的人。\n- 不愿处理客户 messy 数据、没耐心做边缘情况测试的人。\n- 期望完全被动收入、不愿做客户沟通与维护的人。\n\n九、3 个可验证的入门步骤\n1. 用 2 天学 Apps Script 最小可用：读 Google 官方 Apps Script 文档，跑通一个\"表单提交 → 自动生成 PDF 报价单并发邮件\"的示例，自己做一个 Demo 表（成本 $0）。\n2. 用 1 天在 Fiverr / Upwork 搜 \"Google Sheets automation\"，记录 10 个竞对的服务档位与价格，确认需求真实存在，并定出自己的首档 $25 / $75 / $150 三档（验证：有人真在卖、有评价）。\n3. 用 2–3 天把 Demo 表包装成第一个 gig 挂出，并在 r/googlesheets 或独立开发者社群免费帮 1 个人解决一个真实表格问题，换取首条评价，验证是否值得继续。\n\n十、核验来源\n见 artifacts 列表（均为真实可访问链接）：Google Apps Script 官方文档、Google Workspace 官方博客（30 亿用户 / 1,300 万企业客户）、Softotech 公开定价页、BtechWaleTech 定价页、ZinnHub 伦敦服务页、Fiverr 服务示例、Upwork 服务示例、Webcrew Consultancy 服务页。",
+      "startedAt": "2026-11-01T09:00:00+08:00",
+      "finishedAt": "2026-11-01T09:30:00+08:00",
+      "duration": "30m",
+      "sourceThread": "workbuddy-daily-niche-research",
+      "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "spreadsheet-automation",
+        "google-apps-script",
+        "no-code-tool"
+      ],
+      "nextSteps": [
+        "用 2 天学 Apps Script 最小可用：读官方文档，跑通'表单提交→自动生成 PDF 报价单并发邮件'示例，做一个 Demo 表（成本 $0）。",
+        "用 1 天在 Fiverr/Upwork 搜 'Google Sheets automation'，记录 10 个竞对档位与价格，定出自己的 $25/$75/$150 三档，验证需求真实存在。",
+        "用 2-3 天把 Demo 表包装成第一个 gig 挂出，并在 r/googlesheets 等社群免费帮 1 人解决真实表格问题，换取首条评价并验证是否值得继续。"
+      ],
+      "artifacts": [
+        {
+          "label": "Google Apps Script 官方文档",
+          "path": "https://developers.google.com/apps-script"
+        },
+        {
+          "label": "Google Workspace 官方博客（30 亿用户 / 1,300 万企业客户）",
+          "path": "https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026"
+        },
+        {
+          "label": "Softotech 公开定价页（Fix $149 / Build $499-1,200 / Automate $1,000-2,500 / care $199-999 月）",
+          "path": "https://softotech.net/excel-ai-automation/"
+        },
+        {
+          "label": "BtechWaleTech 定价页（单工作流 ₹40,000≈$600 起）",
+          "path": "https://btechwaletech.in/google-apps-script-developer"
+        },
+        {
+          "label": "ZinnHub 伦敦 Google Sheets 自动化服务页",
+          "path": "https://zinnhub.com/zinns/your-google-sheets-expert-and-automation-specialist-from-london/"
+        },
+        {
+          "label": "Fiverr 服务示例（Apps Script 自动化，$15/$45/$120 档）",
+          "path": "https://it.fiverr.com/leosanchez653/automate-google-sheets-with-apps-script-dashboards-and-workflows"
+        },
+        {
+          "label": "Upwork 服务示例（Apps Script 自动化，$25/$70/$150 档）",
+          "path": "https://www.upwork.com/services/product/development-it-i-will-automate-your-google-sheets-using-google-apps-script-1990937043227691043"
+        },
+        {
+          "label": "Webcrew Consultancy Google Sheets 专家服务页",
+          "path": "https://www.webcrewconsultancy.com/google-sheets-expert"
+        }
+      ],
+      "sourceFile": "runs-workbuddy/2026-11-01/niche-opc-industry.json"
+    },
     {
       "date": "2026-10-31",
       "taskId": "niche-opc-industry",
