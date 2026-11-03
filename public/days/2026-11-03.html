@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-03 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-03</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-03.html">2026-11-03</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型开源项目、小型 SaaS 与 API 团队的 Docusaurus 文档站迁移、版本治理与发布前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权、最小权限、固定范围和证据化验收做 OPC/数字游民试单，但不承诺上线、搜索流量、合规认证或持续运维结果。</p>
+      <div class="details"># 行业：Docusaurus 文档站迁移、版本治理与发布前 QA
+
+## 市场与小众性
+
+这是中国境内可做的海外英语市场：把客户已有的 Markdown/MDX、侧边栏、图片、版本说明和部署配置，迁移或整理为 Docusaurus 文档站，并在发布前检查构建、死链、版本路由、搜索、域名和预览环境。它小众在于客户通常不是购买泛开发外包，而是在产品发布、开源重构、API 文档改版时购买“文档信息架构 + 静态站工程 + 可复查 QA”的组合。Docusaurus 官方支持版本化、i18n 与静态部署；其官方文档也明确说明版本会复制文档与侧边栏，并增加维护复杂度，因此有真实的迁移与治理工作量。
+
+## 谁会买、什么时候买
+
+典型客户是开源维护者、5—50 人 SaaS、API-first 工具、开发者教育产品和小型软件工作室。触发场景包括：从 GitBook/旧 Docusaurus/手工 Markdown 迁出；准备大版本发布；文档链接大量失效；需要把“current / latest / archived”版本路线讲清；或把 GitHub Actions 构建与预览变成可验收的发布流程。客户购买的是迁移映射表、可审查的 PR、构建/链接检查结果、预览链接与交接说明，而不是“保证 SEO 或文档增长”。
+
+## 参与方与工作流
+
+1. 客户指定内容负责人和代码仓库管理员，书面确认资料权属、授权范围、目标版本、托管方式和验收标准。
+2. 服务商只读盘点 Markdown/MDX、图片、导航、断链、版本文件、插件、部署与自定义组件，输出范围清单和风险项；复杂 React 组件、身份认证、搜索迁移、生产 DNS 另行报价。
+3. 在分支或测试仓库完成内容映射、sidebar/导航、版本策略、重定向表、构建脚本与链接 QA；由客户在自有账户生成或执行生产令牌、域名和发布操作。
+4. 以预览站、构建日志、抽样路由、链接清单和已知限制验收；交付 PR、变更日志、回滚说明及短期缺陷修复窗口。
+
+## 盈利模式与谨慎报价
+
+可按一次性固定范围收费：仅做“20—50 页内容盘点、信息架构/侧栏、迁移 PR、build 与抽样链接报告”的小试单，可从 USD 300—800（按 2026-11-03 中国银行美元折算价 1 USD≈CNY 6.715，约人民币 2,015—5,372 元）验证；含版本策略、自动化预览和较多 MDX 修复的项目，需要按页面数、插件和自定义程度重新报价。也可提供每月 USD 150—500（约人民币 1,007—3,358 元）的有限维护包，例如一次发布窗口、链接报告和约定小时数。以上是用于验证范围和成本的建议报价，不是公开市场均价、收入承诺或可复制月收入。Mintlify 的公开定价页也把 migration services 列为服务项，但未展示通用价目，说明迁移的合理定价通常依赖范围评估。
+
+成本包括英文沟通、审计/返工时间、测试域名与 CI 分钟、截图/录屏、可能的搜索或托管订阅、收款汇兑/平台费用以及中国税费。先把“页数、版本数、语言数、需否生产权限、修复轮次、支持期”写入 SOW，避免固定价被需求膨胀吞没。
+
+## 入门门槛
+
+技能：英文技术阅读与写作、Git/GitHub、Markdown/MDX、Node.js 构建、基础 HTML/CSS、链接/重定向与静态托管；进阶才涉及 React、i18n、搜索与 CI。设备：可靠电脑、MFA、密码管理器、隔离浏览器配置和稳定网络即可。时间：先用公开开源仓库完成一份迁移演示和 QA 模板，通常需 1—2 周学习与作品准备。资质上没有把此类技术服务设为牌照行业，但不能以“合规认证、法律意见、安全审计”名义销售。
+
+## 中国境内承接海外市场的执行边界
+
+获客可用 GitHub 开源贡献、技术社群、英文作品集和自由职业平台；交付尽量异步，用 Issue、PR、预览 URL 和验收清单沟通。合同/SOW 应写明客户拥有资料权属，并确认其允许服务商从中国境内按约访问和处理；服务商仅获最小权限，验收后删除本地副本、令牌和预览数据。不要把私有仓库、日志、密钥或含个人信息的内容投入未获客户书面批准的第三方 AI/分析工具。
+
+收款、合同、发票与税务：使用可核验的服务合同、工作说明、交付/验收记录、收款记录及按经营主体情况开具/申报；跨境服务是否适用增值税免税要看服务性质、境外消费等实际条件。国家税务总局明确：符合规定的跨境应税服务可免征增值税但仍须按规定申报，且通常要办免税备案；不能因面对境外客户就自行认定免税。建议以主管税务机关口径和专业人士意见为准。
+
+数据与隐私：客户私有仓库、Issue、访问日志、API 示例及预览环境可能有个人信息、商业秘密或凭据。中国《个人信息保护法》要求最小必要；向境外提供个人信息时还规定相应条件、告知和单独同意等要求。反向情形（海外客户数据让中国境内服务商远程访问）也可能受客户所在地法律、合同、行业规则约束；“使用 GitHub”不等于已完成跨境合规。只接可脱敏、可最小化且有书面授权的项目。语言与时区方面，需能阅读英文技术资料，并为欧美客户预留少量重叠时段；不要承诺 7×24 紧急发布支持。
+
+## OPC 与数字游民适配度
+
+适合 OPC：审计—迁移—版本策略—构建/链接 QA 可以拆为固定范围、模板化交付，小团队固定资产轻。并非完全适合：多版本文档、复杂自定义 React/MDX、搜索/托管迁移和紧急发布会明显扩大维护责任，应采用变更单和明确支持期限。
+
+适合数字游民：以 Git、Issue、预览和异步验收为主，地点依赖低；前提是可靠网络、设备安全、MFA 与时区管理。涉及生产凭据、敏感数据、受监管行业或现场应急值守的单子不适合。
+
+## 收益前提、风险与不适合人群
+
+潜在收益取决于英文能力、工程质量、复购与获客成本；试单收入不能等同于稳定月收入。主要风险是范围蔓延、版本/URL 误配导致断链、私有代码或日志泄露、客户无权提供内容、海外工具访问稳定性、收款汇兑及税务判断错误。GitHub Pages 自定义域名需要验证以降低域名接管风险，Docusaurus 部署还涉及基础路径与构建产物，均应先在预览环境核验。
+
+不适合：只会翻译但不能自行构建/排错的人；需要快速高收益承诺的人；无法签署保密/数据处理条款的人；必须处理真实生产 PII、密钥、医疗金融等高敏数据而客户又不能提供最小权限或测试环境的人。
+
+## 新手 3 个低成本验证步骤
+
+1. 选一个公开开源项目，做一份不提交生产的 Docusaurus 迁移/版本治理演示：内容映射表、sidebar、3 个页面、构建截图和断链报告。
+2. 把服务拆成明确试单：例如“≤30 页盘点 + 一份只读风险清单 + 一次预览构建”，列明不含 React 定制、搜索、DNS、生产发布与持续支持。
+3. 用英文一页作品集向维护者或小 SaaS 发出 10 个定向联系；只在客户提供书面授权、测试分支和最小权限后再接单，并以 PR、预览与验收清单收尾。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过，但须明确边界。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险：中；跨境执行风险：中。收益口径被认为克制，前提是把报价写成范围验证而非收入承诺，并完整呈现返工、时区、软件、收款和税费成本。核心来源可信度高（Docusaurus/GitHub 官方文档；中国数据和税务以网信办、国家税务总局为准）。最重要提醒：合同必须确认客户对资料及跨境处理/访问有合法授权，服务商最小权限处理，验收后删除本地副本、令牌和预览数据，并禁将私有代码或含个人信息日志输入未获书面批准的第三方 AI/分析工具。
+
+## 核验来源
+
+- Docusaurus 官方：版本机制、维护复杂度与版本命令。
+- Docusaurus 官方：升级与部署指引。
+- GitHub Docs：GitHub Pages 自定义域名及验证建议。
+- 中央网信办：中华人民共和国个人信息保护法（尤其最小必要、第三章个人信息跨境提供）。
+- 国家税务总局：跨境应税行为增值税免税范围、申报和备案问答。
+- 中国银行：2026-11-03 美元折算价，仅用于本报告示例换算。</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>03/11/2026, 15:55</p><p class="meta-line"><span>Finished</span>03/11/2026, 16:02</p><p class="meta-line"><span>Duration</span>7m 34s</p><p class="meta-line"><span>File</span><code>runs/2026-11-03/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>documentation</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用公开开源项目制作一份 Docusaurus 迁移与 QA 演示，不接触私有数据。</li><li>发布一个固定范围的只读盘点试单，排除生产发布、DNS 和持续运维。</li><li>以书面授权、最小权限、预览验收和数据删除条款完成首个小项目。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docusaurus.io/docs/versioning">Docusaurus versioning 官方文档</a></li><li><a href="https://docusaurus.io/docs/deployment">Docusaurus deployment 官方文档</a></li><li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">GitHub Pages 自定义域名官方文档</a></li><li><a href="https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm">中央网信办：个人信息保护法</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html">国家税务总局：跨境应税服务免征增值税</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239192/content.html">国家税务总局：跨境服务免税申报</a></li><li><a href="https://www.boc.cn/sourcedb/whpj/">中国银行外汇牌价</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 03/11/2026, 16:04</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
