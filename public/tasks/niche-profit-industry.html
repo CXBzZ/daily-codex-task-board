@@ -17,9 +17,93 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">97 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">98 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-05.html">2026-11-05</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型 SaaS 的 Stripe Billing 订阅生命周期测试与上线前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权的 sandbox、固定测试场景和证据化交付做 OPC/数字游民试单，但不代管生产密钥、不处理真实支付卡数据，也不承诺零漏单或营收结果。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+这不是开发 Stripe 支付功能，也不是代运营收款，而是独立检查一个小型 SaaS 的订阅制产品在付款前后是否按预期工作：注册、免费试用、首笔付款、续费、付款失败、升级/降级、取消、客户门户、自助恢复、webhook 事件和应用内权益是否一致。交付物是测试场景矩阵、sandbox 截图/事件证据、缺陷清单、复测记录和上线交接清单。
+
+它小众，因为客户表面上会说“Stripe 已接好”，但真正需要人工验证的是计费状态、发票、重试和应用权限的组合。Stripe 官方明确要求在处理真实付款前测试续费、试用、付款失败和 webhook；也提供测试时钟模拟年付续费等时间型场景。这是可采购的 QA/实施辅助工作，不是靠支付套利。
+
+## 目标市场、客户与工作流
+
+目标是中国境内可承接的海外英语市场：有订阅、试用或分级权益的独立开发者、2—20 人 SaaS、软件工作室及其开发代理商。它适合 OPC：电脑、英文书面沟通、浏览器、表格、录屏和客户提供的 sandbox 即可启动；可先售卖只读检查或 1 个产品/1 条订阅流的固定范围小包。
+
+典型触发场景是：用户已付款却未开通，取消后仍有权益，试用到期提醒/扣款不一致，升降级的账单或权限错位，失败付款没有通知，或 webhook 重试造成重复处理。标准流程为：1）书面约定范围、测试环境、数据处理和验收；2）客户建立专用 sandbox/最小权限成员，不交付 live secret；3）共同确认产品、价格、权益和预期状态；4）执行注册、试用、支付、续费、失败、变更、取消和门户场景；5）对照 Stripe Dashboard、应用内状态和 webhook 日志记录证据；6）交付缺陷与复测报告、上线前检查单，并撤销访问。生产改动、真实退款和真实客户通知由客户批准或自行执行。
+
+## 盈利模式、报价与成本
+
+收入来自按范围固定报价或按小时的测试/QA 服务费：单一订阅流健康检查；带试用、客户门户和 webhook 的场景矩阵；上线前复测；或给开发代理商做白标回归 QA。Upwork 上公开可核验的相邻服务样本为：Stripe subscription/webhook/billing 搭建 Starter/Standard/Advanced $150/$450/$900，另一个支付与订阅集成样本为 $50/$200/$450；其中“billing tests”附加项为 $150。这是他人公开标价，不是成交价，更不是新手可复制收入。
+
+以 1 USD≈7.0 CNY 的保守粗略换算，仅作金额理解：一次很窄的 sandbox QA 小包可参照 $50—$150（约 350—1,050 元）观察；包含多种生命周期和复测的项目可参照 $150—$450（约 1,050—3,150 元）观察。前提是客户已提供清晰的应用、测试账号和价格规则，且范围、返工轮次已锁定。净收入须扣除平台 0%—15% 服务费、收款/换汇、税费、工具、售前、时区沟通和返工；不要据此推算稳定月入。
+
+## 入门门槛
+
+技能：英文需求澄清，HTTP/webhook、JSON、订阅状态与基本 SaaS 权益模型，能读 Stripe 官方文档，能写可复现的测试步骤和缺陷报告。设备/软件：电脑、稳定网络、浏览器、密码管理器、2FA、表格/文档、录屏工具和测试邮箱；无需线下设备或当地牌照。时间成本：熟悉官方文档并完成 2—3 个自建 sandbox 演练通常需数天到数周；复杂税费、Connect、多币种、用量计费或迁移项目不适合新手独立承诺。
+
+资质与边界：通常不需要当地职业牌照，但不可自称 Stripe 官方、支付机构、PCI 审计方、税务师或律师。服务商不得索要或保存真实银行卡号、CVC、客户的 live secret、生产数据库导出或大批用户资料；应以 sandbox、测试卡、脱敏日志和最小权限为默认。
+
+## 中国境内承接海外市场的执行与合规
+
+获客与远程交付：可通过 Upwork、英文独立站、开发代理商白标和开源/独立开发者社区获客；遵守平台站内沟通、托管付款及禁止绕行规则。直客 SOW 应明确测试范围、客户负责提供的 sandbox/权限、测试数据、交付物、缺陷严重级别、返工次数、保密、数据删除、知识产权、付款币种和不提供支付/税法意见。时区和英文是实质门槛；可用异步报告处理大部分沟通，但上线窗口可能要求中国晚间配合。
+
+收款与税务：使用平台、银行或其他合规支付路径，保存合同、订单/账单、交付记录、收款流水和换汇凭证。中国境内个人、个体工商户或一人公司应按实际主体、所得性质和主管税务机关要求申报；国家税务总局说明，居民个人取得境外所得通常应在次年 3 月 1 日至 6 月 30 日申报。外汇结算应按真实服务贸易资料办理，不能用虚假贸易、地下钱庄、代收代付或拆分规避审核。
+
+数据与隐私：Stripe sandbox 可避免真实交易，但不天然等于无数据风险；日志、邮箱、客户 ID、IP、账单地址或截图仍可能含个人信息。只用虚构/脱敏数据，不将日志或客户材料上传到未经客户批准的 AI 工具或公开作品集。若项目涉及来自中国境内的个人信息向境外客户或工具提供，须评估《个人信息保护法》及数据出境规则；网信办的规则对不同数据类型、数量和场景设置不同要求，不能把远程协作当然视为豁免。
+
+平台与安全：Stripe 表明 sandbox 可模拟交易且不处理真实资金，并建议对新集成使用独立 general sandbox；其 test-mode 部分设置可能与 live mode 共享，故服务商不能擅改 Dashboard 设置。webhook endpoint 应为可访问 HTTPS 地址，签名密钥应由客户自行保管。
+
+## 为什么适合或不完全适合 OPC/数字游民
+
+OPC 适配度高：场景可模板化，交付物可验收，固定资产轻，能够从一个产品、一个月度套餐和一次复测切入。限制是：复杂账务、争议款、税费引擎、Connect、生产事故和客户支持值守会迅速超出一人团队。
+
+数字游民适配度中高：大多数工作可在安全电脑上异步完成；但稳定网络、设备加密、私密空间、欧美会议时间和上线窗口仍是刚性条件。公共 Wi‑Fi、共用电脑、无法稳定参与复测或希望随时离线旅行的人不适合。
+
+## 风险、合规注意事项与不适合人群
+
+主要风险包括：错误测试结论导致上线后权益错配；误触共享到 live 的设置；webhook 验签或幂等性问题超出 QA 能力；日志泄露个人信息；客户把 QA 误解为支付合规/税务合规保证；平台政策变化和跨境收款/申报留痕不足。控制手段是 sandbox 优先、客户审批、最小权限、只读或临时权限、测试数据、变更回滚、明确不保证条款和项目结束即撤权。
+
+不适合：只会点后台但不能理解状态机/事件流的人；英文沟通和文档能力弱的人；想获取或代管 live key、银行卡资料或生产客户数据的人；希望承诺“零漏单、零重复扣款、审核包过、收入提升”的人；以及将支付、税务、反洗钱或法律意见混入服务的人。
+
+## 新手低成本验证步骤
+
+1. 用自己的 Stripe sandbox 按官方 Billing testing 文档做一张不少于 12 项的矩阵：注册、试用、首付、续费、失败付款、升级、降级、取消、门户操作、webhook、应用权益、回归复测；只使用测试数据。
+2. 做两个匿名作品样本：一份测试用例/预期结果表和一份缺陷报告/复测记录，突出“不接触 live key、不含真实 PII、非支付合规认证”。
+3. 发布一个范围很窄的试单：1 个订阅产品、sandbox、最多 12 个场景、1 次复测；要求客户签署授权和数据处理边界，客户保留生产操作和所有密钥。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 已审稿，结论为建议通过：行业可在中国境内以授权 sandbox QA 方式承接，前提是严守生产权限、支付数据和跨境数据边界。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险中；跨境执行风险中。审稿认为收益口径克制：公开报价仅作样本，并已列明成本与不确定性；Stripe、税务、网信和平台规则来源可信，价格来源只能证明市场存在。最应补充/提醒的一句：任何测试环境操作都应由客户建立独立 sandbox 和最小权限账号，服务商不得持有 live secret、真实卡数据或可导出的生产客户数据。
+
+## 关键核验来源
+
+- Stripe《How subscriptions work》：https://docs.stripe.com/billing/subscriptions/overview
+- Stripe《Test your Billing integration》：https://docs.stripe.com/billing/testing
+- Stripe《Testing use cases / Sandboxes》：https://docs.stripe.com/testing-use-cases
+- Stripe《Receive Stripe events in your webhook endpoint》：https://docs.stripe.com/webhooks
+- Upwork 公开服务样本（Stripe subscriptions/webhooks/billing）：https://www.upwork.com/services/product/development-it-stripe-subscriptions-webhooks-and-billing-set-up-for-your-saas-app-2113438790943624401
+- Upwork 公开服务样本（Stripe payments/subscriptions）：https://www.upwork.com/services/product/development-it-stripe-payments-and-subscriptions-set-up-in-your-web-app-2113386567589662340
+- Upwork《Freelancer Service Fee》：https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee
+- 国家税务总局境外所得申报说明：https://www.chinatax.gov.cn/chinatax/n810341/n810760/c3964127/content.html
+- 国家外汇管理局上海市分局外汇政策问答：https://www.safe.gov.cn/shanghai/2026/0402/2412.html
+- 中央网信办《促进和规范数据跨境流动规定》说明：https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm
+- 全国人大网《个人信息保护法》：https://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>05/11/2026, 15:57</p><p class="meta-line"><span>Finished</span>05/11/2026, 16:08</p><p class="meta-line"><span>Duration</span>11m</p><p class="meta-line"><span>File</span><code>runs/2026-11-05/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>saas</span><span>stripe</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>在自有 Stripe sandbox 制作含续费、失败付款、升级、取消和 webhook 的测试矩阵。</li><li>制作脱敏的测试用例与缺陷复测样本，不使用 live key 或真实个人信息。</li><li>以一个订阅产品、12 个场景和一次复测的固定范围试单验证需求。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.stripe.com/billing/testing">Stripe Billing 官方测试文档</a></li><li><a href="https://docs.stripe.com/billing/subscriptions/overview">Stripe 官方订阅生命周期文档</a></li><li><a href="https://docs.stripe.com/webhooks">Stripe 官方 webhook 文档</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/n810341/n810760/c3964127/content.html">国家税务总局境外所得申报说明</a></li><li><a href="https://www.cac.gov.cn/2024-03/22/c_1712776612187994.htm">网信办数据跨境流动规定说明</a></li></ul></div>
+    </article><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
@@ -13431,7 +13515,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
     </article></div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 05/11/2026, 09:19</span>
+      <span>Generated 05/11/2026, 16:00</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
