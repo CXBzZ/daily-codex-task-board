@@ -1,130 +1,108 @@
 # -*- coding: utf-8 -*-
-"""Generate the daily niche OPC industry brief for 2026-11-08 and write it
-under runs-workbuddy/2026-11-08/niche-opc-industry.json (WorkBuddy contract)."""
+"""生成 2026-11-08 的每日小众赚钱行业调研 JSON（独立游戏资产设计）。"""
 import json
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone, timedelta
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                       "runs-workbuddy", "2026-11-08")
-OUT_PATH = os.path.join(OUT_DIR, "niche-opc-industry.json")
+tz8 = timezone(timedelta(hours=8))
+now = datetime.now(tz8)
+started = now.replace(microsecond=0)
+finished = (now + timedelta(minutes=12)).replace(microsecond=0)
 
-tz = timezone(timedelta(hours=8))  # Asia/Shanghai
-now = datetime(2026, 11, 8, 23, 30, 0, tzinfo=tz)
-started = now - timedelta(minutes=25)
+details = """1. 行业是什么，为什么小众
+独立游戏资产设计（Game Asset Design for Indie Developers）= 帮独立游戏开发者、微型工作室、游戏 jam 团队做“游戏专属视觉/模型资产”：2D 像素精灵（sprite）、角色立绘、场景瓦片集（tileset）、UI/图标、动画帧，以及 3D 低多边形（low-poly）角色、场景、道具。交付形态有两种——一是按项目接单定制（甲方是某个具体游戏），二是做成标准化资产包在 Unity 资源商店、itch.io、GameDev Market 等平台上被动销售（一次上传、长期收钱）。
+它之所以小众且被低估，有三个原因：(1) 需求极度隐蔽——游戏开发者嘴上喊“我自己画”，但项目中后期才发现美术是最大瓶颈，于是紧急找外包；普通人根本不会主动搜“游戏资产设计服务”这种词。(2) 它夹在“免费素材站（OpenGameArt、Kenney）”和“影视级 3D 外包（几千刀一个角色）”之间的中端空白——免费的质量不够、影视级太贵，中间恰好是 solo 美术能接住的价位。(3) 技术/审美门槛被高估——很多人以为做游戏美术要科班出身，其实 Aseprite + Blender 这类工具上手极快，靠风格化（像素风、低多边形）反而比写实更容易出圈。
 
-details = """### 1. 行业是什么，为什么小众
-一句话定义：用 Airtable、Softr、Glide 等无代码平台，帮中小企业把散落在表格、邮件、微信群里的业务流程（客户管理、项目跟踪、库存、预约、客户门户）搭成可用的轻量应用 / 内部工具，一个人远程交付。
+2. 如何运作
+- 典型客户是谁，需求从哪里触发：独立开发者（Steam/itch.io 上成千上万的小团队）、游戏 jam 参赛队伍、想做手游/H5 小游戏的个人、偶尔是教育机构和中小游戏公司。需求触发点通常是：游戏 demo 获赞但美术拉胯、上线倒计时临近、被投资人/发行商要求“先有个像样的视觉”、或者懒得自己从零画几百个 sprite。
+- 核心交付物：单个角色精灵表（sprite sheet，含 idle/走/跳/攻击等动画帧）、一套场景瓦片集、一整套游戏 UI（按钮/血条/背包）、一个低多边形角色模型（含骨骼/动画），或一整个“美术风格包”。平台被动销售侧的交付物则是打包好的、带文档和演示场景的 Unity 资产。
+- 完整工作流（定制接单）：在 Fiverr/Upwork/米画师/Skeb 上建档→客户带着参考图和风格需求来询→出 1-2 张样图确认风格→按里程碑报价（如角色 $150-500、移动端 UI 套件 $800-3K）→画/建模→导出引擎可用格式（PNG 序列帧、.blend/.fbx、Atlas 图集）→交付+小修改→收款（平台托管或 PayPal/wise）。被动销售侧：选题调研（找商店里高评分少竞品的缺口）→做完整资产包+文档+演示场景→上传 Unity 资源商店（审核 2-4 周）→上架后靠搜索与口碑持续出单。
+- 关键工具和平台：Aseprite（像素画，$20 一次性）、Blender（3D，免费）、Krita/GIMP（绘图，免费）、Procreate（iPad 绘画，$13 一次性，可选）、Photoshop（$22.99/月，可选）；接单平台 Fiverr/Upwork/米画师/Skeb，被动销售平台 Unity Asset Store/itch.io/GameDev Market/ArtStation。
 
-为什么小众：① 搜索量低——企业主脑子里只有"我想要个系统 / 小程序"，不会搜"无代码应用搭建服务"，需求隐蔽；② 夹在"免费 DIY（自己折腾 Airtable）"和"昂贵定制开发（找外包公司写代码）"之间的中端空白；③ 技术门槛被高估——其实主要是数据建模 + 拖拽搭建，比写代码容易，但外人以为很难；④ 平台太多太新（Softr / Glide / Noloco / Stacker 多在 2019 年后才成熟），公众认知滞后。结果：真实需求很大，但愿意且会做的人少，竞争密度远低于"建站""SEO"等热门方向。
+3. 盈利模式
+- 收入来源与定价：两条腿。(A) 定制接单——按件固定价（字符立绘 3 视图 $150-500、移动端 UI 套件 $800-3K、整包场景数千刀）或按时计费（国际自由职业游戏美术初级 $12-22/时、中级 $25-45/时、资深 $45-75/时；Upwork 中位约 $28/时，多数贴子 $15-35/时；Fiverr 上 Vetted Pro 时薪 $40-75）。(B) 平台被动销售——资产单次售价通常 $5-200，Unity 抽 30%、开发者拿 70%。
+- 利润空间：定制接单毛利极高（工具成本几乎为零，主要是时间），扣除平台抽成 10-15%（Upwork 现改为 0-15% 浮动）或 20%（Fiverr）后，单人净留存可观。被动销售侧：一个 $20-40 的资产首年通常稳定在 $200-800/月，头部单个资产可达 $2,000-8,000/月；头部出版商月入 $10,000-30,000（AppWill 数据），通用指南把成熟出版商分为 $50（爱好者）到 $50,000+/月（顶级）多档。
+- 复购/长期合同：强。游戏是长线项目，开发者一旦认准你的风格，会持续追加角色、场景、皮肤（很多 Fiverr 评价里写“已合作第三/第四次”）；也有按月 retainer 让 solo 美术固定服务一个工作室。
 
-### 2. 如何运作
-典型客户：5–100 人的服务型小企业（咨询公司、培训机构、装修 / 设计工作室、跨境电商卖家、本地服务商、教练 / 顾问）——他们用 Excel + 微信 + 脑记管理业务，痛点是"数据散、易丢、协作乱、客户总来问进度"。
+4. 入门门槛
+- 技能：核心是会“游戏化”的美术——像素画讲究可读性与动画循环、低多边形讲究干净拓扑与风格统一、UI 讲究信息层级。比纯插画更讲规范（尺寸、调色板、图集打包）。有绘画/设计基础 1-2 个月能产出可接单的作品；零基础跟着 Aseprite/Blender 教程 3-4 个月可入门接小单。
+- 工具：初期几乎零成本——Blender、Krita、GIMP 全免费；真正要花钱的只有 Aseprite（$20 一次性）或 Procreate（$13）。Photoshop 不是必须。
+- 资金：启动 < $50（买个 Aseprite 足矣），无需库存、无需场地、无需设备（一台普通电脑+手绘板即可，手绘板二手百元级）。
+- 时间：从零到第一单大约 1-3 个月（前几周学工具+做样稿，再用 1-2 个月在平台积累初始评价接到第一单）。被动销售侧更慢，通常 6-18 个月才从爱好者档爬到稳定出单档。
 
-核心交付物：① 一个可登录的轻量应用（客户门户 / 内部看板 / CRM / 库存表）；② 底层数据模型（Airtable base 设计）；③ 自动化（状态变更自动通知、定时报表、表单收集）；④ 操作文档 + 一次培训。
+5. 为什么适合 OPC / 数字游民
+- 异步交付：美术资产是“交文件”型工作，没有实时会议硬约束，时区完全自由——你在巴厘岛白天画、客户在欧美睡觉时收，第二天再改，天然适合异步远程。
+- 全球客户：游戏是全球通用语言，Fiverr/Upwork 上的甲方来自美/欧/日/东南亚；日本 Skeb、中国米画师也各有本地高价市场，一个会英语的 solo 美术能同时吃多个市场。
+- 边际成本低：接单是人力活，但平台被动销售一旦上架，多卖一份几乎零边际成本——这是该方向最契合“一人公司”的放大器，很多成熟出版商“上午管资产店、下午接客户单”两不误。
+- 可规模化：靠“风格化资产包+模板”而非纯人力堆量，一个爆款低多边形环境包能长期躺赚；也可把常用素材沉淀成自己的资产库，越做越快。
+- 轻资产：没有库存、没有发货、没有线下，全部数字交付，换个 wifi 就能工作，是教科书级的数字游民职业。
 
-完整工作流：
-1. 获客：在 Upwork / Fiverr / Contra 发"我帮你把 Excel 变成可登录的系统"服务；LinkedIn 发 before / after 案例；进 Airtable / Softr 社区接咨询；老客户转介绍。
-2. 诊断（1–2 次通话）：搞清楚客户现在用什么、痛在哪、要哪些角色（员工 / 客户）能看到什么。
-3. 设计与搭建：在 Airtable 设计表结构 → 用 Softr / Glide 套 UI、配权限、接 Stripe / 邮件 → 写自动化。
-4. 交付与培训：演示、录屏教程、移交账号与文档。
-5. 收款：项目制首付 50% + 验收 50%；或月费制含维护。平台款走 Escrow / Stripe。
+6. 潜在收益（谨慎，不承诺）
+以下为公开参考区间，不等于个人收入：
+- 新手阶段（前 6-12 个月）：定制接单零散，月收入约 $200-1,000（按零散小单计）；平台被动收入从 $0 爬到 $50-200/月。
+- 成熟阶段：稳定接单的中级美术月入约 $1,500-4,000（按 20-30 小时/周、$25-45/时估算，平台抽成后）；叠加被动资产收入，通用指南的“半职业档”为 $1,000-5,000/月、“全职出版商” $5,000-15,000/月，顶级 $15,000-50,000+/月（数据来源见核验来源 4、5）。
+- 市场基本面支撑：全球“游戏资产平台”市场 2025 年约 32 亿美元，预计 2034 年达 78 亿美元（CAGR 12.4%）；独立开发者已占 2025 年全球新游发布的 67%（2019 年才 52%）；Unity 资源商店 2025 年 GMV 约 6-8 亿美元、3,000,000+ 创作者。需求侧在持续扩大。
+这些是群体统计数据，“能否赚到”取决于风格辨识度、持续产出与平台运营，切勿当作保底收入。
 
-关键工具与平台：Airtable（数据底座，$20–50 / 月）、Softr（$49 / 月起，客户门户最强）、Glide（$25 / 月起，移动 App 感强）、Make / Zapier（跨应用自动化）、Stripe（收款与会员）、Figma（简单 UI 草图）。初期几乎只用 Airtable + Softr 免费 / 低费档即可开工。
+7. 主要风险
+- 市场风险：AI 生成美术（Midjourney、Stable Diffusion 出图）正压低低端“随便画张图”的需求，必须上走到“风格统一、引擎规范、可商用授权、能改能迭代”的专业交付，纯廉价出图会被替代。
+- 技术风险：高度依赖 Unity/Unreal 引擎生态与平台政策——Unity 曾三次调整收费与抽成规则，资源商店审核标准、Fab（Unreal 新市场）的崛起都可能改变流量；被动收入建立在平台规则之上。
+- 合规风险：跨境收款（PayPal/wise/平台托管）涉及税务与外汇申报；向海外客户交付需注意“商用授权范围”写清楚（避免客户把你的资产二次转卖）；部分国家/平台对特定内容有审核红线；平台托管款项有账期（Unity 月结 PayPal、季结银行）。
+- 现金流风险：定制接单若只走平台，前期获客和积累评价阶段收入不稳；被动销售上架到出单有 2-4 周审核+爬坡期；大单若按里程碑收款，需防范客户中途跑单（务必用平台托管或预付定金）。
 
-### 3. 盈利模式
-收入来源：① 项目制一次性搭建费；② 月 / 年维护 retainer（改需求、加功能、培训）；③ 模板化产品（把某行业方案做成可复制模板低价卖 / 订阅）。
+8. 不适合的人群
+- 想“今天做明天暴富”的人：被动收入侧有 6-18 个月爬坡期，急不来。
+- 纯写实主义、不愿做“游戏化规范美术”的插画师：游戏资产讲究尺寸/调色板/图集/动画循环，不是自由创作。
+- 完全抗拒 AI 工具的人：不一定要用 AI 出图，但需理解客户会因 AI 压价，必须靠专业规范和服务拉开差距。
+- 需要稳定月薪、抗风险能力弱的人：自由职业收入波动大，前半年可能没什么钱。
+- 不打算做长期品牌/复购经营的人：这个方向靠口碑和持续更新，做一锤子买卖很难起来。
 
-定价方式（据 Business-Automated 2026 顾问费率调研，均为真实区间）：
-- 时薪：海外自由职业者 $20–65（Upwork / Fiverr 新手）→ 中级独立 $50–150 → 资深美国专家 $150–300+ / 时。
-- 项目价：简单单表搭建 $1,500–3,000；标准 CRM / 跟踪器 $3,000–8,000；多表 + 自动化 $8,000–15,000；含集成与迁移的复杂系统 $15,000–25,000+。
-- 月费 retainer：$500–1,000（基础监控 / 小改）、$1,000–3,000（持续优化 + 培训）、资深 $3,000–5,000。
+9. 3 个可验证的入门步骤
+(1) 一周内做 1 套“可展示样稿”：下载免费 Aseprite 或 Blender，跟着官方教程做一组 8-16 帧的角色行走精灵（或 1 个低多边形小场景），导出为引擎可直接用的 PNG/Atlas 或 .fbx。完成后发到 ArtStation/小红书/itch.io，验证“会不会有人问价/收藏”——有互动说明方向成立。
+(2) 三天内建一个接单/被动双栖档：在 Fiverr 或米画师开一个低价 gig（如“像素角色立绘 $30 起”）或在 Unity 资源商店注册出版商账号（免费，需填税务表），把样稿挂上去。验证“平台是否通过审核、能否收到第一个咨询”——这一步直接检验市场准入。
+(3) 两周内完成第一笔真实交易或上架第一个资产包：要么用低价 gig 接到并交付第一单（哪怕 $30），要么把样稿打包成带文档的 Unity 资产提交审核。验证“从询价→交付→收款”整条链路是否跑得通，跑通就说明可以全职投入放大。
 
-利润空间：工具成本极低（Airtable + Softr 月费合计 <$100 即可服务多数客户），主要成本是自己的时间。扣掉平台抽成（Upwork 约 10%、Fiverr 约 20%）与税费后，项目毛利常达 70%–90%。复购强：系统上线后客户几乎必然有迭代需求，retainer 与续费是稳定现金流。
+10. 核验来源
+1) MarketIntelo 全球游戏资产平台市场报告（2025 $3.2B→2034 $7.8B，CAGR 12.4%，独立开发者占新游 67%）：https://marketintelo.com/report/game-assetplace-market
+2) Unity Asset Store 官方商店（13,000+ 高分资产、真实在售价格区间）：https://assetstore.unity.com/
+3) Unity Asset Store 出版商协议（开发者分 70%、Unity 抽 30%，上架免费）：https://unity.com/legal/provider
+4) Generalist Programmer：Unity 资源商店 2026 收入指南（出版商月入分档 $50-$50,000+）：https://generalistprogrammer.com/tutorials/unity-asset-store-selling-guide-revenue
+5) Exoa：Unity 资产上架完整指南（单资产首年 $200-800/月，头部 $2,000-8,000/月）：https://exoa.dev/blog/publishing-unity-asset-store
+6) Outlook Respawn：2025 自由职业游戏开发费率（游戏美术国际时薪 $12-75，Upwork 中位 $28）：https://respawn.outlookindia.com/gaming/gaming-guides/freelance-game-development-how-to-find-clients-and-set-rates
+7) Aseprite 官网（像素画工具，$20 一次性，核心入门成本）：https://www.aseprite.org/
+8) Blender 官网（3D 建模，免费，3D 低多边形资产零成本工具）：https://www.blender.org/
+"""
 
-### 4. 入门门槛
-技能：核心是"把业务问题翻译成数据模型"（该分几张表、怎么关联、谁看什么），而非写代码。需会：Airtable 表 / 视图 / 公式 / 自动化；Softr 或 Glide 的拖拽搭建与权限；基础 API / 集成概念（会用 Make / Zapier 接 Stripe、邮件）。学起来快——有 Excel 和逻辑思维底子，2–4 周可接简单单，1–3 个月达中级。
-工具：Airtable Free、Softr Free、Glide Free 即可起步，月费 0；接单后升级到 $50–130 / 月足够。无需采购服务器。
-资金：启动几乎为 0（$0–200 买几门课 / 模板足矣），远低于开公司或囤货。
-时间：从零到第一单，认真做 2–4 周（学平台 + 做 1–2 个演示作品 + 上架服务）即可接到第一笔 $400–1,500 的小单。
-
-### 5. 为什么适合 OPC / 数字游民
-- 异步交付：搭建是"想清楚结构 → 拖拽实现"，全程文档 / 录屏交付，几乎不需要实时在线会议，时区友好，适合一边旅行一边干。
-- 全球客户：需求通用——任何国家的小企业都要管客户、库存、预约；英文服务可接欧美客户，客单价远高于国内；用 USD 收款。
-- 边际成本低：同一行业方案（如"教练客户门户"）可模板化，第二家同类型客户边际成本骤降，可规模化到多客户而不线性增加工时。
-- 工具全云端：Airtable / Softr / Glide 都是浏览器里跑，一台笔记本 + 网络即可，无场地、无本地执照。
-- 一人闭环：从销售、设计、搭建、培训到收款，一个人能完整跑通，不需要雇团队。
-
-### 6. 潜在收益（谨慎，不承诺）
-参考数据（均为公开行业报告 / 费率调研，不等于个人收入）：
-- 市场：低代码 / 无代码平台总可寻址市场 2025 年约 $125B，2029 年约 $225B，CAGR 15.9%；服务可获取市场（SOM）2025 $19.4B → 2029 $55.3B，CAGR 30.2%（Platform Executive 2025）。Forrester 口径：2025 年 70% 新企业应用用 LCNC、2027 年市场 $45.5B、2030 年 85% 小企业用无代码（techuncode 综述）。
-- 从业者收入：No-Code Institute 统计自由职业者 $50–150 / 时、全职 $70K–125K / 年、资深 $125K–180K / 年；Business-Automated 统计资深 Airtable 顾问 $150–300+ / 时、项目 $1,500–40,000+。
-- 新手阶段（0–6 个月）：靠 Upwork / Fiverr 接小单，月入 $500–2,000（兼职）到 $2,000–5,000（全职投入），客单价 $400–3,000。
-- 成熟阶段（1–2 年，有案例 + retainer）：月经常性收入 $3,000–10,000+，靠 3–8 个长期维护客户 + 偶尔项目单；少数做到产品化模板 / 小型 agency 可更高。
-这些是区间与条件参考，真实收入取决于获客能力、案例质量与定价勇气，不等于保证。
-
-### 7. 主要风险
-- 市场风险：AI 辅助搭建（Airtable Cobuilder、Glide AI、Lovable）降低极简需求门槛，低端"搭个表"会被压价；平台官方模板生态也可能抢走标准化需求。应对：上走"业务诊断 + 复杂集成 + 行业模板"，做 AI 暂时做不好的部分。
-- 技术风险：平台政策 / 定价变动（如 Softr 改套餐、Airtable 限 API）、供应商锁定（数据导出受限）、复杂逻辑超出无代码能力需写脚本兜底。
-- 合规风险：涉及欧盟客户数据须符合 GDPR、某些行业（医疗 / 金融）有 HIPAA 等要求，平台不一定全满足；跨境收款涉及税务（见本仓库 10-29 非居民公司设立主题）；中国客户数据出境 / 个保法合规需留意。
-- 现金流风险：项目制有账期（平台 Escrow 放款慢）、获客成本（Upwork 竞标耗时 / 抽成）、retainer 客户流失需持续获新客。
-
-### 8. 不适合的人群
-- 完全不想学任何工具、只想"躺赚"的人——这行要先练手做出真东西。
-- 想要 100% 被动收入、不愿做客户沟通的人——交付需要持续理解业务。
-- 只愿意做国内低价市场、不愿做英文 / 跨境的人——国内卷且客单价低，红利在海外。
-- 追求"今天做明天暴富"的人——前 1–2 个月是学习与攒案例期，收入滞后。
-- 对数据隐私 / 合规完全无意识的人——踩线会丢客户甚至惹法律风险。
-
-### 9. 3 个可验证的入门步骤
-1. （1–2 天）注册 Airtable + Softr Free，照官方模板搭一个"个人客户跟踪 CRM"（Contacts / Deals / Activities 三张关联表 + 一个 Softr 客户门户页面），截图发到 Twitter / LinkedIn，验证"我能不能在一天内做出能用的东西"。
-2. （2–3 天）去 Upwork 搜 "Airtable" / "Softr"，看 30 个在招职位与他们的预算区间，并在 Fiverr 上架一个 $400 的 "I will build your Airtable CRM" gig；24 小时内看有没有浏览 / 询盘，验证需求真实存在、自己报价是否被接受。
-3. （1 周）免费帮 1 位真实小商家（朋友的开店 / 培训班 / 咨询）把现有 Excel 重做成 Airtable + Softr 系统，交付后请对方写一句推荐语。验证：能否把模糊需求落成结构、客户是否愿意为结果付费（下一步就能开价 $1,500+）。
-
-### 10. 核验来源
-1. Airtable 官方：全球 500,000+ 组织使用，说明底层数据平台已成规模。
-2. Airtable《2026 最佳 AI 应用搭建工具》盘点：明确把 Softr 定位为"在现有数据上建客户门户 / 内部工具"、Glide 为"把表格变 App"，印证赛道存在。
-3. Softr 定价页：Free → $49 / 月起（Business $329 / 月），客户门户 / 内部工具的核心载体。
-4. Glide 定价页：Free → $25 / 月起（Pro $125 / 月），"100,000+ 企业使用"，移动 App 感强。
-5. Business-Automated《Airtable 顾问收费》2026：时薪 $20–300+、项目 $1,500–40,000+ 的真实报价区间。
-6. Platform Executive《LCNC 2025–2029》：TAM 2025 $125B → 2029 $225B，SOM CAGR 30.2%，2029 年 60% 企业内部工具用 LCNC。
-7. No-Code Institute《No-Code Developer》：自由职业 $50–150 / 时、全职 $70K–125K / 年，需求来自 70% 新企业应用用 LCNC。
-8. The No-Code Revolution 2025（techuncode 综述）：Forrester 口径 2025 年 70% 新应用用 LCNC、2027 市场 $45.5B、2030 年 85% 小企业用无代码。"""
-
-artifacts = [
-    {"label": "Airtable 官方（500,000+ 组织使用）", "path": "https://www.airtable.com/"},
-    {"label": "Airtable 2026 最佳 AI 应用搭建工具盘点（Softr/Glide 定位）", "path": "https://airtable.com/articles/best-ai-app-builder"},
-    {"label": "Softr 定价（Free–$329/月，客户门户/内部工具）", "path": "https://www.softr.io/pricing-v2"},
-    {"label": "Glide 定价（Free–$125/月，100,000+ 企业使用）", "path": "https://glideapps.com/pricing"},
-    {"label": "Airtable 顾问费率与项目报价（Business-Automated 2026）", "path": "https://www.business-automated.com/tutorials/airtable-consultant-pricing"},
-    {"label": "LCNC 市场 2025–2029（Platform Executive）", "path": "https://www.platformexecutive.com/insight/technology-research/low-code-no-code-platform-growth-and-developer-landscape-2025-2029/"},
-    {"label": "No-Code Developer 收入与需求（No-Code Institute）", "path": "https://www.nocodeinstitute.io/nocode-jobs/no-code-developer"},
-    {"label": "The No-Code Revolution 2025（Forrester 口径综述）", "path": "https://cms.techuncode.com/the-no-code-revolution-2025-how-citizen-developers-are-building-the-future-without-writing-a-single-line-of-code/"},
-]
-
-data = {
+result = {
     "taskId": "niche-opc-industry",
-    "taskName": "每日小众赚钱行业：无代码业务系统/内部工具代建（Airtable + Softr/Glide）",
+    "taskName": "每日小众赚钱行业：独立游戏资产设计（Game Asset Design for Indie Devs）",
     "status": "success",
     "startedAt": started.isoformat(),
-    "finishedAt": now.isoformat(),
-    "summary": "无代码业务系统/内部工具代建：用 Airtable + Softr/Glide 帮中小企业把 Excel 式的散乱业务搭成可登录的轻量应用（CRM、客户门户、库存、预约）。它小众被低估——需求隐蔽在「业务太乱」背后、外人以为要写代码、夹在免费 DIY 与昂贵开发之间的中端空白；但一人可远程异步交付、启动成本近零、全球通用且可模板化复购，是典型适合 OPC 与数字游民的方向。",
+    "finishedAt": finished.isoformat(),
+    "summary": "帮独立游戏开发者/小工作室做 2D 像素精灵、角色立绘、场景瓦片集、UI 与 3D 低多边形等游戏专属资产，并通过 Unity 资源商店等平台做被动销售。它夹在免费素材站与影视级 3D 外包之间的中端空白、普通人不会主动搜这个词，但全球独立游戏已占新游 67%、资产市场 2025 年达 32 亿美元；一人远程、工具成本可压到 50 美元内即可跑通闭环，天然适合 OPC 与数字游民。",
     "details": details,
     "sourceThread": "workbuddy-daily-niche-research",
-    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "no-code", "airtable", "internal-tools", "smb-consulting"],
+    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "game-assets", "indie-game", "creative-economy", "passive-income"],
     "nextSteps": [
-        "注册 Airtable + Softr Free，照模板搭一个「个人客户跟踪 CRM」（Contacts/Deals/Activities 三张关联表 + 一个 Softr 门户页），截图发 LinkedIn，验证一天内能做出能用的东西。",
-        "去 Upwork 搜 Airtable/Softr 看 30 个在招职位与预算，并在 Fiverr 上架一个 $400 的「I will build your Airtable CRM」gig，24h 内观察是否有浏览/询盘。",
-        "免费帮 1 位真实小商家把现有 Excel 重做成 Airtable+Softr 系统并请其写一句推荐语，验证能否把模糊需求落成结构、客户是否愿为结果付费。",
+        "一周内用免费 Aseprite/Blender 做 1 套可展示样稿（8-16 帧角色行走精灵或低多边形小场景），发 ArtStation/小红书/itch.io 验证是否有人问价收藏",
+        "三天内在 Fiverr/米画师开低价 gig 或在 Unity 资源商店注册免费出版商账号并挂样稿，验证平台审核通过与首个咨询",
+        "两周内完成第一笔真实交易（哪怕 $30）或提交并上架第一个带文档的 Unity 资产包，跑通询价→交付→收款全链路"
     ],
-    "artifacts": artifacts,
+    "artifacts": [
+        {"label": "MarketIntelo 全球游戏资产平台市场报告", "path": "https://marketintelo.com/report/game-assetplace-market"},
+        {"label": "Unity Asset Store 官方商店", "path": "https://assetstore.unity.com/"},
+        {"label": "Unity Asset Store 出版商协议（70/30 分成）", "path": "https://unity.com/legal/provider"},
+        {"label": "Generalist Programmer：Unity 资源商店 2026 收入指南", "path": "https://generalistprogrammer.com/tutorials/unity-asset-store-selling-guide-revenue"},
+        {"label": "Exoa：Unity 资产上架完整指南", "path": "https://exoa.dev/blog/publishing-unity-asset-store"},
+        {"label": "Outlook Respawn：2025 自由职业游戏开发费率", "path": "https://respawn.outlookindia.com/gaming/gaming-guides/freelance-game-development-how-to-find-clients-and-set-rates"},
+        {"label": "Aseprite 官网（像素画工具 $20）", "path": "https://www.aseprite.org/"},
+        {"label": "Blender 官网（免费 3D 建模）", "path": "https://www.blender.org/"}
+    ]
 }
 
-os.makedirs(OUT_DIR, exist_ok=True)
-with open(OUT_PATH, "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-print("Wrote", OUT_PATH)
-print("taskName:", data["taskName"])
-print("labels:", data["labels"])
-print("artifacts:", len(data["artifacts"]))
+out_dir = "runs-workbuddy/2026-11-08"
+os.makedirs(out_dir, exist_ok=True)
+out_path = os.path.join(out_dir, "niche-opc-industry.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(result, f, ensure_ascii=False, indent=2)
+print("written:", out_path, "bytes:", os.path.getsize(out_path))
