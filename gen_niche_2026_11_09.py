@@ -1,0 +1,116 @@
+# -*- coding: utf-8 -*-
+import json, os
+
+date = "2026-11-09"
+out_dir = f"runs-workbuddy/{date}"
+os.makedirs(out_dir, exist_ok=True)
+
+details = """1. 行业是什么，为什么小众
+库存/免版税音乐创作与授权（Stock / Royalty-Free Music Production & Licensing）= 为视频、播客、广告、独立游戏、企业宣传等场景创作“可反复授权”的背景音乐与音效，并以两种模式变现：①把曲目批量上传到授权平台（Artlist、Epidemic Sound、AudioJungle、Pond5、Soundstripe 等）按次或订阅抽成做被动销售；②按客户 brief 接定制配乐、品牌声音包（一次性项目费）。
+它之所以小众且被低估，有三个原因：(1) 需求隐蔽——创作者先用免费 YouTube 音频库，等到“频道要做品牌感、客户要商用授权证明、游戏要独特 BGM”时才付费；普通人根本不会主动搜“免版税音乐创作服务”这种词。(2) 它夹在“免费音频库（YouTube Audio Library、Pixabay 音乐）”和“影视级定制（几万美元一首交响配乐）”之间的中端空白——低端免费、高端太贵，中间 20-500 美元/首正是 solo 音乐人能接住的价位。(3) 技术/审美门槛被高估——很多人以为要音乐学院出身，其实用 Lo-Fi / 环境 / corporate 套路 + 采样循环就能稳定产出可授权曲目，DAW（Reaper $60、GarageBand 免费）上手很快。
+
+2. 如何运作
+- 典型客户是谁，需求从哪里触发：YouTube / 抖音 / B 站创作者、播客主、独立游戏/应用开发者、小微企业市场部、广告/婚庆工作室、需要“品牌声音”的个人 IP。需求触发点通常是：频道要独特片头/转场音、客户要求商用授权证明、游戏需要循环 BGM、视频被 Content ID 误伤后改用正版音乐。
+- 核心交付物：单首可授权曲目（WAV + MP3 + stems 分轨）、音效包（SFX pack）、品牌声音包（intro / outro / 过渡 / 提示音）、按 brief 定制的 30-120 秒配乐。平台侧交付物是“带清晰授权范围的标准化曲目”。
+- 完整工作流（定制接单）：在 Fiverr / Upwork 或私域建档→客户发参考曲 + 用途 + 授权范围→出 30 秒样稿确认风格→报价（30-60 秒 $40-180 常见，见第 3 部分）→用 DAW 制作 + 混音母带→交付干声/分轨 + 授权书→收款（平台托管 / PayPal / Wise）。被动销售侧：调研平台缺口（某 mood/genre 高需求少供给）→每月产 10-30 首→上传平台（AudioJungle 审核制、Artlist / Epidemic 邀约或申请制）→靠搜索/编辑推荐持续出单。
+- 关键工具和平台：DAW（Reaper $60、GarageBand 免费、Cubase / Ableton 订阅）；采样/loop（Splice $7.99/月起、免费 pack、Cymatics）；母带插件（iZotope 试用/一次性）；平台（Artlist、Epidemic Sound、AudioJungle、Pond5、Soundstripe、Adobe Stock Audio、Shutterstock Music）；接单（Fiverr、Upwork、Twine）。
+
+3. 盈利模式
+- 收入来源与定价：
+  (A) 平台被动授权：单条授权收入通常 $1-20（AudioJungle / Pond5 按下载抽成，平台抽 30-50%、作者拿 50-70%）；爆款曲目可售数百次。aibusiness.vc 估算：100+ 曲目的目录月入 $200-2,000。
+  (B) 定制接单：Upwork 服务档 $40（≤1 分钟）/ $85（3 分钟）/ $180（5 分钟，含 15 乐器）；Fiverr 游戏配乐起价 $20-35/分钟（学生档），成熟者 $50-200+/分钟。游戏作曲费率（Twine）：新手 $100-300/分钟、中级 $300-800/分钟、专业/AAA $1,000+/分钟。Nick Pike 指南：独立/学生 £100-500/分钟、中级 £500-1,500/分钟、顶级 £1,500-5,000+/分钟。品牌声音包（intro + outro + 过渡 + loop）$200-500 常见。
+  (C) 订阅 / retainer：给某创作者或机构按月供固定量曲目（$200-1,000/月）。
+- 利润空间：平台与定制毛利都极高（工具成本近零，主要是时间）。平台抽成后作者净拿 50-70%；定制扣除平台 10-20% 抽成后基本全留存。被动曲目一次制作、无限授权，边际成本≈0。
+- 复购 / 长期合同：强。创作者/机构一旦认准你的音色会持续加单（片头更新、系列配乐、季度包）；也可谈按月 retainer。
+
+4. 入门门槛
+- 技能：会基础编曲 + 混音母带 + 一点和声/配器常识；Lo-Fi、环境、corporate、游戏 BGM 套路可快速习得。有乐感者 2-4 周能产出可授权曲目；完全新人约 1-2 月。不需要读谱或科班出身。
+- 工具：初期 Reaper（$60 个人授权，或 60 天全功能试用）+ 免费采样包 / GarageBand 即可起步；想提质可加 Splice $7.99/月、一次性母带插件。启动总投入 < $100（主要是 DAW 授权）。
+- 资金：近零。不需要库存、场地或重型设备（笔记本 + 耳机即可；想更专业加声卡/监听 $150-300 可选）。
+- 时间：从零到第一首可上传曲目约 2-4 周；到第一笔定制单（低价 gig 或熟人）约 1-3 周；到平台首笔被动收入通常 1-3 个月（需积累足够目录 + 过审）。
+
+5. 为什么适合 OPC / 数字游民
+- 异步交付：客户发 brief、你交音频文件，全程无需实时会议；跨时区完全无碍。
+- 全球客户：任何国家的内容创作者、游戏开发者都需要音乐；英文 brief 即可接全球单，Fiverr / Upwork / 平台天然跨境。
+- 边际成本极低：一首曲做好后可在平台被授权无数次（被动收入），或同一 loop 复用于多个客户——一次劳动、多次变现。
+- 可规模化：建立 100-500 首的曲目目录后，被动收入随目录增长而增长，不线性依赖工时。
+- 地点自由：100% 远程，只需电脑 + 耳机；咖啡馆、旅居城市、海岛都能干。
+- 轻资产：无库存、无实体、无团队，一个人就是“创作 + 上传 + 接单 + 收款”的完整闭环。
+
+6. 潜在收益（谨慎，不承诺）
+- 参考数据（均来自公开来源，不等于个人收入）：
+  · 音乐授权整体市场 2026 年约 $9.73B，CAGR 8.81%（Mordor Intelligence）；库存音乐市场 2024-2029 预计增长 $741.5M，CAGR 8.5%（Research and Markets）。
+  · 平台侧：Epidemic Sound 目录 40,000+ 曲目、200 万+ 订阅、2024 年 ARR 约 $1.7 亿；Artlist 服务 2,600 万+ 创作者；AudioJungle 单曲买断常见 $15-50。
+  · 创作者 / 定制费率：Fiverr / Upwork 30-60 秒定制 $40-180；游戏作曲 $100-1,000+/分钟分档；品牌声音包 $200-500。
+  · 被动目录：aibusiness.vc 估算 100+ 曲目月入 $200-2,000；成熟出版商更高。
+- 新手阶段（0-6 个月）：以低价定制 gig + 建目录为主，月收入多为零到几百美元，重点是跑通交付与积累作品。
+- 成熟阶段（6-18 个月+）：目录 100-300+ 首 + 稳定定制客源 + 可能的 retainer，月入可达 $500-3,000+（被动 + 定制混合），头部靠大目录与机构合作更高。这些是区间与条件，非保证收入。
+
+7. 主要风险
+- 市场风险：AI 生成音乐（Suno、Udio、Meta MusicGen）已能秒级产出广播级背景曲，多家 2025 报道称 2023 年以来库存音乐每授权收入已下跌 40-70%、平台开始内置 AI 并削减人类作者分成（aijobchecker、ctol.digital）；低端“通用背景乐”正被商品化，须向上走“品牌声音 / 定制 / 关系型”避开价格战。
+- 技术风险：依赖平台政策与算法（Artlist / Epidemic 多为邀约/审核制，目录被拒或下架风险；AudioJungle 审核严）；DAW / 采样订阅涨价；AI 工具训练数据版权处于灰色地带（美国版权局裁定纯 AI 作品不受版权保护，含显著人类创作才可）。
+- 合规风险：授权范围不清（同步权 vs 母带权、买断 vs 限定使用）易引发纠纷；跨境收款税务（平台付款可能需申报）；平台对 AI 生成内容的披露要求不一（部分要求披露、部分禁止）。
+- 现金流风险：平台被动收入单笔极小、需长期积累目录才起量；定制单多按里程碑/交付后付款，存在账期与跑单；获客依赖平台抽成或投流成本。
+
+8. 不适合的人群
+- 想要“上传几首就马上稳定月入过万”的人——被动收入需要数月积累目录。
+- 完全没乐感、不愿学编曲/混音基础的人——这是手艺活。
+- 无法接受 AI 冲击、不愿做差异化（只做通用背景乐）的人——会被商品化淹没。
+- 需要即时稳定工资、无法承受项目制收入波动的人。
+- 想完全“躺平被动”、连上传/运营都不愿做的人——平台需要持续上新与优化元数据。
+
+9. 3 个可验证的入门步骤
+- 步骤一（1-3 天）：装 Reaper（或 GarageBand）并下载一套免费采样 loop，按一个明确 mood（如“Lo-Fi 学习 BGM”或“企业宣传 corporate uplifting”）做 3 首 60-90 秒可授权曲目；在 AudioJungle 注册作者账号、读其审核要求，或先把 1 首发到 Pixabay 音乐（免费商用）测试下载/收藏量。验证：至少得到一次下载或一条“求授权/合作”咨询。
+- 步骤二（1-3 天）：在 Fiverr 或 Upwork 开一个低价 gig（如“30 秒品牌 intro + loop，$40”），或免费/低价给一位小 YouTuber / 播客主做片头换 testimonial；记录从接 brief 到交付的耗时与修改轮数。验证：完成 1 笔真实交付（哪怕 $20）并拿到反馈。
+- 步骤三（1-3 天）：搭一个极简作品集页（Carrd / Notion 免费），把 3 首曲目 + 1 个定制样稿放上去；向 5 位目标创作者（需要片头/BGM 的小频道）发个性化 pitch。验证：至少 1 个有效回复或作品页带来 1 次询单。
+
+10. 核验来源
+- Mordor Intelligence《Music Licensing Market》——整体音乐授权市场规模与 CAGR。
+- Research and Markets《Stock Music Market 2025-2029》——库存音乐细分市场增长。
+- Epidemic Sound 官网——平台规模与授权模式（40,000+ 曲目、200 万+ 订阅）。
+- AudioJungle（Envato Market）——按次买断的曲库交易市场。
+- Twine《Where to Find Freelance Game Composers》——自由职业作曲费率分档。
+- Nick Pike Music《Custom Music Score Pricing Guide》——定制配乐定价区间。
+- Reaper 官网——低成本 DAW（$60 个人授权）。
+- Splice 官网——采样/loop 订阅（$7.99/月起）。"""
+
+data = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：库存/免版税音乐创作与授权（Stock / Royalty-Free Music Production & Licensing）",
+    "status": "success",
+    "startedAt": "2026-11-09T09:10:00+08:00",
+    "finishedAt": "2026-11-09T09:35:00+08:00",
+    "summary": "帮 YouTube 创作者、播客主、独立游戏与小企业做可授权的背景音乐/音效——既可以把曲目批量上传到 Artlist、Epidemic Sound、AudioJungle 等平台做被动销售，也可以按 brief 接定制配乐。它夹在“免费音频库”和“影视级作曲”之间的中端空白、普通人不会主动搜这个词，但音乐授权市场 2026 年约 97 亿美元、库存音乐年均增长 8% 以上；一人远程、工具成本可压到 60 美元内即可跑通，天然适合 OPC 与数字游民。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "stock-music",
+        "music-licensing",
+        "creative-economy",
+        "passive-income"
+    ],
+    "nextSteps": [
+        "1-3 天内用 Reaper/GarageBand + 免费采样做 3 首明确 mood 的可授权曲目，在 AudioJungle 注册作者账号或发 1 首到 Pixabay 音乐测试下载/收藏量",
+        "1-3 天内在 Fiverr/Upwork 开低价 gig（如 30 秒品牌 intro + loop，$40）或免费给小频道做片头换 testimonial，验证从 brief 到交付的耗时与修改轮数",
+        "1-3 天内搭极简作品集页（Carrd/Notion）并给 5 位目标创作者发个性化 pitch，验证至少 1 个有效回复或作品页带来 1 次询单"
+    ],
+    "artifacts": [
+        {"label": "Mordor Intelligence：Music Licensing Market（2026 $9.73B，CAGR 8.81%）", "path": "https://www.mordorintelligence.com/industry-reports/music-licensing-market"},
+        {"label": "Research and Markets：Stock Music Market 2025-2029（CAGR 8.5%）", "path": "https://www.researchandmarkets.com/reports/5509392/stock-music-market-2025-2029"},
+        {"label": "Epidemic Sound 官网（40,000+ 曲目、200 万+ 订阅、直接授权模式）", "path": "https://www.epidemicsound.com/"},
+        {"label": "AudioJungle（Envato Market 按次买断曲库交易市场）", "path": "https://audiojungle.net/"},
+        {"label": "Twine：自由职业游戏作曲费率分档（$100-1,000+/分钟）", "path": "https://twine.net/blog/top-platforms-to-hire-game-composers"},
+        {"label": "Nick Pike Music：定制配乐定价指南（£100-5,000+/分钟）", "path": "https://www.nickpikemusic.com/post/how-much-does-a-custom-music-score-cost-a-complete-pricing-guide"},
+        {"label": "Reaper 官网（低成本 DAW，$60 个人授权）", "path": "https://www.reaper.fm/"},
+        {"label": "Splice 官网（采样/loop 订阅，$7.99/月起）", "path": "https://splice.com/"}
+    ]
+}
+
+out_path = os.path.join(out_dir, "niche-opc-industry.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("WROTE", out_path, os.path.getsize(out_path), "bytes")
