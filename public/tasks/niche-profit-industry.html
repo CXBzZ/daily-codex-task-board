@@ -17,9 +17,102 @@
       <main><section class="page-title">
       <p class="eyebrow">Task</p>
       <h1>每日小众赚钱行业科普</h1>
-      <p class="lede">98 historical results for <code>niche-profit-industry</code>.</p>
+      <p class="lede">99 historical results for <code>niche-profit-industry</code>.</p>
     </section>
     <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-09.html">2026-11-09</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型开源项目、独立软件工作室和小型 SaaS 的 npm Trusted Publishing（OIDC）、发布溯源（provenance）与 release workflow 上线前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权、最小权限、测试仓库和证据化交接切入 OPC/数字游民试单，但不代管密钥或生产发布，也不构成安全审计或认证。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+npm 可信发布与发布溯源上线前 QA，是为维护公开 npm 包的团队检查并配置发布流水线：将发布身份从长期 npm token 转为 CI 的 OIDC 短期身份，核对 npm 包设置、GitHub Actions 工作流、版本与 dist-tag 流程，在测试版本或测试仓库复测后，交付 PR、核验清单和回滚说明。npm 的 Trusted Publishing 目前支持 GitHub-hosted runners、GitLab.com shared runners 与 CircleCI cloud；通过 GitHub Actions 或 GitLab CI 的可信发布，公开仓库中的公开包可自动生成 provenance attestations。
+
+它小众在于客户不是泛泛“做 CI/CD”，而是已经有公开 npm 包、要降低发布令牌暴露风险且愿意梳理发布链路的维护者。工作会碰到 package.json repository 对齐、工作流文件名、权限、release tag、公开仓库限制与 provenance 可见性，不能用一套模板草率套用。
+
+## 目标市场与客户
+
+目标是**中国境内可做的海外英语市场**：公开 npm 包维护者、开源商业项目、独立开发者、Node.js 工具工作室和小型 SaaS。客户常见场景是：长期 NPM_TOKEN 已散落在 CI secrets；希望发布从 GitHub tag 自动化；需要让下游用户能查看来源证明；或准备把发布流程交接给新的维护者。
+
+中国境内服务商可远程获客（GitHub 公开仓库、Upwork 等合规平台、技术内容与转介绍），交付英文审计报告、可审查 PR、测试日志和异步录屏。Upwork 的 npm 招聘页可作为“npm/CI 工作确有远程需求”的弱样本；其展示的 1,400 美元 Next.js/Node 全量 CI/CD 项目范围远大于本服务，不能当作本细分市场价。
+
+## 如何运作
+
+1. 客户提供书面授权、公开仓库链接或脱敏工作流；服务商先盘点 package.json、现有发布路径、传统 token、npm 包设置和权限。
+2. 在分支、fork 或客户提供的测试仓库写出最小权限 workflow，检查 id-token: write、contents: read、仓库 URL 与可信发布设置是否匹配；不索取 npm token、GitHub 管理员密码或生产密钥。
+3. 由客户在自有 npm/GitHub 账户创建或确认 Trusted Publisher；服务商用预发布/测试包或客户监督下的首个发布验证，检查 provenance、dist-tag 和失败回滚说明。npm 明确指出：保存可信发布配置时不会即时验证，首个成功发布才会暴露不少配置错误；新建配置还需要在两天内首次成功发布。
+4. 交付 PR、发布前后 checklist、证据截图/链接、令牌下线与最小权限建议；最终生产发布和账号审批始终由客户完成。
+
+## 盈利模式与克制的收入口径
+
+收入来自一次性“现状审计 + 测试配置/PR + 复测报告”包，以及有限月度发布流程维护（只处理已授权的配置变更和文档）。新手可以自定小范围试单价，例如 USD 150–500（约人民币 1,008–3,359，按 2026-11-09 USD/CNY 中间价 6.7188 粗算）：只覆盖 1 个公开包、1 条 GitHub Actions 发布流、1 次测试复测和交接文档。较复杂的多包 monorepo、多 CI、dist-tag 策略或迁移项目应单独估时、分阶段报价。
+
+这是服务商的建议试单价，不是市场平均报价，更不是收益承诺。成本主要是英文沟通、仓库理解、测试时间、平台服务费、收款手续费、税费，以及配置失误后的返工风险。若月内能稳定完成 2–4 个上述固定范围小单，才可据实际成交价与时间成本估算收入；不能用相邻大型 CI/CD 项目的报价直接推算。
+
+## 入门门槛
+
+技能：Node/npm、SemVer 与 dist-tag、GitHub Actions YAML、OIDC/最小权限、Git 基础、英文技术写作与复测记录。设备与软件：一台可运行 Node 的电脑、GitHub 测试账号/测试仓库、编辑器和安全的密码管理器即可，固定资产轻。时间：先用一个自建公开测试包完整走通“tag—CI—npm 发布—provenance 查看—npm audit signatures 验证”，通常需数天学习和排错。
+
+资质上没有要求中国境内服务商持有当地软件牌照，但不得把自己表述为 npm/GitHub 官方代理、认证审计师或安全认证机构。技术服务合同应写清范围、代码/文档保密、数据处理、验收、变更次数、付款币种和税费承担。
+
+## 跨境获客、交付、收款与合规
+
+- 获客与交付：优先公开仓库、脱敏 YAML、测试环境和客户自有账户的协作成员权限；不要让客户通过聊天工具发送令牌、私钥或完整生产环境导出。时区以异步文档为主，欧美客户的首次发布窗口可能要求晚间配合。
+- 合同、收款与税务：用服务说明、报价单/平台订单、合同、交付记录与验收留存交易真实性材料；收款、结汇、开票/纳税按自身主体、银行与税务机关的要求办理。国家外汇管理局资料强调银行会审核经常项目交易单证的真实性及其与收支的一致性。个人或 OPC 不应把他人资金、代收代付或虚假交易包装为技术服务收入。
+- 平台与数据：遵守 GitHub、npm、接单平台规则；只获得完成工作所需的最小权限。公开 provenance 会将构建来源等信息连接到公开包，客户应知悉公开仓库/公开包前提。若材料含未公开源码、客户联系信息或日志，约定保密、访问期限、删除方式；不复制到个人知识库或未获批准的 AI 服务。
+- 语言与时区：需要能读懂 npm/GitHub 英文报错、写清变更/回滚说明；远程工作可行，但发布故障的即时响应压力不适合无法配合时区的人。
+
+## 为什么适合、又不完全适合 OPC / 数字游民
+
+适合 OPC：可产品化为“单包审计—测试 PR—复测—交接”固定范围，轻资产、可异步、可通过可审查提交验收。并不完全适合：客户信任门槛高，错误配置可能中断发布；有多个 package、私有依赖或复杂 release train 时，一人不宜承诺全天候运维。
+
+适合数字游民：核心产物是配置、报告和录屏，无需当地实体门店；但需要稳定网络、保密的工作环境、跨时区沟通与安全设备管理。若只能使用不可信网络、无法保障资料隔离，或不能偶尔配合客户发布窗口，则不适合承接。
+
+## 主要风险、不适合人群
+
+技术风险：npm 要求可信发布关联的仓库/工作流信息准确；公开包的 provenance 有公开仓库与公开包等条件，CircleCI 路径目前不自动生成 provenance；私有依赖安装仍可能需要只读 token。安全风险：id-token: write 仅允许工作流请求 OIDC JWT，并不自动授予其他写入权限，但错误信任条件、过宽 Actions 权限或恶意第三方 action 仍会扩大风险。
+
+边界风险：不要接“绕过 npm 审核/封禁”“代管发布账号”“隐藏恶意包”“代发真实生产版本”“清洗供应链事故证据”等需求；可信发布也不能替代依赖审计、代码审计、渗透测试、法律意见或事故响应。
+
+不适合：不懂 Git/Node、无法阅读英文报错、只想靠复制 YAML 快速变现、不能承担发布窗口支持，或没有能力处理保密与最小权限边界的人。
+
+## 新手低成本验证步骤
+
+1. 用自己的公开测试仓库和无业务用户的测试包，按 npm 官方文档配置 GitHub Actions Trusted Publisher；只发布测试版本，记录每个前置条件与失败提示。
+2. 对一个自有或明确授权的公开包做只读审计：列出 package.json repository、workflow、权限、npm CLI/Node 版本、token 残留、dist-tag 与 provenance 前提，不直接改生产设置。
+3. 用固定范围报价完成一份“审计清单 + 测试 PR + 客户自行确认的首发复测 + 回滚/交接页”，将 token、密钥、私有源码和最终生产发布排除在服务范围外。
+
+## 点评 Agent 审稿
+
+- 中国境内承接海外市场适配度：4/5。公开 npm 包维护者、独立工作室和小型 SaaS 可远程交付，但获客与英语技术沟通要求高。
+- OPC/一人公司适配度：4/5。可按审计—测试仓库配置—PR/清单—客户自行发布拆成固定范围小单。
+- 数字游民适配度：4/5。文档、CI 配置、测试证据和交接均可远程；发布窗口可能要配合欧美时区。
+- 合规风险：中。不得索取或托管 npm 发布令牌、GitHub 管理员凭据、私有源码及生产密钥；不能包装成安全审计、供应链安全认证或零风险保证。
+- 跨境执行风险：中。应以合同明确范围、保密、数据处理、验收、币种与税费，保留真实性材料并依法申报。
+- 收益口径：克制。USD 150–500 是自定新手试单范围，不是均价；Upwork 的 USD 1,400 相邻完整 CI/CD 项目只说明大范围需求样本。
+- 信息来源可信度：较高。npm/GitHub 官方文档支撑技术限制与权限边界；SAFE 资料支撑跨境收支真实性原则；Upwork 仅作弱需求样本。
+- 结论：通过，无需换题。最该补充/提醒的一句话：可信发布配置不能替代依赖审计、代码审计或事故响应；客户应自行保有账号、最终审批权和生产发布操作。
+
+## 核验来源
+
+1. npm Docs《Trusted publishing for npm packages》：https://docs.npmjs.com/trusted-publishers/
+2. npm Docs《Generating provenance statements》：https://docs.npmjs.com/generating-provenance-statements/
+3. npm Docs《Viewing package provenance》：https://docs.npmjs.com/viewing-package-provenance/
+4. GitHub Docs《OpenID Connect reference》：https://docs.github.com/en/actions/reference/security/oidc
+5. Upwork《npm Freelance Jobs》：https://www.upwork.com/freelance-jobs/npm/
+6. 国家外汇管理局《国家外汇管理局关于支持贸易新业态发展的通知》：https://www.safe.gov.cn/en/2020/0520/1700.html
+7. 汇率换算使用中国外汇交易中心代表的 2026-11-09 人民币中间价样本 1 USD = 6.7188 CNY，仅作粗算，实际以银行成交价为准：https://currencyapi.com/central-bank-exchange-rates/pboc/usd</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>09/11/2026, 15:55</p><p class="meta-line"><span>Finished</span>09/11/2026, 16:03</p><p class="meta-line"><span>Duration</span>8m</p><p class="meta-line"><span>File</span><code>runs/2026-11-09/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>software-supply-chain</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>在自有公开测试仓库和测试包走通一次 OIDC 可信发布，仅发布测试版本并保存证据。</li><li>用只读方式为一个明确授权的公开包做发布链路清单，不改生产账号或 secrets。</li><li>以审计、测试 PR、复测和交接为固定范围试单，合同明确客户自行审批与发布。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.npmjs.com/trusted-publishers/">npm Trusted Publishing 官方文档</a></li><li><a href="https://docs.npmjs.com/generating-provenance-statements/">npm Provenance 官方文档</a></li><li><a href="https://docs.github.com/en/actions/reference/security/oidc">GitHub Actions OIDC 官方参考</a></li><li><a href="https://www.safe.gov.cn/en/2020/0520/1700.html">国家外汇管理局贸易新业态规则</a></li><li><a href="https://www.upwork.com/freelance-jobs/npm/">Upwork npm 远程需求样本</a></li></ul></div>
+    </article><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
@@ -13515,7 +13608,7 @@ BLS 2024 年数据显示，美国 court reporters and simultaneous captioners �
     </article></div></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 09/11/2026, 09:17</span>
+      <span>Generated 09/11/2026, 16:04</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
