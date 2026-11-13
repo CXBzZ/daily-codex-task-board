@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-13 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-13</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-13.html">2026-11-13</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外独立开发者和小型软件工作室的 GitHub Marketplace Action 上架资料整理、元数据核验与发布前 QA，属于中国境内可远程承接的海外市场。它适合用固定范围、最小权限和测试证据做 OPC/数字游民试单，但客户必须自行接受 Developer Agreement、完成 2FA 和最终发布，服务商不得接触长期管理员令牌或生产 secrets。</p>
+      <div class="details">## 行业是什么、为什么小众
+
+这是把一个已经可运行的 GitHub Action 整理到可发布、可被他人理解和可复测状态的轻量技术服务：核对根目录 action.yml/action.yaml、名称/描述/inputs/outputs/runs/branding，补齐 README 与最小示例 workflow，完成测试 release 前的检查清单、问题截图和复测记录。它不是泛泛的 CI/CD 外包，也不是开发核心 Action；小众之处在于同时理解 GitHub Marketplace 的上架入口、Action 元数据和开发者文档交付。GitHub 官方规则要求 Action 在公开仓库、根目录有一个 metadata 文件、名称唯一，并经 Release 发布到 Marketplace。
+
+## 目标市场与客户
+
+目标是“中国境内可做的海外市场”：英文为主的独立开发者、开源维护者、微型 SaaS、开发工具工作室，以及准备公开发布已有 Action 的小团队。典型场景是首个 Marketplace listing、Action 改名/转仓后的新版本、README 长期缺少示例、发布前担心输入输出或品牌字段不合规范。中国境内个人/一人公司可通过 Upwork、GitHub 开源贡献、技术博客、开发者社群或独立站获客；应先以脱敏公开仓库或客户测试仓库试单，而非索要生产组织管理员权限。
+
+## 运作方式与工作流
+
+1. 客户提供公开仓库链接，或在测试仓库授予临时、最小协作权限，并书面确认交付范围。
+2. 服务商盘点 action.yml、README、示例 workflow、release 草稿与公开信息，建立字段/链接/示例/测试矩阵。
+3. 在客户测试环境跑最小示例，交付问题清单、建议 PR 或 patch、截图和复测结果；不读取 secrets，不下载原始日志或用户数据。
+4. 客户自行审阅、合并变更，接受 GitHub Marketplace Developer Agreement、完成 2FA，并由其账号创建/发布最终 Release；服务商只做上线前 QA 和交接说明。
+
+参与方通常是 Action 作者（拥有最终发布权）、服务商、可选的代码审阅者；GitHub 是平台。公开 Marketplace Action 的 README、示例和元数据会公开，合同须写明不可放入密钥、客户资料或未授权代码。
+
+## 收入、成本与收益口径
+
+可将服务产品化为“一个已有可运行 Action 的上架资料+1 轮 QA 试单”：公开报价样本为 US$150–350/个，按 US$1≈¥7.1 仅作方便换算，约为 ¥1,070–2,490/个。该区间是基于固定范围、无核心开发、一次文档/元数据核验和一轮复测的自主试单报价，不是市场成交保证。Upwork 的 GitHub Actions 专家页面列出 US$40–100/小时的宽泛自由职业样本，并将单工作流搭建列为 US$300–800；这些属于相邻服务的公开样本，不能等同于本服务收入或需求规模。
+
+成本包括研究/测试时间、英文沟通、平台服务费、收款与汇兑费用、税费、IDE/CI 测试资源和可能的责任保险。若每单实际投入 4–8 小时，收入须扣除以上成本及获客空档；复杂 Action 开发、持续维护、私有 runner 或安全整改应独立报价。绝不承诺审核通过、上架后下载量、销量、安全性、零故障或任何月收入。
+
+## 入门门槛
+
+技能：英文技术写作，Git/GitHub、YAML、GitHub Actions 基础，能读懂 action.yml 的 inputs/outputs/runs，能写可复现的最小 workflow。设备/软件：电脑、GitHub 账号、代码编辑器、隔离测试仓库及屏幕录制/截图工具即可。资金门槛低，但要预留测试时间和获客成本。资质上没有以此名义的中国牌照；不能把 QA 包装成安全审计、法律意见或 GitHub 官方服务。建议先用自己创建的无 secrets 测试 Action 做 2–3 个可展示的匿名样例。
+
+## 跨境承接、收款、税务、平台与数据
+
+获客与交付：使用英文 scope、验收标准、时区重叠窗口、返工次数和 IP 归属条款；异步以 issue、PR、检查表和录屏交付，发布窗口可能需要配合北美/欧洲时区。收款：优先使用客户与所选平台允许、可留痕的结算方式；开工前确认平台所在国/地区、身份、付款和提现规则，保存合同、发票/收款及交付记录。税务：在中国的居民个人从境外取得所得，按国家税务总局口径应在取得所得次年 3 月 1 日至 6 月 30 日办理申报；一人公司、增值税/企业所得税及发票应按主体所在地规则和会计师意见处理。
+
+平台规则：发布 Action 需符合 GitHub 的公开仓库、metadata、唯一名称、Developer Agreement 和 2FA 等条件；服务商不能代替客户勾选协议或冒充官方。数据/隐私：不接收客户生产 secrets、长期 PAT、真实用户导出或含个人信息的日志；只用公开、匿名或客户提供的测试资料。若确需处理来自中国境内的个人信息或向境外提供个人信息，适用《个人信息保护法》的最小必要、告知/单独同意及相应出境条件，不能凭本服务自行判断已合规。语言/时区：英文书面沟通、读官方文档和约定 2–4 小时重叠窗口是实际门槛。
+
+## 为什么适合（以及不完全适合）OPC/数字游民
+
+OPC 适配：4/5。范围可模板化成审计表、PR、README 模板和复测证据，固定资产轻，一人可完成；但不适合把核心开发、24×7 运维、复杂安全审计一起打包。数字游民适配：4/5。代码审阅、文档、PR 和测试可远程异步进行；但客户发布窗口、英文客户会议与稳定网络会限制完全随意的移动办公。
+
+## 主要风险与不适合人群
+
+主要风险包括：把本应公开的信息和机密混入公开仓库；误用 PAT/secrets；元数据或示例错误导致用户无法使用；客户把 QA 当作 GitHub 审核或安全背书；跨境收款、税务和个人信息处理留痕不足。应采用书面授权、最小权限、测试仓库、禁止 secrets 条款、客户最终发布确认和可回滚 PR。它不适合没有 Git/YAML/英文阅读基础、希望快速无技术变现、需要即时现金流、或想接触客户生产账号/敏感数据的人。
+
+## 新手低成本验证步骤
+
+1. 自建一个无 secrets 的 demo Action，在公开测试仓库完成 action.yml、README、示例 workflow 和 release 草稿，做成脱敏作品集。
+2. 把服务限定为一页 scope：根目录 metadata 核验、README/示例、一次测试和一轮复测；明确不开发核心逻辑、不代发 release、不处理 secrets。
+3. 在 Upwork、GitHub 社群或英文技术博客投放/发布小额试单，先只接公开仓库或客户测试仓库；用合同、检查表、PR 和收款凭证闭环，再复盘实际耗时。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过，适合发布为谨慎型机会科普。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险：中；跨境执行风险：中。
+
+审稿认为收益口径克制：US$150–350 仅是已有可运行 Action 的单次 QA 试单，已列出成本且无收益保证；不得将 Upwork 的开发/迁移价格暗示为本服务必然可获得的报价。技术和发布门槛来自 GitHub 官方文档，税务与隐私来自中国官方来源；Upwork 仅作为市场报价样本，不能证明需求规模或实际成交。最重要补充：不要通过客户长期管理员 PAT、共享账号或生产 secrets 测试；客户应在临时最小权限协作者或测试仓库中执行需要授权的动作，并自行接受 Developer Agreement、完成 2FA 和最终 Marketplace Release。
+
+## 核验来源
+
+- GitHub Docs, Publishing actions in GitHub Marketplace：https://docs.github.com/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace
+- GitHub Docs, Metadata syntax reference：https://docs.github.com/en/actions/reference/workflows-and-actions/metadata-syntax
+- Upwork, GitHub Actions Experts（报价样本）：https://www.upwork.com/hire/github-actions-expert/
+- 国家税务总局，个人所得税自行纳税申报有关问题：https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3963385/content.html
+- 国家市场监督管理总局，中国人民共和国个人信息保护法：https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>13/11/2026, 09:30</p><p class="meta-line"><span>Finished</span>13/11/2026, 09:35</p><p class="meta-line"><span>Duration</span>5m</p><p class="meta-line"><span>File</span><code>runs/2026-11-13/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>github</span><span>software</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>自建无 secrets 的 demo Action，完成 action.yml、README、示例 workflow 与 release 草稿。</li><li>用一页 scope 限定 metadata/文档/测试/一轮复测，并明确不开发核心逻辑、不代发 release、不处理 secrets。</li><li>先只接公开仓库或客户测试仓库的小额试单，以合同、检查表、PR 和收款凭证复盘真实耗时。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace">GitHub Marketplace Action 发布规则</a></li><li><a href="https://docs.github.com/en/actions/reference/workflows-and-actions/metadata-syntax">GitHub Action metadata 语法</a></li><li><a href="https://www.upwork.com/hire/github-actions-expert/">Upwork GitHub Actions 专家公开报价样本</a></li><li><a href="https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3963385/content.html">国家税务总局境外所得申报说明</a></li><li><a href="https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html">个人信息保护法</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 13/11/2026, 15:59</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
