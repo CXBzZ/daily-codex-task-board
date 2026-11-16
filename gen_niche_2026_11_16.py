@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+import json, os
+from datetime import datetime, timezone, timedelta
+
+tz = timezone(timedelta(hours=8))
+finished = datetime.now(tz)
+started = finished - timedelta(minutes=28)
+
+details = """一、行业是什么，为什么小众
+一句话定义：帮 SaaS、App、电商与中小企业把产品“里面的文字”——按钮、报错、空状态、引导流程、弹窗、条款摘要、提示语——写成用户一眼就懂、能推动下一步动作的文字，并沉淀成可复用的文案规范（内容设计系统 / voice & tone 指南）。
+为什么小众：① 搜索量极低——需求方不会搜“UX 文案服务”，只会搜“用户注册到一半就跑了”“报错没人看得懂”“客服每天重复解释同一个词”；② 需求隐蔽——它夹在“设计师顺手写文案”与“大厂专职 content designer”之间的中端空白，中小团队根本不知道这类文字可以外包；③ 名字混乱导致被低估——2025 年行业调查中 61% 从业者自称 content designer、只有 19% 自称 UX writer，同一个工种多个叫法，客户更难搜索和比价；④ 门槛被高估——看起来要懂设计、懂研究，实际用 Figma + 一份检查清单 + 用户视角改写就能交付；⑤ 职业本身极小——UX Content Collective 2025 年调查全球仅 598 份回应、来自 40 多个国家，说明这是个真正的“小池子”。
+
+二、如何运作
+- 典型客户与需求触发：① 独立 SaaS / 中小产品团队（没有专职文案，报错与引导由工程师随手写）；② 正在做改版或国际化的产品（界面文案需要统一术语和语气）；③ 电商 / Fintech（注册、支付、风控提示造成流失）；④ 刚融资要“产品显得专业”的初创；⑤ 设计师 / 开发工作室（把文案作为交付包的一部分外包）。触发点几乎都是具体的痛点：转化率掉、客服工单重复、用户投诉“看不懂”、上线前文案没人把关。
+- 核心交付物：① 文案审计（列出问题文案 + 修改建议 + 理由）；② 微文案改写包（按屏幕 / 流程逐条交付可复制的文案表，常含中英双语文案）；③ 内容设计规范（术语表、语气原则、按钮 / 报错 / 空状态模式库）；④ 可选的轻量可用性验证（5 人以内测试或启发式走查）。注意与“UX 审计”不同：UX 审计是找出问题出报告，本行业是直接把文字重写并交付可用版本。
+- 完整工作流：获客（Upwork / Fiverr / Contra 上架 gig、在 Indie Hackers / LinkedIn 发 before-after 案例、给设计工作室做分包）→ 需求澄清（要哪些流程、目标用户、现有术语与品牌语气）→ 拿到产品截图 / Figma 文件或测试账号 → 逐屏审计并按“问题—改写—理由—预期效果”出表 → 在 Figma 里标注或交付 Notion / Airtable 文案表 → 客户确认后迭代 1–2 轮 → 平台托管或预付收尾款。
+- 关键工具与平台：Figma（免费档即可看稿和在稿上标注）、Notion / Airtable（文案表与术语库）、Hemingway Editor / LanguageTool（可读性与语法）、Nielsen Norman Group 文章与 Baymard 电商研究（写作依据）、IBM Carbon 等内容设计系统（模式参考）；接单用 Upwork / Fiverr / Contra / LinkedIn。
+
+三、盈利模式
+- 收入来源与定价：按项目为主——单流程文案审计约 $300–$800；完整产品文案包（引导 + 核心流程，约 50–100 条字符串）约 $1,500–$4,000；内容设计规范 / voice & tone 指南约 $2,000–$6,000。按小时用于小改动与驻场协作：UX Content Collective 2025 调查全球自由职业中位价 $70–80/小时（2023 年为 $60–70），WebCalc 报告 UX Writer 中位 $75/小时、区间 $45–110、同比 +14%，WebPeak 给出 $75–200+/小时。按月 retainer（每周几小时文案评审）约 $1,000–$3,000/月。Fiverr 上小型 gig 多在 $50–$500。
+- 利润空间：工具几乎零成本（Figma / Notion 免费档），主要是时间投入。扣除平台抽成（Fiverr 约 20%、Upwork 约 10%）后，单人毛利率约 70%–85%（未计税）。真正的成本是无形的研究与返工时间。
+- 复购与长期合同：产品每周迭代，文案规范一旦建立就需要持续维护，因此 retainer 和按量复购很自然；一次改版项目常带来后续页面与邮件文案的追加订单。
+
+四、入门门槛
+- 技能：会写清楚、简短、具体的句子；理解“用户此刻想干什么”；能给出改写理由；会用 Figma 看稿和标注。2–4 周可上手基础交付，做到能独立带项目约 2–3 个月。不需要设计学位。
+- 工具：Figma 免费档、Notion / Airtable 免费档、Hemingway / LanguageTool 免费、一个作品集页面。启动成本约 $0–$50/月。
+- 资金：几乎为零，最多几十美元买域名或作品集托管。
+- 时间：从零到第一单约 2–6 周（做 2–3 个 before-after 案例 + 上架 gig + 主动联系 10 个小团队）。
+
+五、为什么适合 OPC / 数字游民
+- 100% 异步交付：核心产出是文案表、审计报告和规范文档，客户在哪个时区都行；只需约定几个异步评审节点。
+- 全球客户：SaaS 与 App 出海团队普遍缺英文产品文案，英语服务可面向欧美高付费市场；中文母语者还能做中英双语界面文案，这是差异化优势。
+- 边际成本低：一套方法（检查清单 + 文案表模板 + 术语库结构）可复用到每个客户；规范文档可产品化为模板出售。
+- 可规模化但有天花板：一人每月接 4–8 个项目可行；再往上要么涨单价、要么做模板 / 课程产品化，不必雇人。
+- 时区友好且地点自由：不需要本地执照、实体场所或固定设备，一台电脑 + 网络即可；这正是数字游民的典型工作形态。
+- 与 AI 互补：调查中 58% 从业者称 AI 改善了工作，主要用在分析 / 总结（45%）与头脑风暴（41%）；把 AI 当草稿工具、自己做“选哪句、为什么”的决策，反而能提高单价（有报告称技术素养高者溢价约 20%）。
+
+六、潜在收益（谨慎，不承诺）
+- 参考数据（行业 / 从业者调查，非个人收入）：UX Content Collective 2025 调查（598 份回应、40+ 国家）全球中位年薪 $110,000、美国 $147,000、自由职业中位时薪 $70–80；WorkCalc 2025 报告 UX Writer 中位时薪 $75、区间 $45–110、同比 +14%；WebPeak 称美国中级 $80,000–120,000、资深 $150,000+、自由职业 $75–200+/小时。注意：这些是在职岗位与资深从业者数据，且 2025 年有 24% 受访者过去 24 个月经历裁员（其中 74% 已回到内容岗位），不代表个人收入与稳定性。
+- 新手阶段（第 1–3 月）：靠小额审计单与 before-after 案例积累，月收入约 $300–$1,500（按 3–10 单 × $100–$300 估算），此阶段更应看重作品集与评价。
+- 成熟阶段：有细分口碑（如“专做 Fintech 引导流程文案”）+ retainer，月收入可达 $3,000–$8,000+；少数人通过模板 / 培训 / 咨询更高。
+- 明确标注：以上为区间与条件估计，取决于定位、获客与口碑，这些是参考数据，不等于个人收入，不构成保底承诺。
+
+七、主要风险
+- 市场风险：科技行业裁员波已波及该岗位（调查中 24% 过去两年被裁），行业情绪 34% 负面 / 35% 正面 / 31% 中性，存在“身份危机”讨论；AI 能低成本生成通顺文案，纯“写字”的基础需求会被压价。
+- 技术风险：高度依赖 Figma / 设计系统文件与客户的产品访问权；客户组件与字数限制会束缚文案；AI 生成的“流畅但不可用”文案需要人工判断力兜底。有报告指出技术素养（GitHub / Markdown / AI 工作流）带来约 20% 溢价，也意味着不会这些会落后。
+- 合规风险：会接触未发布产品与用户研究数据，需签 NDA、遵守 GDPR / CCPA 与数据最小化；跨境服务涉及税务居民身份与预扣税；文案中的合规表述（隐私、金融、健康）不能替代法律意见；若用 AI 生成内容，应约定披露与版权归属。
+- 现金流风险：平台账期（Upwork 约 7–14 天）、B2B 客户 Net-30；文案项目极易“范围蔓延”（再多改一个按钮），必须在合同里写清屏幕数 / 字符串数与修改轮次。
+
+八、不适合的人群
+- 想完全不与人协作的“纯写手”——调查显示最常协作对象是产品设计师（448 人）、产品经理（288 人）、产品负责人（261 人）；文案需要决策闭环，至少需要一位明确拍板人。
+- 只愿意“把句子写漂亮”、不愿研究用户与产品上下文的人——雇主看的是决策理由而不是漂亮话。
+- 不愿学 Figma、看不懂界面结构、也不愿用 AI 工具的人——这类人会被基础 AI 生成直接替代。
+- 追求快速躺赚、不愿花 2–3 个月攒案例与口碑的人。
+- 想把“合规文案”当法律意见出具的人——这会越过专业边界。
+
+九、3 个可验证的入门步骤
+1. 第 1–2 天：选 2 个你每天用的产品，截 3 个有问题的界面（报错 / 空状态 / 引导），按“问题—改写—理由”做 before-after 对照；用 Nielsen Norman Group 的 error message guidelines 与十条可用性启发式逐条核对。产出 1 个可公开展示的作品集案例，验证你是否愿意做这种细致判断。
+2. 第 2–3 天：读完 UX Content Collective 2025 薪酬调查与 WorkCalc 费率报告，据此定一个明确报价（例如“20 屏文案审计 $299”）；注册 Figma 免费档 + Notion，做一页服务说明和一份文案表模板。验证：你能否在 30 分钟内把报价讲清楚。
+3. 第 4–7 天：在 Fiverr / Upwork / Contra 上架一个明确范围的小 gig，并向 10 家独立 SaaS / 出海 App 团队发具体 pitch（附你的 before-after 案例）；目标 2 周内拿到 1 单 $100–$300 的付费审计。若 2 周零询盘，调整的是定位（如专做 Fintech 引导流程文案）与渠道，而不是放弃方向。
+
+十、核验来源
+1. UX Content Collective — Content Design Salary Survey 2025（598 份回应、40+ 国家；全球中位年薪 $110,000、美国 $147,000、自由职业中位 $70–80/小时；24% 经历裁员）
+2. WorkCalc — Freelance Rates Report 2025（UX Writer 中位 $75/小时、区间 $45–110、同比 +14%）
+3. WebPeak — What is UX Writing and Why It's a High-Demand Skill in 2025（美国中级 $80K–120K、自由职业 $75–200+/小时、需用 Figma）
+4. Technical Writer HQ — What is UX Writing? 2026 指南（引用 UX Writing Hub 2026：技术素养者约 20% 溢价；职业路径与 AI 影响）
+5. Nielsen Norman Group — Error Message Guidelines（报错文案的实证研究，写作依据）
+6. Nielsen Norman Group — Ten Usability Heuristics（含“帮助用户识别、诊断和恢复错误”等原则）
+7. Baymard Institute（电商 UX 研究，微文案对转化影响的参考库）
+8. Fiverr — UX writing 服务搜索页（真实 gig 与定价样本，验证市场存在）
+"""
+
+result = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：UX 文案与产品微文案服务（UX Writing / Microcopy）",
+    "status": "success",
+    "startedAt": started.isoformat(),
+    "finishedAt": finished.isoformat(),
+    "summary": "UX 文案 / 产品微文案服务是把 App 与 SaaS 里的按钮、报错、引导、空状态写成用户一眼就懂并推动下一步动作的文字，并沉淀成文案规范。它需求藏在“用户看不懂就流失”的痛点后、职业规模极小且有多个别名，一人可用 Figma 与文案表异步交付、启动成本近零、面向全球出海产品，是适合 OPC 与数字游民的小众文字服务。",
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": ["daily", "niche-industry", "opc", "digital-nomad", "ux-writing", "microcopy", "content-design", "product-copy"],
+    "nextSteps": [
+        "选 2 个常用产品截 3 个问题界面，按“问题—改写—理由”做 before-after，并用 Nielsen Norman Group 的错误提示指南与十条启发式核对，产出 1 个作品集案例",
+        "读 UX Content Collective 2025 薪酬调查与 WorkCalc 费率报告定一个明确报价（如 20 屏审计 $299），注册 Figma 与 Notion 做一页服务说明和文案表模板",
+        "在 Fiverr / Upwork / Contra 上架小 gig 并向 10 家独立 SaaS 或出海 App 团队发带案例的 pitch，2 周内拿 1 单 $100–$300 付费审计验证意愿"
+    ],
+    "artifacts": [
+        {"label": "UX Content Collective — Content Design Salary Survey 2025", "path": "https://uxcontent.com/content-design-and-ux-writer-salary-survey/"},
+        {"label": "WorkCalc — Freelance Rates Report 2025", "path": "https://workcalc.app/blog/freelance-rates-report-2025"},
+        {"label": "WebPeak — What is UX Writing and Why It's a High-Demand Skill in 2025", "path": "https://webpeak.org/blog/what-is-ux-writing-and-why-its-a-high-demand-skill-in-2025"},
+        {"label": "Technical Writer HQ — What is UX Writing? 2026 指南", "path": "https://technicalwriterhq.com/ux-writing/"},
+        {"label": "Nielsen Norman Group — Error Message Guidelines", "path": "https://www.nngroup.com/articles/error-message-guidelines/"},
+        {"label": "Nielsen Norman Group — Ten Usability Heuristics", "path": "https://www.nngroup.com/articles/ten-usability-heuristics/"},
+        {"label": "Baymard Institute — 电商 UX 研究库", "path": "https://www.baymard.com/"},
+        {"label": "Fiverr — UX writing 服务搜索页（定价样本）", "path": "https://www.fiverr.com/search/gigs?query=ux%20writing"}
+    ]
+}
+
+out_dir = os.path.join(os.path.dirname(__file__), "runs-workbuddy", "2026-11-16")
+os.makedirs(out_dir, exist_ok=True)
+out_path = os.path.join(out_dir, "niche-opc-industry.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(result, f, ensure_ascii=False, indent=2)
+print("written:", out_path)
