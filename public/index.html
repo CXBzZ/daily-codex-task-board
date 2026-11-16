@@ -21,9 +21,9 @@
         <p class="lede">A generated dashboard for Codex automations, daily runs, and historical outcomes.</p>
       </div>
       <dl class="stats">
-        <div><dt>Total runs</dt><dd>107</dd></div>
-        <div><dt>Tracked days</dt><dd>105</dd></div>
-        <div><dt>Today</dt><dd>0</dd></div>
+        <div><dt>Total runs</dt><dd>108</dd></div>
+        <div><dt>Tracked days</dt><dd>106</dd></div>
+        <div><dt>Today</dt><dd>1</dd></div>
       </dl>
     </section>
 
@@ -33,9 +33,84 @@
           <p class="eyebrow">Today</p>
           <h2>2026-11-16</h2>
         </div>
-        
+        <a class="text-link" href="days/2026-11-16.html">Open day</a>
       </div>
-      <div class="empty-state">No Codex automation results have been reported for today yet.</div>
+      <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="days/2026-11-16.html">2026-11-16</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型 SaaS 的 SAML SSO / SCIM 用户预配上线前 QA，属于中国境内可远程承接的海外市场。它适合以测试租户、固定测试用例和证据化交接试单的 OPC/数字游民；不得接触生产令牌、私钥、管理员凭据或真实用户目录。</p>
+      <div class="details">## 行业是什么、为什么小众
+
+这是一项介于企业身份集成和软件测试之间的窄服务：客户的 SaaS 要接入企业客户的身份提供商（例如 Microsoft Entra 或 Okta）时，服务商在客户授权的测试环境中核对 SAML 单点登录（SSO）配置，并验证 SCIM 用户创建、更新、停用和重新启用是否符合预期，最后交付测试用例、问题清单、截图/日志证据与交接说明。它比一般 QA 更需要理解 Entity ID、ACS URL、NameID、claims、证书轮换、SCIM CRUD 和停用语义；又比安全审计、身份产品开发或 7×24 运维窄得多，因此是小众 B2B 技术服务。Microsoft 的测试说明要求核对 issuer、ACS URL、NameID、claims 与签名证书；Okta 的 SCIM 指南列出创建、读取、更新、停用、重新启用等验证路径。
+
+## 目标市场、客户与需求场景
+
+目标为“中国境内可做的海外市场”：英文为主的早期 B2B SaaS、开发者工具、内部工具厂商，以及为其实施企业登录的海外小型软件工作室。典型触发点是：大客户采购前要求 SSO/自动预配；产品要上架身份平台目录；版本升级后担心用户停用或属性映射失效；客户需要独立的上线前复测与证据包。中国境内 OPC 可经英文技术作品集、开源/开发者社区、Upwork 等平台（须先确认当前居住地、身份核验、结算与站内沟通规则）或直接 B2B 合同获客；先从客户自建 sandbox 的小范围验证开始。
+
+## 参与方与工作流
+
+1. 客户产品负责人和客户管理员书面确定 IdP、测试租户、测试账号、属性映射、范围、验收与回滚责任；服务商不替客户作访问控制、安全或合规结论。
+2. 客户管理员在其环境自行创建短期测试账号、SAML 证书和 SCIM token，并执行所有生产变更；服务商仅在必要时获可审计、可撤销的最小权限，绝不索取或保存私钥、长期管理员凭据、SCIM Bearer Token 或真实用户目录。
+3. 按测试矩阵核验 SAML 登录/登出、错误提示、issuer/ACS/NameID/claims、证书有效性与属性映射；用虚构身份资料测试 SCIM create/read/update/deactivate/reactivate。Okta 的公开测试流程明确包含这些 CRUD 与停用/重启用步骤。
+4. 交付通过/失败用例、可复现步骤、脱敏请求响应/截图、风险项、复测结论、权限撤销确认与由客户管理员执行的上线清单。目录上架、生产发布、密钥轮换和最终安全验收由客户负责。
+
+## 盈利模式、潜在收益与成本
+
+可产品化为“一种 IdP + 一套测试租户 + 约 10–20 个用例 + 一轮复测”的固定范围 QA 包，或按小时做问题复现与交接。没有可核验的本细分统一市场价；仅以 Upwork 公开的全球软件开发历史合约区间 US$10–100/小时作宽泛参照，并非 SSO/SCIM QA 成交价。谨慎的试单假设为 6–12 小时、US$25–60/小时，即 US$150–720；按 1 USD≈¥7.1 粗算约 ¥1,065–5,112，前提是客户已备好 sandbox、技术对接人与测试账号，且不含开发修复、目录上架、生产排障或待命。
+
+收入来自一次性上线前 QA、版本升级后的回归验证和文档交接；成本包括获客空档、英文沟通、平台费、收款/汇兑、税费、隔离测试环境、日志脱敏与责任保险。不得承诺上架、企业客户采购、零故障、认证通过、稳定月收入或安全合规。
+
+## 入门门槛
+
+技能：英文技术阅读/写作、HTTP/API 与 OAuth/Bearer-token 基础、SAML 字段和 SCIM 2.0 的基本语义、浏览器网络排错、测试设计、脱敏报告与变更记录。设备：电脑、隔离浏览器 profile、无真实数据的开发/测试租户、抓包或日志查看工具及表格即可。资金固定投入较低，主要时间成本是搭建模拟 IdP/SP、学习失败案例和形成可复用测试矩阵。没有中国强制职业许可，但不得自称 IdP 官方、安全审计师、渗透测试者、合规认证机构或法律顾问。
+
+## 中国境内承接海外市场：合规、收款与远程交付
+
+合同/SOW 应明确：测试租户与数据角色、客户必须自行保管的证书/令牌/生产动作、允许访问的最小范围、日志脱敏、保密与删除期限、时区窗口、返工次数、验收和责任边界。收款使用客户与平台允许、可留痕的方式，保留合同、交付、收款/发票与权限撤销记录；境内主体或个人应按自身注册地与业务性质处理税务申报和票据，向主管税务机关或专业人士确认，不把本文当税务意见。
+
+数据/隐私是核心限制：默认只使用虚构测试用户与客户在境外收集的数据，并禁止导出目录。国家网信办《促进和规范数据跨境流动规定》明确，对中国境内个人信息出境仍有告知、单独同意、个人信息保护影响评估等义务；适用门槛和豁免须由数据处理者自行判断。服务商不应把真实中国境内个人信息带出境或替客户判断数据出境合规。语言与时区方面，应能写英文缺陷报告，并与欧美客户约定少量重叠联调窗口；大多数取证和文档工作可异步完成。
+
+## 为什么适合（及不完全适合）OPC/数字游民
+
+OPC 适配度 4/5：范围可标准化为测试矩阵、证据包和复测，固定资产轻，单人可交付；但多 IdP、多租户、定制协议开发、目录上架、生产故障和持续 on-call 不宜一人承诺。数字游民适配度 4/5：大部分准备、测试和报告可远程异步完成；限制是稳定网络、保密工作环境、欧美时区联调，以及身份系统事故可能要求即时响应。
+
+## 风险、合规注意与不适合人群
+
+风险包括错误属性映射造成越权/拒登；错误停用逻辑导致账号保留或误禁用；证书、token、管理员权限泄露；日志含个人信息；将功能测试误售为安全审计或合规认证；跨境数据和税务留痕不足。控制方式是书面授权、客户管理员执行敏感动作、短期最小权限、虚构数据优先、日志脱敏、权限到期撤销、证据留档与明确回滚。
+
+不适合没有基础协议/英文能力、期待“无技术快速变现”、想代管客户生产账号或密钥、需要 24×7 支持，或想对安全、合规、上架和采购结果作保证的人。
+
+## 新手低成本验证步骤
+
+1. 在本地/开发环境搭建一个不含个人数据的 demo SP 或使用公开 sandbox，按 SAML 登录与 SCIM CRUD 写出 10 个测试用例和脱敏报告样本。
+2. 将第一单限制为一个 IdP、一个测试租户、虚构账号、固定用例和一次复测；明确排除代码开发、生产发布、目录提交与安全审计。
+3. 只接收客户提供的短期最小权限或由客户屏幕共享自行操作的项目；在结束时交付证据包并确认测试账号、临时 token/权限和本地素材已撤销/删除。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险为中；跨境执行风险为中。
+
+收益口径被认为克制：仅把 Upwork 的宽泛软件/QA 公开小时区间作参考，明确不是本细分成交价且不承诺收入。来源可信度足够：Microsoft Learn、Okta Developer、国家网信办均为一手来源，Upwork 只用于宽泛报价参照。审稿最重要的补充提醒是：所有涉及 SAML 证书、SCIM Bearer Token、管理员账户和真实用户目录的动作，应由客户管理员执行，或仅给短期、可审计的最小权限授权。
+
+## 核验来源
+
+- Microsoft Learn，Debug SAML-based single sign-on to applications：https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/debug-saml-sso-issues
+- Microsoft Learn，Enable SAML single sign-on for an enterprise application：https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso
+- Okta Developer，Test your private SCIM integration：https://developer.okta.com/docs/guides/scim-provisioning-integration-test/main/
+- 国家网信办，《促进和规范数据跨境流动规定》：https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm
+- Upwork，Software Developer Hourly Rates：https://www.upwork.com/hire/software-developers/cost/</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>16/11/2026, 16:00</p><p class="meta-line"><span>Finished</span>16/11/2026, 16:05</p><p class="meta-line"><span>Duration</span>5m</p><p class="meta-line"><span>File</span><code>runs/2026-11-16/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>saas</span><span>identity</span><span>sso</span><span>scim</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用不含个人数据的 demo 环境完成 SAML 与 SCIM CRUD 测试矩阵、截图和脱敏报告样本。</li><li>以一个 IdP、一个测试租户、固定用例和一次复测发布小范围试单，排除生产与安全审计。</li><li>仅接受短期最小权限或客户自行操作，结束时确认权限、测试账号和本地素材已撤销或删除。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/debug-saml-sso-issues">Microsoft Entra SAML 测试与排错</a></li><li><a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-test/main/">Okta SCIM 私有集成测试</a></li><li><a href="https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm">国家网信办数据跨境流动规定</a></li><li><a href="https://www.upwork.com/hire/software-developers/cost/">Upwork 软件开发公开小时费率参考</a></li></ul></div>
+    </article></div>
     </section>
 
     <section class="section">
@@ -45,7 +120,11 @@
           <h2>All recorded days</h2>
         </div>
       </div>
-      <div class="history-list"><a class="history-row" href="days/2026-11-15.html">
+      <div class="history-list"><a class="history-row" href="days/2026-11-16.html">
+          <span class="history-date">2026-11-16</span>
+          <span class="history-summary">1 run</span>
+          <span class="status-strip"><span class="status success">Success: 1</span></span>
+        </a><a class="history-row" href="days/2026-11-15.html">
           <span class="history-date">2026-11-15</span>
           <span class="history-summary">1 run</span>
           <span class="status-strip"><span class="status success">Success: 1</span></span>
@@ -469,7 +548,7 @@
     </section></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 16/11/2026, 09:20</span>
+      <span>Generated 16/11/2026, 16:04</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
