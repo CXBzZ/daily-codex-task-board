@@ -21,8 +21,8 @@
         <p class="lede">A generated dashboard for Codex automations, daily runs, and historical outcomes.</p>
       </div>
       <dl class="stats">
-        <div><dt>Total runs</dt><dd>108</dd></div>
-        <div><dt>Tracked days</dt><dd>106</dd></div>
+        <div><dt>Total runs</dt><dd>109</dd></div>
+        <div><dt>Tracked days</dt><dd>107</dd></div>
         <div><dt>Today</dt><dd>1</dd></div>
       </dl>
     </section>
@@ -31,85 +31,93 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">Today</p>
-          <h2>2026-11-16</h2>
+          <h2>2026-11-17</h2>
         </div>
-        <a class="text-link" href="days/2026-11-16.html">Open day</a>
+        <a class="text-link" href="days/2026-11-17.html">Open day</a>
       </div>
       <div class="run-grid"><article class="run-card">
       <div class="run-card-header">
         <div>
           <a class="task-link" href="tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
-          <p class="meta-line"><span>Date</span><a href="days/2026-11-16.html">2026-11-16</a></p>
+          <p class="meta-line"><span>Date</span><a href="days/2026-11-17.html">2026-11-17</a></p>
         </div>
         <span class="status success">Success</span>
       </div>
-      <p class="summary">今天的小众行业是面向海外小型 SaaS 的 SAML SSO / SCIM 用户预配上线前 QA，属于中国境内可远程承接的海外市场。它适合以测试租户、固定测试用例和证据化交接试单的 OPC/数字游民；不得接触生产令牌、私钥、管理员凭据或真实用户目录。</p>
-      <div class="details">## 行业是什么、为什么小众
+      <p class="summary">今天的小众行业是面向海外 10–100 人远程团队的 Google Workspace Shared Drives 外部共享、访问权限与离职交接 QA 服务，属于中国境内可远程承接的海外市场。它适合以只读盘点、最小权限、客户管理员确认变更和复测证据组成的 OPC/数字游民小单；不得代管超级管理员、下载业务文件或承诺安全合规结果。</p>
+      <div class="details">## 行业是什么，为什么小众
 
-这是一项介于企业身份集成和软件测试之间的窄服务：客户的 SaaS 要接入企业客户的身份提供商（例如 Microsoft Entra 或 Okta）时，服务商在客户授权的测试环境中核对 SAML 单点登录（SSO）配置，并验证 SCIM 用户创建、更新、停用和重新启用是否符合预期，最后交付测试用例、问题清单、截图/日志证据与交接说明。它比一般 QA 更需要理解 Entity ID、ACS URL、NameID、claims、证书轮换、SCIM CRUD 和停用语义；又比安全审计、身份产品开发或 7×24 运维窄得多，因此是小众 B2B 技术服务。Microsoft 的测试说明要求核对 issuer、ACS URL、NameID、claims 与签名证书；Okta 的 SCIM 指南列出创建、读取、更新、停用、重新启用等验证路径。
+这是把 Google Workspace 的 Shared Drives（共享云端硬盘）当作一个可验收的“权限与交接配置”项目：盘点外部成员/链接、成员角色、共享盘与文件夹继承关系、离职人员残留访问、以及交接记录，交付风险清单、整改建议和复测证据。它不是泛 IT 外包，也不是渗透测试或合规认证。小众之处在于客户通常只在外部协作失控、员工离职或审计前才意识到 Shared Drives 的组织级与盘级设置相互影响；Google 官方也说明，管理员和具有 Manager 权限的成员可控制共享盘项目访问，禁用外部共享后既有外部访问会失效。
 
-## 目标市场、客户与需求场景
+## 目标市场与客户
 
-目标为“中国境内可做的海外市场”：英文为主的早期 B2B SaaS、开发者工具、内部工具厂商，以及为其实施企业登录的海外小型软件工作室。典型触发点是：大客户采购前要求 SSO/自动预配；产品要上架身份平台目录；版本升级后担心用户停用或属性映射失效；客户需要独立的上线前复测与证据包。中国境内 OPC 可经英文技术作品集、开源/开发者社区、Upwork 等平台（须先确认当前居住地、身份核验、结算与站内沟通规则）或直接 B2B 合同获客；先从客户自建 sandbox 的小范围验证开始。
+目标是中国境内可做的海外英语市场，优先 10–100 人的远程 SaaS、设计/营销代理、咨询公司、非营利组织和跨国小团队。典型需求是：给客户/外包商共享资料后收不回权限；员工离职；准备并购、ISO/SOC 2 前内部自查（本服务不替代审计）；或把散落在个人 My Drive 的团队文件迁入 Shared Drives。买方一般是运营负责人、IT generalist、Workspace 管理员或项目负责人。
 
-## 参与方与工作流
+## 怎么运作
 
-1. 客户产品负责人和客户管理员书面确定 IdP、测试租户、测试账号、属性映射、范围、验收与回滚责任；服务商不替客户作访问控制、安全或合规结论。
-2. 客户管理员在其环境自行创建短期测试账号、SAML 证书和 SCIM token，并执行所有生产变更；服务商仅在必要时获可审计、可撤销的最小权限，绝不索取或保存私钥、长期管理员凭据、SCIM Bearer Token 或真实用户目录。
-3. 按测试矩阵核验 SAML 登录/登出、错误提示、issuer/ACS/NameID/claims、证书有效性与属性映射；用虚构身份资料测试 SCIM create/read/update/deactivate/reactivate。Okta 的公开测试流程明确包含这些 CRUD 与停用/重启用步骤。
-4. 交付通过/失败用例、可复现步骤、脱敏请求响应/截图、风险项、复测结论、权限撤销确认与由客户管理员执行的上线清单。目录上架、生产发布、密钥轮换和最终安全验收由客户负责。
+1. 先签 SOW/NDA，定义“只读盘点、脱敏截图、建议、复测”范围、资料保存期和紧急联系人。
+2. 客户在测试共享盘或最小权限角色下提供访问；服务商只记录文件夹/成员/角色/共享规则等元数据，不下载业务内容，不导出通讯录。
+3. 用清单检查外部成员、公开链接、Manager 数量、成员继承、敏感资料盘、离职者、例外批准和交接责任人；按风险分级形成整改建议。
+4. 客户管理员逐项确认并在生产环境执行删除、角色变更、所有权/资料迁移或外部共享调整；服务商在测试窗口复测，交付变更日志、遗留风险和下一次复查日期。
 
-## 盈利模式、潜在收益与成本
+## 盈利模式与克制的收入口径
 
-可产品化为“一种 IdP + 一套测试租户 + 约 10–20 个用例 + 一轮复测”的固定范围 QA 包，或按小时做问题复现与交接。没有可核验的本细分统一市场价；仅以 Upwork 公开的全球软件开发历史合约区间 US$10–100/小时作宽泛参照，并非 SSO/SCIM QA 成交价。谨慎的试单假设为 6–12 小时、US$25–60/小时，即 US$150–720；按 1 USD≈¥7.1 粗算约 ¥1,065–5,112，前提是客户已备好 sandbox、技术对接人与测试账号，且不含开发修复、目录上架、生产排障或待命。
+可按“固定范围健康检查 + 复测”或按小时收费，而不是卖“绝对安全”。公开 Upwork 样本显示：Google Workspace 管理员岗位可见每小时 US$10–25，资深顾问岗位为 US$35–75；平台的美国 Google Suite 管理员聚合页给出的典型区间为 US$50–100/h。这些只是公开平台报价/招聘旁证，不代表新手成交价，也未必适用于中国服务商。
 
-收入来自一次性上线前 QA、版本升级后的回归验证和文档交接；成本包括获客空档、英文沟通、平台费、收款/汇兑、税费、隔离测试环境、日志脱敏与责任保险。不得承诺上架、企业客户采购、零故障、认证通过、稳定月收入或安全合规。
+以 2026-11-17 人民币中间价约 1 USD=¥6.7132 的换算口径，入门者若把范围限定为 1–3 个共享盘、只读盘点和一次复测，试单可尝试 US$100–300（约¥670–2,014）的固定价；有案例、英文沟通和管理员经验后，才可能按 US$25–50/h（约¥168–336/h）或更高固定包报价。收入要扣除平台服务费、收款换汇费、税费、工具订阅、保险/专业支持、售前沟通及返工时间；没有客户授权、没有可复用清单或需要跨时区夜间变更时，项目很容易不盈利。
 
 ## 入门门槛
 
-技能：英文技术阅读/写作、HTTP/API 与 OAuth/Bearer-token 基础、SAML 字段和 SCIM 2.0 的基本语义、浏览器网络排错、测试设计、脱敏报告与变更记录。设备：电脑、隔离浏览器 profile、无真实数据的开发/测试租户、抓包或日志查看工具及表格即可。资金固定投入较低，主要时间成本是搭建模拟 IdP/SP、学习失败案例和形成可复用测试矩阵。没有中国强制职业许可，但不得自称 IdP 官方、安全审计师、渗透测试者、合规认证机构或法律顾问。
+技能：英文书面沟通、Google Workspace 管理/Shared Drives 权限模型、风险分级、变更记录和基础隐私意识。设备软件：电脑、表格/文档、屏幕录制或截图脱敏工具、测试 Workspace 环境；不需要重资产。时间：先用 Google 官方文档搭一套检查表，在自己的测试组织练习成员、外部共享和继承规则；首个项目要预留售前范围澄清和复测窗口。资质：没有法定“Workspace 顾问牌照”，但 Google 认证或过往管理员经历能提高可信度；不能把认证、经验或检查表宣传为安全审计/法律认证。
 
-## 中国境内承接海外市场：合规、收款与远程交付
+## 中国境内承接海外项目的合规与跨境执行
 
-合同/SOW 应明确：测试租户与数据角色、客户必须自行保管的证书/令牌/生产动作、允许访问的最小范围、日志脱敏、保密与删除期限、时区窗口、返工次数、验收和责任边界。收款使用客户与平台允许、可留痕的方式，保留合同、交付、收款/发票与权限撤销记录；境内主体或个人应按自身注册地与业务性质处理税务申报和票据，向主管税务机关或专业人士确认，不把本文当税务意见。
+获客可从 Upwork、LinkedIn、独立站内容或合作 MSP 获得，优先卖“共享盘访问盘点 + 客户自行执行整改 + 复测”而非长期驻场管理员。合同应写清交付物、处理目的、保密、最小权限、不得下载/留存内容、数据删除期限、责任边界、服务费/币种及争议条款；收款使用客户和平台允许的合规渠道，保留合同、工时/验收、结算和收款凭证，并按自身主体类型开具合规发票或凭证。
 
-数据/隐私是核心限制：默认只使用虚构测试用户与客户在境外收集的数据，并禁止导出目录。国家网信办《促进和规范数据跨境流动规定》明确，对中国境内个人信息出境仍有告知、单独同意、个人信息保护影响评估等义务；适用门槛和豁免须由数据处理者自行判断。服务商不应把真实中国境内个人信息带出境或替客户判断数据出境合规。语言与时区方面，应能写英文缺陷报告，并与欧美客户约定少量重叠联调窗口；大多数取证和文档工作可异步完成。
+税务不能想当然：国家税务总局说明，居民个人取得境外所得通常应在次年 3 月 1 日至 6 月 30 日申报；具体收入性质、增值税/企业所得税、出口服务口径和发票问题应由所在地税务机关或专业人士按个案确认。数据方面，文件名、成员邮箱、客户联系人和员工资料都可能是个人信息。仅取最小必要元数据；若客户资料涉及中国境内个人信息向境外提供，则应由相应个人信息处理者评估并履行《个人信息保护法》第三十八、三十九条的路径与告知/单独同意义务，服务商不能替客户作法律结论。
+
+平台与账号边界：遵守 Google Workspace 客户的管理员权限、客户内部政策及所在国适用隐私规则；不索取 Super Admin、长期口令、恢复代码或 API 私钥，不绕过 MFA，不利用导出的文件内容训练模型。英语需求是读懂设置、写风险说明和主持短会；时区是现实成本，生产变更通常需要配合北美/欧洲管理员的工作时段。
 
 ## 为什么适合（及不完全适合）OPC/数字游民
 
-OPC 适配度 4/5：范围可标准化为测试矩阵、证据包和复测，固定资产轻，单人可交付；但多 IdP、多租户、定制协议开发、目录上架、生产故障和持续 on-call 不宜一人承诺。数字游民适配度 4/5：大部分准备、测试和报告可远程异步完成；限制是稳定网络、保密工作环境、欧美时区联调，以及身份系统事故可能要求即时响应。
+适合 OPC：工作可产品化为范围问卷、只读盘点、整改清单、客户执行、复测交接五件套；一人可从小盘、低权限和固定价格试单。它不完全适合一人公司长期单独承接大型租户、紧急事故或 7×24 运维。
 
-## 风险、合规注意与不适合人群
+适合数字游民：报告、会议和复测能远程完成，资产很轻；但要有稳定加密设备和网络、能安排跨时区窗口，并避免在不安全网络处理客户管理后台。若需要客户本地现场盘点、监管审计签字或对方要求常驻响应，则不适合。
 
-风险包括错误属性映射造成越权/拒登；错误停用逻辑导致账号保留或误禁用；证书、token、管理员权限泄露；日志含个人信息；将功能测试误售为安全审计或合规认证；跨境数据和税务留痕不足。控制方式是书面授权、客户管理员执行敏感动作、短期最小权限、虚构数据优先、日志脱敏、权限到期撤销、证据留档与明确回滚。
+## 主要风险与不适合人群
 
-不适合没有基础协议/英文能力、期待“无技术快速变现”、想代管客户生产账号或密钥、需要 24×7 支持，或想对安全、合规、上架和采购结果作保证的人。
+主要风险是误删、错误收回客户访问、共享盘规则理解错误、接触机密/个人信息、越界成“安全审计”、以及跨境税务和收款留痕不足。缓解方式是先在测试盘验证、双人/客户复核高风险变更、变更前备份/回滚说明、最小权限和明确禁止项。不要接来源不明的管理员账号、要求绕过 MFA/导出全部资料、要求伪造审计证据或承诺“永不泄露”的客户。缺少英文、权限模型基础、严谨记录习惯，或无法承受夜间变更窗口的人不适合。
 
 ## 新手低成本验证步骤
 
-1. 在本地/开发环境搭建一个不含个人数据的 demo SP 或使用公开 sandbox，按 SAML 登录与 SCIM CRUD 写出 10 个测试用例和脱敏报告样本。
-2. 将第一单限制为一个 IdP、一个测试租户、虚构账号、固定用例和一次复测；明确排除代码开发、生产发布、目录提交与安全审计。
-3. 只接收客户提供的短期最小权限或由客户屏幕共享自行操作的项目；在结束时交付证据包并确认测试账号、临时 token/权限和本地素材已撤销/删除。
+1. 建立自己的测试 Workspace 或测试账号，按官方文档创建一个 Shared Drive，分别演练内部成员、外部成员、Manager/Content manager 等角色及外部共享开关，并写成一页检查表。
+2. 选一个非敏感的模拟案例，做“盘点表 + 风险分级 + 客户执行步骤 + 复测截图”的英文样例；不要使用真实客户文件或邮箱。
+3. 在平台或独立站只上架 1–3 个共享盘的只读健康检查，售前强制使用范围问卷和书面授权；首单让客户管理员自行执行生产变更，再交付复测报告。
 
 ## 点评 Agent 审稿
 
-独立点评 Agent 结论：通过。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5；合规风险为中；跨境执行风险为中。
-
-收益口径被认为克制：仅把 Upwork 的宽泛软件/QA 公开小时区间作参考，明确不是本细分成交价且不承诺收入。来源可信度足够：Microsoft Learn、Okta Developer、国家网信办均为一手来源，Upwork 只用于宽泛报价参照。审稿最重要的补充提醒是：所有涉及 SAML 证书、SCIM Bearer Token、管理员账户和真实用户目录的动作，应由客户管理员执行，或仅给短期、可审计的最小权限授权。
+独立点评 Agent 结论：
+- 中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 4/5。
+- 合规风险：中；跨境执行风险：中。原因是服务会接触员工、客户和文件元数据，需要合同、最小权限、保密、数据存储边界和中国境内税务申报。
+- 收益口径：合格，前提是明确公开自由职业样本仅作参考，不把资深管理员报价套给新手，也不保证成交。
+- 来源可信度：足够。以 Google 官方权限规则为核心，税务/个人信息使用中国政府来源，公开平台报价仅作市场旁证。
+- 与既有 Notion/Confluence 客户门户权限体检相邻，但对象、权限模型和交付不同；应聚焦 Shared Drives 的外部成员、继承关系和离职交接。
+- 最该提醒的一句：客户管理员必须自行执行或逐项确认生产环境的删除、所有权转移和外部共享变更；服务商只在最小权限下提供盘点、建议、测试与复测证据。
 
 ## 核验来源
 
-- Microsoft Learn，Debug SAML-based single sign-on to applications：https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/debug-saml-sso-issues
-- Microsoft Learn，Enable SAML single sign-on for an enterprise application：https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso
-- Okta Developer，Test your private SCIM integration：https://developer.okta.com/docs/guides/scim-provisioning-integration-test/main/
-- 国家网信办，《促进和规范数据跨境流动规定》：https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm
-- Upwork，Software Developer Hourly Rates：https://www.upwork.com/hire/software-developers/cost/</div>
+- Google Workspace Learning Center《How file access works in shared drives》：https://support.google.com/a/users/answer/12380484
+- Google Gmail《Email sender guidelines》（说明 SPF/DKIM/DMARC 的邮件域名治理背景，非本服务交付承诺）：https://support.google.com/mail/answer/81126
+- 国家网信办《中华人民共和国个人信息保护法》第三十八、三十九、五十五条：https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
+- 国家税务总局《财政部 税务总局关于境外所得有关个人所得税政策的公告》：https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html
+- Upwork《Google Workspace Senior System Administrator Consultant》公开岗位（US$35–75/h）：https://www.upwork.com/freelance-jobs/apply/Google-Workspace-Senior-System-Administrator-Consultant_~022113614560921063035/
+- Upwork《Google Workspace Administrator》公开岗位（US$10–25/h）：https://www.upwork.com/freelance-jobs/apply/Google-Workspace-Administrator_~022094775403564125475/
+- 中国外汇交易中心相关中间价旁证（2026-11-17 约 6.7132）：https://china-snapshot.com/indicators/cny-central-parity</div>
       <div class="run-meta">
-        <p class="meta-line"><span>Started</span>16/11/2026, 16:00</p><p class="meta-line"><span>Finished</span>16/11/2026, 16:05</p><p class="meta-line"><span>Duration</span>5m</p><p class="meta-line"><span>File</span><code>runs/2026-11-16/niche-profit-industry.json</code></p>
+        <p class="meta-line"><span>Started</span>17/11/2026, 15:52</p><p class="meta-line"><span>Finished</span>17/11/2026, 16:01</p><p class="meta-line"><span>Duration</span>9m</p><p class="meta-line"><span>File</span><code>runs/2026-11-17/niche-profit-industry.json</code></p>
       </div>
-      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>saas</span><span>identity</span><span>sso</span><span>scim</span></div>
-      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用不含个人数据的 demo 环境完成 SAML 与 SCIM CRUD 测试矩阵、截图和脱敏报告样本。</li><li>以一个 IdP、一个测试租户、固定用例和一次复测发布小范围试单，排除生产与安全审计。</li><li>仅接受短期最小权限或客户自行操作，结束时确认权限、测试账号和本地素材已撤销或删除。</li></ul></div>
-      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/debug-saml-sso-issues">Microsoft Entra SAML 测试与排错</a></li><li><a href="https://developer.okta.com/docs/guides/scim-provisioning-integration-test/main/">Okta SCIM 私有集成测试</a></li><li><a href="https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm">国家网信办数据跨境流动规定</a></li><li><a href="https://www.upwork.com/hire/software-developers/cost/">Upwork 软件开发公开小时费率参考</a></li></ul></div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>google-workspace</span><span>shared-drives</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>搭建测试 Shared Drive，并完成一页英文权限/外部共享检查表。</li><li>制作不含真实数据的盘点、整改、复测三件套样例。</li><li>以书面授权和客户管理员自行执行生产变更为首单前置条件。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://support.google.com/a/users/answer/12380484">Google Shared Drives 访问规则</a></li><li><a href="https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm">个人信息保护法（网信办）</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3752930/n3752974/c5143076/content.html">国家税务总局境外所得政策</a></li><li><a href="https://www.upwork.com/freelance-jobs/apply/Google-Workspace-Senior-System-Administrator-Consultant_~022113614560921063035/">公开 Google Workspace 顾问岗位报价样本</a></li></ul></div>
     </article></div>
     </section>
 
@@ -120,7 +128,11 @@ OPC 适配度 4/5：范围可标准化为测试矩阵、证据包和复测，固
           <h2>All recorded days</h2>
         </div>
       </div>
-      <div class="history-list"><a class="history-row" href="days/2026-11-16.html">
+      <div class="history-list"><a class="history-row" href="days/2026-11-17.html">
+          <span class="history-date">2026-11-17</span>
+          <span class="history-summary">1 run</span>
+          <span class="status-strip"><span class="status success">Success: 1</span></span>
+        </a><a class="history-row" href="days/2026-11-16.html">
           <span class="history-date">2026-11-16</span>
           <span class="history-summary">1 run</span>
           <span class="status-strip"><span class="status success">Success: 1</span></span>
@@ -548,7 +560,7 @@ OPC 适配度 4/5：范围可标准化为测试矩阵、证据包和复测，固
     </section></main>
     </div>
     <footer class="site-footer">
-      <span>Generated 16/11/2026, 16:04</span>
+      <span>Generated 17/11/2026, 15:59</span>
       <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
     </footer>
   </body>
