@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-18 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-18</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-18.html">2026-11-18</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的小众行业是面向海外小型开源项目与软件工作室的 GitHub CodeQL 默认扫描、Dependabot 告警分诊与交接 QA 服务，属于中国境内可远程承接的海外市场。它可由 OPC/数字游民以只读盘点、客户管理员确认配置、测试复核和证据报告小单验证；不等同于安全审计、渗透测试或漏洞修复承诺。</p>
+      <div class="details"># GitHub CodeQL 默认扫描、Dependabot 告警分诊与交接 QA 服务
+
+## 行业是什么，为什么小众
+
+这是为已有 GitHub 仓库、却没有专职安全工程师的海外小型开源项目、独立软件工作室和 5—50 人 SaaS 团队，把 GitHub 原生安全功能从“开着但没人管”整理成可交接工作流的轻量技术服务。工作范围是：盘点仓库语言、Actions、默认/高级 CodeQL 设置、扫描覆盖与失败日志；启用或核对客户选择的 CodeQL 默认设置；按运行时/开发依赖、可达性、补丁可用性等信息整理 Dependabot 告警；建立由客户决定的优先级、负责人和复核节奏；交付配置快照、告警台账、不可自动处理项、测试记录与回滚说明。
+
+它小众，因为它介于 DevOps、应用安全、开源维护和项目协调之间：不是替客户“黑盒找洞”，也不是泛 GitHub 代运营。GitHub 官方说明，符合条件的公开仓库可使用 CodeQL 默认设置；默认设置会依据仓库选择语言与触发条件，而私有仓库/组织仓库是否可用还受 GitHub Code Security 启用状态影响。Dependabot 则会为发现的易受攻击依赖生成告警，并提供按生态、依赖范围、补丁可用性等线索分诊。小团队常有工具却缺少一次性梳理、配置验证与交接文档，因而可以形成固定范围的远程服务。
+
+## 目标市场、客户与需求场景
+
+目标市场是中国境内可做的海外英语市场，优先是公开 GitHub 项目、开源商业化团队、开发者工具、小型 SaaS 和外包软件工作室。典型买方为技术创始人、CTO、维护者或兼职 DevOps。
+
+常见触发场景：发布前想知道扫描是否真的覆盖主要语言；Dependabot 告警积压、不知道先升级哪一个；CI 因扫描或依赖更新失败；客户在安全问卷中被问到代码扫描和依赖漏洞管理；维护者更替，需要将告警、例外理由和升级流程交接。服务仅在客户书面授权的仓库与测试分支内开展；没有书面授权不访问私有仓库，不执行陌生仓库的安装脚本。
+
+## 典型参与方与工作流
+
+参与方包括客户的仓库管理员/代码负责人、执行服务的 OPC、必要时负责修复的开发者，以及客户的安全或法务联系人。推荐工作流：
+
+1. 签订固定范围说明和保密/数据处理条款，确认仓库、允许的权限、禁止触碰的环境与交付格式；优先只读访问或临时协作者权限。
+2. 做无执行盘点：识别语言、现有 Actions、CodeQL 设置、扫描最近状态、Dependabot 配置和告警数量；不下载生产数据、不读取 secrets、不运行不受信任脚本。
+3. 在客户管理员确认后，优先使用 GitHub UI 的默认设置，或提交可审查 PR/配置建议；对编译语言、私有依赖、已有高级设置等例外单列。GitHub 提醒从高级设置切至默认设置可能停用既有工作流，不能不经客户确认切换。
+4. 将告警按运行时/开发依赖、可达性、补丁可用性、影响组件、测试难度编为“待客户决策”的分诊表，不自行关闭告警。
+5. 用客户指定的测试分支或测试仓库观察一次扫描/更新结果，记录失败日志链接、扫描覆盖和未覆盖原因。
+6. 交付仓库级配置快照、告警台账、责任边界、复核 SOP、回滚说明与 30 分钟英文交接会议纪要；修复代码、合并 PR、接受风险和生产发布始终由客户授权人员决定。
+
+## 盈利模式与报价口径
+
+收入来自固定范围的“首轮盘点 + 配置/复核 + 交接包”，而非按发现漏洞数量收费；可另售每月一次只读告警台账更新与例外到期提醒。以下为服务方可用来小规模试单的报价假设，不是平台平均价、也不是收益承诺：
+
+- 单公开仓库、1—2 个主语言、仅盘点/报告：USD 120—250，按 1 USD≈7.1 CNY 粗略折算约 RMB 850—1,780。
+- 单仓库默认设置核验、告警分诊表、一次测试复核及交接：USD 300—700，约 RMB 2,130—4,970。
+- 3—5 个仓库、只读月度台账与一次例会：USD 250—800/月，约 RMB 1,780—5,680/月；不含修复开发、安全审计、GitHub 订阅或 Actions 用量。
+
+可验证的收入前提是：客户已拥有合适的 GitHub 订阅/功能资格、能指定有决策权的代码负责人、仓库语言在工具可覆盖范围内、扫描结果有可交接对象。成本通常是英文沟通与报告时间、测试仓库/CI 用量、密码管理器、版本控制和必要的专业责任/网络安全保险；若需购买商业安全产品、聘用本地律师或修复复杂依赖，须另行报价。
+
+## 入门门槛
+
+技能：读懂 GitHub 仓库结构、GitHub Actions 日志、依赖清单与 lockfile，理解 CodeQL 默认/高级设置差异、Dependabot 告警字段与基本 CVE/CVSS 概念；还要能用英文写出“不保证无漏洞”的清晰边界。设备/软件：一台加密并及时更新的电脑、独立 GitHub 测试账号/私有练习仓库、密码管理器、MFA、记录工具和安全网络。
+
+资质与资金：开始做配置与 QA 通常不要求当地职业牌照，但不应自称“认证安全审计师”或出具合规认证；若报价包含渗透测试、法律合规意见、SOC 2 审计或事件响应，应转介相应专业人士。启动资金可很轻，重点是搭建公开演示仓库、去敏的样例报告、英文服务条款和安全操作规范。时间成本方面，先花 2—4 周练习公开样例与文档，首次固定范围交付通常要 1—3 个工作日，复杂多语言/私有依赖仓库会显著变长。
+
+## 跨境获客、交付、收款、税务、平台与数据合规
+
+获客可从英文 GitHub 作品集、开源社区的可公开配置检查、技术博客、Upwork 等允许中国境内接单者使用的平台，或直接 B2B 邮件/转介绍开始；在注册前必须逐项确认平台对中国居住地、身份核验、服务费、站内沟通与收款方式的当期规则。不得批量骚扰项目维护者，不能把公开仓库安全问题当作恐吓式营销。
+
+远程交付宜使用客户自有 GitHub 组织、客户指定的工单系统和加密文件区；权限最小化、可到期、启用 MFA，避免获取组织 Owner、生产云账号、secrets、私钥或源代码的本地长期副本。合同至少写清工作范围、访问方式、数据/代码归属、保密、分包禁止或条件、责任上限、结果并非安全保证、漏洞披露联系人、终止和权限回收。
+
+收款应使用客户合同、里程碑验收记录和合规的跨境收款渠道；个人或一人公司需按自身主体类型、业务实质和所在地税务要求留存合同、发票/收款与成本凭证并申报。国家税务总局 2024 年“走出去”税收指引提示：居民个人取得境外所得通常应在取得所得次年 3 月 1 日至 6 月 30 日申报；具体所得性质、增值税/企业所得税、外汇与发票问题差异很大，应在首单前向主管税务机关或持证税务专业人士确认，不能把本段当税务意见。
+
+数据与隐私：项目应优先不处理真实用户个人信息；若日志、issue、告警或仓库含中国境内个人信息、重要数据或客户机密，先做数据地图和合同授权，并采取脱敏、最小化访问、地域与保存期限控制。中国《个人信息保护法》对向境外提供个人信息规定了相应条件和告知/单独同意要求；网信办 2025 年政策问答也强调重要数据出境可能触发安全评估。不要把跨境数据合规理解为“拿到客户 GitHub 邀请即可”。
+
+语言和时区：需要能读英文安全公告、写清楚升级风险和开会解释；欧美客户的重叠时间通常在中国晚间，OPC 应把紧急响应排除在服务范围之外，或只提供预约窗口，避免变成 7×24 值守。
+
+## 为什么适合或不完全适合 OPC / 数字游民
+
+适合 OPC 的地方在于可把交付标准化为范围确认、盘点、配置核验、告警台账、复测和交接包；固定资产低，试单可从一个公开仓库开始。但它不完全适合没有工程经验的人：告警分诊会影响升级顺序，误配置还可能干扰 CI，必须让客户最终决策。
+
+它较适合数字游民，因为盘点、文档、测试和会议都可远程完成，交付物可异步审阅。限制是客户代码、日志和安全信息敏感，公共 Wi-Fi、共享设备、频繁跨国漫游和不稳定时区都不理想；不适合把它做成边旅行边随手登录客户生产组织的工作。
+
+## 潜在收益、风险与不适合人群
+
+潜在收益应按可售工时和验收范围估计，而非按“发现多少漏洞”估计。例如每月完成 2 个 USD 300—700 的单仓库项目，毛收入才可能约 USD 600—1,400（约 RMB 4,260—9,940）；还要扣除平台服务费、收款费用、税费、获客、软件、保险和未计费沟通时间。能否持续接单取决于英文技术可信度、公开作品、范围控制、客户是否真能修复，而不是工具自动扫描本身。
+
+主要风险包括：把扫描告警误当成已证实漏洞；将 Dependabot 自动更新直接合并造成兼容性问题；覆盖率不足却给客户“已扫描全部代码”的印象；误触客户 secrets 或生产环境；客户代码/个人信息跨境与保密违规；平台/付款账户身份限制；以及客户把配置 QA 误解为安全认证。严禁承诺“无漏洞”“通过任何安全审查”“自动修复所有漏洞”或“不会影响 CI”。不适合缺乏 Git、依赖管理和英文沟通基础的人，也不适合需要立即高收入、不能承受保密责任、或只能使用公共/不受控设备的人。
+
+## 新手低成本验证步骤
+
+1. 建一个自己拥有的公开练习仓库（如简单 Node/Python 示例），分别记录 CodeQL 默认设置、Dependabot 配置、一次扫描结果和一份脱敏交接报告；不要用客户仓库练手。
+2. 用固定范围的一页英文服务说明试投 10 个合规渠道：明确“只读盘点/客户确认/测试复核/报告，不含漏洞修复、渗透测试、全天候响应”，并展示去敏样例。
+3. 争取 1 个低价或免费但书面授权的试点：只做一个仓库的盘点与台账，客户自行决定配置/修复；复盘实际沟通耗时、CI 用量、权限回收和验收，再决定正式报价。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过（附带边界条件）。
+
+- 中国境内承接海外市场适配度：4/5。工作可远程交付且 GitHub 是全球化工具，但平台可用性、跨境收款和客户信任需逐单确认。
+- OPC/一人公司适配度：4/5。单仓库的盘点、配置核验、证据报告可产品化；不宜由一人承接高风险生产变更或安全事故。
+- 数字游民适配度：3/5。异步文档和测试友好，但源代码/安全信息敏感、夜间时区与安全设备要求削弱了随时随地工作的可行性。
+- 合规风险等级：中。不是强牌照业务，但合同、保密、数据访问、成果表述和税务必须规范。
+- 跨境执行风险等级：中。主要来自平台身份与收款规则、跨境数据、时区和客户对安全责任的期待。
+- 收益口径是否克制：是。报价明确为试单假设，给出了前提与成本，不把扫描结果或漏洞数量转换为收益承诺。
+- 信息来源是否足够可信：是。核心技术事实采用 GitHub 官方文档，税务与数据出境采用中国政府/网信办公开资料；商业报价仅作为透明的服务方试单假设。
+- 最该补充或提醒的一句话：任何涉及私有仓库、日志或告警数据的首单，都应先把“是否含个人信息/重要数据、允许在哪个地域访问、谁可最终关闭告警”写进书面范围。
+
+## 关键核验来源
+
+- GitHub Docs《Configuring default setup for code scanning》：https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning
+- GitHub Docs《Evaluating default setup for code scanning》：https://docs.github.com/en/code-security/tutorials/customize-code-scanning/evaluate-default-setup
+- GitHub Docs《Viewing and updating Dependabot alerts》：https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts
+- GitHub Docs《Configuring Dependabot alerts》：https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts
+- 国家税务总局《“走出去”税收指引（2024年修订版）》：https://www.gov.cn/lianbo/bumen/202410/P020241017623586051734.pdf
+- 中央网信办《中华人民共和国个人信息保护法》：https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
+- 中央网信办《数据出境安全管理政策问答（2025年5月）》：https://www.cac.gov.cn/2025-05/30/c_1750315283722063.htm
+
+本内容是行业教育，不构成法律、税务、信息安全审计或投资建议。</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>18/11/2026, 16:00</p><p class="meta-line"><span>Finished</span>18/11/2026, 16:14</p><p class="meta-line"><span>Duration</span>14m</p><p class="meta-line"><span>File</span><code>runs/2026-11-18/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>github</span><span>application-security</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>在自有公开练习仓库完成一次 CodeQL 默认设置、Dependabot 配置和脱敏交接报告。</li><li>发布一页英文固定范围服务说明，明确只读盘点、客户确认、测试复核与不包含的安全责任。</li><li>以书面授权的单仓库试点复盘权限、工时、CI 用量和验收，再确定正式报价。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning">GitHub CodeQL 默认设置官方文档</a></li><li><a href="https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts">GitHub Dependabot 告警官方文档</a></li><li><a href="https://www.gov.cn/lianbo/bumen/202410/P020241017623586051734.pdf">国家税务总局走出去税收指引（2024年修订版）</a></li><li><a href="https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm">个人信息保护法（中央网信办）</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 18/11/2026, 16:02</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
