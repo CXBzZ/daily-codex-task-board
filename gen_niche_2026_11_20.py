@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""生成 2026-11-20 每日小众赚钱行业 JSON：音乐制谱/乐谱转录服务（Music Transcription & Notation）。"""
+import json
+import os
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+TZ = ZoneInfo("Asia/Shanghai")
+now = datetime.now(TZ)
+started = now.replace(hour=9, minute=18, second=0, microsecond=0)
+finished = now.replace(microsecond=0)
+
+DATE = started.strftime("%Y-%m-%d")
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "runs-workbuddy", DATE)
+OUT_PATH = os.path.join(OUT_DIR, "niche-opc-industry.json")
+
+summary = (
+    "音乐制谱/乐谱转录（Music Transcription）是把一段音频或录音，靠耳朵加软件整理成可演奏的五线谱、"
+    "吉他六线谱（TAB）、和弦谱或 MIDI 文件，交付给音乐老师、乐手、创作者、出版社与影视游戏配乐团队。"
+    "它长期被低估：普通人以为「有 AI 就免费了」，但 AI 只在干净单声部上可靠，密集混音、爵士即兴、"
+    "演出级谱面仍要靠人的听辨与记谱判断，形成「AI 出草稿 + 人工精修」的刚需中端。"
+    "交付全是文件、软件近乎零成本（MuseScore 免费）、全球客户异步可下单，是适合 OPC 与数字游民的创意技术服务。"
+)
+
+details = """一、行业是什么，为什么小众
+一句话定义：把音频/视频里的音乐，人工听辨并整理成结构化、可打印可演奏的乐谱文件——五线谱、吉他六线谱（TAB）、贝斯谱、鼓谱、和弦/歌词 lead sheet、简谱，或 MIDI / MusicXML / Guitar Pro 工程文件。这个工种叫 Music Transcriber / Score Engraver（音乐转录师 / 制谱师），是音乐产业里一个独立而低调的技术活。
+注意与既有覆盖严格区分：此前做过的「专业转录服务」是把语音变成文字稿（字幕/访谈/播客），本次交付的是「把音乐变成音符与谱面」，技能栈（视唱练耳、乐理、记谱）、软件（MuseScore/Sibelius/Guitar Pro）、客户（乐手、老师、出版、配乐）与计价（按音频分钟/复杂度）都完全不同，属创意经济与技术服务交叉的全新方向。
+为什么小众：① 需求隐蔽——客户不会搜「音乐转录服务」，只会搜「帮我把这首歌扒成吉他谱」「把这段旋律打成五线谱」「怎么把音频转成 MIDI」，痛点藏在一个个具体的练习/演出/教学场景里；② 夹在大类之间——上有免费 AI 转谱工具（AnthemScore、Songscription、Klangio/Piano2Notes、Spotify 开源 Basic Pitch），下有 Hal Leonard / Musicnotes 的官方出版谱，中间「人工精修 + 定制改编」这一层没人系统讲；③ 门槛被两极化认知——外行觉得「有 AI 就免费了」，实际上密集混音、爵士即兴、多声部对位里 AI 精度大幅下降，能稳定交付演出级谱面的人少；④ 交付物无形且口碑驱动——谱面质量靠试听与评价体现，不在大众社交平台发酵；⑤ 供给分散——多为散落各地的自由音乐人兼职，缺乏品牌化机构，公开搜索量与竞争度都远低于设计、写作、开发类服务。
+
+二、如何运作
+- 典型客户与需求触发：① 音乐教师与音乐学院学生（把没有出版谱的曲子做成教学材料、把简谱/手稿转成五线谱）；② 业余乐手与翻奏创作者（想弹某首歌却没有 TAB、要把 Synthesia 钢琴视频还原成可编辑谱）；③ 独立音乐人/作曲者（把脑子里哼的旋律、手机录音整理成谱，或请人做乐队分谱）；④ 影视/游戏/广告配乐团队与小型制作公司（把配乐草稿转成总分谱与各声部 part）；⑤ 合唱团、乐团、教堂（把主旋律扩写成四声部或做排练谱）；⑥ 出版商与曲库公司（手稿数字化、旧谱重制、MusicXML/MIDI 资产制作）。触发点都很具体：要练一首没有谱的歌、官方谱写得太敷衍、要演出用的确定版本、要可编辑的工程文件、要一批曲子的批量转录。
+- 核心交付物：① 干净的谱面 PDF / PNG（五线谱或 TAB，含歌词与和弦标记）；② 可编辑工程文件（MusicXML、MIDI、Guitar Pro .gp、MuseScore .mscz、Sibelius/Finale/Dorico 文件）；③ 分谱与总谱（乐队/管弦/合唱各声部 part）；④ 简谱↔五线谱互转、手稿/扫描件数字化重排；⑤ 可选：定制改编（如把流行歌改成独奏钢琴版、指弹吉他版）。明确边界：只做转录与记谱，不代客户解决版权授权（见风险章节）。
+- 完整工作流：获客（Upwork / Fiverr / Contra 上架 gig；Freelancer、Tasker 等任务平台；音乐论坛/社群、YouTube 频道口播、与琴行/老师合作转介）→ 客户给音频、YouTube 链接或手稿，并说明用途、乐器编制、交付格式与期望难度 → 评估时长与复杂度并报价（按音频分钟 + 声部数，约定修改轮次与交期，常收 50% 预付）→ 用慢速播放器/音高工具反复听辨，先记旋律与和声骨架 → 在 MuseScore / Sibelius / Guitar Pro / Dorico 里录入，处理节奏量化、谱表分配、调号、符干与指法 → 逐小节对照原音校对，补歌词/和弦/力度/演奏记号 → 导出 PDF + MusicXML/MIDI/GP → 试听回放核对 → 交付并按约收款尾款。
+- 关键工具与平台：记谱软件 MuseScore Studio（开源免费、支持 MusicXML/MIDI 导入导出、被学校与乐团广泛使用）、Sibelius（行业标准）、Finale、Dorico、Guitar Pro（TAB）；AI 辅助转谱 Songscription、Klangio（Piano2Notes / Guitar2Tabs）、AnthemScore、ScoreCloud、Transcribe!、Spotify 开源 Basic Pitch（免费、仅 MIDI）；文件交换格式 MusicXML/MIDI；获客收款 Upwork、Fiverr、Contra、PayPal/Wise。
+
+三、盈利模式
+- 收入来源与定价：以按项目/按件为主，按音频分钟与复杂度计价，少量按小时与长期 retainer。公开可查的报价：Fiverr 上音乐转录 gig 极多，单件常见 $5–$155 分档（如某 10 年经验卖家 $5/$20/$50 三档，分别覆盖 1 分钟单声部、2 分钟双手、3 分钟完整改编；Top Rated 卖家 60 秒单乐器约 $30，钟情修改与多乐器另报价），大量卖家评价数 1k+、4.9–5.0 星；繁体中文任务平台报价（和弦谱约 200 元、简谱约 700 元、五线单谱 1,000 元、钢琴双谱 2,500 元、合唱/总谱 3,500–5,000 元起，改谱另议）；独立制谱师按难度与长度 USD 50–500/首；专业人工转录服务常按每音频分钟 $18–$35，密集多乐器编排可超 $50/分钟、管弦总谱更高，且有约 $39 起的最低单。
+- 利润空间：软件成本可以极低——MuseScore Studio 免费、Basic Pitch 免费；进阶 AI 草稿工具多为订阅（Songscription 约 €8.99–25.99/月、AnthemScore 桌面版一次性 €30–102、Piano2Notes 约 €13.99/月、ScoreCloud $5.99–20.99/月），但可采用「AI 出草稿 + 人工精修」把单曲成本压到几美元。最大成本是时间——有经验的听谱每音频分钟往往要耗数小时。单人自接、扣平台抽成（Fiverr 约 20%、Upwork 约 10%）后毛利率常见 70%–90%（未计税）。护城河是「演出级准确度 + 可读性 + 交付格式齐全」的口碑与复用的记谱模板/工作流。
+- 复购与长期合同：有天然复购——同一乐手会持续扒新歌，老师每学期要新教材，配乐团队项目制长期外包，出版商有批量数字化。一次合作常带来改编、分谱、MIDI 资产等追加单；与琴行、老师、制作公司建立转介后可拿稳定 retainer 或按批结算。
+
+四、入门门槛
+- 技能：核心是视唱练耳 + 乐理 + 一种记谱软件。要能靠耳朵分辨音高、节奏、和弦，懂谱表/调号/拍号/移调/常见乐器记法，能把 MIDI 草稿量化、分谱、修正成可演奏的谱面。有音乐基础（会一种乐器、读过五线谱）者约 2–6 周可上手简单单声部，达到能接密集混音与总谱的演出级水准通常要数月到一年；无需学历或执照。会用 AI 转谱工具做初稿能显著提速。
+- 工具：启动几乎零成本——MuseScore Studio 免费、Basic Pitch 免费、Audacity/慢速播放器免费；Guitar Pro、Sibelius、Dorico 为付费进阶（可先用免费试用或等接单后再买）。初期工具成本可压到 $0–$30/月（若订阅 AI 草稿工具）。
+- 资金：启动近零——一台电脑、耳机、免费软件即可，主要投入是练耳与建立作品集的时间。
+- 时间：从零到第一单通常 3–8 周：1–2 周做出 3–5 份样谱（钢琴独奏、吉他 TAB、lead sheet 各一）并在 Upwork/Fiverr 上架，2–6 周投 20–50 个小单或联系琴行/老师/制作公司做转介。进入稳定外包名单常需 1–2 个月与一两次试单。
+
+五、为什么适合 OPC / 数字游民
+- 100% 异步远程：客户发来音频或链接，交付 PDF/工程文件，全程无需固定场所、无本地执照、无实时会议；客户遍布欧美与全球华语圈，时区友好，可任意安排听谱时间。
+- 边际成本低、可复用：第二首的增量主要是自己的时间；记谱模板、和弦/指法库、AI 草稿工作流可跨客户复用，越做越快，逐步从「卖时间」走向「卖谱面产品/曲库」。
+- 小众=低竞争高单价：真正能稳定交付演出级谱面的制谱师少，而 Fiverr 上头部卖家评价破千、4.9+ 星说明需求持续；同样一首歌，会听辨会记谱的人能收 $50–500，普通音乐爱好者做不了。
+- 需求真实且高频：数字乐谱市场 2025 约 $18.2 亿、预计 2034 $41.5 亿（CAGR 9.6%），音乐记谱软件市场 2025 约 $3.15–4 亿、CAGR 约 6%–7%，背后是教育数字化、独立创作者经济与配乐产能扩张，持续制造扒谱与数字化需求。
+- 可叠加而非从零获客：能与既有的「库存音乐创作」「AI 配音」「书籍封面」等创意服务共享客户；也可纯做出版社/制作公司白标外包，靠 B2B 关系稳定接单，不必露脸做个人 IP。
+
+六、潜在收益（谨慎，不承诺）
+以下均为公开参考数据，不等于个人收入；实际取决于地区、语言、单价、渠道、复购与税费平台抽成。
+- 市场总量（口径差异大）：Market Intelo 口径数字乐谱市场 2025 $18.2 亿、2034 $41.5 亿（CAGR 9.6%），其中音乐教育者与机构合计占 2025 收入 43%+；记谱软件市场多家口径 2025 约 $3.15–4 亿、CAGR 约 6%–7%（PMarketResearch $3.155 亿→2032 $4.807 亿；Market Intelo $0.4B→2034 $0.8B、CAGR 7.2%）。可理解为「软件层数亿美元、下游乐谱与教育数十亿美元级」的池子，「人工转录服务」是其中很小但真实的一段。
+- 单价参考：Fiverr 单件 $5–$155（常见 $15–$50 档，头部卖家 60 秒单乐器约 $30）；繁中任务平台和弦谱约 200 元、简谱 700 元、五线单谱 1,000 元、钢琴双谱 2,500 元、总谱 5,000 元起；独立制谱师 USD 50–500/首；专业服务按音频分钟 $18–$35，密集混音 $50+/分钟。
+- 新手阶段（前 3–6 个月）：以样谱与低价单声部单为主，常见 $15–$50/件或按分钟 $18 起，月收入更可能是数百到一两千美元级别且不稳定，需先积累准确度口碑与作品集。
+- 成熟阶段（1–3 年，有稳定渠道与口碑）：$50–$500/首、密集/管弦项目 $50+/分钟、长期 retainer 或批量合同是可能的。这些都是参考数据，不是收入承诺；能否达到取决于听辨准确度、交付格式完整度、修改控制与获客渠道。
+
+七、主要风险
+- 市场风险：AI 转谱快速进步且价格趋近于零（AI 每首几美元 vs 人工一首数百美元、差约 100 倍），干净单声部与「够用就行」的低端需求会被自助工具吃掉；市场整体增速温和（记谱软件 CAGR 约 6%–7%），不是爆发型风口。
+- 技术风险：强依赖工具链——MuseScore/Sibelius/Guitar Pro 版本与文件格式变化、AI 模型迭代既可能帮助也可能替代初稿；MIDI 导入需要大量手工量化与分谱，工具并不能直接产出演出级谱面；过度依赖单一 AI 供应商有路线锁定风险。
+- 合规风险（本行业最需要重视）：乐谱是受版权保护的演绎作品，转录受版权保护的歌曲用于商业交付、分发或出版通常需要版权方授权；美国版权局 Circular 50 明确音乐作品的版权范围，MPA（美国音乐出版商协会）要求授权改编；「仅供个人练习」与「商用/再分发」边界必须写进服务条款，只做客户自有的原创作品或由客户负责取得授权，避免替客户承担侵权责任；跨境收款涉税与 GDPR（若处理客户存储的音乐/个人数据）。
+- 现金流风险：平台账期与 20%/10% 抽成、密集项目耗时导致的单位时薪波动、客户反复修改造成范围蔓延——须在报价时写清音频时长、声部数、交付格式、修改轮次与加价规则，并收预付。
+
+八、不适合的人群
+- 没有音乐基础、不会听辨音高节奏、读不懂五线谱的人（练耳是硬门槛，短期难以速成）。
+- 追求快速规模化、想完全被动躺赚的人——这是手艺活，单价与口碑靠时间与准确度堆出来，边际成本不会归零。
+- 不愿处理版权边界、想随意扒榜上热门歌曲商用分发的人（侵权与封号风险高）。
+- 期待稳定坐班薪资、需要实时团队协作或固定场所的人（本项目高度异步、单兵、按需接单）。
+- 缺乏耐心、无法忍受反复逐小节校对与琐碎沟通修改的人。
+
+九、3 个可验证的入门步骤
+1.（1–3 天）用免费 MuseScore Studio + Spotify 开源 Basic Pitch，把一段自己熟悉的 30–60 秒单乐器音频先跑 AI 草稿、再手工修正成一份干净五线谱，并导出 PDF + MusicXML；验证：谱面回放与原音对得上、可打印可编辑——证明工具链与基本听谱闭环跑通。
+2.（1–3 天）再做一份吉他 TAB 和一份带歌词的和弦 lead sheet，共凑 3 份不同乐器样谱，在 Fiverr/Upwork 上架 gig 并写清「按分钟+复杂度分档、含修改轮次」的定价（参考 $18–35/分钟、$15–50/件起）；验证：一周内获得曝光/咨询或首个付费小单。
+3.（1–3 天）主动联系 10 位音乐老师/琴行/翻奏 YouTuber 与 1–2 家小型配乐工作室，寄样谱 pitch 白标外包，并把服务条款写清「版权由客户负责、仅原创或已授权作品」；验证：2–4 周内拿到一次试单或长期转介，同时确认自己对密集混音的校对耗时是否可控。
+
+十、核验来源
+见 artifacts 中的 9 条公开链接：涵盖 AI 与人工转录的成本/准确度对比、免费记谱软件官网、真实制谱师与平台报价、数字乐谱与记谱软件市场规模、版权合规官方文件。以下要点用于支撑正文：人工转录常见 $18–35/分钟（密集混音 $50+）、起价约 $39；Fiverr 单件 $5–$155、头部卖家评价 1k+；独立制谱师 USD 50–500/首；繁中平台分档报价；MuseScore 免费；数字乐谱市场 2025 $18.2 亿→2034 $41.5 亿、记谱软件 2025 约 $3–4 亿、CAGR 约 6%–7%；版权依据美国版权局 Circular 50 与 MPA 授权改编指引。注：Fiverr/Upwork 服务页有反爬（curl 返回 000），其公开报价写入正文但不列入 artifact；所有列出的 9 条链接均已用 curl 校验返回 200 可达。"""
+
+artifacts = [
+    {"label": "Songscription：AI vs 人工转录的成本/时效/准确度与 $18–35/分钟报价", "path": "https://www.songscription.ai/blog/ai-vs-hiring-a-music-transcriber"},
+    {"label": "Piano to Sheet Music：2026 转录真实成本与工具价格全表（含 hybrid 工作流）", "path": "https://pianotosheetmusic.com/blog/cost-to-transcribe-a-song"},
+    {"label": "MuseScore：免费开源记谱软件官网（MusicXML/MIDI 导入导出）", "path": "https://musescore.org/"},
+    {"label": "Tasker 任务平台：客制化歌谱制作/听打/编谱 分档报价（繁中市场实例）", "path": "https://tasker.com.tw/workroom/2lQMR/service-detail/3707"},
+    {"label": "Market Intelo：数字乐谱市场 2025 $18.2亿→2034 $41.5亿（CAGR 9.6%）", "path": "https://marketintelo.com/report/digital-sheet-music-market/amp"},
+    {"label": "Market Intelo：音乐记谱软件市场 2025 $0.4B→2034 $0.8B（CAGR 7.2%）", "path": "https://marketintelo.com/report/music-notation-software-market/amp"},
+    {"label": "PW Consulting：Notation Software 市场 2025 $3.155亿→2032 $4.807亿", "path": "https://pmarketresearch.com/it?p=12137"},
+    {"label": "美国版权局 Circular 50：音乐作品版权范围（合规依据）", "path": "https://www.copyright.gov/circs/circ50.pdf"},
+    {"label": "美国音乐出版商协会 MPA：授权改编/合唱编排指引（合规依据）", "path": "https://www.mpa.org/creating-authorized-choral-arrangements/"},
+]
+
+next_steps = [
+    "1–3 天：用免费 MuseScore + Basic Pitch 把 30–60 秒单乐器音频跑 AI 草稿再手工修正成干净五线谱，导出 PDF + MusicXML；验证：回放对得上原音、可打印可编辑。",
+    "1–3 天：补做一份吉他 TAB 与一份和弦歌词 lead sheet 凑齐 3 份样谱，在 Fiverr/Upwork 上架并按「分钟+复杂度」定清晰价（$18–35/分钟、$15–50/件起）；验证：一周内获得咨询或首个付费小单。",
+    "1–3 天：联系 10 位老师/琴行/翻奏创作者与 1–2 家小配乐工作室寄样谱 pitch 白标外包，服务条款写明「版权由客户负责、仅原创或已授权作品」；验证：2–4 周内拿到试单或转介，并确认密集混音校对耗时可控。",
+]
+
+result = {
+    "taskId": "niche-opc-industry",
+    "taskName": "每日小众赚钱行业：音乐制谱/乐谱转录服务（Music Transcription & Notation / 五线谱·TAB·MIDI）",
+    "status": "success",
+    "startedAt": started.isoformat(),
+    "finishedAt": finished.isoformat(),
+    "summary": summary,
+    "details": details,
+    "sourceThread": "workbuddy-daily-niche-research",
+    "labels": [
+        "daily",
+        "niche-industry",
+        "opc",
+        "digital-nomad",
+        "music-transcription",
+        "notation",
+        "creative-services",
+        "ai-assisted",
+    ],
+    "nextSteps": next_steps,
+    "artifacts": artifacts,
+}
+
+os.makedirs(OUT_DIR, exist_ok=True)
+with open(OUT_PATH, "w", encoding="utf-8") as f:
+    json.dump(result, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+print(f"written: {OUT_PATH}")
+print(f"taskName: {result['taskName']}")
+print(f"artifacts: {len(artifacts)}, labels: {len(result['labels'])}")
