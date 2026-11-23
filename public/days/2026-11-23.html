@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-23 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-23</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-23.html">2026-11-23</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型内容站、SaaS 营销站与电商品牌的 Cloudflare URL 重定向迁移、规则冲突排查与上线前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权、最小权限、映射清单与可复核测试证据做 OPC/数字游民试单，但不代管凭据、不承诺 SEO 或零故障。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+这是把网站改版、换 CMS、换域名时的旧 URL→新 URL 映射表，落到 Cloudflare 的 Single Redirect 或 Bulk Redirect，并在上线前检查规则优先级、301/302、查询参数、尾斜杠与 404 的小型技术交付。它不是泛建站：客户通常只在迁移窗口需要一次，工作量藏在 URL 清洗、规则冲突和可回滚验证里，因此对小团队有真实需求却少被单独采购。
+
+## 目标市场与客户
+
+目标是中国境内可远程承接的海外英语市场，优先 1–50 人的 SaaS、内容站、DTC 电商和设计/开发工作室；典型场景为 WordPress/Webflow/React 等迁站、旧域名并入新域名、目录改版或大量历史链接避免落到 404。它适合 OPC：可用客户提供的脱敏 CSV、测试 URL 和固定验收清单拆成小单；不适合把自己包装成 CDN 托管、全天候运维或 SEO 增长服务。
+
+## 如何运作
+
+参与方包括客户负责人（确认业务映射和上线窗口）、网站/开发团队（确认目标页与源站）、客户 Cloudflare 管理员（最终发布）和服务商。流程为：
+1. 书面确认范围、授权、不可改动项和回滚负责人；收取 URL 映射 CSV。
+2. 规范化并标记一对一、通配、空目标、重复、循环、含敏感参数的行；选用 Single Redirect（支持静态/动态及通配）或 Bulk Redirect（适合静态清单，不能做正则或字符串替换）。
+3. 在测试域或用 Rules Simulator 检查命中、优先级和 Page Rules/Workers 干扰；输出预期状态码、目标地址和例外表。
+4. 客户管理员在自有账户发布；服务商用 curl/浏览器抽样复测 http/https、www、尾斜杠、查询参数与高价值页面，交付结果、截图/响应头、未解决项和回滚步骤。
+
+Cloudflare 官方文档说明：Redirects 需相应 DNS 记录处于代理状态；Single Redirects 在规则执行顺序中早于 Bulk Redirects，先匹配的重定向会终止后续同类处理；Rules 通常又优先于 Page Rules。因此不能只“导入 CSV”就承诺正确，必须看规则模拟和上线后的抽样复测。
+
+## 盈利模式与收益口径
+
+按固定范围报价，而非按“SEO 效果”抽成：映射表诊断+QA 报告、配置协助+复测、或迁移窗口加急支持。公开 Freelancer 样本中，一个同时包含 Cloudflare 重定向迁移和转化像素的已完成项目标价为 250–750 美元、平均竞标约 379 美元；其包含像素工作，不能反推纯重定向服务单价。另一个 DNS 配置与重定向项目标价 30–250 美元、平均竞标约 115 美元，也只可作为低复杂度市场信号。
+
+保守的试单假设是：只做 30–200 条映射、不给生产变更、提供诊断与复测证据，可报 80–180 美元（约 570–1,280 元，按 1 美元≈7.1 元仅作估算）；客户管理员确认的配置协助加 100–500 条验证，可尝试 180–450 美元（约 1,280–3,200 元）。超过此范围、需要 Workers 开发、DNS/SSL 改动、持续监控或多个域名，应另行范围评估。收入不稳定，取决于英文获客、迁移季节性、映射质量与返工次数；软件、网络和获客时间都是成本。
+
+## 入门门槛
+
+技能：HTTP 状态码、URL 编码/正则与 CSV 清洗、浏览器开发者工具、curl、英文技术写作，以及能读懂 Cloudflare Rules 文档。设备/软件：电脑、表格工具、curl 或 HTTP 客户端、屏幕录制/截图工具即可。资金门槛低，但要为测试域、付费工具和获客预留预算。时间上，一次小型诊断约需半天到两天；首次熟悉规则与模拟器需要更久。
+
+资质上不是牌照型技术服务，但不得冒充 Cloudflare 官方或安全审计机构。客户应以协作成员/临时、域级最小权限安排访问；不要索取密码、全局 API key、长期 token、超级管理员权限或生产日志下载。含邮箱、订单号、token 的 URL 与日志属于敏感交付材料，应先脱敏、加密传输、约定保留期后删除。
+
+## 中国境内承接海外市场的执行与合规
+
+获客可从英文作品集、独立站、自由职业平台和开发/迁站合作伙伴开始；先卖“映射审计+测试报告”而不是直接拿生产写权限。远程交付以 CSV、测试清单、模拟截图、响应头和异步视频说明为主；与欧美客户约定 2–4 小时重叠窗口及上线值守边界。
+
+跨境收款应在合同写清服务范围、币种、验收、退款与数据处理；留存合同、工作记录、验收单、发票或结算单和收款记录。国家外汇管理局的服务贸易指引要求境内机构和个人的服务贸易收支具有真实、合法交易基础，并可要求合同、发票/结算清单等单证；实际结汇、收款、开票和税务申报应先向开户行、主管税务机关确认。不得虚构交易、拆分规避监管，亦不得绕过自由职业平台的账户、支付或争议规则。
+
+数据/隐私方面：只处理完成任务必需的 URL 字段；不把真实访问日志、含个人信息的 URL 或客户配置上传公共 AI/测试站；用脱敏样本、最小权限、加密传输、删除证明和客户管理员最终发布来降低风险。这不是法律意见；涉及 GDPR、CCPA 等适用性由客户法务决定。
+
+## OPC 与数字游民适配度
+
+OPC 适配：高于一般运维。小范围映射、测试和证据报告可以一人交付，固定范围也容易报价；但复杂 Workers、源站应用改造和多轮上线应转交开发团队或拆分。数字游民适配：较高，产物可异步审阅；但域名切换和客户所在时区的上线窗口要求稳定网络与预约可用性，不适合频繁离线旅行者。
+
+## 主要风险与不适合人群
+
+风险包括规则优先级导致循环或误跳转、源 URL 数据错误、DNS 未代理使规则失效、上线后旧链接漏网、敏感 URL 泄露、客户误把服务理解为 SEO 承诺，以及跨境单证/税务处理不完整。任何付费上线都应以客户书面确认的回滚方案、Rules Simulator 结果和上线后抽样复测为验收条件。
+
+不适合没有英文技术沟通能力、无法理解 HTTP 与 URL 模式、只想承诺流量排名的人；也不适合要求服务商代管账户、生产密钥、支付账号或 7×24 事故响应的客户。
+
+## 新手低成本验证步骤
+
+1. 用自有测试域建立 20 条虚构旧/新 URL 映射，分别练习 Single 与 Bulk Redirect，并记录状态码、查询参数、尾斜杠和回滚步骤。
+2. 制作一页英文服务范围：只做映射审计、模拟、客户管理员发布后的抽样复测；附一份脱敏样例报告和权限/数据删除条款。
+3. 向一家小型迁站服务商或独立站点提供低价、只读的 30 条 URL 审计；取得书面授权，用模拟结果和 curl 证据验收，而非以收录、排名或销售为结果。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过。
+- 中国境内承接海外市场适配度：4/5；可远程、客户最终发布、可从低风险 QA 试单开始，但英文获客和跨境收款有摩擦。
+- OPC/一人公司适配度：4/5；映射清洗、规则审查、模拟与复测可一人完成，大型迁移/Workers/持续 SEO 运维不应纳入初期范围。
+- 数字游民适配度：4/5；交付和验收天然异步，但上线窗口需与欧美客户预留重叠时间。
+- 合规风险：中；必须书面授权、最小权限、敏感 URL/日志脱敏，不能触碰密码、全局密钥和不必要生产权限。
+- 跨境执行风险：中；应留存真实交易、验收和结算材料，并以开户行与税务机关现行要求为准。
+- 收益口径：克制。公开项目仅作包含其他工作内容的参考，不代表行业均价或订单可得性；人民币换算是估算，未承诺稳定收入或 SEO 效果。
+- 来源可信度：技术关键事实由 Cloudflare 官方文档支持；SAFE 文件用于制度背景；Freelancer 单个样本权重较低。
+- 最该补充/提醒：Cloudflare Redirects 依赖被代理的 DNS 记录且规则优先级会影响实际结果，任何付费上线都应以客户书面确认的回滚方案、规则模拟结果和上线后抽样复测为验收条件。
+
+## 关键来源
+
+- Cloudflare, Redirects：https://developers.cloudflare.com/rules/url-forwarding/
+- Cloudflare, Single Redirects：https://developers.cloudflare.com/rules/url-forwarding/single-redirects/
+- Cloudflare, Bulk Redirects：https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/
+- Cloudflare, Configuration Rules / execution order：https://developers.cloudflare.com/rules/configuration-rules/
+- Cloudflare, Rules Simulator：https://developers.cloudflare.com/rules/simulator/how-to/
+- Cloudflare, Account roles：https://developers.cloudflare.com/fundamentals/manage-members/roles/
+- 国家外汇管理局，《服务贸易外汇管理指引》：https://www.safe.gov.cn/safe/file/file/20170726/dffb5d9b05bb41ea86807fd3a48b46b5.pdf
+- Freelancer，Cloudflare Redirects &amp; Pixel Setup（公开报价样本，非行业均价）：https://www.freelancer.com/projects/api/cloudflare-redirects-pixel-setup
+- Freelancer，DNS Configuration Across Platforms（公开报价样本，非行业均价）：https://www.freelancer.com/projects/cloudflare/dns-configuration-across-platforms</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>23/11/2026, 16:00</p><p class="meta-line"><span>Finished</span>23/11/2026, 16:05</p><p class="meta-line"><span>Duration</span>5m</p><p class="meta-line"><span>File</span><code>runs/2026-11-23/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>cloudflare</span><span>website-migration</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>用自有测试域练习 20 条虚构 URL 的 Single/Bulk Redirect、回滚与证据记录。</li><li>制作英文固定范围说明、脱敏样例报告和权限/数据删除条款。</li><li>用书面授权的 30 条 URL 只读审计做首个小规模验证，不承诺 SEO 或上线结果。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://developers.cloudflare.com/rules/url-forwarding/">Cloudflare Redirects 官方文档</a></li><li><a href="https://developers.cloudflare.com/rules/simulator/how-to/">Cloudflare Rules Simulator 官方文档</a></li><li><a href="https://www.safe.gov.cn/safe/file/file/20170726/dffb5d9b05bb41ea86807fd3a48b46b5.pdf">国家外汇管理局服务贸易外汇管理指引</a></li><li><a href="https://www.freelancer.com/projects/api/cloudflare-redirects-pixel-setup">Freelancer 公开报价样本（仅作市场信号）</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 23/11/2026, 16:03</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
