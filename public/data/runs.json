@@ -1,7 +1,109 @@
 {
-  "generatedAt": "2026-11-22T08:00:33.088Z",
+  "generatedAt": "2026-11-24T08:05:25.470Z",
   "timeZone": "Asia/Shanghai",
   "runs": [
+    {
+      "date": "2026-11-24",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的细分行业是面向海外小型开源项目、SaaS 与开发者文档团队的 Algolia DocSearch 爬虫配置、前端接入与上线前 QA，属于中国境内可远程承接的海外市场。它适合以授权、最小权限、固定范围和可复核证据做 OPC/数字游民试单，但不得代持 Admin API key、导出数据或承诺搜索效果。",
+      "details": "# 行业：Algolia DocSearch 文档搜索上线服务\n\n## 1. 是什么，为什么小众\n\n这是为技术文档站配置 Algolia DocSearch 的细分交付：梳理 sitemap 与可抓取页面，配置 Crawler 的 URL 范围、忽略规则和标题层级选择器，检查 crawler 抽取的 record，接入 JS/React/Docusaurus 搜索组件，并以代表性检索词、版本/语言筛选和移动端界面完成上线前 QA。它不是泛 SEO 或全栈开发；客户常已有文档站，却缺少能让开发者快速找 API、版本差异和排障条目的站内搜索。小众之处在于同时要理解文档信息架构、HTML 层级、爬虫 record schema、前端包与验收用例。\n\n目标市场为“**中国境内可做的海外市场**”，优先英语技术文档、开源项目和小型 SaaS。Algolia 官方说明：DocSearch 将 Crawler 与前端体验分开，配置可定义抓取/排除 URL 和内容层级；上线前应试跑爬虫、审查记录并监控后续抓取。\n\n## 2. 客户、需求与工作流\n\n典型客户：使用 Docusaurus、React、静态站点生成器或自建 docs portal 的海外开源维护者、小型开发者工具/SaaS、技术内容团队。常见触发点：文档已超过几十篇、版本页混入搜索、旧页面仍被索引、结果标题层级不清，或要把站内搜索作为一次文档改版的收尾项。\n\n推荐工作流：\n1. 客户提供公开预览站、sitemap、框架版本、目标页面清单和 10–20 个验收查询；先书面确定哪些 URL 能被抓取。\n2. 服务商在测试项目或客户最小权限账户中盘点 URL/robots/sitemap/HTML 层级，提出 crawler 与 record 字段建议；客户管理员创建或确认应用、密钥和域名归属。\n3. 以测试 crawl 审查结果，接入 `@docsearch/js`、`@docsearch/react` 或 Docusaurus 官方适配方式，完成桌面/移动端和空结果/错误链接检查。\n4. 交付配置 diff、URL/查询测试表、截图或录屏、未解决项和回滚说明；生产发布、API key 管理和周期性维护由客户管理员确认。\n\n## 3. 怎么赚钱、收益口径与成本\n\n可把服务拆为固定范围小单：公开文档站体检 + 10 个查询 QA、单站 crawler/前端接入、或改版后的回归检查；另行报价版本筛选、迁移和月度复测。新手可先以 **US$150–500/单（按 2026-11-24 中国银行美元折算价 1 USD≈¥6.7111，约 ¥1,007–3,356）** 做边界清晰的试单；这是建议测试报价，取决于页面数、框架、客户是否已有 Algolia 项目及返工次数，并非行业均价或收入承诺。\n\n公开对照样本：技术文档专业服务商 TechDocs Studio 在其网页列出搜索审计/修复 US$2,900（约 1 周）和全量搜索部署 US$4,900（约 2 周），且明确订阅费另计；这只能说明成熟的更大范围交付存在付费空间，不能外推为个人可得报价。Algolia 自身费用由客户承担：官方价格页列出免费层含 10,000 搜索请求、100,000 records、10,000 crawls/月等限额；符合条件的 DocSearch 项目免费，但须保留 “Search by Algolia” 标识。\n\n成本结构主要是沟通/时区、测试站或本地构建、必要的代码托管与设计工具；不要把客户的 Algolia 订阅、域名/CDN 或开发改造工时混入服务商营收。单人每月可接多少单取决于需求澄清、返工和售后，不以“月入”倒推承诺。\n\n## 4. 入门门槛与合规\n\n技能：英文读写与异步沟通、HTML heading/metadata/sitemap/robots、JS 或 React 基础、Git PR、文档信息架构和可复现测试。设备：电脑、浏览器开发工具、GitHub/GitLab、可运行客户文档项目的 Node 环境；通常不需重资产。时间：先用 1–2 个公开开源文档站建立测试 case，再做一单小范围 QA。\n\nAlgolia 要求与平台边界：免费 DocSearch 面向技术文档/技术博客，申请及域名验证、免费标识和平台资格由客户负责；若不能展示 logo 或非适用页面，应由客户评估自建 crawler/付费方案。官方还说明爬虫按网页标记提取内容，数据会托管在 Algolia 的全球副本。因此只处理客户明确授权的公开技术文档；内网文档、搜索日志、管理员权限或跨境数据传输，先由客户确认平台资格、数据处理依据与收款/税务路径。服务商不代持 Admin API key、不擅自导出数据，也不接触或留存真实搜索日志。\n\n跨境承接：获客可从 GitHub 开源项目、英文技术社群、作品集/独立站和自由职业平台的公开需求开始；报价与范围需用英文合同/订单写明 URL 范围、验收查询、改动次数、知识产权、保密与数据处理边界。收款使用客户与服务商均可合法使用、能留存合同/订单/交付证据的路径；不绕开平台或外汇规则。税务方面，国家税务总局说明，向境外单位提供且“完全在境外消费”的部分软件服务、信息系统服务等可能适用增值税零税率，但并非自动适用，须按服务性质、实际消费地、资料留存和主管税务机关要求办理；个人/个体户/公司应按自身主体、属地与会计意见申报。语言和北美/欧洲时区会带来 4–12 小时响应错位，宜承诺异步 SLA 而非 24×7 值守。\n\n## 5. 为什么适合 OPC / 数字游民，及局限\n\nOPC 适配度高：配置、QA、报告和交接可产品化为检查表，小单固定范围、无需线下库存，复杂代码改造可排除或外包。数字游民适配度较高：诊断、配置 review、文档和异步验收可远程完成；但客户发布窗口、英文会议、生产故障和密钥处理不适合边旅行边即时响应。不能把自己包装成 Algolia 官方支持、安全审计、隐私认证、SEO/AI 搜索增长顾问，也不能保证申请获批、爬取稳定、排名、转化或零故障。\n\n主要风险：客户站点把个人信息、内部链接或受版权限制内容误放进抓取范围；管理员 key 泄露；非公开站点违反平台或客户政策；文档结构变化导致搜索回归；跨境数据、收款凭证和税务判断不足。降低方式是公开内容优先、最小权限、客户管理员持钥、测试索引/可回滚发布、禁止把日志下载到本地、用 query/URL 证据验收，并将法律/税务/隐私结论交由客户顾问。\n\n不适合人群：不愿英文写作和异步支持者；无法理解 Git/HTML/前端构建者；希望靠通用模板承诺流量或快速高收入者；或要求服务商代管生产密钥、内网文档和用户日志的客户。\n\n## 6. 新手低成本验证步骤\n\n1. 选一个许可允许的公开开源文档站或自建 Docusaurus demo，制作 sitemap、heading 层级、10 条检索用例与问题清单，不爬取私有内容。\n2. 在自己的测试项目按官方文档跑一次配置/记录审查/前端接入，输出一页英文样例：范围、验收查询、截图、未覆盖项和回滚说明。\n3. 以“公开 docs search QA（不拿 Admin key、不承诺增长）”发布 US$150 左右的固定范围试单；先以客户管理员执行权限/发布，自己交付配置建议和复测证据。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 结论：**通过，须按边界发布。**\n\n- 中国境内承接海外市场适配度：4/5\n- OPC/一人公司适配度：5/5\n- 数字游民适配度：4/5\n- 合规风险等级：中\n- 跨境执行风险等级：中\n- 收益口径：克制；US$150–500 必须标明为新手固定范围试单建议，不是行业均价；US$2,900/4,900 只是单一服务商公开价格，不能外推。\n- 来源可信度：足够可信；核心产品事实来自 Algolia/Docusaurus 官方，税务来自国家税务总局，汇率来自中国银行。\n- 最该提醒的一句：仅处理客户明确授权的公开技术文档；涉及内网文档、搜索日志、账号管理员权限或跨境数据传输时，先由客户确认平台资格、数据处理依据与税务/收款路径，服务商不代持 Admin API key、不擅自导出数据。\n\n## 关键来源（2026-11-24 核验）\n\n- Algolia DocSearch《How does it work?》：https://docsearch.algolia.com/docs/how-does-it-work/\n- Algolia DocSearch《DocSearch program》：https://docsearch.algolia.com/docs/docsearch-program/\n- Algolia DocSearch《Required configuration》：https://docsearch.algolia.com/docs/required-configuration/\n- Algolia DocSearch packages：https://docsearch.algolia.com/docs/packages/overview/\n- Docusaurus《Search》：https://current.docusaurus.io/docs/search\n- Algolia Pricing：https://www.algolia.com/pricing\n- TechDocs Studio Documentation Search：https://techdocs.studio/services/documentation-search\n- 国家税务总局《跨境应税行为适用增值税零税率政策如何享受》：https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html\n- 中国银行外汇牌价：https://www.boc.cn/sourcedb/whpj/",
+      "startedAt": "2026-11-24T16:02:22+08:00",
+      "finishedAt": "2026-11-24T16:08:00+08:00",
+      "duration": "5m 38s",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "global",
+        "developer-tools",
+        "documentation-search"
+      ],
+      "nextSteps": [
+        "用公开开源文档站或自建 Docusaurus demo 建立 10 条检索用例与问题清单。",
+        "在测试项目完成一次 crawler 记录审查、前端接入与截图式验收，形成英文样例。",
+        "以不拿 Admin key、由客户管理员发布的固定范围 QA 小单开始试单。"
+      ],
+      "artifacts": [
+        {
+          "label": "Algolia DocSearch 工作原理",
+          "path": "https://docsearch.algolia.com/docs/how-does-it-work/"
+        },
+        {
+          "label": "Algolia DocSearch 项目规则",
+          "path": "https://docsearch.algolia.com/docs/docsearch-program/"
+        },
+        {
+          "label": "国家税务总局跨境应税行为零税率说明",
+          "path": "https://www.chinatax.gov.cn/chinatax/c102449/c5239191/content.html"
+        },
+        {
+          "label": "中国银行外汇牌价",
+          "path": "https://www.boc.cn/sourcedb/whpj/"
+        }
+      ],
+      "sourceFile": "runs/2026-11-24/niche-profit-industry.json"
+    },
+    {
+      "date": "2026-11-23",
+      "taskId": "niche-profit-industry",
+      "agentId": "",
+      "agentName": "",
+      "agentRole": "",
+      "taskName": "每日小众赚钱行业科普",
+      "status": "success",
+      "summary": "今天的细分行业是面向海外小型内容站、SaaS 营销站与电商品牌的 Cloudflare URL 重定向迁移、规则冲突排查与上线前 QA，属于中国境内可远程承接的海外市场。它适合以客户授权、最小权限、映射清单与可复核测试证据做 OPC/数字游民试单，但不代管凭据、不承诺 SEO 或零故障。",
+      "details": "## 行业是什么，为什么小众\n\n这是把网站改版、换 CMS、换域名时的旧 URL→新 URL 映射表，落到 Cloudflare 的 Single Redirect 或 Bulk Redirect，并在上线前检查规则优先级、301/302、查询参数、尾斜杠与 404 的小型技术交付。它不是泛建站：客户通常只在迁移窗口需要一次，工作量藏在 URL 清洗、规则冲突和可回滚验证里，因此对小团队有真实需求却少被单独采购。\n\n## 目标市场与客户\n\n目标是中国境内可远程承接的海外英语市场，优先 1–50 人的 SaaS、内容站、DTC 电商和设计/开发工作室；典型场景为 WordPress/Webflow/React 等迁站、旧域名并入新域名、目录改版或大量历史链接避免落到 404。它适合 OPC：可用客户提供的脱敏 CSV、测试 URL 和固定验收清单拆成小单；不适合把自己包装成 CDN 托管、全天候运维或 SEO 增长服务。\n\n## 如何运作\n\n参与方包括客户负责人（确认业务映射和上线窗口）、网站/开发团队（确认目标页与源站）、客户 Cloudflare 管理员（最终发布）和服务商。流程为：\n1. 书面确认范围、授权、不可改动项和回滚负责人；收取 URL 映射 CSV。\n2. 规范化并标记一对一、通配、空目标、重复、循环、含敏感参数的行；选用 Single Redirect（支持静态/动态及通配）或 Bulk Redirect（适合静态清单，不能做正则或字符串替换）。\n3. 在测试域或用 Rules Simulator 检查命中、优先级和 Page Rules/Workers 干扰；输出预期状态码、目标地址和例外表。\n4. 客户管理员在自有账户发布；服务商用 curl/浏览器抽样复测 http/https、www、尾斜杠、查询参数与高价值页面，交付结果、截图/响应头、未解决项和回滚步骤。\n\nCloudflare 官方文档说明：Redirects 需相应 DNS 记录处于代理状态；Single Redirects 在规则执行顺序中早于 Bulk Redirects，先匹配的重定向会终止后续同类处理；Rules 通常又优先于 Page Rules。因此不能只“导入 CSV”就承诺正确，必须看规则模拟和上线后的抽样复测。\n\n## 盈利模式与收益口径\n\n按固定范围报价，而非按“SEO 效果”抽成：映射表诊断+QA 报告、配置协助+复测、或迁移窗口加急支持。公开 Freelancer 样本中，一个同时包含 Cloudflare 重定向迁移和转化像素的已完成项目标价为 250–750 美元、平均竞标约 379 美元；其包含像素工作，不能反推纯重定向服务单价。另一个 DNS 配置与重定向项目标价 30–250 美元、平均竞标约 115 美元，也只可作为低复杂度市场信号。\n\n保守的试单假设是：只做 30–200 条映射、不给生产变更、提供诊断与复测证据，可报 80–180 美元（约 570–1,280 元，按 1 美元≈7.1 元仅作估算）；客户管理员确认的配置协助加 100–500 条验证，可尝试 180–450 美元（约 1,280–3,200 元）。超过此范围、需要 Workers 开发、DNS/SSL 改动、持续监控或多个域名，应另行范围评估。收入不稳定，取决于英文获客、迁移季节性、映射质量与返工次数；软件、网络和获客时间都是成本。\n\n## 入门门槛\n\n技能：HTTP 状态码、URL 编码/正则与 CSV 清洗、浏览器开发者工具、curl、英文技术写作，以及能读懂 Cloudflare Rules 文档。设备/软件：电脑、表格工具、curl 或 HTTP 客户端、屏幕录制/截图工具即可。资金门槛低，但要为测试域、付费工具和获客预留预算。时间上，一次小型诊断约需半天到两天；首次熟悉规则与模拟器需要更久。\n\n资质上不是牌照型技术服务，但不得冒充 Cloudflare 官方或安全审计机构。客户应以协作成员/临时、域级最小权限安排访问；不要索取密码、全局 API key、长期 token、超级管理员权限或生产日志下载。含邮箱、订单号、token 的 URL 与日志属于敏感交付材料，应先脱敏、加密传输、约定保留期后删除。\n\n## 中国境内承接海外市场的执行与合规\n\n获客可从英文作品集、独立站、自由职业平台和开发/迁站合作伙伴开始；先卖“映射审计+测试报告”而不是直接拿生产写权限。远程交付以 CSV、测试清单、模拟截图、响应头和异步视频说明为主；与欧美客户约定 2–4 小时重叠窗口及上线值守边界。\n\n跨境收款应在合同写清服务范围、币种、验收、退款与数据处理；留存合同、工作记录、验收单、发票或结算单和收款记录。国家外汇管理局的服务贸易指引要求境内机构和个人的服务贸易收支具有真实、合法交易基础，并可要求合同、发票/结算清单等单证；实际结汇、收款、开票和税务申报应先向开户行、主管税务机关确认。不得虚构交易、拆分规避监管，亦不得绕过自由职业平台的账户、支付或争议规则。\n\n数据/隐私方面：只处理完成任务必需的 URL 字段；不把真实访问日志、含个人信息的 URL 或客户配置上传公共 AI/测试站；用脱敏样本、最小权限、加密传输、删除证明和客户管理员最终发布来降低风险。这不是法律意见；涉及 GDPR、CCPA 等适用性由客户法务决定。\n\n## OPC 与数字游民适配度\n\nOPC 适配：高于一般运维。小范围映射、测试和证据报告可以一人交付，固定范围也容易报价；但复杂 Workers、源站应用改造和多轮上线应转交开发团队或拆分。数字游民适配：较高，产物可异步审阅；但域名切换和客户所在时区的上线窗口要求稳定网络与预约可用性，不适合频繁离线旅行者。\n\n## 主要风险与不适合人群\n\n风险包括规则优先级导致循环或误跳转、源 URL 数据错误、DNS 未代理使规则失效、上线后旧链接漏网、敏感 URL 泄露、客户误把服务理解为 SEO 承诺，以及跨境单证/税务处理不完整。任何付费上线都应以客户书面确认的回滚方案、Rules Simulator 结果和上线后抽样复测为验收条件。\n\n不适合没有英文技术沟通能力、无法理解 HTTP 与 URL 模式、只想承诺流量排名的人；也不适合要求服务商代管账户、生产密钥、支付账号或 7×24 事故响应的客户。\n\n## 新手低成本验证步骤\n\n1. 用自有测试域建立 20 条虚构旧/新 URL 映射，分别练习 Single 与 Bulk Redirect，并记录状态码、查询参数、尾斜杠和回滚步骤。\n2. 制作一页英文服务范围：只做映射审计、模拟、客户管理员发布后的抽样复测；附一份脱敏样例报告和权限/数据删除条款。\n3. 向一家小型迁站服务商或独立站点提供低价、只读的 30 条 URL 审计；取得书面授权，用模拟结果和 curl 证据验收，而非以收录、排名或销售为结果。\n\n## 点评 Agent 审稿\n\n独立点评 Agent 结论：通过。\n- 中国境内承接海外市场适配度：4/5；可远程、客户最终发布、可从低风险 QA 试单开始，但英文获客和跨境收款有摩擦。\n- OPC/一人公司适配度：4/5；映射清洗、规则审查、模拟与复测可一人完成，大型迁移/Workers/持续 SEO 运维不应纳入初期范围。\n- 数字游民适配度：4/5；交付和验收天然异步，但上线窗口需与欧美客户预留重叠时间。\n- 合规风险：中；必须书面授权、最小权限、敏感 URL/日志脱敏，不能触碰密码、全局密钥和不必要生产权限。\n- 跨境执行风险：中；应留存真实交易、验收和结算材料，并以开户行与税务机关现行要求为准。\n- 收益口径：克制。公开项目仅作包含其他工作内容的参考，不代表行业均价或订单可得性；人民币换算是估算，未承诺稳定收入或 SEO 效果。\n- 来源可信度：技术关键事实由 Cloudflare 官方文档支持；SAFE 文件用于制度背景；Freelancer 单个样本权重较低。\n- 最该补充/提醒：Cloudflare Redirects 依赖被代理的 DNS 记录且规则优先级会影响实际结果，任何付费上线都应以客户书面确认的回滚方案、规则模拟结果和上线后抽样复测为验收条件。\n\n## 关键来源\n\n- Cloudflare, Redirects：https://developers.cloudflare.com/rules/url-forwarding/\n- Cloudflare, Single Redirects：https://developers.cloudflare.com/rules/url-forwarding/single-redirects/\n- Cloudflare, Bulk Redirects：https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/\n- Cloudflare, Configuration Rules / execution order：https://developers.cloudflare.com/rules/configuration-rules/\n- Cloudflare, Rules Simulator：https://developers.cloudflare.com/rules/simulator/how-to/\n- Cloudflare, Account roles：https://developers.cloudflare.com/fundamentals/manage-members/roles/\n- 国家外汇管理局，《服务贸易外汇管理指引》：https://www.safe.gov.cn/safe/file/file/20170726/dffb5d9b05bb41ea86807fd3a48b46b5.pdf\n- Freelancer，Cloudflare Redirects & Pixel Setup（公开报价样本，非行业均价）：https://www.freelancer.com/projects/api/cloudflare-redirects-pixel-setup\n- Freelancer，DNS Configuration Across Platforms（公开报价样本，非行业均价）：https://www.freelancer.com/projects/cloudflare/dns-configuration-across-platforms",
+      "startedAt": "2026-11-23T16:00:00+08:00",
+      "finishedAt": "2026-11-23T16:05:00+08:00",
+      "duration": "5m",
+      "sourceThread": "",
+      "labels": [
+        "daily",
+        "industry",
+        "income-education",
+        "china",
+        "opc",
+        "digital-nomad",
+        "overseas-market",
+        "global",
+        "cloudflare",
+        "website-migration"
+      ],
+      "nextSteps": [
+        "用自有测试域练习 20 条虚构 URL 的 Single/Bulk Redirect、回滚与证据记录。",
+        "制作英文固定范围说明、脱敏样例报告和权限/数据删除条款。",
+        "用书面授权的 30 条 URL 只读审计做首个小规模验证，不承诺 SEO 或上线结果。"
+      ],
+      "artifacts": [
+        {
+          "label": "Cloudflare Redirects 官方文档",
+          "path": "https://developers.cloudflare.com/rules/url-forwarding/"
+        },
+        {
+          "label": "Cloudflare Rules Simulator 官方文档",
+          "path": "https://developers.cloudflare.com/rules/simulator/how-to/"
+        },
+        {
+          "label": "国家外汇管理局服务贸易外汇管理指引",
+          "path": "https://www.safe.gov.cn/safe/file/file/20170726/dffb5d9b05bb41ea86807fd3a48b46b5.pdf"
+        },
+        {
+          "label": "Freelancer 公开报价样本（仅作市场信号）",
+          "path": "https://www.freelancer.com/projects/api/cloudflare-redirects-pixel-setup"
+        }
+      ],
+      "sourceFile": "runs/2026-11-23/niche-profit-industry.json"
+    },
     {
       "date": "2026-11-22",
       "taskId": "niche-profit-industry",
