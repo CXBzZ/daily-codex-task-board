@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-24 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-11-24</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：学术排版与期刊投稿格式合规服务（Academic Typesetting）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-11-24.html">2026-11-24</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">学术排版与投稿格式合规服务是把研究者的 Word/PDF 原稿按期刊或高校模板转成可编译、可提交的 LaTeX 源文件与 PDF，只改格式、不碰内容。需求藏在投稿系统报错、格式退回和学位论文送审这些隐蔽节点里，客户遍布全球且交付全是文件，模板库可反复复用，边际成本极低，因此非常适合一人公司和数字游民异步远程切入。</p>
+      <div class="details">一、行业是什么，为什么小众
+一句话定义：学术排版与投稿格式合规服务（Academic Typesetting &amp; Journal Submission Formatting）——不改研究内容，只把作者已有的 Word / PDF / 草稿按目标期刊或高校模板转成可编译、可提交的 LaTeX（或规范 Word）源文件与最终 PDF，处理公式、表格、图片、参考文献、交叉引用、模板差异和编译报错，并在审稿返修后继续做格式维护。
+和已有选题的边界：这不是「学术英文润色」（改语言）、不是「科研图表/图文摘要」（画图）、不是「电子书排版」（做 EPUB 供读者阅读），也不是「论文代写」。本行业只做格式与提交合规，研究内容、数据和结论一律不动。
+为什么被低估：①需求藏在投稿系统报错、编辑部格式退回、毕业前格式审查这些突发节点里，客户不会主动搜「排版服务」；②搜索词极度分散——「Overleaf 报错怎么改」「IEEEtran 跨页表格」「elsarticle 参考文献样式」「学位论文 LaTeX 模板」，不是一个统一品类；③夹在免费模板/Overleaf 可视化编辑器与昂贵的语言润色、出版服务之间，中端空白；④.tex、.cls、.bib、BibTeX、Overfull hbox 等黑话让门槛看起来远高于实际；⑤客户多是高学历研究者，习惯自己折腾，外包常被视为「承认不会」；⑥成果隐形——排版做对没人夸，出错才被看见，案例几乎不会被公开传播。
+
+二、如何运作
+典型客户：非英语母语的硕博生与早期研究者；物理、数学、计算机、工程、经济等公式密集领域的投稿人；赶会议截稿的作者；课题组/实验室；高校写作中心与图书馆；小型学会、出版社。触发点通常是投稿前 1–2 周、Word 被要求转 LaTeX、期刊换了模板、本地能编译但投稿系统转换失败、审稿返修后重排、学位论文送审格式被卡。
+核心交付物：分章节 .tex 源文件、.bib 参考文献库、图片与图表文件、在 Overleaf 与本地 TeX 环境均编译通过的 PDF、模板合规检查清单、错误修复说明、投稿系统打包指引；高阶可加 JATS XML、带标签 PDF 或高校定制模板。
+完整工作流：询价并确认期刊/高校与截止日 → 签 NDA 与范围确认（书面写明只改格式、不改内容）→ 收原稿、图片、参考文献与官方模板 → 试编译并出「问题清单 + 工时报价」→ 转换与手工重排（公式、跨栏表格、浮动图、书目样式）→ 双环境编译与 PDF 视觉抽查 → 客户一轮审阅 → 按 Guide for Authors 终检并打包 → 交付源文件与 PDF → 收款 → 返修期提供有限次数的格式调整。
+关键工具：Overleaf（免费版即可起步）、TeX Live / MiKTeX、IEEEtran / elsarticle / sn-jnl / acmart 等官方模板、Zotero / JabRef / BibTeX、Pandoc（仅做初转，复杂公式表格必须手工修）、Git 版本管理、PDF 检查工具；获客用 Upwork、Fiverr、Clutch、学术社群与高校写作中心转介。不需要实验室、本地执照或实体场地。
+
+三、盈利模式
+收入来源与定价：以按项目/按页数为核心，难度与截止时间加价。可核验的公开报价：TheLatexLab 研究论文 1–10 页 149 美元、10–20 页 279 美元、20–30 页 449 美元、30–50 页 499 美元；学位论文 80 页内 599 美元、200 页内 1,199 美元、350 页内 1,999 美元；期刊格式 149 美元起（Word 99 美元起）；Clutch 档案亦列出论文 149 美元起、学位论文 599 美元起。Upwork 服务分档 50 / 150 / 490 美元，加急另加 50–200 美元。Fiverr 低端 gig 仅 6.77 / 27.10 / 54.20 新元（页面索引显示 98 单；直连有反爬验证，仅作低价端参考）。课题组「格式值班」月费 300–1,000 美元是可行建议价，非公开统一报价。
+利润空间：成本主要是时间，工具可压到每月 0–30 美元（Overleaf、TeX 发行版、Zotero 免费； premium 与云存储按套餐另计），平台佣金约 10%–20%（以当期条款为准），另有支付通道与税费。举例：一单 149 美元、投入 4–8 小时，毛时薪约 19–37 美元，扣平台与税后约 13–28 美元；不是高毛利暴利，而是靠模板复用与熟练度提效。学位论文单价高但周期 7–14 天、返修多，实际时薪未必更高。
+复购：同一作者后续论文、审稿返修期、同门师兄弟转介、课题组批量投稿形成长期关系；一次定制的高校模板可在每年毕业季重复售卖与维护。
+
+四、入门门槛
+技能：LaTeX 基础约 5–10 小时可上手，达到能独立处理期刊论文的水平约需 40–100+ 小时（供应商公开指南口径）。核心是读懂官方 .cls 模板、BibTeX 书目样式、跨页/跨栏表格、公式编号、图片浮动、交叉引用与投稿系统的常见报错；外加一封清楚的英文确认邮件。2–6 周可接简单单。
+工具：初期 Overleaf 免费版 + TeX Live/MiKTeX + Zotero/JabRef + Pandoc + Git，全部可零成本；可选付费只有 Overleaf 高级套餐或云存储，每月 0–30 美元足够。
+资金：0–200 美元（域名、邮箱、合同/NDA 模板、样稿制作），无库存、无设备。
+时间：从零到第一单常见 3–8 周——2–4 周练模板与建样稿，1–2 周做内容展示与定向外联，1–2 周成交首单；已有学术圈人脉或本身是研究者会显著更快。
+
+五、为什么适合 OPC / 数字游民
+第一，100% 异步文件交付：客户发来原稿与模板，你回传源文件和 PDF，不需要实时会议；截稿季的夜间赶工可放在你的白天。第二，客户全球分布：IEEE、Elsevier、Springer、ACM 的模板是全球通用语言，英文学术场景可服务 40+ 国家客户，不受本地关系网限制。第三，边际成本低：模板库、检查清单、书目样式和报价模板一次建好，新客户主要增加人工重排时间，不增加固定成本。第四，责任边界干净：只改格式不改内容，避免学术内容争议；NDA 与源文件交付让信任可建立。第五，时区友好：投稿系统 24 小时开放，交付按文件时间戳完成，和客户时区几乎无关。第六，可小可大：一人做论文单是副业级投入，做到学位论文与课题组 retainer 则可变成全职 OPC，不需要招人。
+
+六、潜在收益（谨慎，不承诺）
+参考数据（不是个人收入）：Overleaf 官网称全球超过 3,000 万人使用；Elsevier 官网称每年出版超过 47 万篇期刊论文——说明作者基数与投稿频次真实存在。需求侧已有商业验证：TheLatexLab 公开称服务 1,100+ 客户、覆盖 40+ 国家、支持 80+ 模板，并按 149–1,999 美元明码标价；Clutch 2026 年 3 月有一条真实客户评价，称 Word 转 LaTeX 后论文被期刊接受且无格式返修；Upwork 与 Fiverr 同时存在 50–490 美元与个位新元的极端分层，说明市场两头都有成交。以上均为平台与供应商公开信息，不等于任何人都能获得相同收入。
+新手阶段（前 1–3 个月）：若每周投入 10–20 小时、从 15–150 美元的小单起步，月收入 300–1,500 美元是可能的推算区间；平台佣金、免费返修和试错会吃掉相当部分，收入很不稳定。
+成熟阶段（6–18 个月，有评价、模板库与直接客户）：每周 20–30 小时、每月 8–15 个论文单或 2–4 个学位论文单，按 150–599 美元单价推算，月收入 2,000–6,000 美元属于条件满足时的上限区间；这不是平均收入，也不构成承诺。决定因素：是否为公式密集领域、能否拿到高校/课题组批量单、返修次数是否被合同限定。
+
+七、主要风险
+市场风险：Overleaf 可视化编辑器与官方模板越来越易用，简单「套模板」需求正在 DIY 化；AI 排版辅助会继续压低低端单价；Fiverr 已有个位新元报价，低价端竞争激烈；投稿季集中、暑假与年末波动明显；期刊改版模板需要持续跟进。
+技术风险：本地与 Overleaf 宏包版本差异导致「我这里能编译、投稿系统不能」；扫描 PDF 的公式/OCR 错误无法靠排版修复；客户自绘矢量图缺失源文件；复杂表格跨栏与巨型学位论文的返修可能远超报价工时。
+合规风险：绝不能越界成论文代写、代改数据或结果；未发表稿件必须签 NDA、限制子处理者、交付后删除副本；跨境传输研究数据与客户信息要注意所在地隐私规则；独立接单涉及跨境收款与税务申报；期刊与高校对生成式 AI 的政策不一（Elsevier 2026 年更新了相关期刊政策），使用 AI 辅助须按客户与期刊要求披露。
+现金流风险：平台托管有放款周期；「改到满意」条款容易被无限返修拖住；加急单赶工出错反而触发退款；建议平台托管或 50% 预付、返修次数写入合同、退款保证限定为格式问题。
+
+八、不适合的人群
+想做论文代写、替客户编数据或承诺「保证录用」的人；对数学公式、参考文献样式和细碎校对缺乏耐心的人；不愿签保密协议、习惯把客户未发表稿件当案例展示的人；期望零沟通、纯被动收入的人；完全不熟悉英文期刊指南与学术写作场景的人；无法接受前 1–3 个月低价接单积累评价的人；不能承诺截止日前交付的人——这个行业的价值几乎完全建立在截稿日的可靠性上。
+
+九、3 个可验证的入门步骤
+1）1–2 天、0 成本：选一篇公开 arXiv 论文片段，用某目标期刊官方模板（如 IEEEtran 或 elsarticle）在 Overleaf 重建，直到本地与云端都 0 errors；同时整理 10 个常见报错及修复。若 2 天内连基础模板都编译不过，先补技能再决定。
+2）2–3 天、0–30 美元：从 3 个目标期刊的 Guide for Authors 抄出硬格式要求（页边距、参考样式、图表编号、源文件打包方式），做一页 before/after 样稿与固定价目表（以论文 149 美元起、学位论文 599 美元起为锚），请 3 位真实研究者评价；若没人说「这就是我卡住的地方」，换细分方向。
+3）3 天、50 美元以内：上架一个范围极窄的服务（只做格式、不写内容、交付 .tex + PDF + 一次返修），并定向联系 10 位近期在学术社群抱怨格式/编译问题的研究者，遵守社群规则不群发骚扰；拿到 1 个付费订单或 3 个明确报价请求即验证通过，否则调整定价或客户群。
+
+十、核验来源
+见 artifacts：Overleaf 官网（3,000 万用户与免费模板）、Springer Nature 官方 LaTeX 作者支持页（模板与编译失败警告）、Elsevier 作者页（年出版 47 万+ 篇）、TheLatexLab 服务与定价页、其专业出版指南（学习时长与期刊要求）、Clutch 上的 2026 年真实客户评价、Upwork 服务分档页、Fiverr 低价 gig 索引页。</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>24/11/2026, 09:14</p><p class="meta-line"><span>Finished</span>24/11/2026, 09:17</p><p class="meta-line"><span>Duration</span>3m 4s</p><p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p><p class="meta-line"><span>File</span><code>runs-workbuddy/2026-11-24/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>latex-typesetting</span><span>academic-publishing</span><span>document-formatting</span><span>research-support</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>1–2 天、0 成本：选一篇公开 arXiv 论文片段，用某目标期刊官方模板（如 IEEEtran 或 elsarticle）在 Overleaf 重建，直到本地与云端都 0 errors；同时整理 10 个常见报错及修复。若 2 天内连基础模板都编译不过，先补技能再决定。</li><li>2–3 天、0–30 美元：从 3 个目标期刊的 Guide for Authors 抄出硬格式要求（页边距、参考样式、图表编号、源文件打包方式），做一页 before/after 样稿与固定价目表（以论文 149 美元起、学位论文 599 美元起为锚），请 3 位真实研究者评价；若没人说“这就是我卡住的地方”，换细分方向。</li><li>3 天、50 美元以内：上架一个范围极窄的服务（只做格式、不写内容、交付 .tex + PDF + 一次返修），并定向联系 10 位近期在学术社群抱怨格式/编译问题的研究者，遵守社群规则不群发骚扰；拿到 1 个付费订单或 3 个明确报价请求即验证通过，否则调整定价或客户群。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://www.overleaf.com/">Overleaf 官网（超过 3,000 万用户、免费版、数千免费期刊模板）</a></li><li><a href="https://www.springernature.com/gp/authors/campaigns/latex-author-support">Springer Nature 官方 LaTeX 作者支持页（推荐模板、编译错误会导致投稿失败）</a></li><li><a href="https://www.elsevier.com/authors">Elsevier 作者资源页（每年出版 47 万+ 篇期刊论文、作者服务与 2026 政策更新）</a></li><li><a href="https://thelatexlab.com/latex-typesetting-services">TheLatexLab 服务定价页（论文 149–499 美元、学位论文 599–1,999 美元、1,100+ 客户）</a></li><li><a href="https://thelatexlab.com/blog/latex-for-professional-publications">TheLatexLab 专业出版指南（学习 5–10 小时/40–100+ 小时、IEEE/ACM/APS 要求 LaTeX）</a></li><li><a href="https://clutch.co/profile/thelatexlab">Clutch 上的 TheLaTeXLab 档案与 2026 年 3 月真实客户评价</a></li><li><a href="https://www.upwork.com/services/product/writing-translation-typeset-and-format-your-thesis-or-research-paper-in-latex-2004930865888184433">Upwork  LaTeX 排版服务分档（50/150/490 美元、加急 50–200 美元）</a></li><li><a href="https://www.fiverr.com/aliabbas335/edit-and-format-latex-overleaf-documents-professionally">Fiverr 低价 LaTeX/Overleaf 排版 gig 索引（6.77/27.10/54.20 新元、98 单；直连有反爬验证）</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 24/11/2026, 09:17</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
