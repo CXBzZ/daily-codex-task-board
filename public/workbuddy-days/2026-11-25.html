@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-25 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-11-25</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：网页归档与数字保存代管（Web Archiving / WARC Preservation）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-11-25.html">2026-11-25</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">网页归档与数字保存代管，是把客户网站按时间点抓成可回放、可校验的 WARC/WACZ 档案，并提供哈希签名、时间戳、变更报告和长期托管。需求藏在改版下线、页面取证、金融合规留存等隐蔽节点里，客户遍布欧美且全程异步交付；开源工具让启动成本接近零，一套采集与质检流程可反复复用，特别适合一人公司和数字游民。</p>
+      <div class="details">1. 行业是什么，为什么小众
+一句话定义：网页归档与数字保存代管（Web Archiving / Digital Preservation as a Service）——把客户指定的网站或页面按时间点用浏览器级抓取保存成可回放、可校验的 WARC/WACZ 档案，附带哈希清单、时间戳和检索入口，并按周期持续运行。
+它小众是因为需求出现在“出事之前或出事之后”的隐蔽节点：网站改版下线、页面被删、广告合规抽查、侵权取证、信息公开申请、并购尽调，没人会日常主动搜“网页归档服务”。搜索词高度分散（web archiving、WARC、网页证据保全、网站快照存证），大量需求被夹在网页抓取、网站备份、合规档案和公证四个大行业之间，看上去像档案馆/大机构才做的事，门槛被严重高估。实际上开源工具已经把采集这一环商品化，一个人就能把“采集+校验+交付+持续托管”做成闭环。
+
+2. 如何运作
+典型客户：① 律所与品牌维权团队（需要固定侵权页面、商品页、动态评论）；② 金融/受监管行业的营销合规与法务（对外网页要留存备查，如 FINRA Rule 2210、SEC 17a-4 语境）；③ 政府、高校、图书馆、基金会（信息公开与长期保存）；④ 网页设计/开发机构（客户网站改版或关站前留底）；⑤ 独立研究者、记者、PR 团队（跟踪价格页、声明页、政策页的历史版本）。
+触发需求：页面即将被改掉或删除；收到监管问询或面临诉讼；发现盗图/仿冒/虚假宣传要取证；客户要求“证明某天网站上写了什么”；网站要迁移、下线或域名到期。
+核心交付物：WARC 1.1 / WACZ 存档包；SHA-256/SHA-512 校验清单 + GPG 签名 + RFC 3161 或 OpenTimestamps 时间戳；可用浏览器回放的门户或 ReplayWeb.page 离线查看器；抓取日志与 manifest；变更差异报告；留存与取用策略文档。若客户要司法采信的公证书，只做“采集与整理”，再转交公证处/可信时间戳平台，绝不冒充公证或出具法律意见。
+完整工作流：确认范围（URL 清单、抓取频率、是否含动态/登录内容、保存年限、证据用途）→ 估容量与工时并报价 → 对 3–5 个代表页试抓并让客户确认完整性 → 配置定时或事件触发抓取（Browsertrix / ArchiveBox / ArchiveWeb.page + Playwright）→ 逐页质检（页面数、关键图片、JS 渲染、外链资源）→ 生成校验清单与签名 → 交付到客户 S3/网盘或离线硬盘并附回放入口 → 按周期巡检、出变更报告、追加新快照 → 收款与续约。
+关键工具与平台：Browsertrix（Webrecorder 开源，可自托管，托管版约 $30/月起）、ArchiveBox（免费自托管）、ArchiveWeb.page + ReplayWeb.page（免费采集/回放）、SingleFile（单页打包）、无头 Chrome/Playwright、GPG + OpenTimestamps、对象存储（S3/B2，约 $5–20/月）；机构级对照产品有 Archive-It、PageFreezer、MirrorWeb、Smarsh、Hanzo、荷兰 Capsis Presurf。
+
+3. 盈利模式
+收入来源与定价：① 一次性归档包：50–200 个 URL 的中小站约 $300–1,200，动态/多语言/大媒体站 $1,000–3,000；② 持续监测托管：1–3 个站点、每周或每日抓取、含回放与变更报告，约 $100–400/月，通常签 6–12 个月；③ 加急取证/事件抓取：$150–400/小时或 $500–2,000/项目，24 小时内出包；④ 存储与检索托管：$20–100/月（存储费实报实销）；⑤ 培训与流程咨询：$75–150/小时。
+利润空间：主要成本是工具（$0–50/月）、对象存储（$5–30/月）与少量算力，扣除平台/支付手续费与税费前毛利常见在 60%–85%；一次性项目需要把试抓和质检工时算进去，否则容易被“抓一天、改三天”吃掉利润。
+复购与长期合同：留存周期通常 1–7 年，站点改版、政策更新、季度合规抽查都会触发再次抓取，托管型客户天然年续；把客户的历史档案放在自己这里，迁移成本高，续约率高于普通设计/文案类自由职业。
+
+4. 入门门槛
+技能：基础命令行与 Docker、浏览器渲染与动态页面常识、WARC/WACZ 与校验和/时间戳概念、能写英文服务说明和交付报告；有 Web 开发或 IT 背景的人 1–3 周可上手基础采集与回放，合规术语和客户沟通再需 2–4 周，不需要档案学学位。
+工具：Browsertrix / ArchiveBox 自托管免费，托管版约 $30/月；Chrome + Playwright 免费；GPG/OpenTimestamps 免费；对象存储 $5–20/月；域名+简单官网约 $50/年。
+资金：启动约 $0–300（主要是首年域名、少量 VPS/存储和试抓算力）。
+时间：从零到第一单通常 2–6 周：第 1–2 周做作品集样包，第 2–4 周定向外联律所/合规顾问/网页机构，第 4–6 周完成首个小站归档项目。
+
+5. 为什么适合 OPC / 数字游民
+异步交付：抓取、校验、定时巡检都可以脚本跑，人只做范围确认、质检和报告，不需要与客户同步在线；客户在欧美也只需邮件/工单往返，时区几乎不影响。
+全球客户：合规与取证需求在美国、欧盟、英国、荷兰等市场已经形成采购习惯，而许多本地供应商只服务大机构，一人远程服务商可以用英文直接接单。
+边际成本低：同一套采集配置、manifest 模板、回放门户和质检清单可以复用到每个客户，脚本写好后每新增一个站点几乎只增加存储与抓取时间。
+可规模化：从一次性归档包起步，升级为月度托管，再叠加变更监测报告、取证加急、内部培训，客单价和粘性逐层上升。
+地点自由与低门槛：一台笔记本加 VPS 就能交付，不需要本地执照或实体场所（前提是只做技术采集与保存，不提供法律意见、不出具公证效力文件）；项目单价 $500–3,000 又低于大厂动辄询价起步的门槛，正好是机构不愿接、个人能接的夹层。
+
+6. 潜在收益（谨慎，不承诺）
+新手阶段（前 3–6 个月）：可能 0 单；若每月 0–3 单，项目收入约 $300–1,500/月，扣工具、平台费与税费后净额通常更低。
+成熟阶段（有 3–8 个托管客户 + 每月 2–4 个项目）：月收入约 $2,000–6,000 区间，扣存储、工具、支付/平台抽成和税后净额大约 50%–80%；这是有稳定获客与质检流程之后的情形，不是起步预期。
+公开参考数据：GII/360iResearch 报告估算网络存档工具市场 2025 年约 $8.21 亿、2026 年约 $8.72 亿，2026–2032 年 CAGR 约 5.77%；恒州诚思 YH Research 估算全球数字归档与修复服务 2025 年约 $22.72 亿、2032 年约 $48.56 亿，CAGR 约 11.4%；荷兰 Capsis Presurf 公开定价 Lite €160/月 + €490 一次性设置费，Pro €490/月；PageFreezer 公开起价约 $1,500/年（多数竞品只接受询价）；Webrecorder 托管版约 $30/月起；德国 FRATCH 平台 2026 年数字归档自由职业者平均日费约 €715–893（偏企业与资深岗位）。
+以上均为参考数据，不等于个人收入；实际收入取决于获客能力、客户规模、留存年限与是否承担合规责任。
+
+7. 主要风险
+市场风险：免费 Wayback Machine / archive.today 与“AI 摘要一下就行”的认知，会让客户低估专业归档的价值；Fiverr 上 100+ 个 “wayback restore” 低价服务（$10–80）虽是“恢复网站”而非“保存证据”，却会拉低客户心理价位；大型合规平台若推出 SMB 简版，会压缩中间地带。
+技术风险：动态渲染、登录墙、地域限制、反爬与第三方 iframe 都会造成漏抓；WARC 文件体积大、长期格式兼容和客户回放环境差异会带来支持成本；自托管 Browsertrix 需要维护，校验链（hash/签名/时间戳）一旦中断，证据价值会大打折扣。
+合规风险：不能宣称“公证”“法院认可”或提供法律意见——中国网页证据若要强效力仍需公证处/可信时间戳（上海浦东公证处公开快照取证按每链接 30 公证基数收费），欧美受监管客户的留存义务也须由客户合规官确认；跨客户数据涉及 GDPR/CCPA、跨境传输、网站内容版权与隐私信息，合同必须写明授权范围、保密与删除流程。
+现金流风险：企业客户账期 30–90 天，长期存储承诺却是持续支出；加急取证要收 50% 预付；一次性项目若无限追加“再抓一次”会侵蚀利润，需用范围说明书限定 URL 数、频率与返工次数。
+
+8. 不适合的人群
+想做“被动收入”、不愿持续外联和解释价值的人；英文阅读与写作吃力、不愿读合规条款的人；把普通快照包装成“法律证据”兜售、想绕开公证和持牌专业人士的人；抗拒命令行、大文件和长期运维的人；只准备服务 1–2 个客户却期待月入上万的人；需要实时在线协同、无法接受异步邮件沟通的人。
+
+9. 3 个可验证的入门步骤
+步骤一（1–2 天，$0）：用 ArchiveBox 或 Browsertrix 免费版抓 3 个含 JS 渲染的公开网站，导出 WARC/WACZ，生成 SHA-256 清单，用 ReplayWeb.page 离线回放，写一页“抓到了什么/漏了什么”。若 2 天内回放不完整或校验对不上，先补技术，不要接单。
+步骤二（2–3 天，$0–30）：为一个虚构客户做 before/after 样包——同一站点按周抓两次、模拟一次改版，输出差异报告 + 带时间戳的 manifest + 回放入口，发给 3 位真实目标客户（律所、合规顾问、网页机构）各要 10 分钟反馈。若 3 人中没有一个说“这正是我卡住的地方”或愿意转介绍，换细分场景再试。
+步骤三（1–3 天准备、2 周验证，$0–100）：在独立站和 Upwork/Fiverr 上架 “Done-for-you WARC web archive” 服务（首次归档 $299 起、托管 $99/月起），投 5 个提案并定向发 10 封外联邮件，目标 2 周内拿到 1 个付费试单。若 20 次触达 0 回复，收窄定位（例如只做“律师侵权取证包”或“金融营销网页留存”）再重测。
+
+10. 核验来源
+GII/360iResearch 网络存档工具市场报告（2025 基准 $8.2086 亿、CAGR 5.77%）：https://www.giichinese.com.tw/report/ires2179391-internet-archive-tool-market-global-forecast.html
+恒州诚思 YH Research 数字归档与修复服务市场（2025 $22.72 亿→2032 $48.56 亿，经格隆汇发布）：https://m.gelonghui.com/p/4704303
+Capsis Presurf 官网公开定价（€160/月起 + 一次性设置费、ISO 28500 WARC 1.1）：https://capsis.nl/index.html
+StartupStash PageFreezer 替代品与定价对比（PageFreezer 年费 $1,500 起、Browsertrix $30/月、Stillio $29/月，截至 2026-11-06）：https://startupstash.com/alternatives/pagefreezer/
+InnoDIGI 网页归档服务流程说明（WARC、SHA-256/512、GPG 签名、RFC 3161 时间戳、回放门户、MDTO）：https://www.innodigi.nl/en/webarchivering
+Webrecorder 官网（Browsertrix / ArchiveWeb.page / ReplayWeb.page 开源工具套件）：https://webrecorder.net/
+ArchiveBox 官网（免费自托管的网页归档工具）：https://archivebox.io/
+科学月刊 2025 互联网典藏会议报道（Browsertrix 在 SUCHO 与 End of Term Web Archive 的真实应用）：https://www.scimonth.com.tw/archives/13496</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>25/11/2026, 09:04</p><p class="meta-line"><span>Finished</span>25/11/2026, 09:09</p><p class="meta-line"><span>Duration</span>4m 24s</p><p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p><p class="meta-line"><span>File</span><code>runs-workbuddy/2026-11-25/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>web-archiving</span><span>digital-preservation</span><span>compliance-archive</span><span>evidence-preservation</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>步骤一（1–2 天，$0）：用 ArchiveBox 或 Browsertrix 免费版抓 3 个含 JS 渲染的公开网站，导出 WARC/WACZ，生成 SHA-256 清单，用 ReplayWeb.page 离线回放，写一页“抓到了什么/漏了什么”。若 2 天内回放不完整或校验对不上，先补技术，不要接单。</li><li>步骤二（2–3 天，$0–30）：为一个虚构客户做 before/after 样包——同一站点按周抓两次、模拟一次改版，输出差异报告 + 带时间戳的 manifest + 回放入口，发给 3 位真实目标客户（律所、合规顾问、网页机构）各要 10 分钟反馈。若 3 人中没有一个说“这正是我卡住的地方”或愿意转介绍，换细分场景再试。</li><li>步骤三（1–3 天准备、2 周验证，$0–100）：在独立站和 Upwork/Fiverr 上架 “Done-for-you WARC web archive” 服务（首次归档 $299 起、托管 $99/月起），投 5 个提案并定向发 10 封外联邮件，目标 2 周内拿到 1 个付费试单。若 20 次触达 0 回复，收窄定位（例如只做“律师侵权取证包”或“金融营销网页留存”）再重测。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://www.giichinese.com.tw/report/ires2179391-internet-archive-tool-market-global-forecast.html">GII/360iResearch 网络存档工具市场报告（2025 基准 8.2086 亿美元、CAGR 5.77%）</a></li><li><a href="https://m.gelonghui.com/p/4704303">YH Research 数字归档与修复服务市场（2025 22.72 亿美元→2032 48.56 亿美元）</a></li><li><a href="https://capsis.nl/index.html">Capsis Presurf 官网公开定价（160 欧元/月起 + 设置费，ISO 28500 WARC 1.1）</a></li><li><a href="https://startupstash.com/alternatives/pagefreezer/">StartupStash 网页归档服务定价对比（PageFreezer 1500 美元/年起、Browsertrix 30 美元/月起）</a></li><li><a href="https://www.innodigi.nl/en/webarchiving">InnoDIGI 网页归档服务流程（WARC、SHA-256/512、GPG 签名、RFC 3161 时间戳、回放门户）</a></li><li><a href="https://webrecorder.net/">Webrecorder 官网（Browsertrix / ArchiveWeb.page / ReplayWeb.page 开源工具）</a></li><li><a href="https://archivebox.io/">ArchiveBox 官网（免费自托管网页归档工具）</a></li><li><a href="https://www.scimonth.com.tw/archives/13496">科学月刊 2025 互联网典藏会议报道（Browsertrix 在 SUCHO 与 End of Term Web Archive 的应用）</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 25/11/2026, 09:09</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
