@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-25 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-25</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-25.html">2026-11-25</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天的细分行业是面向海外小型 SaaS、API 产品和开发者工具团队的 Webhook 签名验证、重复/重放处理与上线前 QA 服务，属于中国境内可远程承接的海外市场。它可由 OPC/数字游民从客户授权的 sandbox、单一端点和证据化测试报告小单切入，但不应被包装成安全审计、支付代管或持续值守。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+Webhook 安全与交付 QA，是在 Stripe、GitHub、Square、CRM、订阅系统等平台向客户服务端推送事件时，核验接收端是否正确完成签名验证、原始请求体处理、快速确认、重复事件去重、失败重试、错误告警与交接文档的专项服务。客户买的不是“接上一个回调地址”，而是把支付状态、代码事件、订单或账号变更安全、可重复地进入自身业务流程。
+
+它小众，是因为很多开发项目只把 webhook 当成一个 HTTP POST；但 GitHub 官方要求先验证签名再处理，并使用高熵 secret、HTTPS、最小订阅事件和 10 秒内响应。OWASP 也指出，单纯有效的签名不能防止重放，且正常失败重试会产生重复投递。该工作介于后端开发、集成测试、运行可靠性和轻量安全工程之间，适合有工程基础的人，不适合把模板代码直接复制进生产的人。
+
+## 目标市场与需求场景
+
+目标为中国境内可做的海外英语市场，优先客户是 1–30 人的小型 SaaS、独立开发者、API-first 工具、开源商业项目和轻量电商软件团队。典型触发是：
+
+- 上线 Stripe 支付、GitHub App/仓库联动、预约/表单或 CRM 同步前；
+- 线上出现“重复扣款、重复发信、事件漏处理、验签失败、重试风暴”后；
+- 框架升级、服务迁移、反向代理/Serverless 改造后，需要回归验证；
+- 客户要把由个人维护的监听代码交接给新开发者或小团队。
+
+这不是中国境内支付、金融或网络安全持牌服务，也不为中国客户绕开海外平台准入。服务对象须是境外客户自有、已合规开通的平台账户；中国境内服务商只在书面授权范围内交付技术测试与文档。
+
+## 如何运作：参与方和工作流
+
+1. **范围确认**：锁定一个平台、一个接收端、约定事件类型、测试环境、验收清单与数据保留期限；明确不处理真实卡号、长期管理员凭据或生产密钥。
+2. **只读盘点**：检查 endpoint、HTTPS、事件订阅范围、框架是否保存未经改写的 raw body、secret 保存位置，以及日志是否脱敏。GitHub 明确要求用 webhook secret 验证 payload，且不应把凭据放入 payload URL。
+3. **Sandbox/测试实现核验**：复核 HMAC 或平台规定的验签方法、恒定时间比较、事件类型白名单、body 大小/格式校验、快速 2xx ACK 后异步处理。
+4. **可靠性测试**：构造合法、错误签名、重复投递、延迟/重放、乱序和下游失败场景；验证幂等记录、队列/死信处理、告警和人工重试路径。GitHub 提示使用 `X-GitHub-Delivery` 识别普通重投；Stripe 和 OWASP 均提醒须考虑重试与幂等。
+5. **交付与上线确认**：交付测试矩阵、截图/请求 ID、发现项、修复建议、回滚步骤和密钥轮换提醒；生产 secret 由客户管理员保管，最终变更和上线由其确认或执行。
+
+典型参与方包括客户产品/工程负责人、开发者、平台方（如 Stripe/GitHub）、托管/队列服务、独立 QA 服务商；涉及支付状态或高并发多系统同步时，应由资深后端/安全团队负责。
+
+## 盈利模式与克制的报价口径
+
+收入来自固定范围的“单端点体检 + sandbox 测试 + 报告”、小范围修复 PR/补丁、上线前复测与交接文档，不来自支付资金分成，也不应承诺业务增长。Upwork 公开页面中可见一个含测试和文档的 API/webhook 集成套餐样本为 USD 85 / 210 / 440；其 API 开发者历史合同典型时薪区间为 USD 20–40。两者只是国际市场公开报价观察，并非个人可获得的稳定收入或推荐标价。
+
+按 2026-11-25 中国外汇交易中心 USD/CNY 中间价 1 USD = 6.7088 CNY 粗算：
+
+- 单端点只读检查、10 条以内测试矩阵和风险报告：USD 150–300，约人民币 1,006–2,013 元；须是客户提供 sandbox/脱敏事件和既有代码。
+- 单端点验签/去重缺口修复、测试事件、一次复测与交接包：USD 400–800，约人民币 2,684–5,367 元；不含生产密钥代管、支付业务规则改造或 24 小时支持。
+- 两个端点的上线前 QA、小范围异步队列/告警核验和回滚清单：USD 900–1,500，约人民币 6,038–10,063 元；前提是客户已有部署、测试环境和工程负责人。
+
+成本包括英文需求澄清、测试/复测、平台和收款费用、税费、版本返工、时区会议、必要的云环境以及数据/密钥保护。新手不应把报价当月收入，也不应以“防黑客、零漏单、绝不重复扣款”售卖。
+
+## 入门门槛
+
+- **技能**：HTTP/HTTPS、HTTP header、HMAC/签名、原始 body 与 JSON 解析差异、恒定时间比较、幂等性、队列、重试、日志脱敏、Git 与英文技术沟通。
+- **工具**：可靠电脑、私密网络、密码管理器/MFA、测试项目、请求抓取或平台官方 CLI、代码测试框架、工单和报告模板。不要把客户 payload、签名头或 secret 粘贴给未获授权的第三方/AI 工具。
+- **资质与资金**：通常不需要海外当地职业牌照或实体门店；要投入学习、测试账户、域名/小型云环境与获客时间。不要自称安全审计机构、渗透测试机构或 Stripe/GitHub 官方服务商。
+- **时间**：先用 1–2 周在自建 demo 上完成 Stripe 或 GitHub 的签名、重复事件和失败队列测试；首单应预留英文范围确认、客户时区重叠和至少一次复测。
+
+## 中国境内承接海外市场：合规与执行
+
+- **获客与合同**：可在 Upwork、LinkedIn、GitHub 社区或独立案例页展示自建 demo 的测试矩阵；不展示客户日志/代码。合同或订单要写明端点、环境、交付、验收、权限、保密、数据删除和责任边界，遵守平台身份、沟通与收款规则。
+- **收款、发票与税务**：通过合规平台或银行，按真实技术服务留存合同、范围、验收和收款记录。国家税务总局列有对境外单位、完全在境外消费的专业技术服务等跨境应税行为的政策范围，但是否免税或适用零税率取决于服务性质、消费地、主体和申报手续；不能承诺自动免税，应向主管税务机关或专业人士逐单核实。
+- **外汇**：按真实服务贸易背景收结汇并配合银行真实性材料。外汇局强调交易真实性与风险控制；不可使用虚假交易、代收代付或绕开平台条款的方式收款。
+- **数据、隐私与安全**：webhook 可能含客户、订单、邮箱、内部仓库或账户状态。采用最小权限、脱敏样本、限时访问、MFA、加密传输/存储、日志删敏、禁止二次利用及书面删除期限。中国《个人信息保护法》对受托处理、处理目的、期限、方式和删除/返还提出边界；客户所在地的隐私、保密和行业规则也要同步满足。
+- **语言与时区**：需要读懂英文平台文档、用英文说明测试假设与风险，并对北美/欧洲预留有限的上线窗口；不承诺 7×24 值守。
+
+## 为什么适合或不完全适合 OPC / 数字游民
+
+**OPC 适配：较适合。** 单一平台、单端点、固定测试矩阵和证据报告易产品化，首单可仅做 sandbox。多系统双向同步、真实支付资金状态、高并发或生产事故处置不适合一人独立承诺，应拆单或与资深工程师协作。
+
+**数字游民适配：部分适合。** 编码、回归测试和文档可异步远程完成；但稳定网络、安静私密环境、时区重叠、密钥管理和上线窗口是硬条件。在公共 Wi-Fi、共享设备或旅行途中不得下载生产日志/原始 payload，更不应代管 secret。
+
+## 主要风险、合规注意事项与不适合人群
+
+- 漏验签、先解析/改写 body 再验签、secret 写入代码库、只按 IP 白名单、未做幂等，都可能造成伪造、重放、重复执行或数据泄露。
+- 不处理或留存真实卡号；不索取客户 MFA 验证码、长期管理员 token、生产 webhook secret，也不在日志记录完整 payload、授权头或签名。
+- 不承诺平台审核、支付成功率、零故障、零重复事件、反欺诈效果、法律/隐私合规或安全认证。
+- 不适合没有后端基础、不能读英文规范、无法提供私密稳定工作环境、想拿到生产账号后“全权托管”，或不愿在测试环境先验收的人。
+
+## 新手可验证的 3 个低成本步骤
+
+1. 用自建 GitHub 测试仓库或 Stripe 测试模式，做一个只接收单类事件的 endpoint；实现原始 body 验签、事件 ID 去重、快速 ACK 和失败队列，并写 10 条测试清单。
+2. 做一页英文固定范围说明：只做 sandbox/脱敏样本、单端点、安全核验、测试矩阵和交接；明确 secret 由客户保管、生产发布由客户管理员确认。
+3. 在一个合规平台或 LinkedIn 发布 USD 150–300 的“webhook verification preflight”试单，只接一个平台/端点；使用书面授权、最小权限、限时访问和删除证明完成首次交付。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 已审查并建议通过：
+
+- 中国境内承接海外市场适配度：**4/5**。可在客户 sandbox、测试端点和授权代码仓库远程完成，但合同、收款、交付证据和税务申报不可省略。
+- OPC/一人公司适配度：**4/5**。单平台、单事件流的验签/重复处理/测试报告可标准化；双向同步、支付资金状态和高并发场景须拆单。
+- 数字游民适配度：**3/5**。开发和文档可异步，但稳定网络、私密环境、时区、密钥和上线窗口要求高。
+- 合规风险等级：**中**。载荷可能含订单、客户或账户数据，须用脱敏样本、最小权限、书面目的/期限和删除安排。
+- 跨境执行风险等级：**中**。税务政策不能一概而论，必须以真实合同、服务性质、消费地、主体与申报材料为准。
+- 收益口径：**克制**。以固定范围小单和公开报价观察呈现，已列出返工、沟通、平台费、税费和收款成本，未承诺稳定收入。
+- 信息来源：**较高可信**。GitHub、Stripe、OWASP、国家税务总局、外汇局和中国货币网直接支撑技术、跨境履约与汇率边界；Upwork 仅用于公开价格观察。
+- 最该补充或提醒的一句话：**验签必须在未经改写的原始 HTTP 请求体上完成，并同时验证时间戳、去重/幂等键与失败重试路径；生产密钥和最终上线操作应由客户管理员保管及确认。**
+
+## 关键来源
+
+1. GitHub Docs, Validating webhook deliveries：https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries
+2. GitHub Docs, Best practices for using webhooks：https://docs.github.com/en/webhooks/using-webhooks/best-practices-for-using-webhooks
+3. Stripe Docs, Receive Stripe events in your webhook endpoint：https://docs.stripe.com/webhooks
+4. OWASP Cheat Sheet Series, Webhook Security Cheat Sheet：https://cheatsheetseries.owasp.org/cheatsheets/Webhook_Security_Cheat_Sheet.html
+5. 国家税务总局，哪些业务可以享受跨境应税行为免征增值税政策？：https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html
+6. 国家外汇管理局，关于支持贸易新业态发展的通知：https://www.safe.gov.cn/en/2020/0520/1700.html
+7. 国家市场监督管理总局，中华人民共和国个人信息保护法：https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_f374e8245320413181742e6d1baf4366.html
+8. 中国外汇交易中心，人民币汇率中间价（2026-11-25 USD/CNY 6.7088）：https://www.chinamoney.com.cn/english/bmkcpr/
+9. Upwork, API Developer Hourly Rates：https://www.upwork.com/hire/api-developers/cost/
+10. Upwork, tested API/webhook integration public package sample：https://www.upwork.com/services/product/development-it-a-tested-api-integration-with-webhooks-and-documentation-2124426000062680169</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>25/11/2026, 15:55</p><p class="meta-line"><span>Finished</span>25/11/2026, 16:05</p><p class="meta-line"><span>Duration</span>10m</p><p class="meta-line"><span>File</span><code>runs/2026-11-25/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>webhook</span><span>saas</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>在自建 GitHub 或 Stripe 测试环境完成单端点验签、去重、快速确认与失败队列的 10 条测试清单。</li><li>制作英文固定范围页，只交付 sandbox/脱敏样本下的单端点核验、测试矩阵与交接，不代管密钥或生产发布。</li><li>以 USD 150–300 的 webhook verification preflight 小单，在书面授权、最小权限和删除证明条件下完成首个验证。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries">GitHub webhook signature validation</a></li><li><a href="https://docs.github.com/en/webhooks/using-webhooks/best-practices-for-using-webhooks">GitHub webhook best practices</a></li><li><a href="https://docs.stripe.com/webhooks">Stripe webhook endpoint docs</a></li><li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Webhook_Security_Cheat_Sheet.html">OWASP Webhook Security Cheat Sheet</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html">国家税务总局跨境应税行为说明</a></li><li><a href="https://www.chinamoney.com.cn/english/bmkcpr/">中国外汇交易中心人民币中间价</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 25/11/2026, 16:06</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
