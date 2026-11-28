@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-28 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a  href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a aria-current="page" href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">WorkBuddy Day</p>
+      <h1>2026-11-28</h1>
+      <p class="lede">1 WorkBuddy automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../workbuddy-tasks/niche-opc-industry.html">每日小众赚钱行业：游戏无障碍审计与包容性测试（Game Accessibility Audit）</a>
+          <p class="meta-line"><span>Date</span><a href="../workbuddy-days/2026-11-28.html">2026-11-28</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">游戏无障碍审计与包容性测试，是帮独立工作室/发行商检查游戏能否被残障玩家真正玩通：按 Xbox 无障碍指南（XAG）、Game Accessibility Guidelines 与 24 项 Accessible Games Initiative 标签逐项验证，交付问题清单、复现证据、修复优先级和残障玩家试玩反馈。交付物是报告与远程协作，不需要本地执照或团队；标签标准化正在把“可访问性”变成可验证的商店信号，却几乎没有对应的单人服务商供给，适合 OPC / 数字游民切入。</p>
+      <div class="details">1. 行业是什么，为什么小众
+一句话定义：为独立游戏团队、发行商、教育/严肃游戏开发商做“能不能被所有人玩通”的专项 QA——不是普通功能测试，也不是法律咨询，而是按公开的无障碍标准（XAG 23 项、Game Accessibility Guidelines 的 basic/intermediate/advanced 三级清单、AGI 24 项标签）检查文本、对比度、字幕、输入重映射、屏幕旁白、时间限制、动态效果、聊天沟通等，交付带复现步骤的问题报告、修复优先级、标签就绪度评估，并组织残障玩家远程试玩给出真实反馈。
+为什么被低估：第一，需求词极其分散。客户不会搜“无障碍顾问”，他们说的是“字幕在雪地里看不清”“手柄长按跳不过去”“色盲玩家投诉”“想上 AGI 标签但不知道够不够格”。第二，它夹在三个大行业之间——QA 测试、UX 研究、合规咨询，谁都碰一点但没人把它当成独立品类，因此大众教程和低价竞争都少。第三，门槛被高估：外人以为要懂法律或无障碍工程，实际上公开标准、免费屏幕阅读器和色盲模拟器已经把入门成本压得很低，真正稀缺的是“会把体验问题写成开发者能改的工单”的人。第四，受众有认知盲区：微软与 ESA 口径称全球有超过 4.29 亿残障玩家，但大量独立团队仍默认“玩家和我一样”，直到评论区和商店标签倒逼才想起这件事。这不是没有需求，而是需求藏在发布前的焦虑里。与看板已覆盖的「网站可访问性审计 WCAG」「PDF 无障碍合规」「视频字幕/音频描述」明确不同：本项只针对电子游戏交互系统，交付的是游戏构建版本的体验缺陷与标签证据，不是网页 DOM、PDF 标签树或字幕文件。
+
+2. 如何运作
+典型客户与触发点：主力客户是 1–15 人的独立工作室、发行商的独立游戏产品线、教育游戏/严肃游戏团队；次级客户是需要商店标签与无障碍说明的 PC/主机开发者、正在处理玩家投诉的社区运营团队。触发点通常是：Demo 要上 Steam Next Fest、准备 Xbox/PC/主机认证、想在商店挂 AGI 无障碍标签、拿到“色盲/手残/听障玩家玩不了”的差评、投资人或发行商要求一份无障碍路线图，或团队想改但不知道先改哪 5 项。
+核心交付物：（a）无障碍审计报告——每条问题附发生界面、复现步骤、预期/实际结果、截图或录屏、影响玩家类型、对应 XAG/AGI/GAG 条款；（b）按“阻断/严重/一般/锦上添花”排序的修复 backlog，并标出哪些改动在引擎早期做最便宜；（c）标签就绪度表——24 项 AGI 标签逐项判断“已达/差一点/未达”，微软 XAG 与 AGI 标签要求分开呈现；（d）残障玩家试玩记录—— recruiting 简介、30–45 分钟远程会话录像、匿名化反馈摘要、参与者补偿台账；（e）一页对外可用的无障碍说明草稿，供官网/商店页使用，明确不替客户做法律声明。
+完整工作流：签 NDA 与范围确认（平台、引擎、构建版本、核心流程、是否含多人聊天）→ 收 build / Steam key / 测试账号 → 免费 20 分钟样本走查并报价 → 用基本清单做专家审计（键盘/手柄/屏幕阅读器/色盲模拟/高对比/字号/字幕/时间限制/晕动设置）→ 出 first-pass 报告 → 招募并支付残障玩家做 3–8 场远程试玩 → 合并玩家反馈并剔重 → 交付报告 + 修复工作坊录像 → 客户修复后做一轮复测 → 尾款与下一版本 retainer。关键原则：只报告与协调，不替客户写代码、不出法律意见。
+关键工具和平台：免费标准源包括 XAG 官方文档、Game Accessibility Guidelines 全量清单、AGI 标签与技术标准页；实操工具常用 NVDA/JAWS/VoiceOver、Color Oracle 或系统色盲滤镜、OBS 录屏、浏览器缩放与游戏内 UI 缩放、键盘/手柄重映射检查表；组织工具用 Notion/Airtable 管问题与参与者补偿，Discord/Zoom 做远程试玩，Steam/itch.io key 交付测试版；社区与招募入口包括 IGDA Game Accessibility SIG、AbleGamers Player Panels、Can I Play That 等无障碍游戏评测社区。硬件方面 PC + 键盘 + 普通手柄即可起步，自适应控制器/主机硬件属于进阶加分项。
+
+3. 盈利模式
+收入来源与定价：常见四种卖法——按项目的一次性审计（1 个核心流程、10–20 个界面）、按标签/平台的扩展包、按场次的用户测试（含参与者补偿）、按月 retainer（版本更新后复测 + 新功能评审）。公开价格锚点：Accessible.org 在 2026-10-29 更新的价目表写明，多数人工无障碍审计 $1,250–$2,750，主要页面/屏幕 $100–$250、轻页面 $25–$100，技术支持 $195/小时，残障专业人士用户测试 $550/场（捆绑审计 $450/场），且明确把 Games 列入可审计数字资产。相邻行业参考：数字无障碍咨询从业者 Kris Rivenburgh 公开建议入门 $50–100/小时、中级 $100–150/小时、专家 $150–195+ 小时；SalaryExpert 2026-11 口径的美国 accessibility consultant 雇佣平均约 $98,849/年、折合约 $47.52/小时（这是受雇薪资，不是自由职业报价）。建议定价（这是建议，不是市场统计）：轻量审计 $300–800；标准审计 $1,500–3,500；含 3–5 名残障玩家试玩与复测 $3,000–8,000；retainer $1,000–3,000/月。
+利润空间：标准、培训资料、NVDA、Color Oracle、OBS 基本为 $0；可变成本是参与者补偿（建议按 30–60 分钟付 $30–75/人，按当地与社区惯例调整）、平台抽成（约 10%–20%，以平台实时条款为准）、支付手续费与税费。纯专家审计的毛利大致 60%–85%；扣掉参与者费用、平台费、返工与税费后，净利大致 40%–70%。真正吃利润的是客户 build 不稳定、需求从“看看”蔓延到“帮我修”和无限返测。
+复购与长期合同：游戏每出版本、每加新机制都要回归测试；一旦进入发行商的合格供应商名单，多个项目会持续派单。相比一次性报告，retainer + 逐标签扩展更稳定，也更适合一人安排现金流。
+
+4. 入门门槛
+技能：需要会玩并理解游戏机制、能照着清单逐项验证（文本/对比度/多通道提示/字幕/输入/难度/UI 导航/时间限制/光敏/聊天文字语音互转）、会写可复现的 bug 报告、会把“我玩不了”翻译成“哪个系统blocked了哪类玩家”。不需要法律学位；必须补的一课是残障玩家礼仪与知情同意—— IGDA GA-SIG 与微软都提供 etiquette / player experience 指南。常规 PC 游戏审计 2–4 周可上手；主机与自适应控制器、认知无障碍专项再各加 2–4 周。
+工具：XAG、Game Accessibility Guidelines、AGI 标签页全部免费；NVDA 与 Color Oracle 免费；OBS 与 Notion/Airtable 免费层够用。初期只有一台能跑目标的电脑和已有手柄时，工具成本可压到 ¥0–300；若要覆盖 Xbox/PlayStation 主机或购买自适应控制器，另算硬件。
+资金：首月主要是学习时间、测试账号/Demo key、参与者补偿垫付与极简作品页，建议准备 ¥2,000–6,000 周转金；没有库存、场地、执照要求。
+时间：从零到第一单常见 1–3 个月——前 2 周做两个免费样张审计，第 3–6 周在 IGDA/indie Discord/LinkedIn/Upwork 输出案例并直邮 30 家小团队，首单多为低价试点；有 QA、UX 或游戏开发背景可压到 2–4 周。
+
+5. 为什么适合 OPC / 数字游民
+交付物是屏幕录像、问题表和文档，全程异步：客户晚上上传 build，你白天审计，残障玩家分布在不同时区，会话录像可留给客户自行查看，不需要同地同屏。客户天然远程化——游戏工作室本来就跨时区协作、用 Discord/Notion/Steam key 工作，一人顾问反而比机构更灵活。标准完全公开，获客可以靠公开样张与社区声誉，不依赖本地人脉或执照。边际成本递减：一套测试用例模板、一份 AGI 标签映射表、一套 bug 报告格式，换游戏只改机制相关条目；复测比首测便宜，适合做成订阅。收入来源可分散到多个独立工作室与发行商，避免单一客户绑架；“专家审计 + 玩家小组 + 复测”三段可拆可合，既可按预算卖轻量版，也能向上加价，而不必雇人。唯一需要留意的是玩家会话的实时性——通过录像、异步问卷和跨时区排期即可化解。
+
+6. 潜在收益（谨慎，不承诺）
+参考数据：微软与 ESA 在 2025 年 AGI 发布中称全球有超过 4.29 亿残障玩家；Game Accessibility Guidelines 引用 PopCap 调查称残障人群约占人口 15%、在休闲玩家中约 20%（二手引用，以原机构最新数据为准）。需求侧信号：Xbox Wire 称 2025 年 AGI 标签上线时各数字渠道已有 4,000+ 标签；AGI 官网列出 24 项标签及公开技术标准，并已覆盖 Xbox、EA、Nintendo of America、Ubisoft、Riot、YouTube Playables 等渠道。价格侧信号：Accessible.org 的公开审计 $1,250–$2,750、用户测试 $550/场；Kris Rivenburgh 给出的通用数字无障碍咨询入门 $50–100/小时、专家 $150–195+ 小时；SalaryExpert 的受雇平均约 $98,849/年只能说明岗位存在，不能当自由职业收入。这些都是参考数据，不等于个人收入。
+新手阶段（前 3–6 个月）：可能只有 0–2 单试点，月流水常见 ¥0–8,000，主要产出是 2–3 份公开样张和玩家反馈样本，净利经常为负（参与者补偿要先垫）。成熟阶段：每月 2–4 个小审计 + 1 个玩家小组项目 + 1–2 个 retainer，按月流水 ¥1.5–5 万并非不可能；按前述成本结构净利约 40%–70%。实际取决于客户预算、平台/主机覆盖、是否含玩家招募和账期，不能把上限当承诺。
+
+7. 主要风险
+市场风险：AGI 标签与 XAG 目前以自愿采用为主，XAG 官方明确声明它不是合规或法律要求清单；客户可能把无障碍当成“有空再做”，预算随发行档期剧烈波动。大厂有内部团队与微软 MGATS 这类官方服务，低价市场也可能被通用无障碍顾问用模板报告挤占。应对方式是锁定“独立游戏 + 标签就绪度 + 真实玩家证据”这个交叉点，而不是泛泛做 WCAG。
+技术风险：build 频繁变动导致报告过期；引擎/插件升级改变重映射与屏幕阅读器行为；动态 UI、过场动画、多人聊天最难测；只跑自动扫描会漏掉 majority 的真实障碍；主机与自适应控制器覆盖不足会让报告被质疑。必须每份报告绑定构建号、平台、输入设备与测试者，避免泛化结论。
+合规风险：绝不能承诺“100% 合规”“保证通过认证”或出具法律意义上的符合性声明；涉及美国 CVAA 聊天功能、欧盟 EAA 对部分数字服务的要求时，只能做识别与转介，正式判断交给客户律师。参与者补偿、知情同意、录像脱敏、NDA 与跨境数据传输必须写进流程；玩家社区对“拿残障身份做营销”极为敏感，任何案例引用都要书面授权。
+现金流风险：工作室付款常见 30–90 天，试玩参与者却要当场付；免费试审容易演变成免费完整项目；客户会不断加“再看一眼这个界面”。建议 50% 预付、固定测试范围、限定 1 轮复测、新增界面按量报价，并把参与者补偿列为单独可报销项。
+
+8. 不适合的人群
+不适合把无障碍当慈善、期望靠情怀免费交付的人；不适合不愿学习游戏机制、只看网页 WCAG 手册的人；不适合想要法律背书或“保证过审”承诺的人——这个行业给的是证据与优先级，不是证书；不适合讨厌写细节文档、逐条复现缺陷的人；不适合没有预算垫付残障玩家补偿、或无法接受玩家社区公开质疑的人；也不适合追求快速规模化、被动收入的人——这是专家时间生意，收入上限受工时约束。
+
+9. 3 个可验证的入门步骤
+步骤一（1 天，验证能力）：选一款免费 Demo（Steam/itch.io 均可），用 XAG 23 项与 AGI 24 项标签做 10 个核心界面的人工审计，产出 1 页差距表 + 3 条带截图/录屏的可复现问题。验证标准：4 小时内完成、每条问题都能映射到公开条款、不知情开发者能照着复现；若做不到，先补清单再谈接单。
+步骤二（2 天，验证玩家价值）：通过 IGDA GA-SIG 社区 / AbleGamers Player Panels / 本地残障社群，按 $30–50/人招募 3 名不同障碍类型的玩家做 30 分钟远程试玩，录屏并匿名化摘要。验证标准：至少出现 2 个你在专家审计中没发现的问题，且拿到 3 份书面反馈；若玩家反馈与清单完全重合，说明你的测试场景还不够真实。
+步骤三（3 天，验证付费）：把步骤一、二的成果做成 5 页样张报告，向 20 家独立工作室/发行商开发者关系邮箱或 Discord 发出 $299–599 的试点审计报价（1 个核心流程、50% 预付、含 1 轮复测）。验证标准：拿到 1 笔付款，或 2 封写明预算与时间的明确回复；若 20 家全无回应，回到步骤一检查样张是否只列问题、没有给出“先改哪 5 项”的优先级。
+
+10. 核验来源
+见本结果 artifacts 字段：8 条公开可验证链接，涵盖微软官方 XAG 与 AGI 文章、AGI 标签与技术标准、Xbox Wire 发布信息、Game Accessibility Guidelines 全量清单与方法、IGDA 游戏无障碍 SIG、以及公开人工审计价目。所有数字均来自页面公开内容；标签政策、价格与平台条款随时变动，接单前须以官方页面和客户实时条款为准。</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>28/11/2026, 09:05</p><p class="meta-line"><span>Finished</span>28/11/2026, 09:09</p><p class="meta-line"><span>Duration</span>3m 43s</p><p class="meta-line"><span>Source</span>workbuddy-daily-niche-research</p><p class="meta-line"><span>File</span><code>runs-workbuddy/2026-11-28/niche-opc-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>niche-industry</span><span>opc</span><span>digital-nomad</span><span>game-accessibility</span><span>inclusive-playtesting</span><span>qa-consulting</span><span>assistive-technology</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>步骤一（1 天，验证能力）：选一款免费 Demo（Steam/itch.io 均可），用 XAG 23 项与 AGI 24 项标签做 10 个核心界面的人工审计，产出 1 页差距表 + 3 条带截图/录屏的可复现问题。验证标准：4 小时内完成、每条问题都能映射到公开条款、不知情开发者能照着复现；若做不到，先补清单再谈接单。</li><li>步骤二（2 天，验证玩家价值）：通过 IGDA GA-SIG 社区 / AbleGamers Player Panels / 本地残障社群，按 $30–50/人招募 3 名不同障碍类型的玩家做 30 分钟远程试玩，录屏并匿名化摘要。验证标准：至少出现 2 个你在专家审计中没发现的问题，且拿到 3 份书面反馈；若玩家反馈与清单完全重合，说明你的测试场景还不够真实。</li><li>步骤三（3 天，验证付费）：把步骤一、二的成果做成 5 页样张报告，向 20 家独立工作室/发行商开发者关系邮箱或 Discord 发出 $299–599 的试点审计报价（1 个核心流程、50% 预付、含 1 轮复测）。验证标准：拿到 1 笔付款，或 2 封写明预算与时间的明确回复；若 20 家全无回应，回到步骤一检查样张是否只列问题、没有给出“先改哪 5 项”的优先级。</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://learn.microsoft.com/en-gb/xbox/accessibility/guidelines">Microsoft Learn：XBOX Accessibility Guidelines V3.2（23 项指南，官方声明不是合规/法律检查表）</a></li><li><a href="https://accessiblegames.com/accessibility-tags/">Accessible Games Initiative：24 项无障碍标签、公开技术标准与已采用平台</a></li><li><a href="https://developer.microsoft.com/en-us/games/articles/2025/07/accessible-games-initiative-tags-now-available">Microsoft Game Dev Blog：4.29 亿残障玩家、AGI 标签与两人独立团队 Promise Mascot Agency 案例</a></li><li><a href="https://news.xbox.com/2025/07/09/accessible-games-initiative-tags-xbox-interview">Xbox Wire：AGI 标签覆盖 Xbox 全数字渠道、4,000+ 标签与标签定义示例</a></li><li><a href="https://gameaccessibilityguidelines.com/full-list/">Game Accessibility Guidelines：motor/cognitive/vision/hearing/speech/general 全量三级清单</a></li><li><a href="https://gameaccessibilityguidelines.com/why-and-how/">Game Accessibility Guidelines：15% 人口 / 20% 休闲玩家数据、六步工作法与尽早介入的成本逻辑</a></li><li><a href="https://igda.org/sigs/game-accessibility/">IGDA Game Accessibility SIG：2003 年成立的志愿者社区、资源与 GDC 圆桌记录</a></li><li><a href="https://accessible.org/pricing/">Accessible.org：2026-10-29 更新的人工无障碍审计价目（$1,250–2,750、$195/小时、$550/场，含 Games）</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 28/11/2026, 09:09</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
