@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026-11-28 · Daily Codex Task Board</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Daily Codex Task Board</a>
+    </header>
+    <div class="app-shell">
+      <aside class="agent-sidebar">
+        <nav class="agent-tabs" aria-label="Agents"><a aria-current="page" href="../index.html"><strong>Codex</strong><span>Codex automation agent</span></a><a  href="../workbuddy.html"><strong>WorkBuddy</strong><span>WorkBuddy automation agent</span></a></nav>
+      </aside>
+      <main><section class="page-title">
+      <p class="eyebrow">Day</p>
+      <h1>2026-11-28</h1>
+      <p class="lede">1 Codex automation result recorded.</p>
+    </section>
+    <div class="run-grid"><article class="run-card">
+      <div class="run-card-header">
+        <div>
+          <a class="task-link" href="../tasks/niche-profit-industry.html">每日小众赚钱行业科普</a>
+          <p class="meta-line"><span>Date</span><a href="../days/2026-11-28.html">2026-11-28</a></p>
+        </div>
+        <span class="status success">Success</span>
+      </div>
+      <p class="summary">今天科普面向海外小型开源项目与 SaaS 团队的 GitHub 私密安全公告（GHSA）披露流程、公告文案和上线前 QA 服务，属于中国境内可远程承接的海外市场。它适合有安全协作与英文文档能力的 OPC 做小范围验证，但只能做流程/文档/权限清单与 QA，不能承诺漏洞结论、CVE 或合规认证。</p>
+      <div class="details">## 行业是什么，为什么小众
+
+这是在客户书面授权下，协助开源维护者或小型 SaaS 团队把一次已被客户确认并准备修复的安全问题，整理为可控的 GitHub Repository Security Advisory（草案安全公告）流程：建立最小权限协作者清单、私密修复分支/临时 private fork 的交接清单、受影响版本与修复版本字段核对、公告 Markdown/缓解措施/升级说明的结构化草稿、发布审批和发布后链接/版本/包管理器页面的复核记录。它不是渗透测试、漏洞挖掘、应急响应或漏洞赏金代理。
+
+小众性在于同时需要理解 GitHub 的私密公告权限模型、负责披露的保密节奏、版本语义与英文技术沟通；又必须知道哪些判断绝不能替客户做。GitHub 说明，仓库安全公告可让公共仓库维护者私下讨论和修复问题，修复后再向社区公开；创建/管理能力受仓库管理员、组织所有者或安全管理员权限控制。
+
+## 目标市场与 OPC/数字游民适配
+
+目标是中国境内可承接的海外英语市场：有公共 GitHub 仓库、但没有专职安全运营人员的开源商业项目、开发者工具和 3–30 人 SaaS 团队。首单应是已确认问题的“披露就绪度 QA”，只处理客户提供的脱敏或最小必要信息，不接触生产环境、用户数据、密钥或未授权代码。
+
+OPC 适配度较高：服务可按一个公告、一套版本范围、一轮文案复核、一份发布清单固定边界；交付物可验收。数字游民适配度中等偏高：文档、异步复核与交接可远程完成，但未公开漏洞高度保密，披露日前的响应窗口、北美/欧洲时区与客户临时决策会削弱流动性，不宜承诺 24/7 值守。
+
+## 需求、客户与工作流
+
+客户通常是项目 maintainer、CTO、工程负责人或安全负责人。需求包括：收到研究者报告后不知如何组织私密修复；发布前缺少受影响/已修复版本、升级路径与缓解措施的一致性检查；需要将发布权限、审批人、公告链接、release note 与依赖包发布顺序形成可留痕清单。
+
+1. 签 SOW、保密与数据处理约定，确认客户已拥有处置权，并明确服务方不验证漏洞真实性、不做 CVSS 定级、不决定是否/何时披露。
+2. 客户管理员自己创建 draft advisory 并邀请服务方为协作者；服务方仅按最小权限在客户指定工作区处理。GitHub 的临时 private fork 用于私密修复，但其中 CI 和 status checks 不运行，因此清单必须要求客户在自有受控环境完成复测并由其批准发布。
+3. 以客户确认的技术事实为输入，核对公告标题、影响、生态系统/包名、受影响和修复版本、workaround、引用、升级说明与发布日期；把待确认项回填给 maintainer。
+4. 进行“发布演练”：核对发布人、时间窗、外部沟通、版本发布、回滚/更正联系人；客户自行提交 CVE 请求（如需要）、发布公告并在真实渠道复测。GitHub 支持从 draft advisory 标记以后申请 CVE，但不应承诺获批或时效；若其他 CNA 有相应范围，GitHub 不能代为分配。
+5. 交付只含客户批准的公告草稿、权限/发布清单、已知待办与发布后 QA 记录；到期按约删除材料。
+
+## 盈利模式、报价样本与潜在收益
+
+收入可来自一次披露就绪度审阅、公告/版本字段的双人复核、发布日 QA、季度模板维护或维护者培训。公开服务价格主要是更宽泛的安全咨询/漏洞服务，不能当作此细分服务的行业均价：Jobbers 公示远程漏洞报告分诊/验证服务为 US$40/小时；英国 G-Cloud 一份公开 rate card 将内部漏洞评估列为 £700–995/天；AAVETech 对漏洞披露项目公示 ₹35,000–120,000 的指示性范围。
+
+因此，新手不应照搬安全评估价格，更稳妥的是按文档与 QA 工时试单：例如一份已确认问题、一次公告字段复核和一轮发布清单，可试探性报价 US$100–250（按 US$1≈¥7.0 粗算约 ¥700–1,750）；含两轮复核、版本/公告/发布后链接核对的固定包可从 US$250–600（约 ¥1,750–4,200）开始，前提是客户已完成技术修复与最终安全判断。复杂多包、多个生态系统、紧急披露或需要安全专家判断时不应低价硬接，应另行报价或转介。以上是基于公开相邻服务倒推的首单测试口径，不是月收入、利润或市场均价承诺。成本主要是英文写作、保密沟通、时区、版本/包名人工复核、返工和专业责任风险。
+
+## 入门门槛
+
+技能：熟悉 GitHub advisory 的字段与权限、SemVer/包发布基本知识、Markdown、英文技术写作、最小权限、保密和变更记录；能区分“复述客户确认事实”与“自行做安全结论”。设备/软件：电脑、客户授权的 GitHub 协作权限、加密磁盘/密码管理器、版本化文档和受控文件传输；固定资产低。
+
+渠道：可在 GitHub 维护者社区、开发者工具创业者社区、自由职业平台、LinkedIn，以及安全顾问/软件发布工程师的互荐网络展示虚构案例模板获客。不得公开真实漏洞、客户私有仓库截图或未发布公告。先用虚构 npm/PyPI 包做“公告字段—发布清单—复核记录”样例，比宣称安全能力更可信。
+
+## 中国境内承接的跨境执行与合规
+
+获客、合同与远程交付：合同须写明客户对代码/漏洞信息的处理授权、服务边界、协作者权限、保密期限、披露决定权、交付/验收、删除期限、责任上限和紧急联系规则。客户保留管理员账号、修复与发布权限，服务商绝不擅自公开、修复或发布。
+
+收款、发票与税务：优先经客户和平台允许的可留痕方式收款，保留合同、订单、交付与收款记录。国家税务总局说明，向境外单位提供且完全在境外消费的专业技术服务或商务辅助服务等，满足条件时可能免征增值税；不同主体、服务性质、是否完全在境外消费、申报及结算材料均需按具体合同向所在地税务机关、银行或专业人士确认，不能视为税务意见。
+
+平台、数据与隐私：遵守 GitHub 条款和客户组织规则，不共享账号、PAT、私钥或生产凭据。首单应排除真实用户数据、研究者联系方式和日志；若确需从中国境内向境外提供个人信息，个人信息保护法规定需满足法定跨境条件，并在适用时完成告知、单独同意等要求。将数据最小化、让客户控制源系统并按期删除，通常比个人自行携带完整漏洞材料更稳妥。
+
+语言与时区：需要能把“客户确认的事实—待确认字段—发布动作—复核结果”用简洁英文写清。中国下午/傍晚与欧洲有重叠；北美发布窗口可能需夜间配合，报价应限定响应时段。
+
+## 风险、边界与不适合人群
+
+主要风险是误把客户说法写成独立安全结论、过早泄露漏洞、错误版本范围诱发不必要恐慌、临时 fork 未跑 CI 而被误认为已验证、接触密钥/个人信息、以及客户误以为服务可保证 CVE、平台审核或法律合规。CVE 规则要求已分配的 ID 需要公开披露，否则应拒绝该 ID；服务商没有资格代客户决定或保证这一结果。
+
+不适合没有英文技术写作、不能严格保密、希望靠扫描工具自动出报告、想获得漏洞赏金分成，或无法在披露日预留可用时间的人。任何要求绕过授权、伪造 CVE、代为发布、隐瞒高风险问题或承诺监管/安全认证的客户均应拒绝。
+
+## 新手低成本验证步骤
+
+1. 用虚构的开源包和已公开的演示漏洞素材，制作一套不含真实漏洞细节的 advisory 字段表、权限矩阵、发布时间线和发布后 QA 清单。
+2. 向 10 个小型开源/SaaS 维护者提供 30 分钟“披露流程清单评审”试谈，只评审他们现有公开政策与模板，不测试系统、不索取私密报告。
+3. 将首个付费包限定为 US$100–250：客户已确认问题、一个仓库、一次文案/字段复核、一轮发布清单；先签保密与授权，客户管理员全程控制账号和发布。
+
+## 点评 Agent 审稿
+
+独立点评 Agent 结论：通过，但服务必须收紧为“流程/文案/权限清单与上线前 QA”，不提供漏洞挖掘结论、CVSS 定级、法律意见或安全认证。中国境内承接海外市场适配度 4/5；OPC/一人公司适配度 4/5；数字游民适配度 3/5（保密漏洞、披露日响应和时区降低流动性）；合规风险中；跨境执行风险中。收益口径克制：公开报价来自更宽泛的相邻服务，只用来设定保守试单范围，且明确没有 CVE 成功费、漏洞赏金或按严重度承诺。来源可信度高：关键流程和权限来自 GitHub 与 CVE Program 官方资料，跨境税务与个人信息来自中国官方资料；价格仅为公开服务样本。最该提醒的一句话：客户必须保留管理员账号、漏洞定级/披露时间/最终发布与法律判断，服务商只在书面授权和最小权限下做可复核的协调与 QA。
+
+## 关键来源
+
+- GitHub Docs，Repository security advisories：https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/repository-security-advisories
+- GitHub Docs，Repository security advisory permissions：https://docs.github.com/en/code-security/reference/permissions/repository-security-advisory
+- GitHub Docs，Collaborating in a temporary private fork：https://docs.github.com/en/enterprise-cloud%40latest/code-security/tutorials/fix-reported-vulnerabilities/collaborate-in-a-fork
+- GitHub Docs，Creating a repository security advisory：https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/create-repository-advisory
+- CVE Program，CNA Operational Rules：https://www.cve.org/ResourcesSupport/AllResources/CNARules
+- 国家税务总局，哪些业务可以享受跨境应税行为免征增值税政策？：https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html
+- 工信部转载，中华人民共和国个人信息保护法：https://bjca.miit.gov.cn/zwgk/zcwj/flfg/art/2024/art_667c6a6b3ee9456bbaf837c4694ce400.html
+- Jobbers，Remote Bug Bounty Report Triage &amp; Vulnerability Validation：https://www.jobbers.io/service/12706/remote/bug-bounty-report-triage-vulnerability-validation/
+- UK Digital Marketplace，G-Cloud security pricing rate card：https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/719643/580202752517316-pricing-document-2024-05-07-0938.pdf
+- AAVETech，Vulnerability Disclosure Program：https://www.aavetech.in/vulnerability-disclosure-program/</div>
+      <div class="run-meta">
+        <p class="meta-line"><span>Started</span>28/11/2026, 15:50</p><p class="meta-line"><span>Finished</span>28/11/2026, 16:01</p><p class="meta-line"><span>Duration</span>11m</p><p class="meta-line"><span>File</span><code>runs/2026-11-28/niche-profit-industry.json</code></p>
+      </div>
+      <div class="labels"><span>daily</span><span>industry</span><span>income-education</span><span>china</span><span>opc</span><span>digital-nomad</span><span>overseas-market</span><span>global</span><span>github</span><span>security-disclosure</span></div>
+      <div class="subsection next-steps"><h3>Next steps</h3><ul><li>制作虚构包的公告字段与发布 QA 样例</li><li>只向客户评审公开流程模板，避免索取私密漏洞材料</li><li>用书面授权和最小权限完成首个固定范围试单</li></ul></div>
+      <div class="subsection artifacts"><h3>Artifacts</h3><ul class="artifact-list"><li><a href="https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/repository-security-advisories">GitHub Repository security advisories</a></li><li><a href="https://www.cve.org/ResourcesSupport/AllResources/CNARules">CVE CNA Operational Rules</a></li><li><a href="https://www.chinatax.gov.cn/chinatax/c102449/c5239196/content.html">国家税务总局跨境应税行为说明</a></li></ul></div>
+    </article></div></main>
+    </div>
+    <footer class="site-footer">
+      <span>Generated 28/11/2026, 16:02</span>
+      <span>Source of truth: <code>runs/</code> · <code>runs-workbuddy/</code> · <code>runs-agents/</code></span>
+    </footer>
+  </body>
+</html>
